@@ -63,6 +63,14 @@ Cloud Volumes ONTAP ahora es compatible con cualquier entorno de cloud que tenga
 
 
 
+=== Flash Cache y una alta velocidad de escritura en Google Cloud
+
+Ahora se admite Flash Cache, alta velocidad de escritura y una unidad de transmisión máxima (MTU) alta de 8,896 bytes para instancias seleccionadas con la versión Cloud Volumes ONTAP 9.13.0.
+
+Más información acerca de link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Configuraciones compatibles con licencia para Google Cloud"^].
+
+
+
 == 5 de febrero de 2023
 
 Los siguientes cambios se introdujeron con la versión 3.9.26 del conector.

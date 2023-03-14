@@ -31,5 +31,9 @@ Antes de cambiar la velocidad de escritura, debe hacerlo link:concept-write-spee
 +
 Si elige Alto, tendrá que leer la sentencia "entiendo..." y confirmar marcando la casilla.
 
++
+
+NOTE: La opción *Alta* de velocidad de escritura es compatible con los pares de alta disponibilidad de Cloud Volumes ONTAP en Google Cloud a partir de la versión 9.13.0.
+
 . Haga clic en *Guardar*, revise el mensaje de confirmación y, a continuación, haga clic en *proseguir*.
 

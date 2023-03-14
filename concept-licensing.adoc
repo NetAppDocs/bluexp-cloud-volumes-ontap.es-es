@@ -199,6 +199,7 @@ La licencia siempre se cargará primero, pero se cargará a partir de la tarifa 
 
 
 * Si tiene un contrato anual de un mercado, _All_ los sistemas Cloud Volumes ONTAP que implemente se cobrarán en función de ese contrato. No se puede mezclar y combinar un contrato anual de mercado con su licencia BYOL.
+* En las regiones de China solo se admiten sistemas de un solo nodo con BYOL.
 
 
 

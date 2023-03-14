@@ -392,7 +392,7 @@ link:concept-write-speed.html["Más información sobre la velocidad de escritura
 
 +
 
-NOTE: _Flash Cache_, alta velocidad de escritura y una unidad de transmisión máxima (MTU) más alta de 8,896 están disponibles a través de la opción *Alta velocidad de escritura con los tipos de instancia n2-standard-16, n2-standard-32, n2-standard-48 y n2-standard-64. Además, el MTU superior de 8,896 requiere la selección de VCP-1, VPC-2 o VCP-3 para la puesta en marcha. _Flash Cache_, alta velocidad de escritura y un MTU de 8,896 dependen de las funciones y no se pueden deshabilitar individualmente dentro de una instancia configurada.
+NOTE: _Flash Cache_, alta velocidad de escritura y una unidad de transmisión máxima (MTU) más alta de 8,896 bytes están disponibles a través de la opción *Alta velocidad de escritura con los tipos de instancia n2-standard-16, n2-standard-32, n2-standard-48 y n2-standard-64. Además, el MTU superior de 8,896 requiere la selección de VPC-1, VPC-2 y VPC-3 para la puesta en marcha. _Flash Cache_, alta velocidad de escritura y un MTU de 8,896 dependen de las funciones y no se pueden deshabilitar individualmente dentro de una instancia configurada. Para obtener más información sobre VPC-1, VPC-2 y VPC-3, consulte https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["Reglas para VPC-1, VPC-2 y VPC-3"].
 
 .. Si lo desea, active el almacenamiento DE escritura única y lectura múltiple (WORM).
 +

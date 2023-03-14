@@ -459,6 +459,9 @@ Mientras tanto, las reglas de firewall predefinidas que BlueXP crea para instanc
 La comunicación de los nodos de alta disponibilidad al mediador de alta disponibilidad se realiza a través del puerto 3260 (iSCSI).
 
 
+NOTE: Para permitir una alta velocidad de escritura para las nuevas puestas en marcha de parejas de alta disponibilidad de Google Cloud, se requiere una unidad de transmisión máxima (MTU) de al menos 8,896 bytes para VPC-1, VPC-2 y VPC-3. Si decide actualizar VPC-1, VPC-2 y VPC-3 existentes a un MTU de 8,896 bytes, deberá apagar todos los sistemas de alta disponibilidad existentes con estos VPC durante el proceso de configuración.
+
+
 
 == Requisitos para el conector
 
