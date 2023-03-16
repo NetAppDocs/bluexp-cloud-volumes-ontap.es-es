@@ -20,6 +20,23 @@ Las mejoras descritas en esta página son específicas de las funciones de BlueX
 
 
 
+== 13 de marzo de 2023
+
+
+
+=== Apoyo regional a China
+
+A partir de la versión comercial de Cloud Volumes ONTAP 9.12.1, ahora el soporte de la región de China es compatible con Azure de la siguiente manera.
+
+* Cloud Volumes ONTAP es compatible con China Norte 3.
+* Los sistemas de un solo nodo son compatibles.
+* Se admiten las licencias adquiridas directamente en NetApp.
+
+
+Para conocer la disponibilidad regional, consulte link:https://bluexp.netapp.com/cloud-volumes-global-regions["Mapas de regiones globales para Cloud Volumes ONTAP"^].
+
+
+
 == 5 de marzo de 2023
 
 Los siguientes cambios se introdujeron con la versión 3.9.27 del conector.

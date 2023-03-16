@@ -4767,4 +4767,12 @@
   <block id="77e5d57bae938bc31208cded57756dc8" category="paragraph">Ahora se admite Flash Cache, alta velocidad de escritura y una unidad de transmisión máxima (MTU) alta de 8,896 bytes para instancias seleccionadas con la versión Cloud Volumes ONTAP 9.13.0.</block>
   <block id="80d41628bf38145af2326ce3d52d8e91" category="inline-link-macro">Configuraciones compatibles con licencia para Google Cloud</block>
   <block id="0a623de488b37ca75333d521fccaa559" category="paragraph">Más información acerca de <block ref="cdeafd55498169f22d9d7a55ffee4ff4" category="inline-link-macro-rx"></block>.</block>
+  <block id="0eeac28a6eb03f47165f3c65b5e13cea" category="section-title">13 de marzo de 2023</block>
+  <block id="5eeac325d343b1bb90074e1be60dd1ae" category="section-title">Apoyo regional a China</block>
+  <block id="f3818f17dde36b1601ccfef8ceab6cbe" category="paragraph">A partir de la versión comercial de Cloud Volumes ONTAP 9.12.1, ahora el soporte de la región de China es compatible con Azure de la siguiente manera.</block>
+  <block id="49b72186e2fe2638cbb520201b58bc02" category="list-text">Cloud Volumes ONTAP es compatible con China Norte 3.</block>
+  <block id="fcf30aaa0348521d4d4752992c9db378" category="list-text">Los sistemas de un solo nodo son compatibles.</block>
+  <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">Se admiten las licencias adquiridas directamente en NetApp.</block>
+  <block id="13615a82d1149a992b363c411914d3b8" category="inline-link-macro">Mapas de regiones globales para Cloud Volumes ONTAP</block>
+  <block id="39aeb3e37839611b14bfa6c7390065c1" category="paragraph">Para conocer la disponibilidad regional, consulte <block ref="69e22a6a63d14aa651819a20b96c9cc5" category="inline-link-macro-rx"></block>.</block>
 </blocks>
