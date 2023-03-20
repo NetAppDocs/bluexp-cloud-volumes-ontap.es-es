@@ -267,17 +267,14 @@ El grupo de seguridad externo predefinido para el mediador de alta disponibilida
 
 === Reglas de entrada
 
-La fuente de las reglas entrantes es 0.0.0.0/0.
+El grupo de seguridad predefinido para el mediador ha incluye la siguiente regla de entrada.
 
-[cols="20,20,60"]
+[cols="20,20,20,40"]
 |===
-| Protocolo | Puerto | Específico 
+| Protocolo | Puerto | Origen | Específico 
 
 
-| SSH | 22 | Conexiones SSH al mediador de alta disponibilidad 
-
-
-| TCP | 3000 | Acceso a API RESTful desde el conector 
+| TCP | 3000 | CIDR del conector | Acceso a API RESTful desde el conector 
 |===
 
 
@@ -312,13 +309,13 @@ Si necesita reglas rígidas para el tráfico saliente, puede utilizar la siguien
 | Protocolo | Puerto | Destino | Específico 
 
 
-| HTTP | 80 | Dirección IP del conector | Descargar actualizaciones para el mediador 
+| HTTP | 80 | Dirección IP del conector en la instancia de AWS EC2 | Descargar actualizaciones para el mediador 
 
 
-| HTTPS | 443 | Servicios API de AWS | Ayudar en la recuperación tras fallos de almacenamiento 
+| HTTPS | 443 | ec2.amazonaws.com | Ayudar en la recuperación tras fallos de almacenamiento 
 
 
-| UDP | 53 | Servicios API de AWS | Ayudar en la recuperación tras fallos de almacenamiento 
+| UDP | 53 | ec2.amazonaws.com | Ayudar en la recuperación tras fallos de almacenamiento 
 |===
 
 NOTE: En lugar de abrir los puertos 443 y 53, puede crear un extremo de la interfaz VPC desde la subred de destino al servicio AWS EC2.

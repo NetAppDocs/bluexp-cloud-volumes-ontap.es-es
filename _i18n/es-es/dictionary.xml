@@ -4257,12 +4257,9 @@
   <block id="7d6fe0dd606232f7155fdeae2ea620a9" category="cell">ICMP</block>
   <block id="4cfc36b50d04aaf1a0c91d6e93be6dca" category="cell">Mantener activos (solo alta disponibilidad de Cloud Volumes ONTAP)</block>
   <block id="a476a8c72bef590ea37867c7275919b7" category="section-title">Reglas para el grupo de seguridad externo de mediador de alta disponibilidad</block>
-  <block id="1975a8843b2153f2d02f2a63ead63c6d" category="paragraph">La fuente de las reglas entrantes es 0.0.0.0/0.</block>
   <block id="decc3cc349f3757e43ecd0c47a092341" category="paragraph">El grupo de seguridad predefinido para el mediador ha abre todo el tráfico saliente. Si eso es aceptable, siga las reglas básicas de la salida. Si necesita más reglas rígidas, utilice las reglas avanzadas de salida.</block>
   <block id="9528bcb068299f44f7850e2e930d3f00" category="paragraph">Si necesita reglas rígidas para el tráfico saliente, puede utilizar la siguiente información para abrir sólo los puertos necesarios para la comunicación saliente por parte del mediador ha.</block>
-  <block id="6c8a72bb428eef0fb772b736267a33ca" category="cell">Dirección IP del conector</block>
   <block id="2b14ebecd08152e1467e0863951e038a" category="cell">Descargar actualizaciones para el mediador</block>
-  <block id="4fa494f1ae1d15d791b8daf53f3d2a55" category="cell">Servicios API de AWS</block>
   <block id="fa1cddc8ac392ea41880d5f31e86fbf3" category="cell">Ayudar en la recuperación tras fallos de almacenamiento</block>
   <block id="1e56718e9810cd52e22fd292a9b32245" category="admonition">En lugar de abrir los puertos 443 y 53, puede crear un extremo de la interfaz VPC desde la subred de destino al servicio AWS EC2.</block>
   <block id="81cc31df8f1cfdded8f19bde6b378f31" category="section-title">Reglas para el grupo de seguridad interno de configuración de alta disponibilidad</block>
@@ -4787,4 +4784,8 @@
   <block id="5007d33dbe3f9e50ed8c96fc08a7443a" category="list-text">Haga clic en el nombre de la configuración IP que acaba de crear, cambie la asignación a estática y haga clic en *Guardar*.</block>
   <block id="aa700fba04d3b674bf01f1887210edfe" category="list-text">Escriba el siguiente comando para acceder al modo avanzado.</block>
   <block id="87f1ece84a21ef92f0776380600117e6" category="list-text">Cree LIF iSCSI para proporcionar comunicación DNS:</block>
+  <block id="b85a0d4dea04769a8ce6e0860eb4c90f" category="paragraph">El grupo de seguridad predefinido para el mediador ha incluye la siguiente regla de entrada.</block>
+  <block id="52554fb81854d42f02280f83a1067574" category="cell">CIDR del conector</block>
+  <block id="cdbb82146d412877f64f943229bd9533" category="cell">Dirección IP del conector en la instancia de AWS EC2</block>
+  <block id="2e7f33375cb03e7deb01286344bbca46" category="cell">ec2.amazonaws.com</block>
 </blocks>
