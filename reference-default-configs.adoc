@@ -93,9 +93,9 @@ endif::gcp[]
 NOTE: La conmutación por error de LIF está deshabilitada de forma predeterminada para Cloud Volumes ONTAP debido a los requisitos del proveedor de cloud. Al migrar una LIF a otro puerto, se interrumpe la asignación externa entre direcciones IP e interfaces de red en la instancia, lo que hace que la LIF no sea accesible.
 
 +
-** Cloud Volumes ONTAP envía backups de configuración al conector mediante HTTPS.
+** Cloud Volumes ONTAP envía backups de configuración al conector mediante HTTP.
 +
-Se puede acceder a los backups desde https://ipaddress/occm/offboxconfig/[] Donde _ipaddress_ es la dirección IP del host del conector.
+Se puede acceder a los backups desde http://ipaddress/occm/offboxconfig/[] Donde _ipaddress_ es la dirección IP del host del conector.
 
 ** BlueXP establece algunos atributos de volumen de manera diferente a los de otras herramientas de gestión (por ejemplo, System Manager o CLI).
 +

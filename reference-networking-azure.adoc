@@ -391,6 +391,9 @@ NOTE: El origen es la interfaz (dirección IP) en el sistema Cloud Volumes ONTAP
 | TCP | 3128 | LIF de gestión de nodos | Conector | Envío de mensajes AutoSupport a través de un servidor proxy en el conector, si no hay disponible una conexión a Internet saliente 
 
 
+| Backups de configuración | HTTP | 80 | LIF de gestión de nodos | \Http://<connector-IP-address>/occm/offboxconfig | Enviar copias de seguridad de configuración al conector. link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["Obtener información acerca de los archivos de copia de seguridad de configuración"^]. 
+
+
 | DHCP | 68 | UDP | LIF de gestión de nodos | DHCP | Cliente DHCP para la configuración inicial 
 
 
