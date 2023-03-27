@@ -64,19 +64,32 @@ El número de LIF que BlueXP asigna a Cloud Volumes ONTAP depende de si pone en 
 
 ==== Direcciones IP para un sistema de nodo único
 
-BlueXP asigna 6 direcciones IP a un sistema de un solo nodo:
+BlueXP asigna 6 direcciones IP a un sistema de un solo nodo.
 
-* LIF de gestión de clústeres
-* LIF de gestión de nodos
-* LIF entre clústeres
-* LIF de datos NAS
-* LIF de datos iSCSI
-* LIF de gestión de máquinas virtuales de almacenamiento
-+
-Una LIF de gestión de máquinas virtuales de almacenamiento se utiliza con herramientas de gestión como SnapCenter.
+La tabla siguiente proporciona detalles acerca de las LIF asociadas con cada dirección IP privada.
+
+[cols="20,40"]
+|===
+| LUN | Específico 
 
 
+| Gestión de clústeres | Gestión administrativa de todo el clúster (pareja de alta disponibilidad). 
 
+
+| Gestión de nodos | La gestión administrativa de un nodo. 
+
+
+| Interconexión de clústeres | Comunicación entre clústeres, backup y replicación. 
+
+
+| Datos de NAS | Acceso de clientes a través de protocolos NAS. 
+
+
+| Datos de iSCSI | Acceso de cliente a través del protocolo iSCSI. También lo utiliza el sistema para otros flujos de trabajo de red importantes. Este LIF es necesario y no debe eliminarse. 
+
+
+| Gestión de máquinas virtuales de almacenamiento | Una LIF de gestión de máquinas virtuales de almacenamiento se utiliza con herramientas de gestión como SnapCenter. 
+|===
 
 
 ==== Direcciones IP para pares de alta disponibilidad
@@ -139,7 +152,7 @@ En las tablas siguientes se ofrecen detalles acerca de las LIF asociadas con cad
 | Interconexión de clústeres | eth0 | nodo 1 y nodo 2 | Comunicación entre clústeres, backup y replicación. 
 
 
-| Datos de iSCSI | eth0 | nodo 1 y nodo 2 | Acceso de cliente a través del protocolo iSCSI. Este LIF también gestiona la migración de direcciones IP flotantes entre nodos. 
+| Datos de iSCSI | eth0 | nodo 1 y nodo 2 | Acceso de cliente a través del protocolo iSCSI. Estos LIF también gestionan la migración de direcciones IP flotantes entre nodos. Estos LIF son necesarios y no deben eliminarse. 
 
 
 | Conectividad del clúster | eth1 | nodo 1 y nodo 2 | Permite que los nodos se comuniquen entre sí y que muevan datos dentro del clúster. 

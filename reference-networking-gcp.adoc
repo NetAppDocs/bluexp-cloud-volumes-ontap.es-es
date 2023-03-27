@@ -102,18 +102,49 @@ Las subredes de estas VPC deben tener distintos rangos CIDR. No pueden tener ran
 
 ==== Direcciones IP privadas
 
-BlueXP asigna direcciones IP privadas 14 o 15 a un par de alta disponibilidad en Google Cloud:
+BlueXP asigna automáticamente el número requerido de direcciones IP privadas a Cloud Volumes ONTAP en GCP. Debe asegurarse de que su red tiene suficientes direcciones privadas disponibles.
 
-* 7 u 8 direcciones IP privadas para VPC-0
++ el número de LIF que asigna Cloud Manager para Cloud Volumes ONTAP depende de si pone en marcha un sistema de nodo único o un par de alta disponibilidad. Una LIF es una dirección IP asociada con un puerto físico. Se requiere una LIF de gestión de SVM para herramientas de gestión como SnapCenter.
+
+* *Single Node* BlueXP asigna 4 direcciones IP a un sistema de un solo nodo:
++
+** LIF de gestión de nodos
+** LIF de gestión de clústeres
+** LIF de datos iSCSI
++
+
+NOTE: Un LIF iSCSI proporciona acceso a los clientes a través del protocolo iSCSI y el sistema lo utiliza para otros flujos de trabajo de red importantes. Estos LIF son necesarios y no deben eliminarse.
+
+** LIF NAS
 +
 Puede omitir la creación de la LIF de gestión de máquinas virtuales de almacenamiento (SVM) si implementa Cloud Volumes ONTAP mediante la API y especifica el siguiente indicador:
 
 +
 `skipSvmManagementLif: true`
 
-* Dos direcciones IP privadas para VPC-1
-* Dos direcciones IP privadas para VPC-2
-* Tres direcciones IP privadas para VPC-3
+
+
+* *Par de alta disponibilidad* BlueXP asigna 14 direcciones IP a un par de alta disponibilidad:
++
+** 2 LIF de gestión de nodos (e0a)
+** 2 LIF iSCSI (e0a)
++
+
+NOTE: Un LIF iSCSI proporciona acceso a los clientes a través del protocolo iSCSI y el sistema lo utiliza para otros flujos de trabajo de red importantes. Estos LIF son necesarios y no deben eliminarse.
+
+** 2 LIF NAS (e0a)
+** 2 LIF de interconexión de clústeres (e0a)
+** 2 LIF de clúster (e0b)
+** 2 direcciones IP de interconexión de alta disponibilidad (e0c)
+** 2 direcciones IP iSCSI RSM (e0d)
++
+Puede omitir la creación de la LIF de gestión de máquinas virtuales de almacenamiento (SVM) si implementa Cloud Volumes ONTAP mediante la API y especifica el siguiente indicador:
+
++
+`skipSvmManagementLif: true`
+
+
+
 
 
 
@@ -184,9 +215,17 @@ TIP: Si utiliza un par de alta disponibilidad, el mediador de alta disponibilida
 
 Si BlueXP notifica que los mensajes de AutoSupport no se pueden enviar, link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["Solucione problemas de configuración de AutoSupport"].
 
+Reglas del firewall:: No necesita crear reglas de firewall porque BlueXP lo hace por usted. Si necesita utilizar el suyo propio, consulte las reglas de firewall que se enumeran a continuación.
++
+--
+Tenga en cuenta que se necesitan dos conjuntos de reglas de firewall para una configuración de alta disponibilidad:
+
+* Un conjunto de reglas para los componentes de alta disponibilidad en VPC-0. Estas reglas permiten el acceso a Cloud Volumes ONTAP a los datos. <<Firewall rules for Cloud Volumes ONTAP,Leer más>>.
+* Otro conjunto de reglas para los componentes de alta disponibilidad en VPC-1, VPC-2 y VPC-3. Estas reglas están abiertas para la comunicación entrante y saliente entre los componentes ha. <<Firewall rules for Cloud Volumes ONTAP,Leer más>>.
 
 
-=== Conexión a Google Cloud Storage para la organización en niveles de los datos
+--
+
 
 Si desea organizar en niveles datos inactivos en un bloque de Google Cloud Storage, debe configurarse la subred en la que resida Cloud Volumes ONTAP para Private Google Access (si utiliza una pareja de alta disponibilidad, esta es la subred en VPC-0). Para obtener instrucciones, consulte https://cloud.google.com/vpc/docs/configure-private-google-access["Documentación de Google Cloud: Configuración de Private Google Access"^].
 
