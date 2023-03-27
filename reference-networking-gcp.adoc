@@ -102,9 +102,9 @@ Las subredes de estas VPC deben tener distintos rangos CIDR. No pueden tener ran
 
 ==== Direcciones IP privadas
 
-BlueXP asigna automáticamente el número requerido de direcciones IP privadas a Cloud Volumes ONTAP en GCP. Debe asegurarse de que su red tiene suficientes direcciones privadas disponibles.
+BlueXP asigna automáticamente el número requerido de direcciones IP privadas a Cloud Volumes ONTAP en Google Cloud. Debe asegurarse de que su red tiene suficientes direcciones privadas disponibles.
 
-El número de LIF que asigna Cloud Manager para Cloud Volumes ONTAP depende de si pone en marcha un sistema de nodo único o un par de alta disponibilidad. Una LIF es una dirección IP asociada con un puerto físico. Se requiere una LIF de gestión de SVM para herramientas de gestión como SnapCenter.
+El número de LIF que BlueXP asigna a Cloud Volumes ONTAP depende de si pone en marcha un sistema de nodo único o un par de alta disponibilidad. Una LIF es una dirección IP asociada con un puerto físico. Se requiere una LIF de gestión de SVM para herramientas de gestión como SnapCenter.
 
 * *Single Node* BlueXP asigna 4 direcciones IP a un sistema de un solo nodo:
 +
