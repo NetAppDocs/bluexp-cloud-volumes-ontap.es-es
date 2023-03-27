@@ -4783,7 +4783,6 @@
   <block id="2ffb2b9a3d63d4562dc012fb7ccbe8f0" category="cell">Enviar copias de seguridad de configuración al conector. <block ref="60ef96540660b8c0ada3ca23fe3c6d48" category="inline-link-macro-rx"></block>.</block>
   <block id="91927d042dca36bab1fa5fb92c667147" category="paragraph">Se puede acceder a las copias de seguridad desde \http://ipaddress/occm/offboxconfig/, donde _ipaddress_ es la dirección IP del host del conector.</block>
   <block id="a3a425fe01b7b7835f40e98d5131d953" category="paragraph">BlueXP asigna automáticamente el número requerido de direcciones IP privadas a Cloud Volumes ONTAP en GCP. Debe asegurarse de que su red tiene suficientes direcciones privadas disponibles.</block>
-  <block id="d73dbd7a9a0f76a49c1b796c3bbf2e51" category="paragraph">+ el número de LIF que asigna Cloud Manager para Cloud Volumes ONTAP depende de si pone en marcha un sistema de nodo único o un par de alta disponibilidad. Una LIF es una dirección IP asociada con un puerto físico. Se requiere una LIF de gestión de SVM para herramientas de gestión como SnapCenter.</block>
   <block id="498c90636197dec64c0feb8b682990f2" category="list-text">*Single Node* BlueXP asigna 4 direcciones IP a un sistema de un solo nodo:</block>
   <block id="a28292fa77dc234022cd48bc08becd01" category="list-text">LIF NAS</block>
   <block id="db29658b73395ac9c81d9ab9db9c854e" category="list-text">*Par de alta disponibilidad* BlueXP asigna 14 direcciones IP a un par de alta disponibilidad:</block>
@@ -4802,4 +4801,5 @@
   <block id="6d0c9e6ffd2de679838428abdea38009" category="cell">Acceso de cliente a través del protocolo iSCSI. También lo utiliza el sistema para otros flujos de trabajo de red importantes. Este LIF es necesario y no debe eliminarse.</block>
   <block id="c3c3a9cabe89fd2f00daf39d11c934e0" category="cell">Gestión de máquinas virtuales de almacenamiento</block>
   <block id="5a81ac921ca7aad4221a846f305e2643" category="cell">Acceso de cliente a través del protocolo iSCSI. Estos LIF también gestionan la migración de direcciones IP flotantes entre nodos. Estos LIF son necesarios y no deben eliminarse.</block>
+  <block id="03739fdb4fd68641a3dd276274b59b91" category="paragraph">El número de LIF que asigna Cloud Manager para Cloud Volumes ONTAP depende de si pone en marcha un sistema de nodo único o un par de alta disponibilidad. Una LIF es una dirección IP asociada con un puerto físico. Se requiere una LIF de gestión de SVM para herramientas de gestión como SnapCenter.</block>
 </blocks>
