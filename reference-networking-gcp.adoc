@@ -124,16 +124,16 @@ Puede omitir la creación de la LIF de gestión de máquinas virtuales de almace
 
 
 
-* *Par de alta disponibilidad* BlueXP asigna 14 direcciones IP a un par de alta disponibilidad:
+* *Par de alta disponibilidad* BlueXP asigna 12-13 direcciones IP a un par de alta disponibilidad:
 +
 ** 2 LIF de gestión de nodos (e0a)
+** 1 LIF de administración de clúster (e0a)
 ** 2 LIF iSCSI (e0a)
 +
 
 NOTE: Un LIF iSCSI proporciona acceso a los clientes a través del protocolo iSCSI y el sistema lo utiliza para otros flujos de trabajo de red importantes. Estos LIF son necesarios y no deben eliminarse.
 
-** 2 LIF NAS (e0a)
-** 2 LIF de interconexión de clústeres (e0a)
+** 1 o 2 LIF NAS (e0a)
 ** 2 LIF de clúster (e0b)
 ** 2 direcciones IP de interconexión de alta disponibilidad (e0c)
 ** 2 direcciones IP iSCSI RSM (e0d)

@@ -4784,11 +4784,8 @@
   <block id="91927d042dca36bab1fa5fb92c667147" category="paragraph">Se puede acceder a las copias de seguridad desde \http://ipaddress/occm/offboxconfig/, donde _ipaddress_ es la dirección IP del host del conector.</block>
   <block id="498c90636197dec64c0feb8b682990f2" category="list-text">*Single Node* BlueXP asigna 4 direcciones IP a un sistema de un solo nodo:</block>
   <block id="a28292fa77dc234022cd48bc08becd01" category="list-text">LIF NAS</block>
-  <block id="db29658b73395ac9c81d9ab9db9c854e" category="list-text">*Par de alta disponibilidad* BlueXP asigna 14 direcciones IP a un par de alta disponibilidad:</block>
   <block id="4be2acabdfd03ad1e08cbfefbda0ff51" category="list-text">2 LIF de gestión de nodos (e0a)</block>
   <block id="0c0ae10290400b878c0abf083889e78d" category="list-text">2 LIF iSCSI (e0a)</block>
-  <block id="b2eba5b8e0037393ec3f8a81ae77e78b" category="list-text">2 LIF NAS (e0a)</block>
-  <block id="e0c98565c3b923fcfdca593269481630" category="list-text">2 LIF de interconexión de clústeres (e0a)</block>
   <block id="a00377c792cd8ccb6a0c832ffec2c1dc" category="list-text">2 LIF de clúster (e0b)</block>
   <block id="bbe8dbabe5bfd1d32eaa2131b90c191a" category="list-text">2 direcciones IP de interconexión de alta disponibilidad (e0c)</block>
   <block id="0baf3fbe98870c6047f6b10e5370bff7" category="list-text">2 direcciones IP iSCSI RSM (e0d)</block>
@@ -4801,4 +4798,7 @@
   <block id="c3c3a9cabe89fd2f00daf39d11c934e0" category="cell">Gestión de máquinas virtuales de almacenamiento</block>
   <block id="5a81ac921ca7aad4221a846f305e2643" category="cell">Acceso de cliente a través del protocolo iSCSI. Estos LIF también gestionan la migración de direcciones IP flotantes entre nodos. Estos LIF son necesarios y no deben eliminarse.</block>
   <block id="04aa0890d693f69c17917f651d371711" category="paragraph">BlueXP asigna automáticamente el número requerido de direcciones IP privadas a Cloud Volumes ONTAP en Google Cloud. Debe asegurarse de que su red tiene suficientes direcciones privadas disponibles.</block>
+  <block id="7f09653ec569404a6d78270f050d7c18" category="list-text">*Par de alta disponibilidad* BlueXP asigna 12-13 direcciones IP a un par de alta disponibilidad:</block>
+  <block id="99388f0fdeac933c80f2d52c95fe6eac" category="list-text">1 LIF de administración de clúster (e0a)</block>
+  <block id="07ddec46aac81bd14d6fc7f0d22ee78d" category="list-text">1 o 2 LIF NAS (e0a)</block>
 </blocks>
