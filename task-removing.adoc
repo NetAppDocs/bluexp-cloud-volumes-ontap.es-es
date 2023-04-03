@@ -27,13 +27,12 @@ La eliminación de un entorno de trabajo de BlueXP permite hacer lo siguiente:
 
 
 .Pasos
-. En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *Herramientas*.
+. En la página Canvas, haga doble clic en el entorno de trabajo que desee eliminar.
+. En la parte superior derecha de la consola de BlueXP, haga clic en el icono de elipse y seleccione *Quitar del área de trabajo*.
 +
-image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
+image:screenshot_settings_remove.png["Una captura de pantalla que muestra la opción \"Eliminar del espacio de trabajo\" en la parte superior derecha de la consola BlueXP."]
 
-. En la página Herramientas, haga clic en *Iniciar*.
-. Seleccione el entorno de trabajo Cloud Volumes ONTAP que desea quitar.
-. En la página revisar y aprobar, haga clic en *Ir*.
+. En la ventana revisar desde el área de trabajo, haga clic en *Quitar*.
 
 
 .Resultado

@@ -200,13 +200,11 @@ BlueXP crea un almacén de objetos para datos inactivos cuando se crea el sistem
 .Pasos
 . <<Requisitos,Asegúrese de haber cumplido todos los requisitos>>.
 . En el menú de navegación de la izquierda, selecciona *almacenamiento > Canvas*.
-. En la página lienzo, haga doble clic en el nombre de la instancia de Cloud Volumes ONTAP.
+. En la página lienzo, seleccione el nombre de la instancia de Cloud Volumes ONTAP.
 . Haga clic en el icono de menú y seleccione *Activar organización en niveles de capacidad*.
 +
-image:screenshot_enable_capacity_tiering.gif["Una captura de pantalla de la opción Activar organización por niveles de capacidad disponible en el menú entorno de trabajo si se produjo un problema cuando BlueXP intentó activar la organización por niveles de datos."]
 
-+
-Solo verá esta opción si no se pudo habilitar la organización en niveles de datos cuando BlueXP creó el sistema.
+NOTE: Solo verá esta opción si no se pudo habilitar la organización en niveles de datos cuando BlueXP creó el sistema.
 
 +
 En Google Cloud, es necesario conectar una cuenta de servicio a Cloud Volumes ONTAP para que aparezca esta opción. <<Requisitos,Asegúrese de haber cumplido todos los requisitos>>.
@@ -232,10 +230,10 @@ Si desea habilitar la organización en niveles de datos en un volumen existente,
 
 .Pasos para confirmar si la organización en niveles está habilitada en un agregado
 . Abra el entorno de trabajo en BlueXP.
-. Haga clic en el icono de menú, haga clic en *Avanzado* y, a continuación, en *asignación avanzada*.
-. Compruebe si la organización en niveles está habilitada o deshabilitada en el agregado.
+. Haga clic en la pestaña Aggregates.
+. Desplácese hasta el icono deseado y verifique si la organización en niveles está habilitada o deshabilitada en el agregado.
 +
-image:screenshot_aggr_tiering.gif["Captura de pantalla que muestra información acerca de un agregado en BlueXP que incluye el estado de organización en niveles."]
+image:screenshot_aggregate_tiering_enabled.png["Captura de pantalla que muestra información acerca de un agregado en BlueXP que incluye el estado de organización en niveles."]
 
 
 
@@ -255,7 +253,7 @@ Ahora puede habilitar la organización en niveles de los datos en volúmenes nue
 Cloud Volumes ONTAP puede organizar los datos inactivos en niveles en volúmenes de lectura y escritura para un almacenamiento de objetos rentable, liberando al nivel de rendimiento de los datos activos.
 
 .Pasos
-. En el entorno de trabajo, cree un volumen nuevo o cambie el nivel de un volumen existente:
+. En la pestaña Volumes en el entorno de trabajo, cree un volumen nuevo o cambie el nivel de un volumen existente:
 +
 [cols="30,70"]
 |===
@@ -265,7 +263,7 @@ Cloud Volumes ONTAP puede organizar los datos inactivos en niveles en volúmenes
 | Cree un nuevo volumen | Haga clic en *Añadir nuevo volumen*. 
 
 
-| Modifique un volumen existente | Seleccione el volumen y haga clic en *Change Disk Type & Tiering Policy*. 
+| Modifique un volumen existente | Seleccione el mosaico de volumen deseado, haga clic en *Administrar volumen* para acceder al panel derecho de la gestión de volúmenes y, a continuación, haga clic en *acciones avanzadas* y *Cambiar política de organización en niveles* en el panel derecho. 
 |===
 . Seleccione una política de organización en niveles.
 +
@@ -275,7 +273,7 @@ Para obtener una descripción de estas políticas, consulte link:concept-data-ti
 *ejemplo*
 
 +
-image:screenshot_tiered_storage.gif["Captura de pantalla que muestra el icono para habilitar la organización en niveles en el almacenamiento de objetos."]
+image:screenshot_volumes_change_tiering_policy.png["Captura de pantalla que muestra las opciones disponibles para cambiar la política de organización en niveles de un volumen."]
 
 +
 BlueXP crea un nuevo agregado para el volumen si aún no existe un agregado habilitado para la organización en niveles de datos.
@@ -334,7 +332,7 @@ La relación es importante en escenarios de recuperación ante desastres, ya que
 .Pasos
 . En la parte superior derecha de la consola BlueXP, haga clic en el icono *Configuración* y seleccione *Configuración del conector*.
 +
-image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
+image:screenshot_settings_icon.png["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
 
 . En *capacidad*, haga clic en *umbrales de capacidad agregada - relación de espacio libre para la organización en niveles de datos*.
 . Cambie la relación de espacio libre en función de sus requisitos y haga clic en *Guardar*.
@@ -344,7 +342,7 @@ image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Con
 
 == Cambiar el período de refrigeración de la política de organización automática en niveles
 
-Si habilitó la organización en niveles de datos en un volumen Cloud Volumes ONTAP mediante la política _auto_ Tiering, puede ajustar el período de refrigeración predeterminado en función de las necesidades del negocio. Esta acción solo es compatible con la API.
+Si habilitó la organización en niveles de datos en un volumen Cloud Volumes ONTAP mediante la política _auto_ Tiering, puede ajustar el período de refrigeración predeterminado en función de las necesidades del negocio. Esta acción es compatible únicamente con API y CLI.
 
 El período de refrigeración es el número de días en los que los datos del usuario en un volumen deben permanecer inactivos antes de considerarlos «activos» y moverlos a un almacenamiento de objetos.
 

@@ -33,7 +33,11 @@ Para realizar un seguimiento de los costes de AWS, BlueXP asigna una etiqueta de
 
 
 . En el menú de navegación de la izquierda, selecciona *almacenamiento > Canvas*.
-. En la página lienzo, seleccione un entorno de trabajo Cloud Volumes ONTAP y, a continuación, haga clic en *coste*.
+. En la página Canvas, selecciona un entorno de trabajo Cloud Volumes ONTAP,
+. Haga clic en el icono de menú y, a continuación, haga clic en *Ver informe de costes*.
++
+image:screenshot_view_cost_report.png["Captura de pantalla: Muestra la opción de menú Ver informe de costes."]
+
 +
 La página de costes muestra los costes de los meses actuales y anteriores y muestra sus ahorros anuales de NetApp si habilitó las funciones de ahorro de costes en volúmenes de NetApp.
 

@@ -35,11 +35,11 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.
 . Elimine el entorno de trabajo de Cloud Volumes ONTAP.
 +
 .. En la página lienzo, haga doble clic en el nombre del entorno de trabajo Cloud Volumes ONTAP que desea eliminar.
-.. Haga clic en el icono de menú y, a continuación, haga clic en *Eliminar*.
+.. En la parte superior derecha de la consola de BlueXP, haga clic en el icono de elipse y seleccione *Eliminar*.
 +
-image:screenshot_delete_cloud_volumes_ontap.png["Captura de pantalla que muestra el menú disponible en el entorno de trabajo que contiene la acción Eliminar."]
+image:screenshot_settings_delete.png["Captura de pantalla que muestra el menú disponible en el entorno de trabajo que contiene la acción Eliminar."]
 
-.. Escriba el nombre del entorno de trabajo y, a continuación, haga clic en *Eliminar*.
+.. En la ventana Eliminar entorno de trabajo, escriba el nombre del entorno de trabajo y, a continuación, haga clic en *Eliminar*.
 +
 La eliminación del entorno de trabajo puede tardar hasta 5 minutos.
 

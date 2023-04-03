@@ -30,7 +30,7 @@ Debe crear un conector para poder cambiar la configuración de BlueXP. https://d
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *Configuración del conector*.
 +
-image:screenshot_settings_icon.gif["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
+image:screenshot_settings_icon.png["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
 
 . En *Azure*, haga clic en *bloqueos CIFS de Azure para entornos de trabajo de alta disponibilidad de Azure*.
 . Haga clic en la casilla de verificación para activar la función y, a continuación, haga clic en *Guardar*.

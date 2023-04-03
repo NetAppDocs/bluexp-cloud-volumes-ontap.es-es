@@ -32,7 +32,7 @@ Las actualizaciones de Cloud Volumes ONTAP deben completarse desde BlueXP. No de
 
 === Cómo actualizar
 
-BlueXP ofrece dos formas de actualizar Cloud Volumes ONTAP:
+BlueXP ofrece tres formas de actualizar Cloud Volumes ONTAP:
 
 * Siguiendo las notificaciones de actualización que aparecen en el entorno de trabajo
 * Colocando la imagen de actualización en una ubicación HTTPS y, a continuación, proporcionando BlueXP con la URL
@@ -47,6 +47,9 @@ La versión de Cloud Volumes ONTAP a la que puede actualizar depende de la versi
 [cols="2*"]
 |===
 | Versión actual | Versiones a las que puede actualizar directamente 
+
+
+| 9.12.1 | 9.13.0 
 
 
 | 9.12.1 | 9.13.0 
@@ -206,10 +209,10 @@ Los agregados para Cloud Volumes ONTAP deben estar en línea antes de actualizar
 Estos pasos describen cómo utilizar System Manager para la versión 9.3 y posteriores.
 
 .Pasos
-. En el entorno de trabajo, haga clic en el icono de menú y, a continuación, haga clic en *Avanzado > asignación avanzada*.
-. Seleccione un agregado, haga clic en *Info* y, a continuación, compruebe que el estado está en línea.
+. En el entorno de trabajo, haga clic en la ficha *agregados*.
+. En el título del agregado, haga clic en el botón elipse y, a continuación, seleccione *Ver detalles del agregado*.
 +
-image:screenshot_aggr_state.gif["Captura de pantalla: Muestra el campo Estado cuando se visualiza información de un agregado."]
+image:screenshots_aggregate_details_state.png["Captura de pantalla: Muestra el campo Estado cuando se visualiza información de un agregado."]
 
 . Si el agregado está sin conexión, use System Manager para conectar el agregado:
 +
@@ -233,7 +236,7 @@ Otra forma de realizar actualizaciones de software mediante una imagen en una UR
 
 BlueXP muestra una notificación en entornos de trabajo de Cloud Volumes ONTAP cuando hay disponible una nueva versión de Cloud Volumes ONTAP:
 
-image:screenshot_cot_upgrade.gif["Captura de pantalla: Muestra la notificación de nueva versión disponible que se muestra en la página lienzo después de seleccionar un entorno de trabajo."]
+image:screenshot_overview_upgrade.png["Captura de pantalla: Muestra la notificación de nueva versión disponible que se muestra en la página lienzo después de seleccionar un entorno de trabajo."]
 
 Puede iniciar el proceso de actualización a partir de esta notificación, que automatiza el proceso. Para ello, obtenga la imagen de software de un bloque de S3, instale la imagen y, a continuación, reinicie el sistema.
 
@@ -244,19 +247,21 @@ Las operaciones de BlueXP como la creación de volúmenes o agregados no deben e
 . En el menú de navegación de la izquierda, selecciona *almacenamiento > Canvas*.
 . Seleccione un entorno de trabajo.
 +
-Aparece una notificación en el panel derecho si hay una nueva versión disponible:
+Aparece una notificación en la ficha Descripción general si hay una nueva versión disponible:
 
 +
-image:screenshot_cot_upgrade.gif["Captura de pantalla: Muestra la notificación de nueva versión disponible que se muestra en la página lienzo después de seleccionar un entorno de trabajo."]
+image:screenshot_overview_upgrade.png["Una captura de pantalla que muestra \"Upgrade Now!\" En la ficha Descripción general."]
 
-. Si hay una nueva versión disponible, haga clic en *Actualizar*.
-. En la página Información de versión, haga clic en el vínculo para leer las Notas de versión de la versión especificada y, a continuación, active la casilla de verificación *he leído...* .
-. En la página Contrato de licencia para el usuario final (EULA), lea el EULA y, a continuación, seleccione *he leído y aprobado el EULA*.
-. En la página revisar y aprobar, lea las notas importantes, seleccione *comprendo...* y, a continuación, haga clic en *Ir*.
+. Si hay una nueva versión disponible, haga clic en *Actualizar ahora!*
+. En la página Cloud Volumes ONTAP de actualización, lea el CLUF y seleccione *Yo leo y apruebe el EULA*.
+. Haga clic en *Actualizar*.
 
 
 .Resultado
 BlueXP inicia la actualización de software. Puede realizar acciones en el entorno de trabajo una vez completada la actualización de software.
+
+
+NOTE: Actualmente, sólo puede actualizar a la última versión disponible de ONTAP a través de la interfaz de usuario de BlueXP. La capacidad de actualizar a una versión específica de ONTAP a través de la interfaz de usuario de BlueXP estará disponible en una versión futura.
 
 .Después de terminar
 Si ha suspendido las transferencias de SnapMirror, use System Manager para reanudar las transferencias.

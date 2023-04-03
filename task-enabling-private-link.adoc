@@ -36,6 +36,9 @@ El conector debe ponerse en marcha en la misma región de Azure que los sistemas
 
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *Configuración del conector*.
++
+image:screenshot_settings_icon.png["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
+
 . En *Azure*, haga clic en *usar enlace privado de Azure*.
 . Anule la selección de *Conexión de enlace privado entre cuentas Cloud Volumes ONTAP y de almacenamiento*.
 . Haga clic en *Guardar*.
@@ -136,11 +139,14 @@ Puede activar la reversión a través de la API o actualizando el archivo app.co
 
 *Activar la reversión actualizando app.conf*
 
-.Paso
-. Utilice la `PUT /occm/config` Llamada API con el siguiente cuerpo de la solicitud:
+.Pasos
+. SSH en el host del conector e inicie sesión.
+. Desplácese hasta el siguiente directorio: /Opt/Application/netapp/cloudManager/docker_occm/data
+. Edite app.conf añadiendo los siguientes parámetros y valores:
 +
-[source, json]
-----
-{ "rollbackOnAzurePrivateLinkFailure": false }
-----
+ "rollback-on-private-link-failure": true
+. Guarde el archivo y cierre la sesión del conector.
++
+No es necesario reiniciar el sistema.
+
 

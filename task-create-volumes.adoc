@@ -60,21 +60,18 @@ Solo se recomienda elegir un agregado específico si conoce bien los agregados d
 ====
 .Cualquier agregado
 --
-En la ficha volúmenes, haga clic en *Añadir volumen* > *Nuevo volumen*.
+En la ficha Descripción general, desplácese hasta el icono volúmenes y haga clic en *Añadir volumen*.image:screenshot_add_volume_button.png["Captura de pantalla del botón Añadir volumen en la ficha Descripción general."]
 
 --
 .Agregado específico
 --
-.. Haga clic en el icono de menú y, a continuación, haga clic en *Avanzado > asignación avanzada*.
-.. Haga clic en el menú de un agregado.
-.. Haga clic en *Crear volumen*.
-
+En la pestaña Aggregates, desplácese hasta el icono de agregado que desee. Haga clic en el icono de menú y, a continuación, haga clic en *Añadir volumen*.image:screenshot_add_volume_button_agg.png["Captura de pantalla del botón Add Volume en la ficha Aggregates."]
 
 --
 ====
 . Siga los pasos del asistente para crear el volumen.
 +
-.. *Detalles, Protección y Etiquetas*: Introduzca detalles básicos sobre el volumen y seleccione una política de instantánea.
+.. *Volúmenes, Detalles, Protección y Etiquetas*: Introduzca detalles básicos sobre el volumen y seleccione una política de instantánea.
 +
 Algunos de los campos en esta página son claros y explicativos. En la siguiente lista, se describen los campos que podrían presentar dificultades:
 
@@ -84,10 +81,16 @@ Algunos de los campos en esta página son claros y explicativos. En la siguiente
 | Campo | Descripción 
 
 
+| Nombre del volumen | El nombre identificable que se puede introducir para el nuevo volumen. 
+
+
 | Tamaño del volumen | El tamaño máximo que puede introducir depende en gran medida de si habilita thin provisioning, lo que le permite crear un volumen que sea mayor que el almacenamiento físico que hay disponible actualmente. 
 
 
 | Etiquetas | Las etiquetas que añada a un volumen están asociadas con el https://docs.netapp.com/us-en/cloud-manager-app-template/task-using-tags.html["Servicio Plantillas de aplicación"^], que puede ayudarle a organizar y simplificar la gestión de sus recursos. 
+
+
+| Máquina virtual de almacenamiento (SVM) | Una máquina virtual de almacenamiento es un equipo virtual que se ejecuta en ONTAP y proporciona servicios de datos y almacenamiento a sus clientes. Puede que lo sepa como una SVM o un Vserver. Cloud Volumes ONTAP se configura con una máquina virtual de almacenamiento de forma predeterminada, pero algunas configuraciones admiten máquinas virtuales de almacenamiento adicionales. Es posible especificar la máquina virtual de almacenamiento para el nuevo volumen. 
 
 
 | Política de Snapshot | Una política de copia de Snapshot especifica la frecuencia y el número de copias de Snapshot de NetApp creadas automáticamente. Una copia snapshot de NetApp es una imagen del sistema de archivos puntual que no afecta al rendimiento y requiere un almacenamiento mínimo. Puede elegir la directiva predeterminada o ninguna. Es posible que no elija ninguno para los datos transitorios: Por ejemplo, tempdb para Microsoft SQL Server. 
@@ -231,27 +234,25 @@ NOTE: Solo es posible crear volúmenes NFS o CIFS cuando se utilizan plantillas.
 .Pasos
 . En el menú de navegación de la izquierda, selecciona *almacenamiento > Canvas*.
 . En la página lienzo, haga clic en el nombre del sistema Cloud Volumes ONTAP en el que desea aprovisionar un volumen.
-. Haga clic en image:screenshot_gallery_options.gif["Icono de tres puntos uno al lado del otro."] > *Añadir volumen de plantilla*.
+. Vaya a la ficha Volumes y haga clic en *Add Volume* > *New Volume from Template*.
 +
-image:screenshot_template_add_vol_cvo.png["Captura de pantalla que muestra cómo añadir un volumen nuevo de una plantilla."]
+image:screenshot_add_volume_template.png["Captura de pantalla que muestra cómo añadir un volumen nuevo de una plantilla."]
 
 . En la página _Select Template_, seleccione la plantilla que desea utilizar para crear el volumen y haga clic en *Siguiente*.
 +
 image:screenshot_select_template_cvo.png["Captura de pantalla de las plantillas de aplicación disponibles."]
 
 +
-Aparece la página _define Parameters_.
+Se muestra la página _Editor_.
 
 +
 image:screenshot_define_cvo_vol_from_template.png["Captura de pantalla que muestra una plantilla en blanco que debe rellenar para crear un volumen."]
 
-+
-
-NOTE: Puede hacer clic en la casilla de verificación *Mostrar parámetros de sólo lectura* para mostrar todos los campos bloqueados por la plantilla si desea ver los valores de esos parámetros. De forma predeterminada, estos campos predefinidos están ocultos y sólo se muestran los campos que debe completar.
-
-. En el área _context_, el entorno de trabajo se rellena con el nombre del entorno de trabajo con el que empezó. Debe seleccionar *Storage VM* donde se creará el volumen.
-. Agregue valores para todos los parámetros que no estén codificados de forma rígida desde la plantilla. Consulte <<create a volume,Cree un volumen>> Para obtener detalles sobre todos los parámetros que se necesitan completar en la implementación de un volumen de Cloud Volumes ONTAP.
-. Si no hay otras acciones que deba definir (por ejemplo, configurar Cloud Backup), haga clic en *Ejecutar plantilla*.
+. Encima del panel _Action_, introduzca un nombre para la plantilla.
+. En _context_, el entorno de trabajo se rellena con el nombre del entorno de trabajo con el que se inició. Seleccione *Storage VM* donde se creará el volumen.
+. Agregue valores para todos los parámetros que no estén codificados de forma rígida desde la plantilla. Consulte <<create a volume,Cree un volumen>> Para obtener detalles sobre todos los parámetros necesarios para completar la implementación de un volumen de Cloud Volumes ONTAP.
+. Haga clic en *aplicar* para guardar los parámetros configurados en la acción seleccionada.
+. Si no hay otras acciones que deba definir (por ejemplo, configurar Cloud Backup), haga clic en *Guardar plantilla*.
 +
 Si hay otras acciones, haga clic en la acción del panel izquierdo para mostrar los parámetros que necesita completar.
 
@@ -259,9 +260,9 @@ Si hay otras acciones, haga clic en la acción del panel izquierdo para mostrar 
 image:screenshot_template_select_next_action.png["Una captura de pantalla que muestra cómo seleccionar acciones adicionales que se deben completar."]
 
 +
-Por ejemplo, si la acción Enable Cloud Backup requiere seleccionar una política de backup, puede hacerlo ahora.
+Por ejemplo, si la acción Enable Cloud Backup on Volume requiere seleccionar una política de backup, puede hacerlo ahora.
 
-. Haga clic en *Ejecutar plantilla*.
+. Una vez completada la configuración de las acciones de la plantilla, haga clic en *Guardar plantilla*.
 
 
 .Resultado
@@ -280,8 +281,11 @@ De forma predeterminada, BlueXP crea volúmenes en el primer nodo de una configu
 .Pasos
 . En el menú de navegación de la izquierda, selecciona *almacenamiento > Canvas*.
 . En la página lienzo, haga doble clic en el nombre del entorno de trabajo Cloud Volumes ONTAP en el que desea gestionar los agregados.
-. Haga clic en el icono de menú y, a continuación, haga clic en *Avanzado > asignación avanzada*.
-. Haga clic en *Agregar agregado* y, a continuación, cree el agregado.
+. En la ficha agregados, haga clic en *Agregar agregado*.
+. En la pantalla _Add aggregate_, cree el agregado.
++
+image:screenshot_add_aggregate_cvo.png["Captura de pantalla que muestra el progreso de la adición de un agregado."]
+
 . Para Home Node, elija el segundo nodo del par de alta disponibilidad.
 . Después de que BlueXP cree el agregado, selecciónelo y haga clic en *Crear volumen*.
 . Introduzca los detalles del nuevo volumen y, a continuación, haga clic en *Crear*.

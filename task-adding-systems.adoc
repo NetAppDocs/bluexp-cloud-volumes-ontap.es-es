@@ -29,7 +29,7 @@ Debe conocer la contraseña de la cuenta de usuario administrador de Cloud Volum
 
 ifdef::aws[]
 
-+image:screenshot_discover.gif["Captura de pantalla que muestra un enlace para descubrir un sistema Cloud Volumes ONTAP existente."]
++image:screenshot_discover_redesign.png["Captura de pantalla que muestra un enlace para descubrir un sistema Cloud Volumes ONTAP existente."]
 
 endif::aws[]
 

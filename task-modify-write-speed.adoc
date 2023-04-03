@@ -26,7 +26,11 @@ Antes de cambiar la velocidad de escritura, debe hacerlo link:concept-write-spee
 
 
 .Pasos
-. En el entorno de trabajo, haga clic en el icono de menú y, a continuación, haga clic en *Avanzado > velocidad de escritura*.
+. En la página Canvas, haga doble clic en el nombre del sistema que configure a la velocidad de escritura.
+. En la ficha Descripción general, haga clic en el panel Características y, a continuación, en el icono lápiz situado junto a *velocidad de escritura*.
++
+image:screenshot_features_write_speed.png["Captura de pantalla que muestra el ajuste velocidad de escritura bajo el panel funciones disponible en la parte superior derecha de la página Descripción general al visualizar un entorno de trabajo."]
+
 . Seleccione *normal* o *Alta*.
 +
 Si elige Alto, tendrá que leer la sentencia "entiendo..." y confirmar marcando la casilla.
@@ -35,5 +39,5 @@ Si elige Alto, tendrá que leer la sentencia "entiendo..." y confirmar marcando 
 
 NOTE: La opción *Alta* de velocidad de escritura es compatible con los pares de alta disponibilidad de Cloud Volumes ONTAP en Google Cloud a partir de la versión 9.13.0.
 
-. Haga clic en *Guardar*, revise el mensaje de confirmación y, a continuación, haga clic en *proseguir*.
+. Haga clic en *Guardar*, revise el mensaje de confirmación y, a continuación, haga clic en *aprobar*.
 

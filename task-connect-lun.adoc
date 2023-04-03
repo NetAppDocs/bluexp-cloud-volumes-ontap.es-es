@@ -25,7 +25,9 @@ Tenga en cuenta lo siguiente:
 .Pasos
 . En el menú de navegación de la izquierda, selecciona *almacenamiento > Canvas*.
 . En la página lienzo, haga doble clic en el entorno de trabajo Cloud Volumes ONTAP en el que desea gestionar los volúmenes.
-. Seleccione un volumen y, a continuación, haga clic en *IQN objetivo*.
+. En el entorno de trabajo, haga clic en la ficha *Volumes*.
+. En la ficha volúmenes, desplácese hasta el título de volumen deseado y, a continuación, haga clic en *gestionar volumen* para acceder al panel derecho de la gestión de volúmenes.
+. Haga clic en *Target IQN*.
 . Haga clic en *Copiar* para copiar el nombre del IQN.
 . Configurar una conexión iSCSI desde el host al LUN.
 +

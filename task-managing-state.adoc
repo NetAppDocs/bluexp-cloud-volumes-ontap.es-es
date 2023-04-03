@@ -35,9 +35,10 @@ Las instantáneas se crean automáticamente solo al realizar un apagado manual, 
 
 
 .Pasos
-. En el entorno de trabajo, haga clic en el icono del reloj:
+. En la página Canvas, haga doble clic en el entorno de trabajo deseado.
+. En la ficha Descripción general, haga clic en el panel Características y, a continuación, haga clic en el icono lápiz situado junto a *tiempo de inactividad programado*.
 +
-image:screenshot_shutdown_icon.gif["Captura de pantalla: Muestra el icono que carga la página de apagado automático."]
+image:screenshot_schedule_downtime.png["Captura de pantalla: Muestra el icono que carga la página de apagado automático."]
 
 . Especifique la programación de apagado:
 +
@@ -47,10 +48,10 @@ image:screenshot_shutdown_icon.gif["Captura de pantalla: Muestra el icono que ca
 *ejemplo*
 
 +
-La siguiente imagen muestra un programa que indica a BlueXP que apague el sistema todos los sábados a las 12:00 a.m. durante 48 horas. BlueXP reinicia el sistema cada lunes a las 12:00 a.m.
+La siguiente imagen muestra un programa que indica a BlueXP que apague el sistema todos los sábados a las 20:00 P.M. (8:00 PM) durante 12 horas. BlueXP reinicia el sistema cada lunes a las 12:00 a.m.
 
 +
-image:screenshot_shutdown.gif["Captura de pantalla: Muestra un programa de apagado que apaga Cloud Volumes ONTAP todos los fines de semana a las 12:00 AM durante 48 horas."]
+image:screenshot_schedule_downtime_window.png["Captura de pantalla: Muestra la pantalla programar tiempo de inactividad."]
 
 
 
@@ -58,7 +59,7 @@ image:screenshot_shutdown.gif["Captura de pantalla: Muestra un programa de apaga
 
 
 .Resultado
-BlueXP guarda el programa. El icono de reloj cambia para indicar que se ha establecido una programación: image:screenshot_shutdown_icon_scheduled.gif["Captura de pantalla: Muestra el icono de apagado automático después de definir una programación."]
+BlueXP guarda el programa. El elemento correspondiente de la línea de tiempo de inactividad programado del panel funciones muestra "On".
 
 
 
@@ -75,7 +76,7 @@ Cuando detiene un par de alta disponibilidad, BlueXP apaga ambos nodos.
 .Pasos
 . En el entorno de trabajo, haga clic en el icono *Apagar*.
 +
-image:screenshot_otc_turn_off.gif["Captura de pantalla: Muestra el icono para apagar un sistema Cloud Volumes ONTAP."]
+image:screenshot_turn_off_redesign.png["Captura de pantalla: Muestra el icono para apagar un sistema Cloud Volumes ONTAP."]
 
 . Mantenga la opción de crear snapshots habilitadas porque las snapshots pueden habilitar la recuperación del sistema.
 . Haga clic en *Apagar*.

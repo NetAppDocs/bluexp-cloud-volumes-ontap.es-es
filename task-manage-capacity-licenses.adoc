@@ -40,32 +40,37 @@ El cartera digital le muestra la capacidad total que consume su cuenta y la capa
 
 .Pasos
 . En el menú de navegación izquierdo, seleccione *cartera digital*.
-. Con *licencias basadas en capacidad* seleccionadas, consulte el resumen de paquetes, que muestra la capacidad consumida, la capacidad total con licencia y la capacidad total de PAYGO.
+. Con *licencias basadas en capacidad* seleccionadas, consulte el resumen de paquetes, que muestra la capacidad consumida, la capacidad total preconfirmada y la capacidad total de PAYGO.
 +
 ** _Total consumido Capacity_ es la capacidad total aprovisionada de todos los sistemas de Cloud Volumes ONTAP de su cuenta de NetApp. La carga se basa en el tamaño aprovisionado de cada volumen, independientemente del espacio local, utilizado, almacenado o efectivo dentro del volumen.
-** _Total con licencia_ es la capacidad total con licencia (BYOL) que ha adquirido a NetApp.
+** _Total_capacidad precomprometida_ es la capacidad total con licencia (contrato BYOL o Marketplace) que ha adquirido a NetApp.
 ** _Total PAYGO_ es la capacidad total aprovisionada mediante suscripciones a Cloud Marketplace. La carga mediante PAYGO se utiliza sólo si la capacidad consumida es superior a la capacidad con licencia o si no hay ninguna licencia BYOL disponible en la cartera digital.
 +
-Este es un ejemplo de una cuenta que tiene 2000 TIB de capacidad consumida:
+A continuación se muestra un ejemplo de un resumen de paquetes Cloud Volumes ONTAP en el monedero digital:
 
 +
-image:screenshot_capacity-based-licenses.png["Una captura de pantalla que muestra la cantidad de capacidad aprovisionada en comparación con la capacidad con licencia del paquete profesional y el paquete básico."]
+image:screenshot_capacity-based-licenses.png["Una captura de pantalla que muestra un resumen de paquetes Cloud Volumes ONTAP con la capacidad total consumida, la capacidad total comprometida por adelantado (contratos BYOL y Marketplace) y la capacidad total de PAYGO o aprovisionada en cartera digital."]
 
 
 
 . En el resumen, consulte la capacidad usada para cada uno de sus paquetes de licencias.
 +
-** _Consumido Capacity_ muestra la capacidad total de los volúmenes de ese paquete. Para obtener más detalles sobre un paquete específico, coloque el ratón sobre la información sobre herramientas.
+** _Consumido Capacity_ muestra la capacidad de los volúmenes de ese paquete. Para obtener más detalles sobre un paquete específico, coloque el ratón sobre la información sobre herramientas.
 +
 Para comprender mejor las capacidades que se muestran para el paquete Essentials, debería estar familiarizado con cómo funciona la carga. link:concept-licensing.html#notes-about-charging["Más información sobre la carga del paquete Essentials"].
 
-** _BYOL_ muestra la capacidad con licencia que ha adquirido a NetApp.
-** _PAYGO_ muestra la capacidad total consumida por modelo de consumo de licencias.
+** _Precomenting Capacity_ es la capacidad con licencia (BYOL o contratos de mercado) que adquirió a NetApp.
++
+*** _BYOL_ muestra la capacidad con licencia que ha adquirido a NetApp con este tipo de paquete.
+*** _Contratos de mercado_ muestra la capacidad con licencia que ha adquirido con un contrato de mercado para este tipo de paquete.
+
+
+** _PAYGO_ muestra la capacidad consumida por modelo de consumo de licencias.
 +
 A continuación se muestra un ejemplo de una cuenta que tiene varios paquetes de licencias:
 
 +
-image:screenshot-digital-wallet-packages.png["Captura de pantalla que muestra la capacidad consumida para los paquetes profesional, optimizado y esencial."]
+image:screenshot-digital-wallet-packages.png["Captura de pantalla que muestra la capacidad consumida, la capacidad precomprometida y la capacidad de PAYGO, o la capacidad suministrada, para los productos esenciales y los paquetes profesionales."]
 
 
 

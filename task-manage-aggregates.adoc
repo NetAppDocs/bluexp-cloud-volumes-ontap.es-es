@@ -28,7 +28,11 @@ Si se está quedando sin espacio un agregado, puede mover volúmenes a otro agre
 .Pasos
 . En el menú de navegación de la izquierda, selecciona *almacenamiento > Canvas*.
 . En la página lienzo, haga doble clic en el entorno de trabajo de Cloud Volumes ONTAP en el que desea gestionar los agregados.
-. Haga clic en el icono de menú y, a continuación, haga clic en *Avanzado > asignación avanzada*.
+. En el entorno de trabajo, haga clic en la ficha *agregados*.
+. En la pestaña Aggregates, desplácese hasta el título que desee y haga clic en *... (icono de elipse)*.
++
+image:screenshot_aggr_menu_options.png["Captura de pantalla de las opciones del menú agregados."]
+
 . Gestione los agregados:
 +
 [cols="30,70"]
@@ -36,14 +40,14 @@ Si se está quedando sin espacio un agregado, puede mover volúmenes a otro agre
 | Tarea | Acción 
 
 
-| Ver información sobre un agregado | Seleccione un agregado y haga clic en *Info*. 
+| Ver información sobre un agregado | Bajo el ... (Icono de elipse), haga clic en *Ver detalles de agregado*. 
 
 
-| Cree un volumen en un agregado específico | Seleccione un agregado y haga clic en *Crear volumen*. 
+| Cree un volumen en un agregado específico | Bajo el ... (Icono de elipse), haga clic en *Añadir volumen*. 
 
 
 | Añada discos a un agregado  a| 
-.. Seleccione un agregado y haga clic en *Agregar discos*.
+.. Bajo el ... (Icono de elipse), haga clic en *Agregar discos*.
 .. Seleccione el número de discos que desea agregar y haga clic en *Agregar*.
 +
 
@@ -56,8 +60,8 @@ ifdef::aws[]
 
 
 | Aumente la capacidad de un agregado compatible con volúmenes Elastic de Amazon EBS  a| 
-.. Seleccione un agregado y haga clic en *aumentar capacidad*.
-.. Introduzca la capacidad adicional que desea agregar y haga clic en *Agregar*.
+.. Bajo el ... (Icono de elipse), haga clic en *aumentar capacidad*.
+.. Introduzca la capacidad adicional que desea añadir y haga clic en *aumentar*.
 +
 Tenga en cuenta que debe aumentar la capacidad del agregado en un mínimo de 256 GIB o el 10 % del tamaño del agregado.
 
@@ -71,7 +75,7 @@ endif::aws[]
 
 
 | Eliminar un agregado  a| 
-.. Seleccione un agregado que no contenga ningún volumen y haga clic en *Eliminar*.
+.. Seleccione un icono de agregado que no contenga ningún volumen, haga clic en el icono *... (Icono de elipse) > Eliminar*.
 .. Vuelva a hacer clic en *Eliminar* para confirmar.
 
 

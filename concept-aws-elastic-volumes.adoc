@@ -169,10 +169,10 @@ link:task-create-aggregates.html["Aprenda a crear agregados"].
 
 * Identifique los agregados con volúmenes Elastic habilitados
 +
-Cuando vaya a la página Advanced Allocation, puede identificar si la función Elastic Volumes está habilitada en un agregado. En el ejemplo siguiente, aggr2 tiene volúmenes Elastic habilitados, mientras que aggr1 no lo tiene.
+Cuando vaya a la página Advanced Allocation, puede identificar si la función Elastic Volumes está habilitada en un agregado. En el ejemplo siguiente, aggr1 tiene volúmenes Elastic habilitados.
 
 +
-image:screenshot-elastic-volumes-enabled.png["Captura de pantalla que muestra dos agregados en los que uno tiene un campo con el texto volúmenes Elastic habilitados."]
+image:screenshot_elastic_volume_enabled.png["Captura de pantalla que muestra dos agregados en los que uno tiene un campo con el texto volúmenes Elastic habilitados."]
 
 * Añada capacidad a un agregado
 +

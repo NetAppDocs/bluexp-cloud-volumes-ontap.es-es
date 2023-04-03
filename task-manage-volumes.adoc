@@ -25,28 +25,29 @@ Puede gestionar volúmenes a medida que cambien sus necesidades de almacenamient
 .Pasos
 . En el menú de navegación de la izquierda, selecciona *almacenamiento > Canvas*.
 . En la página lienzo, haga doble clic en el entorno de trabajo Cloud Volumes ONTAP en el que desea gestionar los volúmenes.
-. Gestione sus volúmenes:
+. En el entorno de trabajo, haga clic en la ficha *Volumes*.
++
+image:screenshot_manage_vol_button.png["Captura de pantalla del botón gestionar volumen bajo la ficha volúmenes."]
+
+. En la ficha volúmenes, desplácese hasta el título de volumen deseado y, a continuación, haga clic en *gestionar volumen* para acceder al panel derecho de la gestión de volúmenes.
 +
 [cols="30,70"]
 |===
 | Tarea | Acción 
 
 
-| Permite ver la información de un volumen | Seleccione un volumen y, a continuación, haga clic en *Info*. 
+| Permite ver la información de un volumen | En acciones de volumen en el panel Administrar volúmenes, haga clic en *Ver detalles de volumen*. 
 
 
-| Editar un volumen (solo volúmenes de lectura y escritura)  a| 
-.. Seleccione un volumen y, a continuación, haga clic en *Editar*.
-.. Modifique la directiva Snapshot del volumen, la versión del protocolo NFS, la lista de control de acceso NFS (directiva de exportación) o los permisos de uso compartido y, a continuación, haga clic en *Actualizar*.
+| Obtenga el comando de montaje NFS  a| 
+.. En acciones de volumen en el panel Administrar volúmenes, haga clic en *comando de montaje*.
+.. Haga clic en *Copiar*.
 
-
-
-NOTE: Si necesita políticas de Snapshot personalizadas, puede crearlas mediante System Manager.
 
 
 
 | Clonar un volumen  a| 
-.. Seleccione un volumen y, a continuación, haga clic en *Clonar*.
+.. En acciones de volumen en el panel Administrar volúmenes, haga clic en *Clonar el volumen*.
 .. Modifique el nombre del clon según sea necesario y, a continuación, haga clic en *Clonar*.
 
 
@@ -56,37 +57,49 @@ Para obtener más información sobre los volúmenes FlexClone, consulte http://d
 
 
 
-| Restaurar datos de una copia Snapshot en un volumen nuevo  a| 
-.. Seleccione un volumen y, a continuación, haga clic en *Restaurar desde copia Snapshot*.
-.. Seleccione una copia Snapshot, introduzca un nombre para el nuevo volumen y, a continuación, haga clic en *Restaurar*.
+| Editar etiquetas de volumen (solo volúmenes de lectura/escritura)  a| 
+.. En acciones de volumen en el panel gestionar volúmenes, haga clic en *Editar etiquetas de volumen* para modificar la etiqueta de volumen asignada al volumen seleccionado.
+.. Introduzca la clave de etiqueta de volumen y el valor en los campos proporcionados.
+.. Para incluir etiquetas adicionales, haga clic en *Agregar nueva etiqueta*.
+.. Haga clic en *Guardar*.
+
+
+
+
+| Editar un volumen (solo volúmenes de lectura y escritura)  a| 
+.. En acciones de volumen en el panel Administrar volúmenes, haga clic en *Editar configuración de volumen*
+.. Modifique la directiva Snapshot del volumen, la versión del protocolo NFS, la lista de control de acceso NFS (directiva de exportación) o los permisos de uso compartido y, a continuación, haga clic en *aplicar*.
+
+
+
+NOTE: Si necesita políticas de Snapshot personalizadas, puede crearlas mediante System Manager.
+
+
+
+| Eliminar un volumen  a| 
+.. En acciones de volumen en el panel Administrar volúmenes, haga clic en *Eliminar el volumen*.
+.. En la ventana Delete Volume, introduzca el nombre del volumen que desea eliminar.
+.. Vuelva a hacer clic en *Eliminar* para confirmar.
 
 
 
 
 | Cree una copia Snapshot bajo demanda  a| 
-.. Seleccione un volumen y, a continuación, haga clic en *Crear una copia Snapshot*.
+.. En acciones de protección en el panel Administrar volúmenes, haga clic en *Crear una copia Snapshot*.
 .. Si es necesario, cambie el nombre y, a continuación, haga clic en *Crear*.
 
 
 
 
-| Obtenga el comando de montaje NFS  a| 
-.. Seleccione un volumen y, a continuación, haga clic en *comando de montaje*.
-.. Haga clic en *Copiar*.
-
-
-
-
-| Vea el IQN objetivo para un volumen iSCSI  a| 
-.. Seleccione un volumen y, a continuación, haga clic en *IQN objetivo*.
-.. Haga clic en *Copiar*.
-.. link:task-connect-lun.html["Utilice el IQN para conectarse con la LUN del hosts"].
+| Restaurar datos de una copia Snapshot en un volumen nuevo  a| 
+.. En Protection Actions (acciones de protección) en el panel Manage Volumes, haga clic en *Restore from Snapshot copy* (Restaurar desde copia Snapshot).
+.. Seleccione una copia Snapshot, introduzca un nombre para el nuevo volumen y, a continuación, haga clic en *Restaurar*.
 
 
 
 
 | Cambie el tipo de disco subyacente  a| 
-.. Seleccione un volumen y, a continuación, haga clic en *Cambiar tipo de disco y directiva de organización en niveles*.
+.. En acciones avanzadas del panel Administrar volúmenes, haga clic en *Cambiar tipo de disco*.
 .. Seleccione el tipo de disco y, a continuación, haga clic en *Cambiar*.
 
 
@@ -96,8 +109,7 @@ NOTE: BlueXP mueve el volumen a un agregado existente que usa el tipo de disco s
 
 
 | Cambie la política de organización en niveles  a| 
-.. Seleccione un volumen y, a continuación, haga clic en *Cambiar tipo de disco y directiva de organización en niveles*.
-.. Haga clic en *Editar directiva*.
+.. En acciones avanzadas del panel gestionar volúmenes, haga clic en *Cambiar directiva de organización en niveles*.
 .. Seleccione una directiva diferente y haga clic en *Cambiar*.
 
 
@@ -108,6 +120,7 @@ NOTE: BlueXP mueve el volumen a un agregado existente que usa el tipo de disco s
 
 | Eliminar un volumen  a| 
 .. Seleccione un volumen y, a continuación, haga clic en *Eliminar*.
+.. Escriba el nombre del volumen en el cuadro de diálogo.
 .. Vuelva a hacer clic en *Eliminar* para confirmar.
 
 
@@ -129,7 +142,8 @@ Si necesita cambiar el tamaño de su volumen, puede hacerlo mediante link:https:
 Si cambia sus servidores DNS o dominio de Active Directory, debe modificar el servidor CIFS en Cloud Volumes ONTAP para seguir sirviendo almacenamiento a los clientes.
 
 .Pasos
-. En el entorno de trabajo, haga clic en el icono de menú y, a continuación, haga clic en *Avanzado > Configuración CIFS*.
+. En la ficha Descripción general del entorno de trabajo, haga clic en la ficha operación situada debajo del panel derecho.
+. En el campo Configuración CIFS, haga clic en el icono *lápiz* para mostrar la ventana Configuración CIFS.
 . Especifique la configuración del servidor CIFS:
 +
 [cols="30,70"]
@@ -137,13 +151,19 @@ Si cambia sus servidores DNS o dominio de Active Directory, debe modificar el se
 | Tarea | Acción 
 
 
-| DNS Dirección IP principal y secundaria | Las direcciones IP de los servidores DNS que proporcionan resolución de nombres para el servidor CIFS. Los servidores DNS enumerados deben contener los registros de ubicación de servicio (SRV) necesarios para localizar los servidores LDAP de Active Directory y los controladores de dominio del dominio al que se unirá el servidor CIFS. Ifdef::gcp[] Si está configurando Google Managed Active Directory, se puede acceder a AD de forma predeterminada con la dirección IP 169.254.169.254. endif::gcp[] 
+| Seleccionar máquina virtual de almacenamiento (SVM) | Al seleccionar la máquina virtual de almacenamiento (SVM) de Cloud Volume ONTAP, se muestra la información CIFS configurada. 
 
 
 | Dominio de Active Directory al que unirse | El FQDN del dominio de Active Directory (AD) al que desea que se una el servidor CIFS. 
 
 
 | Credenciales autorizadas para unirse al dominio | Nombre y contraseña de una cuenta de Windows con privilegios suficientes para agregar equipos a la unidad organizativa (OU) especificada dentro del dominio AD. 
+
+
+| DNS Dirección IP principal y secundaria | Las direcciones IP de los servidores DNS que proporcionan resolución de nombres para el servidor CIFS. Los servidores DNS enumerados deben contener los registros de ubicación de servicio (SRV) necesarios para localizar los servidores LDAP de Active Directory y los controladores de dominio del dominio al que se unirá el servidor CIFS. Ifdef::gcp[] Si está configurando Google Managed Active Directory, se puede acceder a AD de forma predeterminada con la dirección IP 169.254.169.254. endif::gcp[] 
+
+
+| Dominio DNS | El dominio DNS para la máquina virtual de almacenamiento (SVM) de Cloud Volumes ONTAP. En la mayoría de los casos, el dominio es el mismo que el dominio de AD. 
 
 
 | Nombre NetBIOS del servidor CIFS | Nombre de servidor CIFS que es único en el dominio de AD. 
@@ -173,11 +193,8 @@ ifdef::gcp[]
 
 endif::gcp[]
 
-
-
-| Dominio DNS | El dominio DNS para la máquina virtual de almacenamiento (SVM) de Cloud Volumes ONTAP. En la mayoría de los casos, el dominio es el mismo que el dominio de AD. 
 |===
-. Haga clic en *Guardar*.
+. Haga clic en *establecer*.
 
 
 .Resultado
@@ -233,15 +250,14 @@ Por ejemplo, la información avanzada debería decir algo similar a lo siguiente
 
 . Identifique uno o varios volúmenes para mover fuera del agregado:
 +
-.. En el entorno de trabajo, haga clic en el icono de menú y, a continuación, haga clic en *Avanzado > asignación avanzada*.
-.. Seleccione el agregado y, a continuación, haga clic en *Info*.
-.. Expanda la lista de volúmenes.
-+
-image:screenshot_aggr_volumes.gif["Captura de pantalla: Muestra la lista de volúmenes de un agregado en el cuadro de diálogo de información de agregado."]
-
-.. Revise el tamaño de cada volumen y seleccione uno o varios volúmenes para mover fuera del agregado.
+.. En el entorno de trabajo, haga clic en la ficha *agregados*.
+.. Desplácese hasta el icono de agregado que desee y, a continuación, haga clic en el icono *... (Icono de elipse) > Ver detalles del agregado*.
+.. En la pestaña Overview de la pantalla Aggregate Details, revise el tamaño de cada volumen y seleccione uno o más volúmenes para salir del agregado.
 +
 Debe elegir volúmenes que sean lo suficientemente grandes como para liberar espacio en el agregado para evitar problemas de capacidad adicionales en el futuro.
+
++
+image:screenshot_aggr_volume_overview.png["Captura de pantalla: Muestra la lista de volúmenes de un agregado en el cuadro de diálogo de información de agregado."]
 
 
 
@@ -315,16 +331,17 @@ Es necesario mover dos o más volúmenes para evitar problemas de capacidad; sin
 .Pasos
 . Compruebe si un agregado existente tiene capacidad disponible para los volúmenes que se necesitan mover:
 +
-.. En el entorno de trabajo, haga clic en el icono de menú y, a continuación, haga clic en *Avanzado > asignación avanzada*.
-.. Seleccione cada agregado, haga clic en *Info* y, a continuación, vea la capacidad disponible (capacidad agregada menos capacidad agregada utilizada).
+.. En el entorno de trabajo, haga clic en la ficha *agregados*.
+.. Desplácese hasta el icono de agregado que desee y, a continuación, haga clic en el icono *... (Icono de elipse) > Ver detalles del agregado*.
+.. En el icono de agregado, consulte la capacidad disponible (tamaño aprovisionado menos capacidad de agregado utilizada).
 +
-image:screenshot_aggr_capacity.gif["Captura de pantalla: Muestra la capacidad total del agregado y la capacidad utilizada de agregado disponible en el cuadro de diálogo de información de agregado."]
+image:screenshot_aggr_capacity.png["Captura de pantalla: Muestra la capacidad total del agregado y la capacidad utilizada de agregado disponible en el cuadro de diálogo de información de agregado."]
 
 
 
 . Si es necesario, añada discos a un agregado existente:
 +
-.. Seleccione el agregado y, a continuación, haga clic en *Agregar discos*.
+.. Seleccione el agregado y, a continuación, haga clic en *... (Icono de elipse) > Agregar discos*.
 .. Seleccione el número de discos que desea agregar y, a continuación, haga clic en *Agregar*.
 
 
@@ -356,3 +373,14 @@ Se utiliza un esquema de nomenclatura anterior si se habilitó la organización 
 * Se especificó la opción _-Tiering-policy_ en el movimiento del volumen para cambiar la política de organización en niveles.
 * Se especificó la opción _-generate-destination-key_ en el movimiento de volúmenes.
 
+
+
+
+== Ver los volúmenes de FlexGroup
+
+Puede ver los volúmenes de FlexGroup creados a través de la CLI o de System Manager directamente a través de la pestaña volúmenes en BlueXP. Idéntico a la información proporcionada para volúmenes de FlexVol, BlueXP proporciona información detallada sobre los volúmenes de FleGroup creados mediante un icono de volúmenes dedicados. En el icono volúmenes, es posible identificar cada grupo de volúmenes FlexGroup mediante el texto sobre el ratón del icono. Además, puede identificar y ordenar los volúmenes de FlexGroup en la vista de lista Volumes a través de la columna estilo de volumen.
+
+image:screenshot_show_flexgroup_vol.png["Una captura de pantalla que muestra el texto sobre el icono de volumen FlexGroup bajo el icono volúmenes."]
+
+
+NOTE: Actualmente, solo puede ver los volúmenes de FlexGroup existentes en BlueXP. La capacidad para crear volúmenes de FlexGroup en BlueXP no está disponible pero está planificada para una versión futura.

@@ -22,8 +22,7 @@ CAUTION: Todos los discos y agregados deben crearse y eliminarse directamente de
 .Pasos
 . En el menú de navegación de la izquierda, selecciona *almacenamiento > Canvas*.
 . En la página Canvas, haga doble clic en el nombre de la instancia de Cloud Volumes ONTAP en la que desea administrar los agregados.
-. Haga clic en el icono de menú y, a continuación, haga clic en *Avanzado > asignación avanzada*.
-. Haga clic en *Agregar agregado* y, a continuación, especifique los detalles para el agregado.
+. En la ficha agregados, haga clic en *Agregar agregado* y, a continuación, especifique los detalles para el agregado.
 +
 [role="tabbed-block"]
 ====

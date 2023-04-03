@@ -191,6 +191,6 @@ Los clientes deben acceder a los volúmenes NFS y CIFS mediante la dirección IP
 
 TIP: Si mueve un volumen entre nodos de una pareja de ha, debe volver a montar el volumen con la dirección IP del otro nodo. De lo contrario, puede experimentar un rendimiento reducido. Si los clientes admiten las referencias de NFSv4 o la redirección de carpetas para CIFS, puede activar estas funciones en los sistemas de Cloud Volumes ONTAP para evitar el remontaje del volumen. Para obtener más detalles, consulte la documentación de ONTAP.
 
-Puede identificar fácilmente la dirección IP correcta de BlueXP:
+Puede identificar fácilmente la dirección IP correcta a través de la opción _Mount Command_ del panel Manage Volumes de BlueXP.
 
-image:screenshot_mount.gif["Captura de pantalla: Muestra el comando Mount que está disponible al seleccionar un volumen."]
+image:screenshot_mount_option.png["Captura de pantalla: Muestra el comando Mount que está disponible al seleccionar un volumen."]
