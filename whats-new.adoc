@@ -20,6 +20,18 @@ Las mejoras descritas en esta página son específicas de las funciones de BlueX
 
 
 
+== 4 de abril de 2023
+
+A partir de Cloud Volumes ONTAP 9.12.1 GA, las regiones de China ahora son compatibles con AWS de la siguiente manera.
+
+* Los sistemas de un solo nodo son compatibles.
+* Se admiten las licencias adquiridas directamente en NetApp.
+
+
+Para conocer la disponibilidad regional, consulte link:https://bluexp.netapp.com/cloud-volumes-global-regions["Mapas de regiones globales para Cloud Volumes ONTAP"^].
+
+
+
 == 3 de abril de 2023
 
 Los siguientes cambios se introdujeron con la versión 3.9.28 del conector.
