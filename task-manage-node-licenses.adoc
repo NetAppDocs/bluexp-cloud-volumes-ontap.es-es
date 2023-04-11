@@ -24,7 +24,7 @@ _Licencias basadas en nodos_ son el modelo de licencias de la generación anteri
 
 La _cartera digital_ le permite administrar licencias para Cloud Volumes ONTAP desde una única ubicación. Puede añadir licencias nuevas y actualizar las licencias existentes.
 
-link:concept-licensing.html["Más información acerca de las licencias de Cloud Volumes ONTAP"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Más información acerca de las licencias de Cloud Volumes ONTAP"].
 
 
 
@@ -228,6 +228,6 @@ https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.ht
 
 . Termine el sistema Cloud Volumes ONTAP que ya no necesita eliminando el entorno de trabajo original.
 +
-link:task-deleting-working-env.html["Aprenda a eliminar un entorno de trabajo de Cloud Volumes ONTAP"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deleting-working-env.html["Aprenda a eliminar un entorno de trabajo de Cloud Volumes ONTAP"].
 
 

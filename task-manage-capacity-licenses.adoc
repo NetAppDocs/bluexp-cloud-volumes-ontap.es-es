@@ -20,7 +20,7 @@ _Licencias basadas en la capacidad_ le permiten pagar por Cloud Volumes ONTAP po
 
 La _cartera digital_ le permite administrar licencias para Cloud Volumes ONTAP desde una única ubicación. Puede añadir licencias nuevas y actualizar las licencias existentes.
 
-link:concept-licensing.html["Más información acerca de las licencias de Cloud Volumes ONTAP"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Más información acerca de las licencias de Cloud Volumes ONTAP"].
 
 
 
@@ -57,7 +57,7 @@ image:screenshot_capacity-based-licenses.png["Una captura de pantalla que muestr
 +
 ** _Consumido Capacity_ muestra la capacidad de los volúmenes de ese paquete. Para obtener más detalles sobre un paquete específico, coloque el ratón sobre la información sobre herramientas.
 +
-Para comprender mejor las capacidades que se muestran para el paquete Essentials, debería estar familiarizado con cómo funciona la carga. link:concept-licensing.html#notes-about-charging["Más información sobre la carga del paquete Essentials"].
+Para comprender mejor las capacidades que se muestran para el paquete Essentials, debería estar familiarizado con cómo funciona la carga. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#notes-about-charging["Más información sobre la carga del paquete Essentials"].
 
 ** _Precomenting Capacity_ es la capacidad con licencia (BYOL o contratos de mercado) que adquirió a NetApp.
 +

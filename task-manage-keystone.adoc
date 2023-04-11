@@ -20,7 +20,7 @@ A _Keystone Flex Subscription_ es un servicio de pago por crecimiento que ofrece
 
 La _cartera digital_ le permite administrar licencias para Cloud Volumes ONTAP desde una única ubicación. Puede añadir licencias nuevas y actualizar las licencias existentes.
 
-link:concept-licensing.html["Más información acerca de las licencias de Cloud Volumes ONTAP"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Más información acerca de las licencias de Cloud Volumes ONTAP"].
 
 
 
