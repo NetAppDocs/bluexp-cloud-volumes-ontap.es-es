@@ -33,7 +33,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 La página del monedero digital le permite ver detalles sobre cada uno de sus sistemas de PAYGO Cloud Volumes ONTAP, incluidos el número de serie y el tipo de licencia de PAYGO.
 
 .Pasos
-. En el menú de navegación izquierdo, seleccione *cartera digital*.
+. En el menú de navegación de BlueXP, seleccione *Gobierno > cartera digital*.
 . En la ficha *Cloud Volumes ONTAP*, seleccione *licencias basadas en nodos* en la lista desplegable.
 . Haga clic en *PAYGO*.
 . Consulte los detalles en la tabla acerca de cada una de sus licencias de PAYGO.
@@ -56,7 +56,7 @@ Gestione las licencias que ha adquirido directamente de NetApp añadiendo y quit
 Añada una licencia basada en nodo a la cartera digital para poder seleccionar la licencia cuando cree un nuevo sistema Cloud Volumes ONTAP. El monedero digital identifica estas licencias como _unassigned_.
 
 .Pasos
-. En el menú de navegación izquierdo, seleccione *cartera digital*.
+. En el menú de navegación de BlueXP, seleccione *Gobierno > cartera digital*.
 . En la ficha *Cloud Volumes ONTAP*, seleccione *licencias basadas en nodos* en la lista desplegable.
 . Haga clic en *sin asignar*.
 . Haga clic en *Agregar licencias sin asignar*.
@@ -85,7 +85,7 @@ El intercambio de la licencia revoca la licencia de Cloud Volumes ONTAP y crea u
 La licencia convertida tiene la misma fecha de caducidad que la licencia de Cloud Volumes ONTAP.
 
 .Pasos
-. En el menú de navegación izquierdo, seleccione *cartera digital*.
+. En el menú de navegación de BlueXP, seleccione *Gobierno > cartera digital*.
 . En la ficha *Cloud Volumes ONTAP*, seleccione *licencias basadas en nodos* en la lista desplegable.
 . Haga clic en *sin asignar*.
 . Haga clic en *Licencia de Exchange*.
@@ -127,7 +127,7 @@ Cuando renueve una suscripción de BYOL con un representante de NetApp, BlueXP o
 Si BlueXP no puede acceder al archivo de licencia a través de la conexión segura a Internet, usted mismo puede obtener el archivo y luego cargarlo manualmente a BlueXP.
 
 .Pasos
-. En el menú de navegación izquierdo, seleccione *cartera digital*.
+. En el menú de navegación de BlueXP, seleccione *Gobierno > cartera digital*.
 . En la ficha *Cloud Volumes ONTAP*, seleccione *licencias basadas en nodos* en la lista desplegable.
 . En la ficha *BYOL*, amplíe los detalles de un sistema Cloud Volumes ONTAP.
 . Haga clic en el menú de acciones situado junto a la licencia del sistema y seleccione *Actualizar licencia*.
@@ -153,7 +153,7 @@ El número de licencias que se pueden comprar para un único sistema de nodo o p
 Adquiera una licencia de capacidad adicional poniéndose en contacto con nosotros a través del icono de chat situado en la parte inferior derecha de BlueXP. Tras adquirir la licencia, puede aplicarla a un sistema Cloud Volumes ONTAP.
 
 .Pasos
-. En el menú de navegación izquierdo, seleccione *cartera digital*.
+. En el menú de navegación de BlueXP, seleccione *Gobierno > cartera digital*.
 . En la ficha *Cloud Volumes ONTAP*, seleccione *licencias basadas en nodos* en la lista desplegable.
 . En la ficha *BYOL*, amplíe los detalles de un sistema Cloud Volumes ONTAP.
 . Haga clic en *Agregar licencia de capacidad*.
@@ -168,7 +168,7 @@ Adquiera una licencia de capacidad adicional poniéndose en contacto con nosotro
 Si ha ampliado el plazo de una licencia de capacidad adicional, deberá actualizar la licencia en BlueXP.
 
 .Pasos
-. En el menú de navegación izquierdo, seleccione *cartera digital*.
+. En el menú de navegación de BlueXP, seleccione *Gobierno > cartera digital*.
 . En la ficha *Cloud Volumes ONTAP*, seleccione *licencias basadas en nodos* en la lista desplegable.
 . En la ficha *BYOL*, amplíe los detalles de un sistema Cloud Volumes ONTAP.
 . Haga clic en el menú de acción situado junto a la licencia Capacity y seleccione *Actualizar licencia*.
@@ -183,7 +183,7 @@ Si ha ampliado el plazo de una licencia de capacidad adicional, deberá actualiz
 Si ha caducado una licencia de capacidad adicional y ya no está en uso, puede eliminarla en cualquier momento.
 
 .Pasos
-. En el menú de navegación izquierdo, seleccione *cartera digital*.
+. En el menú de navegación de BlueXP, seleccione *Gobierno > cartera digital*.
 . En la ficha *Cloud Volumes ONTAP*, seleccione *licencias basadas en nodos* en la lista desplegable.
 . En la ficha *BYOL*, amplíe los detalles de un sistema Cloud Volumes ONTAP.
 . Haga clic en el menú de acción situado junto a la licencia Capacity y seleccione *Eliminar licencia*.
@@ -203,7 +203,7 @@ Al convertir una licencia de evaluación a una licencia BYOL, BlueXP reinicia el
 
 
 .Pasos
-. En el menú de navegación izquierdo, seleccione *cartera digital*.
+. En el menú de navegación de BlueXP, seleccione *Gobierno > cartera digital*.
 . En la ficha *Cloud Volumes ONTAP*, seleccione *licencias basadas en nodos* en la lista desplegable.
 . Haga clic en *Eval*.
 . En la tabla, haga clic en *convertir a licencia BYOL* para un sistema Cloud Volumes ONTAP.

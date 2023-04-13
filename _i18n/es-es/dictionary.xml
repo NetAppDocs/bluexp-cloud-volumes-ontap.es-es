@@ -629,7 +629,6 @@
   <block id="e71139eb9146e38a7b8cdb5f435f8ed1" category="paragraph">Si BlueXP no puede añadir la licencia, deberá añadirla manualmente a la cartera digital usted mismo. Por ejemplo, si el conector está instalado en una ubicación que no tiene acceso a Internet, tendrá que agregar las licencias usted mismo. <block ref="2b377ff52574668221716136185f8476" category="inline-xref-macro-rx"></block>.</block>
   <block id="03021ab228ad1d1c921bbf536e2913a4" category="section-title">Vea la capacidad consumida en su cuenta</block>
   <block id="e54d493645f297f788982c1215f721bf" category="paragraph">El cartera digital le muestra la capacidad total que consume su cuenta y la capacidad que consume el paquete de licencias. Esto puede ayudarle a entender cómo se le está cargando y si necesita adquirir capacidad adicional.</block>
-  <block id="c0d3ce4ea1bcde455d433b9182cdde33" category="list-text">En el menú de navegación izquierdo, seleccione *cartera digital*.</block>
   <block id="29f9c9781f75b695cb6c7c93910280cd" category="list-text">_Total consumido Capacity_ es la capacidad total aprovisionada de todos los sistemas de Cloud Volumes ONTAP de su cuenta de NetApp. La carga se basa en el tamaño aprovisionado de cada volumen, independientemente del espacio local, utilizado, almacenado o efectivo dentro del volumen.</block>
   <block id="4cca90046112da5c5d3a703dafebbb7e" category="list-text">_Total PAYGO_ es la capacidad total aprovisionada mediante suscripciones a Cloud Marketplace. La carga mediante PAYGO se utiliza sólo si la capacidad consumida es superior a la capacidad con licencia o si no hay ninguna licencia BYOL disponible en la cartera digital.</block>
   <block id="ea7c202c277e5ccf92e08be29b4a64e9" category="list-text">En el resumen, consulte la capacidad usada para cada uno de sus paquetes de licencias.</block>
@@ -1402,7 +1401,6 @@
   <block id="144db5f18aa0a48a9fe63c8b55bd0275" category="paragraph">A _Keystone Flex Subscription_ es un servicio de pago por crecimiento que ofrece NetApp.</block>
   <block id="4edb70089cdbc18de22fa9ead5189bc8" category="section-title">Autorizar tu cuenta</block>
   <block id="5187c95ccaa9cce754eff51fdf83a80b" category="paragraph">Antes de poder utilizar y gestionar las suscripciones a Keystone Flex en BlueXP, debe ponerse en contacto con NetApp para autorizar su cuenta de usuario de BlueXP con sus suscripciones a Keystone Flex.</block>
-  <block id="34050b9fba3323c4ec7fb2d89aa95a36" category="list-text">Haga clic en *Suscripción Keystone Flex*.</block>
   <block id="daf4ae396784c74ec2cbf002eaaa25f4" category="list-text">Si ve la página *Bienvenido a NetApp Keystone*, envíe un correo electrónico a la dirección que aparece en la página.</block>
   <block id="16692c26ca4528e651bbb36d93c465c7" category="paragraph">Un representante de NetApp procesará su solicitud al autorizar a su cuenta de usuario a acceder a las suscripciones.</block>
   <block id="ed53b278164ebd0a6b2a2a8f63581c09" category="list-text">Vuelva a la *Suscripción de Keystone Flex* para ver sus suscripciones.</block>
@@ -4695,7 +4693,6 @@
   <block id="65501384f1f7cf6e689e492914a698c1" category="paragraph"><block ref="65501384f1f7cf6e689e492914a698c1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6ccb38ae114176203c2592f430a889d7" category="list-text">Si está utilizando una licencia de PAYGO basada en nodos, puede elegir opcionalmente una licencia y un tipo de máquina diferente haciendo clic en el icono de lápiz situado junto a *Tipo de licencia*.</block>
   <block id="f5e2fedd06abf8315436e3971f9755de" category="list-text">Elija un tipo de máquina, active la casilla de verificación para confirmar que comprende las implicaciones del cambio y, a continuación, haga clic en *Cambiar*.</block>
-  <block id="1bb49759ca91107ea85449bc0249ce13" category="list-text">Con *licencias basadas en capacidad* seleccionadas, consulte el resumen de paquetes, que muestra la capacidad consumida, la capacidad total preconfirmada y la capacidad total de PAYGO.</block>
   <block id="def968f0e18d0f7aed6421ac81039272" category="list-text">_Total_capacidad precomprometida_ es la capacidad total con licencia (contrato BYOL o Marketplace) que ha adquirido a NetApp.</block>
   <block id="6805f1cb53971ab8cf6263bd093c5d20" category="paragraph">A continuación se muestra un ejemplo de un resumen de paquetes Cloud Volumes ONTAP en el monedero digital:</block>
   <block id="e9132fa20985cf4b3d5004a6a371ecab" category="inline-image-macro">Una captura de pantalla que muestra un resumen de paquetes Cloud Volumes ONTAP con la capacidad total consumida, la capacidad total comprometida por adelantado (contratos BYOL y Marketplace) y la capacidad total de PAYGO o aprovisionada en cartera digital.</block>
@@ -4868,4 +4865,8 @@
   <block id="78f9ca50556d02ff8700efd01af0d528" category="paragraph"><block ref="78f9ca50556d02ff8700efd01af0d528" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9cc2b6cdaf0b50459353a2d67c0baa80" category="section-title">Tiempo de puesta en marcha reducido</block>
   <block id="66d5639668d7c3e585771304940a252b" category="paragraph">Redujimos la cantidad de tiempo que se tarda en poner en marcha un entorno de trabajo de Cloud Volumes ONTAP en Microsoft Azure o en Google Cloud cuando se habilita la velocidad de escritura normal. El tiempo de puesta en marcha ahora es 3-4 minutos más corto, de media.</block>
+  <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">En el menú de navegación de BlueXP, seleccione *Gobierno &gt; cartera digital*.</block>
+  <block id="e83a5b2754cd537ac6467dc025115726" category="list-text">En la pestaña *Cloud Volumes ONTAP*, mantenga seleccionada la opción *Licencias basadas en capacidad*.</block>
+  <block id="2bd469c6a2a1a44818909050205d416b" category="list-text">Consulte el resumen de los paquetes, donde se muestra la capacidad consumida, la capacidad asignada previamente total y la capacidad total de PAYGO.</block>
+  <block id="492847bcbc9ec0bd3075b612aa43e4a7" category="list-text">Selecciona *Keystone*.</block>
 </blocks>
