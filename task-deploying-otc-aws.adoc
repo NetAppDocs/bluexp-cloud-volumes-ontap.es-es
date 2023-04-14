@@ -25,7 +25,7 @@ Necesita lo siguiente para crear un entorno de trabajo.
 [[licensing]]
 * Un conector que está listo y en funcionamiento.
 +
-** Usted debe tener un https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Conector asociado al área de trabajo"^].
+** Usted debe tener un https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Conector asociado al área de trabajo"^].
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Debe estar preparado para dejar el conector funcionando en en todo momento"^].
 
 
@@ -56,7 +56,7 @@ Inmediatamente después de crear el entorno de trabajo, BlueXP inicia una instan
 . En el menú de navegación de la izquierda, selecciona *almacenamiento > Canvas*.
 . [[suscribirse]]en la página Canvas, haga clic en *Agregar entorno de trabajo* y siga las indicaciones.
 . *Elija una ubicación*: Seleccione *Amazon Web Services* y *Cloud Volumes ONTAP Single Node*.
-. Si se le solicita, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Cree un conector"^].
+. Si se le solicita, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Cree un conector"^].
 . *Detalles y credenciales*: Si lo desea, puede cambiar las credenciales y la suscripción de AWS, introducir un nombre de entorno de trabajo, agregar etiquetas y, a continuación, introducir una contraseña.
 +
 Algunos de los campos en esta página son claros y explicativos. En la siguiente tabla se describen los campos que podrían presentar dificultades:

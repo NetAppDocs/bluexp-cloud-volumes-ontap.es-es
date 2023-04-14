@@ -22,7 +22,7 @@ Necesita lo siguiente para crear un entorno de trabajo.
 [[licensing]]
 * Un conector que está listo y en funcionamiento.
 +
-** Usted debe tener un https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Conector asociado al área de trabajo"^].
+** Usted debe tener un https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Conector asociado al área de trabajo"^].
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Debe estar preparado para dejar el conector funcionando en en todo momento"^].
 
 
@@ -57,7 +57,7 @@ Si desea iniciar un sistema Cloud Volumes ONTAP de un solo nodo en Azure, tendr�
 . En el menú de navegación de la izquierda, selecciona *almacenamiento > Canvas*.
 . [[suscribirse]]en la página Canvas, haga clic en *Agregar entorno de trabajo* y siga las indicaciones.
 . *Elija una ubicación*: Seleccione *Microsoft Azure* y *Cloud Volumes ONTAP Single Node*.
-. Si se le solicita, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Cree un conector"^].
+. Si se le solicita, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Cree un conector"^].
 . *Detalles y credenciales*: De forma opcional, cambie las credenciales y la suscripción de Azure, especifique un nombre de clúster, añada etiquetas si es necesario y, a continuación, especifique credenciales.
 +
 En la siguiente tabla se describen los campos que podrían presentar dificultades:
@@ -280,7 +280,7 @@ Si desea iniciar un par de ha de Cloud Volumes ONTAP en Azure, debe crear un ent
 .Pasos
 . En el menú de navegación de la izquierda, selecciona *almacenamiento > Canvas*.
 . [[suscribirse]]en la página Canvas, haga clic en *Agregar entorno de trabajo* y siga las indicaciones.
-. Si se le solicita, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Cree un conector"^].
+. Si se le solicita, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Cree un conector"^].
 . *Detalles y credenciales*: De forma opcional, cambie las credenciales y la suscripción de Azure, especifique un nombre de clúster, añada etiquetas si es necesario y, a continuación, especifique credenciales.
 +
 En la siguiente tabla se describen los campos que podrían presentar dificultades:
