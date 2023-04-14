@@ -88,7 +88,7 @@ Seleccione el proyecto en el que desea que resida Cloud Volumes ONTAP. El proyec
 Si no ve ningún proyecto adicional en la lista desplegable, aún no ha asociado la cuenta de servicio de BlueXP a otros proyectos. Vaya a la consola de Google Cloud, abra el servicio IAM y seleccione el proyecto. Agregue la cuenta de servicio con la función BlueXP a ese proyecto. Deberá repetir este paso con cada proyecto.
 
 
-NOTE: Esta es la cuenta de servicio que configuró para BlueXP, link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html#set-up-a-service-account-for-the-connector["como se describe en esta página"^].
+NOTE: Esta es la cuenta de servicio que configuró para BlueXP, link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["como se describe en esta página"^].
 
 Haga clic en *Agregar suscripción* para asociar las credenciales seleccionadas a una suscripción.
 
@@ -314,7 +314,7 @@ Seleccione el proyecto en el que desea que resida Cloud Volumes ONTAP. El proyec
 Si no ve ningún proyecto adicional en la lista desplegable, aún no ha asociado la cuenta de servicio de BlueXP a otros proyectos. Vaya a la consola de Google Cloud, abra el servicio IAM y seleccione el proyecto. Agregue la cuenta de servicio con la función BlueXP a ese proyecto. Deberá repetir este paso con cada proyecto.
 
 
-NOTE: Esta es la cuenta de servicio que configuró para BlueXP, link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html#set-up-a-service-account-for-the-connector["como se describe en esta página"^].
+NOTE: Esta es la cuenta de servicio que configuró para BlueXP, link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["como se describe en esta página"^].
 
 Haga clic en *Agregar suscripción* para asociar las credenciales seleccionadas a una suscripción.
 

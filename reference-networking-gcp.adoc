@@ -184,7 +184,7 @@ Para un par de alta disponibilidad, se necesitan cuatro VPC. Cada una de esas VP
 
 Un VPC compartido permite configurar y gestionar de forma centralizada las redes virtuales de varios proyectos. Puede configurar redes VPC compartidas en el _proyecto host_ e implementar las instancias de máquina virtual de conector y Cloud Volumes ONTAP en un _proyecto de servicio_. https://cloud.google.com/vpc/docs/shared-vpc["Documentación de Google Cloud: Información general sobre VPC compartido"^].
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html#shared-vpc-permissions["Revisar los permisos de VPC compartido requeridos que se cubren en la implementación del conector"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Revisar los permisos de VPC compartido requeridos que se cubren en la implementación del conector"^]
 
 
 
