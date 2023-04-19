@@ -13,7 +13,7 @@ summary: Utilice Azure Key Vault para el servicio de gestión de claves de terce
 
 Puede utilizar link:https://docs.microsoft.com/en-us/azure/key-vault/general/basic-concepts["Azure Key Vault (AKV)"^] Para proteger sus claves de cifrado de ONTAP en una aplicación puesta en marcha de Azure.
 
-AKV puede utilizarse para proteger link:https://docs.netapp.com/us-en/ontap/configure-netapp-volume-encryption-concept.html["Claves de cifrado de volúmenes de NetApp (NVE)"^] Solo para SVM de datos.
+AKV puede utilizarse para proteger link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-netapp-volume-encryption-concept.html["Claves de cifrado de volúmenes de NetApp (NVE)"^] Solo para SVM de datos.
 
 La gestión de claves con AKV se puede habilitar con la CLI o la API DE REST de ONTAP.
 
