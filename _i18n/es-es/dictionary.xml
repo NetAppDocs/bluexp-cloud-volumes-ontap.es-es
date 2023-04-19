@@ -1738,7 +1738,6 @@
   <block id="7dc27ef59812147ac25a6539ca8487d1" category="admonition">Si mueve un volumen entre nodos de una pareja de ha, debe volver a montar el volumen con la dirección IP del otro nodo. De lo contrario, puede experimentar un rendimiento reducido. Si los clientes admiten las referencias de NFSv4 o la redirección de carpetas para CIFS, puede activar estas funciones en los sistemas de Cloud Volumes ONTAP para evitar el remontaje del volumen. Para obtener más detalles, consulte la documentación de ONTAP.</block>
   <block id="7e3a4c0ec1aee45acf094839bb9c449f" category="summary">Gestione sus licencias basadas en nodos en la cartera digital para garantizar que cada sistema Cloud Volumes ONTAP tiene una licencia válida con la capacidad necesaria.</block>
   <block id="de94398a333e3b7bdafad2ddf3232331" category="doc">Gestione licencias basadas en nodos</block>
-  <block id="15d021d83ccb68dbaf63683ce6741fee" category="paragraph">Gestione licencias basadas en nodos en la cartera digital para garantizar que cada sistema Cloud Volumes ONTAP tiene una licencia válida con la capacidad necesaria.</block>
   <block id="4627bd080634e9380c75a1cc04a09486" category="paragraph">_Licencias basadas en nodos_ son el modelo de licencias de la generación anterior (y no están disponibles para nuevos clientes):</block>
   <block id="81f9d97336a30fb7be6f8d770fee25eb" category="list-text">Las licencias BYOL que se compraron a NetApp</block>
   <block id="17ac9e85cf5b6f7b77acf61fb7721242" category="list-text">Suscripciones de pago por horas de uso (PAYGO) desde el mercado de su proveedor de cloud</block>
@@ -4869,4 +4868,7 @@
   <block id="bda3783d2bc581168e75face42b077fc" category="admonition">Esta es la cuenta de servicio que configuró para BlueXP, <block ref="217ece91c776cfab87e2daa3df8115e9" category="inline-link-macro-rx"></block>.</block>
   <block id="00da77f8fd6be3d642021bca988d9b5e" category="paragraph"><block ref="00da77f8fd6be3d642021bca988d9b5e" category="inline-link-rx"></block></block>
   <block id="ece137c555d8c53c8378fee53f6273c4" category="paragraph">AKV puede utilizarse para proteger <block ref="defc94716dcceab396c0509ed7db9366" category="inline-link-macro-rx"></block> Solo para SVM de datos.</block>
+  <block id="c6a56bb8eca094c529c75a2c22c92bcc" category="inline-link-macro">Obtenga más información sobre cómo gestionar las licencias basadas en nodos</block>
+  <block id="6dbf080f75126585a20cc8d6d87df22f" category="paragraph"><block ref="6b55a043b67b958778673f44bc8845b9" category="inline-link-macro-rx"></block>.</block>
+  <block id="5a91158751eaabe4d195cd633fa37db6" category="paragraph">Gestiona las licencias basadas en nodos en la cartera digital para garantizar que cada sistema de Cloud Volumes ONTAP tenga una licencia válida con la capacidad requerida.</block>
 </blocks>
