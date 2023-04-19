@@ -1494,7 +1494,6 @@
   <block id="5ce440fd1a40346ea0f26ec2424bfcb2" category="paragraph">Debe haberse preparado eligiendo una configuración y obteniendo de su administrador información de red de Google Cloud. Para obtener más información, consulte <block ref="7c40283f4f533a5903d1033c57ef27f4" category="inline-link-macro-rx"></block>.</block>
   <block id="b33b7497784a31fa197bca9debbfddea" category="list-text">Comprender qué es necesario para configurar las licencias para Cloud Volumes ONTAP.</block>
   <block id="b2084f1d9eba331a28867d15c742284e" category="inline-link-macro">Aprenda a configurar las licencias</block>
-  <block id="1093810fe4a9e55d156722b8332da3cd" category="paragraph"><block ref="9b79239dba046d18af2dfc2ca929db17" category="inline-link-macro-rx"></block>.</block>
   <block id="fb387d3403e9d0f4168631a5c1e65d3d" category="inline-link">habilitado en el proyecto</block>
   <block id="3f7dd317abe229076594c229e96f375d" category="list-text">Deberían tener las API de Google Cloud<block ref="2bf1d71c4d11fe94040400dbdd9bbe2e" category="inline-link-rx"></block>:</block>
   <block id="733156037751f70e529112a458e8ade6" category="section-title">Iniciar un sistema de un único nodo en Google Cloud</block>
@@ -3724,8 +3723,6 @@
   <block id="fef06ca11f3dec6f0be51962fd93388c" category="section-title">Licencias de sistema BYOL</block>
   <block id="f9402b876a835ea0ecd00da4d201433a" category="paragraph">Una licencia basada en nodo proporciona hasta 368 TIB de capacidad para un solo nodo o un par de alta disponibilidad.</block>
   <block id="7bf9d9c18215351b0d16f4f9343c9700" category="paragraph">Puede comprar varias licencias para un sistema BYOL de Cloud Volumes ONTAP con el fin de asignar más de 368 TIB de capacidad. Por ejemplo, podría comprar dos licencias para asignar hasta 736 TIB de capacidad a Cloud Volumes ONTAP. O usted podría comprar cuatro licencias para obtener hasta 1.4 PIB.</block>
-  <block id="c695cd123d8c1b69b12f443c42ad98f9" category="inline-link">Consulte si tiene alguna licencia disponible para utilizar</block>
-  <block id="d5777fa0c0510a8e0af55b024f765d10" category="admonition">Es posible que algunos sistemas de almacenamiento ONTAP en las instalaciones que haya adquirido incluyan una licencia gratuita de Cloud Volumes ONTAP. Puede usar la licencia para crear un sistema Cloud Volumes ONTAP nuevo o aplicar la licencia a un sistema Cloud Volumes ONTAP existente para ampliar la capacidad.<block ref="e219f91c05893e1e7e9c773a8103d487" category="inline-link-rx"></block>.</block>
   <block id="ba23388576c937a1743b84554bd13c72" category="inline-link-macro">organización en niveles de los datos inactivos en el almacenamiento de objetos</block>
   <block id="255a885478279e7778252b0fbb8e555b" category="inline-link">Límites de almacenamiento en las notas de la versión de Cloud Volumes ONTAP</block>
   <block id="b64442e22e4baecde15d6214c922aa65" category="paragraph">Tenga en cuenta que los límites de disco pueden impedir que llegue al límite de capacidad utilizando solo discos. Puede superar el límite de discos mediante <block ref="c80d06c6bbd06cbbb7b267be96c5b90c" category="inline-link-macro-rx"></block>. Para obtener más información acerca de los límites de disco, consulte<block ref="02f1a1c120ffb5f37ea9d7c14b5f1158" category="inline-link-rx"></block>.</block>
@@ -4871,4 +4868,5 @@
   <block id="c6a56bb8eca094c529c75a2c22c92bcc" category="inline-link-macro">Obtenga más información sobre cómo gestionar las licencias basadas en nodos</block>
   <block id="6dbf080f75126585a20cc8d6d87df22f" category="paragraph"><block ref="6b55a043b67b958778673f44bc8845b9" category="inline-link-macro-rx"></block>.</block>
   <block id="5a91158751eaabe4d195cd633fa37db6" category="paragraph">Gestiona las licencias basadas en nodos en la cartera digital para garantizar que cada sistema de Cloud Volumes ONTAP tenga una licencia válida con la capacidad requerida.</block>
+  <block id="0c1a89022d40f1a10025e9f9354168a0" category="paragraph"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block>.</block>
 </blocks>

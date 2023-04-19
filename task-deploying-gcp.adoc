@@ -36,7 +36,7 @@ Debe haberse preparado eligiendo una configuración y obteniendo de su administr
 
 * Comprender qué es necesario para configurar las licencias para Cloud Volumes ONTAP.
 +
-link:task-set-up-licensing-gcp.html["Aprenda a configurar las licencias"].
+link:task-set-up-licensing-google.html["Aprenda a configurar las licencias"].
 
 * Deberían tener las API de Google Cloud https://cloud.google.com/apis/docs/getting-started#enabling_apis["habilitado en el proyecto"^]:
 +
@@ -132,7 +132,7 @@ Si deja que BlueXP genere la política de firewall para usted, debe elegir cómo
 . *Métodos de carga y cuenta de NSS*: Especifique la opción de carga que desea utilizar con este sistema y, a continuación, especifique una cuenta en la página de soporte de NetApp.
 +
 ** link:concept-licensing.html["Obtenga información sobre las opciones de licencia para Cloud Volumes ONTAP"].
-** link:task-set-up-licensing-gcp.html["Aprenda a configurar las licencias"].
+** link:task-set-up-licensing-google.html["Aprenda a configurar las licencias"].
 
 
 . *Paquetes preconfigurados*: Seleccione uno de los paquetes para implementar rápidamente un sistema Cloud Volumes ONTAP, o haga clic en *Crear mi propia configuración*.
@@ -362,7 +362,7 @@ Si deja que BlueXP genere la política de firewall para usted, debe elegir cómo
 . *Métodos de carga y cuenta de NSS*: Especifique la opción de carga que desea utilizar con este sistema y, a continuación, especifique una cuenta en la página de soporte de NetApp.
 +
 ** link:concept-licensing.html["Obtenga información sobre las opciones de licencia para Cloud Volumes ONTAP"].
-** link:task-set-up-licensing-gcp.html["Aprenda a configurar las licencias"].
+** link:task-set-up-licensing-google.html["Aprenda a configurar las licencias"].
 
 
 . *Paquetes preconfigurados*: Seleccione uno de los paquetes para implementar rápidamente un sistema Cloud Volumes ONTAP, o haga clic en *Crear mi propia configuración*.

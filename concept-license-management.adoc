@@ -33,9 +33,6 @@ Puede comprar varias licencias para un sistema BYOL de Cloud Volumes ONTAP con e
 
 El número de licencias que se pueden comprar para un único sistema de nodo o par de alta disponibilidad es ilimitado.
 
-
-NOTE: Es posible que algunos sistemas de almacenamiento ONTAP en las instalaciones que haya adquirido incluyan una licencia gratuita de Cloud Volumes ONTAP. Puede usar la licencia para crear un sistema Cloud Volumes ONTAP nuevo o aplicar la licencia a un sistema Cloud Volumes ONTAP existente para ampliar la capacidad. https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-managing-ontap.html#viewing-unused-cloud-volumes-ontap-licenses["Consulte si tiene alguna licencia disponible para utilizar"^].
-
 Tenga en cuenta que los límites de disco pueden impedir que llegue al límite de capacidad utilizando solo discos. Puede superar el límite de discos mediante link:concept-data-tiering.html["organización en niveles de los datos inactivos en el almacenamiento de objetos"]. Para obtener más información acerca de los límites de disco, consulte https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Límites de almacenamiento en las notas de la versión de Cloud Volumes ONTAP"^].
 
 
