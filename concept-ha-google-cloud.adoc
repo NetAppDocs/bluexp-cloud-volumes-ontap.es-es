@@ -81,9 +81,9 @@ Una configuración de alta disponibilidad mantiene una alta disponibilidad de lo
 +
 Sus datos son coherentes transcionalmente sin pérdida de datos.
 
-* El objetivo de tiempo de recuperación (RTO) es de 60 segundos.
+* El objetivo de tiempo de recuperación (RTO) es 120 segundos.
 +
-En el caso de que se produzca una interrupción del servicio, los datos deben estar disponibles en 60 segundos o menos.
+En caso de que se produzca un fallo, los datos deberán estar disponibles en 120 segundos o menos.
 
 
 

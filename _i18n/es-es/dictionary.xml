@@ -1684,7 +1684,6 @@
   <block id="cd5ddfb19671526301ef6b32141e2e79" category="section-title">RPO y RTO</block>
   <block id="723596a60ea78fba91bcc7acb47cb786" category="paragraph">Una configuración de alta disponibilidad mantiene una alta disponibilidad de los datos de la siguiente manera:</block>
   <block id="f04b83c6c15bc920bde6b3bda82d692e" category="list-text">El objetivo de punto de recuperación (RPO) es 0 segundos. Sus datos son coherentes transcionalmente sin pérdida de datos.</block>
-  <block id="9a761447afd0b14671defde47da1673b" category="list-text">El objetivo de tiempo de recuperación (RTO) es de 60 segundos. En el caso de que se produzca una interrupción del servicio, los datos deben estar disponibles en 60 segundos o menos.</block>
   <block id="218815dee60a5e42cd50732e4ad90420" category="section-title">Modelos de puesta en marcha de ALTA DISPONIBILIDAD</block>
   <block id="a2efc5fc54fd68c09324deea01c6bc06" category="paragraph">Puede garantizar la alta disponibilidad de sus datos mediante la implementación de una configuración de alta disponibilidad en varias zonas de disponibilidad (AZs) o en un único AZ. Debe consultar más detalles sobre cada configuración para elegir la que mejor se ajuste a sus necesidades.</block>
   <block id="bc2a46f921494df9fc5f911909c03874" category="section-title">Múltiples zonas de disponibilidad</block>
@@ -2676,8 +2675,6 @@
   <block id="48c4b347a69acc97f71ef6775bf6260d" category="list-text">Para Debian, el usuario predeterminado de la nube es<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block>. Google Cloud crea y añade certificados para el<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> Usuario cuando se solicita acceso SSH a través de la consola de Google Cloud o la línea de comandos gcloud. Puede especificar<block ref="d338b3f0f405eb5e51c8cc1e5ca66f02" prefix=" " category="inline-code"></block> para obtener privilegios de root.</block>
   <block id="b9c7a6d43bec359b40ab04efb944c7c4" category="list-text">El objetivo de punto de recuperación (RPO) es 0 segundos.</block>
   <block id="bf7c76034279e30c18d14dc7990ee330" category="paragraph">Sus datos son coherentes transcionalmente sin pérdida de datos.</block>
-  <block id="856d7ffe64733ea6b89924ff6410d489" category="list-text">El objetivo de tiempo de recuperación (RTO) es de 60 segundos.</block>
-  <block id="a440b74cbaeb3025f8a909b3dd0782ed" category="paragraph">En el caso de que se produzca una interrupción del servicio, los datos deben estar disponibles en 60 segundos o menos.</block>
   <block id="8bf571523805ed82609d8283f739355b" category="paragraph">Puede garantizar la alta disponibilidad de los datos mediante la implementación de una configuración de alta disponibilidad en varias zonas o en una sola zona.</block>
   <block id="6bf98e65a399f1401fd22fb5e31efc11" category="paragraph">A diferencia de un clúster de ONTAP, el almacenamiento de una pareja de alta disponibilidad de Cloud Volumes ONTAP en GCP no se comparte entre los nodos. En su lugar, los datos se reflejan de forma síncrona entre los nodos, de modo que los datos estén disponibles en caso de fallo.</block>
   <block id="ae08e6c650418eed0656a1a4c7cf7330" category="section-title">Expectativas de rendimiento para una configuración de alta disponibilidad</block>
@@ -4869,4 +4866,7 @@
   <block id="6dbf080f75126585a20cc8d6d87df22f" category="paragraph"><block ref="6b55a043b67b958778673f44bc8845b9" category="inline-link-macro-rx"></block>.</block>
   <block id="5a91158751eaabe4d195cd633fa37db6" category="paragraph">Gestiona las licencias basadas en nodos en la cartera digital para garantizar que cada sistema de Cloud Volumes ONTAP tenga una licencia válida con la capacidad requerida.</block>
   <block id="0c1a89022d40f1a10025e9f9354168a0" category="paragraph"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block>.</block>
+  <block id="ed40352f9ed490b733344d4ac872054a" category="list-text">El objetivo de tiempo de recuperación (RTO) es 120 segundos. En caso de que se produzca un fallo, los datos deberán estar disponibles en 120 segundos o menos.</block>
+  <block id="1b4ae0cf922638f65d049bc6332ca497" category="list-text">El objetivo de tiempo de recuperación (RTO) es 120 segundos.</block>
+  <block id="dbbdb92d530311690266ca56ba26d998" category="paragraph">En caso de que se produzca un fallo, los datos deberán estar disponibles en 120 segundos o menos.</block>
 </blocks>
