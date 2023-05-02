@@ -83,4 +83,8 @@ image:screenshot_turn_off_redesign.png["Captura de pantalla: Muestra el icono pa
 +
 Detener el sistema puede tardar hasta unos minutos. Puede reiniciar los sistemas más adelante desde la página del entorno de trabajo.
 
++
+
+NOTE: Las Snapshot se crean automáticamente al reiniciar.
+
 

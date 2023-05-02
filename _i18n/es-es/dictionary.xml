@@ -4869,4 +4869,5 @@
   <block id="ed40352f9ed490b733344d4ac872054a" category="list-text">El objetivo de tiempo de recuperación (RTO) es 120 segundos. En caso de que se produzca un fallo, los datos deberán estar disponibles en 120 segundos o menos.</block>
   <block id="1b4ae0cf922638f65d049bc6332ca497" category="list-text">El objetivo de tiempo de recuperación (RTO) es 120 segundos.</block>
   <block id="dbbdb92d530311690266ca56ba26d998" category="paragraph">En caso de que se produzca un fallo, los datos deberán estar disponibles en 120 segundos o menos.</block>
+  <block id="51f3f3385ba782f2b8752155e908cf60" category="admonition">Las Snapshot se crean automáticamente al reiniciar.</block>
 </blocks>
