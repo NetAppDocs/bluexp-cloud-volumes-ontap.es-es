@@ -79,6 +79,73 @@ image:screenshot-digital-wallet-packages.png["Captura de pantalla que muestra la
 
 
 
+== Descargar informes de uso
+
+Los administradores de cuentas pueden descargar cuatro informes de uso desde la cartera digital en BlueXP. Estos informes de uso proporcionan detalles sobre la capacidad de sus suscripciones y cómo se le cobra por los recursos de sus suscripciones a Cloud Volumes ONTAP. Los informes descargables capturan datos en un momento específico y se pueden compartir fácilmente con otros.
+
+image:screenshot-digital-wallet-usage-report.png["La captura de pantalla muestra la página de licencias basadas en capacidad de Cloud Volumes ONTAP de la cartera digital y resalta el botón de informe de uso."]
+
+Los siguientes informes están disponibles para su descarga. Los valores de capacidad que se muestran son en TiB.
+
+* *Uso de alto nivel*: Este informe te muestra exactamente lo que hay en la tarjeta “Resumen de Paquetes Cloud Volumes ONTAP” en la billetera digital. Incluye la siguiente información:
++
+** La capacidad total consumida
+** Capacidad precomprometida total
+** Capacidad total de BYOL
+** Capacidad total de contratos del mercado
+** Capacidad total de PAYGO
+
+
+* *Uso del paquete Cloud Volumes ONTAP*: Este informe le muestra exactamente lo que hay en las tarjetas de paquete en la cartera digital. Incluye la siguiente información para cada paquete excepto el paquete de I/O optimizado:
++
+** La capacidad total consumida
+** Capacidad precomprometida total
+** Capacidad total de BYOL
+** Capacidad total de contratos del mercado
+** Capacidad total de PAYGO
+
+
+* *Uso de VM de almacenamiento*: Este informe muestra cómo se desglosa la capacidad cargada en los sistemas Cloud Volumes ONTAP y las máquinas virtuales de almacenamiento (SVM). Esta información no está disponible en ninguna pantalla de la cartera digital. Incluye la siguiente información:
++
+** ID de entorno de trabajo (aparece como UUID)
+** Cloud
+** ID de cuenta de NetApp
+** Configuración del entorno de trabajo
+** Nombre de SVM
+** Capacidad aprovisionada
+** Acumulación de capacidad cargada
+** Plazo de facturación del mercado
+** Paquete o función de Cloud Volumes ONTAP
+** Cargando el nombre de la suscripción de SaaS Marketplace
+** Cargando el ID de suscripción de SaaS Marketplace
+
+
+* *Uso de volúmenes*: Este informe muestra cómo la capacidad de carga se desglosa por volúmenes en un entorno de trabajo. Esta información no está disponible en ninguna pantalla de la cartera digital. Incluye la siguiente información:
++
+** ID de entorno de trabajo (aparece como UUID)
+** Nombre de SVN
+** ID del volumen
+** Tipo de volumen
+** Capacidad aprovisionada del volumen
++
+
+NOTE: Los volúmenes FlexClone no se incluyen en este informe, ya que estos tipos de volúmenes no generan cargos.
+
+
+
+
+
+.Pasos
+. En el menú de navegación de BlueXP, seleccione *Gobierno > cartera digital*.
+. En la pestaña *Cloud Volumes ONTAP*, mantenga seleccionada la opción *Licencias basadas en capacidad* y haga clic en *Informe de uso*.
++
+El informe de uso se descarga.
+
+. Abra el archivo descargado para acceder a los informes.
+
+
+
+
 == Agregue licencias adquiridas a su cuenta
 
 Si no ve sus licencias adquiridas en la cartera digital, tendrá que añadir las licencias a BlueXP para que la capacidad esté disponible para Cloud Volumes ONTAP.

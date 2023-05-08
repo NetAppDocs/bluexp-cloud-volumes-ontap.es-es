@@ -4870,4 +4870,55 @@
   <block id="1b4ae0cf922638f65d049bc6332ca497" category="list-text">El objetivo de tiempo de recuperación (RTO) es 120 segundos.</block>
   <block id="dbbdb92d530311690266ca56ba26d998" category="paragraph">En caso de que se produzca un fallo, los datos deberán estar disponibles en 120 segundos o menos.</block>
   <block id="51f3f3385ba782f2b8752155e908cf60" category="admonition">Las Snapshot se crean automáticamente al reiniciar.</block>
+  <block id="71bff2737bdd059023a4784358e71a64" category="section-title">7 de mayo de 2023</block>
+  <block id="3b9e0ca0be1cb4ee263fc0a386a705bc" category="paragraph">Los siguientes cambios se introdujeron con la versión 3.9.29 del conector.</block>
+  <block id="ef33a11b5d2090c4cf0e98ca1b79cc2d" category="section-title">La región de Qatar ahora es compatible con Google Cloud</block>
+  <block id="357b47742b71d8fe5b5936de05c522ec" category="paragraph">La región de Qatar ahora es compatible con Google Cloud para Cloud Volumes ONTAP y el conector para Cloud Volumes ONTAP 9.12.1 GA y posterior.</block>
+  <block id="c8dc4f54d280ddaf5974f6c903e2152f" category="section-title">La región central de Suecia ahora es compatible con Azure</block>
+  <block id="787bf3f02b45f65c827e46d88d4e7b24" category="paragraph">La región central de Suecia ahora es compatible con Azure para Cloud Volumes ONTAP y el conector para Cloud Volumes ONTAP 9.12.1 GA y posteriores.</block>
+  <block id="d38001cc976e394cf57ce77223bee1a1" category="section-title">Compatibilidad con implementaciones de zonas de multidisponibilidad de alta disponibilidad en Azure Australia East</block>
+  <block id="bef0df4f898713881ef2098a621a3745" category="paragraph">La región Australia Este en Azure ahora es compatible con implementaciones de zonas de multidisponibilidad de alta disponibilidad para Cloud Volumes ONTAP 9.12.1 GA y versiones posteriores.</block>
+  <block id="2cd5985150a2728c0c6295c5162b2b1d" category="section-title">Desglose del uso de carga</block>
+  <block id="300bba824d9f2e68a0c89aef6da5fb8a" category="paragraph">Ahora puede averiguar por qué se le cobra cuando está suscrito a licencias basadas en capacidad. Puede descargar los siguientes tipos de informes de uso desde la cartera digital en BlueXP. Los informes de uso proporcionan los detalles de capacidad de las suscripciones y cómo se le cobra por los recursos de sus suscripciones a Cloud Volumes ONTAP. Los informes descargables se pueden compartir fácilmente con otros.</block>
+  <block id="ed54fb55b53f11e61f612ff99520f4bc" category="list-text">Uso del paquete Cloud Volumes ONTAP</block>
+  <block id="160ba974abba347f5e939a1a0acd5982" category="list-text">Uso de alto nivel</block>
+  <block id="bf951096cc9eea5fae867ec94f06dfa3" category="list-text">Uso de los equipos virtuales de almacenamiento</block>
+  <block id="3c5979c173a0a4fe3ff27e0e6185a693" category="list-text">Uso de volúmenes</block>
+  <block id="6ddb4c081e1822f2c34768a65c03eb8b" category="paragraph">Para obtener más información, consulte <block ref="ebcf101f07f46d44ff28084ad0f8bce3" category="inline-link-macro-rx"></block>.</block>
+  <block id="eaf72ee058835b38b417b55e2fb1c0af" category="section-title">Ahora se muestra una notificación al acceder a BlueXP sin una suscripción a Marketplace</block>
+  <block id="5cc1493ad28334fdb28f7ed57f0e1d41" category="paragraph">Ahora se mostrará una notificación cada vez que accedas a Cloud Volumes ONTAP en BlueXP sin una suscripción a Marketplace. La notificación indica que se requiere una suscripción al mercado para este entorno de trabajo para cumplir con los términos y condiciones de Cloud Volumes ONTAP.</block>
+  <block id="d845f71cd5cacb5fdb671f6530007953" category="paragraph"><block ref="b614243ef1614b3040beb4428349cfdf" category="inline-link-rx"></block>.</block>
+  <block id="37532cd27e3c53471b1caed0ba1f90ed" category="section-title">Descargar informes de uso</block>
+  <block id="819d4e1e06bcd4bb3249b60d928ccacc" category="paragraph">Los administradores de cuentas pueden descargar cuatro informes de uso desde la cartera digital en BlueXP. Estos informes de uso proporcionan detalles sobre la capacidad de sus suscripciones y cómo se le cobra por los recursos de sus suscripciones a Cloud Volumes ONTAP. Los informes descargables capturan datos en un momento específico y se pueden compartir fácilmente con otros.</block>
+  <block id="c2b73e18a5b530a547ba48a8177d13c3" category="inline-image-macro">La captura de pantalla muestra la página de licencias basadas en capacidad de Cloud Volumes ONTAP de la cartera digital y resalta el botón de informe de uso.</block>
+  <block id="a1a4a48254cf8eb8962fbd995f5e7ea8" category="paragraph"><block ref="a1a4a48254cf8eb8962fbd995f5e7ea8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d11dcbec58d47bd13de1dcccfbd640ff" category="paragraph">Los siguientes informes están disponibles para su descarga. Los valores de capacidad que se muestran son en TiB.</block>
+  <block id="ad73e4897304c80496a4f15e033cefa7" category="list-text">*Uso de alto nivel*: Este informe te muestra exactamente lo que hay en la tarjeta “Resumen de Paquetes Cloud Volumes ONTAP” en la billetera digital. Incluye la siguiente información:</block>
+  <block id="c596c9291f76a11af1aefc235c262de6" category="list-text">La capacidad total consumida</block>
+  <block id="8dd7541d6c4e83402d88448119068a02" category="list-text">Capacidad precomprometida total</block>
+  <block id="b01a146aed01aa8af61e034befc116ce" category="list-text">Capacidad total de BYOL</block>
+  <block id="109323142d354af9ccc7eb636b1dcbce" category="list-text">Capacidad total de contratos del mercado</block>
+  <block id="baf09c6c43fd26effd8f15e252649384" category="list-text">Capacidad total de PAYGO</block>
+  <block id="76101a2de96d735db21249323914bc6c" category="list-text">*Uso del paquete Cloud Volumes ONTAP*: Este informe le muestra exactamente lo que hay en las tarjetas de paquete en la cartera digital. Incluye la siguiente información para cada paquete excepto el paquete de I/O optimizado:</block>
+  <block id="c01bbdbe6721d80a74779e943243486b" category="list-text">*Uso de VM de almacenamiento*: Este informe muestra cómo se desglosa la capacidad cargada en los sistemas Cloud Volumes ONTAP y las máquinas virtuales de almacenamiento (SVM). Esta información no está disponible en ninguna pantalla de la cartera digital. Incluye la siguiente información:</block>
+  <block id="b16bfcaa9b0651f05b8e8894a2aebb31" category="list-text">ID de entorno de trabajo (aparece como UUID)</block>
+  <block id="c8e2277ecfb1427838c488c217f99466" category="list-text">Cloud</block>
+  <block id="4736cd35bf5b3fe63e1b1785fb2aa664" category="list-text">ID de cuenta de NetApp</block>
+  <block id="bbfa34e8af02138b821f784c8962669b" category="list-text">Configuración del entorno de trabajo</block>
+  <block id="203c4205822c007d08ecafe163b02ea2" category="list-text">Nombre de SVM</block>
+  <block id="b567847dd629376ac84ed4958fd61687" category="list-text">Capacidad aprovisionada</block>
+  <block id="a09b8df9fd0007770b0a8c10f9a17d81" category="list-text">Acumulación de capacidad cargada</block>
+  <block id="671095c17b0e9e0deda06cff2fa103e6" category="list-text">Plazo de facturación del mercado</block>
+  <block id="d38764d5edf26bd9b744840cd2ea3c17" category="list-text">Paquete o función de Cloud Volumes ONTAP</block>
+  <block id="a016fcdfd1d7159ffd537d78d4b68f74" category="list-text">Cargando el nombre de la suscripción de SaaS Marketplace</block>
+  <block id="fe6ac599d13d94a0ee0800482bec7e41" category="list-text">Cargando el ID de suscripción de SaaS Marketplace</block>
+  <block id="33e97335db88f16611400cab965f95af" category="list-text">*Uso de volúmenes*: Este informe muestra cómo la capacidad de carga se desglosa por volúmenes en un entorno de trabajo. Esta información no está disponible en ninguna pantalla de la cartera digital. Incluye la siguiente información:</block>
+  <block id="3edb9123c69629ec86469d96d3feb0aa" category="list-text">Nombre de SVN</block>
+  <block id="cccc95b62282240886ee975a3f122adb" category="list-text">ID del volumen</block>
+  <block id="fc18634852d4299cd5f8c7ad55ddefbe" category="list-text">Tipo de volumen</block>
+  <block id="3756f66a273f440893f16ee968ce3450" category="list-text">Capacidad aprovisionada del volumen</block>
+  <block id="8b3da2ed858ee5c956acde26c9ef7dd0" category="admonition">Los volúmenes FlexClone no se incluyen en este informe, ya que estos tipos de volúmenes no generan cargos.</block>
+  <block id="a4bad4f350632a2078a6d795984ee60f" category="list-text">En la pestaña *Cloud Volumes ONTAP*, mantenga seleccionada la opción *Licencias basadas en capacidad* y haga clic en *Informe de uso*.</block>
+  <block id="23e918e9f1c9f1bb5769dcc236489de2" category="paragraph">El informe de uso se descarga.</block>
+  <block id="05655bb3cbd3604d6c71a1db823ad94f" category="list-text">Abra el archivo descargado para acceder a los informes.</block>
 </blocks>
