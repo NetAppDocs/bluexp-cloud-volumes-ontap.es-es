@@ -236,6 +236,7 @@ Si planea utilizar Cloud Backup con sus sistemas Cloud Volumes ONTAP, el rol IAM
 ====
 ** Mediador DE ALTA DISPONIBILIDAD
 +
+--
 [source, json]
 ----
 {
@@ -251,12 +252,15 @@ Si planea utilizar Cloud Backup con sus sistemas Cloud Volumes ONTAP, el rol IAM
 				"ec2:DescribeVpcs",
 				"ec2:ReplaceRoute",
 				"ec2:UnassignPrivateIpAddresses"
+                "sts:AssumeRole"
+                "ec2:DescribeSubnets"
 			],
 			"Resource": "*"
 		}
 	]
 }
 ----
+--
 
 
 . Crear un rol IAM y asociar las políticas que ha creado al rol.
