@@ -822,7 +822,7 @@ Una suscripción a Keystone es un servicio de pago por crecimiento a través de 
 Es compatible con la suscripción de Keystone con todas las nuevas versiones de Cloud Volumes ONTAP que se pueden implementar desde BlueXP.
 
 * https://["Obtenga más información sobre las suscripciones a NetApp Keystone"^].
-* link:task-manage-keystone.html["Descubre cómo empezar a usar las suscripciones de Keystone en BlueXP"^].
+* link:task-manage-keystone.html["Descubre cómo empezar a usar las suscripciones de Keystone en BlueXP"].
 
 
 

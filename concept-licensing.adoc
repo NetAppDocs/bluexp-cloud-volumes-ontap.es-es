@@ -370,7 +370,7 @@ La carga se basa en el tamaño de la capacidad comprometida de una o varias pare
 
 La capacidad aprovisionada para cada volumen se agrega y se compara con la capacidad comprometida de tu suscripción de Keystone periódicamente; los excesos se cobran como picos de potencia en tu suscripción de Keystone.
 
-https://["Obtenga más información sobre las suscripciones a NetApp Keystone"^].
+https://[][Más información sobre las suscripciones a NetApp Keystone^].
 
 
 

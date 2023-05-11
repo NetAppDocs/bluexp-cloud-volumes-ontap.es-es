@@ -152,7 +152,7 @@ link:task-deploying-otc-aws.html["Consulte instrucciones paso a paso para inicia
 
 == Suscripción a Keystone
 
-Una suscripción a Keystone es un servicio basado en suscripción de pago por crecimiento. link:concept-licensing.html#keystone-subscription["Obtenga más información sobre las suscripciones a NetApp Keystone"^].
+Una suscripción a Keystone es un servicio basado en suscripción de pago por crecimiento. link:concept-licensing.html#keystone-subscription["Obtenga más información sobre las suscripciones a NetApp Keystone"].
 
 .Pasos
 . Si aún no tiene una suscripción, https://["Póngase en contacto con NetApp"^]

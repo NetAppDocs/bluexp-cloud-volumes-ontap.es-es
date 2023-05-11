@@ -14,7 +14,7 @@ summary: Gestiona tus licencias basadas en nodos en la cartera digital de BlueXP
 
 
 [role="lead"]
-Gestiona las licencias basadas en nodos en la cartera digital de BlueXP para garantizar que cada sistema Cloud Volumes ONTAP tenga una licencia válida con la capacidad necesaria.
+5a91158751eaabe4d195cd633fa37db6
 
 _Licencias basadas en nodos_ son el modelo de licencias de la generación anterior (y no están disponibles para nuevos clientes):
 
