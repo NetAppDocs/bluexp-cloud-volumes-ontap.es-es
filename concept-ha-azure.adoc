@@ -31,7 +31,7 @@ image:diagram_ha_azure.png["Imagen conceptual que muestra un equilibrador de car
 Tenga en cuenta lo siguiente acerca de los componentes de Azure que BlueXP pone en marcha:
 
 Equilibrador de carga estándar de Azure:: El equilibrador de carga gestiona el tráfico entrante en el par ha de Cloud Volumes ONTAP.
-Conjunto de disponibilidad:: El conjunto de disponibilidad de Azure es una agrupación lógica de los nodos de Cloud Volumes ONTAP. El conjunto de disponibilidad garantiza que los nodos se encuentren en diferentes dominios de fallo y actualización para ofrecer redundancia y disponibilidad. https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["Obtenga más información sobre los conjuntos de disponibilidad en los documentos de Azure"^].
+Conjunto de disponibilidad:: El conjunto de disponibilidad de Azure es una agrupación lógica de los nodos de Cloud Volumes ONTAP. El conjunto de disponibilidad garantiza que los nodos se encuentren en diferentes dominios de fallo y actualización para ofrecer redundancia y disponibilidad. https://["Obtenga más información sobre los conjuntos de disponibilidad en los documentos de Azure"^].
 Discos:: Los datos del cliente residen en Blobs de la página de Premium Storage. Cada nodo tiene acceso al almacenamiento del otro nodo. También se requiere almacenamiento adicional para link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["datos sobre el arranque, la raíz y el núcleo"].
 Cuentas de almacenamiento::
 +
@@ -39,7 +39,7 @@ Cuentas de almacenamiento::
 * Se necesita una cuenta de almacenamiento para los discos gestionados.
 * Se requieren una o más cuentas de almacenamiento para los BLOB de la página Premium Storage, ya que se alcanza el límite de capacidad de disco por cuenta de almacenamiento.
 +
-https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-targets["Documentación de Azure: Objetivos de escalabilidad y rendimiento de Azure Storage para cuentas de almacenamiento"^].
+https://["Documentación de Azure: Objetivos de escalabilidad y rendimiento de Azure Storage para cuentas de almacenamiento"^].
 
 * Se necesita una cuenta de almacenamiento para la organización en niveles de los datos en el almacenamiento de Azure Blob.
 * A partir de Cloud Volumes ONTAP 9.7, las cuentas de almacenamiento que BlueXP crea para pares de alta disponibilidad son cuentas de almacenamiento de uso general de v2.
@@ -60,7 +60,7 @@ image:diagram_ha_azure_saz_lrs.png["Imagen conceptual que muestra un equilibrado
 Tenga en cuenta lo siguiente acerca de los componentes de Azure que BlueXP pone en marcha:
 
 Equilibrador de carga estándar de Azure:: El equilibrador de carga gestiona el tráfico entrante en el par ha de Cloud Volumes ONTAP.
-Conjunto de disponibilidad:: El conjunto de disponibilidad de Azure es una agrupación lógica de los nodos de Cloud Volumes ONTAP. El conjunto de disponibilidad garantiza que los nodos se encuentren en diferentes dominios de fallo y actualización para ofrecer redundancia y disponibilidad. https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["Obtenga más información sobre los conjuntos de disponibilidad en los documentos de Azure"^].
+Conjunto de disponibilidad:: El conjunto de disponibilidad de Azure es una agrupación lógica de los nodos de Cloud Volumes ONTAP. El conjunto de disponibilidad garantiza que los nodos se encuentren en diferentes dominios de fallo y actualización para ofrecer redundancia y disponibilidad. https://["Obtenga más información sobre los conjuntos de disponibilidad en los documentos de Azure"^].
 Discos:: Los datos del cliente residen en discos gestionados de almacenamiento redundante local (LRS). Cada nodo tiene acceso al almacenamiento del otro nodo. También se requiere almacenamiento adicional para link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["Datos de arranque, raíz, raíz del partner, núcleo y NVRAM"].
 Cuentas de almacenamiento:: Las cuentas de almacenamiento se usan para implementaciones basadas en disco gestionadas para manejar registros de diagnóstico y organización en niveles para el almacenamiento BLOB.
 
@@ -76,7 +76,7 @@ image:diagram_ha_azure_maz.png["Imagen conceptual que muestra un equilibrio de c
 Tenga en cuenta lo siguiente acerca de los componentes de Azure que BlueXP pone en marcha:
 
 Equilibrador de carga estándar de Azure:: El equilibrador de carga gestiona el tráfico entrante en el par ha de Cloud Volumes ONTAP.
-Zonas de disponibilidad:: Existen dos nodos Cloud Volumes ONTAP implementados en zonas de disponibilidad diferentes. Las zonas de disponibilidad garantizan que los nodos estén en diferentes dominios de fallo. https://learn.microsoft.com/en-us/azure/virtual-machines/disks-redundancy#zone-redundant-storage-for-managed-disks["Obtenga más información acerca del almacenamiento redundante de zonas de Azure para discos gestionados en los documentos de Azure"^].
+Zonas de disponibilidad:: Existen dos nodos Cloud Volumes ONTAP implementados en zonas de disponibilidad diferentes. Las zonas de disponibilidad garantizan que los nodos estén en diferentes dominios de fallo. https://["Obtenga más información acerca del almacenamiento redundante de zonas de Azure para discos gestionados en los documentos de Azure"^].
 Discos:: Los datos de los clientes residen en discos gestionados de almacenamiento redundante de la zona (ZRS). Cada nodo tiene acceso al almacenamiento del otro nodo. También se requiere almacenamiento adicional para link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["datos sobre el inicio, la raíz, el partner y los principales"].
 Cuentas de almacenamiento:: Las cuentas de almacenamiento se usan para implementaciones basadas en disco gestionadas para manejar registros de diagnóstico y organización en niveles para el almacenamiento BLOB.
 
@@ -102,7 +102,7 @@ En el caso de configuraciones NAS, las direcciones IP de datos migran automátic
 Para iSCSI, Cloud Volumes ONTAP utiliza I/o multivía (MPIO) y ALUA (Asymmetric Logical Unit Access) para gestionar la conmutación por error de ruta entre las rutas activas y no optimizadas.
 
 
-NOTE: Para obtener información sobre qué configuraciones de host específicas admiten ALUA, consulte http://mysupport.netapp.com/matrix["Herramienta de matriz de interoperabilidad de NetApp"^] Y la guía de instalación y configuración de las utilidades de host para el sistema operativo host.
+NOTE: Para obtener información sobre qué configuraciones de host específicas admiten ALUA, consulte http://["Herramienta de matriz de interoperabilidad de NetApp"^] Y la guía de instalación y configuración de las utilidades de host para el sistema operativo host.
 
 La toma de control, resincronización y devolución del almacenamiento son automáticas de forma predeterminada. No se requiere ninguna acción del usuario.
 

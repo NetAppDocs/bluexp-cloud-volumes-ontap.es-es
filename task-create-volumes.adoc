@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-create-volumes.html 
-keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, templates 
+keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, templates, cloud backup 
 summary: Si necesita más almacenamiento después de iniciar su sistema Cloud Volumes ONTAP inicial, puede crear nuevos volúmenes de FlexVol para NFS, CIFS o iSCSI desde BlueXP. 
 ---
 = Cree volúmenes de FlexVol
@@ -87,7 +87,7 @@ Algunos de los campos en esta página son claros y explicativos. En la siguiente
 | Tamaño del volumen | El tamaño máximo que puede introducir depende en gran medida de si habilita thin provisioning, lo que le permite crear un volumen que sea mayor que el almacenamiento físico que hay disponible actualmente. 
 
 
-| Etiquetas | Las etiquetas que añada a un volumen están asociadas con el https://docs.netapp.com/us-en/cloud-manager-app-template/task-using-tags.html["Servicio Plantillas de aplicación"^], que puede ayudarle a organizar y simplificar la gestión de sus recursos. 
+| Etiquetas | Las etiquetas que añada a un volumen están asociadas con el https://["Servicio Plantillas de aplicación"^], que puede ayudarle a organizar y simplificar la gestión de sus recursos. 
 
 
 | Máquina virtual de almacenamiento (SVM) | Una máquina virtual de almacenamiento es un equipo virtual que se ejecuta en ONTAP y proporciona servicios de datos y almacenamiento a sus clientes. Puede que lo sepa como una SVM o un Vserver. Cloud Volumes ONTAP se configura con una máquina virtual de almacenamiento de forma predeterminada, pero algunas configuraciones admiten máquinas virtuales de almacenamiento adicionales. Es posible especificar la máquina virtual de almacenamiento para el nuevo volumen. 
@@ -145,20 +145,20 @@ endif::aws[]
 
 ifdef::azure[]
 
-*** Para configurar los Servicios de dominio de Azure AD como servidor AD para Cloud Volumes ONTAP, introduzca *OU=ADDC Computers* o *OU=usuarios ADDC* en este campo.https://docs.microsoft.com/en-us/azure/active-directory-domain-services/create-ou["Documentación de Azure: Cree una unidad organizativa (OU) en un dominio gestionado de Azure AD Domain Services"^]
+*** Para configurar los Servicios de dominio de Azure AD como servidor AD para Cloud Volumes ONTAP, introduzca *OU=ADDC Computers* o *OU=usuarios ADDC* en este campo.https://["Documentación de Azure: Cree una unidad organizativa (OU) en un dominio gestionado de Azure AD Domain Services"^]
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-*** Para configurar Google Managed Microsoft AD como servidor AD para Cloud Volumes ONTAP, introduzca *OU=equipos,OU=Cloud* en este campo.https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Documentación de Google Cloud: Unidades organizativas de Google Managed Microsoft AD"^]
+*** Para configurar Google Managed Microsoft AD como servidor AD para Cloud Volumes ONTAP, introduzca *OU=equipos,OU=Cloud* en este campo.https://["Documentación de Google Cloud: Unidades organizativas de Google Managed Microsoft AD"^]
 
 
 endif::gcp[]
 
 Dominio DNS:: El dominio DNS para la máquina virtual de almacenamiento (SVM) de Cloud Volumes ONTAP. En la mayoría de los casos, el dominio es el mismo que el dominio de AD.
-Servidor NTP:: Seleccione *usar dominio de Active Directory* para configurar un servidor NTP mediante el DNS de Active Directory. Si necesita configurar un servidor NTP con una dirección diferente, debe usar la API. Consulte https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Documentos de automatización de BlueXP"^] para obtener más detalles.
+Servidor NTP:: Seleccione *usar dominio de Active Directory* para configurar un servidor NTP mediante el DNS de Active Directory. Si necesita configurar un servidor NTP con una dirección diferente, debe usar la API. Consulte https://["Documentos de automatización de BlueXP"^] para obtener más detalles.
 +
 --
 Tenga en cuenta que solo puede configurar un servidor NTP cuando cree un servidor CIFS. No se puede configurar después de crear el servidor CIFS.
@@ -252,7 +252,7 @@ image:screenshot_define_cvo_vol_from_template.png["Captura de pantalla que muest
 . En _context_, el entorno de trabajo se rellena con el nombre del entorno de trabajo con el que se inició. Seleccione *Storage VM* donde se creará el volumen.
 . Agregue valores para todos los parámetros que no estén codificados de forma rígida desde la plantilla. Consulte <<create a volume,Cree un volumen>> Para obtener detalles sobre todos los parámetros necesarios para completar la implementación de un volumen de Cloud Volumes ONTAP.
 . Haga clic en *aplicar* para guardar los parámetros configurados en la acción seleccionada.
-. Si no hay otras acciones que deba definir (por ejemplo, configurar Cloud Backup), haga clic en *Guardar plantilla*.
+. Si no hay otras acciones que necesites definir (por ejemplo, configurar la copia de seguridad y la recuperación de BlueXP), haz clic en *Guardar plantilla*.
 +
 Si hay otras acciones, haga clic en la acción del panel izquierdo para mostrar los parámetros que necesita completar.
 
@@ -270,7 +270,7 @@ Cloud Volumes ONTAP aprovisiona el volumen y muestra una página para que pueda 
 
 image:screenshot_template_creating_resource_cvo.png["Captura de pantalla que muestra el progreso de la creación de un nuevo volumen a partir de la plantilla."]
 
-Además, si se implementa alguna acción secundaria en la plantilla, por ejemplo, habilitar Cloud Backup en el volumen, esa acción también se lleva a cabo.
+Además, si se implementa alguna acción secundaria en la plantilla (por ejemplo, al habilitar el backup y la recuperación de BlueXP en el volumen), también se lleva a cabo esa acción.
 
 
 

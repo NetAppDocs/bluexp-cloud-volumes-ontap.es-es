@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-cvo-aiq-digital-advisor.html 
-keywords: concepts, active iq digital advisor, cloud volumes ontap 
+keywords: concepts, active iq digital advisor, cloud volumes ontap, cloud manager, BlueXP 
 summary: El asesor digital de Active IQ está integrado en la interfaz de usuario de BlueXP para que pueda optimizar las operaciones, la seguridad y el rendimiento de sus clústeres de ONTAP en una única consola. 
 ---
 = Optimice sus sistemas Cloud Volumes ONTAP con el asesor digital de Active IQ
@@ -14,7 +14,7 @@ summary: El asesor digital de Active IQ está integrado en la interfaz de usuari
 
 
 [role="lead"]
-https://www.netapp.com/services/support/active-iq/["Asesor digital de Active IQ"] Está integrada en la interfaz de usuario de BlueXP (anteriormente Cloud Manager) para que pueda optimizar las operaciones, la seguridad y el rendimiento de sus sistemas Cloud Volumes ONTAP en una única consola.
+https://["Asesor digital de Active IQ"] Se integra en la interfaz de usuario de BlueXP para que puedas optimizar las operaciones, la seguridad y el rendimiento de tus sistemas Cloud Volumes ONTAP en un único panel.
 
 
 
@@ -48,18 +48,18 @@ La interfaz de usuario del asesor digital Active IQ está completamente integrad
 
 En BlueXP, haga clic en el servicio *Active IQ*.
 
-* Si ya ha registrado una cuenta NSS existente en BlueXP, la interfaz de usuario del asesor digital de Active IQ aparece como la vería en una implementación independiente en https://activeiq.netapp.com/[].
+* Si ya ha registrado una cuenta NSS existente en BlueXP, la interfaz de usuario del asesor digital de Active IQ aparece como la vería en una implementación independiente en https://[].
 +
 image:screenshot_aiq_digital_advisor.png["Una captura de pantalla de la interfaz de usuario de Active IQ Digital Advisor en BlueXP."]
 
-* Si no ha registrado una cuenta NSS en BlueXP, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Registre una cuenta de NSS ahora"^] Y, a continuación, aparece la interfaz de usuario del asesor digital de Active IQ.
+* Si no ha registrado una cuenta NSS en BlueXP, https://["Registre una cuenta de NSS ahora"^] Y, a continuación, aparece la interfaz de usuario del asesor digital de Active IQ.
 
 
 
-NOTE: Al 3 de diciembre de 2021, NetApp ha cambiado a una nueva metodología para registrar las credenciales de las cuentas de NSS. https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["Consulte estas preguntas frecuentes para obtener más información"]. Si su cuenta de NSS utiliza el conjunto anterior de credenciales, tendrá que actualizar la cuenta con las nuevas credenciales.
+NOTE: Al 3 de diciembre de 2021, NetApp ha cambiado a una nueva metodología para registrar las credenciales de las cuentas de NSS. https://["Consulte estas preguntas frecuentes para obtener más información"]. Si su cuenta de NSS utiliza el conjunto anterior de credenciales, tendrá que actualizar la cuenta con las nuevas credenciales.
 
 
 
 == El futuro
 
-Consulte https://docs.netapp.com/us-en/active-iq/index.html["Documentación del asesor digital de Active IQ"] para obtener más detalles.
+Consulte https://["Documentación del asesor digital de Active IQ"] para obtener más detalles.

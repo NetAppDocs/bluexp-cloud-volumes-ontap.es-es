@@ -30,7 +30,7 @@ Hay varias opciones de licencia disponibles para Cloud Volumes ONTAP. Cada opci�
 
 == Seleccione una región admitida
 
-Cloud Volumes ONTAP es compatible en la mayoría de las regiones de Microsoft Azure. https://cloud.netapp.com/cloud-volumes-global-regions["Consulte la lista completa de las regiones admitidas"^].
+Cloud Volumes ONTAP es compatible en la mayoría de las regiones de Microsoft Azure. https://["Consulte la lista completa de las regiones admitidas"^].
 
 
 
@@ -38,7 +38,7 @@ Cloud Volumes ONTAP es compatible en la mayoría de las regiones de Microsoft Az
 
 Cloud Volumes ONTAP admite varios tipos de máquinas virtuales, según el tipo de licencia que elija.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configuraciones compatibles para Cloud Volumes ONTAP en Azure"^]
+https://["Configuraciones compatibles para Cloud Volumes ONTAP en Azure"^]
 
 
 
@@ -46,7 +46,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azu
 
 El límite de capacidad bruta de un sistema de Cloud Volumes ONTAP está relacionado con la licencia. Los límites adicionales afectan al tamaño de los agregados y los volúmenes. Debe conocer estos límites a medida que planifique la configuración.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Límites de almacenamiento para Cloud Volumes ONTAP en Azure"^]
+https://["Límites de almacenamiento para Cloud Volumes ONTAP en Azure"^]
 
 
 
@@ -54,11 +54,11 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azur
 
 Configurar el tamaño de su sistema Cloud Volumes ONTAP puede ayudarle a cumplir los requisitos de rendimiento y capacidad. Al elegir un tipo de máquina virtual, un tipo de disco y un tamaño de disco, es necesario tener en cuenta algunos puntos clave:
 
-Tipo de máquina virtual:: Observe los tipos de máquina virtual admitidos en la http://docs.netapp.com/cloud-volumes-ontap/us-en/index.html["Notas de la versión de Cloud Volumes ONTAP"^] Y, a continuación, revise los detalles sobre cada tipo de máquina virtual admitido. Tenga en cuenta que cada tipo de máquina virtual admite un número específico de discos de datos.
+Tipo de máquina virtual:: Observe los tipos de máquina virtual admitidos en la http://["Notas de la versión de Cloud Volumes ONTAP"^] Y, a continuación, revise los detalles sobre cada tipo de máquina virtual admitido. Tenga en cuenta que cada tipo de máquina virtual admite un número específico de discos de datos.
 +
 --
-* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-general#dsv2-series["Documentación de Azure: Tamaños de máquinas virtuales de uso general"^]
-* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-memory#dsv2-series-11-15["Documentación de Azure: Tamaños de máquinas virtuales optimizadas con memoria"^]
+* https://["Documentación de Azure: Tamaños de máquinas virtuales de uso general"^]
+* https://["Documentación de Azure: Tamaños de máquinas virtuales optimizadas con memoria"^]
 
 
 --
@@ -72,7 +72,7 @@ Los sistemas de un solo nodo pueden usar tres tipos de discos gestionados de Azu
 * _Standard HDD Managed Disks_ es una buena opción si no necesita un alto nivel de IOPS y desea reducir sus costes.
 
 
-Si quiere más información sobre los casos de uso de estos discos, consulte https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Documentación de Microsoft Azure: ¿qué tipos de discos están disponibles en Azure?"^].
+Si quiere más información sobre los casos de uso de estos discos, consulte https://["Documentación de Microsoft Azure: ¿qué tipos de discos están disponibles en Azure?"^].
 
 --
 Tipo de disco de Azure con pares de alta disponibilidad:: Los sistemas DE ALTA DISPONIBILIDAD utilizan discos gestionados compartidos SSD de Premium, que proporcionan un alto rendimiento para las cargas de trabajo con un gran volumen de I/o a un coste más elevado. Las implementaciones DE ALTA DISPONIBILIDAD creadas antes de la versión 9.12.1 utilizan Blobs de página Premium.
@@ -90,8 +90,8 @@ No existen diferencias de rendimiento entre los tamaños de disco para Standard 
 
 Consulte Azure para obtener información sobre IOPS y rendimiento por tamaño de disco:
 
-* https://azure.microsoft.com/en-us/pricing/details/managed-disks/["Microsoft Azure: Precios de discos gestionados"^]
-* https://azure.microsoft.com/en-us/pricing/details/storage/page-blobs/["Microsoft Azure: Precios para Blobs de página"^]
+* https://["Microsoft Azure: Precios de discos gestionados"^]
+* https://["Microsoft Azure: Precios para Blobs de página"^]
 
 
 --
@@ -106,7 +106,7 @@ Además del almacenamiento de los datos de usuario, BlueXP también adquiere alm
 link:reference-default-configs.html#azure-single-node["Vea los discos predeterminados para los datos del sistema Cloud Volumes ONTAP en Azure"].
 
 
-TIP: El conector también requiere un disco del sistema. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["Ver detalles sobre la configuración predeterminada del conector"^].
+TIP: El conector también requiere un disco del sistema. https://["Ver detalles sobre la configuración predeterminada del conector"^].
 
 
 

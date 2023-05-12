@@ -39,7 +39,7 @@ Active IQ muestra información completa sobre la configuración de inventario y 
 
 
 .Información relacionada
-* https://docs.netapp.com/us-en/active-iq/["Documentación de NetApp: Asesor digital de Active IQ"^]
-* https://aiq.netapp.com/custom-dashboard/search["Inicie Active IQ"^]
-* https://www.netapp.com/us/services/support-edge.aspx["Servicios de SupportEdge"^]
+* https://["Documentación de NetApp: Asesor digital de Active IQ"^]
+* https://["Inicie Active IQ"^]
+* https://["Servicios de SupportEdge"^]
 

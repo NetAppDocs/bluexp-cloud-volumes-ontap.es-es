@@ -16,4 +16,4 @@ summary: Las notas de la versión de Cloud Volumes ONTAP proporcionan informaci�
 [role="lead"]
 Las notas de la versión de Cloud Volumes ONTAP proporcionan información específica de la versión. Novedades del lanzamiento, configuraciones compatibles, límites de almacenamiento y cualquier limitación o problema conocido que pueda afectar a la funcionalidad del producto.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Vaya a las notas de la versión de Cloud Volumes ONTAP"^]
+https://["Vaya a las notas de la versión de Cloud Volumes ONTAP"^]

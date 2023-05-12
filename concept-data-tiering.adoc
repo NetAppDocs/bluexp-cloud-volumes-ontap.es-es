@@ -58,7 +58,7 @@ Clases de almacenamiento:: La clase de almacenamiento predeterminada para los da
 --
 Si no tiene previsto acceder a los datos inactivos, puede reducir los costes de almacenamiento cambiando la clase de almacenamiento a una de las siguientes opciones: _Intelligent Tiering_, _One-Zone Infrecuente Access_, _Standard-Infrecuente Access_ o _S3 Glacier Instant Retrieval_. Al cambiar la clase de almacenamiento, los datos inactivos se inician en la clase de almacenamiento estándar y se pasan a la clase de almacenamiento seleccionada si no se accede a los datos después de 30 días.
 
-Los costes de acceso son más elevados si se accede a los datos, por lo que hay que tener en cuenta antes de cambiar la clase de almacenamiento. https://aws.amazon.com/s3/storage-classes["Obtenga más información acerca de las clases de almacenamiento de Amazon S3"^].
+Los costes de acceso son más elevados si se accede a los datos, por lo que hay que tener en cuenta antes de cambiar la clase de almacenamiento. https://["Obtenga más información acerca de las clases de almacenamiento de Amazon S3"^].
 
 Puede seleccionar una clase de almacenamiento cuando cree el entorno de trabajo y puede cambiarla en cualquier momento. Para obtener información detallada sobre cómo cambiar la clase de almacenamiento, consulte link:task-tiering.html["Organización en niveles de los datos inactivos en almacenamiento de objetos de bajo coste"].
 
@@ -101,7 +101,7 @@ Niveles de acceso al almacenamiento:: El nivel de acceso al almacenamiento prede
 --
 Si no piensa acceder a los datos inactivos del nivel de capacidad, puede reducir los costes de almacenamiento cambiando al nivel de almacenamiento _COOL_. Cuando cambia el nivel de almacenamiento a uno más frío, los datos del nivel de capacidad inactiva se mueven directamente al nivel de almacenamiento frío.
 
-Los costes de acceso son más elevados si accede a los datos, por lo que tenga en cuenta antes de cambiar el nivel de almacenamiento. https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers["Obtenga más información acerca de los niveles de acceso al almacenamiento de Azure Blob"^].
+Los costes de acceso son más elevados si accede a los datos, por lo que tenga en cuenta antes de cambiar el nivel de almacenamiento. https://["Obtenga más información acerca de los niveles de acceso al almacenamiento de Azure Blob"^].
 
 Es posible seleccionar un nivel de almacenamiento al crear el entorno de trabajo y cambiarlo siempre que se desee. Para obtener más información sobre cómo cambiar el nivel de almacenamiento, consulte link:task-tiering.html["Organización en niveles de los datos inactivos en almacenamiento de objetos de bajo coste"].
 
@@ -140,7 +140,7 @@ Cuando BlueXP crea el cucharón, utiliza los siguientes valores predeterminados:
 Clases de almacenamiento:: La clase de almacenamiento predeterminada para los datos por niveles es la clase _Standard Storage_. Si se accede a los datos con poca frecuencia, puede reducir los costes de almacenamiento cambiando a _Nearline Storage_ o _Coldline Storage_. Al cambiar la clase de almacenamiento, los datos inactivos se mueven directamente a la clase seleccionada.
 +
 --
-Los costes de acceso son más elevados si se accede a los datos, por lo que hay que tener en cuenta antes de cambiar la clase de almacenamiento. https://cloud.google.com/storage/docs/storage-classes["Obtenga más información sobre clases de almacenamiento para Google Cloud Storage"^].
+Los costes de acceso son más elevados si se accede a los datos, por lo que hay que tener en cuenta antes de cambiar la clase de almacenamiento. https://["Obtenga más información sobre clases de almacenamiento para Google Cloud Storage"^].
 
 Es posible seleccionar un nivel de almacenamiento al crear el entorno de trabajo y cambiarlo siempre que se desee. Para obtener información detallada sobre cómo cambiar la clase de almacenamiento, consulte link:task-tiering.html["Organización en niveles de los datos inactivos en almacenamiento de objetos de bajo coste"].
 
@@ -166,7 +166,7 @@ Para habilitar la organización en niveles de datos, es necesario seleccionar un
 Algunas políticas de organización en niveles tienen un período de refrigeración mínimo asociado, que establece el tiempo en el que los datos de un volumen deben permanecer inactivos para que los datos se consideren "inactivos" y moverse al nivel de capacidad. El período de refrigeración comienza cuando se escriben datos en el agregado.
 
 
-TIP: Puede cambiar el período mínimo de refrigeración y el umbral predeterminado del agregado del 50% (más información en el siguiente apartado). http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mgng-stor-tier-fp/GUID-AD522711-01F9-4413-A254-929EAE871EBF.html["Aprenda a cambiar el período de enfriamiento"^] y.. http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mgng-stor-tier-fp/GUID-8FC4BFD5-F258-4AA6-9FCB-663D42D92CAA.html["aprenda a cambiar el umbral"^].
+TIP: Puede cambiar el período mínimo de refrigeración y el umbral predeterminado del agregado del 50% (más información en el siguiente apartado). http://["Aprenda a cambiar el período de enfriamiento"^] y.. http://["aprenda a cambiar el umbral"^].
 
 BlueXP permite elegir entre las siguientes políticas de organización en niveles de volúmenes al crear o modificar un volumen:
 

@@ -30,7 +30,7 @@ Hay varias opciones de licencia disponibles para Cloud Volumes ONTAP. Cada opci�
 
 == Seleccione una región admitida
 
-Cloud Volumes ONTAP es compatible en la mayoría de las regiones de Google Cloud. https://cloud.netapp.com/cloud-volumes-global-regions["Consulte la lista completa de las regiones admitidas"^].
+Cloud Volumes ONTAP es compatible en la mayoría de las regiones de Google Cloud. https://["Consulte la lista completa de las regiones admitidas"^].
 
 
 
@@ -38,7 +38,7 @@ Cloud Volumes ONTAP es compatible en la mayoría de las regiones de Google Cloud
 
 Cloud Volumes ONTAP admite varios tipos de máquinas, según el tipo de licencia que elija.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Configuraciones admitidas para Cloud Volumes ONTAP en GCP"^]
+https://["Configuraciones admitidas para Cloud Volumes ONTAP en GCP"^]
 
 
 
@@ -46,7 +46,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp
 
 El límite de capacidad bruta de un sistema de Cloud Volumes ONTAP está relacionado con la licencia. Los límites adicionales afectan al tamaño de los agregados y los volúmenes. Debe conocer estos límites a medida que planifique la configuración.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html["Límites de almacenamiento para Cloud Volumes ONTAP en GCP"^]
+https://["Límites de almacenamiento para Cloud Volumes ONTAP en GCP"^]
 
 
 
@@ -54,13 +54,13 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.
 
 Configurar el tamaño de su sistema Cloud Volumes ONTAP puede ayudarle a cumplir los requisitos de rendimiento y capacidad. Al elegir un tipo de máquina, un tipo de disco y un tamaño de disco, es necesario tener en cuenta algunos puntos clave:
 
-Tipo de máquina:: Observe los tipos de máquina admitidos en la http://docs.netapp.com/cloud-volumes-ontap/us-en/index.html["Notas de la versión de Cloud Volumes ONTAP"^] Y luego revise los detalles de Google sobre cada tipo de máquina compatible. Haga coincidir los requisitos de carga de trabajo con el número de vCPU y memoria para el tipo de máquina. Tenga en cuenta que cada núcleo de CPU aumenta el rendimiento de la red.
+Tipo de máquina:: Observe los tipos de máquina admitidos en la http://["Notas de la versión de Cloud Volumes ONTAP"^] Y luego revise los detalles de Google sobre cada tipo de máquina compatible. Haga coincidir los requisitos de carga de trabajo con el número de vCPU y memoria para el tipo de máquina. Tenga en cuenta que cada núcleo de CPU aumenta el rendimiento de la red.
 +
 --
 Consulte lo siguiente para obtener más información:
 
-* https://cloud.google.com/compute/docs/machine-types#n1_machine_types["Documentación de Google Cloud: Tipos de máquina estándar N1"^]
-* https://cloud.google.com/docs/compare/data-centers/networking#performance["Documentación de Google Cloud: Rendimiento"^]
+* https://["Documentación de Google Cloud: Tipos de máquina estándar N1"^]
+* https://["Documentación de Google Cloud: Rendimiento"^]
 
 
 --
@@ -71,7 +71,7 @@ Tipo de disco para GCP:: Cuando crea volúmenes para Cloud Volumes ONTAP, debe e
 * _Zonal discos persistentes equilibrados_: Estos SSD equilibran el rendimiento y el coste al proporcionar un menor número de IOPS por GB.
 * _Zonal Standard persistent disks_ : los discos persistentes estándar son económicos y pueden manejar operaciones secuenciales de lectura y escritura.
 +
-Para obtener información detallada, consulte https://cloud.google.com/compute/docs/disks/#pdspecs["Documentación de Google Cloud: Discos persistentes zonal (Standard y SSD)"^].
+Para obtener información detallada, consulte https://["Documentación de Google Cloud: Discos persistentes zonal (Standard y SSD)"^].
 
 
 
@@ -86,8 +86,8 @@ Tamaño de discos para GCP:: Debe seleccionar un tamaño de disco inicial al pon
 Consulte lo siguiente para obtener más información:
 
 +
-** https://cloud.google.com/compute/docs/disks/#pdspecs["Documentación de Google Cloud: Discos persistentes zonal (Standard y SSD)"^]
-** https://cloud.google.com/compute/docs/disks/performance["Documentación de Google Cloud: Optimización del rendimiento de discos persistentes y SSD locales"^]
+** https://["Documentación de Google Cloud: Discos persistentes zonal (Standard y SSD)"^]
+** https://["Documentación de Google Cloud: Optimización del rendimiento de discos persistentes y SSD locales"^]
 
 
 
@@ -102,14 +102,14 @@ Consulte lo siguiente para obtener más información:
 Además del almacenamiento de los datos de usuario, BlueXP también adquiere almacenamiento en cloud para los datos del sistema Cloud Volumes ONTAP (datos de arranque, datos raíz, datos principales y NVRAM). Para fines de planificación, es posible que le ayude a revisar estos detalles antes de implementar Cloud Volumes ONTAP.
 
 * link:reference-default-configs.html#google-cloud-single-node["Vea los discos predeterminados para los datos del sistema Cloud Volumes ONTAP en Google Cloud"].
-* https://cloud.google.com/compute/quotas["Documentos de Google Cloud: Cuotas de recursos"^]
+* https://["Documentos de Google Cloud: Cuotas de recursos"^]
 +
 Google Cloud Compute Engine aplica cuotas al uso de recursos, por lo que debe asegurarse de que no ha alcanzado su límite antes de implementar Cloud Volumes ONTAP.
 
 
 
 
-TIP: El conector también requiere un disco del sistema. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["Ver detalles sobre la configuración predeterminada del conector"^].
+TIP: El conector también requiere un disco del sistema. https://["Ver detalles sobre la configuración predeterminada del conector"^].
 
 
 

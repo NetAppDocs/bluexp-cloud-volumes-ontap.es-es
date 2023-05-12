@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-set-up-licensing-google.html 
-keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go 
+keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go, keystone flex, keystone, digital wallet 
 summary: Después de decidir qué opción de licencia desea utilizar para Cloud Volumes ONTAP, se requieren unos pasos antes de poder elegir esa opción de licencia al implementar un sistema nuevo. 
 ---
 = Configure las licencias para Cloud Volumes ONTAP en Google Cloud
@@ -64,13 +64,13 @@ En las siguientes secciones se describe cómo empezar a usar cada uno de estos m
 Pague por adelantado al comprar una licencia (BYOL) de NetApp para poner en marcha sistemas Cloud Volumes ONTAP en cualquier proveedor de cloud.
 
 .Pasos
-. https://cloud.netapp.com/contact-cds["Póngase en contacto con el equipo de ventas de NetApp para obtener una licencia"^]
-. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["Agregue su cuenta de la página de soporte de NetApp a BlueXP"^]
+. https://["Póngase en contacto con el equipo de ventas de NetApp para obtener una licencia"^]
+. https://["Agregue su cuenta de la página de soporte de NetApp a BlueXP"^]
 +
-BlueXP consulta automáticamente al servicio de licencias de NetApp para obtener detalles sobre las licencias asociadas a su cuenta del sitio de soporte de NetApp. Si no hay errores, BlueXP agrega automáticamente las licencias a la cartera digital.
+BlueXP consulta automáticamente al servicio de licencias de NetApp para obtener detalles sobre las licencias asociadas a su cuenta del sitio de soporte de NetApp. Si no se producen errores, BlueXP añade automáticamente las licencias a la cartera digital.
 
 +
-Su licencia debe estar disponible en la cartera digital antes de poder utilizarla con Cloud Volumes ONTAP. Si es necesario, puede link:task-manage-capacity-licenses.html#add-purchased-licenses-to-your-account["Añada manualmente la licencia al monedero digital"].
+Tu licencia debe estar disponible en la cartera digital de BlueXP para poder utilizarla con Cloud Volumes ONTAP. Si es necesario, puede link:task-manage-capacity-licenses.html#add-purchased-licenses-to-your-account["Añade manualmente la licencia a la cartera digital de BlueXP"].
 
 . En la página Canvas, haga clic en *Agregar entorno de trabajo* y siga los pasos de BlueXP.
 +
@@ -112,7 +112,7 @@ image:screenshot-professional.png["Captura de pantalla de la opción profesional
 link:task-deploying-gcp.html["Consulte las instrucciones paso a paso para iniciar Cloud Volumes ONTAP en Google Cloud"].
 
 
-TIP: Puede gestionar las suscripciones de Google Cloud Marketplace asociadas con sus cuentas en la página Configuración > credenciales. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Descubra cómo administrar sus credenciales y suscripciones a Google Cloud"^]
+TIP: Puede gestionar las suscripciones de Google Cloud Marketplace asociadas con sus cuentas en la página Configuración > credenciales. https://["Descubra cómo administrar sus credenciales y suscripciones a Google Cloud"^]
 
 
 
@@ -144,19 +144,19 @@ link:task-deploying-gcp.html["Consulte las instrucciones paso a paso para inicia
 
 
 
-== Suscripción a Keystone Flex
+== Suscripción a Keystone
 
-Una suscripción a Keystone Flex es un servicio basado en suscripción de pago por crecimiento. link:concept-licensing.html#keystone-flex-subscription["Obtenga más información sobre las suscripciones a Keystone Flex"].
+Una suscripción a Keystone es un servicio basado en suscripción de pago por crecimiento. link:concept-licensing.html#keystone-subscription["Obtenga más información sobre las suscripciones a NetApp Keystone"].
 
 .Pasos
-. Si aún no tiene una suscripción, https://www.netapp.com/forms/keystone-sales-contact/["Póngase en contacto con NetApp"^]
-. Correo:ng-keystone-success@netapp.com[Contacto NetApp] para autorizar su cuenta de usuario de BlueXP con una o más suscripciones de Keystone Flex.
+. Si aún no tiene una suscripción, https://["Póngase en contacto con NetApp"^]
+. Mailto:ng-keystone-success@netapp.com[Contactar con NetApp] para autorizar tu cuenta de usuario de BlueXP con una o más suscripciones de Keystone.
 . Una vez que NetApp le autorice a su cuenta, link:task-manage-keystone.html#link-a-subscription["Vincule sus suscripciones para su uso con Cloud Volumes ONTAP"].
 . En la página Canvas, haga clic en *Agregar entorno de trabajo* y siga los pasos de BlueXP.
 +
-.. Seleccione el método de carga de suscripción Keystone Flex cuando se le solicite que elija un método de carga.
+.. Seleccione el método de carga de Keystone Subscription cuando se le solicite que elija un método de carga.
 +
-image:screenshot-keystone.png["Captura de pantalla de la opción de suscripción de Keystone Flex al crear un entorno de trabajo de Cloud Volumes ONTAP."]
+image:screenshot-keystone.png["Una captura de pantalla de la opción Suscripción de Keystone al crear un entorno de trabajo de Cloud Volumes ONTAP."]
 
 
 

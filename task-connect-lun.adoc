@@ -31,9 +31,9 @@ Tenga en cuenta lo siguiente:
 . Haga clic en *Copiar* para copiar el nombre del IQN.
 . Configurar una conexión iSCSI desde el host al LUN.
 +
-** http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-iscsi-rhel-cg/GUID-15E8C226-BED5-46D0-BAED-379EA4311340.html["Configuración exprés de iSCSI de ONTAP 9 para Red Hat Enterprise Linux: Iniciar las sesiones iSCSI con el destino"^]
-** http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-iscsi-cpg/GUID-857453EC-90E9-4AB6-B543-83827CF374BF.html["Configuración exprés de iSCSI para Windows de ONTAP 9: Iniciar sesiones iSCSI con el destino"^]
-** https://docs.netapp.com/us-en/ontap-sanhost/["Configuración de hosts SAN ONTAP"^]
+** http://["Configuración exprés de iSCSI de ONTAP 9 para Red Hat Enterprise Linux: Iniciar las sesiones iSCSI con el destino"^]
+** http://["Configuración exprés de iSCSI para Windows de ONTAP 9: Iniciar sesiones iSCSI con el destino"^]
+** https://["Configuración de hosts SAN ONTAP"^]
 
 
 

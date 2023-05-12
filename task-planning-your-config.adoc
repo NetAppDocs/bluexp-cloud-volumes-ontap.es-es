@@ -30,9 +30,9 @@ Hay varias opciones de licencia disponibles para Cloud Volumes ONTAP. Cada opci�
 
 == Seleccione una región admitida
 
-Cloud Volumes ONTAP se admite en la mayoría de las regiones de AWS. https://cloud.netapp.com/cloud-volumes-global-regions["Consulte la lista completa de las regiones admitidas"^].
+Cloud Volumes ONTAP se admite en la mayoría de las regiones de AWS. https://["Consulte la lista completa de las regiones admitidas"^].
 
-Para poder crear y gestionar recursos en esas regiones, deben habilitarse las nuevas regiones de AWS. https://docs.aws.amazon.com/general/latest/gr/rande-manage.html["Aprenda a habilitar una región"^].
+Para poder crear y gestionar recursos en esas regiones, deben habilitarse las nuevas regiones de AWS. https://["Aprenda a habilitar una región"^].
 
 
 
@@ -40,7 +40,7 @@ Para poder crear y gestionar recursos en esas regiones, deben habilitarse las nu
 
 Cloud Volumes ONTAP admite varios tipos de instancia, según el tipo de licencia que elija.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["Configuraciones compatibles para Cloud Volumes ONTAP en AWS"^]
+https://["Configuraciones compatibles para Cloud Volumes ONTAP en AWS"^]
 
 
 
@@ -48,7 +48,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws
 
 El límite de capacidad bruta de un sistema de Cloud Volumes ONTAP está relacionado con la licencia. Los límites adicionales afectan al tamaño de los agregados y los volúmenes. Debe conocer estos límites a medida que planifique la configuración.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html["Límites de almacenamiento para Cloud Volumes ONTAP en AWS"^]
+https://["Límites de almacenamiento para Cloud Volumes ONTAP en AWS"^]
 
 
 
@@ -63,19 +63,19 @@ Tipo de instancia::
 * Si varios usuarios escriben en el sistema al mismo tiempo, elija un tipo de instancia que tenga suficientes CPU para administrar las solicitudes.
 * Si tiene una aplicación que está mayormente en lectura, elija un sistema con suficiente RAM.
 +
-** https://aws.amazon.com/ec2/instance-types/["Documentación de AWS: Tipos de instancias de Amazon EC2"^]
-** https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSOptimized.html["Documentación de AWS: Instancias optimizadas para Amazon EBS"^]
+** https://["Documentación de AWS: Tipos de instancias de Amazon EC2"^]
+** https://["Documentación de AWS: Instancias optimizadas para Amazon EBS"^]
 
 
 
 
 --
-Tipo de disco de EBS:: En líneas generales, las diferencias entre los tipos de discos de EBS son las siguientes. Para obtener más información acerca de los casos de uso para discos EBS, consulte http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["Documentación de AWS: Tipos de volúmenes de EBS"^].
+Tipo de disco de EBS:: En líneas generales, las diferencias entre los tipos de discos de EBS son las siguientes. Para obtener más información acerca de los casos de uso para discos EBS, consulte http://["Documentación de AWS: Tipos de volúmenes de EBS"^].
 +
 --
 * _Los discos SSD de uso general (gp3)_ son los SSD de menor coste que equilibran los costes y el rendimiento con una amplia variedad de cargas de trabajo. El rendimiento se define en términos de IOPS y rendimiento. Los discos gp3 son compatibles con Cloud Volumes ONTAP 9.7 y versiones posteriores.
 +
-Al seleccionar un disco gp3, BlueXP rellena los valores predeterminados de IOPS y rendimiento que proporcionan un rendimiento equivalente a un disco gp2 basado en el tamaño de disco seleccionado. Puede aumentar los valores para obtener un mejor rendimiento a un coste más alto, pero no apoyamos valores más bajos porque puede resultar en un rendimiento inferior. En resumen, cíñase a los valores predeterminados o aumentarlos. No los baje. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["Más información sobre los discos gp3 y su rendimiento"^].
+Al seleccionar un disco gp3, BlueXP rellena los valores predeterminados de IOPS y rendimiento que proporcionan un rendimiento equivalente a un disco gp2 basado en el tamaño de disco seleccionado. Puede aumentar los valores para obtener un mejor rendimiento a un coste más alto, pero no apoyamos valores más bajos porque puede resultar en un rendimiento inferior. En resumen, cíñase a los valores predeterminados o aumentarlos. No los baje. https://["Más información sobre los discos gp3 y su rendimiento"^].
 
 +
 Tenga en cuenta que Cloud Volumes ONTAP admite la función Amazon EBS Elastic Volumes con discos gp3. link:concept-aws-elastic-volumes.html["Obtenga más información sobre la compatibilidad con Elastic Volumes"].
@@ -101,7 +101,7 @@ Tamaño del disco de EBS:: Si elige una configuración que no sea compatible con
 * En última instancia, debe elegir el tamaño del disco que le proporcione el _rendimiento sostenido_ que necesita.
 * Aunque elija discos más grandes (por ejemplo, seis discos de 4 TIB), es posible que no obtenga todas las IOPS porque la instancia de EC2 puede alcanzar su límite de ancho de banda.
 +
-Para obtener más información sobre el rendimiento del disco EBS, consulte http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["Documentación de AWS: Tipos de volúmenes de EBS"^].
+Para obtener más información sobre el rendimiento del disco EBS, consulte http://["Documentación de AWS: Tipos de volúmenes de EBS"^].
 
 +
 Como se ha mencionado anteriormente, no es posible elegir un tamaño de disco para las configuraciones de Cloud Volumes ONTAP compatibles con la función Amazon EBS Elastic Volumes. link:concept-aws-elastic-volumes.html["Obtenga más información sobre la compatibilidad con Elastic Volumes"].
@@ -120,7 +120,7 @@ Además del almacenamiento de los datos de usuario, BlueXP también adquiere alm
 link:reference-default-configs.html#aws["Ver los discos predeterminados para los datos del sistema Cloud Volumes ONTAP en AWS"].
 
 
-TIP: El conector también requiere un disco del sistema. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["Ver detalles sobre la configuración predeterminada del conector"^].
+TIP: El conector también requiere un disco del sistema. https://["Ver detalles sobre la configuración predeterminada del conector"^].
 
 
 

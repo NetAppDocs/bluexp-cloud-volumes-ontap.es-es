@@ -16,7 +16,7 @@ summary: A partir del lanzamiento de la versión 9.11.1, se admiten los pares de
 [role="lead"]
 A partir del lanzamiento de la versión 9.11.1, se admiten los pares de alta disponibilidad de Cloud Volumes ONTAP en AWS con el uso compartido de VPC. El uso compartido de VPC permite a la organización compartir subredes con otras cuentas de AWS. Para utilizar esta configuración, debe configurar su entorno AWS y después implementar el par de alta disponibilidad mediante la API.
 
-Con https://aws.amazon.com/blogs/networking-and-content-delivery/vpc-sharing-a-new-approach-to-multiple-accounts-and-vpc-management/["Uso compartido de VPC"^], Una configuración de alta disponibilidad de Cloud Volumes ONTAP se distribuye entre dos cuentas:
+Con https://["Uso compartido de VPC"^], Una configuración de alta disponibilidad de Cloud Volumes ONTAP se distribuye entre dos cuentas:
 
 * La cuenta de propietario de VPC, que posee las redes (el VPC, subredes, tablas de rutas y grupo de seguridad Cloud Volumes ONTAP).
 * La cuenta de participante, donde las instancias de EC2 se ponen en marcha en subredes compartidas (esto incluye los dos nodos de alta disponibilidad y el mediador).
@@ -38,7 +38,7 @@ Al crear el entorno de trabajo de Cloud Volumes ONTAP, BlueXP crea y adjunta aut
 Este paso es necesario para poner en marcha el par de alta disponibilidad en subredes compartidas.
 
 +
-https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html#vpc-sharing-share-subnet["Documentación de AWS: Comparta una subred"^]
+https://["Documentación de AWS: Comparta una subred"^]
 
 . En la cuenta de propietario de VPC, cree un grupo de seguridad para Cloud Volumes ONTAP.
 +
@@ -82,7 +82,7 @@ Por ejemplo:
 }
 ----
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/overview.html["Obtenga más información acerca de la API de Cloud Volumes ONTAP"^]
+https://["Obtenga más información acerca de la API de Cloud Volumes ONTAP"^]
 
 
 

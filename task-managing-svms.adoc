@@ -23,7 +23,7 @@ Una máquina virtual de almacenamiento es un equipo virtual que se ejecuta en ON
 
 == Número admitido de máquinas virtuales de almacenamiento
 
-Se admiten varios equipos virtuales de almacenamiento con determinadas configuraciones. Vaya a la https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Notas de la versión de Cloud Volumes ONTAP"^] Para verificar el número admitido de máquinas virtuales de almacenamiento para la versión de Cloud Volumes ONTAP.
+Se admiten varios equipos virtuales de almacenamiento con determinadas configuraciones. Vaya a la https://["Notas de la versión de Cloud Volumes ONTAP"^] Para verificar el número admitido de máquinas virtuales de almacenamiento para la versión de Cloud Volumes ONTAP.
 
 
 
@@ -62,6 +62,6 @@ image:screenshot_svm.gif["Screen shot: Muestra el campo SVM Name y el icono de e
 
 BlueXP no ofrece ninguna compatibilidad de configuración o orquestación para la recuperación ante desastres de equipos virtuales de almacenamiento. Se debe usar System Manager o la CLI.
 
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["Guía exprés de preparación para la recuperación de desastres de SVM"^]
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["Guía exprés de recuperación ante desastres de SVM"^]
+* https://["Guía exprés de preparación para la recuperación de desastres de SVM"^]
+* https://["Guía exprés de recuperación ante desastres de SVM"^]
 

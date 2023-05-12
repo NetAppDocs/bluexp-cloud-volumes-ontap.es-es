@@ -32,7 +32,7 @@ Con cualquiera de las configuraciones, BlueXP limita siempre el acceso a la red 
 
 Si así lo requiere su empresa, puede cambiar un valor de BlueXP para que configure Cloud Volumes ONTAP para que use extremos de servicio en lugar de un vínculo privado de Azure. El cambio de esta configuración se aplica a los nuevos sistemas Cloud Volumes ONTAP que cree. Solo se admiten los extremos de servicio en link:https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Pares de regiones de Azure"^] Entre el conector y los Nets Cloud Volumes ONTAP.
 
-El conector debe ponerse en marcha en la misma región de Azure que los sistemas Cloud Volumes ONTAP que gestione o en https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Par de regiones de Azure"^] Para los sistemas Cloud Volumes ONTAP.
+El conector debe ponerse en marcha en la misma región de Azure que los sistemas Cloud Volumes ONTAP que gestione o en https://["Par de regiones de Azure"^] Para los sistemas Cloud Volumes ONTAP.
 
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *Configuración del conector*.
@@ -47,7 +47,7 @@ image:screenshot_settings_icon.png["Captura de pantalla que muestra el icono Con
 .Después de terminar
 Si ha deshabilitado vínculos privados de Azure y el conector utiliza un servidor proxy, debe habilitar el tráfico API directo.
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-configuring-proxy.html#enable-a-proxy-on-a-connector["Aprenda a activar el tráfico API directo en el conector"^]
+https://["Aprenda a activar el tráfico API directo en el conector"^]
 
 
 
@@ -80,9 +80,9 @@ NOTE: Si los sistemas Connector y Cloud Volumes ONTAP están implementados en di
 
 === Proporcione a BlueXP detalles acerca de su DNS privado de Azure
 
-Si utiliza https://docs.microsoft.com/en-us/azure/dns/private-dns-overview["DNS privado de Azure"^], entonces necesita modificar un archivo de configuración en cada conector. De lo contrario, BlueXP no puede habilitar la conexión de Azure Private Link entre Cloud Volumes ONTAP y sus cuentas de almacenamiento asociadas.
+Si utiliza https://["DNS privado de Azure"^], entonces necesita modificar un archivo de configuración en cada conector. De lo contrario, BlueXP no puede habilitar la conexión de Azure Private Link entre Cloud Volumes ONTAP y sus cuentas de almacenamiento asociadas.
 
-Tenga en cuenta que el nombre DNS debe coincidir con la nomenclatura de DNS de Azure requisitos https://docs.microsoft.com/en-us/azure/storage/common/storage-private-endpoints#dns-changes-for-private-endpoints["Como se muestra en la documentación de Azure"^].
+Tenga en cuenta que el nombre DNS debe coincidir con la nomenclatura de DNS de Azure requisitos https://["Como se muestra en la documentación de Azure"^].
 
 .Pasos
 . SSH en el host del conector e inicie sesión.

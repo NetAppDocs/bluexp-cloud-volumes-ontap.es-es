@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploying-otc-aws.html 
-keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create, aws, serial number, license key, byol, test instance, aws tags, tags, location, vpc, encryption, security group, aws-managed encryption, disk size, disk type, write speed, licensing, IAM role, preconfigured package, access control, volume protection, usage profile, register, CIFS share, quota, qtree, WorkingEnvironmentId, HA, high availability, subscription 
+keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create, aws, serial number, license key, byol, test instance, aws tags, tags, location, vpc, encryption, security group, aws-managed encryption, disk size, disk type, write speed, licensing, IAM role, preconfigured package, access control, volume protection, usage profile, register, CIFS share, quota, qtree, WorkingEnvironmentId, HA, high availability, subscription, cloud data sense, cloud backup 
 summary: Puede iniciar instancias de Cloud Volumes ONTAP en una configuración de un único sistema o como par de alta disponibilidad en AWS. 
 ---
 = Inicio de Cloud Volumes ONTAP en AWS
@@ -25,8 +25,8 @@ Necesita lo siguiente para crear un entorno de trabajo.
 [[licensing]]
 * Un conector que está listo y en funcionamiento.
 +
-** Usted debe tener un https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Conector asociado al área de trabajo"^].
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Debe estar preparado para dejar el conector funcionando en en todo momento"^].
+** Usted debe tener un https://["Conector asociado al área de trabajo"^].
+** https://["Debe estar preparado para dejar el conector funcionando en en todo momento"^].
 
 
 * Descripción de la configuración que desea usar.
@@ -56,7 +56,7 @@ Inmediatamente después de crear el entorno de trabajo, BlueXP inicia una instan
 . En el menú de navegación de la izquierda, selecciona *almacenamiento > Canvas*.
 . [[suscribirse]]en la página Canvas, haga clic en *Agregar entorno de trabajo* y siga las indicaciones.
 . *Elija una ubicación*: Seleccione *Amazon Web Services* y *Cloud Volumes ONTAP Single Node*.
-. Si se le solicita, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Cree un conector"^].
+. Si se le solicita, https://["Cree un conector"^].
 . *Detalles y credenciales*: Si lo desea, puede cambiar las credenciales y la suscripción de AWS, introducir un nombre de entorno de trabajo, agregar etiquetas y, a continuación, introducir una contraseña.
 +
 Algunos de los campos en esta página son claros y explicativos. En la siguiente tabla se describen los campos que podrían presentar dificultades:
@@ -70,13 +70,13 @@ Algunos de los campos en esta página son claros y explicativos. En la siguiente
 | Nombre del entorno de trabajo | BlueXP usa el nombre del entorno de trabajo para asignar un nombre tanto al sistema Cloud Volumes ONTAP como a la instancia de Amazon EC2. También utiliza el nombre como prefijo para el grupo de seguridad predefinido si selecciona esa opción. 
 
 
-| Agregar etiquetas | Las etiquetas de AWS son metadatos para sus recursos de AWS. BlueXP agrega las etiquetas a la instancia de Cloud Volumes ONTAP y cada recurso de AWS asociado a la instancia. Puede agregar hasta cuatro etiquetas desde la interfaz de usuario al crear un entorno de trabajo y, a continuación, puede agregar más después de crear. Tenga en cuenta que la API no le limita a cuatro etiquetas al crear un entorno de trabajo. Para obtener información sobre etiquetas, consulte https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html["Documentación de AWS: Etiquetado de los recursos de Amazon EC2"^]. 
+| Agregar etiquetas | Las etiquetas de AWS son metadatos para sus recursos de AWS. BlueXP agrega las etiquetas a la instancia de Cloud Volumes ONTAP y cada recurso de AWS asociado a la instancia. Puede agregar hasta cuatro etiquetas desde la interfaz de usuario al crear un entorno de trabajo y, a continuación, puede agregar más después de crear. Tenga en cuenta que la API no le limita a cuatro etiquetas al crear un entorno de trabajo. Para obtener información sobre etiquetas, consulte https://["Documentación de AWS: Etiquetado de los recursos de Amazon EC2"^]. 
 
 
 | Nombre de usuario y contraseña | Estas son las credenciales de la cuenta de administrador del clúster de Cloud Volumes ONTAP. Puede usar estas credenciales para conectarse a Cloud Volumes ONTAP a través de System Manager o de la CLI. Mantenga el nombre de usuario predeterminado _admin_ o cámbielo por un nombre de usuario personalizado. 
 
 
-| Editar credenciales | Seleccione las credenciales de AWS asociadas con la cuenta en la que desea implementar este sistema. También puede asociar la suscripción a AWS Marketplace para utilizarla con este sistema Cloud Volumes ONTAP. Haga clic en *Agregar suscripción* para asociar las credenciales seleccionadas con una nueva suscripción a AWS Marketplace. La suscripción puede ser por un contrato anual o para pagar por Cloud Volumes ONTAP a una tarifa por hora.https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["Aprenda a añadir credenciales de AWS adicionales a BlueXP"^]. 
+| Editar credenciales | Seleccione las credenciales de AWS asociadas con la cuenta en la que desea implementar este sistema. También puede asociar la suscripción a AWS Marketplace para utilizarla con este sistema Cloud Volumes ONTAP. Haga clic en *Agregar suscripción* para asociar las credenciales seleccionadas con una nueva suscripción a AWS Marketplace. La suscripción puede ser por un contrato anual o para pagar por Cloud Volumes ONTAP a una tarifa por hora.https://["Aprenda a añadir credenciales de AWS adicionales a BlueXP"^]. 
 |===
 +
 En el siguiente vídeo se muestra cómo asociar una suscripción de pago por uso a Marketplace en sus credenciales de AWS:
@@ -89,11 +89,11 @@ TIP: Si varios usuarios de IAM trabajan en la misma cuenta de AWS, cada usuario 
 
 . *Servicios*: Mantenga activados los servicios o desactive los servicios individuales que no desea utilizar con Cloud Volumes ONTAP.
 +
-** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Más información acerca de Cloud Data Sense"^]
-** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Más información acerca de Cloud Backup"^]
+** https://["Más información sobre la clasificación de BlueXP"^]
+** https://["Más información sobre el backup y la recuperación de datos de BlueXP"^]
 +
 
-TIP: Si desea utilizar WORM y la organización en niveles de los datos, debe deshabilitar Cloud Backup y poner en marcha un entorno de trabajo Cloud Volumes ONTAP con la versión 9.8 o posterior.
+TIP: Si quieres utilizar WORM y organización de datos en niveles, debes deshabilitar el backup y la recuperación de BlueXP y poner en marcha un entorno de trabajo de Cloud Volumes ONTAP con la versión 9,8 o posterior.
 
 
 
@@ -250,7 +250,7 @@ image:screenshot_cot_vol.gif["Captura de pantalla: Muestra la página volumen re
 | Dominio DNS | El dominio DNS para la máquina virtual de almacenamiento (SVM) de Cloud Volumes ONTAP. En la mayoría de los casos, el dominio es el mismo que el dominio de AD. 
 
 
-| Servidor NTP | Seleccione *usar dominio de Active Directory* para configurar un servidor NTP mediante el DNS de Active Directory. Si necesita configurar un servidor NTP con una dirección diferente, debe usar la API. Consulte https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Documentos de automatización de BlueXP"^] para obtener más detalles. Tenga en cuenta que solo puede configurar un servidor NTP cuando cree un servidor CIFS. No se puede configurar después de crear el servidor CIFS. 
+| Servidor NTP | Seleccione *usar dominio de Active Directory* para configurar un servidor NTP mediante el DNS de Active Directory. Si necesita configurar un servidor NTP con una dirección diferente, debe usar la API. Consulte https://["Documentos de automatización de BlueXP"^] para obtener más detalles. Tenga en cuenta que solo puede configurar un servidor NTP cuando cree un servidor CIFS. No se puede configurar después de crear el servidor CIFS. 
 |===
 . *Perfil de uso, Tipo de disco y Directiva de organización en niveles*: Elija si desea activar las funciones de eficiencia del almacenamiento y editar la política de organización en niveles de volumen, si es necesario.
 +
@@ -271,7 +271,7 @@ BlueXP inicia la instancia de Cloud Volumes ONTAP. Puede realizar un seguimiento
 
 Si tiene algún problema con el inicio de la instancia de Cloud Volumes ONTAP, revise el mensaje de error. También puede seleccionar el entorno de trabajo y hacer clic en Volver a crear entorno.
 
-Para obtener más ayuda, vaya a. https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["Soporte Cloud Volumes ONTAP de NetApp"^].
+Para obtener más ayuda, vaya a. https://["Soporte Cloud Volumes ONTAP de NetApp"^].
 
 .Después de terminar
 * Si ha aprovisionado un recurso compartido CIFS, proporcione permisos a usuarios o grupos a los archivos y carpetas y compruebe que esos usuarios pueden acceder al recurso compartido y crear un archivo.
@@ -310,13 +310,13 @@ Algunos de los campos en esta página son claros y explicativos. En la siguiente
 | Nombre del entorno de trabajo | BlueXP usa el nombre del entorno de trabajo para asignar un nombre tanto al sistema Cloud Volumes ONTAP como a la instancia de Amazon EC2. También utiliza el nombre como prefijo para el grupo de seguridad predefinido si selecciona esa opción. 
 
 
-| Agregar etiquetas | Las etiquetas de AWS son metadatos para sus recursos de AWS. BlueXP agrega las etiquetas a la instancia de Cloud Volumes ONTAP y cada recurso de AWS asociado a la instancia. Puede agregar hasta cuatro etiquetas desde la interfaz de usuario al crear un entorno de trabajo y, a continuación, puede agregar más después de crear. Tenga en cuenta que la API no le limita a cuatro etiquetas al crear un entorno de trabajo. Para obtener información sobre etiquetas, consulte https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html["Documentación de AWS: Etiquetado de los recursos de Amazon EC2"^]. 
+| Agregar etiquetas | Las etiquetas de AWS son metadatos para sus recursos de AWS. BlueXP agrega las etiquetas a la instancia de Cloud Volumes ONTAP y cada recurso de AWS asociado a la instancia. Puede agregar hasta cuatro etiquetas desde la interfaz de usuario al crear un entorno de trabajo y, a continuación, puede agregar más después de crear. Tenga en cuenta que la API no le limita a cuatro etiquetas al crear un entorno de trabajo. Para obtener información sobre etiquetas, consulte https://["Documentación de AWS: Etiquetado de los recursos de Amazon EC2"^]. 
 
 
 | Nombre de usuario y contraseña | Estas son las credenciales de la cuenta de administrador del clúster de Cloud Volumes ONTAP. Puede usar estas credenciales para conectarse a Cloud Volumes ONTAP a través de System Manager o de la CLI. Mantenga el nombre de usuario predeterminado _admin_ o cámbielo por un nombre de usuario personalizado. 
 
 
-| Editar credenciales | Elija las credenciales de AWS y la suscripción al mercado para utilizar con este sistema Cloud Volumes ONTAP. Haga clic en *Agregar suscripción* para asociar las credenciales seleccionadas con una nueva suscripción a AWS Marketplace. La suscripción puede ser por un contrato anual o para pagar por Cloud Volumes ONTAP a una tarifa por hora. Si se adquiere una licencia directamente a NetApp (BYOL), no será necesaria una suscripción a AWS.https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["Aprenda a añadir credenciales de AWS adicionales a BlueXP"^]. 
+| Editar credenciales | Elija las credenciales de AWS y la suscripción al mercado para utilizar con este sistema Cloud Volumes ONTAP. Haga clic en *Agregar suscripción* para asociar las credenciales seleccionadas con una nueva suscripción a AWS Marketplace. La suscripción puede ser por un contrato anual o para pagar por Cloud Volumes ONTAP a una tarifa por hora. Si se adquiere una licencia directamente a NetApp (BYOL), no será necesaria una suscripción a AWS.https://["Aprenda a añadir credenciales de AWS adicionales a BlueXP"^]. 
 |===
 +
 En el siguiente vídeo se muestra cómo asociar una suscripción de pago por uso a Marketplace en sus credenciales de AWS:
@@ -329,11 +329,11 @@ TIP: Si varios usuarios de IAM trabajan en la misma cuenta de AWS, cada usuario 
 
 . *Servicios*: Mantenga activados o desactive los servicios individuales que no desea utilizar con este sistema Cloud Volumes ONTAP.
 +
-** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Más información acerca de Cloud Data Sense"^]
-** https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Más información acerca de Cloud Backup"^]
+** https://["Más información sobre la clasificación de BlueXP"^]
+** https://["Más información sobre el backup y la recuperación de datos de BlueXP"^]
 +
 
-TIP: Si desea utilizar WORM y la organización en niveles de los datos, debe deshabilitar Cloud Backup y poner en marcha un entorno de trabajo Cloud Volumes ONTAP con la versión 9.8 o posterior.
+TIP: Si quieres utilizar WORM y organización de datos en niveles, debes deshabilitar el backup y la recuperación de BlueXP y poner en marcha un entorno de trabajo de Cloud Volumes ONTAP con la versión 9,8 o posterior.
 
 
 
@@ -369,7 +369,7 @@ Las direcciones IP deben estar fuera del bloque CIDR para todas las VPC de la re
 
 . * tablas de rutas*: Si elige varios AZs, seleccione las tablas de rutas que deben incluir rutas a las direcciones IP flotantes.
 +
-Si tiene más de una tabla de rutas, es muy importante seleccionar las tablas de rutas correctas. De lo contrario, es posible que algunos clientes no tengan acceso al par de alta disponibilidad de Cloud Volumes ONTAP. Para obtener más información sobre las tablas de rutas, consulte http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html["Documentación de AWS: Tablas de rutas"^].
+Si tiene más de una tabla de rutas, es muy importante seleccionar las tablas de rutas correctas. De lo contrario, es posible que algunos clientes no tengan acceso al par de alta disponibilidad de Cloud Volumes ONTAP. Para obtener más información sobre las tablas de rutas, consulte http://["Documentación de AWS: Tablas de rutas"^].
 
 . *cifrado de datos*: Elija sin cifrado de datos o cifrado gestionado por AWS.
 +
@@ -500,7 +500,7 @@ image:screenshot_cot_vol.gif["Captura de pantalla: Muestra la página volumen re
 | Dominio DNS | El dominio DNS para la máquina virtual de almacenamiento (SVM) de Cloud Volumes ONTAP. En la mayoría de los casos, el dominio es el mismo que el dominio de AD. 
 
 
-| Servidor NTP | Seleccione *usar dominio de Active Directory* para configurar un servidor NTP mediante el DNS de Active Directory. Si necesita configurar un servidor NTP con una dirección diferente, debe usar la API. Consulte https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Documentos de automatización de BlueXP"^] para obtener más detalles. Tenga en cuenta que solo puede configurar un servidor NTP cuando cree un servidor CIFS. No se puede configurar después de crear el servidor CIFS. 
+| Servidor NTP | Seleccione *usar dominio de Active Directory* para configurar un servidor NTP mediante el DNS de Active Directory. Si necesita configurar un servidor NTP con una dirección diferente, debe usar la API. Consulte https://["Documentos de automatización de BlueXP"^] para obtener más detalles. Tenga en cuenta que solo puede configurar un servidor NTP cuando cree un servidor CIFS. No se puede configurar después de crear el servidor CIFS. 
 |===
 . *Perfil de uso, Tipo de disco y Directiva de organización en niveles*: Elija si desea activar las funciones de eficiencia del almacenamiento y editar la política de organización en niveles de volumen, si es necesario.
 +
@@ -521,7 +521,7 @@ BlueXP inicia el par de alta disponibilidad de Cloud Volumes ONTAP. Puede realiz
 
 Si tiene algún problema con el inicio de la pareja de alta disponibilidad, revise el mensaje de error. También puede seleccionar el entorno de trabajo y hacer clic en Volver a crear entorno.
 
-Para obtener más ayuda, vaya a. https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["Soporte Cloud Volumes ONTAP de NetApp"^].
+Para obtener más ayuda, vaya a. https://["Soporte Cloud Volumes ONTAP de NetApp"^].
 
 .Después de terminar
 * Si ha aprovisionado un recurso compartido CIFS, proporcione permisos a usuarios o grupos a los archivos y carpetas y compruebe que esos usuarios pueden acceder al recurso compartido y crear un archivo.

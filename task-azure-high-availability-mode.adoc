@@ -30,7 +30,7 @@ Tenga en cuenta lo siguiente:
 Un usuario de Azure con privilegios de "propietario" puede habilitar la función desde la CLI de Azure.
 
 .Pasos
-. https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart["Acceda a Azure Cloud Shell desde el portal de Azure"^]
+. https://["Acceda a Azure Cloud Shell desde el portal de Azure"^]
 . Registre la función del modo de alta disponibilidad:
 +
 [source, azurecli]

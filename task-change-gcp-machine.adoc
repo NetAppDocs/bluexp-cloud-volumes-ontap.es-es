@@ -19,7 +19,7 @@ Puede elegir entre varios tipos de máquinas al iniciar Cloud Volumes ONTAP en G
 .Acerca de esta tarea
 * La devolución automática debe estar habilitada en una pareja de ha de Cloud Volumes ONTAP (esta es la configuración predeterminada). Si no lo es, la operación fallará.
 +
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D01-49A5-BEFD-D529713EC1FA.html["Documentación de ONTAP 9: Comandos para configurar el retorno automático"^]
+http://["Documentación de ONTAP 9: Comandos para configurar el retorno automático"^]
 
 * Cambiar el tipo de máquina puede afectar a los cargos por servicio de Google Cloud.
 * La operación reinicia Cloud Volumes ONTAP.

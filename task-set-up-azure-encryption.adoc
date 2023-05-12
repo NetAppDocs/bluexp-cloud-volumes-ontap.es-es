@@ -14,13 +14,13 @@ summary: Los datos se cifran automáticamente en Cloud Volumes ONTAP de Azure me
 
 
 [role="lead"]
-Los datos se cifran automáticamente en Cloud Volumes ONTAP, en Azure mediante https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Cifrado del servicio de almacenamiento de Azure"] Con una clave gestionada por Microsoft. Pero puede utilizar su propia clave de cifrado siguiendo los pasos de esta página.
+Los datos se cifran automáticamente en Cloud Volumes ONTAP, en Azure mediante https://["Cifrado del servicio de almacenamiento de Azure"] Con una clave gestionada por Microsoft. Pero puede utilizar su propia clave de cifrado siguiendo los pasos de esta página.
 
 
 
 == Información general de cifrado de datos
 
-Los datos de Cloud Volumes ONTAP se cifran automáticamente en Azure mediante https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Cifrado del servicio de almacenamiento de Azure"^]. La implementación predeterminada utiliza una clave administrada por Microsoft. No se requiere configuración.
+Los datos de Cloud Volumes ONTAP se cifran automáticamente en Azure mediante https://["Cifrado del servicio de almacenamiento de Azure"^]. La implementación predeterminada utiliza una clave administrada por Microsoft. No se requiere configuración.
 
 Si desea utilizar una clave gestionada por el cliente con Cloud Volumes ONTAP, debe realizar los siguientes pasos:
 
@@ -54,7 +54,7 @@ Zona de disponibilidad única de Azure ha::
 --
 * Todas las cuentas de almacenamiento de Azure de Cloud Volumes ONTAP se cifran utilizando una clave gestionada por el cliente
 * Cualquier nueva cuenta de almacenamiento (por ejemplo, al agregar discos o agrupaciones) utiliza también la misma clave
-* Desde ONTAP 9.10.1P3, para NVRAM y el disco principal, BlueXP utiliza un https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["conjunto de cifrado de disco"^], que permite la administración de claves de cifrado con discos administrados. Las versiones inferiores utilizarán la clave gestionada por Microsoft en lugar de la clave gestionada por el cliente.
+* Desde ONTAP 9.10.1P3, para NVRAM y el disco principal, BlueXP utiliza un https://["conjunto de cifrado de disco"^], que permite la administración de claves de cifrado con discos administrados. Las versiones inferiores utilizarán la clave gestionada por Microsoft en lugar de la clave gestionada por el cliente.
 
 
 --
@@ -62,7 +62,7 @@ Un solo nodo::
 +
 --
 * Todas las cuentas de almacenamiento de Azure para Cloud Volumes ONTAP se cifran con una clave gestionada por los clientes. 1
-* Para los discos raíz, de arranque y de datos, BlueXP utiliza un https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["conjunto de cifrado de disco"^], que permite la administración de claves de cifrado con discos administrados.
+* Para los discos raíz, de arranque y de datos, BlueXP utiliza un https://["conjunto de cifrado de disco"^], que permite la administración de claves de cifrado con discos administrados.
 * Todos los discos de datos nuevos también utilizan el mismo conjunto de cifrado de disco.
 * Desde ONTAP 9.9.1P7, para NVRAM y el disco principal, BlueXP utiliza un conjunto de cifrado de disco, que permite la gestión de claves de cifrado con discos administrados. Las versiones inferiores utilizarán la clave gestionada por Microsoft en lugar de la clave gestionada por el cliente.
 
@@ -81,7 +81,7 @@ Un solo nodo::
 El almacén de claves debe residir en la misma suscripción a Azure y la misma región en la que esté previsto crear el sistema Cloud Volumes ONTAP.
 
 .Pasos
-. https://docs.microsoft.com/en-us/azure/key-vault/general/quick-create-portal["Cree un almacén de claves en su suscripción a Azure"^].
+. https://["Cree un almacén de claves en su suscripción a Azure"^].
 +
 Tenga en cuenta los siguientes requisitos para el almacén de claves:
 
@@ -96,7 +96,7 @@ Tenga en cuenta los siguientes requisitos para el almacén de claves:
 
 
 
-. https://docs.microsoft.com/en-us/azure/key-vault/keys/quick-create-portal#add-a-key-to-key-vault["Genere una clave en el almacén de claves"^].
+. https://["Genere una clave en el almacén de claves"^].
 +
 Tenga en cuenta los siguientes requisitos para la clave:
 
@@ -126,7 +126,7 @@ Si desea utilizar una clave gestionada por el cliente con un sistema Cloud Volum
 "Microsoft.KeyVault/vaults/accessPolicies/write"
 "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
 ----
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["Consulte la lista más reciente de permisos"^]
+https://["Consulte la lista más reciente de permisos"^]
 
 
 NOTE: Los permisos no son necesarios para pares de alta disponibilidad en una sola zona.
@@ -143,7 +143,7 @@ Para un solo nodo: `GET /azure/vsa/metadata/vaults`
 Tome nota de los *nombre* y *ResourceGroup*. Tendrá que especificar esos valores en el paso siguiente.
 
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["Obtenga más información acerca de esta llamada API"^].
+https://["Obtenga más información acerca de esta llamada API"^].
 
 . Obtenga la lista de claves dentro del almacén mediante la siguiente llamada a la API de BlueXP.
 +
@@ -156,7 +156,7 @@ Para un solo nodo: `GET /azure/vsa/metadata/keys-vault`
 Tome nota del *KeyName*. Tendrá que especificar ese valor (junto con el nombre del almacén) en el siguiente paso.
 
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["Obtenga más información acerca de esta llamada API"^].
+https://["Obtenga más información acerca de esta llamada API"^].
 
 . Cree un sistema Cloud Volumes ONTAP mediante la siguiente llamada a la API de BlueXP.
 +
@@ -177,7 +177,7 @@ El cuerpo de la solicitud debe incluir los siguientes campos:
 }
 ----
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-haworking-environments["Obtenga más información acerca de esta llamada API"^].
+https://["Obtenga más información acerca de esta llamada API"^].
 
 .. Para un sistema de un solo nodo:
 +
@@ -196,7 +196,7 @@ El cuerpo de la solicitud debe incluir los siguientes campos:
 }
 ----
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-vsaworking-environments["Obtenga más información acerca de esta llamada API"^].
+https://["Obtenga más información acerca de esta llamada API"^].
 
 
 

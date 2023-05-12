@@ -56,10 +56,10 @@ Almacenamiento NVMe local:: Algunos tipos de instancias de EC2 incluyen almacena
 
 *Enlaces relacionados*
 
-* http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["Documentación de AWS: Tipos de volúmenes de EBS"^]
+* http://["Documentación de AWS: Tipos de volúmenes de EBS"^]
 * link:task-planning-your-config.html["Aprenda a elegir tipos de disco y tamaños de disco para Sus sistemas en AWS"]
-* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html["Revise los límites de almacenamiento de Cloud Volumes ONTAP en AWS"^]
-* http://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["Revise las configuraciones compatibles para Cloud Volumes ONTAP en AWS"^]
+* https://["Revise los límites de almacenamiento de Cloud Volumes ONTAP en AWS"^]
+* http://["Revise las configuraciones compatibles para Cloud Volumes ONTAP en AWS"^]
 
 
 endif::aws[]
@@ -99,10 +99,10 @@ Parejas de HA:: Los pares de ALTA DISPONIBILIDAD usan dos tipos de discos que pr
 
 *Enlaces relacionados*
 
-* https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Documentación de Microsoft Azure: Tipos de discos gestionados de Azure"^]
-* https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-pageblob-overview["Documentación de Microsoft Azure: Información general de los blobs de página de Azure"^]
+* https://["Documentación de Microsoft Azure: Tipos de discos gestionados de Azure"^]
+* https://["Documentación de Microsoft Azure: Información general de los blobs de página de Azure"^]
 * link:task-planning-your-config-azure.html["Aprenda a elegir tipos de disco y tamaños de disco para Sus sistemas en Azure"]
-* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Revise los límites de almacenamiento de Cloud Volumes ONTAP en Azure"^]
+* https://["Revise los límites de almacenamiento de Cloud Volumes ONTAP en Azure"^]
 
 
 endif::azure[]
@@ -119,8 +119,8 @@ El tipo de disco puede ser _Zonal SSD persistent disks_, _Zonal balanced persist
 
 *Enlaces relacionados*
 
-* https://cloud.google.com/compute/docs/disks/["Documentación de Google Cloud: Opciones de almacenamiento"^]
-* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html["Revise los límites de almacenamiento de Cloud Volumes ONTAP en Google Cloud"^]
+* https://["Documentación de Google Cloud: Opciones de almacenamiento"^]
+* https://["Revise los límites de almacenamiento de Cloud Volumes ONTAP en Google Cloud"^]
 
 
 endif::gcp[]
