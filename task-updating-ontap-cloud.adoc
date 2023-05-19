@@ -52,9 +52,6 @@ La versión de Cloud Volumes ONTAP a la que puede actualizar depende de la versi
 | 9.12.1 | 9.13.0 
 
 
-| 9.12.1 | 9.13.0 
-
-
 | 9.12.0 | 9.12.1 
 
 
@@ -303,15 +300,14 @@ Hay dos rutas disponibles. La ruta correcta depende de la versión del conector.
 ** `/opt/application/netapp/cloudmanager/ontap/images/`
 
 
-. En el entorno de trabajo de BlueXP, haga clic en el icono de menú y, a continuación, haga clic en *Avanzado > Actualizar Cloud Volumes ONTAP*.
-. En la página de actualización del software, introduzca la dirección URL y, a continuación, haga clic en *Cambiar imagen*.
+. Desde el entorno de trabajo en BlueXP, haz clic en el botón *... (Elipse icono)*, y luego haga clic en *Actualizar Cloud Volumes ONTAP*.
+. En la página de la versión de Actualizar Cloud Volumes ONTAP, ingrese la URL y luego haga clic en *Cambiar imagen*.
 +
 Si copió la imagen de software en el conector en la ruta mostrada anteriormente, debe introducir la siguiente URL:
 
 +
 \Http://<Connector-private-IP-address>/ontap/images/<image-file-name>
 
-. Haga clic en *continuar* para confirmar.
 
 
 .Resultado

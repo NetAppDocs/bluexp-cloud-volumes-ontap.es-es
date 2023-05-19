@@ -43,25 +43,4 @@ image:screenshot_replicate_volume_svm.gif["Captura de pantalla que muestra la ca
 
 == Modifique el nombre de la máquina virtual de almacenamiento predeterminada
 
-BlueXP nombra automáticamente a la máquina virtual de almacenamiento única que crea para Cloud Volumes ONTAP. Puede modificar el nombre de la máquina virtual de almacenamiento si tiene estrictos estándares de nomenclatura. Por ejemplo, podría que el nombre coincida con el nombre que se le da a las máquinas virtuales de almacenamiento de los clústeres de ONTAP.
-
-Si ha creado cualquier equipo virtual de almacenamiento adicional para Cloud Volumes ONTAP, no puede cambiar el nombre de las máquinas virtuales de almacenamiento desde BlueXP. Tendrá que hacerlo directamente desde Cloud Volumes ONTAP mediante System Manager o la CLI.
-
-.Pasos
-. En el entorno de trabajo, haga clic en el icono de menú y, a continuación, haga clic en *Información*.
-. Haga clic en el icono de edición a la derecha del nombre de la máquina virtual de almacenamiento.
-+
-image:screenshot_svm.gif["Screen shot: Muestra el campo SVM Name y el icono de edición en el que debe hacer clic para modificar el nombre de la SVM."]
-
-. En el cuadro de diálogo Modificar nombre de SVM, cambie el nombre y, a continuación, haga clic en *Guardar*.
-
-
-
-
-== Gestione equipos virtuales de almacenamiento para la recuperación ante desastres
-
-BlueXP no ofrece ninguna compatibilidad de configuración o orquestación para la recuperación ante desastres de equipos virtuales de almacenamiento. Se debe usar System Manager o la CLI.
-
-* https://["Guía exprés de preparación para la recuperación de desastres de SVM"^]
-* https://["Guía exprés de recuperación ante desastres de SVM"^]
-
+BlueXP nombra automáticamente a la máquina virtual de almacenamiento única que crea para Cloud Volumes ONTAP. Desde System Manager, CLI o API, puede modificar el nombre de la máquina virtual de almacenamiento si tiene estándares de nomenclatura estrictos. Por ejemplo, podría que el nombre coincida con el nombre que se le da a las máquinas virtuales de almacenamiento de los clústeres de ONTAP.

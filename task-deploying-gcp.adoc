@@ -73,7 +73,7 @@ En la siguiente tabla se describen los campos que podrían presentar dificultade
 | Nombre del entorno de trabajo | BlueXP usa el nombre del entorno de trabajo para nombrar tanto al sistema Cloud Volumes ONTAP como a la instancia de Google Cloud VM. También utiliza el nombre como prefijo para el grupo de seguridad predefinido si selecciona esa opción. 
 
 
-| Nombre de cuenta de servicio | Si tiene previsto utilizar link:concept-data-tiering.html["organización en niveles de los datos"] o. https://["Backup y recuperación de BlueXP"^] Con Cloud Volumes ONTAP, tendrá que activar *cuenta de servicio* y seleccionar una cuenta de servicio que tenga la función de administrador de almacenamiento predefinido. link:task-creating-gcp-service-account.html["Aprenda a crear una cuenta de servicio"]. 
+| Nombre de cuenta de servicio | Si tiene previsto utilizar link:concept-data-tiering.html["organización en niveles de los datos"] o. https://["backup y recuperación"^] Con Cloud Volumes ONTAP, tendrá que activar *cuenta de servicio* y seleccionar una cuenta de servicio que tenga la función de administrador de almacenamiento predefinido. link:task-creating-gcp-service-account.html["Aprenda a crear una cuenta de servicio"]. 
 
 
 | Agregar etiquetas | Las etiquetas son metadatos para sus recursos de Google Cloud. BlueXP añade las etiquetas al sistema Cloud Volumes ONTAP y a los recursos de Google Cloud asociados al sistema. Puede añadir hasta cuatro etiquetas desde la interfaz de usuario al crear un entorno de trabajo y, después, puede agregar más. Tenga en cuenta que la API no le limita a cuatro etiquetas al crear un entorno de trabajo. Para obtener más información sobre las etiquetas, consulte https://["Documentación de Google Cloud: Etiquetado de recursos"^]. 
@@ -299,7 +299,7 @@ En la siguiente tabla se describen los campos que podrían presentar dificultade
 | Nombre del entorno de trabajo | BlueXP usa el nombre del entorno de trabajo para nombrar tanto al sistema Cloud Volumes ONTAP como a la instancia de Google Cloud VM. También utiliza el nombre como prefijo para el grupo de seguridad predefinido si selecciona esa opción. 
 
 
-| Nombre de cuenta de servicio | Si tiene pensado utilizar el link:concept-data-tiering.html["Organización en niveles de BlueXP"] o. https://["Backup y recuperación de BlueXP"^] Servicios, debe activar el conmutador *cuenta de servicio* y, a continuación, seleccionar la cuenta de servicio que tenga la función Administrador de almacenamiento predefinida. 
+| Nombre de cuenta de servicio | Si tiene pensado utilizar el link:concept-data-tiering.html["organización en niveles de los datos"] o. https://["backup y recuperación"^] Servicios, debe activar el conmutador *cuenta de servicio* y, a continuación, seleccionar la cuenta de servicio que tenga la función Administrador de almacenamiento predefinida. 
 
 
 | Agregar etiquetas | Las etiquetas son metadatos para sus recursos de Google Cloud. BlueXP añade las etiquetas al sistema Cloud Volumes ONTAP y a los recursos de Google Cloud asociados al sistema. Puede añadir hasta cuatro etiquetas desde la interfaz de usuario al crear un entorno de trabajo y, después, puede agregar más. Tenga en cuenta que la API no le limita a cuatro etiquetas al crear un entorno de trabajo. Para obtener más información sobre las etiquetas, consulte https://["Documentación de Google Cloud: Etiquetado de recursos"^]. 
