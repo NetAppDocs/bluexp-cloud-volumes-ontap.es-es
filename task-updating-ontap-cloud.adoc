@@ -32,7 +32,7 @@ Las actualizaciones de Cloud Volumes ONTAP deben completarse desde BlueXP. No de
 
 === Cómo actualizar
 
-BlueXP ofrece tres formas de actualizar Cloud Volumes ONTAP:
+BlueXP ofrece dos formas de actualizar Cloud Volumes ONTAP:
 
 * Siguiendo las notificaciones de actualización que aparecen en el entorno de trabajo
 * Colocando la imagen de actualización en una ubicación HTTPS y, a continuación, proporcionando BlueXP con la URL
