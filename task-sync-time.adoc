@@ -16,4 +16,4 @@ summary: Al especificar un servidor NTP se sincroniza el tiempo entre los sistem
 [role="lead"]
 Al especificar un servidor NTP se sincroniza el tiempo entre los sistemas de la red, lo que puede ayudar a prevenir problemas debido a las diferencias de tiempo.
 
-Especifique un servidor NTP con el https://["API de BlueXP"^] o desde la interfaz de usuario cuando usted link:task-create-volumes.html#create-a-volume["Cree un servidor CIFS"].
+Especifique un servidor NTP con el https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html["API de BlueXP"^] o desde la interfaz de usuario cuando usted link:task-create-volumes.html#create-a-volume["Cree un servidor CIFS"].

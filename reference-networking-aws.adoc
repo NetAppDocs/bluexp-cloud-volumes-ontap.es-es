@@ -40,7 +40,7 @@ Si una conexión a Internet saliente no está disponible para enviar mensajes Au
 
 Si ha definido reglas de salida estrictas para Cloud Volumes ONTAP, también tendrá que asegurarse de que el grupo de seguridad Cloud Volumes ONTAP permita conexiones _saliente_ a través del puerto 3128.
 
-Una vez que haya comprobado que el acceso saliente a Internet está disponible, puede probar AutoSupport para asegurarse de que puede enviar mensajes. Para obtener instrucciones, consulte https://["Documentos de ONTAP: Configure AutoSupport"^].
+Una vez que haya comprobado que el acceso saliente a Internet está disponible, puede probar AutoSupport para asegurarse de que puede enviar mensajes. Para obtener instrucciones, consulte https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["Documentos de ONTAP: Configure AutoSupport"^].
 
 Si BlueXP notifica que los mensajes de AutoSupport no se pueden enviar, link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["Solucione problemas de configuración de AutoSupport"].
 
@@ -50,7 +50,7 @@ Si BlueXP notifica que los mensajes de AutoSupport no se pueden enviar, link:tas
 
 La instancia del mediador de alta disponibilidad debe tener una conexión saliente al servicio EC2 de AWS para que pueda ayudar a recuperarse de la recuperación tras fallos del almacenamiento. Para proporcionar la conexión, puede agregar una dirección IP pública, especificar un servidor proxy o utilizar una opción manual.
 
-La opción manual puede ser una puerta de enlace NAT o un extremo de la interfaz VPC desde la subred de destino al servicio AWS EC2. Para obtener más detalles sobre los extremos VPC, consulte http://["Documentación de AWS: Extremos de VPC de la interfaz (AWS PrivateLink)"^].
+La opción manual puede ser una puerta de enlace NAT o un extremo de la interfaz VPC desde la subred de destino al servicio AWS EC2. Para obtener más detalles sobre los extremos VPC, consulte http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-interface.html["Documentación de AWS: Extremos de VPC de la interfaz (AWS PrivateLink)"^].
 
 
 
@@ -176,23 +176,23 @@ TIP: Cuando se implementan en varias zonas de disponibilidad, hay varias LIF aso
 No necesita crear grupos de seguridad porque BlueXP lo hace por usted. Si necesita utilizar el suyo propio, consulte link:reference-security-groups.html["Reglas de grupo de seguridad"].
 
 
-TIP: ¿Busca información sobre el conector? https://["Ver reglas de grupo de seguridad para el conector"^]
+TIP: ¿Busca información sobre el conector? https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Ver reglas de grupo de seguridad para el conector"^]
 
 
 
 === Conexión para la organización en niveles de datos
 
-Si desea usar EBS como nivel de rendimiento y AWS S3 como nivel de capacidad, debe asegurarse de que Cloud Volumes ONTAP tenga una conexión con S3. La mejor forma de proporcionar esa conexión es crear un extremo de VPC con el servicio S3. Para ver instrucciones, consulte https://["Documentación de AWS: Crear un extremo de puerta de enlace"^].
+Si desea usar EBS como nivel de rendimiento y AWS S3 como nivel de capacidad, debe asegurarse de que Cloud Volumes ONTAP tenga una conexión con S3. La mejor forma de proporcionar esa conexión es crear un extremo de VPC con el servicio S3. Para ver instrucciones, consulte https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["Documentación de AWS: Crear un extremo de puerta de enlace"^].
 
 Al crear el extremo VPC, asegúrese de seleccionar la región, VPC y tabla de rutas que correspondan a la instancia de Cloud Volumes ONTAP. También debe modificar el grupo de seguridad para añadir una regla de HTTPS de salida que habilite el tráfico hacia el extremo de S3. De lo contrario, Cloud Volumes ONTAP no puede conectarse con el servicio S3.
 
-Si experimenta algún problema, consulte https://["Centro de conocimientos de soporte de AWS: ¿por qué no puedo conectarme a un bloque de S3 mediante un extremo de VPC de puerta de enlace?"^]
+Si experimenta algún problema, consulte https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["Centro de conocimientos de soporte de AWS: ¿por qué no puedo conectarme a un bloque de S3 mediante un extremo de VPC de puerta de enlace?"^]
 
 
 
 === Conexiones a sistemas ONTAP
 
-Para replicar datos entre un sistema Cloud Volumes ONTAP en AWS y sistemas ONTAP en otras redes, debe tener una conexión VPN entre el VPC de AWS y la otra red, por ejemplo, la red de la empresa. Para ver instrucciones, consulte https://["Documentación de AWS: Configuración de una conexión VPN de AWS"^].
+Para replicar datos entre un sistema Cloud Volumes ONTAP en AWS y sistemas ONTAP en otras redes, debe tener una conexión VPN entre el VPC de AWS y la otra red, por ejemplo, la red de la empresa. Para ver instrucciones, consulte https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/SetUpVPNConnections.html["Documentación de AWS: Configuración de una conexión VPN de AWS"^].
 
 
 
@@ -202,7 +202,7 @@ Si desea aprovisionar almacenamiento CIFS, debe configurar DNS y Active Director
 
 El servidor DNS debe proporcionar servicios de resolución de nombres para el entorno de Active Directory. Puede configurar los conjuntos de opciones DHCP para que utilicen el servidor DNS EC2 predeterminado, que no debe ser el servidor DNS utilizado por el entorno de Active Directory.
 
-Para obtener instrucciones, consulte https://["Documentación de AWS: Active Directory Domain Services en AWS Cloud: Implementación de referencia de inicio rápido"^].
+Para obtener instrucciones, consulte https://aws-quickstart.github.io/quickstart-microsoft-activedirectory/["Documentación de AWS: Active Directory Domain Services en AWS Cloud: Implementación de referencia de inicio rápido"^].
 
 
 
@@ -254,7 +254,7 @@ Si sólo tiene una tabla de rutas para las subredes en su VPC (la tabla de rutas
 
 Por ejemplo, puede tener dos subredes asociadas a diferentes tablas de rutas. Si selecciona la tabla DE rutas A, pero no la tabla de rutas B, los clientes de la subred asociada a la tabla DE rutas A pueden acceder al par de alta disponibilidad, pero los clientes de la subred asociada a la tabla de rutas B no pueden.
 
-Para obtener más información sobre las tablas de rutas, consulte http://["Documentación de AWS: Tablas de rutas"^].
+Para obtener más información sobre las tablas de rutas, consulte http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html["Documentación de AWS: Tablas de rutas"^].
 
 --
 Conexión a herramientas de gestión de NetApp:: Para utilizar las herramientas de gestión de NetApp con configuraciones de alta disponibilidad que se encuentran en múltiples AZs, tiene dos opciones de conexión:
@@ -281,6 +281,6 @@ image:diagram_ha_networking.png["«imagen conceptual que muestra los componentes
 
 Si aún no ha creado un conector, debe revisar los requisitos de red para el conector también.
 
-* https://["Ver los requisitos de red del conector"^]
-* https://["Reglas del grupo de seguridad en AWS"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Ver los requisitos de red del conector"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Reglas del grupo de seguridad en AWS"^]
 

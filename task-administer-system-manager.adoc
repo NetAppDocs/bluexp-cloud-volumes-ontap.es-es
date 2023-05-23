@@ -98,9 +98,9 @@ image:screenshot_advanced_view.png["Captura de pantalla de un entorno de trabajo
 
 == Ayuda con el uso de System Manager
 
-Si necesita ayuda para el uso de System Manager con Cloud Volumes ONTAP, puede consultar https://["Documentación de ONTAP"^] para obtener instrucciones paso a paso. A continuación encontrará algunos enlaces que pueden ayudarle:
+Si necesita ayuda para el uso de System Manager con Cloud Volumes ONTAP, puede consultar https://docs.netapp.com/us-en/ontap/index.html["Documentación de ONTAP"^] para obtener instrucciones paso a paso. A continuación encontrará algunos enlaces que pueden ayudarle:
 
-* https://["Gestión de volúmenes y LUN"^]
-* https://["Gestión de redes"^]
-* https://["Protección de datos"^]
+* https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html["Gestión de volúmenes y LUN"^]
+* https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html["Gestión de redes"^]
+* https://docs.netapp.com/us-en/ontap/concept_dp_overview.html["Protección de datos"^]
 

@@ -18,10 +18,10 @@ Empiece a usar Cloud Volumes ONTAP en AWS en unos pasos.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Cree un conector
 [role="quick-margin-para"]
-Si usted no tiene un https://["Conector"^] Sin embargo, un administrador de cuentas necesita crear uno. https://["Aprenda a crear un conector en AWS"^]
+Si usted no tiene un https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Conector"^] Sin embargo, un administrador de cuentas necesita crear uno. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Aprenda a crear un conector en AWS"^]
 
 [role="quick-margin-para"]
-Tenga en cuenta que si desea implementar Cloud Volumes ONTAP en una subred en la que no haya acceso a Internet disponible, deberá instalar manualmente el conector y acceder a la interfaz de usuario de BlueXP que se esté ejecutando en ese conector. https://["Aprenda a instalar manualmente el conector en una ubicación sin acceso a Internet"^]
+Tenga en cuenta que si desea implementar Cloud Volumes ONTAP en una subred en la que no haya acceso a Internet disponible, deberá instalar manualmente el conector y acceder a la interfaz de usuario de BlueXP que se esté ejecutando en ese conector. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Aprenda a instalar manualmente el conector en una ubicación sin acceso a Internet"^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Planificación de la configuración
 [role="quick-margin-para"]
@@ -52,8 +52,8 @@ Si desea utilizar el cifrado de Amazon con Cloud Volumes ONTAP, debe asegurarse 
 Haga clic en *Agregar entorno de trabajo*, seleccione el tipo de sistema que desea implementar y complete los pasos del asistente. link:task-deploying-otc-aws.html["Lea las instrucciones paso a paso"].
 
 .Enlaces relacionados
-* https://["Creación de un conector desde BlueXP"^]
-* https://["Inicio de un conector desde AWS Marketplace"^]
-* https://["Instalar el software del conector en un host Linux"^]
-* https://["Qué hace BlueXP con permisos de AWS"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Creación de un conector desde BlueXP"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-aws.html["Inicio de un conector desde AWS Marketplace"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Instalar el software del conector en un host Linux"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["Qué hace BlueXP con permisos de AWS"^]
 

@@ -24,9 +24,9 @@ BlueXP actualiza los costos al actualizar la página. Debería consultar AWS par
 +
 .. Asegúrese de que la directiva IAM que proporciona permisos a BlueXP incluye los permisos necesarios.
 +
-https://["Ver los permisos necesarios"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["Ver los permisos necesarios"^]
 
-.. https://["Active la etiqueta *WorkingEnvironmentId*"^].
+.. https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html["Active la etiqueta *WorkingEnvironmentId*"^].
 +
 Para realizar un seguimiento de los costes de AWS, BlueXP asigna una etiqueta de asignación de costes a las instancias de Cloud Volumes ONTAP. Después de crear su primer entorno de trabajo, active la etiqueta *WorkingEnvironmentId*. Las etiquetas definidas por el usuario no aparecen en los informes de facturación de AWS hasta que las active en la consola de gestión de costes y facturación.
 

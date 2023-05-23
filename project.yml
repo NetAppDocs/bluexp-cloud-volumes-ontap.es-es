@@ -22,7 +22,7 @@ settings:
     - name: Microsoft Azure
       alias: Azure
       id: azure
-  langs: es-es,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,fr-fr
+  langs: es-es,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,fr-fr,it-it
 sidebar:
   entries:
   - title: Documentos de Cloud Volumes ONTAP

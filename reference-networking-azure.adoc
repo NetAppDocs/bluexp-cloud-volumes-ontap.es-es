@@ -38,7 +38,7 @@ Si una conexión a Internet saliente no está disponible para enviar mensajes Au
 
 Si ha definido reglas de salida estrictas para Cloud Volumes ONTAP, también tendrá que asegurarse de que el grupo de seguridad Cloud Volumes ONTAP permita conexiones _saliente_ a través del puerto 3128.
 
-Una vez que haya comprobado que el acceso saliente a Internet está disponible, puede probar AutoSupport para asegurarse de que puede enviar mensajes. Para obtener instrucciones, consulte https://["Documentos de ONTAP: Configure AutoSupport"^].
+Una vez que haya comprobado que el acceso saliente a Internet está disponible, puede probar AutoSupport para asegurarse de que puede enviar mensajes. Para obtener instrucciones, consulte https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["Documentos de ONTAP: Configure AutoSupport"^].
 
 Si BlueXP notifica que los mensajes de AutoSupport no se pueden enviar, link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["Solucione problemas de configuración de AutoSupport"].
 
@@ -136,7 +136,7 @@ link:task-enabling-private-link.html["Obtenga más información sobre el uso de 
 
 Para replicar datos entre un sistema Cloud Volumes ONTAP en Azure y sistemas ONTAP en otras redes, debe tener una conexión VPN entre la red virtual de Azure y la otra red, por ejemplo, la red corporativa.
 
-Para obtener instrucciones, consulte https://["Documentación de Microsoft Azure: Cree una conexión de sitio a sitio en el portal de Azure"^].
+Para obtener instrucciones, consulte https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal["Documentación de Microsoft Azure: Cree una conexión de sitio a sitio en el portal de Azure"^].
 
 
 
@@ -163,7 +163,7 @@ BlueXP crea grupos de seguridad de Azure que incluyen las reglas entrantes y sal
 El grupo de seguridad para Cloud Volumes ONTAP requiere reglas tanto entrantes como salientes.
 
 
-TIP: ¿Busca información sobre el conector? https://["Ver reglas de grupo de seguridad para el conector"^]
+TIP: ¿Busca información sobre el conector? https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Ver reglas de grupo de seguridad para el conector"^]
 
 
 
@@ -435,6 +435,6 @@ NOTE: El origen es la interfaz (dirección IP) en el sistema Cloud Volumes ONTAP
 
 Si aún no ha creado un conector, debe revisar los requisitos de red para el conector también.
 
-* https://["Ver los requisitos de red del conector"^]
-* https://["Reglas de grupos de seguridad en Azure"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Ver los requisitos de red del conector"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Reglas de grupos de seguridad en Azure"^]
 

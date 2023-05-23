@@ -14,7 +14,7 @@ summary: 'De forma similar a una región estándar de AWS, puedes usar BlueXP en
 
 
 [role="lead"]
-Al igual que una región estándar de AWS, puede usar Cloud Manager en el https://["Servicios de cloud comercial de AWS (C2S)"] Entorno para poner en marcha Cloud Volumes ONTAP, que proporciona funciones empresariales para su almacenamiento en cloud. AWS C2S es una región cerrada específica de EE. UU Intelligence Community; las instrucciones de esta página solo se aplican a los usuarios de la región de AWS C2S.
+Al igual que una región estándar de AWS, puede usar Cloud Manager en el https://aws.amazon.com/federal/us-intelligence-community/["Servicios de cloud comercial de AWS (C2S)"] Entorno para poner en marcha Cloud Volumes ONTAP, que proporciona funciones empresariales para su almacenamiento en cloud. AWS C2S es una región cerrada específica de EE. UU Intelligence Community; las instrucciones de esta página solo se aplican a los usuarios de la región de AWS C2S.
 
 
 
@@ -366,7 +366,7 @@ Tenga en cuenta lo siguiente al configurar la instancia:
 
 . Configure Cloud Manager desde un host que tenga una conexión con la instancia de Connector:
 +
-.. Abra un explorador web e introduzca la siguiente URL: http://[]
+.. Abra un explorador web e introduzca la siguiente URL: http://ipaddress[]
 .. Especifique un servidor proxy para la conectividad con los servicios de AWS.
 .. Cargue el certificado obtenido en el paso 1.
 .. Complete los pasos del asistente de configuración para configurar Cloud Manager.

@@ -36,7 +36,7 @@ Cloud Volumes ONTAP no admite la gestión de claves incorporada.
 .Lo que necesitará
 Su sistema Cloud Volumes ONTAP debe registrarse con el soporte de NetApp. Una licencia de cifrado de volúmenes de NetApp se instala automáticamente en cada sistema Cloud Volumes ONTAP registrado en el soporte de NetApp.
 
-* https://["Adición de cuentas del sitio de soporte de NetApp a BlueXP"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Adición de cuentas del sitio de soporte de NetApp a BlueXP"^]
 * link:task-registering.html["Registro de sistemas de pago por uso"]
 
 
@@ -44,7 +44,7 @@ Su sistema Cloud Volumes ONTAP debe registrarse con el soporte de NetApp. Una li
 NOTE: BlueXP no instala la licencia NVE en sistemas que residen en la región China.
 
 .Pasos
-. Revise la lista de administradores de claves compatibles en la http://["Herramienta de matriz de interoperabilidad de NetApp"^].
+. Revise la lista de administradores de claves compatibles en la http://mysupport.netapp.com/matrix["Herramienta de matriz de interoperabilidad de NetApp"^].
 +
 
 TIP: Busque la solución *Key Managers*.
@@ -55,7 +55,7 @@ TIP: Busque la solución *Key Managers*.
 ifdef::aws[]
 
 +
-** AWS: https://["Para obtener instrucciones, vaya a la documentación de ONTAP"^]
+** AWS: https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-external-key-management-overview-concept.html["Para obtener instrucciones, vaya a la documentación de ONTAP"^]
 
 
 

@@ -14,7 +14,7 @@ summary: Compruebe el archivo disk.raw descargado de Google Cloud con el conteni
 
 
 [role="lead"]
-Puede verificar el archivo disk.RAW descargado de Google Cloud con el contenido del archivo digest disponible en la https://["NSS"^] Uso de OpenSSL.
+Puede verificar el archivo disk.RAW descargado de Google Cloud con el contenido del archivo digest disponible en la https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NSS"^] Uso de OpenSSL.
 
 
 NOTE: Los comandos OpenSSL para validar la imagen son compatibles con equipos Linux, Mac OS y Windows.

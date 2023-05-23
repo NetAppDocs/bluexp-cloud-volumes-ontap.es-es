@@ -182,15 +182,15 @@ Para un sistema de un solo nodo, el VPC puede ser un VPC compartido o un VPC ind
 
 Para un par de alta disponibilidad, se necesitan cuatro VPC. Cada una de esas VPC puede ser compartida o independiente. Por ejemplo, VPC-0 podría ser un VPC compartido, mientras que VPC-1, VPC-2 y VPC-3 serían equipos virtuales independientes.
 
-Un VPC compartido permite configurar y gestionar de forma centralizada las redes virtuales de varios proyectos. Puede configurar redes VPC compartidas en el _proyecto host_ e implementar las instancias de máquina virtual de conector y Cloud Volumes ONTAP en un _proyecto de servicio_. https://["Documentación de Google Cloud: Información general sobre VPC compartido"^].
+Un VPC compartido permite configurar y gestionar de forma centralizada las redes virtuales de varios proyectos. Puede configurar redes VPC compartidas en el _proyecto host_ e implementar las instancias de máquina virtual de conector y Cloud Volumes ONTAP en un _proyecto de servicio_. https://cloud.google.com/vpc/docs/shared-vpc["Documentación de Google Cloud: Información general sobre VPC compartido"^].
 
-https://["Revisar los permisos de VPC compartido requeridos que se cubren en la implementación del conector"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Revisar los permisos de VPC compartido requeridos que se cubren en la implementación del conector"^]
 
 
 
 === Duplicación de paquetes en VPC
 
-https://["Mirroring de paquetes"^] Debe deshabilitarse en el Google Cloud VPC en que pone en marcha Cloud Volumes ONTAP. Cloud Volumes ONTAP no puede funcionar correctamente si está habilitado el mirroring de paquetes.
+https://cloud.google.com/vpc/docs/packet-mirroring["Mirroring de paquetes"^] Debe deshabilitarse en el Google Cloud VPC en que pone en marcha Cloud Volumes ONTAP. Cloud Volumes ONTAP no puede funcionar correctamente si está habilitado el mirroring de paquetes.
 
 
 
@@ -208,7 +208,7 @@ Si una conexión a Internet saliente no está disponible para enviar mensajes Au
 
 Si ha definido reglas de salida estrictas para Cloud Volumes ONTAP, también tendrá que asegurarse de que el firewall de Cloud Volumes ONTAP permita conexiones _saliente_ a través del puerto 3128.
 
-Una vez que haya comprobado que el acceso saliente a Internet está disponible, puede probar AutoSupport para asegurarse de que puede enviar mensajes. Para obtener instrucciones, consulte https://["Documentos de ONTAP: Configure AutoSupport"^].
+Una vez que haya comprobado que el acceso saliente a Internet está disponible, puede probar AutoSupport para asegurarse de que puede enviar mensajes. Para obtener instrucciones, consulte https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["Documentos de ONTAP: Configure AutoSupport"^].
 
 
 TIP: Si utiliza un par de alta disponibilidad, el mediador de alta disponibilidad no requiere acceso saliente a Internet.
@@ -227,7 +227,7 @@ Tenga en cuenta que se necesitan dos conjuntos de reglas de firewall para una co
 --
 
 
-Si desea organizar en niveles datos inactivos en un bloque de Google Cloud Storage, debe configurarse la subred en la que resida Cloud Volumes ONTAP para Private Google Access (si utiliza una pareja de alta disponibilidad, esta es la subred en VPC-0). Para obtener instrucciones, consulte https://["Documentación de Google Cloud: Configuración de Private Google Access"^].
+Si desea organizar en niveles datos inactivos en un bloque de Google Cloud Storage, debe configurarse la subred en la que resida Cloud Volumes ONTAP para Private Google Access (si utiliza una pareja de alta disponibilidad, esta es la subred en VPC-0). Para obtener instrucciones, consulte https://cloud.google.com/vpc/docs/configure-private-google-access["Documentación de Google Cloud: Configuración de Private Google Access"^].
 
 Para conocer los pasos adicionales necesarios para configurar la organización en niveles de datos en BlueXP, consulte link:task-tiering.html["Organización en niveles de los datos inactivos en almacenamiento de objetos de bajo coste"].
 
@@ -237,7 +237,7 @@ Para conocer los pasos adicionales necesarios para configurar la organización e
 
 Para replicar datos entre un sistema Cloud Volumes ONTAP en Google Cloud y sistemas ONTAP en otras redes, debe tener una conexión VPN entre el VPC y la otra red, por ejemplo, su red corporativa.
 
-Para obtener instrucciones, consulte https://["Documentación de Google Cloud: Información general sobre Cloud VPN"^].
+Para obtener instrucciones, consulte https://cloud.google.com/vpn/docs/concepts/overview["Documentación de Google Cloud: Información general sobre Cloud VPN"^].
 
 
 
@@ -254,7 +254,7 @@ Tenga en cuenta que se necesitan dos conjuntos de reglas de firewall para una co
 
 
 
-TIP: ¿Busca información sobre el conector? https://["Ver reglas de firewall para el conector"^]
+TIP: ¿Busca información sobre el conector? https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Ver reglas de firewall para el conector"^]
 
 
 
@@ -266,7 +266,7 @@ Al crear un entorno de trabajo, puede elegir el filtro de origen para la directi
 * *Todos los VPC*: El filtro de fuente para el tráfico entrante es el rango IP 0.0.0.0/0.
 
 
-Si utiliza su propia política de firewall, asegúrese de añadir todas las redes que necesitan comunicarse con Cloud Volumes ONTAP, pero también de agregar ambos rangos de direcciones para permitir que el equilibrador de carga de Google interno funcione correctamente. Estas direcciones son 130.211.0.0/22 y 35.191.0.0/16. Para obtener más información, consulte https://["Documentación de Google Cloud: Reglas de firewall de equilibrio de carga"^].
+Si utiliza su propia política de firewall, asegúrese de añadir todas las redes que necesitan comunicarse con Cloud Volumes ONTAP, pero también de agregar ambos rangos de direcciones para permitir que el equilibrador de carga de Google interno funcione correctamente. Estas direcciones son 130.211.0.0/22 y 35.191.0.0/16. Para obtener más información, consulte https://cloud.google.com/load-balancing/docs/tcp#firewall_rules["Documentación de Google Cloud: Reglas de firewall de equilibrio de carga"^].
 
 [cols="10,10,80"]
 |===
@@ -509,6 +509,6 @@ NOTE: Para permitir una alta velocidad de escritura para las nuevas puestas en m
 
 Si aún no ha creado un conector, debe revisar los requisitos de red para el conector también.
 
-* https://["Ver los requisitos de red del conector"^]
-* https://["Reglas de firewall en Google Cloud"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Ver los requisitos de red del conector"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Reglas de firewall en Google Cloud"^]
 

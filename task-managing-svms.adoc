@@ -23,7 +23,7 @@ Una máquina virtual de almacenamiento es un equipo virtual que se ejecuta en ON
 
 == Número admitido de máquinas virtuales de almacenamiento
 
-Se admiten varios equipos virtuales de almacenamiento con determinadas configuraciones. Vaya a la https://["Notas de la versión de Cloud Volumes ONTAP"^] Para verificar el número admitido de máquinas virtuales de almacenamiento para la versión de Cloud Volumes ONTAP.
+Se admiten varios equipos virtuales de almacenamiento con determinadas configuraciones. Vaya a la https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Notas de la versión de Cloud Volumes ONTAP"^] Para verificar el número admitido de máquinas virtuales de almacenamiento para la versión de Cloud Volumes ONTAP.
 
 
 

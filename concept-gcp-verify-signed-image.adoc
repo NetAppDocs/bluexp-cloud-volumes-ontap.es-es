@@ -22,7 +22,7 @@ Para verificar la imagen firmada de Google Cloud exportada, debe descargar el ar
 
 A continuación se ofrece una descripción general del proceso de flujo de trabajo de verificación de imágenes firmadas de Google Cloud.
 
-* Desde la https://["NSS"^], Descargue el archivo de Google Cloud que contiene los siguientes archivos:
+* Desde la https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NSS"^], Descargue el archivo de Google Cloud que contiene los siguientes archivos:
 +
 ** Resumen firmado (.sig)
 ** Certificado que contiene la clave pública (.pem)

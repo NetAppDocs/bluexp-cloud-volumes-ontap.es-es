@@ -14,7 +14,7 @@ summary: Convierta una imagen exportada a formato disk.RAW a través de la líne
 
 
 [role="lead"]
-La imagen que se utilizará para implementar nuevas instancias, actualizaciones o utilizarse en imágenes existentes se compartirá con los clientes a través de https://["El sitio de soporte de NetApp (NSS)"^]. El resumen firmado y los certificados se podrán descargar a través del portal de NSS. Asegúrese de descargar el resumen y los certificados de la versión correcta que corresponde a la imagen compartida por el soporte de NetApp. Por ejemplo, 9.13.0 imágenes tendrán un resumen firmado de 9.13.0 y certificados disponibles en NSS.
+La imagen que se utilizará para implementar nuevas instancias, actualizaciones o utilizarse en imágenes existentes se compartirá con los clientes a través de https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["El sitio de soporte de NetApp (NSS)"^]. El resumen firmado y los certificados se podrán descargar a través del portal de NSS. Asegúrese de descargar el resumen y los certificados de la versión correcta que corresponde a la imagen compartida por el soporte de NetApp. Por ejemplo, 9.13.0 imágenes tendrán un resumen firmado de 9.13.0 y certificados disponibles en NSS.
 
 
 
@@ -37,7 +37,7 @@ Para verificar la imagen, debe convertirse a un formato disk.RAW y, a continuaci
 
 == Utilice la línea de comandos de Google Cloud para exportar imagen de Google Cloud
 
-La forma preferida de exportar una imagen al almacenamiento en cloud es utilizar la https://["comando de exportación de imágenes de computación gcloud"^]. Este comando toma la imagen proporcionada y la convierte en un archivo disk.raw que se consigue tarred y gzip. El archivo generado se guarda en la URL de destino y puede descargarse para su verificación.
+La forma preferida de exportar una imagen al almacenamiento en cloud es utilizar la https://cloud.google.com/sdk/gcloud/reference/compute/images/export["comando de exportación de imágenes de computación gcloud"^]. Este comando toma la imagen proporcionada y la convierte en un archivo disk.raw que se consigue tarred y gzip. El archivo generado se guarda en la URL de destino y puede descargarse para su verificación.
 
 El usuario/cuenta debe tener privilegios para acceder y escribir en el bloque deseado, exportar la imagen y crear la nube (utilizados por Google para exportar la imagen) para ejecutar esta operación.
 
@@ -146,4 +146,4 @@ total 1565036
 $ tar -xf CVO_GCP_Signed_Digest.tar.gz
 ----
 
-NOTE: Consulte https://["Documento de Google Cloud sobre la exportación de una imagen"^] Para obtener más información sobre cómo exportar una imagen a través de Google Cloud.
+NOTE: Consulte https://cloud.google.com/compute/docs/images/export-image#console["Documento de Google Cloud sobre la exportación de una imagen"^] Para obtener más información sobre cómo exportar una imagen a través de Google Cloud.

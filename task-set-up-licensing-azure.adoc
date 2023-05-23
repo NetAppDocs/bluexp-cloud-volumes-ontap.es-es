@@ -67,8 +67,8 @@ En las siguientes secciones se describe cómo empezar a usar cada uno de estos m
 Pague por adelantado al comprar una licencia (BYOL) de NetApp para poner en marcha sistemas Cloud Volumes ONTAP en cualquier proveedor de cloud.
 
 .Pasos
-. https://["Póngase en contacto con el equipo de ventas de NetApp para obtener una licencia"^]
-. https://["Agregue su cuenta de la página de soporte de NetApp a BlueXP"^]
+. https://cloud.netapp.com/contact-cds["Póngase en contacto con el equipo de ventas de NetApp para obtener una licencia"^]
+. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["Agregue su cuenta de la página de soporte de NetApp a BlueXP"^]
 +
 BlueXP consulta automáticamente al servicio de licencias de NetApp para obtener detalles sobre las licencias asociadas a su cuenta del sitio de soporte de NetApp. Si no se producen errores, BlueXP añade automáticamente las licencias a la cartera digital.
 
@@ -121,7 +121,7 @@ image:screenshot-professional.png["Captura de pantalla de la opción profesional
 link:task-deploying-otc-azure.html["Consulte instrucciones paso a paso para iniciar Cloud Volumes ONTAP en Azure"].
 
 
-TIP: Puede gestionar las suscripciones de Azure Marketplace asociadas con sus cuentas de Azure desde la página Settings > Credentials. https://["Aprenda a gestionar sus cuentas y suscripciones de Azure"^]
+TIP: Puede gestionar las suscripciones de Azure Marketplace asociadas con sus cuentas de Azure desde la página Settings > Credentials. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html["Aprenda a gestionar sus cuentas y suscripciones de Azure"^]
 
 
 
@@ -158,7 +158,7 @@ link:task-deploying-otc-azure.html["Consulte instrucciones paso a paso para inic
 Una suscripción a Keystone es un servicio basado en suscripción de pago por crecimiento. link:concept-licensing.html#keystone-subscription["Obtenga más información sobre las suscripciones a NetApp Keystone"].
 
 .Pasos
-. Si aún no tiene una suscripción, https://["Póngase en contacto con NetApp"^]
+. Si aún no tiene una suscripción, https://www.netapp.com/forms/keystone-sales-contact/["Póngase en contacto con NetApp"^]
 . Mailto:ng-keystone-success@netapp.com[Contactar con NetApp] para autorizar tu cuenta de usuario de BlueXP con una o más suscripciones de Keystone.
 . Una vez que NetApp le autorice a su cuenta, link:task-manage-keystone.html#link-a-subscription["Vincule sus suscripciones para su uso con Cloud Volumes ONTAP"].
 . En la página Canvas, haga clic en *Agregar entorno de trabajo* y siga los pasos de BlueXP.

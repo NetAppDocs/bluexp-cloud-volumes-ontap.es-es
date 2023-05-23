@@ -166,7 +166,7 @@ ifdef::gcp[]
 
 endif::gcp[]
 
-https://["Obtenga más información sobre cómo Cloud Volumes Edge Cache puede ayudar a su negocio"^]
+https://cloud.netapp.com/cloud-volumes-edge-cache["Obtenga más información sobre cómo Cloud Volumes Edge Cache puede ayudar a su negocio"^]
 
 
 
@@ -214,7 +214,7 @@ link:task-manage-capacity-licenses.html["Aprenda a cambiar los métodos de carga
 
 === precios
 
-Para obtener más información sobre los precios, visite https://["Sitio web de NetApp BlueXP"^].
+Para obtener más información sobre los precios, visite https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["Sitio web de NetApp BlueXP"^].
 
 
 
@@ -269,7 +269,7 @@ Esto supone seis sistemas en total. Después, tendrá espacio para 14 sistemas a
 
 Si tiene una gran puesta en marcha que requiera más de 20 sistemas, póngase en contacto con su representante de cuenta o con su equipo de ventas.
 
-https://["Obtenga más información acerca de las cuentas de NetApp"^].
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html["Obtenga más información acerca de las cuentas de NetApp"^].
 
 
 
@@ -370,7 +370,7 @@ La carga se basa en el tamaño de la capacidad comprometida de una o varias pare
 
 La capacidad aprovisionada para cada volumen se agrega y se compara con la capacidad comprometida de tu suscripción de Keystone periódicamente; los excesos se cobran como picos de potencia en tu suscripción de Keystone.
 
-https://["Obtenga más información sobre las suscripciones a NetApp Keystone"^].
+https://www.netapp.com/services/keystone/["Obtenga más información sobre las suscripciones a NetApp Keystone"^].
 
 
 

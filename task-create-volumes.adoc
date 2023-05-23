@@ -87,7 +87,7 @@ Algunos de los campos en esta página son claros y explicativos. En la siguiente
 | Tamaño del volumen | El tamaño máximo que puede introducir depende en gran medida de si habilita thin provisioning, lo que le permite crear un volumen que sea mayor que el almacenamiento físico que hay disponible actualmente. 
 
 
-| Etiquetas | Las etiquetas que añada a un volumen están asociadas con el https://["Servicio Plantillas de aplicación"^], que puede ayudarle a organizar y simplificar la gestión de sus recursos. 
+| Etiquetas | Las etiquetas que añada a un volumen están asociadas con el https://docs.netapp.com/us-en/cloud-manager-app-template/task-using-tags.html["Servicio Plantillas de aplicación"^], que puede ayudarle a organizar y simplificar la gestión de sus recursos. 
 
 
 | Máquina virtual de almacenamiento (SVM) | Una máquina virtual de almacenamiento es un equipo virtual que se ejecuta en ONTAP y proporciona servicios de datos y almacenamiento a sus clientes. Puede que lo sepa como una SVM o un Vserver. Cloud Volumes ONTAP se configura con una máquina virtual de almacenamiento de forma predeterminada, pero algunas configuraciones admiten máquinas virtuales de almacenamiento adicionales. Es posible especificar la máquina virtual de almacenamiento para el nuevo volumen. 
@@ -145,20 +145,20 @@ endif::aws[]
 
 ifdef::azure[]
 
-*** Para configurar los Servicios de dominio de Azure AD como servidor AD para Cloud Volumes ONTAP, introduzca *OU=ADDC Computers* o *OU=usuarios ADDC* en este campo.https://["Documentación de Azure: Cree una unidad organizativa (OU) en un dominio gestionado de Azure AD Domain Services"^]
+*** Para configurar los Servicios de dominio de Azure AD como servidor AD para Cloud Volumes ONTAP, introduzca *OU=ADDC Computers* o *OU=usuarios ADDC* en este campo.https://docs.microsoft.com/en-us/azure/active-directory-domain-services/create-ou["Documentación de Azure: Cree una unidad organizativa (OU) en un dominio gestionado de Azure AD Domain Services"^]
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-*** Para configurar Google Managed Microsoft AD como servidor AD para Cloud Volumes ONTAP, introduzca *OU=equipos,OU=Cloud* en este campo.https://["Documentación de Google Cloud: Unidades organizativas de Google Managed Microsoft AD"^]
+*** Para configurar Google Managed Microsoft AD como servidor AD para Cloud Volumes ONTAP, introduzca *OU=equipos,OU=Cloud* en este campo.https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Documentación de Google Cloud: Unidades organizativas de Google Managed Microsoft AD"^]
 
 
 endif::gcp[]
 
 Dominio DNS:: El dominio DNS para la máquina virtual de almacenamiento (SVM) de Cloud Volumes ONTAP. En la mayoría de los casos, el dominio es el mismo que el dominio de AD.
-Servidor NTP:: Seleccione *usar dominio de Active Directory* para configurar un servidor NTP mediante el DNS de Active Directory. Si necesita configurar un servidor NTP con una dirección diferente, debe usar la API. Consulte https://["Documentos de automatización de BlueXP"^] para obtener más detalles.
+Servidor NTP:: Seleccione *usar dominio de Active Directory* para configurar un servidor NTP mediante el DNS de Active Directory. Si necesita configurar un servidor NTP con una dirección diferente, debe usar la API. Consulte https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Documentos de automatización de BlueXP"^] para obtener más detalles.
 +
 --
 Tenga en cuenta que solo puede configurar un servidor NTP cuando cree un servidor CIFS. No se puede configurar después de crear el servidor CIFS.

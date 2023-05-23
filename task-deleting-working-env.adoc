@@ -24,13 +24,13 @@ Los recursos gestionados por otros servicios, como los backups para el backup y 
 NOTE: Cuando BlueXP implementa Cloud Volumes ONTAP en su proveedor de la nube, habilita la protección de terminación en las instancias. Esta opción ayuda a evitar la terminación accidental.
 
 .Pasos
-. Si habilitó el backup y recuperación de BlueXP en el entorno de trabajo, determine si aún son necesarios los datos de los que se ha realizado un backup y, a continuación https://["eliminar los backups, si es necesario"^].
+. Si habilitó el backup y recuperación de BlueXP en el entorno de trabajo, determine si aún son necesarios los datos de los que se ha realizado un backup y, a continuación https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-ontap.html#deleting-backups["eliminar los backups, si es necesario"^].
 +
 El backup y la recuperación de BlueXP son independientes de Cloud Volumes ONTAP por su diseño. El backup y la recuperación de datos de BlueXP no elimina automáticamente los backups cuando se elimina un sistema Cloud Volumes ONTAP y no existe compatibilidad actual en la interfaz de usuario para eliminar los backups después de que el sistema se haya eliminado.
 
 . Si activaste la clasificación de BlueXP en este entorno de trabajo y ningún otro entorno de trabajo utiliza este servicio, tendrás que eliminar la instancia para el servicio.
 +
-https://["Obtén más información sobre la instancia de clasificación de BlueXP"^].
+https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html#the-cloud-data-sense-instance["Obtén más información sobre la instancia de clasificación de BlueXP"^].
 
 . Elimine el entorno de trabajo de Cloud Volumes ONTAP.
 +

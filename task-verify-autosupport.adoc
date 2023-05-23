@@ -34,7 +34,7 @@ Si una conexión a Internet saliente no está disponible para enviar mensajes Au
 
 Si ha definido reglas de salida estrictas para Cloud Volumes ONTAP, también tendrá que asegurarse de que el grupo de seguridad Cloud Volumes ONTAP permita conexiones _saliente_ a través del puerto 3128.
 
-Una vez que haya comprobado que el acceso saliente a Internet está disponible, puede probar AutoSupport para asegurarse de que puede enviar mensajes. Para obtener instrucciones, consulte https://["Documentos de ONTAP: Configure AutoSupport"^].
+Una vez que haya comprobado que el acceso saliente a Internet está disponible, puede probar AutoSupport para asegurarse de que puede enviar mensajes. Para obtener instrucciones, consulte https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["Documentos de ONTAP: Configure AutoSupport"^].
 
 
 
@@ -109,7 +109,7 @@ Si el estado de la categoría http-https es "ok", significa que AutoSupport est�
 . Si el estado es aún con errores, compruebe que haya conectividad entre Cloud Volumes ONTAP y el conector sobre el puerto 3128.
 . Si el identificador de estado sigue fallando después de verificar que hay conectividad, SSH al conector.
 +
-https://["Más información sobre cómo conectarse a la VM de Linux para el conector"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["Más información sobre cómo conectarse a la VM de Linux para el conector"^]
 
 . Vaya a. `/opt/application/netapp/cloudmanager/docker_occm/data/`
 . Abra el archivo de configuración del proxy `squid.conf`

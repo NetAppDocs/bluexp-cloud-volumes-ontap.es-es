@@ -169,7 +169,7 @@ Actualizar un par de alta disponibilidad no provoca interrupciones y la I/o se r
 
 La devolución automática debe estar habilitada en una pareja de ha de Cloud Volumes ONTAP (esta es la configuración predeterminada). Si no lo es, la operación fallará.
 
-http://["Documentación de ONTAP 9: Comandos para configurar el retorno automático"^]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D01-49A5-BEFD-D529713EC1FA.html["Documentación de ONTAP 9: Comandos para configurar el retorno automático"^]
 
 
 
@@ -276,7 +276,7 @@ Puede colocar la imagen del software Cloud Volumes ONTAP en el conector o en un 
 Vaya a la base de conocimientos de NetApp para ver instrucciones paso a paso:
 
 +
-https://["Base de conocimientos de NetApp: Cómo configurar BlueXP como servidor HTTPS para alojar imágenes de actualización"^]
+https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/How_to_configure_Cloud_Manager_as_an_HTTPS_server_to_host_upgrade_images["Base de conocimientos de NetApp: Cómo configurar BlueXP como servidor HTTPS para alojar imágenes de actualización"^]
 
 
 
@@ -290,7 +290,7 @@ Si tiene una conexión VPN a la red virtual, puede colocar la imagen del softwar
 
 NOTE: El grupo de seguridad Cloud Volumes ONTAP predefinido permite conexiones HTTP salientes de forma predeterminada.
 
-. Obtenga la imagen del software de https://["El sitio de soporte de NetApp"^].
+. Obtenga la imagen del software de https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["El sitio de soporte de NetApp"^].
 . Copie la imagen de software en un directorio del conector o en un servidor HTTP desde el que se servirá el archivo.
 +
 Hay dos rutas disponibles. La ruta correcta depende de la versión del conector.
@@ -338,6 +338,6 @@ El valor para _maxDownloadSessions_ puede ser 1 o cualquier entero mayor que 1. 
 
 Tenga en cuenta que 32 es un valor de ejemplo. El valor que debe utilizar depende de la configuración de NAT y del número de sesiones que puede tener simultáneamente.
 
-https://["Obtenga más información acerca de la llamada a la API /occm/config"^].
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["Obtenga más información acerca de la llamada a la API /occm/config"^].
 
 endif::gcp[]

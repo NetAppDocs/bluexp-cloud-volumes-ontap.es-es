@@ -16,7 +16,7 @@ summary: A la hora de elegir bloquear su entorno de Google con controles de serv
 [role="lead"]
 A la hora de optar por bloquear su entorno de Google Cloud con controles de servicio VPC, deberá comprender cómo interactúa BlueXP y Cloud Volumes ONTAP con las API de Google Cloud, así como cómo configurar su perímetro de servicios para poner en marcha BlueXP y Cloud Volumes ONTAP.
 
-VPC Service Controls le permite controlar el acceso a servicios gestionados por Google fuera de un perímetro de confianza, para bloquear el acceso a los datos desde ubicaciones que no son de confianza y mitigar los riesgos de transferencia de datos no autorizados. https://["Más información acerca de los controles de servicio de Google Cloud VPC"^].
+VPC Service Controls le permite controlar el acceso a servicios gestionados por Google fuera de un perímetro de confianza, para bloquear el acceso a los datos desde ubicaciones que no son de confianza y mitigar los riesgos de transferencia de datos no autorizados. https://cloud.google.com/vpc-service-controls/docs["Más información acerca de los controles de servicio de Google Cloud VPC"^].
 
 
 
@@ -54,7 +54,7 @@ A continuación se definen ejemplos de las reglas necesarias para extraer estas 
 
 == El servicio VPC controla las políticas de perímetro
 
-Las directivas permiten excepciones a los conjuntos de reglas de controles de servicio VPC. Para obtener más información acerca de las políticas, visite la https://["GCP VPC Service controla la documentación de las políticas"^].
+Las directivas permiten excepciones a los conjuntos de reglas de controles de servicio VPC. Para obtener más información acerca de las políticas, visite la https://cloud.google.com/vpc-service-controls/docs/ingress-egress-rules#policy-model["GCP VPC Service controla la documentación de las políticas"^].
 
 Para establecer las directivas que requiere BlueXP, desplácese hasta el Perímetro de controles de servicio VPC de su organización y agregue las siguientes directivas. Los campos deben coincidir con las opciones dadas en la página de políticas controles de servicio VPC. Tenga también en cuenta que *todas las reglas* son necesarias y los parámetros *O* deben utilizarse en el conjunto de reglas.
 

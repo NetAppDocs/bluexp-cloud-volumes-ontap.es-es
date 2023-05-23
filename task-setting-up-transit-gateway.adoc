@@ -29,7 +29,7 @@ image:diagram_transit_gateway.png["Un diagrama que muestra una configuración de
 Los siguientes pasos ilustran cómo configurar una configuración similar.
 
 .Pasos
-. https://["Cree una puerta de enlace de tránsito y conecte las VPC al puerta de enlace"^].
+. https://docs.aws.amazon.com/vpc/latest/tgw/tgw-getting-started.html["Cree una puerta de enlace de tránsito y conecte las VPC al puerta de enlace"^].
 . Asocie las VPC a la tabla de rutas de la puerta de enlace de tránsito.
 +
 .. En el servicio *VPC*, haga clic en *tablas de rutas de puerta de enlace de tránsito*.

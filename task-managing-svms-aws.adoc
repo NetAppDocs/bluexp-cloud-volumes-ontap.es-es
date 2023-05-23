@@ -25,7 +25,7 @@ Para crear máquinas virtuales de almacenamiento con servicio de datos adicional
 
 == Número admitido de máquinas virtuales de almacenamiento
 
-Se admiten varias máquinas virtuales de almacenamiento con configuraciones de Cloud Volumes ONTAP específicas a partir de la versión 9.7. Vaya a la https://["Notas de la versión de Cloud Volumes ONTAP"^] Para verificar el número admitido de máquinas virtuales de almacenamiento para la versión de Cloud Volumes ONTAP.
+Se admiten varias máquinas virtuales de almacenamiento con configuraciones de Cloud Volumes ONTAP específicas a partir de la versión 9.7. Vaya a la https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Notas de la versión de Cloud Volumes ONTAP"^] Para verificar el número admitido de máquinas virtuales de almacenamiento para la versión de Cloud Volumes ONTAP.
 
 Todas las demás configuraciones de Cloud Volumes ONTAP admiten un equipo virtual de almacenamiento que sirve datos y un equipo virtual de almacenamiento de destino utilizado para la recuperación ante desastres. Puede activar la máquina virtual de almacenamiento de destino para acceder a los datos si se produce una interrupción en la máquina virtual de almacenamiento de origen.
 
@@ -36,7 +36,7 @@ Todas las demás configuraciones de Cloud Volumes ONTAP admiten un equipo virtua
 Cada instancia de EC2 admite un número máximo de direcciones IPv4 privadas por interfaz de red. Es necesario verificar el límite antes de asignar las direcciones IP en AWS para la máquina virtual de almacenamiento nueva.
 
 .Pasos
-. Vaya al https://["Sección Storage Limits en las notas de la versión de Cloud Volumes ONTAP"^].
+. Vaya al https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html["Sección Storage Limits en las notas de la versión de Cloud Volumes ONTAP"^].
 . Identificar el número máximo de direcciones IP por interfaz para el tipo de instancia.
 . Tenga en cuenta este número porque lo necesitará en la siguiente sección al asignar direcciones IP en AWS.
 

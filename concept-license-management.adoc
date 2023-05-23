@@ -33,7 +33,7 @@ Puede comprar varias licencias para un sistema BYOL de Cloud Volumes ONTAP con e
 
 El número de licencias que se pueden comprar para un único sistema de nodo o par de alta disponibilidad es ilimitado.
 
-Tenga en cuenta que los límites de disco pueden impedir que llegue al límite de capacidad utilizando solo discos. Puede superar el límite de discos mediante link:concept-data-tiering.html["organización en niveles de los datos inactivos en el almacenamiento de objetos"]. Para obtener más información acerca de los límites de disco, consulte https://["Límites de almacenamiento en las notas de la versión de Cloud Volumes ONTAP"^].
+Tenga en cuenta que los límites de disco pueden impedir que llegue al límite de capacidad utilizando solo discos. Puede superar el límite de discos mediante link:concept-data-tiering.html["organización en niveles de los datos inactivos en el almacenamiento de objetos"]. Para obtener más información acerca de los límites de disco, consulte https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Límites de almacenamiento en las notas de la versión de Cloud Volumes ONTAP"^].
 
 
 
@@ -41,7 +41,7 @@ Tenga en cuenta que los límites de disco pueden impedir que llegue al límite d
 
 Al crear un sistema BYOL basado en nodos, BlueXP le solicita el número de serie de su licencia y su cuenta del sitio de soporte de NetApp. BlueXP usa la cuenta para descargar el archivo de licencia de NetApp y instalarlo en el sistema Cloud Volumes ONTAP.
 
-https://["Aprenda a añadir cuentas del sitio de soporte de NetApp a BlueXP"^].
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Aprenda a añadir cuentas del sitio de soporte de NetApp a BlueXP"^].
 
 Si BlueXP no puede acceder al archivo de licencia a través de la conexión segura a Internet, puede hacerlo link:task-manage-node-licenses.html["Obtenga el archivo usted mismo y luego cargue manualmente el archivo a BlueXP"].
 

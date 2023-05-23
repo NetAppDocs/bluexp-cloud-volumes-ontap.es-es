@@ -270,6 +270,6 @@ Si tiene pensado utilizar el backup y la recuperación de datos de BlueXP con tu
 Ahora dispone de los roles IAM que se pueden seleccionar al crear un nuevo entorno de trabajo Cloud Volumes ONTAP.
 
 .Más información
-* https://["Documentación de AWS: Crear políticas de IAM"^]
-* https://["Documentación de AWS: Crear roles de IAM"^]
+* https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["Documentación de AWS: Crear políticas de IAM"^]
+* https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["Documentación de AWS: Crear roles de IAM"^]
 

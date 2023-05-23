@@ -23,7 +23,7 @@ Una máquina virtual de almacenamiento es un equipo virtual que se ejecuta en ON
 
 == Número admitido de máquinas virtuales de almacenamiento
 
-A partir de la versión 9.11.1, se admiten varias máquinas virtuales de almacenamiento con configuraciones de Cloud Volumes ONTAP específicas en Google Cloud. Vaya a la https://["Notas de la versión de Cloud Volumes ONTAP"^] Para verificar el número admitido de máquinas virtuales de almacenamiento para la versión de Cloud Volumes ONTAP.
+A partir de la versión 9.11.1, se admiten varias máquinas virtuales de almacenamiento con configuraciones de Cloud Volumes ONTAP específicas en Google Cloud. Vaya a la https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Notas de la versión de Cloud Volumes ONTAP"^] Para verificar el número admitido de máquinas virtuales de almacenamiento para la versión de Cloud Volumes ONTAP.
 
 Todas las demás configuraciones de Cloud Volumes ONTAP admiten un equipo virtual de almacenamiento que sirve datos y un equipo virtual de almacenamiento de destino utilizado para la recuperación ante desastres. Puede activar la máquina virtual de almacenamiento de destino para acceder a los datos si se produce una interrupción en la máquina virtual de almacenamiento de origen.
 
@@ -48,7 +48,7 @@ image:screenshot-gcp-add-ip-range.png["Una captura de pantalla de la consola de 
 Necesita una dirección IP para una LIF de datos y otra dirección IP opcional si desea crear una LIF de gestión en la máquina virtual de almacenamiento.
 
 +
-https://["Documentación de Google Cloud: Adición de rangos de alias IP a una instancia existente"^]
+https://cloud.google.com/vpc/docs/configure-alias-ip-ranges#adding_alias_ip_ranges_to_an_existing_instance["Documentación de Google Cloud: Adición de rangos de alias IP a una instancia existente"^]
 
 . Cree la máquina virtual de almacenamiento y un recorrido hacia la máquina virtual de almacenamiento.
 +
@@ -106,7 +106,7 @@ Debe usar la API de BlueXP para crear una máquina virtual de almacenamiento en 
 Tenga en cuenta que BlueXP asigna las direcciones IP requeridas en Google Cloud y crea la máquina virtual de almacenamiento con una LIF de datos para acceso SMB/NFS y una LIF iSCSI para la comunicación SMB de salida.
 
 .Se requieren permisos de Google Cloud
-El conector requiere permisos específicos para crear y gestionar máquinas virtuales de almacenamiento para parejas de alta disponibilidad de Cloud Volumes ONTAP. Los permisos necesarios se incluyen en https://["Las políticas proporcionadas por NetApp"].
+El conector requiere permisos específicos para crear y gestionar máquinas virtuales de almacenamiento para parejas de alta disponibilidad de Cloud Volumes ONTAP. Los permisos necesarios se incluyen en https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["Las políticas proporcionadas por NetApp"].
 
 .Pasos
 . Use la siguiente llamada de API para crear una máquina virtual de almacenamiento:

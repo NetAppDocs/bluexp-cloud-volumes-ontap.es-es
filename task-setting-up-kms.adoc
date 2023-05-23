@@ -22,14 +22,14 @@ Si desea usar el cifrado de Amazon con Cloud Volumes ONTAP, debe configurar el s
 El CMK puede ser un CMK gestionado por AWS o un CMK gestionado por el cliente. Puede estar en la misma cuenta de AWS que BlueXP y Cloud Volumes ONTAP o en una cuenta diferente de AWS.
 
 +
-https://["Documentación de AWS: Claves maestras de clientes (CMKs)"^]
+https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#master_keys["Documentación de AWS: Claves maestras de clientes (CMKs)"^]
 
 . Modifique la política de clave para cada CMK agregando la función IAM que proporciona permisos a BlueXP como _Key user_.
 +
 La adición de la función IAM como usuario clave permite a BlueXP utilizar el CMK con Cloud Volumes ONTAP.
 
 +
-https://["Documentación de AWS: Editar claves"^]
+https://docs.aws.amazon.com/kms/latest/developerguide/editing-keys.html["Documentación de AWS: Editar claves"^]
 
 . Si el CMK se encuentra en una cuenta de AWS diferente, realice los pasos siguientes:
 +
@@ -96,7 +96,7 @@ La siguiente directiva proporciona los permisos que BlueXP necesita para utiliza
 }
 ----
 +
-Para obtener más información sobre este proceso, consulte https://["Documentación de AWS: Permitir que los usuarios de otras cuentas usen una clave KMS"^].
+Para obtener más información sobre este proceso, consulte https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html["Documentación de AWS: Permitir que los usuarios de otras cuentas usen una clave KMS"^].
 
 
 
@@ -108,6 +108,6 @@ Este paso es necesario si habilitó la organización en niveles de datos en Clou
 Deberá realizar este paso _After_ implementa Cloud Volumes ONTAP porque se crea la función IAM al crear un entorno de trabajo. (Por supuesto, tiene la opción de utilizar la función de IAM de Cloud Volumes ONTAP existente, de modo que es posible realizar este paso antes).
 
 +
-https://["Documentación de AWS: Editar claves"^]
+https://docs.aws.amazon.com/kms/latest/developerguide/editing-keys.html["Documentación de AWS: Editar claves"^]
 
 

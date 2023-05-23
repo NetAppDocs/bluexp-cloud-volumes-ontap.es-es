@@ -141,11 +141,11 @@ ifdef::aws[]
 
 === Requisitos para organizar en niveles los datos fríos en AWS S3
 
-Compruebe que Cloud Volumes ONTAP tenga una conexión con S3. La mejor forma de proporcionar esa conexión es crear un extremo de VPC con el servicio S3. Para ver instrucciones, consulte https://["Documentación de AWS: Crear un extremo de puerta de enlace"^].
+Compruebe que Cloud Volumes ONTAP tenga una conexión con S3. La mejor forma de proporcionar esa conexión es crear un extremo de VPC con el servicio S3. Para ver instrucciones, consulte https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["Documentación de AWS: Crear un extremo de puerta de enlace"^].
 
 Al crear el extremo VPC, asegúrese de seleccionar la región, VPC y tabla de rutas que correspondan a la instancia de Cloud Volumes ONTAP. También debe modificar el grupo de seguridad para añadir una regla de HTTPS de salida que habilite el tráfico hacia el extremo de S3. De lo contrario, Cloud Volumes ONTAP no puede conectarse con el servicio S3.
 
-Si experimenta algún problema, consulte https://["Centro de conocimientos de soporte de AWS: ¿por qué no puedo conectarme a un bloque de S3 mediante un extremo de VPC de puerta de enlace?"^].
+Si experimenta algún problema, consulte https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["Centro de conocimientos de soporte de AWS: ¿por qué no puedo conectarme a un bloque de S3 mediante un extremo de VPC de puerta de enlace?"^].
 
 endif::aws[]
 
@@ -162,7 +162,7 @@ No es necesario configurar una conexión entre el nivel de rendimiento y el nive
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-Los permisos se incluyen de forma predeterminada en la función personalizada. https://["Ver permiso de Azure para el conector"^]
+Los permisos se incluyen de forma predeterminada en la función personalizada. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["Ver permiso de Azure para el conector"^]
 
 endif::azure[]
 
@@ -172,7 +172,7 @@ ifdef::gcp[]
 
 === Requisitos para organizar los datos inactivos en niveles en Google Cloud Storage cucharón
 
-* La subred en la que reside Cloud Volumes ONTAP debe estar configurada para acceso privado a Google. Para obtener instrucciones, consulte https://["Documentación de Google Cloud: Configuración de Private Google Access"^].
+* La subred en la que reside Cloud Volumes ONTAP debe estar configurada para acceso privado a Google. Para obtener instrucciones, consulte https://cloud.google.com/vpc/docs/configure-private-google-access["Documentación de Google Cloud: Configuración de Private Google Access"^].
 * Debe adjuntarse una cuenta de servicio a Cloud Volumes ONTAP.
 +
 link:task-creating-gcp-service-account.html["Aprenda a configurar esta cuenta de servicio"].
@@ -297,7 +297,7 @@ Cloud Volumes ONTAP puede organizar los datos en niveles desde un volumen de pro
 image:screenshot_replication_tiering.gif["Captura de pantalla que muestra la opción S3 Tiering al replicar un volumen."]
 
 +
-Para obtener ayuda sobre la replicación de datos, consulte https://["Replicar datos hacia y desde el cloud"^].
+Para obtener ayuda sobre la replicación de datos, consulte https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["Replicar datos hacia y desde el cloud"^].
 
 
 
