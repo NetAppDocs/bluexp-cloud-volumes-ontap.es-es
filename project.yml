@@ -163,6 +163,9 @@ sidebar:
       entries:
       - title: Cifre los volúmenes con el cifrado de NetApp
         url: "/task-encrypting-volumes.html"
+      - title: Gestione claves con el servicio de gestión de claves de AWS
+        flavor: aws
+        url: "/task-aws-key-management.html"
       - title: Gestione claves con Azure Key Vault
         flavor: azure
         url: "/task-azure-key-vault.html"
