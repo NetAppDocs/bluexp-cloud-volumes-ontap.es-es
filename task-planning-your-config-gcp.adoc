@@ -109,7 +109,7 @@ Google Cloud Compute Engine aplica cuotas al uso de recursos, por lo que debe as
 
 
 
-TIP: El conector también requiere un disco del sistema. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["Ver detalles sobre la configuración predeterminada del conector"^].
+TIP: El conector también requiere un disco del sistema. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-default-config.html["Ver detalles sobre la configuración predeterminada del conector"^].
 
 
 

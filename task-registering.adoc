@@ -24,7 +24,7 @@ TIP: Un sistema que no esté registrado para recibir asistencia técnica seguir�
 .Pasos
 . Si todavía no ha añadido su cuenta de la página de soporte de NetApp a BlueXP, vaya a *Configuración de la cuenta* y añádala ahora.
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Aprenda a añadir cuentas del sitio de soporte de NetApp"^].
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["Aprenda a añadir cuentas del sitio de soporte de NetApp"^].
 
 . En la página Canvas, haga doble clic en el nombre del sistema que desea registrar.
 . En la ficha Descripción general, haga clic en el panel Características y, a continuación, en el icono lápiz situado junto a *Registro de soporte*.

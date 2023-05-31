@@ -65,7 +65,7 @@ Pague por adelantado al comprar una licencia (BYOL) de NetApp para poner en marc
 
 .Pasos
 . https://cloud.netapp.com/contact-cds["Póngase en contacto con el equipo de ventas de NetApp para obtener una licencia"^]
-. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["Agregue su cuenta de la página de soporte de NetApp a BlueXP"^]
+. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["Agregue su cuenta de la página de soporte de NetApp a BlueXP"^]
 +
 BlueXP consulta automáticamente al servicio de licencias de NetApp para obtener detalles sobre las licencias asociadas a su cuenta del sitio de soporte de NetApp. Si no se producen errores, BlueXP añade automáticamente las licencias a la cartera digital.
 
@@ -112,7 +112,7 @@ image:screenshot-professional.png["Captura de pantalla de la opción profesional
 link:task-deploying-gcp.html["Consulte las instrucciones paso a paso para iniciar Cloud Volumes ONTAP en Google Cloud"].
 
 
-TIP: Puede gestionar las suscripciones de Google Cloud Marketplace asociadas con sus cuentas en la página Configuración > credenciales. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Descubra cómo administrar sus credenciales y suscripciones a Google Cloud"^]
+TIP: Puede gestionar las suscripciones de Google Cloud Marketplace asociadas con sus cuentas en la página Configuración > credenciales. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["Descubra cómo administrar sus credenciales y suscripciones a Google Cloud"^]
 
 
 

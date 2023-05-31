@@ -162,7 +162,7 @@ No es necesario configurar una conexión entre el nivel de rendimiento y el nive
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-Los permisos se incluyen de forma predeterminada en la función personalizada. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["Ver permiso de Azure para el conector"^]
+Los permisos se incluyen de forma predeterminada en la función personalizada. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Ver permiso de Azure para el conector"^]
 
 endif::azure[]
 
@@ -297,7 +297,7 @@ Cloud Volumes ONTAP puede organizar los datos en niveles desde un volumen de pro
 image:screenshot_replication_tiering.gif["Captura de pantalla que muestra la opción S3 Tiering al replicar un volumen."]
 
 +
-Para obtener ayuda sobre la replicación de datos, consulte https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["Replicar datos hacia y desde el cloud"^].
+Para obtener ayuda sobre la replicación de datos, consulte https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Replicar datos hacia y desde el cloud"^].
 
 
 

@@ -69,7 +69,7 @@ A partir del lanzamiento de la versión 3.9.19, el conector requiere los siguien
 * ec2:ModifiyVolume
 
 
-Estos permisos se incluyen en https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["Las políticas proporcionadas por NetApp"^]
+Estos permisos se incluyen en https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["Las políticas proporcionadas por NetApp"^]
 
 
 
@@ -186,6 +186,6 @@ link:task-manage-aggregates.html["Aprenda a aumentar la capacidad de los agregad
 Si el sistema Cloud Volumes ONTAP de destino admite volúmenes Elastic, se colocará un volumen de destino en un agregado que tenga habilitados los volúmenes de elasticidad (siempre que se elija un disco gp3 o io1).
 
 +
-https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["Aprenda a configurar la replicación de datos"^]
+https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Aprenda a configurar la replicación de datos"^]
 
 

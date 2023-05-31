@@ -120,7 +120,7 @@ Además del almacenamiento de los datos de usuario, BlueXP también adquiere alm
 link:reference-default-configs.html#aws["Ver los discos predeterminados para los datos del sistema Cloud Volumes ONTAP en AWS"].
 
 
-TIP: El conector también requiere un disco del sistema. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["Ver detalles sobre la configuración predeterminada del conector"^].
+TIP: El conector también requiere un disco del sistema. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-default-config.html["Ver detalles sobre la configuración predeterminada del conector"^].
 
 
 

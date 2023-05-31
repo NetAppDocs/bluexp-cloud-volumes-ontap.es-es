@@ -163,7 +163,7 @@ BlueXP crea grupos de seguridad de Azure que incluyen las reglas entrantes y sal
 El grupo de seguridad para Cloud Volumes ONTAP requiere reglas tanto entrantes como salientes.
 
 
-TIP: ¿Busca información sobre el conector? https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Ver reglas de grupo de seguridad para el conector"^]
+TIP: ¿Busca información sobre el conector? https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Ver reglas de grupo de seguridad para el conector"^]
 
 
 
@@ -435,6 +435,6 @@ NOTE: El origen es la interfaz (dirección IP) en el sistema Cloud Volumes ONTAP
 
 Si aún no ha creado un conector, debe revisar los requisitos de red para el conector también.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Ver los requisitos de red del conector"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Reglas de grupos de seguridad en Azure"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Ver los requisitos de red del conector"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Reglas de grupos de seguridad en Azure"^]
 
