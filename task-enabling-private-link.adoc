@@ -93,7 +93,7 @@ Tenga en cuenta que el nombre DNS debe coincidir con la nomenclatura de DNS de A
 "user-private-dns-zone-settings" : {
    "resource-group" : "<resource group name of the DNS zone>",
    "subscription" : "<subscription ID>",
-   "use-existing" : true
+   "use-existing" : true,
    "create-private-dns-zone-link" : true
 }
 ....
