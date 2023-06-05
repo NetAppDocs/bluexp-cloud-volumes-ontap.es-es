@@ -195,22 +195,10 @@ endif::gcp[]
 
 === Activación de la organización en niveles de datos tras la implementación de los requisitos
 
-BlueXP crea un almacén de objetos para datos inactivos cuando se crea el sistema, siempre que no haya problemas de conectividad o permisos. Si no ha implementado los requisitos indicados anteriormente hasta después de crear el sistema, tendrá que habilitar manualmente la organización en niveles, lo que crea el almacén de objetos.
+BlueXP crea un almacén de objetos para datos inactivos cuando se crea el sistema, siempre que no haya problemas de conectividad o permisos. Si no implementó los requisitos mencionados anteriormente hasta después de crear el sistema, deberá habilitar manualmente la organización en niveles mediante la API o System Manager, para crear el almacén de objetos.
 
-.Pasos
-. <<Requisitos,Asegúrese de haber cumplido todos los requisitos>>.
-. En el menú de navegación de la izquierda, selecciona *almacenamiento > Canvas*.
-. En la página lienzo, seleccione el nombre de la instancia de Cloud Volumes ONTAP.
-. Haga clic en el icono de menú y seleccione *Activar organización en niveles de capacidad*.
-+
 
-NOTE: Solo verá esta opción si no se pudo habilitar la organización en niveles de datos cuando BlueXP creó el sistema.
-
-+
-En Google Cloud, es necesario conectar una cuenta de servicio a Cloud Volumes ONTAP para que aparezca esta opción. <<Requisitos,Asegúrese de haber cumplido todos los requisitos>>.
-
-. Haga clic en *Activar* para que BlueXP pueda crear el almacén de objetos que este sistema Cloud Volumes ONTAP utilizará para los datos organizados por niveles.
-
+NOTE: La capacidad de habilitar la organización en niveles a través de la interfaz de usuario de BlueXP estará disponible en una futura versión de Cloud Volumes ONTAP.
 
 
 
