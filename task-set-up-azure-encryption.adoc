@@ -76,9 +76,34 @@ Un solo nodo::
 
 
 
+== Crear una identidad gestionada asignada por el usuario
+
+Tiene la opción de crear un recurso denominado identidad gestionada asignada por el usuario. Esto le permite cifrar sus cuentas de almacenamiento cuando crea un entorno de trabajo de Cloud Volumes ONTAP. Recomendamos crear este recurso antes de crear un almacén de claves y generar una clave.
+
+El recurso tiene el siguiente identificador: `userassignedidentity`.
+
+.Pasos
+. En Azure, vaya a Servicios de Azure y seleccione *Identidades administradas*.
+. Haga clic en *Crear*.
+. Proporcione los siguientes detalles:
++
+** *Suscripción*: Elige una suscripción. Recomendamos elegir la misma suscripción que la suscripción a Connector.
+** *Grupo de recursos*: Usa un grupo de recursos existente o crea uno nuevo.
+** *Región*: Opcionalmente, seleccione la misma región que el Conector.
+** *Nombre*: Introduzca un nombre para el recurso.
+
+
+. Opcionalmente, agregue etiquetas.
+. Haga clic en *Crear*.
+
+
+
+
 == Cree un almacén de claves y genere una clave
 
 El almacén de claves debe residir en la misma suscripción a Azure y la misma región en la que esté previsto crear el sistema Cloud Volumes ONTAP.
+
+Si usted <<Crear una identidad gestionada asignada por el usuario,se ha creado una identidad gestionada asignada por el usuario>>, al crear el almacén de claves, también debe crear una política de acceso para el almacén de claves.
 
 .Pasos
 . https://docs.microsoft.com/en-us/azure/key-vault/general/quick-create-portal["Cree un almacén de claves en su suscripción a Azure"^].
@@ -94,6 +119,29 @@ Tenga en cuenta los siguientes requisitos para el almacén de claves:
 *** *Cifrado de disco de Azure para cifrado de volúmenes* (para sistemas de un solo nodo o pares de alta disponibilidad en varias zonas)
 
 
+** Se debe activar la siguiente opción si ha creado una identidad gestionada asignada por el usuario:
++
+*** *Política de acceso a Vault*
+
+
+
+
+. Si seleccionó Política de acceso al almacén, haga clic en Crear para crear una política de acceso para el almacén de claves. Si no es así, vaya al paso 3.
++
+.. Seleccione los siguientes permisos:
++
+*** obtenga
+*** lista
+*** descifrar
+*** cifrar
+*** tecla desajustar
+*** tecla ajustar
+*** verificación
+*** firma
+
+
+.. Seleccione la identidad administrada (recurso) asignada por el usuario como principal.
+.. Revise y cree la política de acceso.
 
 
 . https://docs.microsoft.com/en-us/azure/key-vault/keys/quick-create-portal#add-a-key-to-key-vault["Genere una clave en el almacén de claves"^].
@@ -118,18 +166,15 @@ Si desea utilizar una clave gestionada por el cliente con un sistema Cloud Volum
 
 [source, json]
 ----
-"Microsoft.Compute/diskEncryptionSets/read"
+"Microsoft.Compute/diskEncryptionSets/read",
 "Microsoft.Compute/diskEncryptionSets/write",
 "Microsoft.Compute/diskEncryptionSets/delete"
 "Microsoft.KeyVault/vaults/deploy/action",
 "Microsoft.KeyVault/vaults/read",
-"Microsoft.KeyVault/vaults/accessPolicies/write"
+"Microsoft.KeyVault/vaults/accessPolicies/write",
 "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
 ----
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Consulte la lista más reciente de permisos"^]
-
-
-NOTE: Los permisos no son necesarios para pares de alta disponibilidad en una sola zona.
 
 .Pasos
 . Obtenga la lista de almacenes de claves de su suscripción a Azure mediante la siguiente llamada a la API de BlueXP.
@@ -172,10 +217,13 @@ El cuerpo de la solicitud debe incluir los siguientes campos:
 ----
 "azureEncryptionParameters": {
               "key": "keyName",
-              "vaultName": "vaultName",
-              "userAssignedIdentity": " userAssignedIdentityId", [Optional]***
+              "vaultName": "vaultName"
 }
 ----
++
+
+NOTE: Incluya el `"userAssignedIdentity": " userAssignedIdentityId"` si ha creado este recurso para utilizarlo para el cifrado de cuentas de almacenamiento.
+
 +
 https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-haworking-environments["Obtenga más información acerca de esta llamada API"^].
 
@@ -191,10 +239,13 @@ El cuerpo de la solicitud debe incluir los siguientes campos:
 ----
 "azureEncryptionParameters": {
               "key": "keyName",
-              "vaultName": "vaultName",
-              "userAssignedIdentity": " userAssignedIdentityId", [Optional]***
+              "vaultName": "vaultName"
 }
 ----
++
+
+NOTE: Incluya el `"userAssignedIdentity": " userAssignedIdentityId"` si ha creado este recurso para utilizarlo para el cifrado de cuentas de almacenamiento.
+
 +
 https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-vsaworking-environments["Obtenga más información acerca de esta llamada API"^].
 
