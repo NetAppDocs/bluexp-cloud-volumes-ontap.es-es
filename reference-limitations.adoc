@@ -31,7 +31,7 @@ NOTE: La capacidad para crear volúmenes de FlexGroup en BlueXP está prevista p
 
 == BlueXP no es compatible con S3 con Cloud Volumes ONTAP
 
-Aunque Cloud Volumes ONTAP admite S3 como opción para el almacenamiento de escalado horizontal de algunos proveedores de cloud, BlueXP no proporciona ninguna funcionalidad de gestión para esta función. Usar la CLI es la práctica recomendada para configurar el acceso del cliente S3 desde Cloud Volumes ONTAP. Para obtener más información, consulte http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-s3-cg/home.html["Guía completa de configuración de S3"^].
+Aunque Cloud Volumes ONTAP admite S3 como opción de almacenamiento de escalado horizontal, BlueXP no proporciona ninguna funcionalidad de gestión para esta función. Usar la CLI es la práctica recomendada para configurar el acceso del cliente S3 desde Cloud Volumes ONTAP. Para obtener más información, consulte http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-s3-cg/home.html["Guía completa de configuración de S3"^].
 
 link:concept-client-protocols.html["Obtenga más información sobre la compatibilidad de Cloud Volumes ONTAP con S3 y otros protocolos de cliente"].
 

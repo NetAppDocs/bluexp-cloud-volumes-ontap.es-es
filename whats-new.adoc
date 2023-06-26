@@ -20,6 +20,20 @@ Las mejoras descritas en esta página son específicas de las funciones de BlueX
 
 
 
+== 26 de junio de 2023
+
+El siguiente cambio se introdujo con la versión 3.9.30 del conector.
+
+
+
+=== Cloud Volumes ONTAP 9.13.1 RC1
+
+Ahora BlueXP puede poner en marcha y gestionar Cloud Volumes ONTAP 9.13.1 en AWS, Azure y Google Cloud.
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Conozca cuáles son las nuevas funciones que se incluyen en esta versión de Cloud Volumes ONTAP"^].
+
+
+
 == 4 de junio de 2023
 
 El siguiente cambio se introdujo con la versión 3.9.30 del conector.
