@@ -285,7 +285,7 @@ Hay una carga mínima de 4 TIB para cada máquina virtual de almacenamiento que 
 
 Si todavía no ha aprovisionado ningún volumen, no se aplicará ningún cargo mínimo.
 
-La carga de capacidad mínima de 4 TIB no se aplica únicamente a equipos virtuales de almacenamiento que contienen volúmenes secundarios (protección de datos). Por ejemplo, si tiene una máquina virtual de almacenamiento con 1 TIB de datos secundarios, entonces sólo estará cargado por ese 1 TIB de datos.
+Para el paquete Essentials, el cargo por capacidad mínima de 4 TiB no se aplica a las VM de almacenamiento que únicamente contienen volúmenes secundarios (protección de datos). Por ejemplo, si tiene una máquina virtual de almacenamiento con 1 TIB de datos secundarios, entonces sólo estará cargado por ese 1 TIB de datos. Con el resto de tipos de paquetes que no sean Essentials (Optimized, Professional y Edge Cache), la carga de capacidad mínima de 4 TiB se aplica independientemente del tipo de volumen.
 
 
 
