@@ -56,6 +56,11 @@ Puede activar el almacenamiento WORM en un sistema Cloud Volumes ONTAP cuando cr
 
 La carga del almacenamiento WORM se realiza por horas, según la capacidad total aprovisionada de los volúmenes WORM.
 
+Disponible solo para PAYGO o términos de compromiso anuales, la licencia de WORM se puede comprar a través del mercado del proveedor de cloud. WORM admite modelos de licencias basados en nodos y en capacidad.
+
+
+NOTE: La licencia de licencia propia no está disponible para el ALMACENAMIENTO WORM en Cloud Volumes ONTAP.
+
 Debe comprender el siguiente comportamiento de carga con Cloud Volumes ONTAP 9.10.1 y versiones posteriores:
 
 * A partir de ONTAP 9.10.1, pueden existir volúmenes WORM y volúmenes sin WORM en el mismo agregado.
