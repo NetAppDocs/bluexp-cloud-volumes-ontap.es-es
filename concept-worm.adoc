@@ -26,6 +26,26 @@ Una vez transcurrido el período de retención, es responsable de eliminar los a
 
 
 
+== Cargando
+
+La carga del almacenamiento WORM se realiza por horas, según la capacidad total aprovisionada de los volúmenes WORM.
+
+Disponible solo para PAYGO o términos de compromiso anuales, la licencia de WORM se puede comprar a través del mercado del proveedor de cloud. WORM admite modelos de licencias basados en nodos y en capacidad.
+
+
+NOTE: La licencia de licencia propia no está disponible para el ALMACENAMIENTO WORM en Cloud Volumes ONTAP.
+
+Debe comprender el siguiente comportamiento de carga con Cloud Volumes ONTAP 9.10.1 y versiones posteriores:
+
+* A partir de ONTAP 9.10.1, pueden existir volúmenes WORM y volúmenes sin WORM en el mismo agregado.
+* Si activa WORM al crear un entorno de trabajo de Cloud Volumes ONTAP, todos los volúmenes que cree desde BlueXP tienen WORM activado. Sin embargo, se puede usar la CLI o System Manager de ONTAP para crear volúmenes con WORM deshabilitado. Esos volúmenes no se cargan a la velocidad WORM
+* Si no activa WORM al crear un entorno de trabajo, todos los volúmenes que cree desde BlueXP tienen WORM desactivado. No está cargado a la tasa WORM para esos volúmenes.
+
+
+https://cloud.netapp.com/pricing["Más información sobre los precios del almacenamiento WORM"^]
+
+
+
 == Activación del almacenamiento WORM
 
 La forma de activar el almacenamiento WORM depende de la versión de Cloud Volumes ONTAP que utilice.
@@ -52,31 +72,19 @@ Puede activar el almacenamiento WORM en un sistema Cloud Volumes ONTAP cuando cr
 
 
 
-== Cargando
-
-La carga del almacenamiento WORM se realiza por horas, según la capacidad total aprovisionada de los volúmenes WORM.
-
-Disponible solo para PAYGO o términos de compromiso anuales, la licencia de WORM se puede comprar a través del mercado del proveedor de cloud. WORM admite modelos de licencias basados en nodos y en capacidad.
-
-
-NOTE: La licencia de licencia propia no está disponible para el ALMACENAMIENTO WORM en Cloud Volumes ONTAP.
-
-Debe comprender el siguiente comportamiento de carga con Cloud Volumes ONTAP 9.10.1 y versiones posteriores:
-
-* A partir de ONTAP 9.10.1, pueden existir volúmenes WORM y volúmenes sin WORM en el mismo agregado.
-* Si activa WORM al crear un entorno de trabajo de Cloud Volumes ONTAP, todos los volúmenes que cree desde BlueXP tienen WORM activado. Sin embargo, se puede usar la CLI o System Manager de ONTAP para crear volúmenes con WORM deshabilitado. Esos volúmenes no se cargan a la velocidad WORM
-* Si no activa WORM al crear un entorno de trabajo, todos los volúmenes que cree desde BlueXP tienen WORM desactivado. No está cargado a la tasa WORM para esos volúmenes.
-
-
-https://cloud.netapp.com/pricing["Más información sobre los precios del almacenamiento WORM"^]
-
-
-
 == Conserva archivos en WORM
 
 Puede utilizar una aplicación para confirmar los archivos a WORM a través de NFS o CIFS, o utilizar la interfaz de línea de comandos de ONTAP para confirmar automáticamente los archivos a WORM. También puede utilizar un archivo WORM ampliable para conservar datos que se escriben de forma incremental, como la información de registro.
 
 Después de activar el almacenamiento WORM en un sistema Cloud Volumes ONTAP, debe utilizar la CLI de ONTAP para toda la gestión del almacenamiento WORM. Para obtener instrucciones, consulte http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-arch-con/home.html["Documentación de ONTAP"^].
+
+
+
+== Eliminando ARCHIVOS WORM
+
+Es posible eliminar ARCHIVOS WORM durante el período de retención mediante la función de eliminación con privilegios.
+
+Para obtener instrucciones, consulte https://docs.netapp.com/us-en/ontap/snaplock/delete-worm-files-concept.html["Documentación de ONTAP"^]
 
 
 
