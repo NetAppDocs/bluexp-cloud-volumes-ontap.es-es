@@ -729,7 +729,6 @@
   <block id="68c43e2b96fbdbfa40796f17526ce49b" category="list-text"><block ref="6cb773c19d321df01c24599ee993e239" category="inline-xref-macro-rx"></block></block>
   <block id="f509056e5113d375c99bca630ad36b66" category="section-title">Planifique los tiempos de inactividad</block>
   <block id="13ab03e6ad3ee2215bec95a4c0f024e2" category="paragraph">Al actualizar un sistema de un solo nodo, el proceso de actualización desconecta el sistema durante un máximo de 25 minutos, durante el cual se interrumpen las operaciones de I/O.</block>
-  <block id="00795e3f043d0bab791590ffc0257204" category="paragraph">Actualizar un par de alta disponibilidad no provoca interrupciones y la I/o se realiza de forma ininterrumpida. Durante este proceso de actualización no disruptiva, cada nodo se actualiza conjuntamente para seguir proporcionando I/o a los clientes.</block>
   <block id="534c7f5fb857a948ecc7186949e8487b" category="section-title">Compruebe que la devolución automática sigue activada</block>
   <block id="4b7acabc2a2084c0cfea9c12b6f2f239" category="paragraph">La devolución automática debe estar habilitada en una pareja de ha de Cloud Volumes ONTAP (esta es la configuración predeterminada). Si no lo es, la operación fallará.</block>
   <block id="ac1bc09f6ac5ff545a363d498de067dd" category="inline-link">Documentación de ONTAP 9: Comandos para configurar el retorno automático</block>
@@ -5000,4 +4999,7 @@ Consulte la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-r
   <block id="fa0127eadcc515624ef23babde9aead2" category="paragraph">Tras la compra de una licencia complementaria y añadirla a la cartera digital, puedes habilitar ARP por volumen con Cloud Volumes ONTAP. La configuración de ARP para volúmenes se realiza mediante System Manager de ONTAP y la CLI de ONTAP. Para obtener más información sobre cómo habilitar ARP con ONTAP System Manager y CLI, consulte<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>.</block>
   <block id="a35eb7b32c61adf984cdcc0cc1594b1c" category="inline-image-macro">La captura de pantalla muestra la licencia complementaria para Autonomous Ransomware Protection.</block>
   <block id="97a79a643f303c97f7df9ccd26c34e5e" category="paragraph"><block ref="97a79a643f303c97f7df9ccd26c34e5e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="59e727e0c151e53fa5beabd59871cb88" category="paragraph">En muchos casos, actualizar una pareja de alta disponibilidad resulta no disruptivo y las I/O se interrumpen. Durante este proceso de actualización no disruptiva, cada nodo se actualiza conjuntamente para seguir proporcionando I/o a los clientes.</block>
+  <block id="67e0d115b5c2df9254836fd8f762d3dc" category="inline-link">Consulte la documentación de ONTAP</block>
+  <block id="ff0dae83f1884b2852a33110d07283d1" category="paragraph">Los protocolos orientados a la sesión pueden causar efectos adversos en los clientes y las aplicaciones en ciertas áreas durante las actualizaciones. Para obtener más información,<block ref="69d6ddda693aaf09f72544089a10fab3" category="inline-link-rx"></block></block>
 </blocks>

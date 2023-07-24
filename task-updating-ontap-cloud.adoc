@@ -176,7 +176,9 @@ Antes de realizar una actualización, debe comprobar que los sistemas están pre
 
 Al actualizar un sistema de un solo nodo, el proceso de actualización desconecta el sistema durante un máximo de 25 minutos, durante el cual se interrumpen las operaciones de I/O.
 
-Actualizar un par de alta disponibilidad no provoca interrupciones y la I/o se realiza de forma ininterrumpida. Durante este proceso de actualización no disruptiva, cada nodo se actualiza conjuntamente para seguir proporcionando I/o a los clientes.
+En muchos casos, actualizar una pareja de alta disponibilidad resulta no disruptivo y las I/O se interrumpen. Durante este proceso de actualización no disruptiva, cada nodo se actualiza conjuntamente para seguir proporcionando I/o a los clientes.
+
+Los protocolos orientados a la sesión pueden causar efectos adversos en los clientes y las aplicaciones en ciertas áreas durante las actualizaciones. Para obtener más información, https://docs.netapp.com/us-en/ontap/upgrade/concept_considerations_for_session_oriented_protocols.html["Consulte la documentación de ONTAP"^]
 
 
 
