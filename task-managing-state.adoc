@@ -38,7 +38,7 @@ Las instantáneas se crean automáticamente solo al realizar un apagado manual, 
 . En la página Canvas, haga doble clic en el entorno de trabajo deseado.
 . En la ficha Descripción general, haga clic en el panel Características y, a continuación, haga clic en el icono lápiz situado junto a *tiempo de inactividad programado*.
 +
-image:screenshot_schedule_downtime.png["Captura de pantalla: Muestra el icono que carga la página de apagado automático."]
+image::screenshot_schedule_downtime.png[400]
 
 . Especifique la programación de apagado:
 +

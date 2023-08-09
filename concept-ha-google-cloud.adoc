@@ -143,7 +143,7 @@ TIP: Si mueve un volumen entre nodos de una pareja de ha, debe volver a montar e
 
 Puede identificar fácilmente la dirección IP correcta a través de la opción _Mount Command_ del panel Manage Volumes de BlueXP.
 
-image:screenshot_mount_option.png["Captura de pantalla: Muestra el comando Mount que está disponible al seleccionar un volumen."]
+image::screenshot_mount_option.png[400]
 
 
 

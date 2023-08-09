@@ -24,7 +24,7 @@ Se requieren privilegios de administrador de cuentas para modificar la configura
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *Configuración del conector*.
 +
-image:screenshot_settings_connector_button.png["Una captura de pantalla de la opción Configuración del conector bajo el icono Configuración."]
+image::screenshot_settings_connector_button.png[botón de conector de configuración de captura de pantalla]
 
 . En *capacidad*, modifique cualquiera de los siguientes ajustes:
 +

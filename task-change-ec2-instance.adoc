@@ -42,7 +42,7 @@ Para ver una lista de los tipos de instancia admitidos en AWS, consulte link:htt
 . En la página Canvas, seleccione el entorno de trabajo.
 . En la ficha Descripción general, haga clic en el panel Características y, a continuación, en el icono lápiz situado junto a *Tipo de instancia*.
 +
-image:screenshot_features_instance_type.png["Captura de pantalla que muestra la configuración del tipo de instancia bajo el panel Características disponible en la parte superior derecha de la página Descripción general al visualizar un entorno de trabajo."]
+image::screenshot_features_instance_type.png[400]
 
 +
 .. Si está utilizando una licencia PAYGO basada en nodos, puede elegir opcionalmente un tipo de licencia e instancia diferente haciendo clic en el icono de lápiz situado junto a *Tipo de licencia*.

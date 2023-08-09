@@ -29,7 +29,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["
 . En la página Canvas, haga doble clic en el nombre del sistema que desea registrar.
 . En la ficha Descripción general, haga clic en el panel Características y, a continuación, en el icono lápiz situado junto a *Registro de soporte*.
 +
-image:screenshot_features_support_registration_2.png["Captura de pantalla: Muestra la opción de registro de soporte en el panel funciones de un sistema Cloud Volumes ONTAP."]
+image::screenshot_features_support_registration_2.png[400]
 
 . Seleccione una cuenta en la página de soporte de NetApp y haga clic en *Register*.
 

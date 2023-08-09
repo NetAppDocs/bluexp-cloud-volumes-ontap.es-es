@@ -257,7 +257,7 @@ Por ejemplo, la información avanzada debería decir algo similar a lo siguiente
 Debe elegir volúmenes que sean lo suficientemente grandes como para liberar espacio en el agregado para evitar problemas de capacidad adicionales en el futuro.
 
 +
-image:screenshot_aggr_volume_overview.png["Captura de pantalla: Muestra la lista de volúmenes de un agregado en el cuadro de diálogo de información de agregado."]
+image::screenshot_aggr_volume_overview.png[captura de pantalla de resumen de volumen agregado]
 
 
 
@@ -335,7 +335,7 @@ Es necesario mover dos o más volúmenes para evitar problemas de capacidad; sin
 .. Desplácese hasta el icono de agregado que desee y, a continuación, haga clic en el icono *... (Icono de elipse) > Ver detalles del agregado*.
 .. En el icono de agregado, consulte la capacidad disponible (tamaño aprovisionado menos capacidad de agregado utilizada).
 +
-image:screenshot_aggr_capacity.png["Captura de pantalla: Muestra la capacidad total del agregado y la capacidad utilizada de agregado disponible en el cuadro de diálogo de información de agregado."]
+image::screenshot_aggr_capacity.png[capacidad de agregación de captura de pantalla]
 
 
 
@@ -380,7 +380,7 @@ Se utiliza un esquema de nomenclatura anterior si se habilitó la organización 
 
 Puede ver los volúmenes de FlexGroup creados a través de la CLI o de System Manager directamente a través de la pestaña volúmenes en BlueXP. Idéntico a la información proporcionada para volúmenes de FlexVol, BlueXP proporciona información detallada sobre los volúmenes de FleGroup creados mediante un icono de volúmenes dedicados. En el icono volúmenes, es posible identificar cada grupo de volúmenes FlexGroup mediante el texto sobre el ratón del icono. Además, puede identificar y ordenar los volúmenes de FlexGroup en la vista de lista Volumes a través de la columna estilo de volumen.
 
-image:screenshot_show_flexgroup_vol.png["Una captura de pantalla que muestra el texto sobre el icono de volumen FlexGroup bajo el icono volúmenes."]
+image::screenshot_show_flexgroup_vol.png[captura de pantalla que muestra FlexGroup vol]
 
 
 NOTE: Actualmente, solo puede ver los volúmenes de FlexGroup existentes en BlueXP. La capacidad para crear volúmenes de FlexGroup en BlueXP no está disponible pero está planificada para una versión futura.

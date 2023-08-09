@@ -78,7 +78,7 @@ image:screenshot_transit_gateway3.png["\"Una captura de pantalla de la consola d
 Puede encontrar la dirección IP correcta en BlueXP a través de la opción *comando de montaje* en el panel Administrar volúmenes de BlueXP.
 
 +
-image:screenshot_mount_option.png["Captura de pantalla: Muestra el comando Mount que está disponible al seleccionar un volumen."]
+image::screenshot_mount_option.png[400]
 
 . Si va a montar un volumen de NFS, configure la política de exportación para que coincida con la subred del VPC del cliente.
 +
