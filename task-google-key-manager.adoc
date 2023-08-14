@@ -11,6 +11,7 @@ summary: Utilice el servicio de gestión de claves de Google para su servicio de
 :imagesdir: ../media/
 
 
+[role="lead"]
 Puede utilizar link:https://cloud.google.com/kms/docs["Servicio de gestión de claves de Google Cloud Platform (Cloud KMS)"^] Para proteger sus claves de cifrado de ONTAP en una aplicación puesta en marcha de Google Cloud Platform.
 
 La gestión de claves con Cloud KMS se puede habilitar con la CLI o la API DE REST de ONTAP.

@@ -20,14 +20,13 @@ Los ataques de ransomware pueden suponer un coste comercial, recursos y reputaci
 
 == Protección contra extensiones de archivos de ransomware comunes
 
-[role="lead"]
 La configuración de protección frente a ransomware, disponible a través de BlueXP, le permite utilizar la funcionalidad de FPolicy de ONTAP para protegerse frente a los tipos de extensión comunes de archivo frente al ransomware.
 
 .Pasos
 . En la página Canvas, haga doble clic en el nombre del sistema que configure para la protección contra ransomware.
 . En la ficha Descripción general, haga clic en el panel Características y, a continuación, haga clic en el icono de lápiz situado junto a *Protección contra ransomware*.
 +
-image::screenshot_features_ransomware.png[400]
+image::screenshot_features_ransomware.png[Una captura de pantalla que muestra la configuración de protección contra ransomware en el panel Características disponible en la parte superior derecha de la página Descripción general al visualizar un entorno de trabajo.]
 
 . Implemente la solución de NetApp para ransomware:
 +
@@ -60,7 +59,6 @@ image:screenshot_ransomware_protection.gif["Una captura de pantalla que muestra 
 
 == Protección autónoma de ransomware
 
-[role="lead"]
 Cloud Volumes ONTAP admite la función autónoma de protección frente a ransomware (ARP), que realiza análisis de cargas de trabajo para detectar y advertir de forma proactiva sobre actividad anormal que podría indicar un ataque de ransomware.
 
 Separe de las protecciones de extensión de archivo proporcionadas a través del https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#protection-from-common-ransomware-file-extensions["configuración de protección contra ransomware"], La función ARP utiliza el análisis de la carga de trabajo para alertar al usuario sobre posibles ataques basados en la “actividad anormal” detectada. Tanto la configuración de protección contra ransomware como la función ARP se pueden usar conjuntamente para una protección integral contra ransomware.
@@ -74,4 +72,4 @@ Para obtener más información sobre cómo habilitar ARP con ONTAP System Manage
 
 NOTE: No hay soporte disponible para el uso de funciones con licencia sin una licencia.
 
-image::screenshot_arp.png[captura de pantalla arp]
+image::screenshot_arp.png[La captura de pantalla muestra la licencia complementaria para Autonomous Ransomware Protection.]
