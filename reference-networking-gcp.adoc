@@ -220,8 +220,8 @@ Reglas del firewall:: No necesita crear reglas de firewall porque BlueXP lo hace
 --
 Tenga en cuenta que se necesitan dos conjuntos de reglas de firewall para una configuración de alta disponibilidad:
 
-* Un conjunto de reglas para los componentes de alta disponibilidad en VPC-0. Estas reglas permiten el acceso a Cloud Volumes ONTAP a los datos. <<Firewall rules for Cloud Volumes ONTAP,Leer más>>.
-* Otro conjunto de reglas para los componentes de alta disponibilidad en VPC-1, VPC-2 y VPC-3. Estas reglas están abiertas para la comunicación entrante y saliente entre los componentes ha. <<Firewall rules for Cloud Volumes ONTAP,Leer más>>.
+* Un conjunto de reglas para los componentes de alta disponibilidad en VPC-0. Estas reglas permiten el acceso a Cloud Volumes ONTAP a los datos. <<Reglas del firewall,Leer más>>.
+* Otro conjunto de reglas para los componentes de alta disponibilidad en VPC-1, VPC-2 y VPC-3. Estas reglas están abiertas para la comunicación entrante y saliente entre los componentes ha. <<Reglas del firewall,Leer más>>.
 
 
 --
@@ -250,7 +250,7 @@ Las reglas de firewall para Cloud Volumes ONTAP requieren reglas tanto entrantes
 Tenga en cuenta que se necesitan dos conjuntos de reglas de firewall para una configuración de alta disponibilidad:
 
 * Un conjunto de reglas para los componentes de alta disponibilidad en VPC-0. Estas reglas permiten el acceso a Cloud Volumes ONTAP a los datos.
-* Otro conjunto de reglas para los componentes de alta disponibilidad en VPC-1, VPC-2 y VPC-3. Estas reglas están abiertas para la comunicación entrante y saliente entre los componentes ha. <<Rules for VPC-1,VPC-2, y VPC-3, más información>>.
+* Otro conjunto de reglas para los componentes de alta disponibilidad en VPC-1, VPC-2 y VPC-3. Estas reglas están abiertas para la comunicación entrante y saliente entre los componentes ha. <<rules-for-vpc,Leer más>>.
 
 
 

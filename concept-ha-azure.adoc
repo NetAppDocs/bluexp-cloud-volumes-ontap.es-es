@@ -32,7 +32,7 @@ Tenga en cuenta lo siguiente acerca de los componentes de Azure que BlueXP pone 
 
 Equilibrador de carga estándar de Azure:: El equilibrador de carga gestiona el tráfico entrante en el par ha de Cloud Volumes ONTAP.
 Conjunto de disponibilidad:: El conjunto de disponibilidad de Azure es una agrupación lógica de los nodos de Cloud Volumes ONTAP. El conjunto de disponibilidad garantiza que los nodos se encuentren en diferentes dominios de fallo y actualización para ofrecer redundancia y disponibilidad. https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["Obtenga más información sobre los conjuntos de disponibilidad en los documentos de Azure"^].
-Discos:: Los datos del cliente residen en Blobs de la página de Premium Storage. Cada nodo tiene acceso al almacenamiento del otro nodo. También se requiere almacenamiento adicional para link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["datos sobre el arranque, la raíz y el núcleo"].
+Discos:: Los datos del cliente residen en Blobs de la página de Premium Storage. Cada nodo tiene acceso al almacenamiento del otro nodo. También se requiere almacenamiento adicional para link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["datos sobre el arranque, la raíz y el núcleo"^].
 Cuentas de almacenamiento::
 +
 --
@@ -61,7 +61,7 @@ Tenga en cuenta lo siguiente acerca de los componentes de Azure que BlueXP pone 
 
 Equilibrador de carga estándar de Azure:: El equilibrador de carga gestiona el tráfico entrante en el par ha de Cloud Volumes ONTAP.
 Conjunto de disponibilidad:: El conjunto de disponibilidad de Azure es una agrupación lógica de los nodos de Cloud Volumes ONTAP. El conjunto de disponibilidad garantiza que los nodos se encuentren en diferentes dominios de fallo y actualización para ofrecer redundancia y disponibilidad. https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["Obtenga más información sobre los conjuntos de disponibilidad en los documentos de Azure"^].
-Discos:: Los datos del cliente residen en discos gestionados de almacenamiento redundante local (LRS). Cada nodo tiene acceso al almacenamiento del otro nodo. También se requiere almacenamiento adicional para link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["Datos de arranque, raíz, raíz del partner, núcleo y NVRAM"].
+Discos:: Los datos del cliente residen en discos gestionados de almacenamiento redundante local (LRS). Cada nodo tiene acceso al almacenamiento del otro nodo. También se requiere almacenamiento adicional para link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["Datos de arranque, raíz, raíz del partner, núcleo y NVRAM"^].
 Cuentas de almacenamiento:: Las cuentas de almacenamiento se usan para implementaciones basadas en disco gestionadas para manejar registros de diagnóstico y organización en niveles para el almacenamiento BLOB.
 
 
@@ -77,7 +77,7 @@ Tenga en cuenta lo siguiente acerca de los componentes de Azure que BlueXP pone 
 
 Equilibrador de carga estándar de Azure:: El equilibrador de carga gestiona el tráfico entrante en el par ha de Cloud Volumes ONTAP.
 Zonas de disponibilidad:: Existen dos nodos Cloud Volumes ONTAP implementados en zonas de disponibilidad diferentes. Las zonas de disponibilidad garantizan que los nodos estén en diferentes dominios de fallo. https://learn.microsoft.com/en-us/azure/virtual-machines/disks-redundancy#zone-redundant-storage-for-managed-disks["Obtenga más información acerca del almacenamiento redundante de zonas de Azure para discos gestionados en los documentos de Azure"^].
-Discos:: Los datos de los clientes residen en discos gestionados de almacenamiento redundante de la zona (ZRS). Cada nodo tiene acceso al almacenamiento del otro nodo. También se requiere almacenamiento adicional para link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["datos sobre el inicio, la raíz, el partner y los principales"].
+Discos:: Los datos de los clientes residen en discos gestionados de almacenamiento redundante de la zona (ZRS). Cada nodo tiene acceso al almacenamiento del otro nodo. También se requiere almacenamiento adicional para link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["datos sobre el inicio, la raíz, el partner y los principales"^].
 Cuentas de almacenamiento:: Las cuentas de almacenamiento se usan para implementaciones basadas en disco gestionadas para manejar registros de diagnóstico y organización en niveles para el almacenamiento BLOB.
 
 

@@ -88,7 +88,7 @@ Si no puede configurar una puerta de enlace de tránsito, existen direcciones IP
 
 Debe revisar los requisitos para direcciones IP flotantes y tablas de rutas antes de implementar una configuración de alta disponibilidad en varias zonas de disponibilidad. Es necesario especificar las direcciones IP flotantes al implementar la configuración. BlueXP crea automáticamente las direcciones IP privadas.
 
-Para obtener más información, consulte link:reference-networking-aws.html#aws-networking-requirements-for-cloud-volumes-ontap-ha-in-multiple-azs["Requisitos de red de AWS para alta disponibilidad de Cloud Volumes ONTAP en múltiples AZS"].
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["Requisitos de red de AWS para alta disponibilidad de Cloud Volumes ONTAP en múltiples AZS"^].
 
 
 

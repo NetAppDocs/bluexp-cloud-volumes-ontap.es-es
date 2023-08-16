@@ -20,7 +20,7 @@ Después de decidir qué opción de licencia desea utilizar con Cloud Volumes ON
 
 == Freemium
 
-Seleccione la oferta freemium para utilizar Cloud Volumes ONTAP de forma gratuita con hasta 500 GIB de capacidad aprovisionada. link:concept-licensing.html#freemium-offering["Obtenga más información sobre la oferta de Freemium"].
+Seleccione la oferta freemium para utilizar Cloud Volumes ONTAP de forma gratuita con hasta 500 GIB de capacidad aprovisionada. link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#free-trials["Obtenga más información sobre la oferta de Freemium"^].
 
 .Pasos
 . En el menú de navegación de la izquierda, selecciona *almacenamiento > Canvas*.
@@ -28,7 +28,7 @@ Seleccione la oferta freemium para utilizar Cloud Volumes ONTAP de forma gratuit
 +
 .. En la página *Detalles y credenciales*, haga clic en *Editar credenciales > Agregar suscripción* y siga las indicaciones para suscribirse a la oferta de pago por uso en el mercado de AWS.
 +
-No se le cobrará en la suscripción al mercado a menos que supere los 500 GIB de capacidad aprovisionada; en ese momento, el sistema se convertirá automáticamente en la link:concept-licensing.html#capacity-based-licensing-packages["Paquete Essentials"].
+No se le cobrará en la suscripción al mercado a menos que supere los 500 GIB de capacidad aprovisionada; en ese momento, el sistema se convertirá automáticamente en la link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["Paquete Essentials"^].
 
 +
 image:screenshot-aws-paygo-subscription.png["Captura de pantalla de la opción de suscripción de PAYGO al crear un entorno de trabajo de Cloud Volumes ONTAP."]

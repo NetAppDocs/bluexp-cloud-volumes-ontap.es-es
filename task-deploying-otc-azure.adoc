@@ -125,7 +125,7 @@ Si deja que BlueXP genere el grupo de seguridad para usted, debe elegir cómo pe
 
 
 
-| Utilice la existente | Si elige un grupo de seguridad existente, este debe cumplir con los requisitos de Cloud Volumes ONTAP. link:reference-networking-azure.html#security-group-rules-for-cloud-volumes-ontap["Consulte el grupo de seguridad predeterminado"]. 
+| Utilice la existente | Si elige un grupo de seguridad existente, este debe cumplir con los requisitos de Cloud Volumes ONTAP. link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["Consulte el grupo de seguridad predeterminado"^]. 
 |===
 . *Métodos de carga y cuenta de NSS*: Especifique la opción de carga que desea utilizar con este sistema y, a continuación, especifique una cuenta en la página de soporte de NetApp.
 +
@@ -151,7 +151,7 @@ Tenga en cuenta lo siguiente:
 ** El tipo de disco es para el volumen inicial. Es posible seleccionar un tipo de disco diferente para volúmenes posteriores.
 ** El tamaño del disco es para todos los discos de la agrupación inicial y para cualquier agregado adicional que BlueXP cree cuando se utiliza la opción de aprovisionamiento simple. Puede crear agregados que utilicen un tamaño de disco diferente mediante la opción de asignación avanzada.
 +
-Para obtener ayuda a elegir el tipo y el tamaño de disco, consulte link:task-planning-your-config-azure.html#sizing-your-system-in-azure["Ajuste de tamaño de su sistema en Azure"].
+Para obtener ayuda a elegir el tipo y el tamaño de disco, consulte link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["Ajuste de tamaño de su sistema en Azure"^].
 
 ** Se puede elegir una política de organización en niveles de volumen específica cuando se crea o se edita un volumen.
 ** Si deshabilita la organización en niveles de datos, puede habilitarla en agregados posteriores.
@@ -246,7 +246,7 @@ Tenga en cuenta que solo puede configurar un servidor NTP cuando cree un servido
 |===
 . *Perfil de uso, Tipo de disco y Directiva de organización en niveles*: Elija si desea activar las funciones de eficiencia del almacenamiento y cambiar la política de organización en niveles de volumen, si es necesario.
 +
-Para obtener más información, consulte link:task-planning-your-config-azure.html#choosing-a-volume-usage-profile["Descripción de los perfiles de uso de volumen"] y.. link:concept-data-tiering.html["Información general sobre organización en niveles de datos"].
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["Descripción de los perfiles de uso de volumen"^] y.. link:concept-data-tiering.html["Información general sobre organización en niveles de datos"^].
 
 . *revisar y aprobar*: Revise y confirme sus selecciones.
 +
@@ -360,7 +360,7 @@ Si deja que BlueXP genere el grupo de seguridad para usted, debe elegir cómo pe
 
 
 
-| Utilice la existente | Si elige un grupo de seguridad existente, este debe cumplir con los requisitos de Cloud Volumes ONTAP. link:reference-networking-azure.html#security-group-rules-for-cloud-volumes-ontap["Consulte el grupo de seguridad predeterminado"]. 
+| Utilice la existente | Si elige un grupo de seguridad existente, este debe cumplir con los requisitos de Cloud Volumes ONTAP. link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["Consulte el grupo de seguridad predeterminado"^]. 
 |===
 . *Métodos de carga y cuenta de NSS*: Especifique la opción de carga que desea utilizar con este sistema y, a continuación, especifique una cuenta en la página de soporte de NetApp.
 +
@@ -385,7 +385,7 @@ Tenga en cuenta lo siguiente:
 +
 ** El tamaño del disco es para todos los discos de la agrupación inicial y para cualquier agregado adicional que BlueXP cree cuando se utiliza la opción de aprovisionamiento simple. Puede crear agregados que utilicen un tamaño de disco diferente mediante la opción de asignación avanzada.
 +
-Para obtener más ayuda a la hora de elegir el tamaño de disco, consulte link:task-planning-your-config-azure.html#sizing-your-system-in-azure["Ajuste de tamaño de su sistema en Azure"].
+Para obtener más ayuda a la hora de elegir el tamaño de disco, consulte link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["Ajuste de tamaño de su sistema en Azure"^].
 
 ** Se puede elegir una política de organización en niveles de volumen específica cuando se crea o se edita un volumen.
 ** Si deshabilita la organización en niveles de datos, puede habilitarla en agregados posteriores.
@@ -493,7 +493,7 @@ Tenga en cuenta que solo puede configurar un servidor NTP cuando cree un servido
 |===
 . *Perfil de uso, Tipo de disco y Directiva de organización en niveles*: Elija si desea activar las funciones de eficiencia del almacenamiento y cambiar la política de organización en niveles de volumen, si es necesario.
 +
-Para obtener más información, consulte link:task-planning-your-config-azure.html#choosing-a-volume-usage-profile["Descripción de los perfiles de uso de volumen"] y.. link:concept-data-tiering.html["Información general sobre organización en niveles de datos"].
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["Descripción de los perfiles de uso de volumen"^] y.. link:concept-data-tiering.html["Información general sobre organización en niveles de datos"^].
 
 . *revisar y aprobar*: Revise y confirme sus selecciones.
 +

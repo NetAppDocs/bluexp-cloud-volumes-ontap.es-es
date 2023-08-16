@@ -18,10 +18,10 @@ Si necesita más almacenamiento después de iniciar su sistema Cloud Volumes ONT
 
 BlueXP ofrece varias formas de crear un nuevo volumen:
 
-* Especifique los detalles de un nuevo volumen y deje que BlueXP controle los agregados de datos subyacentes que usted necesita. <<Cree un volumen,Leer más>>.
-* Cree un volumen en el agregado de datos que desee. <<Cree un volumen,Leer más>>.
-* Cree volúmenes a partir de una plantilla para optimizar el volumen según los requisitos de carga de trabajo de determinadas aplicaciones, como bases de datos o servicios de streaming. <<Crear un volumen a partir de una plantilla,Leer más>>.
-* Cree un volumen en el segundo nodo de una configuración de alta disponibilidad. <<Cree un volumen en el segundo nodo de una configuración de alta disponibilidad,Leer más>>.
+* Especifique los detalles de un nuevo volumen y deje que BlueXP controle los agregados de datos subyacentes que usted necesita. <<create-a-volume,Leer más>>
+* Cree un volumen en el agregado de datos que desee. <<create-a-volume,Leer más>>
+* Cree volúmenes a partir de una plantilla para optimizar el volumen según los requisitos de carga de trabajo de determinadas aplicaciones, como bases de datos o servicios de streaming. <<create-a-volume-from-a-template,Leer más>>
+* Cree un volumen en el segundo nodo de una configuración de alta disponibilidad. <<create-volume-second-node,Leer más>>
 
 
 
@@ -30,7 +30,7 @@ BlueXP ofrece varias formas de crear un nuevo volumen:
 
 Algunas notas sobre el aprovisionamiento de volúmenes:
 
-* Cuando se crea un volumen iSCSI, BlueXP crea automáticamente una LUN para usted. Lo hemos hecho sencillo creando sólo una LUN por volumen, por lo que no hay que realizar ninguna gestión. Después de crear el volumen, <<Conectar una LUN a un host,Utilice el IQN para conectarse con la LUN del hosts>>.
+* Cuando se crea un volumen iSCSI, BlueXP crea automáticamente una LUN para usted. Lo hemos hecho sencillo creando sólo una LUN por volumen, por lo que no hay que realizar ninguna gestión. Después de crear el volumen, link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-connect-lun.html["Utilice el IQN para conectarse con la LUN del hosts"^].
 * Puede crear LUN adicionales desde System Manager o desde la CLI.
 
 
@@ -181,7 +181,7 @@ Iniciador de host (IQN):: Los destinos iSCSI se conectan a la red a través de a
 ifdef::aws[]
 
 +
-*** link:task-planning-your-config.html#sizing-your-system-in-aws["Ajuste de tamaño de su sistema en AWS"]
+*** link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#size-your-system-in-aws["Ajuste de tamaño de su sistema en AWS"^]
 
 
 
@@ -192,14 +192,14 @@ endif::aws[]
 
 ifdef::azure[]
 
-* link:task-planning-your-config-azure.html#sizing-your-system-in-azure["Ajuste de tamaño de su sistema en Azure"]
+* link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["Ajuste de tamaño de su sistema en Azure"^]
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-* link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["Dimensionamiento de su sistema en Google Cloud"]
+* link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-gcp.html#size-your-system-in-gcp["Dimensionamiento de su sistema en Google Cloud"^]
 
 
 endif::gcp[]
@@ -250,7 +250,7 @@ image:screenshot_define_cvo_vol_from_template.png["Captura de pantalla que muest
 
 . Encima del panel _Action_, introduzca un nombre para la plantilla.
 . En _context_, el entorno de trabajo se rellena con el nombre del entorno de trabajo con el que se inició. Seleccione *Storage VM* donde se creará el volumen.
-. Agregue valores para todos los parámetros que no estén codificados de forma rígida desde la plantilla. Consulte <<create a volume,Cree un volumen>> Para obtener detalles sobre todos los parámetros necesarios para completar la implementación de un volumen de Cloud Volumes ONTAP.
+. Agregue valores para todos los parámetros que no estén codificados de forma rígida desde la plantilla. Consulte <<create-a-volume,Cree un volumen>> Para obtener detalles sobre todos los parámetros necesarios para completar la implementación de un volumen de Cloud Volumes ONTAP.
 . Haga clic en *aplicar* para guardar los parámetros configurados en la acción seleccionada.
 . Si no hay otras acciones que necesites definir (por ejemplo, configurar la copia de seguridad y la recuperación de BlueXP), haz clic en *Guardar plantilla*.
 +

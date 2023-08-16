@@ -101,7 +101,7 @@ TIP: Si quieres utilizar WORM y organización de datos en niveles, debes deshabi
 
 
 
-. *Ubicación y conectividad*: Introduzca la información de red que grabó en link:task-planning-your-config.html#aws-network-information-worksheet["Hoja de cálculo de AWS"].
+. *Ubicación y conectividad*: Introduzca la información de red que grabó en https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#collect-networking-information["Hoja de cálculo de AWS"^].
 +
 En la siguiente tabla se describen los campos que podrían presentar dificultades:
 
@@ -260,7 +260,7 @@ Tenga en cuenta que solo puede configurar un servidor NTP cuando cree un servido
 |===
 . *Perfil de uso, Tipo de disco y Directiva de organización en niveles*: Elija si desea activar las funciones de eficiencia del almacenamiento y editar la política de organización en niveles de volumen, si es necesario.
 +
-Para obtener más información, consulte link:task-planning-your-config.html#choosing-a-volume-usage-profile["Descripción de los perfiles de uso de volumen"] y.. link:concept-data-tiering.html["Información general sobre organización en niveles de datos"].
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["Descripción de los perfiles de uso de volumen"^] y.. link:concept-data-tiering.html["Información general sobre organización en niveles de datos"^].
 
 . *revisar y aprobar*: Revise y confirme sus selecciones.
 +
@@ -377,7 +377,7 @@ Si deja que BlueXP genere el grupo de seguridad para usted, debe elegir cómo pe
 . *conectividad y autenticación SSH*: Elija los métodos de conexión para el par ha y el mediador.
 . *IP flotantes*: Si elige varios AZs, especifique las direcciones IP flotantes.
 +
-Las direcciones IP deben estar fuera del bloque CIDR para todas las VPC de la región. Para obtener detalles adicionales, consulte link:reference-networking-aws.html#aws-networking-requirements-for-cloud-volumes-ontap-ha-in-multiple-azs["Requisitos de red de AWS para alta disponibilidad de Cloud Volumes ONTAP en múltiples AZS"].
+Las direcciones IP deben estar fuera del bloque CIDR para todas las VPC de la región. Para obtener detalles adicionales, consulte link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["Requisitos de red de AWS para alta disponibilidad de Cloud Volumes ONTAP en múltiples AZS"^].
 
 . * tablas de rutas*: Si elige varios AZs, seleccione las tablas de rutas que deben incluir rutas a las direcciones IP flotantes.
 +
@@ -518,7 +518,7 @@ Tenga en cuenta que solo puede configurar un servidor NTP cuando cree un servido
 |===
 . *Perfil de uso, Tipo de disco y Directiva de organización en niveles*: Elija si desea activar las funciones de eficiencia del almacenamiento y editar la política de organización en niveles de volumen, si es necesario.
 +
-Para obtener más información, consulte link:task-planning-your-config.html#choosing-a-volume-usage-profile["Descripción de los perfiles de uso de volumen"] y.. link:concept-data-tiering.html["Información general sobre organización en niveles de datos"].
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["Descripción de los perfiles de uso de volumen"^] y.. link:concept-data-tiering.html["Información general sobre organización en niveles de datos"^].
 
 . *revisar y aprobar*: Revise y confirme sus selecciones.
 +
