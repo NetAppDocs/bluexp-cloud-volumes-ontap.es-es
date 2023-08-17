@@ -31,15 +31,15 @@ Necesita lo siguiente para crear un entorno de trabajo.
 
 * Descripción de la configuración que desea usar.
 +
-Debe haberse preparado eligiendo una configuración y obteniendo información de red de AWS de su administrador. Para obtener más información, consulte link:task-planning-your-config.html["Planificación de la configuración de Cloud Volumes ONTAP"].
+Debe haberse preparado eligiendo una configuración y obteniendo información de red de AWS de su administrador. Para obtener más información, consulte link:task-planning-your-config.html["Planificación de la configuración de Cloud Volumes ONTAP"^].
 
 * Comprender qué es necesario para configurar las licencias para Cloud Volumes ONTAP.
 +
-link:task-set-up-licensing-aws.html["Aprenda a configurar las licencias"].
+link:task-set-up-licensing-aws.html["Aprenda a configurar las licencias"^].
 
 * Configuraciones DNS y Active Directory para CIFS.
 +
-Para obtener más información, consulte link:reference-networking-aws.html["Requisitos de red para Cloud Volumes ONTAP en AWS"].
+Para obtener más información, consulte link:reference-networking-aws.html["Requisitos de red para Cloud Volumes ONTAP en AWS"^].
 
 
 
@@ -123,7 +123,7 @@ Si deja que BlueXP genere el grupo de seguridad para usted, debe elegir cómo pe
 
 
 
-| Utilizar grupo de seguridad existente | Si utiliza una directiva de firewall existente, asegúrese de que incluye las reglas requeridas. link:reference-security-groups.html["Obtenga más información sobre las reglas de firewall para Cloud Volumes ONTAP"]. 
+| Utilizar grupo de seguridad existente | Si utiliza una directiva de firewall existente, asegúrese de que incluye las reglas requeridas. link:reference-security-groups.html["Obtenga más información sobre las reglas de firewall para Cloud Volumes ONTAP"^]. 
 |===
 . *cifrado de datos*: Elija sin cifrado de datos o cifrado gestionado por AWS.
 +
@@ -134,15 +134,15 @@ Para el cifrado gestionado por AWS, puede elegir una clave maestra de cliente (C
 TIP: No puede cambiar el método de cifrado de datos de AWS después de crear un sistema Cloud Volumes ONTAP.
 
 +
-link:task-setting-up-kms.html["Aprenda a configurar AWS KMS para el cloud Volumes ONTAP"].
+link:task-setting-up-kms.html["Aprenda a configurar AWS KMS para el cloud Volumes ONTAP"^].
 
 +
-link:concept-security.html#encryption-of-data-at-rest["Obtenga más información sobre las tecnologías de cifrado compatibles"].
+link:concept-security.html#encryption-of-data-at-rest["Obtenga más información sobre las tecnologías de cifrado compatibles"^].
 
 . *Métodos de carga y cuenta de NSS*: Especifique la opción de carga que desea utilizar con este sistema y, a continuación, especifique una cuenta en la página de soporte de NetApp.
 +
-** link:concept-licensing.html["Obtenga información sobre las opciones de licencia para Cloud Volumes ONTAP"].
-** link:task-set-up-licensing-aws.html["Aprenda a configurar las licencias"].
+** link:concept-licensing.html["Obtenga información sobre las opciones de licencia para Cloud Volumes ONTAP"^].
+** link:task-set-up-licensing-aws.html["Aprenda a configurar las licencias"^].
 
 
 . *Configuración de Cloud Volumes ONTAP* (sólo contrato anual de AWS Marketplace): Revise la configuración predeterminada y haga clic en *continuar* o haga clic en *Cambiar configuración* para seleccionar su propia configuración.
@@ -155,7 +155,7 @@ Si selecciona uno de los paquetes, solo tiene que especificar un volumen y, a co
 
 . *Función IAM*: Es mejor mantener la opción predeterminada para que BlueXP cree el papel que le corresponde.
 +
-Si prefiere utilizar su propia política, debe cumplirla link:task-set-up-iam-roles.html["Requisitos de políticas para los nodos Cloud Volumes ONTAP"].
+Si prefiere utilizar su propia política, debe cumplirla link:task-set-up-iam-roles.html["Requisitos de políticas para los nodos Cloud Volumes ONTAP"^].
 
 . *Licencia*: Cambie la versión de Cloud Volumes ONTAP según sea necesario y seleccione un tipo de instancia y el uso de la instancia.
 +
@@ -168,12 +168,12 @@ Tenga en cuenta lo siguiente:
 
 +
 ** El tipo de disco es para el volumen inicial (y el agregado). Es posible elegir un tipo de disco diferente para los volúmenes (y agregados) posteriores.
-** Si elige un disco gp3 o io1, BlueXP utiliza la función Elastic Volumes en AWS para aumentar de forma automática la capacidad de disco de almacenamiento subyacente según sea necesario. Es posible elegir la capacidad inicial según las necesidades de almacenamiento y revisarla después de poner en marcha Cloud Volumes ONTAP. link:concept-aws-elastic-volumes.html["Obtenga más información sobre el soporte para volúmenes Elastic en AWS"].
+** Si elige un disco gp3 o io1, BlueXP utiliza la función Elastic Volumes en AWS para aumentar de forma automática la capacidad de disco de almacenamiento subyacente según sea necesario. Es posible elegir la capacidad inicial según las necesidades de almacenamiento y revisarla después de poner en marcha Cloud Volumes ONTAP. link:concept-aws-elastic-volumes.html["Obtenga más información sobre el soporte para volúmenes Elastic en AWS"^].
 ** Si elige un disco gp2 o st1, puede seleccionar un tamaño de disco para todos los discos del agregado inicial y para cualquier agregado adicional que BlueXP cree al utilizar la opción de aprovisionamiento simple. Puede crear agregados que utilicen un tamaño de disco diferente mediante la opción de asignación avanzada.
 ** Se puede elegir una política de organización en niveles de volumen específica cuando se crea o se edita un volumen.
 ** Si deshabilita la organización en niveles de datos, puede habilitarla en agregados posteriores.
 +
-link:concept-data-tiering.html["Descubra cómo funciona la organización en niveles de datos"].
+link:concept-data-tiering.html["Descubra cómo funciona la organización en niveles de datos"^].
 
 
 
@@ -181,21 +181,21 @@ link:concept-data-tiering.html["Descubra cómo funciona la organización en nive
 +
 .. Seleccione *normal* o *Alta* velocidad de escritura, si lo desea.
 +
-link:concept-write-speed.html["Más información sobre la velocidad de escritura"].
+link:concept-write-speed.html["Más información sobre la velocidad de escritura"^].
 
 .. Si lo desea, active el almacenamiento DE escritura única y lectura múltiple (WORM).
 +
 No se puede habilitar WORM si la organización en niveles de datos se habilitó con las versiones 9.7 y anteriores de Cloud Volumes ONTAP. Revertir o degradar a Cloud Volumes ONTAP 9.8 debe estar bloqueado después de habilitar WORM y organización en niveles.
 
 +
-link:concept-worm.html["Más información acerca del almacenamiento WORM"].
+link:concept-worm.html["Más información acerca del almacenamiento WORM"^].
 
 .. Si activa el almacenamiento WORM, seleccione el período de retención.
 
 
 . *Crear volumen*: Introduzca los detalles del nuevo volumen o haga clic en *Omitir*.
 +
-link:concept-client-protocols.html["Obtenga información sobre las versiones y los protocolos de cliente compatibles"].
+link:concept-client-protocols.html["Obtenga información sobre las versiones y los protocolos de cliente compatibles"^].
 
 +
 Algunos de los campos en esta página son claros y explicativos. En la siguiente tabla se describen los campos que podrían presentar dificultades:
@@ -351,7 +351,7 @@ TIP: Si quieres utilizar WORM y organización de datos en niveles, debes deshabi
 
 . *modelos de implementación de alta disponibilidad*: Elija una configuración de alta disponibilidad.
 +
-Para obtener información general sobre los modelos de puesta en marcha, consulte link:concept-ha.html["Alta disponibilidad de Cloud Volumes ONTAP para AWS"].
+Para obtener información general sobre los modelos de puesta en marcha, consulte link:concept-ha.html["Alta disponibilidad de Cloud Volumes ONTAP para AWS"^].
 
 . *Ubicación y conectividad* (Single AZ) o *Región y VPC* (varios AZs): Introduzca la información de red que haya grabado en la hoja de trabajo de AWS.
 +
@@ -372,7 +372,7 @@ Si deja que BlueXP genere el grupo de seguridad para usted, debe elegir cómo pe
 
 
 
-| Utilizar grupo de seguridad existente | Si utiliza una directiva de firewall existente, asegúrese de que incluye las reglas requeridas. link:reference-security-groups.html["Obtenga más información sobre las reglas de firewall para Cloud Volumes ONTAP"]. 
+| Utilizar grupo de seguridad existente | Si utiliza una directiva de firewall existente, asegúrese de que incluye las reglas requeridas. link:reference-security-groups.html["Obtenga más información sobre las reglas de firewall para Cloud Volumes ONTAP"^]. 
 |===
 . *conectividad y autenticación SSH*: Elija los métodos de conexión para el par ha y el mediador.
 . *IP flotantes*: Si elige varios AZs, especifique las direcciones IP flotantes.
@@ -392,15 +392,15 @@ Para el cifrado gestionado por AWS, puede elegir una clave maestra de cliente (C
 TIP: No puede cambiar el método de cifrado de datos de AWS después de crear un sistema Cloud Volumes ONTAP.
 
 +
-link:task-setting-up-kms.html["Aprenda a configurar AWS KMS para el cloud Volumes ONTAP"].
+link:task-setting-up-kms.html["Aprenda a configurar AWS KMS para el cloud Volumes ONTAP"^].
 
 +
-link:concept-security.html#encryption-of-data-at-rest["Obtenga más información sobre las tecnologías de cifrado compatibles"].
+link:concept-security.html#encryption-of-data-at-rest["Obtenga más información sobre las tecnologías de cifrado compatibles"^].
 
 . *Métodos de carga y cuenta de NSS*: Especifique la opción de carga que desea utilizar con este sistema y, a continuación, especifique una cuenta en la página de soporte de NetApp.
 +
-** link:concept-licensing.html["Obtenga información sobre las opciones de licencia para Cloud Volumes ONTAP"].
-** link:task-set-up-licensing-aws.html["Aprenda a configurar las licencias"].
+** link:concept-licensing.html["Obtenga información sobre las opciones de licencia para Cloud Volumes ONTAP"^].
+** link:task-set-up-licensing-aws.html["Aprenda a configurar las licencias"^].
 
 
 . *Configuración de Cloud Volumes ONTAP* (sólo contrato anual de AWS Marketplace): Revise la configuración predeterminada y haga clic en *continuar* o haga clic en *Cambiar configuración* para seleccionar su propia configuración.
@@ -413,7 +413,7 @@ Si selecciona uno de los paquetes, solo tiene que especificar un volumen y, a co
 
 . *Función IAM*: Es mejor mantener la opción predeterminada para que BlueXP cree el papel que le corresponde.
 +
-Si prefiere utilizar su propia política, debe cumplirla link:task-set-up-iam-roles.html["Requisitos normativos para los nodos Cloud Volumes ONTAP y la alta disponibilidad mediador"].
+Si prefiere utilizar su propia política, debe cumplirla link:task-set-up-iam-roles.html["Requisitos normativos para los nodos Cloud Volumes ONTAP y la alta disponibilidad mediador"^].
 
 . *Licencia*: Cambie la versión de Cloud Volumes ONTAP según sea necesario y seleccione un tipo de instancia y el uso de la instancia.
 +
@@ -426,12 +426,12 @@ Tenga en cuenta lo siguiente:
 
 +
 ** El tipo de disco es para el volumen inicial (y el agregado). Es posible elegir un tipo de disco diferente para los volúmenes (y agregados) posteriores.
-** Si elige un disco gp3 o io1, BlueXP utiliza la función Elastic Volumes en AWS para aumentar de forma automática la capacidad de disco de almacenamiento subyacente según sea necesario. Es posible elegir la capacidad inicial según las necesidades de almacenamiento y revisarla después de poner en marcha Cloud Volumes ONTAP. link:concept-aws-elastic-volumes.html["Obtenga más información sobre el soporte para volúmenes Elastic en AWS"].
+** Si elige un disco gp3 o io1, BlueXP utiliza la función Elastic Volumes en AWS para aumentar de forma automática la capacidad de disco de almacenamiento subyacente según sea necesario. Es posible elegir la capacidad inicial según las necesidades de almacenamiento y revisarla después de poner en marcha Cloud Volumes ONTAP. link:concept-aws-elastic-volumes.html["Obtenga más información sobre el soporte para volúmenes Elastic en AWS"^].
 ** Si elige un disco gp2 o st1, puede seleccionar un tamaño de disco para todos los discos del agregado inicial y para cualquier agregado adicional que BlueXP cree al utilizar la opción de aprovisionamiento simple. Puede crear agregados que utilicen un tamaño de disco diferente mediante la opción de asignación avanzada.
 ** Se puede elegir una política de organización en niveles de volumen específica cuando se crea o se edita un volumen.
 ** Si deshabilita la organización en niveles de datos, puede habilitarla en agregados posteriores.
 +
-link:concept-data-tiering.html["Descubra cómo funciona la organización en niveles de datos"].
+link:concept-data-tiering.html["Descubra cómo funciona la organización en niveles de datos"^].
 
 
 
@@ -439,21 +439,21 @@ link:concept-data-tiering.html["Descubra cómo funciona la organización en nive
 +
 .. Seleccione *normal* o *Alta* velocidad de escritura, si lo desea.
 +
-link:concept-write-speed.html["Más información sobre la velocidad de escritura"].
+link:concept-write-speed.html["Más información sobre la velocidad de escritura"^].
 
 .. Si lo desea, active el almacenamiento DE escritura única y lectura múltiple (WORM).
 +
 No se puede habilitar WORM si la organización en niveles de datos se habilitó con las versiones 9.7 y anteriores de Cloud Volumes ONTAP. Revertir o degradar a Cloud Volumes ONTAP 9.8 debe estar bloqueado después de habilitar WORM y organización en niveles.
 
 +
-link:concept-worm.html["Más información acerca del almacenamiento WORM"].
+link:concept-worm.html["Más información acerca del almacenamiento WORM"^].
 
 .. Si activa el almacenamiento WORM, seleccione el período de retención.
 
 
 . *Crear volumen*: Introduzca los detalles del nuevo volumen o haga clic en *Omitir*.
 +
-link:concept-client-protocols.html["Obtenga información sobre las versiones y los protocolos de cliente compatibles"].
+link:concept-client-protocols.html["Obtenga información sobre las versiones y los protocolos de cliente compatibles"^].
 
 +
 Algunos de los campos en esta página son claros y explicativos. En la siguiente tabla se describen los campos que podrían presentar dificultades:
@@ -518,7 +518,7 @@ Tenga en cuenta que solo puede configurar un servidor NTP cuando cree un servido
 |===
 . *Perfil de uso, Tipo de disco y Directiva de organización en niveles*: Elija si desea activar las funciones de eficiencia del almacenamiento y editar la política de organización en niveles de volumen, si es necesario.
 +
-Para obtener más información, consulte link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["Descripción de los perfiles de uso de volumen"^] y.. link:concept-data-tiering.html["Información general sobre organización en niveles de datos"^].
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["Seleccione un perfil de uso de volumen"^] y.. link:concept-data-tiering.html["Información general sobre organización en niveles de datos"^].
 
 . *revisar y aprobar*: Revise y confirme sus selecciones.
 +

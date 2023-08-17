@@ -28,11 +28,11 @@ Necesita lo siguiente para crear un entorno de trabajo.
 
 * Descripción de la configuración que desea usar.
 +
-Debe haber elegido una configuración y obtener información de redes de Azure de su administrador. Para obtener más información, consulte link:task-planning-your-config-azure.html["Planificación de la configuración de Cloud Volumes ONTAP"].
+Debe haber elegido una configuración y obtener información de redes de Azure de su administrador. Para obtener más información, consulte link:task-planning-your-config-azure.html["Planificación de la configuración de Cloud Volumes ONTAP"^].
 
 * Comprender qué es necesario para configurar las licencias para Cloud Volumes ONTAP.
 +
-link:task-set-up-licensing-azure.html["Aprenda a configurar las licencias"].
+link:task-set-up-licensing-azure.html["Aprenda a configurar las licencias"^].
 
 
 
@@ -129,8 +129,8 @@ Si deja que BlueXP genere el grupo de seguridad para usted, debe elegir cómo pe
 |===
 . *Métodos de carga y cuenta de NSS*: Especifique la opción de carga que desea utilizar con este sistema y, a continuación, especifique una cuenta en la página de soporte de NetApp.
 +
-** link:concept-licensing.html["Obtenga información sobre las opciones de licencia para Cloud Volumes ONTAP"].
-** link:task-set-up-licensing-azure.html["Aprenda a configurar las licencias"].
+** link:concept-licensing.html["Obtenga información sobre las opciones de licencia para Cloud Volumes ONTAP"^].
+** link:task-set-up-licensing-azure.html["Aprenda a configurar las licencias"^].
 
 
 . *Paquetes preconfigurados*: Seleccione uno de los paquetes para implementar rápidamente un sistema Cloud Volumes ONTAP, o haga clic en *Crear mi propia configuración*.
@@ -156,7 +156,7 @@ Para obtener ayuda a elegir el tipo y el tamaño de disco, consulte link:https:/
 ** Se puede elegir una política de organización en niveles de volumen específica cuando se crea o se edita un volumen.
 ** Si deshabilita la organización en niveles de datos, puede habilitarla en agregados posteriores.
 +
-link:concept-data-tiering.html["Más información acerca de la organización en niveles de los datos"].
+link:concept-data-tiering.html["Más información acerca de la organización en niveles de los datos"^].
 
 
 
@@ -164,24 +164,24 @@ link:concept-data-tiering.html["Más información acerca de la organización en 
 +
 .. Seleccione *normal* o *Alta* velocidad de escritura, si lo desea.
 +
-link:concept-write-speed.html["Más información sobre la velocidad de escritura"].
+link:concept-write-speed.html["Más información sobre la velocidad de escritura"^].
 
 .. Si lo desea, active el almacenamiento DE escritura única y lectura múltiple (WORM).
 +
-Esta opción solo está disponible para ciertos tipos de máquina virtual. Para saber qué tipos de máquina virtual son compatibles, consulte link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["Configuraciones compatibles con licencia para pares de alta disponibilidad"].
+Esta opción solo está disponible para ciertos tipos de máquina virtual. Para saber qué tipos de máquina virtual son compatibles, consulte link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["Configuraciones compatibles con licencia para pares de alta disponibilidad"^].
 
 +
 No se puede habilitar WORM si la organización en niveles de datos se habilitó con las versiones 9.7 y anteriores de Cloud Volumes ONTAP. Revertir o degradar a Cloud Volumes ONTAP 9.8 debe estar bloqueado después de habilitar WORM y organización en niveles.
 
 +
-link:concept-worm.html["Más información acerca del almacenamiento WORM"].
+link:concept-worm.html["Más información acerca del almacenamiento WORM"^].
 
 .. Si activa el almacenamiento WORM, seleccione el período de retención.
 
 
 . *Crear volumen*: Introduzca los detalles del nuevo volumen o haga clic en *Omitir*.
 +
-link:concept-client-protocols.html["Obtenga información sobre las versiones y los protocolos de cliente compatibles"].
+link:concept-client-protocols.html["Obtenga información sobre las versiones y los protocolos de cliente compatibles"^].
 
 +
 Algunos de los campos en esta página son claros y explicativos. En la siguiente tabla se describen los campos que podrían presentar dificultades:
@@ -364,8 +364,8 @@ Si deja que BlueXP genere el grupo de seguridad para usted, debe elegir cómo pe
 |===
 . *Métodos de carga y cuenta de NSS*: Especifique la opción de carga que desea utilizar con este sistema y, a continuación, especifique una cuenta en la página de soporte de NetApp.
 +
-** link:concept-licensing.html["Obtenga información sobre las opciones de licencia para Cloud Volumes ONTAP"].
-** link:task-set-up-licensing-azure.html["Aprenda a configurar las licencias"].
+** link:concept-licensing.html["Obtenga información sobre las opciones de licencia para Cloud Volumes ONTAP"^].
+** link:task-set-up-licensing-azure.html["Aprenda a configurar las licencias"^].
 
 
 . *Paquetes preconfigurados*: Seleccione uno de los paquetes para implementar rápidamente un sistema Cloud Volumes ONTAP, o haga clic en *Cambiar configuración*.
@@ -385,12 +385,12 @@ Tenga en cuenta lo siguiente:
 +
 ** El tamaño del disco es para todos los discos de la agrupación inicial y para cualquier agregado adicional que BlueXP cree cuando se utiliza la opción de aprovisionamiento simple. Puede crear agregados que utilicen un tamaño de disco diferente mediante la opción de asignación avanzada.
 +
-Para obtener más ayuda a la hora de elegir el tamaño de disco, consulte link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["Ajuste de tamaño de su sistema en Azure"^].
+Para obtener más ayuda a la hora de elegir el tamaño de disco, consulte link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["Configure el tamaño de su sistema en Azure"^].
 
 ** Se puede elegir una política de organización en niveles de volumen específica cuando se crea o se edita un volumen.
 ** Si deshabilita la organización en niveles de datos, puede habilitarla en agregados posteriores.
 +
-link:concept-data-tiering.html["Más información acerca de la organización en niveles de los datos"].
+link:concept-data-tiering.html["Más información acerca de la organización en niveles de los datos"^].
 
 
 
@@ -398,17 +398,17 @@ link:concept-data-tiering.html["Más información acerca de la organización en 
 +
 .. Seleccione *normal* o *Alta* velocidad de escritura, si lo desea.
 +
-link:concept-write-speed.html["Más información sobre la velocidad de escritura"].
+link:concept-write-speed.html["Más información sobre la velocidad de escritura"^].
 
 .. Si lo desea, active el almacenamiento DE escritura única y lectura múltiple (WORM).
 +
-Esta opción solo está disponible para ciertos tipos de máquina virtual. Para saber qué tipos de máquina virtual son compatibles, consulte link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["Configuraciones compatibles con licencia para pares de alta disponibilidad"].
+Esta opción solo está disponible para ciertos tipos de máquina virtual. Para saber qué tipos de máquina virtual son compatibles, consulte link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["Configuraciones compatibles con licencia para pares de alta disponibilidad"^].
 
 +
 No se puede habilitar WORM si la organización en niveles de datos se habilitó con las versiones 9.7 y anteriores de Cloud Volumes ONTAP. Revertir o degradar a Cloud Volumes ONTAP 9.8 debe estar bloqueado después de habilitar WORM y organización en niveles.
 
 +
-link:concept-worm.html["Más información acerca del almacenamiento WORM"].
+link:concept-worm.html["Más información acerca del almacenamiento WORM"^].
 
 .. Si activa el almacenamiento WORM, seleccione el período de retención.
 
@@ -418,17 +418,17 @@ link:concept-worm.html["Más información acerca del almacenamiento WORM"].
 La conexión HTTPS es de un par de alta disponibilidad de Cloud Volumes ONTAP 9.7 a cuentas de almacenamiento BLOB de Azure. Tenga en cuenta que al habilitar esta opción, el rendimiento de escritura puede afectar. No se puede cambiar la configuración después de crear el entorno de trabajo.
 
 +
-link:concept-worm.html["Más información acerca del almacenamiento WORM"].
+link:concept-worm.html["Más información acerca del almacenamiento WORM"^].
 
 +
 NO se puede habilitar WORM si la organización en niveles de datos está habilitada.
 
 +
-link:concept-worm.html["Más información acerca del almacenamiento WORM"].
+link:concept-worm.html["Más información acerca del almacenamiento WORM"^].
 
 . *Crear volumen*: Introduzca los detalles del nuevo volumen o haga clic en *Omitir*.
 +
-link:concept-client-protocols.html["Obtenga información sobre las versiones y los protocolos de cliente compatibles"].
+link:concept-client-protocols.html["Obtenga información sobre las versiones y los protocolos de cliente compatibles"^].
 
 +
 Algunos de los campos en esta página son claros y explicativos. En la siguiente tabla se describen los campos que podrían presentar dificultades:
@@ -493,7 +493,7 @@ Tenga en cuenta que solo puede configurar un servidor NTP cuando cree un servido
 |===
 . *Perfil de uso, Tipo de disco y Directiva de organización en niveles*: Elija si desea activar las funciones de eficiencia del almacenamiento y cambiar la política de organización en niveles de volumen, si es necesario.
 +
-Para obtener más información, consulte link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["Descripción de los perfiles de uso de volumen"^] y.. link:concept-data-tiering.html["Información general sobre organización en niveles de datos"^].
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["Seleccione un perfil de uso de volumen"^] y.. link:concept-data-tiering.html["Información general sobre organización en niveles de datos"^].
 
 . *revisar y aprobar*: Revise y confirme sus selecciones.
 +

@@ -347,7 +347,7 @@ image::screenshot_aggr_capacity.png[capacidad de agregación de captura de panta
 
 . Si no hay agregados con capacidad disponible, cree un nuevo agregado.
 +
-Para obtener más información, consulte link:task-create-aggregates.html["Creación de agregados"].
+Para obtener más información, consulte link:task-create-aggregates.html["Creación de agregados"^].
 
 . Utilice System Manager o la interfaz de línea de comandos para mover los volúmenes al agregado.
 . En la mayoría de las situaciones, se puede usar System Manager para mover volúmenes.
