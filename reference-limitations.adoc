@@ -39,8 +39,6 @@ link:concept-client-protocols.html["Obtenga más información sobre la compatibi
 
 == BlueXP no admite recuperación ante desastres para equipos virtuales de almacenamiento
 
-BlueXP no ofrece ninguna compatibilidad de configuración o orquestación para la recuperación ante desastres de equipos virtuales de almacenamiento. Se debe usar System Manager o la CLI.
+BlueXP no ofrece compatibilidad con ninguna configuración u orquestación para la recuperación ante desastres de máquinas virtuales de almacenamiento (SVM). Se debe usar System Manager o la CLI.
 
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["Guía exprés de preparación para la recuperación de desastres de SVM"^]
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["Guía exprés de recuperación ante desastres de SVM"^]
-
+link:task-manage-svm-dr.html["Obtenga más información sobre la recuperación ante desastres de SVM"].
