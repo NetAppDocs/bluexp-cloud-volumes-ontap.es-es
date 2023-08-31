@@ -281,6 +281,7 @@ Consulte la https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updati
 +
 image:screenshot_upgrade_select_versions.png["Una captura de pantalla de la página Actualizar versión de Cloud Volumes ONTAP."]
 
+. Para comprobar el estado de la actualización, haga clic en el icono Configuración y seleccione *Línea de tiempo*.
 
 
 .Resultado
