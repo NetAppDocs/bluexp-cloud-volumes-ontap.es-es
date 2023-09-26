@@ -4600,7 +4600,6 @@
   <block id="fb4c65b52def4e8355252bcb74eab6be" category="summary">Utilice el servicio de gestión de claves de AWS para su servicio de gestión de claves de terceros.</block>
   <block id="da8f544047a48addb30292b7f355c64e" category="doc">Gestione claves con el servicio de gestión de claves de AWS</block>
   <block id="44d61056f175f112376610c7782283a1" category="inline-link-macro">Servicio de gestión de claves (KMS) de AWS</block>
-  <block id="6ad0c0113b3b55b452407927aa4aa75b" category="paragraph">Puede utilizar <block ref="27c0f93edc246c81e0de0dea4ee78543" category="inline-link-macro-rx"></block> Para proteger sus claves de cifrado de ONTAP en una aplicación puesta en marcha de Google Cloud Platform.</block>
   <block id="c7fa7b72f6d04762c019500275a89386" category="paragraph">La gestión de claves con el KMS de AWS se puede habilitar con la interfaz de línea de comandos o la API DE REST de ONTAP.</block>
   <block id="ce62b1827da5aee89a8c9443b4ca4301" category="paragraph">Al usar KMS, tenga en cuenta que, de forma predeterminada, se usa LIF de una SVM de datos para comunicarse con el punto final de la gestión de claves de cloud. Una red de gestión de nodos se usa para comunicarse con los servicios de autenticación de AWS. Si la red de clúster no está configurada correctamente, el clúster no utilizará correctamente el servicio de gestión de claves.</block>
   <block id="1a96e698f264a0a04e8665750d57e611" category="list-text">Cloud Volumes ONTAP debe ejecutar la versión 9.12.0 de o posterior</block>
@@ -5033,4 +5032,5 @@ Consulte la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-r
   <block id="bc3a07be852924fbf8ece67dbd310169" category="inline-link-macro">Echa un vistazo a los límites de almacenamiento para Cloud Volumes ONTAP en Azure</block>
   <block id="7dd77d10e6ae3bee2c34fcea19d9c1ab" category="paragraph"><block ref="2e2ea5a0499f86c06503605a768ce8a2" category="inline-link-macro-rx"></block>
 <block ref="c1f4bd6aa6a7def50b28a0bec13e0184" category="inline-link-macro-rx"></block></block>
+  <block id="9d0048a7e2f292f2c49dc43d2698028b" category="paragraph">Puede utilizar <block ref="27c0f93edc246c81e0de0dea4ee78543" category="inline-link-macro-rx"></block> Para proteger sus claves de cifrado de ONTAP en una aplicación implementada por AWS.</block>
 </blocks>

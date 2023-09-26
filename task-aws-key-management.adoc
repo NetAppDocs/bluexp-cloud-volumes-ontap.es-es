@@ -12,7 +12,7 @@ summary: Utilice el servicio de gestión de claves de AWS para su servicio de ge
 
 
 [role="lead"]
-Puede utilizar link:https://docs.aws.amazon.com/kms/latest/developerguide/overview.html["Servicio de gestión de claves (KMS) de AWS"^] Para proteger sus claves de cifrado de ONTAP en una aplicación puesta en marcha de Google Cloud Platform.
+Puede utilizar link:https://docs.aws.amazon.com/kms/latest/developerguide/overview.html["Servicio de gestión de claves (KMS) de AWS"^] Para proteger sus claves de cifrado de ONTAP en una aplicación implementada por AWS.
 
 La gestión de claves con el KMS de AWS se puede habilitar con la interfaz de línea de comandos o la API DE REST de ONTAP.
 
