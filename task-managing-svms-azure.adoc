@@ -22,6 +22,9 @@ Una máquina virtual de almacenamiento es un equipo virtual que se ejecuta en ON
 Para crear máquinas virtuales de almacenamiento que sirven los datos adicionales, debe asignar direcciones IP en Azure y, a continuación, ejecutar comandos de ONTAP para crear las LIF de datos y la máquina virtual de almacenamiento.
 
 
+NOTE: Para realizar tareas adicionales relacionadas con NIC, puede asignar una función de contribuyente de red o una función personalizada con los permisos adecuados en Azure. Para obtener más información sobre estos permisos relacionados con NIC, consulte https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface?tabs=azure-portal#permissions["Documentación de Microsoft Azure"^].
+
+
 
 == Número admitido de máquinas virtuales de almacenamiento
 
