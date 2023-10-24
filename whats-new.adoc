@@ -20,6 +20,30 @@ Las mejoras descritas en esta página son específicas de las funciones de BlueX
 
 
 
+== 23 de octubre de 2023
+
+Los siguientes cambios se introdujeron con la versión 3.9.34 del conector.
+
+
+
+=== Se admiten nuevas regiones para implementaciones de zonas de disponibilidad múltiple de alta disponibilidad en Azure
+
+Las siguientes regiones de Azure admiten ahora implementaciones de zonas de disponibilidad múltiple de alta disponibilidad para Cloud Volumes ONTAP 9.14.0 y versiones posteriores:
+
+* Australia Oriental
+* Asia Oriental
+* Francia Central
+* Europa del Norte
+* Qatar Central
+* Suecia Central
+* Europa Occidental
+* Oeste de EE.UU. 2
+
+
+Para obtener una lista de todas las regiones que admiten varias zonas de disponibilidad, consulte https://bluexp.netapp.com/cloud-volumes-global-regions["Mapa de regiones globales en Azure"^].
+
+
+
 == 6 de octubre de 2023
 
 Los siguientes cambios se introdujeron con la versión 3.9.34 del conector.
@@ -44,8 +68,8 @@ Los siguientes cambios se introdujeron con la versión 3.9.33 del conector.
 
 Los tipos de instancia L48s_v3 y L64s_v3 ahora son compatibles con Cloud Volumes ONTAP en Azure para implementaciones de parejas de nodos únicos y alta disponibilidad con discos gestionados compartidos en zonas de disponibilidad única y múltiple, a partir de la versión 9.13.1. Estos tipos de instancias admiten Flash Cache.
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Vea las configuraciones compatibles para Cloud Volumes ONTAP en Azure"]
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Echa un vistazo a los límites de almacenamiento para Cloud Volumes ONTAP en Azure"]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Vea las configuraciones compatibles para Cloud Volumes ONTAP en Azure"^]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Echa un vistazo a los límites de almacenamiento para Cloud Volumes ONTAP en Azure"^]
 
 
 
@@ -67,7 +91,7 @@ Flash Cache y la alta velocidad de escritura pueden habilitarse por separado en 
 
 Puede utilizar estas funciones por separado o juntas en implementaciones de parejas de nodo único o de alta disponibilidad.
 
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Inicie Cloud Volumes ONTAP en Google Cloud"]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Inicie Cloud Volumes ONTAP en Google Cloud"^]
 
 
 
