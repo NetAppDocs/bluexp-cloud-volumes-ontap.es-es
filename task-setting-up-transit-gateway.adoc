@@ -73,6 +73,17 @@ La siguiente imagen de ejemplo muestra la tabla de rutas para VPC 1. Incluye una
 +
 image:screenshot_transit_gateway3.png["\"Una captura de pantalla de la consola de AWS que muestra la tabla de rutas para VPC 1. Incluye una ruta a las direcciones IP flotantes y al VPC 2, que es donde reside un cliente."]
 
+. Actualice la configuración de los grupos de seguridad a todo el tráfico de la VPC.
++
+.. En Nube privada virtual, haga clic en *Subredes*.
+.. Haga clic en la pestaña *Route table*, seleccione el entorno deseado para una de las direcciones IP flotantes para un par HA.
+.. Haga clic en *Grupos de seguridad*.
+.. Selecciona *Editar reglas entrantes*.
+.. Haga clic en *Agregar regla*.
+.. En Tipo, seleccione *Todo el tráfico* y, a continuación, seleccione la dirección IP de VPC.
+.. Haga clic en *Guardar reglas* para aplicar los cambios.
+
+
 . Montar volúmenes en clientes con la dirección IP flotante.
 +
 Puede encontrar la dirección IP correcta en BlueXP a través de la opción *comando de montaje* en el panel Administrar volúmenes de BlueXP.
