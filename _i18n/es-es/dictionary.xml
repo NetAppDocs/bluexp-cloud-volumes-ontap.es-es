@@ -5041,7 +5041,6 @@ Consulte la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-r
   <block id="2d713c56af0861a0b0bed91ef8da2e18" category="paragraph">Revise las siguientes consideraciones:</block>
   <block id="97d737a59c7e796eb8610dce5b0f817a" category="list-text">Solo puede añadir una NIC a un nodo único de Cloud Volumes ONTAP o a una puesta en marcha de par de alta disponibilidad (instancia de VM) para la segregación del tráfico de SnapMirror.</block>
   <block id="933fe3c7f865ac41ceae93a6e0cb11be" category="list-text">Para agregar una NIC nueva, el tipo de instancia de VM que implemente debe tener una NIC sin usar.</block>
-  <block id="e6f791d5fe8a01a86623cb53cef66120" category="list-text">Los clústeres de origen y destino deben estar en la misma red virtual (vnet), pero no en la misma subred.</block>
   <block id="c61486c21b19c2bf3cf6e82a2a1a645b" category="section-title">Paso 1: Cree una NIC adicional y conéctela a la VM de destino</block>
   <block id="d1348b7908ab7ffc3e987964d5d681f0" category="paragraph">En esta sección se proporcionan instrucciones sobre cómo crear una NIC adicional y adjuntarla a la VM de destino. La máquina virtual de destino es el sistema de nodo único o par de alta disponibilidad de Cloud Volumes ONTAP en Azure, donde desea configurar su NIC adicional.</block>
   <block id="faa6897ed3f655c419813b3c65575b23" category="list-text">En la CLI de ONTAP, pare el nodo.</block>
@@ -5142,4 +5141,6 @@ Consulte la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-r
   <block id="0444b867f0aca3029a2b9ea7cd093316" category="list-text">Haga clic en *Agregar regla*.</block>
   <block id="39eb101f969fe671b016bf47de2d6d12" category="list-text">En Tipo, seleccione *Todo el tráfico* y, a continuación, seleccione la dirección IP de VPC.</block>
   <block id="20d3f54acd662a128694ddf527ea22fb" category="list-text">Haga clic en *Guardar reglas* para aplicar los cambios.</block>
+  <block id="2fd1ee72a12db129de96b6606fbce188" category="list-text">Los clústeres de origen y destino deben tener acceso a la misma red virtual (vnet). El clúster de destino es un sistema Cloud Volumes ONTAP en Azure. El clúster de origen puede ser un sistema Cloud Volumes ONTAP en Azure o un sistema ONTAP.</block>
+  <block id="53dbdce3b901c59c8d3bbdae0e91364c" category="paragraph">Para mover una relación de replicación de SnapMirror existente, debe interrumpir la relación de replicación de SnapMirror existente antes de crear una nueva relación de replicación de SnapMirror.</block>
 </blocks>
