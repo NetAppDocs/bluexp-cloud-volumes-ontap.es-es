@@ -122,7 +122,7 @@ sidebar:
       entries:
       - title: Gestione licencias basadas en capacidad
         url: "/task-manage-capacity-licenses.html"
-      - title: Gestione suscripciones de Keystone
+      - title: Gestiona las suscripciones de Keystone
         url: "/task-manage-keystone.html"
       - title: Gestione licencias basadas en nodos
         url: "/task-manage-node-licenses.html"

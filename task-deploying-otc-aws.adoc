@@ -86,7 +86,8 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["
 En el siguiente vídeo se muestra cómo asociar una suscripción de pago por uso a Marketplace en sus credenciales de AWS:
 
 +
-video::video_subscribing_aws.mp4[width=848,height=480]
+.Suscríbete a BlueXP desde AWS Marketplace
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 +
 
 TIP: Si varios usuarios de IAM trabajan en la misma cuenta de AWS, cada usuario debe suscribirse. Una vez que el primer usuario se haya suscrito, AWS Marketplace informa a los usuarios posteriores de que ya están suscritos, tal como se muestra en la siguiente imagen. Mientras se ha establecido una suscripción para la cuenta _de AWS_, cada usuario de IAM debe asociarse a dicha suscripción. Si ve el mensaje que aparece a continuación, haga clic en el enlace *haga clic aquí* para ir al sitio Web de BlueXP y completar el proceso.image:screenshot_aws_marketplace.gif["Una captura de pantalla que muestra la página de suscripción de BlueXP para Cloud Volumes ONTAP cuando la cuenta de AWS ya tiene una suscripción, pero es posible que un usuario de IAM en particular no lo tenga."]
@@ -334,7 +335,8 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["
 En el siguiente vídeo se muestra cómo asociar una suscripción de pago por uso a Marketplace en sus credenciales de AWS:
 
 +
-video::video_subscribing_aws.mp4[width=848,height=480]
+.Suscríbete a BlueXP desde AWS Marketplace
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 +
 
 TIP: Si varios usuarios de IAM trabajan en la misma cuenta de AWS, cada usuario debe suscribirse. Una vez que el primer usuario se haya suscrito, AWS Marketplace informa a los usuarios posteriores de que ya están suscritos, tal como se muestra en la siguiente imagen. Mientras se ha establecido una suscripción para la cuenta _de AWS_, cada usuario de IAM debe asociarse a dicha suscripción. Si ve el mensaje que aparece a continuación, haga clic en el enlace *haga clic aquí* para ir a la página web de BlueXP y completar el proceso.image:screenshot_aws_marketplace.gif["Una captura de pantalla que muestra la página de suscripción de BlueXP para Cloud Volumes ONTAP cuando la cuenta de AWS ya tiene una suscripción, pero es posible que un usuario de IAM en particular no lo tenga."]

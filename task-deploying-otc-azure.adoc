@@ -83,7 +83,8 @@ En la siguiente tabla se describen los campos que podrían presentar dificultade
 En el siguiente vídeo se muestra cómo asociar una suscripción de Marketplace a una suscripción de Azure:
 
 +
-video::video_subscribing_azure.mp4[width=848,height=480]
+.Suscríbete a BlueXP desde Azure Marketplace
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 . *Servicios*: Mantenga activados los servicios o desactive los servicios individuales que no desea utilizar con Cloud Volumes ONTAP.
 +
 ** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Más información sobre la clasificación de BlueXP"^]
@@ -308,7 +309,8 @@ En la siguiente tabla se describen los campos que podrían presentar dificultade
 En el siguiente vídeo se muestra cómo asociar una suscripción de Marketplace a una suscripción de Azure:
 
 +
-video::video_subscribing_azure.mp4[width=848,height=480]
+.Suscríbete a BlueXP desde Azure Marketplace
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 . *Servicios*: Mantenga activados los servicios o desactive los servicios individuales que no desea utilizar con Cloud Volumes ONTAP.
 +
 ** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Más información sobre la clasificación de BlueXP"^]
