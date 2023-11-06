@@ -204,7 +204,7 @@ NOTE: Las Snapshot se crean automáticamente al reiniciar.
 * Cada disco de forma predeterminada en Azure está cifrado en reposo.
 
 
-.Pares DE ALTA DISPONIBILIDAD en múltiples zonas de disponibilidad
+.Pares de ALTA disponibilidad con discos gestionados compartidos en varias zonas de disponibilidad
 * Dos discos SSD Premium de 10 GIB para el volumen de arranque (uno por nodo)
 * Dos BLOB de la página de almacenamiento Premium de 512 GIB para el volumen raíz (uno por nodo)
 * Dos discos HDD estándar de 1024 GIB para ahorrar núcleos (uno por nodo)
