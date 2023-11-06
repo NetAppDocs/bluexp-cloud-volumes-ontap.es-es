@@ -75,9 +75,9 @@ Cualquier otro sistema que tenga menos de 500 GIB de capacidad aprovisionada per
 Pague por separado la capacidad aprovisionada y las operaciones de I/o.
 
 * Nodo único de Cloud Volumes ONTAP o alta disponibilidad
-* La carga se basa en dos componentes de coste: Almacenamiento y uso (E/S)
+* La carga se basa en dos componentes de coste: Almacenamiento y uso (I/O).
 +
-No tendrá que pagar por I/o relacionado con la replicación de datos (SnapMirror) o NDMP.
+No le cobrarán por el I/O relacionado con la replicación de datos (SnapMirror), los backups (SnapVault) o NDMP.
 
 
 
