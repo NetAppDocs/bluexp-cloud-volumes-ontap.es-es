@@ -20,9 +20,23 @@ Las mejoras descritas en esta página son específicas de las funciones de BlueX
 
 
 
+== 8 de noviembre de 2023
+
+El siguiente cambio se introdujo con la versión 3.9.35 del conector.
+
+
+
+=== La región de Tel Aviv ahora es compatible con AWS
+
+La región de Tel Aviv ahora es compatible con AWS para Cloud Volumes ONTAP 9.12.1 GA y posterior.
+
+Para ver una lista de todas las regiones, consulte https://bluexp.netapp.com/cloud-volumes-global-regions["Mapa de regiones globales en AWS"^].
+
+
+
 == 1 de noviembre de 2023
 
-Los siguientes cambios se introdujeron con la versión 3.9.34 del conector.
+El siguiente cambio se introdujo con la versión 3.9.34 del conector.
 
 
 
@@ -36,7 +50,7 @@ Para ver una lista de todas las regiones, consulte https://bluexp.netapp.com/clo
 
 == 23 de octubre de 2023
 
-Los siguientes cambios se introdujeron con la versión 3.9.34 del conector.
+El siguiente cambio se introdujo con la versión 3.9.34 del conector.
 
 
 
@@ -60,7 +74,7 @@ Para obtener una lista de todas las regiones que admiten varias zonas de disponi
 
 == 6 de octubre de 2023
 
-Los siguientes cambios se introdujeron con la versión 3.9.34 del conector.
+El siguiente cambio se introdujo con la versión 3.9.34 del conector.
 
 
 
@@ -74,7 +88,7 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Conozca cuále
 
 == 10 de septiembre de 2023
 
-Los siguientes cambios se introdujeron con la versión 3.9.33 del conector.
+El siguiente cambio se introdujo con la versión 3.9.33 del conector.
 
 
 
