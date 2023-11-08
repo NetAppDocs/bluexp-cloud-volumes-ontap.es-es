@@ -5156,4 +5156,8 @@ Consulte la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-r
   <block id="0679d11689909adae41f54cfc8c6ef53" category="list-text">La carga se basa en dos componentes de coste: Almacenamiento y uso (I/O).</block>
   <block id="992a45bae33fb9769eb5bc8c6317149c" category="paragraph">No le cobrarán por el I/O relacionado con la replicación de datos (SnapMirror), los backups (SnapVault) o NDMP.</block>
   <block id="0b8c1e660d75aa2bec12f002f097dcab" category="list-title">Pares de ALTA disponibilidad con discos gestionados compartidos en varias zonas de disponibilidad</block>
+  <block id="a710c8d7ee654ea3241f1b07f9f7de05" category="list-text"><block ref="de989a17a1629831650b134e00461edd" category="inline-xref-macro-rx"></block></block>
+  <block id="6d09b3b7b0c828e4faaa038218afc509" category="section-title">Compruebe que todas las LIF se encuentran en los puertos domésticos</block>
+  <block id="4a0d5f4ccd3c4d2acc213b54daf63f9e" category="inline-link-macro">Compruebe que todas las LIF se encuentran en los puertos domésticos</block>
+  <block id="0754aed90b1b7e3ecf810f88321b76f5" category="paragraph">Antes de actualizar, todos los LIF deben estar en los puertos domésticos. Consulte la documentación de ONTAP para <block ref="e645c13326fab640068fe44ceb8154ff" category="inline-link-macro-rx"></block>.</block>
 </blocks>

@@ -196,6 +196,7 @@ Antes de realizar una actualización, debe comprobar que los sistemas están pre
 * <<Compruebe que la devolución automática sigue activada>>
 * <<Suspenda las transferencias de SnapMirror>>
 * <<Compruebe que los agregados están en línea>>
+* <<Compruebe que todas las LIF se encuentran en los puertos domésticos>>
 
 
 
@@ -263,6 +264,12 @@ image:screenshots_aggregate_details_state.png["Captura de pantalla: Muestra el c
 
 
 
+
+
+
+=== Compruebe que todas las LIF se encuentran en los puertos domésticos
+
+Antes de actualizar, todos los LIF deben estar en los puertos domésticos. Consulte la documentación de ONTAP para link:https://docs.netapp.com/us-en/ontap/upgrade/task_enabling_and_reverting_lifs_to_home_ports_preparing_the_ontap_software_for_the_update.html["Compruebe que todas las LIF se encuentran en los puertos domésticos"].
 
 
 
