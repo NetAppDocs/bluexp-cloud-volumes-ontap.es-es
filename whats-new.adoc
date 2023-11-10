@@ -20,6 +20,20 @@ Las mejoras descritas en esta página son específicas de las funciones de BlueX
 
 
 
+== 10 de noviembre de 2023
+
+El siguiente cambio se introdujo con la versión 3.9.35 del conector.
+
+
+
+=== La región de Alemania ahora es compatible con Google Cloud
+
+La región de Alemania ahora es compatible con Google Cloud para Cloud Volumes ONTAP y el conector para Cloud Volumes ONTAP 9.12.1 GA y posterior.
+
+Para ver una lista de todas las regiones, consulte https://bluexp.netapp.com/cloud-volumes-global-regions["Mapa de regiones globales en Google Cloud"^].
+
+
+
 == 8 de noviembre de 2023
 
 El siguiente cambio se introdujo con la versión 3.9.35 del conector.
