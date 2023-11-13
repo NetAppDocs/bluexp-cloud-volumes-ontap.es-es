@@ -26,9 +26,9 @@ El siguiente cambio se introdujo con la versión 3.9.35 del conector.
 
 
 
-=== La región de Alemania ahora es compatible con Google Cloud
+=== La región de Berlín ahora es compatible en Google Cloud
 
-La región de Alemania ahora es compatible con Google Cloud para Cloud Volumes ONTAP y el conector para Cloud Volumes ONTAP 9.12.1 GA y posterior.
+La región de Berlín ahora es compatible con Google Cloud para Cloud Volumes ONTAP 9.12.1 GA y posterior.
 
 Para ver una lista de todas las regiones, consulte https://bluexp.netapp.com/cloud-volumes-global-regions["Mapa de regiones globales en Google Cloud"^].
 

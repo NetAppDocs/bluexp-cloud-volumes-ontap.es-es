@@ -5166,6 +5166,6 @@ Consulte la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-r
   <block id="f4e12e22adfef297cd0c891e4cd2e1a9" category="paragraph">El siguiente cambio se introdujo con la versión 3.9.33 del conector.</block>
   <block id="bbb12e7857993612931dbc5c19c5f9dc" category="paragraph">La organización en niveles de datos utiliza la tecnología FabricPool. Cloud Volumes ONTAP proporciona organización en niveles de los datos para todos los clústeres de Cloud Volumes ONTAP. Al habilitar la organización en niveles de los datos, la organización en niveles de los datos en el almacenamiento de objetos conlleva costes. Consulte la documentación de su proveedor de cloud para obtener más detalles sobre los costes de almacenamiento de objetos.</block>
   <block id="e95c0c487a8aec79b7d3484dc5452526" category="section-title">10 de noviembre de 2023</block>
-  <block id="1e8bf13d2a6124785fff6ed75b8efe5d" category="section-title">La región de Alemania ahora es compatible con Google Cloud</block>
-  <block id="1eb6caf052a1ca736597d3e01c5333f9" category="paragraph">La región de Alemania ahora es compatible con Google Cloud para Cloud Volumes ONTAP y el conector para Cloud Volumes ONTAP 9.12.1 GA y posterior.</block>
+  <block id="1c13ec96dac1171608b6dbd65bb2245c" category="section-title">La región de Berlín ahora es compatible en Google Cloud</block>
+  <block id="56e0da46254ac9c6f784da40f466bda0" category="paragraph">La región de Berlín ahora es compatible con Google Cloud para Cloud Volumes ONTAP 9.12.1 GA y posterior.</block>
 </blocks>
