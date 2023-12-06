@@ -27,6 +27,7 @@ ifdef::aws[]
 Un solo nodo::
 +
 --
+* 9.14.1 RC1
 * 9.14.0 GA
 * 9.13.1 GA
 * 9.12.1 GA
@@ -44,6 +45,7 @@ Un solo nodo::
 Pareja de HA::
 +
 --
+* 9.14.1 RC1
 * 9.14.0 GA
 * 9.13.1 GA
 * 9.12.1 GA
@@ -71,6 +73,7 @@ ifdef::azure[]
 Un solo nodo::
 +
 --
+* 9.14.1 RC1
 * 9.14.0 GA
 * 9.13.1 GA
 * 9.12.1 GA
@@ -88,6 +91,7 @@ Un solo nodo::
 Pareja de HA::
 +
 --
+* 9.14.1 RC1
 * 9.14.0 GA
 * 9.13.1 GA
 * 9.12.1 GA
@@ -114,6 +118,7 @@ ifdef::gcp[]
 Un solo nodo::
 +
 --
+* 9.14.1 RC1
 * 9.14.0 GA
 * 9.13.1 GA
 * 9.12.1 GA
@@ -130,6 +135,7 @@ Un solo nodo::
 Pareja de HA::
 +
 --
+* 9.14.1 RC1
 * 9.14.0 GA
 * 9.13.1 GA
 * 9.12.1 GA

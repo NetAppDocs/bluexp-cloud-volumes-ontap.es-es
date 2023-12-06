@@ -20,6 +20,16 @@ Las mejoras descritas en esta página son específicas de las funciones de BlueX
 
 
 
+== 6 de diciembre de 2023
+
+
+
+=== Cloud Volumes ONTAP 9.14.1 RC1
+
+Ahora BlueXP puede poner en marcha y gestionar Cloud Volumes ONTAP 9.14.1 en AWS, Azure y Google Cloud.
+
+
+
 == 5 de diciembre de 2023
 
 Se introdujeron los siguientes cambios.
