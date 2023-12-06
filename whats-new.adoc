@@ -20,6 +20,42 @@ Las mejoras descritas en esta página son específicas de las funciones de BlueX
 
 
 
+== 5 de diciembre de 2023
+
+Se introdujeron los siguientes cambios.
+
+
+
+=== Nuevo soporte regional en Azure
+
+
+
+==== Soporte de región de zona de disponibilidad única
+
+Las siguientes regiones ahora admiten implementaciones de zonas de disponibilidad única de alta disponibilidad en Azure para Cloud Volumes ONTAP 9.12.1 GA y versiones posteriores:
+
+* Tel Aviv
+* Milán
+
+
+
+
+==== Soporte de región de varias zonas de disponibilidad
+
+Las siguientes regiones admiten ahora implementaciones de zonas de disponibilidad múltiple de alta disponibilidad en Azure para Cloud Volumes ONTAP 9.12.1 GA y versiones posteriores:
+
+* India Central
+* Noruega Este
+* Suiza Norte
+* Sudáfrica Norte
+* Emiratos Árabes Unidos del Norte
+* China Norte 3
+
+
+Para ver una lista de todas las regiones, consulte https://bluexp.netapp.com/cloud-volumes-global-regions["Mapa de regiones globales en Azure"^].
+
+
+
 == 10 de noviembre de 2023
 
 El siguiente cambio se introdujo con la versión 3.9.35 del conector.
