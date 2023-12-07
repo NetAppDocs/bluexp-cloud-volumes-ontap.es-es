@@ -3914,19 +3914,6 @@
   <block id="552690dff240721c335dffa2d29b8ef8" category="paragraph">Si crea una nueva versión de la clave, Cloud Volumes ONTAP utiliza automáticamente la última versión de la clave.</block>
   <block id="0ea67820edee1410e568b14bb70835d0" category="section-title">Cómo se cifran los datos</block>
   <block id="145da5369fc47bfb6b1cd09c08d698b0" category="paragraph">Después de crear un entorno de trabajo de Cloud Volumes ONTAP configurado para utilizar una clave gestionada por el cliente, los datos de Cloud Volumes ONTAP se cifran de la siguiente manera.</block>
-  <block id="b9eeb00cda3e979e1efe9bef61f951fc" category="list-text">Azure ha zona de disponibilidad múltiple</block>
-  <block id="dcd61ff34229ba534213e8501446885a" category="list-text">Todas las cuentas de almacenamiento de Azure de Cloud Volumes ONTAP se cifran utilizando una clave gestionada por el cliente</block>
-  <block id="fdfad4872e8eceed069f74f82808d36e" category="list-text">Para los discos raíz, de arranque, NVRAM, de núcleo y de datos, BlueXP utiliza un conjunto de cifrado de disco, que permite la gestión de claves de cifrado con discos administrados.</block>
-  <block id="5dab396463f2f277886102bf78fe661b" category="list-text">Todos los discos de datos nuevos también utilizan el mismo conjunto de cifrado de disco.</block>
-  <block id="1223a21ec0a7e82e77ac43bd74628f1e" category="list-text">Zona de disponibilidad única de Azure ha</block>
-  <block id="08408518b6366a9a8bb69802d83d5e3c" category="list-text">Cualquier nueva cuenta de almacenamiento (por ejemplo, al agregar discos o agrupaciones) utiliza también la misma clave</block>
-  <block id="2301d2b9fcb3fe6f26482aff37ea2c54" category="inline-link">conjunto de cifrado de disco</block>
-  <block id="0f8e1302b6dedb536c0490b7602b0b32" category="list-text">Desde ONTAP 9.10.1P3, para NVRAM y el disco principal, BlueXP utiliza un<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>, que permite la administración de claves de cifrado con discos administrados. Las versiones inferiores utilizarán la clave gestionada por Microsoft en lugar de la clave gestionada por el cliente.</block>
-  <block id="9dca67fbd1fac23e7aff5774ec0afa2a" category="list-text">Todas las cuentas de almacenamiento de Azure para Cloud Volumes ONTAP se cifran con una clave gestionada por los clientes. 1</block>
-  <block id="648dd7242e5228e0d91d90eaf1e79ebd" category="list-text">Para los discos raíz, de arranque y de datos, BlueXP utiliza un<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>, que permite la administración de claves de cifrado con discos administrados.</block>
-  <block id="fdee261787c8d28a1d5af5c07b8580d6" category="list-text">Desde ONTAP 9.9.1P7, para NVRAM y el disco principal, BlueXP utiliza un conjunto de cifrado de disco, que permite la gestión de claves de cifrado con discos administrados. Las versiones inferiores utilizarán la clave gestionada por Microsoft en lugar de la clave gestionada por el cliente.</block>
-  <block id="8b213ded385c637758f8c3705eb6386a" category="list-title">Pie de página</block>
-  <block id="41668006fb357f569acf8441fc16a00c" category="list-text">Si desea cifrar sus cuentas de almacenamiento durante su creación, debe crear y proporcionar el ID del recurso en la solicitud de creación de CVO. Esto se aplica a todo tipo de puesta en marcha. Si no lo proporciona, las cuentas de almacenamiento seguirán estando cifradas, pero BlueXP creará primero las cuentas de almacenamiento con el cifrado de claves gestionado por Microsoft y, a continuación, actualizará las cuentas de almacenamiento para que utilicen la clave gestionada por el cliente.</block>
   <block id="8764c9ec9f17252b7df37e1710ec9e5a" category="section-title">Cree un almacén de claves y genere una clave</block>
   <block id="d01b7a4314685f64d972ad7a1fad92aa" category="paragraph">El almacén de claves debe residir en la misma suscripción a Azure y la misma región en la que esté previsto crear el sistema Cloud Volumes ONTAP.</block>
   <block id="0355ddb77a5b72eb0604153dc1393f12" category="inline-link">Cree un almacén de claves en su suscripción a Azure</block>
@@ -5164,7 +5151,6 @@ Consulte la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-r
   <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">Para ver una lista de todas las regiones, consulte<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>.</block>
   <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">El siguiente cambio se introdujo con la versión 3.9.34 del conector.</block>
   <block id="f4e12e22adfef297cd0c891e4cd2e1a9" category="paragraph">El siguiente cambio se introdujo con la versión 3.9.33 del conector.</block>
-  <block id="bbb12e7857993612931dbc5c19c5f9dc" category="paragraph">La organización en niveles de datos utiliza la tecnología FabricPool. Cloud Volumes ONTAP proporciona organización en niveles de los datos para todos los clústeres de Cloud Volumes ONTAP. Al habilitar la organización en niveles de los datos, la organización en niveles de los datos en el almacenamiento de objetos conlleva costes. Consulte la documentación de su proveedor de cloud para obtener más detalles sobre los costes de almacenamiento de objetos.</block>
   <block id="e95c0c487a8aec79b7d3484dc5452526" category="section-title">10 de noviembre de 2023</block>
   <block id="1c13ec96dac1171608b6dbd65bb2245c" category="section-title">La región de Berlín ahora es compatible en Google Cloud</block>
   <block id="56e0da46254ac9c6f784da40f466bda0" category="paragraph">La región de Berlín ahora es compatible con Google Cloud para Cloud Volumes ONTAP 9.12.1 GA y posterior.</block>
@@ -5189,4 +5175,17 @@ Consulte la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-r
   <block id="4a76045b19fb3233070f77ae414d5810" category="section-title">Cloud Volumes ONTAP 9.14.1 RC1</block>
   <block id="efb4d9478ba663f514e18b3310c2de65" category="paragraph">Ahora BlueXP puede poner en marcha y gestionar Cloud Volumes ONTAP 9.14.1 en AWS, Azure y Google Cloud.</block>
   <block id="d544ab02530940d46c43ea00a73d59d3" category="cell">9.14.1</block>
+  <block id="ed6589af51fe478933944c16eab4377f" category="paragraph">La organización en niveles de datos utiliza la tecnología FabricPool. Cloud Volumes ONTAP proporciona organización en niveles de los datos para todos los clústeres de Cloud Volumes ONTAP sin una licencia adicional. Al habilitar la organización en niveles de los datos, la organización en niveles de los datos en el almacenamiento de objetos conlleva costes. Consulte la documentación de su proveedor de cloud para obtener más detalles sobre los costes de almacenamiento de objetos.</block>
+  <block id="52325e36bf5c9eb022c54f20d2f9d58d" category="paragraph">BlueXP utiliza un conjunto de cifrado de disco, que permite la gestión de claves de cifrado con discos gestionados no con blobs de página. Todos los discos de datos nuevos también utilizan el mismo conjunto de cifrado de disco. Las versiones inferiores utilizarán la clave gestionada por Microsoft en lugar de la clave gestionada por el cliente.</block>
+  <block id="8168565911ffa4b4f24fddac74a372bd" category="cell">Discos del sistema utilizados para el cifrado de claves</block>
+  <block id="d7819c407fe0bef64dea0f538ea5059d" category="cell">Discos de datos utilizados para el cifrado de claves</block>
+  <block id="d070b5d05592da755547896113c3e9ef" category="list-text">Arranque</block>
+  <block id="83168e6cb289d732cc78427b51f93153" category="list-text">Núcleo</block>
+  <block id="e3f3f58b597fba6fefb596c5ce76d468" category="list-text">NVRAM</block>
+  <block id="fa03eb688ad8aa1db593d33dabd89bad" category="list-text">Raíz</block>
+  <block id="f6068daa29dbb05a7ead1e3b5a48bbee" category="list-text">SQL Server</block>
+  <block id="9f9a7e011920aed7b91c7f5809cef3df" category="paragraph">Zona de disponibilidad única de Azure HA con blobs de página</block>
+  <block id="7df51deb241262b7a30e9f895e6b3b75" category="paragraph">Zona de disponibilidad única de Azure HA con discos gestionados compartidos</block>
+  <block id="75b5d41c945fb77a44a02275e5167f03" category="paragraph">Azure HA Varias zonas de disponibilidad con discos gestionados compartidos</block>
+  <block id="735d36020b1ee0734f4e9ddbbea4948e" category="paragraph">Todas las cuentas de almacenamiento de Azure para Cloud Volumes ONTAP se cifran con una clave gestionada por los clientes. Si desea cifrar sus cuentas de almacenamiento durante su creación, debe crear y proporcionar el ID del recurso en la solicitud de creación de CVO. Esto se aplica a todo tipo de puesta en marcha. Si no lo proporciona, las cuentas de almacenamiento seguirán estando cifradas, pero BlueXP creará primero las cuentas de almacenamiento con el cifrado de claves gestionado por Microsoft y, a continuación, actualizará las cuentas de almacenamiento para que utilicen la clave gestionada por el cliente.</block>
 </blocks>

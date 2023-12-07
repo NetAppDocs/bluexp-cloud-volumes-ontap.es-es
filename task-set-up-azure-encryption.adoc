@@ -38,41 +38,69 @@ Si crea una nueva versión de la clave, Cloud Volumes ONTAP utiliza automáticam
 
 === Cómo se cifran los datos
 
+BlueXP utiliza un conjunto de cifrado de disco, que permite la gestión de claves de cifrado con discos gestionados no con blobs de página. Todos los discos de datos nuevos también utilizan el mismo conjunto de cifrado de disco. Las versiones inferiores utilizarán la clave gestionada por Microsoft en lugar de la clave gestionada por el cliente.
+
 Después de crear un entorno de trabajo de Cloud Volumes ONTAP configurado para utilizar una clave gestionada por el cliente, los datos de Cloud Volumes ONTAP se cifran de la siguiente manera.
 
-Azure ha zona de disponibilidad múltiple::
-+
---
-* Todas las cuentas de almacenamiento de Azure de Cloud Volumes ONTAP se cifran utilizando una clave gestionada por el cliente
-* Para los discos raíz, de arranque, NVRAM, de núcleo y de datos, BlueXP utiliza un conjunto de cifrado de disco, que permite la gestión de claves de cifrado con discos administrados.
-* Todos los discos de datos nuevos también utilizan el mismo conjunto de cifrado de disco.
+[cols="2a,2a,2a"]
+|===
+| Configuración de Cloud Volumes ONTAP | Discos del sistema utilizados para el cifrado de claves | Discos de datos utilizados para el cifrado de claves 
 
 
---
-Zona de disponibilidad única de Azure ha::
-+
---
-* Todas las cuentas de almacenamiento de Azure de Cloud Volumes ONTAP se cifran utilizando una clave gestionada por el cliente
-* Cualquier nueva cuenta de almacenamiento (por ejemplo, al agregar discos o agrupaciones) utiliza también la misma clave
-* Desde ONTAP 9.10.1P3, para NVRAM y el disco principal, BlueXP utiliza un https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["conjunto de cifrado de disco"^], que permite la administración de claves de cifrado con discos administrados. Las versiones inferiores utilizarán la clave gestionada por Microsoft en lugar de la clave gestionada por el cliente.
+ a| 
+Un solo nodo
+ a| 
+* Arranque
+* Núcleo
+* NVRAM
+
+ a| 
+* Raíz
+* SQL Server
 
 
---
-Un solo nodo::
-+
---
-* Todas las cuentas de almacenamiento de Azure para Cloud Volumes ONTAP se cifran con una clave gestionada por los clientes. 1
-* Para los discos raíz, de arranque y de datos, BlueXP utiliza un https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["conjunto de cifrado de disco"^], que permite la administración de claves de cifrado con discos administrados.
-* Todos los discos de datos nuevos también utilizan el mismo conjunto de cifrado de disco.
-* Desde ONTAP 9.9.1P7, para NVRAM y el disco principal, BlueXP utiliza un conjunto de cifrado de disco, que permite la gestión de claves de cifrado con discos administrados. Las versiones inferiores utilizarán la clave gestionada por Microsoft en lugar de la clave gestionada por el cliente.
 
 
---
+ a| 
+Zona de disponibilidad única de Azure HA con blobs de página
+ a| 
+* Arranque
+* Núcleo
+* NVRAM
+
+ a| 
+Ninguno
 
 
-.Pie de página
-. Si desea cifrar sus cuentas de almacenamiento durante su creación, debe crear y proporcionar el ID del recurso en la solicitud de creación de CVO. Esto se aplica a todo tipo de puesta en marcha. Si no lo proporciona, las cuentas de almacenamiento seguirán estando cifradas, pero BlueXP creará primero las cuentas de almacenamiento con el cifrado de claves gestionado por Microsoft y, a continuación, actualizará las cuentas de almacenamiento para que utilicen la clave gestionada por el cliente.
 
+ a| 
+Zona de disponibilidad única de Azure HA con discos gestionados compartidos
+ a| 
+* Arranque
+* Núcleo
+* NVRAM
+
+ a| 
+* Raíz
+* SQL Server
+
+
+
+
+ a| 
+Azure HA Varias zonas de disponibilidad con discos gestionados compartidos
+ a| 
+* Arranque
+* Núcleo
+* NVRAM
+
+ a| 
+* Raíz
+* SQL Server
+
+
+|===
+Todas las cuentas de almacenamiento de Azure para Cloud Volumes ONTAP se cifran con una clave gestionada por los clientes. Si desea cifrar sus cuentas de almacenamiento durante su creación, debe crear y proporcionar el ID del recurso en la solicitud de creación de CVO. Esto se aplica a todo tipo de puesta en marcha. Si no lo proporciona, las cuentas de almacenamiento seguirán estando cifradas, pero BlueXP creará primero las cuentas de almacenamiento con el cifrado de claves gestionado por Microsoft y, a continuación, actualizará las cuentas de almacenamiento para que utilicen la clave gestionada por el cliente.
 
 
 

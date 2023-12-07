@@ -18,7 +18,7 @@ Reduzca los costes de almacenamiento al permitir un almacenamiento de objetos de
 
 image:diagram_data_tiering.png["Esta es una imagen conceptual que muestra los datos activos al almacenamiento de EBS y los datos inactivos al almacenamiento S3."]
 
-La organización en niveles de datos utiliza la tecnología FabricPool. Cloud Volumes ONTAP proporciona organización en niveles de los datos para todos los clústeres de Cloud Volumes ONTAP. Al habilitar la organización en niveles de los datos, la organización en niveles de los datos en el almacenamiento de objetos conlleva costes. Consulte la documentación de su proveedor de cloud para obtener más detalles sobre los costes de almacenamiento de objetos.
+La organización en niveles de datos utiliza la tecnología FabricPool. Cloud Volumes ONTAP proporciona organización en niveles de los datos para todos los clústeres de Cloud Volumes ONTAP sin una licencia adicional. Al habilitar la organización en niveles de los datos, la organización en niveles de los datos en el almacenamiento de objetos conlleva costes. Consulte la documentación de su proveedor de cloud para obtener más detalles sobre los costes de almacenamiento de objetos.
 
 ifdef::aws[]
 
