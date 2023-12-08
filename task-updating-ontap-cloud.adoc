@@ -277,6 +277,8 @@ image:screenshots_aggregate_details_state.png["Captura de pantalla: Muestra el c
 
 Antes de actualizar, todos los LIF deben estar en los puertos domésticos. Consulte la documentación de ONTAP para link:https://docs.netapp.com/us-en/ontap/upgrade/task_enabling_and_reverting_lifs_to_home_ports_preparing_the_ontap_software_for_the_update.html["Compruebe que todas las LIF se encuentran en los puertos domésticos"].
 
+Si se produce un error de actualización, consulte link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/CVO_upgrade_fails["Artículo de la base de conocimientos «Fallo de actualización de Cloud Volumes ONTAP»"].
+
 
 
 == Actualice Cloud Volumes ONTAP
