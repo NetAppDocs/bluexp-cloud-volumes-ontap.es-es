@@ -5,15 +5,12 @@ keywords: encrypt, encryption, data, volumes, netapp volume encryption, volume e
 summary: 'Cloud Volumes ONTAP es compatible tanto con el cifrado de volúmenes de NetApp (NVE) como con el cifrado de agregados de NetApp (NAE) con un gestor de claves externo. NVE y NAE se habilitan de forma predeterminada si configura un gestor de claves externo.' 
 ---
 = Cifrar volúmenes con soluciones de cifrado de NetApp
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
