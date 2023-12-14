@@ -45,7 +45,7 @@ Haga clic en *Agregar entorno de trabajo*, seleccione el tipo de sistema que des
 
 .Enlaces relacionados
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Creación de un conector desde BlueXP"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure.html["Creación de un conector desde Azure Marketplace"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-marketplace.html["Creación de un conector desde Azure Marketplace"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Instalar el software del conector en un host Linux"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Qué hace BlueXP con permisos"^]
 
