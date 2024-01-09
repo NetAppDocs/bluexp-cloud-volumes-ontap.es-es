@@ -20,6 +20,24 @@ Las mejoras descritas en esta página son específicas de las funciones de BlueX
 
 
 
+== 8 de enero de 2024
+
+
+
+=== Nuevas máquinas virtuales para varias zonas de disponibilidad de Azure
+
+A partir de Cloud Volumes ONTAP 9.13.1, los siguientes tipos de máquinas virtuales admiten varias zonas de disponibilidad de Azure para implementaciones de pares de alta disponibilidad nuevas y existentes:
+
+* L16s_v3
+* L32s_v3
+* L48s_v3
+* L64s_v3
+
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configuraciones compatibles en Azure"^]
+
+
+
 == 6 de diciembre de 2023
 
 
