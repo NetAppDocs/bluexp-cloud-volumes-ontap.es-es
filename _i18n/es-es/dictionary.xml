@@ -252,7 +252,6 @@
   <block id="2fbb401eef4220b4a89cce3e59325dcb" category="inline-link">Documentación de Google Cloud: Información general sobre Cloud VPN</block>
   <block id="6d1472a8434e4945740fa177e609f886" category="paragraph">Para obtener instrucciones, consulte<block ref="1bc8aad79f56acf8c242cfb981c11ee1" category="inline-link-rx"></block>.</block>
   <block id="4dfddd1829f7fb340bd9b36bff6e3130" category="section-title">Reglas del firewall</block>
-  <block id="8bb6cd6de4a896f626b89e711d40aa4c" category="paragraph">BlueXP crea reglas de firewall de Google Cloud que incluyen las reglas entrantes y salientes que Cloud Volumes ONTAP necesita para funcionar correctamente. Puede que desee hacer referencia a los puertos para fines de prueba o si prefiere que utilice sus propias reglas de firewall.</block>
   <block id="30f3abb35963e0cd7d66dc08581087c9" category="paragraph">Las reglas de firewall para Cloud Volumes ONTAP requieren reglas tanto entrantes como salientes. Si va a implementar una configuración de alta disponibilidad, estas son las reglas del firewall para Cloud Volumes ONTAP en VPC-0.</block>
   <block id="2a361a1f21cbd928455b1bd06df94169" category="paragraph">Tenga en cuenta que se necesitan dos conjuntos de reglas de firewall para una configuración de alta disponibilidad:</block>
   <block id="cb97a2b297b246ea14d6c17e8e5ee28a" category="list-text">Un conjunto de reglas para los componentes de alta disponibilidad en VPC-0. Estas reglas permiten el acceso a Cloud Volumes ONTAP a los datos.</block>
@@ -3546,7 +3545,6 @@
   <block id="4afb742ece04e5b30060957dac367cba" category="section-title">Solo un par de alta disponibilidad en un grupo de recursos de Azure</block>
   <block id="80292c326dbd4c631ce6da31d922620c" category="paragraph">Debe utilizar un grupo de recursos _dedicado_ para cada par de alta disponibilidad de Cloud Volumes ONTAP que implemente en Azure. Solo se admite un par de alta disponibilidad en un grupo de recursos.</block>
   <block id="2a37f0bf23209f41128e5c28160ecd0b" category="paragraph">BlueXP experimenta problemas de conexión si intenta implementar un segundo par de alta disponibilidad de Cloud Volumes ONTAP en un grupo de recursos de Azure.</block>
-  <block id="196affcedcabdcd9243dfaab58327dae" category="paragraph">BlueXP crea grupos de seguridad de Azure que incluyen las reglas entrantes y salientes que Cloud Volumes ONTAP necesita para funcionar correctamente. Tal vez desee consultar los puertos para fines de prueba o si prefiere utilizar sus propios grupos de seguridad.</block>
   <block id="4f4194111f63429efd99a405e5d8ec85" category="paragraph">El grupo de seguridad para Cloud Volumes ONTAP requiere reglas tanto entrantes como salientes.</block>
   <block id="4d6ace52affbdd48b9198aac825d4a2c" category="section-title">Reglas de entrada para sistemas de un solo nodo</block>
   <block id="c3c41ceeecb96e561c7ec71ffc1c62fe" category="list-text">*Sólo vnet seleccionado*: El origen del tráfico entrante es el rango de subred del vnet para el sistema Cloud Volumes ONTAP y el rango de subred del vnet donde reside el conector. Esta es la opción recomendada.</block>
@@ -3783,7 +3781,6 @@
   <block id="de8cf25f68f35d1a6c91688973a7593e" category="list-text">*Secure Communication to Storage &amp; WORM*: Elija si desea activar una conexión HTTPS a cuentas de almacenamiento de Azure y activar el almacenamiento WORM (escritura única, lectura múltiple), si lo desea.</block>
   <block id="c5cd01a62bc8f55375ac755c2a6a5f47" category="paragraph">La conexión HTTPS es de un par de alta disponibilidad de Cloud Volumes ONTAP 9.7 a cuentas de almacenamiento BLOB de Azure. Tenga en cuenta que al habilitar esta opción, el rendimiento de escritura puede afectar. No se puede cambiar la configuración después de crear el entorno de trabajo.</block>
   <block id="15cbb1f16ecbbcee7df3dcd252b9d2ef" category="paragraph">NO se puede habilitar WORM si la organización en niveles de datos está habilitada.</block>
-  <block id="2626748206273dbf0d13d2fffdb79c5b" category="summary">BlueXP crea grupos de seguridad de AWS que incluyen las reglas entrantes y salientes que Cloud Volumes ONTAP necesita para funcionar correctamente. Tal vez desee consultar los puertos para fines de prueba o si prefiere utilizar sus propios grupos de seguridad.</block>
   <block id="ff12fe6f5d97035a37481ab9694afb95" category="doc">Reglas de grupos de seguridad para AWS</block>
   <block id="01cc3f2faf08762df2ba5632863fa9b9" category="section-title">Reglas para Cloud Volumes ONTAP</block>
   <block id="a58f484608b0d692f1839295a398638d" category="cell">Backup en S3</block>
@@ -5198,4 +5195,7 @@ Consulte la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-r
   <block id="b9f4aa39433f5232d4ce50f2a9a3c403" category="list-text">L64s_v3</block>
   <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link-macro">Configuraciones compatibles en Azure</block>
   <block id="22342037237200e034fd29c9cfd5bfd4" category="paragraph"><block ref="22342037237200e034fd29c9cfd5bfd4" category="inline-link-macro-rx"></block></block>
+  <block id="eb4c08b87f805a62e5af64a0b7c6fb5a" category="paragraph">BlueXP crea grupos de seguridad de Azure que incluyen las reglas entrantes y salientes que Cloud Volumes ONTAP necesita para funcionar correctamente. Tal vez desee consultar los puertos para fines de prueba o si prefiere utilizar sus propios grupos de seguridad.</block>
+  <block id="9864c286612d20c437e06d1612a86f2d" category="summary">BlueXP crea grupos de seguridad de AWS que incluyen las reglas entrantes y salientes que Cloud Volumes ONTAP necesita para funcionar correctamente. Tal vez desee consultar los puertos para fines de prueba o si prefiere utilizar sus propios grupos de seguridad.</block>
+  <block id="87ade7583253b06f01182c970d65aacd" category="paragraph">BlueXP crea reglas de firewall de Google Cloud que incluyen las reglas entrantes y salientes que Cloud Volumes ONTAP necesita para funcionar correctamente. Puede que desee consultar los puertos para fines de prueba o si prefiere utilizar sus propias reglas de firewall.</block>
 </blocks>
