@@ -63,13 +63,22 @@ Cloud Volumes ONTAP admite la función autónoma de protección frente a ransomw
 
 Separe de las protecciones de extensión de archivo proporcionadas a través del https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#protection-from-common-ransomware-file-extensions["configuración de protección contra ransomware"], La función ARP utiliza el análisis de la carga de trabajo para alertar al usuario sobre posibles ataques basados en la “actividad anormal” detectada. Tanto la configuración de protección contra ransomware como la función ARP se pueden usar conjuntamente para una protección integral contra ransomware.
 
-La función ARP está disponible para su uso con licencias BYOL (períodos de uno, dos y tres años) tanto en modelos de licencia basados en nodos como en capacidad. Debe ponerse en contacto con su representante de ventas de NetApp para adquirir una nueva licencia adicional independiente para usar con la función ARP de Cloud Volumes ONTAP.
+La función ARP está disponible para su uso solo con licencias BYOL (términos de 1 a 36 meses) tanto en modelos de licencia basados en nodos como en capacidad. Debe ponerse en contacto con su representante de ventas de NetApp para adquirir una nueva licencia adicional independiente para usar con la función ARP de Cloud Volumes ONTAP.
 
-Tras la compra de una licencia complementaria y añadirla a la cartera digital, puedes habilitar ARP por volumen con Cloud Volumes ONTAP. La configuración de ARP para volúmenes se realiza mediante System Manager de ONTAP y la CLI de ONTAP.
+La licencia ARP se considera una licencia «flotante», lo que significa que no está vinculada a una única instancia de Cloud Volumes ONTAP y se puede aplicar a varios entornos de Cloud Volumes ONTAP.
+
+
+NOTE: El uso de la función ARP con licencias Cloud Volumes ONTAP basadas en nodos no se refleja actualmente en la cartera digital. La capacidad de ver el uso de ARP basado en nodos estará disponible en Digital Wallet en una versión futura.
+
+Tras la compra de una licencia complementaria y añadirla a la cartera digital, puedes habilitar ARP por volumen con Cloud Volumes ONTAP. La carga de ARP se mide a un nivel de volumen, según la capacidad total aprovisionada de los volúmenes con la función ARP habilitada. La capacidad mínima de la licencia es 1TB. Sin embargo, no hay carga de capacidad mínima para la función ARP.
+
+Los volúmenes habilitados para ARP tienen un estado designado de “Modo de aprendizaje” o “Activo”. Cualquier volumen con un estado ARP desactivado se excluye de la carga. Por ejemplo, un entorno de Cloud Volumes ONTAP con 30 TiB de capacidad aprovisionada puede elegir que solo tiene un subconjunto de 15TiB volúmenes que tengan ARP habilitado.
+
+La configuración de ARP para volúmenes se realiza mediante System Manager de ONTAP y la CLI de ONTAP.
 
 Para obtener más información sobre cómo habilitar ARP con ONTAP System Manager y CLI, consulte https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["Habilite la protección de ransomware autónoma"^].
 
+image::screenshot_arp.png[La captura de pantalla muestra la licencia complementaria para Autonomous Ransomware Protection.]
+
 
 NOTE: No hay soporte disponible para el uso de funciones con licencia sin una licencia.
-
-image::screenshot_arp.png[La captura de pantalla muestra la licencia complementaria para Autonomous Ransomware Protection.]

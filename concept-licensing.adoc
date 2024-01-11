@@ -44,6 +44,9 @@ Por ejemplo, podría comprar una única licencia de 20 TIB, poner en marcha cuat
 La licencia basada en la capacidad está disponible en forma de un _package_. Al implementar un sistema Cloud Volumes ONTAP, puede elegir entre varios paquetes de licencias en función de las necesidades de su empresa.
 
 
+NOTE: El almacenamiento y el uso de la red se calculan en gigabytes binarios (GB), donde 1GB es 2^30 bytes. Esta unidad de medida también se conoce como gibibyte (GiB). Del mismo modo, 1TB es 2^40 bytes, es decir, 1024 GBS.
+
+
 
 === Paquetes
 
