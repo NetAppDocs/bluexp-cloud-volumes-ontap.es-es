@@ -72,7 +72,7 @@ NOTE: El uso de la función ARP con licencias Cloud Volumes ONTAP basadas en nod
 
 Tras la compra de una licencia complementaria y añadirla a la cartera digital, puedes habilitar ARP por volumen con Cloud Volumes ONTAP. La carga de ARP se mide a un nivel de volumen, según la capacidad total aprovisionada de los volúmenes con la función ARP habilitada. La capacidad mínima de la licencia es 1TB. Sin embargo, no hay carga de capacidad mínima para la función ARP.
 
-Los volúmenes habilitados para ARP tienen un estado designado de “Modo de aprendizaje” o “Activo”. Cualquier volumen con un estado ARP desactivado se excluye de la carga. Por ejemplo, un entorno de Cloud Volumes ONTAP con 30 TiB de capacidad aprovisionada puede elegir que solo tiene un subconjunto de 15TiB volúmenes que tengan ARP habilitado.
+Los volúmenes habilitados para ARP tienen un estado designado de “Modo de aprendizaje” o “Activo”. Cualquier volumen con un estado ARP desactivado se excluye de la carga. Por ejemplo, un entorno Cloud Volumes ONTAP con 30 TiB de capacidad aprovisionada puede elegir que solo un subconjunto de volúmenes de 15 TiB que tengan ARP habilitado.
 
 La configuración de ARP para volúmenes se realiza mediante System Manager de ONTAP y la CLI de ONTAP.
 

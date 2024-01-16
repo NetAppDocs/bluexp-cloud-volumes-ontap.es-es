@@ -135,15 +135,20 @@ Tenga en cuenta lo siguiente:
 +
 Por ejemplo, si está ejecutando la versión 9.8 y desea actualizar a la versión 9.10.1, primero debe actualizar a la versión 9.9.1 y después a la 9.10.1.
 
-* Para versiones de parche (P), puede actualizar de una versión a cualquier versión P de la siguiente versión.
-+
+
+
+
+
+=== Versiones de parches
+
+A partir de enero de 2024, las actualizaciones de revisiones solo están disponibles en BlueXP si se trata de una versión de parches para las tres versiones más recientes de Cloud Volumes ONTAP. Utilizamos la versión de GA más reciente para determinar las tres versiones más recientes que se deben mostrar en BlueXP. Por ejemplo, si la versión actual de GA es 9.13.1, aparecen parches para 9.11.1-9.13.1 en BlueXP. Si desea actualizar a una versión de revisión para las versiones 9.11.1 o anteriores, deberá utilizar el procedimiento de actualización manual de <<Mejora desde una imagen disponible en una URL,Descargar la imagen de ONTAP>>.
+
+Como regla general para las versiones de parche (P), puede actualizar de una versión a cualquier versión P de la versión actual que esté ejecutando o la siguiente versión.
+
 Aquí hay un par de ejemplos:
 
-+
-** 9.13.0 > 9.13.1P15
-** 9.12.1 > 9.13.1P2
-
-
+* 9.13.0 > 9.13.1P15
+* 9.12.1 > 9.13.1P2
 
 
 

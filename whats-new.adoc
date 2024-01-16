@@ -20,6 +20,18 @@ Las mejoras descritas en esta página son específicas de las funciones de BlueX
 
 
 
+== 16 de enero de 2024
+
+
+
+=== Lanzamientos de parches en BlueXP
+
+Las versiones de parches solo están disponibles en BlueXP para las tres últimas versiones de Cloud Volumes ONTAP.
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#patch-releases["Actualice Cloud Volumes ONTAP"^]
+
+
+
 == 8 de enero de 2024
 
 
