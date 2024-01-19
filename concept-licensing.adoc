@@ -307,9 +307,10 @@ Si sobrepasa su capacidad de BYOL o si la licencia caduca, se le cobrará por ex
 
 ==== Paquete Essentials
 
-Con el paquete Essentials, se factura por el tipo de puesta en marcha (ha o nodo único) y el tipo de volumen (principal o secundario). Por ejemplo, _Essentials ha_ tiene precios diferentes que _Essentials Secondary ha_.
+Con el paquete Essentials, se factura por el tipo de puesta en marcha (ha o nodo único) y el tipo de volumen (principal o secundario). Los precios de alto a bajo están en el siguiente orden: _Essentials Primary HA_, _Essentials Primary Single Node_, _Essentials Secondary HA_ y _Essentials Secondary Single Node_. Como alternativa, al adquirir un contrato de mercado o aceptar una oferta privada, los cargos por capacidad son los mismos para cualquier puesta en marcha o tipo de volumen.
 
-Si compraste una licencia Essentials de NetApp (BYOL) y superas la capacidad con licencia para esa puesta en marcha y ese tipo de volumen, la cartera digital de BlueXP cobrará los aumentos frente a una licencia Essentials de mayor precio (si la tienes). Esto sucede porque primero utilizamos la capacidad disponible que ya ha adquirido como capacidad prepagada antes de cobrar por el mercado. Cobrar al mercado agregaría costos a su factura mensual.
+.BYOL
+Si adquiriste una licencia Essentials de NetApp (BYOL) y superas la capacidad con licencia para esa puesta en marcha y ese tipo de volumen, la cartera digital de BlueXP cobra los aumentos frente a una licencia Essentials de mayor precio (si tienes una y hay capacidad disponible). Esto sucede porque primero utilizamos la capacidad disponible que ya ha adquirido como capacidad prepagada antes de cobrar por el mercado. Si no hay capacidad disponible con su licencia BYOL, la capacidad excedida se cobrará a las tarifas por hora bajo demanda del mercado (PAYGO) y añadirán los costes a su factura mensual.
 
 Veamos un ejemplo. Supongamos que tiene las siguientes licencias para el paquete Essentials:
 
@@ -317,9 +318,24 @@ Veamos un ejemplo. Supongamos que tiene las siguientes licencias para el paquete
 * Licencia de 500 TIB _Essentials Single Node_ que sólo tiene 100 TIB de capacidad comprometida
 
 
-Se aprovisionan otros 50 TIB en un par de alta disponibilidad con volúmenes secundarios. En lugar de cargar esos 50 TiB a PAYGO, la cartera digital de BlueXP carga el exceso de 50 TiB con respecto a la licencia _Essentials Single Node_. El precio de la licencia es superior al de _Essentials Secondary ha_, pero es más barato que la tasa de PAYGO.
+Se aprovisionan otros 50 TIB en un par de alta disponibilidad con volúmenes secundarios. En lugar de cargar esos 50 TiB a PAYGO, la cartera digital de BlueXP carga el exceso de 50 TiB con respecto a la licencia _Essentials Single Node_. Esa licencia tiene un precio superior al _Essentials Secondary HA_, pero está utilizando una licencia que ya ha comprado y no agregará costos a su factura mensual.
 
 En la cartera digital de BlueXP, se mostrarán 50 TiB como cargados con la licencia _Essentials Single Node_.
+
+Aquí hay otro ejemplo. Supongamos que tiene las siguientes licencias para el paquete Essentials:
+
+* Licencia de 500 TIB _Essentials Secondary ha_ que tiene 500 TIB de capacidad comprometida
+* Licencia de 500 TIB _Essentials Single Node_ que sólo tiene 100 TIB de capacidad comprometida
+
+
+Se aprovisiona otro 100 TiB en una pareja de alta disponibilidad con volúmenes primarios. La licencia que adquirió no tiene capacidad _Essentials Primary HA_ comprometida. La licencia _Essentials Primary HA_ tiene un precio superior al de las licencias _Essentials Primary Single Node_ y _Essentials Secondary HA_.
+
+En este ejemplo, la cartera digital de BlueXP cobra aumentos en la tasa de mercado para los 100 TiB adicionales. Los cargos por exceso se mostrarán en tu factura mensual.
+
+.Contratos de mercado u ofertas privadas
+Si adquirió una licencia Essentials como parte de un contrato de mercado o una oferta privada, la lógica BYOL no se aplica y debe tener el tipo de licencia exacto para el uso. El tipo de licencia incluye el tipo de volumen (primario o secundario) y el tipo de implementación (alta disponibilidad o nodo único).
+
+Por ejemplo, supongamos que implementa una instancia de Cloud Volumes ONTAP con la licencia Essentials. A continuación, se aprovisionan los volúmenes de lectura y escritura (nodo principal único) y los volúmenes de solo lectura (nodo secundario único). El contrato del mercado u oferta privada deben incluir capacidad de _Essentials Single Node_ y _Essentials Secondary Single Node_ para cubrir la capacidad aprovisionada. Cualquier capacidad aprovisionada que no forme parte de su contrato del mercado u oferta privada se cobrará según las tarifas por hora bajo demanda (PAYGO) y añadirá costes a su factura mensual.
 
 
 
