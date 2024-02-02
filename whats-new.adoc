@@ -20,6 +20,26 @@ Las mejoras descritas en esta página son específicas de las funciones de BlueX
 
 
 
+== 2 de febrero de 2024
+
+
+
+=== Compatibilidad con máquinas virtuales de la serie Edv5 en Azure
+
+Cloud Volumes ONTAP ahora es compatible con las siguientes máquinas virtuales de la serie Edv5 con discos gestionados compartidos en zonas únicas y múltiples de disponibilidad, a partir de la versión 9.14.1.
+
+* E4ds_v5
+* E8ds_v5
+* E20s_v5
+* E32ds_v5
+* E48ds_v5
+* E64ds_v5
+
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configuraciones compatibles en Azure"^]
+
+
+
 == 16 de enero de 2024
 
 
