@@ -52,6 +52,22 @@ NOTE: El almacenamiento y el uso de la red se calculan en gigabytes binarios (GB
 
 Los siguientes paquetes basados en capacidad están disponibles para Cloud Volumes ONTAP.
 
+Para obtener una lista de los tipos de máquinas virtuales admitidos con los siguientes paquetes basados en capacidad, consulte:
+
+ifdef::azure[]
+
+* link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configuraciones compatibles en Azure"^]
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Configuraciones compatibles en Google Cloud"^]
+
+
+endif::gcp[]
+
 
 
 ==== Freemium
@@ -94,23 +110,6 @@ endif::azure[]
 ifdef::gcp[]
 
 * Disponible en Google Cloud Marketplace como oferta de pago por uso o como contrato anual
-
-
-endif::gcp[]
-
-* Compatible con los tipos de máquina virtual seleccionados:
-
-
-ifdef::azure[]
-
-* Para Azure: E4s_v3, E4ds_v4, DS4_v2, DS13_v2, E8s_v3, E8ds_v4, E4ds_v5 y E8ds_v5
-
-
-endif::azure[]
-
-ifdef::gcp[]
-
-* Para Google Cloud: n2-standard-4, n2-standard-8
 
 
 endif::gcp[]
