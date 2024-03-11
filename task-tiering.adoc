@@ -318,7 +318,7 @@ CAUTION: Si no hay espacio suficiente, Cloud Volumes ONTAP no puede mover los da
 La relación es importante en escenarios de recuperación ante desastres, ya que a medida que se leen los datos del almacén de objetos, Cloud Volumes ONTAP traslada los datos a SSD/HDD para proporcionar un mejor rendimiento. Si no hay espacio suficiente, Cloud Volumes ONTAP no puede mover los datos. Tenga esto en cuenta a la hora de cambiar la proporción para que pueda satisfacer sus requisitos empresariales.
 
 .Pasos
-. En la parte superior derecha de la consola BlueXP, haga clic en el icono *Configuración* y seleccione *Configuración del conector*.
+. En la parte superior derecha de la consola de BlueXP, haz clic en el icono *Configuración* y selecciona *Configuración de Cloud Volumes ONTAP*.
 +
 image:screenshot_settings_icon.png["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
 

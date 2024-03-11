@@ -28,7 +28,7 @@ CAUTION: Este proceso puede provocar interrupciones en los clientes CIFS. Se pue
 Debe crear un conector para poder cambiar la configuración de BlueXP. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#how-to-create-a-connector["Vea cómo"^].
 
 .Pasos
-. En la parte superior derecha de la consola de BlueXP, haga clic en el icono Configuración y seleccione *Configuración del conector*.
+. En la parte superior derecha de la consola de BlueXP, haz clic en el icono Configuración y selecciona *Configuración de Cloud Volumes ONTAP*.
 +
 image:screenshot_settings_icon.png["Captura de pantalla que muestra el icono Configuración en la parte superior derecha de la consola BlueXP."]
 
