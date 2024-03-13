@@ -251,8 +251,8 @@ Si tiene pensado utilizar el backup y la recuperación de datos de BlueXP con tu
 				"ec2:DescribeRouteTables",
 				"ec2:DescribeVpcs",
 				"ec2:ReplaceRoute",
-				"ec2:UnassignPrivateIpAddresses"
-                "sts:AssumeRole"
+				"ec2:UnassignPrivateIpAddresses",
+                "sts:AssumeRole",
                 "ec2:DescribeSubnets"
 			],
 			"Resource": "*"
