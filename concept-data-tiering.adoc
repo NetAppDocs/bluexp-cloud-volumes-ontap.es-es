@@ -134,9 +134,12 @@ Cuando BlueXP crea el cucharón, utiliza los siguientes valores predeterminados:
 
 
 --
-Clases de almacenamiento:: La clase de almacenamiento predeterminada para los datos por niveles es la clase _Standard Storage_. Si se accede a los datos con poca frecuencia, puede reducir los costes de almacenamiento cambiando a _Nearline Storage_ o _Coldline Storage_. Al cambiar la clase de almacenamiento, los datos inactivos se mueven directamente a la clase seleccionada.
+Clases de almacenamiento:: La clase de almacenamiento predeterminada para los datos por niveles es la clase _Standard Storage_. Si se accede a los datos con poca frecuencia, puede reducir los costes de almacenamiento cambiando a _Nearline Storage_ o _Coldline Storage_. Cuando cambia la clase de almacenamiento, los datos inactivos subsiguientes se transfieren directamente a la clase seleccionada.
 +
 --
+
+NOTE: Todos los datos inactivos existentes mantendrán la clase de almacenamiento predeterminada cuando cambie la clase de almacenamiento. Para cambiar la clase de almacenamiento de los datos inactivos existentes, debe realizar la designación manualmente.
+
 Los costes de acceso son más elevados si se accede a los datos, por lo que hay que tener en cuenta antes de cambiar la clase de almacenamiento. https://cloud.google.com/storage/docs/storage-classes["Obtenga más información sobre clases de almacenamiento para Google Cloud Storage"^].
 
 Es posible seleccionar un nivel de almacenamiento al crear el entorno de trabajo y cambiarlo siempre que se desee. Para obtener información detallada sobre cómo cambiar la clase de almacenamiento, consulte link:task-tiering.html["Organización en niveles de los datos inactivos en almacenamiento de objetos de bajo coste"].
