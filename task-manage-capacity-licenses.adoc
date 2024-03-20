@@ -180,6 +180,9 @@ Sin embargo, si ha implementado BlueXP en una ubicación que no tiene acceso a I
 .Lo que necesitará
 El archivo de licencia (o _files_ si tiene un par ha).
 
+
+NOTE: Para obtener más información sobre cómo obtener un archivo de licencia, consulte https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#obtain-a-system-license-file["Obtenga un archivo de licencia del sistema"^].
+
 .Pasos
 . En el menú de navegación de BlueXP, seleccione *Gobierno > cartera digital*.
 . En la ficha *Cloud Volumes ONTAP*, haga clic en el menú de acciones situado junto a la licencia y seleccione *Actualizar licencia*.
@@ -193,7 +196,7 @@ El archivo de licencia (o _files_ si tiene un par ha).
 
 La licencia basada en la capacidad está disponible en forma de un _package_. Al crear un entorno de trabajo de Cloud Volumes ONTAP, puede elegir entre varios paquetes de licencias en función de sus necesidades empresariales. Si sus necesidades cambian después de crear el entorno de trabajo, puede cambiar el paquete en cualquier momento. Por ejemplo, puede cambiar del paquete Essentials al paquete Professional.
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["Obtenga más información sobre los paquetes de licencias basados en la capacidad"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["Obtenga más información sobre los paquetes de licencias basados en la capacidad"^].
 
 .Acerca de esta tarea
 * Cambiar el método de pago no afectará a si se le cobra a través de una licencia adquirida en NetApp (BYOL) o desde el mercado del proveedor de cloud (pago por uso).
