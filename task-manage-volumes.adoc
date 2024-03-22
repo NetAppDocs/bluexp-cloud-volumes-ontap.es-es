@@ -16,11 +16,13 @@ summary: BlueXP le permite gestionar volúmenes y servidores CIFS. También indi
 [role="lead"]
 BlueXP le permite gestionar volúmenes y servidores CIFS. También indica que se deben mover los volúmenes para evitar problemas de capacidad.
 
+Puedes gestionar volúmenes en BlueXP Standard View o Advanced View. La vista estándar proporciona un conjunto limitado de opciones para modificar los volúmenes. La vista avanzada proporciona niveles avanzados de gestión, como clonado, cambio de tamaño, cambio de configuración para antiransomware, análisis, protección y seguimiento de actividades, y traslado de volúmenes entre niveles. Consulte link:task-administer-advanced-view.html["Administrar Cloud Volumes ONTAP mediante la vista avanzada"].
+
 
 
 == Gestione los volúmenes
 
-Puede gestionar volúmenes a medida que cambien sus necesidades de almacenamiento. Es posible ver, editar, clonar, restaurar y eliminar volúmenes.
+Al utilizar la vista estándar de BlueXP, es posible gestionar volúmenes de acuerdo con tus necesidades de almacenamiento. Es posible ver, editar, clonar, restaurar y eliminar volúmenes.
 
 .Pasos
 . En el menú de navegación de la izquierda, selecciona *almacenamiento > Canvas*.
@@ -131,9 +133,23 @@ NOTE: BlueXP mueve el volumen a un agregado existente que usa el tipo de disco s
 
 == Cambiar el tamaño de un volumen
 
-De forma predeterminada, un volumen crece automáticamente a un tamaño máximo cuando no hay espacio. El valor predeterminado es 1,000, lo que significa que el volumen puede crecer hasta 11 veces su tamaño. Este valor se puede configurar en los ajustes de un conector.
+De forma predeterminada, un volumen crece automáticamente a un tamaño máximo cuando no hay espacio. El valor predeterminado es 1.000, lo que significa que el volumen puede crecer hasta 11 veces su tamaño. Este valor se puede configurar en los ajustes del conector.
 
-Si necesita cambiar el tamaño de su volumen, puede hacerlo mediante link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["System Manager de ONTAP"^]. Asegúrese de tener en cuenta los límites de capacidad de su sistema mientras cambia el tamaño de los volúmenes. Vaya a la https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Notas de la versión de Cloud Volumes ONTAP"^] para obtener más detalles.
+Si necesita cambiar el tamaño de su volumen, puede hacerlo desde la vista avanzada de BlueXP.
+
+.Pasos
+. Abra la vista avanzada para cambiar el tamaño de un volumen a través de System Manager. Consulte link:task-administer-advanced-view.html#how-to-get-started["Cómo comenzar"].
+. En el menú de navegación de la izquierda, selecciona *Almacenamiento > Volúmenes*.
+. En la lista de volúmenes, identifique cuál debe cambiar su tamaño.
+. Haga clic en el icono de opciones image:screenshot_gallery_options.gif["icono de kabob"].
+. Selecciona *Cambiar tamaño*.
+. En la pantalla *Resize Volume*, edite el porcentaje de capacidad y reserva de instantáneas según sea necesario. Puede comparar el espacio existente disponible con la capacidad modificada.
+. Haga clic en *Guardar*.
+
+
+image:screenshot-resize-volume.png["Muestra la capacidad modificada tras cambiar el tamaño del volumen"]
+
+Asegúrese de tener en cuenta los límites de capacidad de su sistema mientras cambia el tamaño de los volúmenes. Vaya a la https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Notas de la versión de Cloud Volumes ONTAP"^] para obtener más detalles.
 
 
 
