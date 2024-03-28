@@ -34,12 +34,15 @@ Modo de gestión de la capacidad:: Elija si BlueXP le notifica sobre las decisio
 link:concept-storage-management.html#capacity-management["Conozca cómo funciona el modo de gestión de capacidad"].
 
 --
-Umbral de capacidad agregado: Ratio de espacio libre:: Activa una notificación cuando la relación de espacio libre en un agregado desciende por debajo del umbral especificado.
+Umbral de capacidad agregado: Ratio de espacio libre:: Esta relación es un parámetro clave en las decisiones de gestión de la capacidad y comprender su impacto es esencial independientemente de si se encuentra en un modo automático o manual de gestión de la capacidad. Se recomienda establecer este umbral teniendo en cuenta sus necesidades de almacenamiento específicas y el crecimiento previsto para mantener un equilibrio entre la utilización de los recursos y el coste.
 +
 --
-La relación entre el espacio libre se calcula de la siguiente forma:
+En el modo manual, si la relación de espacio libre en un agregado está por debajo del umbral especificado, se activa una notificación y se le alerta de que debe tomar acciones para solucionar la baja relación de espacio libre. Es importante supervisar estas notificaciones y gestionar manualmente la capacidad global para evitar la interrupción del servicio y garantizar un rendimiento óptimo.
 
+La relación entre el espacio libre se calcula de la siguiente forma:
 (capacidad de agregados: capacidad total utilizada en el agregado) / capacidad agregada
+
+Consulte link:concept-storage-management.html#automatic-capacity-management["Gestión de la capacidad automática"] Para aprender ahora, la capacidad se gestiona automáticamente en Cloud Volumes ONTAP.
 
 --
 Umbrales de capacidad agregados: Ratio de espacio libre para la organización en niveles de datos:: Define cuánto espacio libre se requiere en el nivel de rendimiento (discos) al organizar los datos en niveles en un nivel de capacidad (almacenamiento de objetos).

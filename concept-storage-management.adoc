@@ -99,23 +99,23 @@ Este comportamiento está determinado por el _Capacity Management Mode_ de un co
 
 === Gestión de la capacidad automática
 
-El modo de gestión de la capacidad se establece como automático de manera predeterminada. En este modo, BlueXP adquiere automáticamente discos nuevos para instancias de Cloud Volumes ONTAP cuando se necesita más capacidad, elimina las colecciones de discos (agregados) sin utilizar, mueve volúmenes entre agregados cuando es necesario e intenta anular el fallo de los discos.
+El modo de gestión de la capacidad se establece como automático de manera predeterminada. En este modo, BlueXP comprueba la relación de espacio libre cada 15 minutos para determinar si la relación de espacio libre es inferior al umbral especificado. Si se necesita más capacidad, BlueXP inicia automáticamente la compra de nuevos discos, elimina las colecciones de discos no utilizadas (agregados), mueve volúmenes entre agregados según sea necesario e intenta evitar el fallo de disco.
 
 A continuación se muestran ejemplos de cómo funciona este modo:
 
 * Si un agregado alcanza el umbral de capacidad y tiene espacio para más discos, BlueXP compra automáticamente discos nuevos para ese agregado de modo que los volúmenes puedan continuar creciendo.
 +
-BlueXP comprueba la relación de espacio libre cada 15 minutos para determinar si necesita comprar discos adicionales.
-
-
-
 ifdef::aws[]
 
-+ en el caso de un agregado en AWS que admita volúmenes Elastic, BlueXP también aumenta el tamaño de los discos de un grupo RAID. link:concept-aws-elastic-volumes.html["Obtenga más información sobre el soporte para volúmenes Elastic"].
+
+
+En el caso de un agregado en AWS que admita Elastic Volumes, BlueXP también aumenta el tamaño de los discos de un grupo RAID. link:concept-aws-elastic-volumes.html["Obtenga más información sobre el soporte para volúmenes Elastic"].
 
 endif::aws[]
 
-* Si un agregado alcanza el umbral de capacidad y no puede admitir ningún disco adicional, BlueXP mueve automáticamente un volumen de ese agregado a un agregado con capacidad disponible o a un nuevo agregado.
++
+* Si un agregado alcanza el límite de capacidad y no admite ningún disco adicional, BlueXP mueve automáticamente un volumen de ese agregado a un agregado que tenga capacidad disponible o a un nuevo agregado.
+
 +
 Si BlueXP crea un nuevo agregado para el volumen, elige un tamaño de disco que se adapta al tamaño de ese volumen.
 
