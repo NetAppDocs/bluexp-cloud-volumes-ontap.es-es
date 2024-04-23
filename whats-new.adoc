@@ -20,6 +20,34 @@ Las mejoras descritas en esta página son específicas de las funciones de BlueX
 
 
 
+== 23 de abril de 2024
+
+
+
+=== Se admiten nuevas regiones para implementaciones de varias zonas de disponibilidad en Azure
+
+Las siguientes regiones admiten ahora implementaciones de zonas de disponibilidad múltiple de alta disponibilidad en Azure para Cloud Volumes ONTAP 9.12.1 GA y versiones posteriores:
+
+* Alemania Oeste Central
+* Polonia Central
+* Oeste de EE.UU. 3
+* Israel Central
+* Italia Norte
+* Canada Central
+
+
+Para ver una lista de todas las regiones, consulte https://bluexp.netapp.com/cloud-volumes-global-regions["Mapa de regiones globales en Azure"^].
+
+
+
+=== La región de Johannesburgo ahora es compatible con Google Cloud
+
+La región de Johannesburgo (`africa-south1` Región) ahora es compatible con Google Cloud para Cloud Volumes ONTAP 9.12.1 GA y posterior.
+
+Para ver una lista de todas las regiones, consulte https://bluexp.netapp.com/cloud-volumes-global-regions["Mapa de regiones globales en Google Cloud"^].
+
+
+
 == 8 de marzo de 2024
 
 
