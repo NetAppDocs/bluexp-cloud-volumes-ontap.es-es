@@ -59,15 +59,6 @@ Para obtener más información sobre los volúmenes FlexClone, consulte http://d
 
 
 
-| Editar etiquetas de volumen (solo volúmenes de lectura/escritura)  a| 
-.. En acciones de volumen en el panel gestionar volúmenes, haga clic en *Editar etiquetas de volumen* para modificar la etiqueta de volumen asignada al volumen seleccionado.
-.. Introduzca la clave de etiqueta de volumen y el valor en los campos proporcionados.
-.. Para incluir etiquetas adicionales, haga clic en *Agregar nueva etiqueta*.
-.. Haga clic en *Guardar*.
-
-
-
-
 | Editar un volumen (solo volúmenes de lectura y escritura)  a| 
 .. En acciones de volumen en el panel Administrar volúmenes, haga clic en *Editar configuración de volumen*
 .. Modifique la directiva Snapshot del volumen, la versión del protocolo NFS, la lista de control de acceso NFS (directiva de exportación) o los permisos de uso compartido y, a continuación, haga clic en *aplicar*.

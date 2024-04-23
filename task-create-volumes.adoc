@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-create-volumes.html 
-keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, templates, cloud backup 
+keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, cloud backup 
 summary: Si necesita más almacenamiento después de iniciar su sistema Cloud Volumes ONTAP inicial, puede crear nuevos volúmenes de FlexVol para NFS, CIFS o iSCSI desde BlueXP. 
 ---
 = Cree volúmenes de FlexVol
@@ -20,7 +20,6 @@ BlueXP ofrece varias formas de crear un nuevo volumen:
 
 * Especifique los detalles de un nuevo volumen y deje que BlueXP controle los agregados de datos subyacentes que usted necesita. <<create-a-volume,Leer más>>
 * Cree un volumen en el agregado de datos que desee. <<create-a-volume,Leer más>>
-* Cree volúmenes a partir de una plantilla para optimizar el volumen según los requisitos de carga de trabajo de determinadas aplicaciones, como bases de datos o servicios de streaming. <<create-a-volume-from-a-template,Leer más>>
 * Cree un volumen en el segundo nodo de una configuración de alta disponibilidad. <<create-volume-second-node,Leer más>>
 
 
@@ -71,7 +70,7 @@ En la pestaña Aggregates, desplácese hasta el icono de agregado que desee. Hag
 ====
 . Siga los pasos del asistente para crear el volumen.
 +
-.. *Volúmenes, Detalles, Protección y Etiquetas*: Introduzca detalles básicos sobre el volumen y seleccione una política de instantánea.
+.. *Detalles, Protección y Etiquetas*: Introduzca detalles básicos sobre el volumen y seleccione una política de instantánea.
 +
 Algunos de los campos en esta página son claros y explicativos. En la siguiente lista, se describen los campos que podrían presentar dificultades:
 
@@ -85,9 +84,6 @@ Algunos de los campos en esta página son claros y explicativos. En la siguiente
 
 
 | Tamaño del volumen | El tamaño máximo que puede introducir depende en gran medida de si habilita thin provisioning, lo que le permite crear un volumen que sea mayor que el almacenamiento físico que hay disponible actualmente. 
-
-
-| Etiquetas | Las etiquetas que añada a un volumen están asociadas con el https://docs.netapp.com/us-en/bluexp-remediation/task-using-tags.html["Servicio Plantillas de aplicación"^], que puede ayudarle a organizar y simplificar la gestión de sus recursos. 
 
 
 | Máquina virtual de almacenamiento (SVM) | Una máquina virtual de almacenamiento es un equipo virtual que se ejecuta en ONTAP y proporciona servicios de datos y almacenamiento a sus clientes. Puede que lo sepa como una SVM o un Vserver. Cloud Volumes ONTAP se configura con una máquina virtual de almacenamiento de forma predeterminada, pero algunas configuraciones admiten máquinas virtuales de almacenamiento adicionales. Es posible especificar la máquina virtual de almacenamiento para el nuevo volumen. 
@@ -219,58 +215,6 @@ Compresión:: Reduce la capacidad física requerida para almacenar datos al comp
 
 .Resultado
 BlueXP crea el volumen en el sistema Cloud Volumes ONTAP.
-
-
-
-== Crear un volumen a partir de una plantilla
-
-Si su organización ha creado plantillas de volúmenes de Cloud Volumes ONTAP para poder implementar volúmenes optimizados para los requisitos de carga de trabajo de determinadas aplicaciones, siga los pasos de esta sección.
-
-La plantilla debería facilitar el trabajo porque determinados parámetros de volumen ya se definirán en la plantilla, como el tipo de disco, el tamaño, el protocolo, la política de instantáneas, el proveedor de cloud, y sigue. Cuando ya hay un parámetro predefinido, puede saltar al siguiente parámetro de volumen.
-
-
-NOTE: Solo es posible crear volúmenes NFS o CIFS cuando se utilizan plantillas.
-
-.Pasos
-. En el menú de navegación de la izquierda, selecciona *almacenamiento > Canvas*.
-. En la página lienzo, haga clic en el nombre del sistema Cloud Volumes ONTAP en el que desea aprovisionar un volumen.
-. Vaya a la ficha Volumes y haga clic en *Add Volume* > *New Volume from Template*.
-+
-image:screenshot_add_volume_template.png["Captura de pantalla que muestra cómo añadir un volumen nuevo de una plantilla."]
-
-. En la página _Select Template_, seleccione la plantilla que desea utilizar para crear el volumen y haga clic en *Siguiente*.
-+
-image:screenshot_select_template_cvo.png["Captura de pantalla de las plantillas de aplicación disponibles."]
-
-+
-Se muestra la página _Editor_.
-
-+
-image:screenshot_define_cvo_vol_from_template.png["Captura de pantalla que muestra una plantilla en blanco que debe rellenar para crear un volumen."]
-
-. Encima del panel _Action_, introduzca un nombre para la plantilla.
-. En _context_, el entorno de trabajo se rellena con el nombre del entorno de trabajo con el que se inició. Seleccione *Storage VM* donde se creará el volumen.
-. Agregue valores para todos los parámetros que no estén codificados de forma rígida desde la plantilla. Consulte <<create-a-volume,Cree un volumen>> Para obtener detalles sobre todos los parámetros necesarios para completar la implementación de un volumen de Cloud Volumes ONTAP.
-. Haga clic en *aplicar* para guardar los parámetros configurados en la acción seleccionada.
-. Si no hay otras acciones que necesites definir (por ejemplo, configurar la copia de seguridad y la recuperación de BlueXP), haz clic en *Guardar plantilla*.
-+
-Si hay otras acciones, haga clic en la acción del panel izquierdo para mostrar los parámetros que necesita completar.
-
-+
-image:screenshot_template_select_next_action.png["Una captura de pantalla que muestra cómo seleccionar acciones adicionales que se deben completar."]
-
-+
-Por ejemplo, si la acción Enable Cloud Backup on Volume requiere seleccionar una política de backup, puede hacerlo ahora.
-
-. Una vez completada la configuración de las acciones de la plantilla, haga clic en *Guardar plantilla*.
-
-
-.Resultado
-Cloud Volumes ONTAP aprovisiona el volumen y muestra una página para que pueda ver el progreso.
-
-image:screenshot_template_creating_resource_cvo.png["Captura de pantalla que muestra el progreso de la creación de un nuevo volumen a partir de la plantilla."]
-
-Además, si se implementa alguna acción secundaria en la plantilla (por ejemplo, al habilitar el backup y la recuperación de BlueXP en el volumen), también se lleva a cabo esa acción.
 
 
 

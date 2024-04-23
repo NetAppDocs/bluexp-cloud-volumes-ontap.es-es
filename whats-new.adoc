@@ -48,6 +48,12 @@ Para ver una lista de todas las regiones, consulte https://bluexp.netapp.com/clo
 
 
 
+=== Ya no se admiten plantillas y etiquetas de volumen
+
+Ya no se puede crear un volumen a partir de una plantilla ni editar las etiquetas de un volumen. Estas acciones estaban asociadas al servicio de corrección de BlueXP, que ya no está disponible.
+
+
+
 == 8 de marzo de 2024
 
 
@@ -1145,7 +1151,6 @@ image:screenshot-cvo-user-name.png["Captura de pantalla de la página Detalles y
 Hemos realizado algunas mejoras en la creación de volúmenes:
 
 * Hemos rediseñado el asistente para crear volúmenes para facilitar su uso.
-* Las etiquetas que agregue a un volumen ahora están asociadas al servicio Plantillas de aplicación, que puede ayudarle a organizar y simplificar la gestión de sus recursos.
 * Ahora puede elegir una política de exportación personalizada para NFS.
 
 
