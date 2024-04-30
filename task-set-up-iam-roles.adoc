@@ -19,7 +19,7 @@ Se deben conectar los roles IAM con los permisos necesarios a cada nodo Cloud Vo
 Esta tarea es opcional. Al crear un entorno de trabajo Cloud Volumes ONTAP, la opción predeterminada es dejar que BlueXP cree las funciones IAM para usted. Si las políticas de seguridad de su empresa requieren que usted mismo cree los roles de IAM, siga estos pasos.
 
 
-NOTE: Se requiere su propio rol de IAM en el entorno de servicios de cloud comercial de AWS. link:task-getting-started-aws-c2s.html["Descubra cómo instalar Cloud Volumes ONTAP en C2S"].
+NOTE: Es necesario proporcionar su propia función de IAM en la nube secreta de AWS. link:task-getting-started-aws-c2s.html["Descubra cómo instalar Cloud Volumes ONTAP en C2S"].
 
 .Pasos
 . Vaya a la consola IAM de AWS.
@@ -88,7 +88,7 @@ NOTE: Se requiere su propio rol de IAM en el entorno de servicios de cloud comer
 }
 ----
 --
-.Entorno C2S
+.Regiones Top Secret
 --
 [source, json]
 ----
@@ -112,6 +112,35 @@ NOTE: Se requiere su propio rol de IAM en el entorno de servicios de cloud comer
             "s3:DeleteObject"
         ],
         "Resource": "arn:aws-iso:s3:::fabric-pool-*",
+        "Effect": "Allow"
+    }]
+}
+----
+--
+.Regiones secretas
+--
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [{
+        "Action": "s3:ListAllMyBuckets",
+        "Resource": "arn:aws-iso-b:s3:::*",
+        "Effect": "Allow"
+    }, {
+        "Action": [
+            "s3:ListBucket",
+            "s3:GetBucketLocation"
+        ],
+        "Resource": "arn:aws-iso-b:s3:::fabric-pool-*",
+        "Effect": "Allow"
+    }, {
+        "Action": [
+            "s3:GetObject",
+            "s3:PutObject",
+            "s3:DeleteObject"
+        ],
+        "Resource": "arn:aws-iso-b:s3:::fabric-pool-*",
         "Effect": "Allow"
     }]
 }
@@ -197,7 +226,7 @@ Si tiene pensado utilizar el backup y la recuperación de datos de BlueXP con tu
 }
 ----
 --
-.Entorno C2S
+.Regiones Top Secret
 --
 [source, json]
 ----
@@ -227,6 +256,42 @@ Si tiene pensado utilizar el backup y la recuperación de datos de BlueXP con tu
                 "s3:PutObjectRetention"
             ],
             "Resource": "arn:aws-iso:s3:::netapp-backup*/*",
+            "Effect": "Allow"
+        }
+    ]
+}
+----
+--
+.Regiones secretas
+--
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetBucketLocation"
+            ],
+            "Resource": "arn:aws-iso-b:s3:::netapp-backup*",
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject",
+                "s3:DeleteObject",
+                "s3:ListAllMyBuckets",
+                "s3:PutObjectTagging",
+                "s3:GetObjectTagging",
+                "s3:RestoreObject",
+                "s3:GetBucketObjectLockConfiguration",
+                "s3:GetObjectRetention",
+                "s3:PutBucketObjectLockConfiguration",
+                "s3:PutObjectRetention"
+            ],
+            "Resource": "arn:aws-iso-b:s3:::netapp-backup*/*",
             "Effect": "Allow"
         }
     ]
