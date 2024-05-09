@@ -1420,14 +1420,7 @@
   <block id="a5058cd0a38eec60b5f0bd65c76814ee" category="paragraph">Deberá seleccionar la cuenta de servicio más adelante al crear un entorno de trabajo de Cloud Volumes ONTAP.</block>
   <block id="280ee264bbde91d0e35a15c5c017570d" category="inline-image-macro">Captura de pantalla de la página Detalles y credenciales en la que puede habilitar una cuenta de servicio para Cloud Volumes ONTAP.</block>
   <block id="391642837451179291d9fd13ff003fec" category="paragraph"><block ref="391642837451179291d9fd13ff003fec" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8e9d6d95264b6231f0a1d0ca22c087f7" category="summary">Las siguientes guías le ayudan a comenzar a usar Cloud Volumes ONTAP en Google Cloud para satisfacer su caso de uso específico.</block>
   <block id="f540a08b090d18fa948ca4ade8ceb7ff" category="doc">Cloud Volumes ONTAP para Google Cloud</block>
-  <block id="f22e86b63856df3737d333499d0d8642" category="inline-link-macro">Introducción a Cloud Volumes ONTAP en Google Cloud: Tutorial de configuración</block>
-  <block id="a480525c508abef033c6011b6b8ae5db" category="list-text"><block ref="a480525c508abef033c6011b6b8ae5db" category="inline-link-macro-rx"></block></block>
-  <block id="85536ede959e4a62b6eeb8fa7da21b71" category="inline-link-macro">Replique datos en las instalaciones de ONTAP en Cloud Volumes ONTAP de NetApp para recuperación ante desastres</block>
-  <block id="8b26f0918bd84f8f658268af9e2d60ac" category="list-text"><block ref="8b26f0918bd84f8f658268af9e2d60ac" category="inline-link-macro-rx"></block></block>
-  <block id="ebd1806e62b51cb0c1b6db8082e0666d" category="inline-link-macro">Cómo implementar FlexCache de NetApp con Cloud Volumes ONTAP en Google Cloud</block>
-  <block id="dd8a20d5a7875f2be225fbdc1a4c18bf" category="list-text"><block ref="dd8a20d5a7875f2be225fbdc1a4c18bf" category="inline-link-macro-rx"></block></block>
   <block id="521c31e5e6d2868178e36a845afac351" category="summary">Una configuración de alta disponibilidad de Cloud Volumes ONTAP proporciona operaciones no disruptivas y tolerancia a fallos. En AWS, los datos se replican de forma síncrona entre los dos nodos.</block>
   <block id="39579c446d8c5e21ff1d2b6c3e65c086" category="section-title">Componentes DE ALTA DISPONIBILIDAD</block>
   <block id="828fb65f829775430308146b1ce7cd2e" category="paragraph">En AWS, las configuraciones de alta disponibilidad de Cloud Volumes ONTAP incluyen los siguientes componentes:</block>
@@ -5248,4 +5241,5 @@ Para parejas de alta disponibilidad, puedes seleccionar los roles de IAM para Cl
   <block id="059ef6b8ce45a93c6445c0f41c224068" category="list-text"><block ref="059ef6b8ce45a93c6445c0f41c224068" category="inline-link-rx"></block></block>
   <block id="8d248e3b0efc80b62fc62ba57027d13f" category="admonition">Es necesario proporcionar su propia función de IAM en la nube secreta de AWS. <block ref="af622e808f4363be4413c4e256d0f137" category="inline-link-macro-rx"></block>.</block>
   <block id="275e611a605380e34988066f6fa53eae" category="sidebar">Implemente Cloud Volumes ONTAP en regiones secretas de AWS</block>
+  <block id="3f0b36cd14ec7bfa0b4b01e076c44477" category="sidebar">Inicio rápido para las regiones de AWS Top Secret/Secret Cloud</block>
 </blocks>
