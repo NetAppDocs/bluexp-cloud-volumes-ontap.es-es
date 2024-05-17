@@ -38,7 +38,7 @@ TIP: BlueXP cambia con elegancia un nodo a la vez iniciando la toma de control y
 .Referencia
 Para ver una lista de los tipos de instancia admitidos en AWS, consulte link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html#supported-ec2-compute["Instancias de EC2 admitidas"^].
 
-Si no puede cambiar el tipo de instancia de las instancias C4, M4 o R4, consulte el artículo de la base de conocimientos link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Unable_to_change_the_instance_type_from_r4_to_r5_with_disk_count_error["No se puede cambiar el tipo de instancia de R4 a R5 con un error de recuento de discos"^].
+Si no puede cambiar el tipo de instancia de las instancias C4, M4 o R4, consulte el artículo de la base de conocimientos link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Converting_an_AWS_Xen_CVO_instance_to_Nitro_(KVM)["Convertir una instancia de AWS Xen CVO a Nitro (KVM)"^].
 
 .Pasos
 . En la página Canvas, seleccione el entorno de trabajo.

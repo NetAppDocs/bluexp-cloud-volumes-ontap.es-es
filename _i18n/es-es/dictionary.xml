@@ -4909,8 +4909,6 @@ Consulte la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-r
   <block id="44c305a704023f5d643a06ce08c03402" category="section-title">Activar redes mejoradas</block>
   <block id="2aed0ca02213325feada0ee707489e81" category="inline-link-macro">Cómo habilitar redes mejoradas como SR-IOV o ENA en instancias de AWS Cloud Volumes ONTAP</block>
   <block id="489d7e740d2dd946585a03c48af8f4cf" category="paragraph">Para actualizar a Cloud Volumes ONTAP versiones 9,8 y posteriores, debe habilitar _enhanced networking_ en el clúster que ejecuta el tipo de instancia C4, M4 o R4. Para activar ENA, consulte el artículo de la base de conocimientos <block ref="a4ba9465250c8fbd5a9415056507370e" category="inline-link-macro-rx"></block>.</block>
-  <block id="4b9b39edb3e09fa20d9a66c33e754c00" category="inline-link-macro">No se puede cambiar el tipo de instancia de R4 a R5 con un error de recuento de discos</block>
-  <block id="58cbae1f4fc410ea043517dc0196bed4" category="paragraph">Si no puede cambiar el tipo de instancia de las instancias C4, M4 o R4, consulte el artículo de la base de conocimientos <block ref="ddbe8a0e687a77b95fcbe5dc93c2e464" category="inline-link-macro-rx"></block>.</block>
   <block id="f9f7c1c9687f8f087477f0ae4cac6b45" category="inline-link">Documentación de Microsoft Azure</block>
   <block id="75640f19259f0f28da8136565db5cc22" category="admonition">Para realizar tareas adicionales relacionadas con NIC, puede asignar una función de contribuyente de red o una función personalizada con los permisos adecuados en Azure. Para obtener más información sobre estos permisos relacionados con NIC, consulte<block ref="66f156d6b7e425dd982efc44f4fabac6" category="inline-link-rx"></block>.</block>
   <block id="2cf711540cadf3cbb4cac96dba2d9464" category="list-text">Incluye backups de volúmenes ilimitados mediante backup y recuperación de BlueXP, pero solo para sistemas Cloud Volumes ONTAP que utilicen el paquete Professional.</block>
@@ -5242,4 +5240,6 @@ Para parejas de alta disponibilidad, puedes seleccionar los roles de IAM para Cl
   <block id="8d248e3b0efc80b62fc62ba57027d13f" category="admonition">Es necesario proporcionar su propia función de IAM en la nube secreta de AWS. <block ref="af622e808f4363be4413c4e256d0f137" category="inline-link-macro-rx"></block>.</block>
   <block id="275e611a605380e34988066f6fa53eae" category="sidebar">Implemente Cloud Volumes ONTAP en regiones secretas de AWS</block>
   <block id="3f0b36cd14ec7bfa0b4b01e076c44477" category="sidebar">Inicio rápido para las regiones de AWS Top Secret/Secret Cloud</block>
+  <block id="daa9928416a167d9b7399ff9cc7d8ca0" category="inline-link-macro">Convertir una instancia de AWS Xen CVO a Nitro (KVM)</block>
+  <block id="77c35fc79180e21cd19319ed21d08508" category="paragraph">Si no puede cambiar el tipo de instancia de las instancias C4, M4 o R4, consulte el artículo de la base de conocimientos <block ref="609c7ea2ea8625480f6266b3b7e7b947" category="inline-link-macro-rx"></block>.</block>
 </blocks>
