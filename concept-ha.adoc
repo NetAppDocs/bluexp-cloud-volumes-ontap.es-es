@@ -70,13 +70,13 @@ Una configuración de alta disponibilidad mantiene una alta disponibilidad de lo
 
 == Modelos de puesta en marcha de ALTA DISPONIBILIDAD
 
-Puede garantizar la alta disponibilidad de sus datos mediante la implementación de una configuración de alta disponibilidad en varias zonas de disponibilidad (AZs) o en un único AZ. Debe consultar más detalles sobre cada configuración para elegir la que mejor se ajuste a sus necesidades.
+Puede garantizar la alta disponibilidad de sus datos implementando una configuración de alta disponibilidad en varias zonas de disponibilidad (AZ) o en una sola zona de disponibilidad (AZ). Debe consultar más detalles sobre cada configuración para elegir la que mejor se ajuste a sus necesidades.
 
 
 
-=== Múltiples zonas de disponibilidad
+=== Varias zonas de disponibilidad
 
-La implementación de una configuración de alta disponibilidad en varias zonas de disponibilidad (AZs) garantiza una alta disponibilidad de los datos en caso de que se produzca un fallo con una zona de disponibilidad o una instancia que ejecute un nodo Cloud Volumes ONTAP. Debe comprender cómo las direcciones IP de NAS afectan al acceso a los datos y a la conmutación por error del almacenamiento.
+La instalación de una configuración de alta disponibilidad en varias zonas de disponibilidad (AZ) garantiza la alta disponibilidad de los datos en caso de fallo en un AZ o una instancia que ejecute un nodo Cloud Volumes ONTAP. Debe comprender cómo las direcciones IP de NAS afectan al acceso a los datos y a la conmutación por error del almacenamiento.
 
 
 
@@ -121,9 +121,9 @@ Puede identificar fácilmente la dirección IP correcta desde BlueXP seleccionan
 
 
 
-=== Zona de disponibilidad única
+=== Una única zona de disponibilidad
 
-La implementación de una configuración de alta disponibilidad en una única zona de disponibilidad (AZ) puede garantizar una alta disponibilidad de los datos en caso de que falle una instancia que ejecute un nodo de Cloud Volumes ONTAP. Fuera del VPC, se puede acceder a todos los datos de forma nativa.
+La implementación de una configuración de alta disponibilidad en una única zona de disponibilidad (AZ) puede garantizar la alta disponibilidad de los datos en caso de que se produzca un error en una instancia que ejecute un nodo Cloud Volumes ONTAP. Fuera del VPC, se puede acceder a todos los datos de forma nativa.
 
 
 NOTE: BlueXP crea una https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["Grupo de colocación extendido de AWS"^] E inicia los dos nodos de alta disponibilidad en ese grupo de colocación. El grupo de colocación reduce el riesgo de fallos simultáneos al distribuir las instancias entre el hardware subyacente distinto. Esta función mejora la redundancia desde el punto de vista de la informática, no desde la perspectiva del fallo de disco.
@@ -148,6 +148,51 @@ Para iSCSI, Cloud Volumes ONTAP utiliza I/o multivía (MPIO) y ALUA (Asymmetric 
 NOTE: Para obtener información sobre qué configuraciones de host específicas admiten ALUA, consulte http://mysupport.netapp.com/matrix["Herramienta de matriz de interoperabilidad de NetApp"^] Y la guía de instalación y configuración de las utilidades de host para el sistema operativo host.
 
 En el caso de configuraciones NAS, las direcciones IP de datos pueden migrar entre nodos de alta disponibilidad si se produce un fallo. De este modo se garantiza el acceso del cliente al almacenamiento.
+
+
+
+=== Zonas locales de AWS
+
+Las zonas locales de AWS son una implementación de infraestructura en la que el almacenamiento, la computación, la base de datos y otros servicios selectos de AWS se encuentran cerca de grandes ciudades y áreas industriales. Con las zonas locales de AWS, puede acercar los servicios de AWS, lo que mejora la latencia de sus cargas de trabajo y mantiene las bases de datos localmente.
+
+Puede implementar una sola configuración de AZ o varias en las zonas locales de AWS.
+
+
+
+==== Ejemplo de configuraciones de zona local de AWS
+
+A continuación se muestran configuraciones de ejemplo:
+
+* Zona de disponibilidad única: Tanto los nodos del cluster como el mediador se encuentran en la misma zona local.
+* Varias zonas de disponibilidad
+En varias configuraciones de zonas de disponibilidad, hay tres instancias: Dos nodos y un mediador. Una instancia de las tres instancias debe estar en una zona separada. Puede elegir cómo configurarlo.
++
+A continuación se muestran tres configuraciones de ejemplo:
+
++
+** Cada nodo de cluster está en una zona local diferente y el mediador en una zona de disponibilidad pública.
+** Un nodo de cluster en una zona local, el mediador en una zona local y el segundo nodo de cluster se encuentran en una zona de disponibilidad.
+** Cada nodo del cluster y el mediador se encuentran en zonas locales separadas.
+
+
+
+
+
+
+==== Tipos de disco e instancia admitidos
+
+El único tipo de disco admitido es GP2.
+
+Actualmente se admiten las siguientes familias de tipos de instancia de EC2 con tamaños xlarge a 4xlarge:
+
+* M5
+* C5
+* C5d
+* R5
+* R5d
+
+
+link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["Debe consultar AWS para obtener los detalles más recientes y completos sobre los tipos de instancia de EC2 admitidos en las zonas locales"^].
 
 
 
