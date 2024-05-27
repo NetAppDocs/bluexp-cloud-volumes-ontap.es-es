@@ -258,7 +258,7 @@ Por ejemplo, la información avanzada debería decir algo similar a lo siguiente
 . Identifique uno o varios volúmenes para mover fuera del agregado:
 +
 .. En el entorno de trabajo, haga clic en la ficha *agregados*.
-.. Desplácese hasta el icono de agregado que desee y, a continuación, haga clic en el icono *... (Icono de elipse) > Ver detalles del agregado*.
+.. Desplácese hasta el icono de agregado deseado y haga clic en el icono *... (Icono de puntos suspensivos) > Ver detalles de agregado*.
 .. En la pestaña Overview de la pantalla Aggregate Details, revise el tamaño de cada volumen y seleccione uno o más volúmenes para salir del agregado.
 +
 Debe elegir volúmenes que sean lo suficientemente grandes como para liberar espacio en el agregado para evitar problemas de capacidad adicionales en el futuro.
@@ -339,7 +339,7 @@ Es necesario mover dos o más volúmenes para evitar problemas de capacidad; sin
 . Compruebe si un agregado existente tiene capacidad disponible para los volúmenes que se necesitan mover:
 +
 .. En el entorno de trabajo, haga clic en la ficha *agregados*.
-.. Desplácese hasta el icono de agregado que desee y, a continuación, haga clic en el icono *... (Icono de elipse) > Ver detalles del agregado*.
+.. Desplácese hasta el icono de agregado deseado y haga clic en el icono *... (Icono de puntos suspensivos) > Ver detalles de agregado*.
 .. En el icono de agregado, consulte la capacidad disponible (tamaño aprovisionado menos capacidad de agregado utilizada).
 +
 image::screenshot_aggr_capacity.png[capacidad de agregación de captura de pantalla]
@@ -348,7 +348,7 @@ image::screenshot_aggr_capacity.png[capacidad de agregación de captura de panta
 
 . Si es necesario, añada discos a un agregado existente:
 +
-.. Seleccione el agregado y, a continuación, haga clic en *... (Icono de elipse) > Agregar discos*.
+.. Seleccione el agregado y haga clic en el *... (Icono de puntos suspensivos) > Agregar discos*.
 .. Seleccione el número de discos que desea agregar y, a continuación, haga clic en *Agregar*.
 
 

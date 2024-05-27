@@ -35,7 +35,7 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 . Elimine el entorno de trabajo de Cloud Volumes ONTAP.
 +
 .. En la página lienzo, haga doble clic en el nombre del entorno de trabajo Cloud Volumes ONTAP que desea eliminar.
-.. En la parte superior derecha de la consola de BlueXP, haga clic en el icono de elipse y seleccione *Eliminar*.
+.. En la parte superior derecha de la consola de BlueXP, haz clic en el icono de los puntos suspensivos y selecciona *Eliminar*.
 +
 image:screenshot_settings_delete.png["Captura de pantalla que muestra el menú disponible en el entorno de trabajo que contiene la acción Eliminar."]
 

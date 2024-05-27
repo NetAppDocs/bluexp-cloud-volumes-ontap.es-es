@@ -264,7 +264,7 @@ Estos pasos describen cómo utilizar System Manager para la versión 9.3 y poste
 
 .Pasos
 . En el entorno de trabajo, haga clic en la ficha *agregados*.
-. En el título del agregado, haga clic en el botón elipse y, a continuación, seleccione *Ver detalles del agregado*.
+. Bajo el título del agregado, haga clic en el botón de puntos suspensivos y, a continuación, seleccione *Ver detalles de agregado*.
 +
 image:screenshots_aggregate_details_state.png["Captura de pantalla: Muestra el campo Estado cuando se visualiza información de un agregado."]
 
@@ -375,7 +375,7 @@ Hay dos rutas disponibles. La ruta correcta depende de la versión del conector.
 ** `/opt/application/netapp/cloudmanager/ontap/images/`
 
 
-. Desde el entorno de trabajo en BlueXP, haz clic en el botón *... (Elipse icono)*, y luego haga clic en *Actualizar Cloud Volumes ONTAP*.
+. Desde el entorno de trabajo en BlueXP, haz clic en el botón *... (Elipses icono)*, y luego haga clic en *Actualizar Cloud Volumes ONTAP*.
 . En la página de la versión de Actualizar Cloud Volumes ONTAP, ingrese la URL y luego haga clic en *Cambiar imagen*.
 +
 Si copió la imagen de software en el conector en la ruta mostrada anteriormente, debe introducir la siguiente URL:
