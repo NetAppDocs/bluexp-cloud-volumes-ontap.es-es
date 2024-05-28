@@ -147,17 +147,21 @@ ifdef::aws[]
 
 * Tres discos por nodo para datos de arranque, raíz y principales:
 +
-** 45 GIB io1 disco para datos de arranque
+** 47 GiB io1 disco para datos de arranque
 ** 140 GIB gp3 disco para datos raíz
 ** 540 GIB gp2 disk para los datos principales
 
+
+* Para parejas de alta disponibilidad, dos volúmenes EBS de st1 GB para la instancia del mediador, que son aproximadamente 8 GiB y 4 GiB, y un disco de 140 GiB GP3 adicional en cada nodo para contener una copia de los datos raíz del otro nodo.
++
+
+NOTE: En algunas zonas, el tipo de disco EBS disponible solo puede ser GP2.
 
 * Una instantánea de EBS para cada disco de arranque y disco raíz
 +
 
 NOTE: Las Snapshot se crean automáticamente al reiniciar.
 
-* Para los pares de alta disponibilidad, un volumen de EBS para la instancia de Mediator, que es aproximadamente 8 GIB
 * Cuando habilita el cifrado de datos en AWS mediante el Servicio de gestión de claves (KMS), los discos de arranque y raíz para Cloud Volumes ONTAP también se cifran. Esto incluye el disco de arranque para la instancia del mediador en una pareja de alta disponibilidad. Los discos se cifran utilizando el CMK que seleccione al crear el entorno de trabajo.
 
 

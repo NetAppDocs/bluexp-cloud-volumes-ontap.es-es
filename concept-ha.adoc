@@ -32,8 +32,8 @@ En AWS, las configuraciones de alta disponibilidad de Cloud Volumes ONTAP incluy
 
 A continuación encontrará más información sobre el ejemplo del mediador en AWS:
 
-Tipo de instancia:: t2-micro
-Discos:: Un disco magnético de EBS que es aproximadamente 8 GIB.
+Tipo de instancia:: t3-micro
+Discos:: Dos discos st1 de 8 GiB y 4 GiB
 De NetApp:: Debian 11
 +
 --
