@@ -5273,7 +5273,6 @@ En varias configuraciones de zonas de disponibilidad, hay tres instancias: Dos n
   <block id="6d79fc3df77a055abb0043c41477add1" category="paragraph">Algunas zonas locales de AWS están disponibles.</block>
   <block id="b40c89ea76edb69b0a84d7a6a1be7455" category="inline-link-macro">Tutorial de AWS «Comience a implementar aplicaciones de baja latencia con las zonas locales de AWS</block>
   <block id="f8945f9c0b29d6212c5c9654ff1b7ed3" category="paragraph">Antes de poder utilizar las zonas locales de AWS, debe habilitar las zonas locales y crear una subred en la zona local en su cuenta de AWS. Siga los pasos de *Opt in to an AWS Local Zone* y *Extend Your Amazon VPC to the Local Zone* en la <block ref="08374900627773b5f0e169d9824fde8a" category="inline-link-macro-rx"></block>.</block>
-  <block id="c0d8b980523f619bb9dff8ef93a968c9" category="paragraph">Si ejecuta una versión de Connector 3.9.36 o anterior, debe agregar el siguiente permiso a la función de conector de AWS en la consola de AWS EC2: Descripción de las zonas disponibles.</block>
   <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">17 de mayo de 2024</block>
   <block id="b3e67e9d7f5be7902fd87917d0acb3e0" category="section-title">Compatibilidad con las zonas locales de Amazon Web Services</block>
   <block id="6f9fa4d02a6081aa6d33b131d8532328" category="paragraph">La compatibilidad con las zonas locales de AWS está ahora disponible para las puestas en marcha de alta disponibilidad de Cloud Volumes ONTAP. Las zonas locales de AWS son una implementación de infraestructura en la que el almacenamiento, la computación, la base de datos y otros servicios selectos de AWS se encuentran cerca de grandes ciudades y áreas industriales.</block>
@@ -5283,4 +5282,6 @@ En varias configuraciones de zonas de disponibilidad, hay tres instancias: Dos n
   <block id="10e3d4119b538d4a3b1943da285229fc" category="admonition">En algunas zonas, el tipo de disco EBS disponible solo puede ser GP2.</block>
   <block id="0c14d315376234aa666bf4213aa88aec" category="list-text">t3-micro</block>
   <block id="5dde3a7c362c6b03a35cf3c0b3374d14" category="list-text">Dos discos st1 de 8 GiB y 4 GiB</block>
+  <block id="d3f932730561572a0dc4f8911dc7b758" category="paragraph">Si ejecuta una versión de Connector 3.9.36 o anterior, debe agregar el siguiente permiso al rol de AWS Connector en la consola de AWS EC2: Descripción de las zonas disponibles.</block>
+  <block id="d4cffcdfb4fe4fc69dc234950d0f4151" category="admonition">Las zonas locales de AWS son compatibles cuando se utiliza BlueXP en el modo estándar. Por el momento, las zonas locales de AWS no son compatibles si se utiliza BlueXP en el modo restringido o en el modo privado.</block>
 </blocks>

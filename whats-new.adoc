@@ -28,6 +28,9 @@ Las mejoras descritas en esta página son específicas de las funciones de BlueX
 
 La compatibilidad con las zonas locales de AWS está ahora disponible para las puestas en marcha de alta disponibilidad de Cloud Volumes ONTAP. Las zonas locales de AWS son una implementación de infraestructura en la que el almacenamiento, la computación, la base de datos y otros servicios selectos de AWS se encuentran cerca de grandes ciudades y áreas industriales.
 
+
+NOTE: Las zonas locales de AWS son compatibles cuando se utiliza BlueXP en el modo estándar. Por el momento, las zonas locales de AWS no son compatibles si se utiliza BlueXP en el modo restringido o en el modo privado.
+
 Para obtener más información sobre las zonas locales de AWS con puestas en marcha de alta disponibilidad, consulte link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html#aws-local-zones["Zonas locales de AWS"^].
 
 
