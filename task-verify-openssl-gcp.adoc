@@ -22,7 +22,7 @@ NOTE: Los comandos OpenSSL para validar la imagen son compatibles con equipos Li
 .Pasos
 . Verifique el certificado con OpenSSL.
 +
-.Haga clic en para mostrar el script
+.Haga clic para mostrar
 [%collapsible]
 ====
 [listing]
@@ -133,7 +133,7 @@ Certificate-GCP-CVO-20230119-0XXXXX.pem: OK
 . Extraiga la clave pública del certificado utilizando OpenSSL.
 . Descifre la firma con la clave pública extraída y compruebe el contenido del archivo disk.raw descargado.
 +
-.Haga clic en para mostrar el script
+.Haga clic para mostrar
 [%collapsible]
 ====
 [listing]

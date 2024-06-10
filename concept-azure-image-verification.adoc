@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: concept-azure-image-verification.html 
+keywords: Azure, image, VHD, image signature file, 
+summary: Verifique los archivos de firmas de archivos de imagen VHD de Azure. 
+---
+= Información general sobre la verificación de imágenes de Azure
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La verificación de imágenes de Azure cumple con los requisitos de seguridad de NetApp mejorada. Si bien la verificación de un archivo de imagen es un proceso sencillo, la verificación de la firma de imagen de Azure requiere una manipulación especial del conocido archivo de imagen de Azure VHD debido a una alternativa realizada por Azure Marketplace.
+
+
+NOTE: La verificación de imágenes de Azure es compatible con la versión 9.15.0 del software Cloud Volumes ONTAP o posterior.
+
+
+
+== Modificación de Azure de los archivos VHD publicados
+
+Los 1MB (1048576 bytes) iniciales y los 512 bytes finales del archivo VHD son modificados por Azure. La firma de imágenes NetApp omite los 1MB primeros y los 512 bytes finales y firma la parte de imagen VHD restante.
+
+image:screenshot_azure_vhd_10gb.png["Una imagen que muestra la alternancia de Azure del archivo 10GB VHD"]
+
+Como ejemplo, el diagrama anterior muestra un archivo VHD con un tamaño de 10GB MB. Pero la porción firmada de NetApp está marcada en verde con un tamaño de 10GB - 1MB - 512B.

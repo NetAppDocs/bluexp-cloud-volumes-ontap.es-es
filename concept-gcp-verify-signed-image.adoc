@@ -28,7 +28,7 @@ A continuación se ofrece una descripción general del proceso de flujo de traba
 ** Certificado que contiene la clave pública (.pem)
 ** Cadena de certificados (.pem)
 +
-image:screenshot_cloud_volumes_ontap_tar.gz.png["Imagen que muestra la página NSS que contiene las descargas del archivo digest tar.gz"]
+image::screenshot_cloud_volumes_ontap_tar.gz.png[captura de pantalla Cloud Volumes ONTAP tar.gz]
 
 
 
@@ -40,7 +40,7 @@ image:screenshot_cloud_volumes_ontap_tar.gz.png["Imagen que muestra la página N
 ** Cree un resumen del archivo disk.raw descargado
 ** Compare el archivo de dos resúmenes para su validación
 +
-image:graphic_azure_check_signature.png["Imagen que muestra el proceso de verificación de firmas de imagen"]
+image::graphic_azure_check_signature.png[firma gráfica de cuadros de color azul]
 
 
 

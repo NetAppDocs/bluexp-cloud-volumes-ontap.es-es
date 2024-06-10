@@ -43,7 +43,7 @@ El usuario/cuenta debe tener privilegios para acceder y escribir en el bloque de
 
 *Exportar imagen de Google Cloud mediante gcloud*
 
-.Haga clic en para mostrar el script
+.Haga clic para mostrar
 [%collapsible]
 ====
 [source]
