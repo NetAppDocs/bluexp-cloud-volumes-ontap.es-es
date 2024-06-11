@@ -89,7 +89,7 @@ Ya no se puede crear un volumen a partir de una plantilla ni editar las etiqueta
 
 En AWS, Cloud Volumes ONTAP, Mediator y Connector ahora admiten el servicio de metadatos instantáneos de Amazon v2 (IMDSv2) para todas las funciones. IMDSv2 proporciona protección mejorada contra vulnerabilidades. Anteriormente, solo IMDSv1 era compatible.
 
-Si las directivas de seguridad lo requieren, puede configurar las instancias de EC2 para que utilicen IMDSv2. Para obtener instrucciones, consulte link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["Documentación de configuración y administración de BlueXP para gestionar los conectores existentes"^].
+Si las directivas de seguridad lo requieren, puede configurar las instancias de EC2 para que utilicen IMDSv2. Para obtener instrucciones, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/task-require-imdsv2.html["Documentación de configuración y administración de BlueXP para gestionar los conectores existentes"^].
 
 
 
@@ -566,7 +566,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-encrypting-volumes
 Cloud Volumes ONTAP ahora es compatible con cualquier entorno de cloud que tenga un aislamiento completo de Internet. En estos entornos solo se admiten las licencias basadas en nodo (BYOL). No se admite la gestión de licencias basadas en capacidad. Para empezar, instale manualmente el software Connector, inicie sesión en la consola BlueXP que se ejecuta en el conector, añada la licencia BYOL a la cartera digital de BlueXP y, después, implemente Cloud Volumes ONTAP.
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Instale el conector en una ubicación sin acceso a Internet"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#access-the-local-ui["Acceda a la consola BlueXP del conector"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-logging-in.html["Acceda a la consola BlueXP del conector"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["Añada una licencia sin asignar"^]
 
 
