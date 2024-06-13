@@ -3755,8 +3755,6 @@
   <block id="56d8602584b412c6fa4268dd3cbf0ccb" category="section-title">Información general de cifrado de datos</block>
   <block id="a9048454eade4a62fb2113428b74129f" category="paragraph">Los datos de Cloud Volumes ONTAP se cifran automáticamente en Azure mediante<block ref="7c6c7ca9180a9433e704ac02b33a8ed3" category="inline-link-rx"></block>. La implementación predeterminada utiliza una clave administrada por Microsoft. No se requiere configuración.</block>
   <block id="15a37269c447b60002a307d0f82d2bd4" category="paragraph">Si desea utilizar una clave gestionada por el cliente con Cloud Volumes ONTAP, debe realizar los siguientes pasos:</block>
-  <block id="82d5594584c34cedea52f390f69b9b89" category="list-text">Desde Azure, cree un almacén de claves y, a continuación, genere una clave en ese almacén</block>
-  <block id="ec0c586d512637babfaca236d1a1cc87" category="list-text">Desde BlueXP, utilice la API para crear un entorno de trabajo de Cloud Volumes ONTAP que utilice la clave</block>
   <block id="7c198fa2e871a635fde91e3430fc340b" category="section-title">Rotación de la clave</block>
   <block id="552690dff240721c335dffa2d29b8ef8" category="paragraph">Si crea una nueva versión de la clave, Cloud Volumes ONTAP utiliza automáticamente la última versión de la clave.</block>
   <block id="0ea67820edee1410e568b14bb70835d0" category="section-title">Cómo se cifran los datos</block>
@@ -3770,7 +3768,6 @@
   <block id="1be48617ce5825c4bd54ef885eef8a65" category="list-text">Deben habilitarse las siguientes opciones:</block>
   <block id="ba6db2df53167b0fe62e3b5c762cbbf1" category="list-text">*Borrado suave* (esta opción está activada de forma predeterminada, pero debe _no_ estar desactivada)</block>
   <block id="fd08f80d1ec5aa4440248321eace716f" category="list-text">*Protección de purga*</block>
-  <block id="d01b00b7df0dd6620e8ab49fb88f67b9" category="list-text">*Cifrado de disco de Azure para cifrado de volúmenes* (para sistemas de un solo nodo o pares de alta disponibilidad en varias zonas)</block>
   <block id="8079302cfd5fd5ac16a06e331392b172" category="inline-link">Genere una clave en el almacén de claves</block>
   <block id="08226457c01755d5b1d666bac6bf1add" category="list-text"><block ref="f3e81382631201ff959343d3ba9dea1c" category="inline-link-rx"></block>.</block>
   <block id="4bad1b88b2d24ff3ad1376a54e1bddbd" category="paragraph">Tenga en cuenta los siguientes requisitos para la clave:</block>
@@ -5399,4 +5396,6 @@ Verificación correcta. De lo contrario, aparecerá el mensaje Fallo de verifica
   <block id="c803b37d9c2a34c73d0b86de8cae9ac8" category="paragraph"><block ref="c803b37d9c2a34c73d0b86de8cae9ac8" category="inline-link-rx"></block></block>
   <block id="bbe2b5062d2c900ca465f9eb12592a92" category="paragraph">Si las directivas de seguridad lo requieren, puede configurar las instancias de EC2 para que utilicen IMDSv2. Para obtener instrucciones, consulte<block ref="a1765820625d1912b35ab79a3305fdea" category="inline-link-rx"></block>.</block>
   <block id="59232a2e0b92b4018a48415d0d13c3b4" category="list-text"><block ref="59232a2e0b92b4018a48415d0d13c3b4" category="inline-link-rx"></block></block>
+  <block id="312fcba055a7ab6b8314cb541c1f1b4f" category="list-text">* Azure Disk Encryption para cifrado de volúmenes* (para sistemas de un solo nodo, pares de alta disponibilidad en varias zonas e implementaciones de alta disponibilidad en un solo AZ)</block>
+  <block id="4b63d3239df3134d1faedabb0e8eb859" category="admonition">El uso de claves de cifrado gestionadas por el cliente de Azure depende de que el cifrado de disco de Azure esté habilitado para el almacén de claves.</block>
 </blocks>

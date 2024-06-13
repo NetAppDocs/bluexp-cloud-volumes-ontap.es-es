@@ -24,8 +24,8 @@ Los datos de Cloud Volumes ONTAP se cifran automáticamente en Azure mediante ht
 
 Si desea utilizar una clave gestionada por el cliente con Cloud Volumes ONTAP, debe realizar los siguientes pasos:
 
-. Desde Azure, cree un almacén de claves y, a continuación, genere una clave en ese almacén
-. Desde BlueXP, utilice la API para crear un entorno de trabajo de Cloud Volumes ONTAP que utilice la clave
+. Desde Azure, cree un almacén de claves y, a continuación, genere una clave en ese almacén.
+. Desde BlueXP, utilice la API para crear un entorno de trabajo de Cloud Volumes ONTAP que utilice la clave.
 
 
 
@@ -144,7 +144,11 @@ Tenga en cuenta los siguientes requisitos para el almacén de claves:
 +
 *** *Borrado suave* (esta opción está activada de forma predeterminada, pero debe _no_ estar desactivada)
 *** *Protección de purga*
-*** *Cifrado de disco de Azure para cifrado de volúmenes* (para sistemas de un solo nodo o pares de alta disponibilidad en varias zonas)
+*** * Azure Disk Encryption para cifrado de volúmenes* (para sistemas de un solo nodo, pares de alta disponibilidad en varias zonas e implementaciones de alta disponibilidad en un solo AZ)
++
+
+NOTE: El uso de claves de cifrado gestionadas por el cliente de Azure depende de que el cifrado de disco de Azure esté habilitado para el almacén de claves.
+
 
 
 ** Se debe activar la siguiente opción si ha creado una identidad gestionada asignada por el usuario:
