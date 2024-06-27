@@ -205,7 +205,6 @@ Las siguientes regiones admiten ahora implementaciones de zonas de disponibilida
 * Suiza Norte
 * Sudáfrica Norte
 * Emiratos Árabes Unidos del Norte
-* China Norte 3
 
 
 Para ver una lista de todas las regiones, consulte https://bluexp.netapp.com/cloud-volumes-global-regions["Mapa de regiones globales en Azure"^].
