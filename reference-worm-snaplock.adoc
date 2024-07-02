@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: reference-worm-snaplock.html 
+keywords: WORM, SnapLock, Snapshot copies, 
+summary: 'Puede crear copias Snapshot a prueba de manipulaciones de archivos WRITE Once, Read Many (WORM) en un sistema Cloud Volumes ONTAP y conservar las copias Snapshot en formato sin modificar para un período de retención específico.' 
+---
+= Crear copias Snapshot a prueba de manipulación para el ALMACENAMIENTO WORM
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede crear copias Snapshot a prueba de manipulaciones de archivos WRITE Once, Read Many (WORM) en un sistema Cloud Volumes ONTAP y conservar las copias Snapshot en formato sin modificar para un período de retención específico. Esta funcionalidad cuenta con la tecnología SnapLock y proporciona un nivel adicional de protección de datos y cumplimiento de normativas.
+
+.Antes de empezar
+Asegúrese de que el volumen que usa para crear copias Snapshot sea un volumen SnapLock. Para obtener más información sobre cómo habilitar la protección SnapLock en volúmenes, consulte https://docs.netapp.com/us-en/ontap/snaplock/snaplock-config-overview-concept.html["Configure SnapLock"^].
+
+.Pasos
+. Cree copias Snapshot desde el volumen SnapLock. Para obtener más información sobre la creación de copias Snapshot mediante la CLI o System Manager, consulte https://docs.netapp.com/us-en/ontap/data-protection/manage-local-snapshot-copies-concept.html["Información general sobre la gestión de copias Snapshot locales"^].
++
+Las copias Snapshot heredan las propiedades WORM del volumen, haciéndolas a prueba de manipulaciones. La tecnología SnapLock subyacente garantiza que una snapshot permanezca protegida de edición y eliminación hasta que haya transcurrido el período de retención especificado.
+
+. Se puede modificar el período de retención si es necesario editar estas snapshots. Para obtener más información, consulte https://docs.netapp.com/us-en/ontap/snaplock/set-retention-period-task.html#set-the-default-retention-period["Establezca el tiempo de retención"^].
+
+
+
+NOTE: Aunque una copia Snapshot está protegida durante un período de retención específico, un administrador de clúster puede eliminar el volumen de origen, ya que el almacenamiento WORM en Cloud Volumes ONTAP funciona bajo un modelo de «administrador de almacenamiento de confianza». Además, un administrador de cloud de confianza puede eliminar los DATOS WORM operando en los recursos de almacenamiento cloud.
