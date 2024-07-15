@@ -2928,8 +2928,6 @@
   <block id="a0834297e8b28b9a51d59500441c7351" category="section-title">Mejora a las actualizaciones de los mediadores</block>
   <block id="17cc55e2cfcef39231025dad282b0760" category="paragraph">Cuando BlueXP actualiza el mediador para un par ha, ahora valida que una nueva imagen mediador está disponible antes de eliminar el disco de arranque. Este cambio garantiza que el mediador pueda continuar funcionando correctamente si el proceso de actualización no se realiza correctamente.</block>
   <block id="e6e5b99786bfefd88e32c940b7547ab3" category="section-title">Se ha eliminado la pestaña K8S</block>
-  <block id="6eb7d1343cce33ec7d31b57edd9f3aef" category="paragraph">La ficha K8s quedó obsoleta en una anterior y ahora se ha eliminado. Si desea utilizar Kubernetes con Cloud Volumes ONTAP, puede añadir clústeres de Kubernetes gestionados en Canvas como entorno de trabajo para la gestión de datos avanzada.</block>
-  <block id="998eb27e3e05260958103da3d27eb4ac" category="inline-link">Obtenga más información sobre la gestión de datos de Kubernetes en BlueXP</block>
   <block id="7475abfb4039c00bb03fd05d6d792b3d" category="section-title">Contrato anual en Azure</block>
   <block id="52b398f13b1acf3e73584a9cb106e989" category="paragraph">Los paquetes Essentials y profesional ya están disponibles en Azure mediante un contrato anual. Puede ponerse en contacto con su representante de ventas de NetApp para adquirir un contrato anual. El contrato está disponible como oferta privada en Azure Marketplace.</block>
   <block id="ba089edca33f314482ad946ae680f1eb" category="inline-link">Más información sobre las licencias</block>
@@ -4477,7 +4475,6 @@ Si se adquiere una licencia directamente a NetApp (BYOL), no será necesaria una
   <block id="8ade4dc1ca161da57728a6bf29be1db9" category="paragraph">Asegúrese de proporcionar estos permisos a cada conjunto de credenciales de AWS que haya añadido a BlueXP.<block ref="64ae4f789cd26cb4c9b5096ed42d2482" category="inline-link-rx"></block>.</block>
   <block id="ac1bc6f2b2358438076867200e537370" category="paragraph"><block ref="7abbb63a2cd3cab475ace2a577aa3de3" category="inline-link-rx"></block>.</block>
   <block id="07e4a4acdb333fe3d7b8dac1958d6459" category="list-text"><block ref="07e4a4acdb333fe3d7b8dac1958d6459" category="inline-link-rx"></block></block>
-  <block id="755c513b451157c807794bf1213fd1f9" category="paragraph"><block ref="755c513b451157c807794bf1213fd1f9" category="inline-link-rx"></block></block>
   <block id="73f030bd359abb41dc1089c470531542" category="paragraph"><block ref="37698926d26a2683d3b5c90c9b2406a6" category="inline-link-rx"></block>.</block>
   <block id="2e56aeba3c1fc24d42b0f15df12a08f9" category="paragraph"><block ref="5d4901194aa2380bf45bcc72c63f2763" category="inline-link-rx"></block>.</block>
   <block id="7abee0635d8cb81d3ae89fd8d82a442a" category="paragraph"><block ref="7abee0635d8cb81d3ae89fd8d82a442a" category="inline-image-macro-rx" type="image"></block></block>
@@ -5424,4 +5421,5 @@ Optimice la eficiencia. Consulte los criterios de medición de la eficiencia del
   <block id="543cc078f66d581004934cfaa8988453" category="list-text">*Versión ONTAP*: Asegúrate de que la versión ONTAP de tu sistema Cloud Volumes ONTAP sea compatible con FlexCache con volúmenes cifrados. Consulte la última versión<block ref="9ec4657ceea5a1d054b2b0fa2482a129" category="inline-link-rx"></block> o la matriz de compatibilidad si desea obtener más información.</block>
   <block id="38d57b85102d8663bf30488289425e48" category="list-text">*Configuración de red*: Asegúrese de que la configuración de red permite una comunicación perfecta entre el volumen de origen y el volumen FlexCache. Esto incluye el enrutamiento y la resolución DNS adecuados en un entorno de nube.</block>
   <block id="51aa8ce93131e7a6746f62c49df04fe2" category="paragraph">Cree un volumen de FlexCache en su sistema Cloud Volumes ONTAP con un volumen de origen cifrado. Para conocer los pasos detallados y otras consideraciones, consulte las siguientes secciones:</block>
+  <block id="9a06593a786548bb3b7320df7c76e7f1" category="paragraph">La pestaña K8s estaba obsoleta en una versión anterior y ahora se ha eliminado.</block>
 </blocks>

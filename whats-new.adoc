@@ -960,9 +960,7 @@ Cuando BlueXP actualiza el mediador para un par ha, ahora valida que una nueva i
 
 === Se ha eliminado la pestaña K8S
 
-La ficha K8s quedó obsoleta en una anterior y ahora se ha eliminado. Si desea utilizar Kubernetes con Cloud Volumes ONTAP, puede añadir clústeres de Kubernetes gestionados en Canvas como entorno de trabajo para la gestión de datos avanzada.
-
-https://docs.netapp.com/us-en/bluexp-kubernetes/concept-kubernetes.html["Obtenga más información sobre la gestión de datos de Kubernetes en BlueXP"^]
+La pestaña K8s estaba obsoleta en una versión anterior y ahora se ha eliminado.
 
 
 
