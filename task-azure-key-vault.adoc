@@ -31,6 +31,7 @@ Cuando se utiliza AKV, tenga en cuenta que, de forma predeterminada, se utiliza 
 .Limitaciones
 * AKV solo se puede configurar en una SVM de datos
 * NAE no se puede utilizar con AKV. NAE requiere un servidor KMIP externo compatible.
+* Los nodos de Cloud Volumes ONTAP sondean AKV cada 15 minutos para confirmar la accesibilidad y la disponibilidad de las claves. Este periodo de sondeo no se puede configurar y, tras cuatro fallos consecutivos en el intento de sondeo (un total de 1 hora), los volúmenes se ponen sin conexión.
 
 
 
