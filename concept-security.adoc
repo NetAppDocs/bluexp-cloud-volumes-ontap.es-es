@@ -52,7 +52,7 @@ Puede usar las soluciones de cifrado de NetApp con el cifrado nativo del proveed
 
 === Soluciones de cifrado de NetApp (NVE y NAE)
 
-Compatibilidad con Cloud Volumes ONTAP https://www.netapp.com/us/media/ds-3899.pdf["Cifrado de volúmenes de NetApp (NVE) y cifrado de agregados de NetApp (NAE)"^]. NVE y NAE son soluciones basadas en software que permiten (FIPS) cifrado de volúmenes para datos en reposo conforme a la normativa 140-2. Tanto NVE como NAE utilizan el cifrado AES de 256 bits.
+Cloud Volumes ONTAP admite https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["Cifrado de volúmenes de NetApp (NVE) y cifrado de agregados de NetApp (NAE)"^]. NVE y NAE son soluciones basadas en software que permiten (FIPS) cifrado de volúmenes para datos en reposo conforme a la normativa 140-2. Tanto NVE como NAE utilizan el cifrado AES de 256 bits.
 
 * NVE cifra los datos en reposo un volumen por vez. Cada volumen de datos tiene su propia clave de cifrado única.
 * NAE es una extensión de NVE: Cifra los datos para cada volumen y los volúmenes comparten una clave en todo el agregado. NAE también permite deduplicar bloques comunes en todos los volúmenes del agregado.
