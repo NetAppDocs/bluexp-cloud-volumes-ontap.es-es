@@ -183,7 +183,7 @@ Al crear un entorno de trabajo y elegir un grupo de seguridad predefinido, puede
 | 1000 inbound_ssh | 22 TCP | De cualquiera a cualquiera | Acceso SSH a la dirección IP de administración del clúster LIF o una LIF de gestión de nodos 
 
 
-| 1001 inbound_http | 80 TCP | De cualquiera a cualquiera | Acceso HTTP a la consola web de System Manager mediante el La dirección IP de la LIF de gestión del clúster 
+| 1001 inbound_http | 80 TCP | De cualquiera a cualquiera | Acceso HTTP a la consola web de ONTAP System Manager mediante la dirección IP de la LIF de gestión de clúster 
 
 
 | 1002 inbound_111_tcp | 111 TCP | De cualquiera a cualquiera | Llamada a procedimiento remoto para NFS 
@@ -201,7 +201,7 @@ Al crear un entorno de trabajo y elegir un grupo de seguridad predefinido, puede
 | 1006 inbound_161-162 _udp | 161-162 UDP | De cualquiera a cualquiera | Protocolo simple de gestión de red 
 
 
-| 1007 inbound_443 | 443 TCP | De cualquiera a cualquiera | Conectividad con el acceso HTTPS y el conector a la consola web de System Manager mediante la dirección IP de la LIF de gestión del clúster 
+| 1007 inbound_443 | 443 TCP | De cualquiera a cualquiera | Conectividad con el acceso de conector y HTTPS a la consola web de ONTAP System Manager mediante la dirección IP de la LIF de gestión del clúster 
 
 
 | 1008 inbound_445 | 445 TCP | De cualquiera a cualquiera | Microsoft SMB/CIFS sobre TCP con trama NetBIOS 
@@ -269,7 +269,7 @@ NOTE: Los sistemas de ALTA DISPONIBILIDAD tienen menos reglas entrantes que los 
 | Prioridad y nombre | Puerto y protocolo | Origen y destino | Descripción 
 
 
-| 100 inbound_443 | 443 cualquier protocolo | De cualquiera a cualquiera | Conectividad con el acceso HTTPS y el conector a la consola web de System Manager mediante la dirección IP de la LIF de gestión del clúster 
+| 100 inbound_443 | 443 cualquier protocolo | De cualquiera a cualquiera | Conectividad con el acceso de conector y HTTPS a la consola web de ONTAP System Manager mediante la dirección IP de la LIF de gestión del clúster 
 
 
 | 101 inbound_111_tcp | 111 cualquier protocolo | De cualquiera a cualquiera | Llamada a procedimiento remoto para NFS 

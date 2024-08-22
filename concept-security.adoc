@@ -119,9 +119,9 @@ Puede utilizar la funcionalidad antivirus integrada en los sistemas ONTAP para p
 
 El análisis de virus de ONTAP, denominado _Vscan_, combina el mejor software antivirus de terceros con funciones de ONTAP que le proporcionan la flexibilidad que necesita para controlar qué archivos se analizan y cuándo.
 
-Para obtener información acerca de los proveedores, software y versiones compatibles con Vscan, consulte http://mysupport.netapp.com/matrix["Matriz de interoperabilidad de NetApp"^].
+Para obtener información sobre los proveedores, el software y las versiones compatibles con Vscan, consulte la http://mysupport.netapp.com/matrix["Matriz de interoperabilidad de NetApp"^].
 
-Para obtener información acerca de cómo configurar y administrar la funcionalidad antivirus en los sistemas ONTAP, consulte http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-acg/home.html["Guía de configuración de antivirus de ONTAP 9"^].
+Para obtener información acerca de cómo configurar y administrar la funcionalidad antivirus en los sistemas ONTAP, consulte la http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-acg/home.html["Guía de configuración de antivirus de ONTAP 9"^].
 
 
 

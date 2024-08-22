@@ -30,12 +30,12 @@ BlueXP ofrece varias formas de crear un nuevo volumen:
 Algunas notas sobre el aprovisionamiento de volúmenes:
 
 * Cuando se crea un volumen iSCSI, BlueXP crea automáticamente una LUN para usted. Lo hemos hecho sencillo creando sólo una LUN por volumen, por lo que no hay que realizar ninguna gestión. Después de crear el volumen, link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-connect-lun.html["Utilice el IQN para conectarse con la LUN del hosts"^].
-* Puede crear LUN adicionales desde System Manager o desde la CLI.
+* Puede crear otras LUN desde el Administrador del sistema de ONTAP o la interfaz de línea de comandos de ONTAP.
 
 
 ifdef::aws[]
 
-* Si desea usar CIFS en AWS, debe haber configurado DNS y Active Directory. Para obtener más información, consulte link:reference-networking-aws.html["Requisitos de red para Cloud Volumes ONTAP para AWS"].
+* Si desea utilizar CIFS en AWS, debe haber configurado DNS y Active Directory. Para obtener más información, consulte link:reference-networking-aws.html["Requisitos de red para Cloud Volumes ONTAP para AWS"].
 * Si su configuración de Cloud Volumes ONTAP es compatible con la función Elastic Volumes de Amazon EBS, es posible que desee link:concept-aws-elastic-volumes.html["obtenga más información acerca de lo que sucede cuando crea un volumen"].
 
 
@@ -154,7 +154,7 @@ ifdef::gcp[]
 endif::gcp[]
 
 Dominio DNS:: El dominio DNS para la máquina virtual de almacenamiento (SVM) de Cloud Volumes ONTAP. En la mayoría de los casos, el dominio es el mismo que el dominio de AD.
-Servidor NTP:: Seleccione *usar dominio de Active Directory* para configurar un servidor NTP mediante el DNS de Active Directory. Si necesita configurar un servidor NTP con una dirección diferente, debe usar la API. Consulte https://docs.netapp.com/us-en/bluexp-automation/index.html["Documentos de automatización de BlueXP"^] para obtener más detalles.
+Servidor NTP:: Seleccione *usar dominio de Active Directory* para configurar un servidor NTP mediante el DNS de Active Directory. Si necesita configurar un servidor NTP con una dirección diferente, debe usar la API. Para obtener más información, consulte la https://docs.netapp.com/us-en/bluexp-automation/index.html["Documentos de automatización de BlueXP"^].
 +
 --
 Tenga en cuenta que solo puede configurar un servidor NTP cuando cree un servidor CIFS. No se puede configurar después de crear el servidor CIFS.
@@ -251,4 +251,4 @@ endif::aws[]
 
 Si ha aprovisionado un recurso compartido CIFS, proporcione permisos a usuarios o grupos a los archivos y carpetas y compruebe que esos usuarios pueden acceder al recurso compartido y crear un archivo.
 
-Si desea aplicar cuotas a volúmenes, debe usar System Manager o la interfaz de línea de comandos. Las cuotas le permiten restringir o realizar un seguimiento del espacio en disco y del número de archivos que usan un usuario, un grupo o un qtree.
+Si desea aplicar cuotas a los volúmenes, debe usar ONTAP System Manager o la interfaz de línea de comandos de ONTAP. Las cuotas le permiten restringir o realizar un seguimiento del espacio en disco y del número de archivos que usan un usuario, un grupo o un qtree.

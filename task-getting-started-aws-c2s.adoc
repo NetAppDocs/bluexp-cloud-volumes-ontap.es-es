@@ -628,7 +628,7 @@ CAUTION: Mientras realiza selecciones a través del asistente, no seleccione *De
 .Notas para implementar HA de Cloud Volumes ONTAP en varias zonas de disponibilidad
 Tenga en cuenta lo siguiente a medida que completa el asistente para las parejas de alta disponibilidad.
 
-* Debe configurar una puerta de enlace de tránsito cuando implemente Cloud Volumes ONTAP HA en varias zonas de disponibilidad (AZ). Consulte link:task-setting-up-transit-gateway.html["Configure una puerta de enlace de tránsito de AWS"].
+* Debe configurar una puerta de enlace de tránsito cuando implemente Cloud Volumes ONTAP HA en varias zonas de disponibilidad (AZ). Para obtener instrucciones, consulte link:task-setting-up-transit-gateway.html["Configure una puerta de enlace de tránsito de AWS"].
 * Implemente la configuración de la siguiente manera porque solo había dos AZs disponibles en la nube de AWS Top Secret en el momento de la publicación:
 +
 ** Nodo 1: Zona De disponibilidad A

@@ -97,7 +97,7 @@ NOTE: La conmutación por error de LIF está deshabilitada de forma predetermina
 +
 Se puede acceder a las copias de seguridad desde \http://ipaddress/occm/offboxconfig/, donde _ipaddress_ es la dirección IP del host del conector.
 
-** BlueXP establece algunos atributos de volumen de manera diferente a los de otras herramientas de gestión (por ejemplo, System Manager o CLI).
+** BlueXP  establece varios atributos de volumen de forma diferente a otras herramientas de gestión (Administrador del sistema de ONTAP o la interfaz de línea de comandos de ONTAP, por ejemplo).
 +
 En la siguiente tabla se enumeran los atributos de volumen que BlueXP establece de forma diferente a los valores predeterminados:
 
@@ -127,7 +127,7 @@ NOTE: El administrador de cuentas puede modificar este valor en la página Confi
 | Permisos de UNIX (solo NFS) | 777 
 |===
 +
-Consulte link:https://docs.netapp.com/us-en/ontap-cli-9121/volume-create.html["ONTAP _volume create_ man page"] para obtener información acerca de estos atributos.
+Para obtener más información sobre estos atributos, consulte link:https://docs.netapp.com/us-en/ontap-cli-9121/volume-create.html["ONTAP _volume create_ man page"].
 
 
 
@@ -189,6 +189,9 @@ Si la máquina virtual elegida para Cloud Volumes ONTAP admite Ultra SSD, el sis
 * Un disco duro estándar de 1024 GIB para guardar núcleos
 * Una instantánea de Azure para cada disco de arranque y disco raíz
 * Cada disco de forma predeterminada en Azure está cifrado en reposo.
++
+Si la máquina virtual elegida para Cloud Volumes ONTAP es compatible con el disco gestionado SSD v2 Premium como discos de datos, el sistema utiliza un disco gestionado v2 SSD Premium de 32 GiB para NVRAM y otro como disco raíz.
+
 
 
 
@@ -210,7 +213,7 @@ NOTE: Las Snapshot se crean automáticamente al reiniciar.
 
 .Pares de ALTA disponibilidad con discos gestionados compartidos en varias zonas de disponibilidad
 * Dos discos SSD Premium de 10 GIB para el volumen de arranque (uno por nodo)
-* Dos BLOB de la página de almacenamiento Premium de 512 GIB para el volumen raíz (uno por nodo)
+* Dos discos SSD Premium de 512 GiB para el volumen raíz (uno por nodo)
 * Dos discos HDD estándar de 1024 GIB para ahorrar núcleos (uno por nodo)
 * Dos discos SSD Premium de 512 GIB para NVRAM (uno por nodo)
 * Una instantánea de Azure para cada disco de arranque y disco raíz
@@ -219,6 +222,16 @@ NOTE: Las Snapshot se crean automáticamente al reiniciar.
 NOTE: Las Snapshot se crean automáticamente al reiniciar.
 
 * Cada disco de forma predeterminada en Azure está cifrado en reposo.
+
+
+.Pares de ALTA disponibilidad con discos gestionados compartidos en zonas de disponibilidad únicas
+* Dos discos SSD Premium de 10 GIB para el volumen de arranque (uno por nodo)
+* Dos discos gestionados compartidos SSD Premium de 512 GiB para el volumen raíz (uno por nodo)
+* Dos discos HDD estándar de 1024 GIB para ahorrar núcleos (uno por nodo)
+* Dos discos gestionados SSD Premium de 512 GiB para NVRAM (uno por nodo)
++
+Si su máquina virtual admite discos gestionados Premium SSD v2 como discos de datos, utiliza 32 discos gestionados Premium SSD v2 de GiB para NVRAM y 512 discos gestionados compartidos SSD Premium v2 de GiB para el volumen raíz.
+
 
 
 endif::azure[]

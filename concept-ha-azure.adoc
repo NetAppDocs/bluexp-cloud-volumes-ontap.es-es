@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-ha-azure.html 
-keywords: high availability, HA, concepts, understanding, overview, takeover, giveback, rpo, rto, nondisruptive, ha pairs, node, nodes, recovery point objective, recovery time objective, nas, nfs, cifs, iscsi, mpio, alua, failover, failure, azure, shared storage, active, passive, load balancer, availability set, storage accounts, page blobs 
+keywords: high availability, HA, concepts, understanding, overview, takeover, giveback, rpo, rto, nondisruptive, ha pairs, node, nodes, recovery point objective, recovery time objective, nas, nfs, cifs, iscsi, mpio, alua, failover, failure, azure, shared storage, active, passive, load balancer, storage accounts, page blobs 
 summary: 'Una pareja de alta disponibilidad (ha) Cloud Volumes ONTAP proporciona fiabilidad empresarial y operaciones continuas en caso de fallos en su entorno de cloud. En Azure, el almacenamiento se comparte entre los dos nodos.' 
 ---
 = Pares de alta disponibilidad en Azure
@@ -26,12 +26,12 @@ Una pareja de alta disponibilidad (ha) Cloud Volumes ONTAP proporciona fiabilida
 
 Una configuración BLOB de una página de alta disponibilidad de Cloud Volumes ONTAP en Azure incluye los siguientes componentes:
 
-image:diagram_ha_azure.png["Imagen conceptual que muestra un equilibrador de carga que gestiona el tráfico entrante desde BlueXP y clientes, dos nodos Cloud Volumes ONTAP en un conjunto de disponibilidad, discos SSD para datos de arranque y Blobs de página para datos de cliente."]
+image:diagram_ha_azure.png["Una imagen conceptual que muestra un equilibrador de carga que gestiona el tráfico entrante de BlueXP  y clientes, dos nodos Cloud Volumes ONTAP en un VMSS Flex, discos SSD para datos de arranque y blobs de páginas para datos de clientes."]
 
 Tenga en cuenta lo siguiente acerca de los componentes de Azure que BlueXP pone en marcha:
 
 Equilibrador de carga estándar de Azure:: El equilibrador de carga gestiona el tráfico entrante en el par ha de Cloud Volumes ONTAP.
-Conjunto de disponibilidad:: El conjunto de disponibilidad de Azure es una agrupación lógica de los nodos de Cloud Volumes ONTAP. El conjunto de disponibilidad garantiza que los nodos se encuentren en diferentes dominios de fallo y actualización para ofrecer redundancia y disponibilidad. https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["Obtenga más información sobre los conjuntos de disponibilidad en los documentos de Azure"^].
+Equipos virtuales en zonas de disponibilidad individuales:: A partir de Cloud Volumes ONTAP 9.15.1, puede crear y gestionar máquinas virtuales (VM) heterogéneas en una única zona de disponibilidad (AZ). Los nodos de alta disponibilidad (HA) se pueden poner en marcha en dominios de fallo independientes en la misma zona de disponibilidad, lo que garantiza una disponibilidad óptima. Para obtener más información sobre el modo de orquestación flexible que permite esta capacidad, consulte https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Documentación de Microsoft Azure: Conjuntos de escalas de máquinas virtuales"^] .
 Discos:: Los datos del cliente residen en Blobs de la página de Premium Storage. Cada nodo tiene acceso al almacenamiento del otro nodo. También se requiere almacenamiento adicional para link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["datos sobre el arranque, la raíz y el núcleo"^].
 Cuentas de almacenamiento::
 +
@@ -39,7 +39,7 @@ Cuentas de almacenamiento::
 * Se necesita una cuenta de almacenamiento para los discos gestionados.
 * Se requieren una o más cuentas de almacenamiento para los BLOB de la página Premium Storage, ya que se alcanza el límite de capacidad de disco por cuenta de almacenamiento.
 +
-https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-targets["Documentación de Azure: Objetivos de escalabilidad y rendimiento de Azure Storage para cuentas de almacenamiento"^].
+https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-targets["Documentación de Microsoft Azure: Objetivos de escalabilidad y rendimiento de Azure Storage para cuentas de almacenamiento"^].
 
 * Se necesita una cuenta de almacenamiento para la organización en niveles de los datos en el almacenamiento de Azure Blob.
 * A partir de Cloud Volumes ONTAP 9.7, las cuentas de almacenamiento que BlueXP crea para pares de alta disponibilidad son cuentas de almacenamiento de uso general de v2.
@@ -55,12 +55,12 @@ https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-target
 
 Una configuración de zona de disponibilidad única de Cloud Volumes ONTAP ha que se ejecuta en los discos gestionados compartidos incluye los siguientes componentes:
 
-image:diagram_ha_azure_saz_lrs.png["Imagen conceptual que muestra un equilibrador de carga que gestiona el tráfico entrante desde BlueXP y clientes, dos nodos Cloud Volumes ONTAP en un conjunto de disponibilidad, discos SSD para datos de arranque y discos gestionados LRS para datos de cliente."]
+image:diagram_ha_azure_saz_lrs.png["Una imagen conceptual que muestra un equilibrador de carga gestionando el tráfico entrante de BlueXP  y clientes, dos nodos Cloud Volumes ONTAP en VMSS Flex, discos SSD para datos de arranque y discos gestionados LRS para datos de cliente."]
 
 Tenga en cuenta lo siguiente acerca de los componentes de Azure que BlueXP pone en marcha:
 
 Equilibrador de carga estándar de Azure:: El equilibrador de carga gestiona el tráfico entrante en el par ha de Cloud Volumes ONTAP.
-Conjunto de disponibilidad:: El conjunto de disponibilidad de Azure es una agrupación lógica de los nodos de Cloud Volumes ONTAP. El conjunto de disponibilidad garantiza que los nodos se encuentren en diferentes dominios de fallo y actualización para ofrecer redundancia y disponibilidad. https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["Obtenga más información sobre los conjuntos de disponibilidad en los documentos de Azure"^].
+Equipos virtuales en zonas de disponibilidad individuales:: A partir de Cloud Volumes ONTAP 9.15.1, puede crear y gestionar máquinas virtuales (VM) heterogéneas en una única zona de disponibilidad (AZ). Los nodos de alta disponibilidad (HA) se pueden poner en marcha en dominios de fallo independientes en la misma zona de disponibilidad, lo que garantiza una disponibilidad óptima. Para obtener más información sobre el modo de orquestación flexible que permite esta capacidad, consulte https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Documentación de Microsoft Azure: Conjuntos de escalas de máquinas virtuales"^] .
 Discos:: Los datos del cliente residen en discos gestionados de almacenamiento redundante local (LRS). Cada nodo tiene acceso al almacenamiento del otro nodo. También se requiere almacenamiento adicional para link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["Datos de arranque, raíz, raíz del partner, núcleo y NVRAM"^].
 Cuentas de almacenamiento:: Las cuentas de almacenamiento se usan para implementaciones basadas en disco gestionadas para manejar registros de diagnóstico y organización en niveles para el almacenamiento BLOB.
 
@@ -76,7 +76,7 @@ image:diagram_ha_azure_maz.png["Imagen conceptual que muestra un equilibrio de c
 Tenga en cuenta lo siguiente acerca de los componentes de Azure que BlueXP pone en marcha:
 
 Equilibrador de carga estándar de Azure:: El equilibrador de carga gestiona el tráfico entrante en el par ha de Cloud Volumes ONTAP.
-Zonas de disponibilidad:: Existen dos nodos Cloud Volumes ONTAP implementados en zonas de disponibilidad diferentes. Las zonas de disponibilidad garantizan que los nodos estén en diferentes dominios de fallo. https://learn.microsoft.com/en-us/azure/virtual-machines/disks-redundancy#zone-redundant-storage-for-managed-disks["Obtenga más información acerca del almacenamiento redundante de zonas de Azure para discos gestionados en los documentos de Azure"^].
+Zonas de disponibilidad:: La configuración de varias zonas de disponibilidad de ALTA disponibilidad utiliza un modelo de implementación en el que se implementan dos nodos Cloud Volumes ONTAP en diferentes zonas de disponibilidad, lo que garantiza que los nodos estén en diferentes dominios de fallo para proporcionar redundancia y disponibilidad. Para saber cómo los conjuntos de escalas de máquinas virtuales en modo de orquestación flexible pueden usar las zonas de disponibilidad en Azure, consulte https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-use-availability-zones?tabs=cli-1%2Cportal-2["Documentación de Microsoft Azure: Cree un conjunto de escalas de máquinas virtuales que utilice zonas de disponibilidad"^] .
 Discos:: Los datos de los clientes residen en discos gestionados de almacenamiento redundante de la zona (ZRS). Cada nodo tiene acceso al almacenamiento del otro nodo. También se requiere almacenamiento adicional para link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["datos sobre el inicio, la raíz, el partner y los principales"^].
 Cuentas de almacenamiento:: Las cuentas de almacenamiento se usan para implementaciones basadas en disco gestionadas para manejar registros de diagnóstico y organización en niveles para el almacenamiento BLOB.
 
@@ -102,7 +102,7 @@ En el caso de configuraciones NAS, las direcciones IP de datos migran automátic
 Para iSCSI, Cloud Volumes ONTAP utiliza I/o multivía (MPIO) y ALUA (Asymmetric Logical Unit Access) para gestionar la conmutación por error de ruta entre las rutas activas y no optimizadas.
 
 
-NOTE: Para obtener información sobre qué configuraciones de host específicas admiten ALUA, consulte http://mysupport.netapp.com/matrix["Herramienta de matriz de interoperabilidad de NetApp"^] Y la guía de instalación y configuración de las utilidades de host para el sistema operativo host.
+NOTE: Para obtener más información sobre qué configuraciones de host específicas admiten ALUA, consulte el http://mysupport.netapp.com/matrix["Herramienta de matriz de interoperabilidad de NetApp"^] https://docs.netapp.com/us-en/ontap-sanhost/["Guía de hosts de SAN y clientes de cloud"] sistema operativo del host y el del.
 
 La toma de control, resincronización y devolución del almacenamiento son automáticas de forma predeterminada. No se requiere ninguna acción del usuario.
 

@@ -64,7 +64,7 @@ image:screenshot_aws_e0a.gif["Captura de pantalla de la Consola de AWS que muest
 +
 En la sección anterior de esta página, es necesario haber identificado el número máximo de direcciones IP compatibles por interfaz.
 
-.. Opcional: Vaya a la CLI para Cloud Volumes ONTAP y ejecute *interfaz de red show* para confirmar que cada una de estas direcciones IP está en uso.
+.. Opcional: Vaya a la CLI de ONTAP para Cloud Volumes ONTAP y ejecute *network interface show* para confirmar que cada una de estas direcciones IP están en uso.
 +
 Si no se está utilizando una dirección IP, puede usarla con el nuevo equipo virtual de almacenamiento.
 

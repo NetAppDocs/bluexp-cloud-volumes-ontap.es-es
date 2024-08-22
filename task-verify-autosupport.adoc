@@ -47,7 +47,7 @@ Lo más probable es que reciba este mensaje debido a problemas de red.
 Siga estos pasos para solucionar este problema.
 
 .Pasos
-. SSH al sistema Cloud Volumes ONTAP para poder administrar el sistema desde la CLI.
+. SSH al sistema Cloud Volumes ONTAP para que pueda administrar el sistema desde la CLI de ONTAP.
 +
 link:task-connecting-to-otc.html["Descubra cómo de SSH a Cloud Volumes ONTAP"].
 

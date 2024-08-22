@@ -21,7 +21,7 @@ Puede mover un entorno de trabajo de un grupo de recursos a otro en Azure con la
 .Pasos
 . Elimine el entorno de trabajo de *Canvas*.
 +
-Para aprender a eliminar un entorno de trabajo, consulte link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-removing.html["Eliminación de entornos de trabajo de Cloud Volumes ONTAP"].
+Para obtener información sobre cómo eliminar un entorno de trabajo, consulte link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-removing.html["Eliminación de entornos de trabajo de Cloud Volumes ONTAP"].
 
 . Ejecute el movimiento del grupo de recursos en la consola de Azure.
 +

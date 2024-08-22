@@ -145,7 +145,7 @@ Un solo nodo o ha con carga de capacidad para volúmenes principales y secundari
 * Incluye backups de volúmenes ilimitados mediante backup y recuperación de BlueXP, pero solo para sistemas Cloud Volumes ONTAP que utilicen el paquete Professional.
 +
 
-NOTE: Se requiere una suscripción PAYGO para el backup y la recuperación de BlueXP, pero no se incurrirá en ningún cargo por usar este servicio. Para obtener más información sobre cómo configurar las licencias para el backup y la recuperación de BlueXP, consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/task-licensing-cloud-backup.html["Configura las licencias para el backup y la recuperación de BlueXP"^].
+NOTE: Se requiere una suscripción PAYGO para el backup y la recuperación de BlueXP, pero no se incurrirá en ningún cargo por usar este servicio. Si quiere más información sobre cómo configurar la licencia para la copia de seguridad y recuperación de BlueXP , consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/task-licensing-cloud-backup.html["Configura las licencias para el backup y la recuperación de BlueXP"^] .
 
 * Añada cualquiera de los servicios de datos en el cloud de NetApp por un coste adicional
 

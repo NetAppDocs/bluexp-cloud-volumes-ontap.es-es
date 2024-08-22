@@ -103,7 +103,7 @@ La comunicación de datos entre VPC no es un problema, ya que iSCSI no utiliza d
 Para iSCSI, Cloud Volumes ONTAP utiliza I/o multivía (MPIO) y ALUA (Asymmetric Logical Unit Access) para gestionar la conmutación por error de ruta entre las rutas activas y no optimizadas.
 
 
-NOTE: Para obtener información sobre qué configuraciones de host específicas admiten ALUA, consulte http://mysupport.netapp.com/matrix["Herramienta de matriz de interoperabilidad de NetApp"^] Y la guía de instalación y configuración de las utilidades de host para el sistema operativo host.
+NOTE: Para obtener más información sobre qué configuraciones de host específicas admiten ALUA, consulte el http://mysupport.netapp.com/matrix["Herramienta de matriz de interoperabilidad de NetApp"^] https://docs.netapp.com/us-en/ontap-sanhost/["Guía de hosts de SAN y clientes de cloud"] sistema operativo del host y el del.
 
 
 
@@ -145,7 +145,7 @@ image:diagram_single_az.png["Imagen conceptual que muestra una configuración de
 Para iSCSI, Cloud Volumes ONTAP utiliza I/o multivía (MPIO) y ALUA (Asymmetric Logical Unit Access) para gestionar la conmutación por error de ruta entre las rutas activas y no optimizadas.
 
 
-NOTE: Para obtener información sobre qué configuraciones de host específicas admiten ALUA, consulte http://mysupport.netapp.com/matrix["Herramienta de matriz de interoperabilidad de NetApp"^] Y la guía de instalación y configuración de las utilidades de host para el sistema operativo host.
+NOTE: Para obtener más información sobre qué configuraciones de host específicas admiten ALUA, consulte el http://mysupport.netapp.com/matrix["Herramienta de matriz de interoperabilidad de NetApp"^] https://docs.netapp.com/us-en/ontap-sanhost/["Guía de hosts de SAN y clientes de cloud"] sistema operativo del host y el del.
 
 En el caso de configuraciones NAS, las direcciones IP de datos pueden migrar entre nodos de alta disponibilidad si se produce un fallo. De este modo se garantiza el acceso del cliente al almacenamiento.
 
@@ -195,7 +195,7 @@ Actualmente se admiten las siguientes familias de tipos de instancia de EC2 con 
 * R5d
 
 
-link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["Debe consultar AWS para obtener los detalles más recientes y completos sobre los tipos de instancia de EC2 admitidos en las zonas locales"^].
+Debe consultar la documentación de AWS para obtener los detalles más recientes y completos sobre el link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["EC2 Tipos de instancias en Zonas locales"^].
 
 
 

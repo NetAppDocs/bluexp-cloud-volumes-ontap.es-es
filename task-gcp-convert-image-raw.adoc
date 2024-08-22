@@ -146,4 +146,4 @@ total 1565036
 $ tar -xf CVO_GCP_Signed_Digest.tar.gz
 ----
 
-NOTE: Consulte https://cloud.google.com/compute/docs/images/export-image#console["Documento de Google Cloud sobre la exportación de una imagen"^] Para obtener más información sobre cómo exportar una imagen a través de Google Cloud.
+NOTE: Para obtener más información sobre cómo exportar una imagen a través de Google Cloud, consulte https://cloud.google.com/compute/docs/images/export-image#console["Documento de Google Cloud sobre la exportación de una imagen"^] .

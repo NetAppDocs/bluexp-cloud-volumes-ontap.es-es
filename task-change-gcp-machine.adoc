@@ -31,7 +31,7 @@ En el caso de los pares de alta disponibilidad, el cambio no es disruptivo. Los 
 
 +
 
-TIP: BlueXP cambia con elegancia un nodo a la vez iniciando la toma de control y esperando la devolución. El equipo de control de calidad de NetApp ha probado la escritura y lectura de ficheros durante este proceso y no ha visto ningún problema por parte del cliente. A medida que cambiaron las conexiones, observamos el número de reintentos en el nivel de I/o, pero la capa de aplicación superó esta corta "repetición de la conexión" de conexiones NFS/CIFS.
+TIP: BlueXP  cambia de nodo en nodo al iniciar la toma de control y a la espera de devolución. El equipo de garantía de calidad de NetApp probó tanto la escritura como la lectura de archivos durante este proceso y no vio ningún problema en el lado del cliente. A medida que cambiaban las conexiones, se observaron algunos reintentos en el nivel de I/O, pero la capa de aplicaciones superó el recableado de las conexiones NFS/CIFS.
 
 
 

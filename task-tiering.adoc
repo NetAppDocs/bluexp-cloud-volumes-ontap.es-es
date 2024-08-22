@@ -14,7 +14,7 @@ summary: Puede reducir los costes de almacenamiento de Cloud Volumes ONTAP combi
 
 
 [role="lead"]
-Puede reducir los costes de almacenamiento de Cloud Volumes ONTAP combinando un nivel de rendimiento de SSD o HDD para datos activos con un nivel de capacidad de almacenamiento de objetos para los datos inactivos. La organización en niveles de datos utiliza la tecnología FabricPool. Para obtener información general de alto nivel, consulte link:concept-data-tiering.html["Información general sobre organización en niveles de datos"].
+Puede reducir los costes de almacenamiento de Cloud Volumes ONTAP combinando un nivel de rendimiento de SSD o HDD para datos activos con un nivel de capacidad de almacenamiento de objetos para los datos inactivos. La organización en niveles de datos utiliza la tecnología FabricPool. Para obtener una descripción general de alto nivel, consulte link:concept-data-tiering.html["Información general sobre organización en niveles de datos"].
 
 Para configurar la organización en niveles de los datos, debe hacer lo siguiente:
 
@@ -141,11 +141,11 @@ ifdef::aws[]
 
 === Requisitos para organizar en niveles los datos fríos en AWS S3
 
-Compruebe que Cloud Volumes ONTAP tenga una conexión con S3. La mejor forma de proporcionar esa conexión es crear un extremo de VPC con el servicio S3. Para ver instrucciones, consulte https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["Documentación de AWS: Crear un extremo de puerta de enlace"^].
+Compruebe que Cloud Volumes ONTAP tenga una conexión con S3. La mejor forma de proporcionar esa conexión es crear un extremo de VPC con el servicio S3. Para obtener instrucciones, consulte la https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["Documentación de AWS: Crear un extremo de puerta de enlace"^].
 
 Al crear el extremo VPC, asegúrese de seleccionar la región, VPC y tabla de rutas que correspondan a la instancia de Cloud Volumes ONTAP. También debe modificar el grupo de seguridad para añadir una regla de HTTPS de salida que habilite el tráfico hacia el extremo de S3. De lo contrario, Cloud Volumes ONTAP no puede conectarse con el servicio S3.
 
-Si experimenta algún problema, consulte https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["Centro de conocimientos de soporte de AWS: ¿por qué no puedo conectarme a un bloque de S3 mediante un extremo de VPC de puerta de enlace?"^].
+Si tiene algún problema, consulte https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["Centro de conocimientos de soporte de AWS: ¿por qué no puedo conectarme a un bloque de S3 mediante un extremo de VPC de puerta de enlace?"^] .
 
 endif::aws[]
 
@@ -195,7 +195,7 @@ endif::gcp[]
 
 === Activación de la organización en niveles de datos tras la implementación de los requisitos
 
-BlueXP crea un almacén de objetos para datos inactivos cuando se crea el sistema, siempre que no haya problemas de conectividad o permisos. Si no implementó los requisitos mencionados anteriormente hasta después de crear el sistema, deberá habilitar manualmente la organización en niveles mediante la API o System Manager, para crear el almacén de objetos.
+BlueXP crea un almacén de objetos para datos inactivos cuando se crea el sistema, siempre que no haya problemas de conectividad o permisos. Si no implementó los requisitos enumerados anteriormente hasta después de crear el sistema, deberá habilitar manualmente la organización en niveles mediante la API o el Administrador del sistema de ONTAP, que crea el almacén de objetos.
 
 
 NOTE: La capacidad de habilitar la organización en niveles a través de la interfaz de usuario de BlueXP estará disponible en una futura versión de Cloud Volumes ONTAP.
@@ -212,7 +212,7 @@ Si va a habilitar la organización en niveles de datos en un nuevo volumen, no t
 
 * *volúmenes existentes*
 +
-Si desea habilitar la organización en niveles de datos en un volumen existente, debe asegurarse de que la organización en niveles de datos esté habilitada en el agregado subyacente. Si la organización en niveles de datos no está habilitada en el agregado existente, deberá usar System Manager para adjuntar un agregado existente al almacén de objetos.
+Si desea habilitar la organización en niveles de datos en un volumen existente, debe asegurarse de que la organización en niveles de datos esté habilitada en el agregado subyacente. Si la organización de datos en niveles no está habilitada en el agregado existente, deberá usar System Manager de ONTAP para adjuntar un agregado existente al almacén de objetos.
 
 
 
@@ -226,7 +226,7 @@ image:screenshot_aggregate_tiering_enabled.png["Captura de pantalla que muestra 
 
 
 .Pasos para habilitar la organización en niveles en un agregado
-. En System Manager, haga clic en *almacenamiento > niveles*.
+. En el Administrador del sistema de ONTAP, haga clic en *Almacenamiento > Niveles*.
 . Haga clic en el menú de acción del agregado y seleccione *Adjuntar niveles de cloud*.
 . Seleccione el nivel de nube que desea adjuntar y haga clic en *Guardar*.
 
@@ -285,7 +285,7 @@ Cloud Volumes ONTAP puede organizar los datos en niveles desde un volumen de pro
 image:screenshot_replication_tiering.gif["Captura de pantalla que muestra la opción S3 Tiering al replicar un volumen."]
 
 +
-Para obtener ayuda sobre la replicación de datos, consulte https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Replicar datos hacia y desde el cloud"^].
+Para obtener ayuda con la replicación de datos, consulte https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Replicar datos hacia y desde el cloud"^] .
 
 
 
@@ -297,7 +297,7 @@ Después de poner en marcha Cloud Volumes ONTAP, puede reducir sus costes de alm
 
 El tipo de almacenamiento para los datos por niveles es de amplio alcance del sistema: ​it no por volumen.
 
-Para obtener más información sobre las clases de almacenamiento compatibles, consulte link:concept-data-tiering.html["Información general sobre organización en niveles de datos"].
+Para obtener información sobre las clases de almacenamiento compatibles, consulte link:concept-data-tiering.html["Información general sobre organización en niveles de datos"].
 
 .Pasos
 . En el entorno de trabajo, haga clic en el icono de menú y, a continuación, haga clic en *clases de almacenamiento* o *almacenamiento en blob*.
@@ -330,7 +330,7 @@ image:screenshot_settings_icon.png["Captura de pantalla que muestra el icono Con
 
 == Cambiar el período de refrigeración de la política de organización automática en niveles
 
-Si habilitó la organización en niveles de datos en un volumen Cloud Volumes ONTAP mediante la política _auto_ Tiering, puede ajustar el período de refrigeración predeterminado en función de las necesidades del negocio. Esta acción es compatible únicamente con API y CLI.
+Si habilitó la organización en niveles de datos en un volumen Cloud Volumes ONTAP mediante la política _auto_ Tiering, puede ajustar el período de refrigeración predeterminado en función de las necesidades del negocio. Esta acción solo se admite con la CLI y la API de ONTAP.
 
 El período de refrigeración es el número de días en los que los datos del usuario en un volumen deben permanecer inactivos antes de considerarlos «activos» y moverlos a un almacenamiento de objetos.
 

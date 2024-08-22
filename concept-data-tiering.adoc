@@ -55,9 +55,9 @@ Clases de almacenamiento:: La clase de almacenamiento predeterminada para los da
 --
 Si no tiene previsto acceder a los datos inactivos, puede reducir los costes de almacenamiento cambiando la clase de almacenamiento a una de las siguientes opciones: _Intelligent Tiering_, _One-Zone Infrecuente Access_, _Standard-Infrecuente Access_ o _S3 Glacier Instant Retrieval_. Al cambiar la clase de almacenamiento, los datos inactivos se inician en la clase de almacenamiento estándar y se pasan a la clase de almacenamiento seleccionada si no se accede a los datos después de 30 días.
 
-Los costes de acceso son más elevados si se accede a los datos, por lo que hay que tener en cuenta antes de cambiar la clase de almacenamiento. https://aws.amazon.com/s3/storage-classes["Obtenga más información acerca de las clases de almacenamiento de Amazon S3"^].
+Los costes de acceso son mayores si accede a los datos, por lo que debe tenerlo en cuenta antes de cambiar la clase de almacenamiento. https://aws.amazon.com/s3/storage-classes["Documentación de Amazon S3: Obtén más información sobre las clases de almacenamiento de Amazon S3"^].
 
-Puede seleccionar una clase de almacenamiento cuando cree el entorno de trabajo y puede cambiarla en cualquier momento. Para obtener información detallada sobre cómo cambiar la clase de almacenamiento, consulte link:task-tiering.html["Organización en niveles de los datos inactivos en almacenamiento de objetos de bajo coste"].
+Puede seleccionar una clase de almacenamiento cuando cree el entorno de trabajo y puede cambiarla en cualquier momento. Para obtener instrucciones sobre cómo cambiar la clase de almacenamiento, consulte link:task-tiering.html["Organización en niveles de los datos inactivos en almacenamiento de objetos de bajo coste"].
 
 La clase de almacenamiento para la organización en niveles de los datos es de todo el sistema, pero no por volumen.
 
@@ -98,7 +98,7 @@ Niveles de acceso al almacenamiento:: El nivel de acceso al almacenamiento prede
 --
 Si no piensa acceder a los datos inactivos del nivel de capacidad, puede reducir los costes de almacenamiento cambiando al nivel de almacenamiento _COOL_. Cuando cambia el nivel de almacenamiento a uno más frío, los datos del nivel de capacidad inactiva se mueven directamente al nivel de almacenamiento frío.
 
-Los costes de acceso son más elevados si accede a los datos, por lo que tenga en cuenta antes de cambiar el nivel de almacenamiento. https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers["Obtenga más información acerca de los niveles de acceso al almacenamiento de Azure Blob"^].
+Los costes de acceso son mayores si accede a los datos, por lo que debe tenerlo en cuenta antes de cambiar el nivel de almacenamiento. https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers["Documentación de Microsoft Azure: Obtenga más información sobre los niveles de acceso a almacenamiento de Azure Blob"^].
 
 Es posible seleccionar un nivel de almacenamiento al crear el entorno de trabajo y cambiarlo siempre que se desee. Para obtener más información sobre cómo cambiar el nivel de almacenamiento, consulte link:task-tiering.html["Organización en niveles de los datos inactivos en almacenamiento de objetos de bajo coste"].
 
@@ -140,9 +140,9 @@ Clases de almacenamiento:: La clase de almacenamiento predeterminada para los da
 
 NOTE: Todos los datos inactivos existentes mantendrán la clase de almacenamiento predeterminada cuando cambie la clase de almacenamiento. Para cambiar la clase de almacenamiento de los datos inactivos existentes, debe realizar la designación manualmente.
 
-Los costes de acceso son más elevados si se accede a los datos, por lo que hay que tener en cuenta antes de cambiar la clase de almacenamiento. https://cloud.google.com/storage/docs/storage-classes["Obtenga más información sobre clases de almacenamiento para Google Cloud Storage"^].
+Los costes de acceso son más elevados si se accede a los datos, por lo que hay que tener en cuenta antes de cambiar la clase de almacenamiento. Para obtener más información, consulte https://cloud.google.com/storage/docs/storage-classes["Documentación de Google Cloud: Clases de almacenamiento"^] .
 
-Es posible seleccionar un nivel de almacenamiento al crear el entorno de trabajo y cambiarlo siempre que se desee. Para obtener información detallada sobre cómo cambiar la clase de almacenamiento, consulte link:task-tiering.html["Organización en niveles de los datos inactivos en almacenamiento de objetos de bajo coste"].
+Es posible seleccionar un nivel de almacenamiento al crear el entorno de trabajo y cambiarlo siempre que se desee. Para obtener más información sobre cómo cambiar la clase de almacenamiento, consulte link:task-tiering.html["Organización en niveles de los datos inactivos en almacenamiento de objetos de bajo coste"].
 
 La clase de almacenamiento para la organización en niveles de los datos es de todo el sistema, pero no por volumen.
 
@@ -214,4 +214,4 @@ TIP: Cuando Cloud Volumes ONTAP está apagado, la temperatura de cada bloque se 
 
 == Configuración de la organización en niveles de los datos
 
-Para obtener instrucciones y una lista de las configuraciones compatibles, consulte link:task-tiering.html["Organización en niveles de los datos inactivos en almacenamiento de objetos de bajo coste"].
+Para obtener instrucciones y una lista de configuraciones compatibles, consulte link:task-tiering.html["Organización en niveles de los datos inactivos en almacenamiento de objetos de bajo coste"].

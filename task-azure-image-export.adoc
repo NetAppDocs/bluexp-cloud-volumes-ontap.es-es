@@ -22,7 +22,7 @@ Debe instalar los programas necesarios en su sistema.
 * Azure CLI está instalado o Azure Cloud Shell a través del portal de Azure está disponible en todo momento.
 +
 
-NOTE: Para obtener más información sobre cómo instalar la CLI de Azure, consulte https://learn.microsoft.com/en-us/cli/azure/install-azure-cli["Documentación de Azure: Cómo instalar la CLI de Azure"^].
+NOTE: Para obtener más información sobre cómo instalar Azure CLI, consulte https://learn.microsoft.com/en-us/cli/azure/install-azure-cli["Documentación de Azure: Cómo instalar la CLI de Azure"^] .
 
 
 

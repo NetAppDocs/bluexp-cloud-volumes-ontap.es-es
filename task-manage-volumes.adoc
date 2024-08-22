@@ -16,7 +16,7 @@ summary: BlueXP le permite gestionar volúmenes y servidores CIFS. También indi
 [role="lead"]
 BlueXP le permite gestionar volúmenes y servidores CIFS. También indica que se deben mover los volúmenes para evitar problemas de capacidad.
 
-Puedes gestionar volúmenes en BlueXP Standard View o Advanced View. La vista estándar proporciona un conjunto limitado de opciones para modificar los volúmenes. La vista avanzada proporciona niveles avanzados de gestión, como clonado, cambio de tamaño, cambio de configuración para antiransomware, análisis, protección y seguimiento de actividades, y traslado de volúmenes entre niveles. Consulte link:task-administer-advanced-view.html["Administrar Cloud Volumes ONTAP mediante la vista avanzada"].
+Puedes gestionar volúmenes en BlueXP Standard View o Advanced View. La vista estándar proporciona un conjunto limitado de opciones para modificar los volúmenes. La vista avanzada proporciona niveles avanzados de gestión, como clonado, cambio de tamaño, cambio de configuración para antiransomware, análisis, protección y seguimiento de actividades, y traslado de volúmenes entre niveles. Para obtener más información, consulte link:task-administer-advanced-view.html["Administrar Cloud Volumes ONTAP mediante la vista avanzada"].
 
 
 
@@ -55,7 +55,7 @@ image:screenshot_manage_vol_button.png["Captura de pantalla del botón gestionar
 
 Este proceso crea un volumen FlexClone. Un volumen FlexClone es una copia editable, de un momento específico, que gestiona el espacio de forma eficiente, porque utiliza una pequeña cantidad de espacio para los metadatos y, a continuación, solo consume espacio adicional a medida que se modifican o agregan datos.
 
-Para obtener más información sobre los volúmenes FlexClone, consulte http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html["Guía de gestión de almacenamiento lógico de ONTAP 9"^].
+Para obtener más información acerca de FlexClone Volumes, consulte http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html["Guía de gestión de almacenamiento lógico de ONTAP 9"^] .
 
 
 
@@ -65,7 +65,7 @@ Para obtener más información sobre los volúmenes FlexClone, consulte http://d
 
 
 
-NOTE: Si necesita políticas de Snapshot personalizadas, puede crearlas mediante System Manager.
+NOTE: Si necesita políticas de Snapshot personalizadas, puede crearlas mediante ONTAP System Manager.
 
 
 
@@ -129,7 +129,7 @@ De forma predeterminada, un volumen crece automáticamente a un tamaño máximo 
 Si necesita cambiar el tamaño de su volumen, puede hacerlo desde la vista avanzada de BlueXP.
 
 .Pasos
-. Abra la vista avanzada para cambiar el tamaño de un volumen a través de System Manager. Consulte link:task-administer-advanced-view.html#how-to-get-started["Cómo comenzar"].
+. Abra la vista avanzada para cambiar el tamaño de un volumen a través de ONTAP System Manager. Consulte link:task-administer-advanced-view.html#how-to-get-started["Cómo comenzar"].
 . En el menú de navegación de la izquierda, selecciona *Almacenamiento > Volúmenes*.
 . En la lista de volúmenes, identifique cuál debe cambiar su tamaño.
 . Haga clic en el icono de opciones image:screenshot_gallery_options.gif["icono de kabob"].
@@ -140,7 +140,7 @@ Si necesita cambiar el tamaño de su volumen, puede hacerlo desde la vista avanz
 
 image:screenshot-resize-volume.png["Muestra la capacidad modificada tras cambiar el tamaño del volumen"]
 
-Asegúrese de tener en cuenta los límites de capacidad de su sistema mientras cambia el tamaño de los volúmenes. Vaya a la https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Notas de la versión de Cloud Volumes ONTAP"^] para obtener más detalles.
+Asegúrese de tener en cuenta los límites de capacidad de su sistema mientras cambia el tamaño de los volúmenes. Vaya a https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Notas de la versión de Cloud Volumes ONTAP"^] para obtener más información.
 
 
 
@@ -213,15 +213,15 @@ Cloud Volumes ONTAP actualiza el servidor CIFS con los cambios.
 
 Mueva volúmenes para mejorar el aprovechamiento de la capacidad, mejorar el rendimiento y cumplir los acuerdos de nivel de servicio.
 
-Puede mover un volumen en System Manager seleccionando un volumen y el agregado de destino, iniciando la operación de movimiento de volúmenes y, opcionalmente, supervisando el trabajo de movimiento de volúmenes. Cuando se usa System Manager, una operación de movimiento de volúmenes se completa automáticamente.
+Para mover un volumen en ONTAP System Manager, seleccione un volumen y el agregado de destino, inicie la operación de movimiento de volúmenes y, opcionalmente, supervise el trabajo de movimiento de volúmenes. Cuando se usa System Manager, una operación de movimiento de volúmenes se completa automáticamente.
 
 .Pasos
-. Utilice System Manager o la interfaz de línea de comandos para mover los volúmenes al agregado.
+. Use ONTAP System Manager o la interfaz de línea de comandos de ONTAP para mover los volúmenes al agregado.
 +
 En la mayoría de las situaciones, se puede usar System Manager para mover volúmenes.
 
 +
-Para ver instrucciones, consulte link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["Guía exprés de traslado de volúmenes de ONTAP 9"^].
+Para obtener instrucciones, consulte la link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["Guía exprés de traslado de volúmenes de ONTAP 9"^].
 
 
 
@@ -313,7 +313,7 @@ Para obtener más información, consulte link:https://docs.netapp.com/us-en/blue
 
 . Configure el volumen para el acceso a los datos.
 +
-Para obtener información sobre la configuración de un volumen de destino para el acceso a los datos, consulte link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["Guía exprés de recuperación de desastres de volúmenes de ONTAP 9"^].
+Para obtener información sobre la configuración de un volumen de destino para el acceso a los datos, consulte la link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["Guía exprés de recuperación de desastres de volúmenes de ONTAP 9"^].
 
 . Elimine el volumen original.
 +
@@ -356,10 +356,10 @@ image::screenshot_aggr_capacity.png[capacidad de agregación de captura de panta
 +
 Para obtener más información, consulte link:task-create-aggregates.html["Creación de agregados"^].
 
-. Utilice System Manager o la interfaz de línea de comandos para mover los volúmenes al agregado.
+. Use ONTAP System Manager o la interfaz de línea de comandos de ONTAP para mover los volúmenes al agregado.
 . En la mayoría de las situaciones, se puede usar System Manager para mover volúmenes.
 +
-Para ver instrucciones, consulte link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["Guía exprés de traslado de volúmenes de ONTAP 9"^].
+Para obtener instrucciones, consulte la link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["Guía exprés de traslado de volúmenes de ONTAP 9"^].
 
 
 
@@ -385,7 +385,7 @@ Se utiliza un esquema de nomenclatura anterior si se habilitó la organización 
 
 == Ver los volúmenes de FlexGroup
 
-Puede ver los volúmenes de FlexGroup creados a través de la CLI o de System Manager directamente a través de la pestaña volúmenes en BlueXP. Idéntico a la información proporcionada para volúmenes de FlexVol, BlueXP proporciona información detallada sobre los volúmenes de FleGroup creados mediante un icono de volúmenes dedicados. En el icono volúmenes, es posible identificar cada grupo de volúmenes FlexGroup mediante el texto sobre el ratón del icono. Además, puede identificar y ordenar los volúmenes de FlexGroup en la vista de lista Volumes a través de la columna estilo de volumen.
+Puede ver los volúmenes de FlexGroup creados a través de ONTAP System Manager o la interfaz de línea de comandos de ONTAP directamente a través de la pestaña Volumes en BlueXP . Idéntico a la información proporcionada para volúmenes de FlexVol, BlueXP proporciona información detallada sobre los volúmenes de FleGroup creados mediante un icono de volúmenes dedicados. En el icono volúmenes, es posible identificar cada grupo de volúmenes FlexGroup mediante el texto sobre el ratón del icono. Además, puede identificar y ordenar los volúmenes de FlexGroup en la vista de lista Volumes a través de la columna estilo de volumen.
 
 image::screenshot_show_flexgroup_vol.png[captura de pantalla que muestra FlexGroup vol]
 

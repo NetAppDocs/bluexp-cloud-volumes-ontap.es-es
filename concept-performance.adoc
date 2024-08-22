@@ -56,4 +56,4 @@ endif::gcp[]
 
 Los nodos de Cloud Volumes ONTAP se muestran como un gran uso (más del 90 %) de las herramientas de supervisión de su proveedor de cloud. Esto se debe a que ONTAP reserva todas las vCPU presentadas al equipo virtual para que estén disponibles cuando sea necesario.
 
-Para obtener ayuda, consulte https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/Monitoring_CPU_utilization_before_an_ONTAP_upgrade["Artículo de la base de conocimientos de NetApp acerca de cómo supervisar la utilización de CPU de ONTAP mediante la CLI"^]
+Para obtener más información, consulte la https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/Monitoring_CPU_utilization_before_an_ONTAP_upgrade["Artículo de la base de conocimientos de NetApp acerca de cómo supervisar la utilización de CPU de ONTAP mediante la CLI"^]

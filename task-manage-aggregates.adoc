@@ -23,7 +23,7 @@ CAUTION: Todos los discos y agregados deben crearse y eliminarse directamente de
 Si desea eliminar un agregado, primero debe haber eliminado los volúmenes del agregado.
 
 .Acerca de esta tarea
-Si se está quedando sin espacio un agregado, puede mover volúmenes a otro agregado mediante System Manager.
+Si un agregado se está quedando sin espacio, puede mover volúmenes a otro agregado mediante ONTAP System Manager.
 
 .Pasos
 . En el menú de navegación de la izquierda, selecciona *almacenamiento > Canvas*.

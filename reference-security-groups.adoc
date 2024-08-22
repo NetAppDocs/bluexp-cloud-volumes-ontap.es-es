@@ -40,10 +40,10 @@ Al crear un entorno de trabajo y elegir un grupo de seguridad predefinido, puede
 | Todos los ICMP | Todo | Hacer ping a la instancia 
 
 
-| HTTP | 80 | Acceso HTTP a la consola web de System Manager mediante el La dirección IP de la LIF de gestión del clúster 
+| HTTP | 80 | Acceso HTTP a la consola web de ONTAP System Manager mediante la dirección IP de la LIF de gestión de clúster 
 
 
-| HTTPS | 443 | Conectividad con el acceso HTTPS y el conector a la consola web de System Manager mediante la dirección IP de la LIF de gestión del clúster 
+| HTTPS | 443 | Conectividad con el acceso de conector y HTTPS a la consola web de ONTAP System Manager mediante la dirección IP de la LIF de gestión del clúster 
 
 
 | SSH | 22 | Acceso SSH a la dirección IP de administración del clúster LIF o una LIF de gestión de nodos 

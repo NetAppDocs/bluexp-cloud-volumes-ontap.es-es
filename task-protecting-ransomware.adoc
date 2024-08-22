@@ -76,7 +76,7 @@ Los volúmenes habilitados para ARP tienen un estado designado de “Modo de apr
 
 La configuración de ARP para volúmenes se realiza mediante System Manager de ONTAP y la CLI de ONTAP.
 
-Para obtener más información sobre cómo habilitar ARP con ONTAP System Manager y CLI, consulte https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["Habilite la protección de ransomware autónoma"^].
+Para obtener más información sobre cómo habilitar ARP con el administrador del sistema de ONTAP y la CLI de ONTAP, consulte https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["Habilite la protección de ransomware autónoma"^] .
 
 image::screenshot_arp.png[La captura de pantalla muestra la licencia complementaria para Autonomous Ransomware Protection.]
 

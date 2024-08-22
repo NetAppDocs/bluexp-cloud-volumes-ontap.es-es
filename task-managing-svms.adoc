@@ -26,7 +26,7 @@ Se admiten varios equipos virtuales de almacenamiento con determinadas configura
 
 == Trabaje con múltiples máquinas virtuales de almacenamiento
 
-BlueXP admite cualquier máquina virtual de almacenamiento adicional que cree desde System Manager o desde la CLI.
+BlueXP  es compatible con cualquier máquina virtual de almacenamiento adicional que se cree a partir de ONTAP System Manager o la CLI de ONTAP.
 
 Por ejemplo, la siguiente imagen muestra cómo puede elegir una máquina virtual de almacenamiento al crear un volumen.
 
@@ -40,4 +40,4 @@ image:screenshot_replicate_volume_svm.gif["Captura de pantalla que muestra la ca
 
 == Modifique el nombre de la máquina virtual de almacenamiento predeterminada
 
-BlueXP nombra automáticamente a la máquina virtual de almacenamiento única que crea para Cloud Volumes ONTAP. Desde System Manager, CLI o API, puede modificar el nombre de la máquina virtual de almacenamiento si tiene estándares de nomenclatura estrictos. Por ejemplo, podría que el nombre coincida con el nombre que se le da a las máquinas virtuales de almacenamiento de los clústeres de ONTAP.
+BlueXP nombra automáticamente a la máquina virtual de almacenamiento única que crea para Cloud Volumes ONTAP. Desde el Administrador del sistema de ONTAP, la interfaz de línea de comandos de ONTAP o la API, puede modificar el nombre de la máquina virtual de almacenamiento si tiene estrictos estándares de nomenclatura. Por ejemplo, podría que el nombre coincida con el nombre que se le da a las máquinas virtuales de almacenamiento de los clústeres de ONTAP.

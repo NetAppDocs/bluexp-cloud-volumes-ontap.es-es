@@ -31,14 +31,14 @@ En el caso de los pares de alta disponibilidad, el cambio no es disruptivo. Los 
 
 +
 
-TIP: BlueXP cambia con elegancia un nodo a la vez iniciando la toma de control y esperando la devolución. El equipo de control de calidad de NetApp ha probado la escritura y lectura de ficheros durante este proceso y no ha visto ningún problema por parte del cliente. A medida que cambiaron las conexiones, observamos el número de reintentos en el nivel de I/o, pero la capa de aplicación superó esta corta "repetición de la conexión" de conexiones NFS/CIFS.
+TIP: BlueXP  cambia de nodo en nodo al iniciar la toma de control y a la espera de devolución. El equipo de garantía de calidad de NetApp probó tanto la escritura como la lectura de archivos durante este proceso y no vio ningún problema en el lado del cliente. A medida que cambiaban las conexiones, se observaron algunos reintentos en el nivel de I/O, pero la capa de aplicaciones superó el recableado de las conexiones NFS/CIFS.
 
 
 
 .Referencia
-Para ver una lista de los tipos de instancia admitidos en AWS, consulte link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html#supported-ec2-compute["Instancias de EC2 admitidas"^].
+Para obtener una lista de los tipos de instancia admitidos en AWS, consulte link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html#supported-ec2-compute["Instancias de EC2 admitidas"^].
 
-Si no puede cambiar el tipo de instancia de las instancias C4, M4 o R4, consulte el artículo de la base de conocimientos link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Converting_an_AWS_Xen_CVO_instance_to_Nitro_(KVM)["Convertir una instancia de AWS Xen CVO a Nitro (KVM)"^].
+Si no puede cambiar el tipo de instancia de las instancias C4, M4 o R4, consulte el artículo de KB link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Converting_an_AWS_Xen_CVO_instance_to_Nitro_(KVM)["Convertir una instancia de AWS Xen CVO a Nitro (KVM)"^].
 
 .Pasos
 . En la página Canvas, seleccione el entorno de trabajo.

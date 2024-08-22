@@ -42,7 +42,7 @@ En el modo manual, si la relación de espacio libre en un agregado está por deb
 La relación entre el espacio libre se calcula de la siguiente forma:
 (capacidad de agregados: capacidad total utilizada en el agregado) / capacidad agregada
 
-Consulte link:concept-storage-management.html#automatic-capacity-management["Gestión de la capacidad automática"] Para aprender ahora, la capacidad se gestiona automáticamente en Cloud Volumes ONTAP.
+link:concept-storage-management.html#automatic-capacity-management["Gestión de la capacidad automática"]Consulte el para aprender ahora que la capacidad se gestiona automáticamente en Cloud Volumes ONTAP.
 
 --
 Umbrales de capacidad agregados: Ratio de espacio libre para la organización en niveles de datos:: Define cuánto espacio libre se requiere en el nivel de rendimiento (discos) al organizar los datos en niveles en un nivel de capacidad (almacenamiento de objetos).

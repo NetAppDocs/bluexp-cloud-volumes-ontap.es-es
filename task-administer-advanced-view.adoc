@@ -48,7 +48,7 @@ Configure los iGroups SAN y los clientes NFS.
 
 == Configuraciones admitidas
 
-La gestión avanzada mediante System Manager se puede realizar con Cloud Volumes ONTAP 9.10.0 y versiones posteriores en regiones de cloud estándar.
+La gestión avanzada a través del administrador del sistema de ONTAP es compatible con Cloud Volumes ONTAP 9.10.0 y versiones posteriores en regiones del cloud estándar.
 
 La integración de System Manager no es compatible en regiones GovCloud o regiones que no tienen acceso saliente a Internet.
 

@@ -65,20 +65,23 @@ Tipo de máquina virtual:: Observe los tipos de máquina virtual admitidos en la
 Tipo de disco de Azure con sistemas de nodo único:: Cuando crea volúmenes para Cloud Volumes ONTAP, debe elegir el almacenamiento en cloud subyacente que Cloud Volumes ONTAP utiliza como disco.
 +
 --
-Los sistemas de un solo nodo pueden usar tres tipos de discos gestionados de Azure:
+Los sistemas de un solo nodo pueden utilizar los siguientes tipos de discos gestionados de Azure:
 
 * _Premium SSD Managed Disks_ proporciona un alto rendimiento para cargas de trabajo con un gran volumen de I/o a un coste más elevado.
+* _Premium SSD v2 Managed Disks_ Proporciona un mayor rendimiento con menor latencia a un menor costo, en comparación con los discos gestionados SSD Premium.
 * _Standard SSD Managed Disks_ proporciona un rendimiento constante para cargas de trabajo que requieren un bajo nivel de IOPS.
 * _Standard HDD Managed Disks_ es una buena opción si no necesita un alto nivel de IOPS y desea reducir sus costes.
 
 
-Si quiere más información sobre los casos de uso de estos discos, consulte https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Documentación de Microsoft Azure: ¿qué tipos de discos están disponibles en Azure?"^].
+Para obtener más información sobre los casos de uso de estos discos, consulte https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Documentación de Microsoft Azure: ¿qué tipos de discos están disponibles en Azure?"^] .
 
 --
 Tipo de disco de Azure con pares de alta disponibilidad:: Los sistemas DE ALTA DISPONIBILIDAD utilizan discos gestionados compartidos SSD de Premium, que proporcionan un alto rendimiento para las cargas de trabajo con un gran volumen de I/o a un coste más elevado. Las implementaciones DE ALTA DISPONIBILIDAD creadas antes de la versión 9.12.1 utilizan Blobs de página Premium.
-Tamaño de disco de Azure:: Al iniciar las instancias de Cloud Volumes ONTAP, debe elegir el tamaño de disco predeterminado para los agregados. BlueXP usa este tamaño de disco para el agregado inicial y para cualquier agregado adicional que cree cuando utilice la opción de aprovisionamiento simple. Puede crear agregados con un tamaño de disco diferente desde el valor predeterminado por link:task-create-aggregates.html["mediante la opción de asignación avanzada"].
+Tamaño de disco de Azure::
 +
 --
+Al iniciar las instancias de Cloud Volumes ONTAP, debe elegir el tamaño de disco predeterminado para los agregados. BlueXP usa este tamaño de disco para el agregado inicial y para cualquier agregado adicional que cree cuando utilice la opción de aprovisionamiento simple. Puede crear agregados con un tamaño de disco diferente desde el valor predeterminado por link:task-create-aggregates.html["mediante la opción de asignación avanzada"].
+
 
 TIP: Todos los discos de un agregado deben tener el mismo tamaño.
 

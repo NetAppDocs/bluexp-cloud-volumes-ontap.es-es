@@ -139,7 +139,7 @@ Para obtener más información sobre el rendimiento de Cloud Volumes ONTAP, cons
 Los clientes deben acceder a los volúmenes NFS y CIFS mediante la dirección IP de datos del nodo en el que reside el volumen. Si los clientes NAS acceden a un volumen utilizando la dirección IP del nodo del partner, el tráfico se dirige entre ambos nodos, lo que reduce el rendimiento.
 
 
-TIP: Si mueve un volumen entre nodos de una pareja de ha, debe volver a montar el volumen con la dirección IP del otro nodo. De lo contrario, puede experimentar un rendimiento reducido. Si los clientes admiten las referencias de NFSv4 o la redirección de carpetas para CIFS, puede activar estas funciones en los sistemas de Cloud Volumes ONTAP para evitar el remontaje del volumen. Para obtener más detalles, consulte la documentación de ONTAP.
+TIP: Si mueve un volumen entre nodos de una pareja de ha, debe volver a montar el volumen con la dirección IP del otro nodo. De lo contrario, puede experimentar un rendimiento reducido. Si los clientes admiten las referencias de NFSv4 o la redirección de carpetas para CIFS, puede activar estas funciones en los sistemas de Cloud Volumes ONTAP para evitar el remontaje del volumen. Para obtener más información, consulte la documentación de ONTAP.
 
 Puede identificar fácilmente la dirección IP correcta a través de la opción _Mount Command_ del panel Manage Volumes de BlueXP.
 

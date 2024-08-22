@@ -25,7 +25,7 @@ Tenga en cuenta que si desea implementar Cloud Volumes ONTAP en una subred en la
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Planificación de la configuración
 [role="quick-margin-para"]
-BlueXP ofrece paquetes preconfigurados que se ajustan a sus necesidades de carga de trabajo, o puede crear su propia configuración. Si elige su propia configuración, debe conocer las opciones disponibles. link:task-planning-your-config-azure.html["Leer más"].
+BlueXP ofrece paquetes preconfigurados que se ajustan a sus necesidades de carga de trabajo, o puede crear su propia configuración. Si elige su propia configuración, debe conocer las opciones disponibles. Para obtener más información, consulte link:task-planning-your-config-azure.html["Planifique la configuración de Cloud Volumes ONTAP en Azure"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Configure su red
 [role="quick-margin-list"]
