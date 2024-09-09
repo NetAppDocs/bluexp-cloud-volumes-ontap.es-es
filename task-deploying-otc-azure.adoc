@@ -308,9 +308,6 @@ En el siguiente vídeo se muestra cómo asociar una suscripción de Marketplace 
 video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 . *Servicios*: Habilita o deshabilita los servicios individuales en función de si quieres usarlos con Cloud Volumes ONTAP.
 +
-A partir de Cloud Volumes ONTAP 9.15.1, puede implementar instancias de equipos virtuales en zonas de disponibilidad únicas de almacenamiento redundante local (LRS). Esto también requiere que `Microsoft.Compute/VMOrchestratorZonalMultiFD` se active la función para su suscripción. Esta función facilita la puesta en marcha de pares de alta disponibilidad en la misma zona de disponibilidad. Consulte link:task-saz-feature.html["Activar VMOrchestratorZonalMultiFD para zonas de disponibilidad únicas"]y.link:task-azure-high-availability-mode.html["Habilitar el modo de alta disponibilidad en Azure"]
-
-+
 ** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Más información sobre la clasificación de BlueXP"^]
 ** https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["Más información sobre el backup y la recuperación de datos de BlueXP"^]
 +
@@ -323,9 +320,9 @@ TIP: Si quieres utilizar WORM y organización de datos en niveles, debes deshabi
 +
 .. Seleccione *Zona de disponibilidad única* o *Zona de disponibilidad múltiple*.
 +
-*** Para zonas de disponibilidad únicas, seleccione una región de Azure, una zona de disponibilidad, vnet y una subred. A partir de Cloud Volumes ONTAP 9.15.1, puede instalar instancias de VM en una sola zona de disponibilidad. Debe seleccionar una región que admita este modo. Si la región seleccionada por usted no soporta el despliegue zonal, entonces se sigue el modelo de despliegue no zonal anterior para LRS.
+*** Para zonas de disponibilidad únicas, seleccione una región de Azure, una zona de disponibilidad, vnet y una subred.
 +
-Para obtener más información sobre este modo de implementación y las zonas de Azure compatibles, consulte https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Documentación de Microsoft Azure: Documentación de Virtual Machine Scale Sets"^] y https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Sitio web de Microsoft Azure: Productos disponibles por región"^].
+A partir de Cloud Volumes ONTAP 9.15.1, puede poner en marcha instancias de máquinas virtuales (VM) en modo HA en zonas de disponibilidad única (AZs) en Azure. Debe seleccionar una zona y una región que soporten este despliegue. Si la zona o la región no admiten el despliegue zonal, se sigue el modo de despliegue no zonal anterior para LRS. Para conocer las configuraciones compatibles para discos gestionados compartidos, consulte link:concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks["Configuración DE zona de disponibilidad única DE ALTA DISPONIBILIDAD con discos gestionados compartidos"].
 
 *** Para varias zonas de disponibilidad, seleccione una región, vnet, subred, zona para el nodo 1 y zona para el nodo 2.
 

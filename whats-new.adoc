@@ -20,6 +20,23 @@ Las mejoras descritas en esta página son específicas de las funciones de BlueX
 
 
 
+== 9 de septiembre de 2024
+
+
+
+=== Las funcionalidades WORM y ARP ya no se pueden cargar
+
+Las funciones de seguridad y protección de datos incorporadas de WORM (escritura única lectura múltiple) y ARP (protección autónoma contra ransomware) se incluirán con todas las licencias de Cloud Volumes ONTAP sin coste adicional. Esto será aplicable a las puestas en marcha de BYOL y PAYGO/MARKET nuevas y existentes tanto para licencias basadas en nodos como en capacidad. El nuevo modelo de precios es aplicable a todos los proveedores de cloud y los tipos de puesta en marcha, incluidas las configuraciones de nodo único y de alta disponibilidad.
+
+Estarán disponibles los siguientes beneficios:
+
+* Las cuentas existentes con WORM y ARP ya no se cobrarán por estas características. Se le facturará por el uso de capacidad de la forma que fuera aplicable antes de este cambio. WORM y ARP se excluirán en la facturación futura.
+* Si no tiene estas funciones habilitadas en sus cuentas existentes, ahora puede optar por WORM y ARP sin costo adicional.
+* En el caso de cuentas nuevas, los cargos POR WORM y ARP se eliminarán de todas las ofertas de Cloud Volumes ONTAP.
+
+
+
+
 == 23 de agosto de 2024
 
 

@@ -26,26 +26,6 @@ Una vez transcurrido el período de retención, es responsable de eliminar los a
 
 
 
-== Cargando
-
-La carga del almacenamiento WORM se realiza por horas, según la capacidad total aprovisionada de los volúmenes WORM.
-
-Disponible solo para PAYGO o términos de compromiso anuales, la licencia de WORM se puede comprar a través del mercado del proveedor de cloud. WORM admite modelos de licencias basados en nodos y en capacidad.
-
-
-NOTE: La licencia de licencia propia no está disponible para el ALMACENAMIENTO WORM en Cloud Volumes ONTAP.
-
-Debe comprender el siguiente comportamiento de carga con Cloud Volumes ONTAP 9.10.1 y versiones posteriores:
-
-* A partir de ONTAP 9.10.1, pueden existir volúmenes WORM y volúmenes sin WORM en el mismo agregado.
-* Si activa WORM al crear un entorno de trabajo de Cloud Volumes ONTAP, todos los volúmenes que cree desde BlueXP tienen WORM activado. Sin embargo, se puede usar la CLI o System Manager de ONTAP para crear volúmenes con WORM deshabilitado. Esos volúmenes no se cargan a la velocidad WORM
-* Si no activa WORM al crear un entorno de trabajo, todos los volúmenes que cree desde BlueXP tienen WORM desactivado. No está cargado a la tasa WORM para esos volúmenes.
-
-
-https://cloud.netapp.com/pricing["Más información sobre los precios del almacenamiento WORM"^]
-
-
-
 == Activación del almacenamiento WORM
 
 La forma de activar el almacenamiento WORM depende de la versión de Cloud Volumes ONTAP que utilice.
@@ -61,8 +41,6 @@ Cuando crea un nuevo entorno de trabajo Cloud Volumes ONTAP, se le pedirá que h
 * Si activa el almacenamiento WORM al crear un entorno de trabajo, todos los volúmenes que cree desde BlueXP tienen WORM activado. Pero puede usar ONTAP System Manager o la interfaz de línea de comandos de ONTAP para crear volúmenes que tengan WORM deshabilitado.
 * Si deshabilita el ALMACENAMIENTO WORM al crear un entorno de trabajo, cada volumen que cree desde BlueXP , ONTAP System Manager o la interfaz de línea de comandos de ONTAP tendrá WORM deshabilitado. Si desea habilitar WORM en un entorno de trabajo de Cloud Volumes ONTAP que no se habilitó durante la creación, debe solicitar ayuda al cliente para abrir una incidencia de soporte con el soporte de NetApp.
 
-
-Con cualquiera de las dos opciones, debería <<Cargando,comprender cómo funciona la carga>>.
 
 
 

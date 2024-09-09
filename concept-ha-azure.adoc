@@ -61,6 +61,16 @@ Tenga en cuenta lo siguiente acerca de los componentes de Azure que BlueXP pone 
 
 Equilibrador de carga estándar de Azure:: El equilibrador de carga gestiona el tráfico entrante en el par ha de Cloud Volumes ONTAP.
 Equipos virtuales en zonas de disponibilidad individuales:: A partir de Cloud Volumes ONTAP 9.15.1, puede crear y gestionar máquinas virtuales (VM) heterogéneas en una única zona de disponibilidad (AZ). Los nodos de alta disponibilidad (HA) se pueden poner en marcha en dominios de fallo independientes en la misma zona de disponibilidad, lo que garantiza una disponibilidad óptima. Para obtener más información sobre el modo de orquestación flexible que permite esta capacidad, consulte https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Documentación de Microsoft Azure: Conjuntos de escalas de máquinas virtuales"^] .
++
+--
+La implementación de zona utiliza discos gestionados Premium SSD v2 cuando se cumplen las siguientes condiciones:
+
+* La versión de Cloud Volumes ONTAP es 9.15.1 o posterior.
+* La región y zona seleccionadas admiten discos gestionados Premium SSD v2. Para obtener información sobre las regiones admitidas, consulte  https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Sitio web de Microsoft Azure: Productos disponibles por región"^].
+* La suscripción está registrada para Microsoft link:task-saz-feature.html["Función Microsoft.Compute/VMOrchestratorZonalMultiFD"].
+
+
+--
 Discos:: Los datos del cliente residen en discos gestionados de almacenamiento redundante local (LRS). Cada nodo tiene acceso al almacenamiento del otro nodo. También se requiere almacenamiento adicional para link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["Datos de arranque, raíz, raíz del partner, núcleo y NVRAM"^].
 Cuentas de almacenamiento:: Las cuentas de almacenamiento se usan para implementaciones basadas en disco gestionadas para manejar registros de diagnóstico y organización en niveles para el almacenamiento BLOB.
 

@@ -97,6 +97,9 @@ NOTE: La conmutación por error de LIF está deshabilitada de forma predetermina
 +
 Se puede acceder a las copias de seguridad desde \http://ipaddress/occm/offboxconfig/, donde _ipaddress_ es la dirección IP del host del conector.
 
++
+Puede utilizar los backups para reconfigurar el sistema Cloud Volumes ONTAP. Para obtener más información sobre las copias de seguridad de configuración, consulte https://docs.netapp.com/us-en/ontap/system-admin/config-backup-file-concept.html["Documentación de ONTAP"] .
+
 ** BlueXP  establece varios atributos de volumen de forma diferente a otras herramientas de gestión (Administrador del sistema de ONTAP o la interfaz de línea de comandos de ONTAP, por ejemplo).
 +
 En la siguiente tabla se enumeran los atributos de volumen que BlueXP establece de forma diferente a los valores predeterminados:
@@ -229,9 +232,15 @@ NOTE: Las Snapshot se crean automáticamente al reiniciar.
 * Dos discos gestionados compartidos SSD Premium de 512 GiB para el volumen raíz (uno por nodo)
 * Dos discos HDD estándar de 1024 GIB para ahorrar núcleos (uno por nodo)
 * Dos discos gestionados SSD Premium de 512 GiB para NVRAM (uno por nodo)
-+
+
+
 Si su máquina virtual admite discos gestionados Premium SSD v2 como discos de datos, utiliza 32 discos gestionados Premium SSD v2 de GiB para NVRAM y 512 discos gestionados compartidos SSD Premium v2 de GiB para el volumen raíz.
 
+Puede implementar pares de alta disponibilidad en una sola zona de disponibilidad y utilizar discos gestionados Premium SSD v2 cuando se cumplan las siguientes condiciones:
+
+* La versión de Cloud Volumes ONTAP es 9.15.1 o posterior.
+* La región y zona seleccionadas admiten discos gestionados Premium SSD v2. Para obtener información sobre las regiones admitidas, consulte  https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Sitio web de Microsoft Azure: Productos disponibles por región"^].
+* La suscripción está registrada para Microsoft link:task-saz-feature.html["Función Microsoft.Compute/VMOrchestratorZonalMultiFD"].
 
 
 endif::azure[]

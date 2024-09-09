@@ -100,9 +100,10 @@ Parejas de HA:: Los pares de ALTA DISPONIBILIDAD usan dos tipos de discos que pr
 
 *Enlaces relacionados*
 
+* link:task-planning-your-config-azure.html["Aprenda a elegir tipos de disco y tamaños de disco para Sus sistemas en Azure"]
+* link:task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure["Iniciar una pareja de alta disponibilidad de Cloud Volumes ONTAP en Azure"]
 * https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Documentación de Microsoft Azure: Tipos de discos gestionados de Azure"^]
 * https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-pageblob-overview["Documentación de Microsoft Azure: Información general de los blobs de página de Azure"^]
-* link:task-planning-your-config-azure.html["Aprenda a elegir tipos de disco y tamaños de disco para Sus sistemas en Azure"]
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Revise los límites de almacenamiento de Cloud Volumes ONTAP en Azure"^]
 
 
