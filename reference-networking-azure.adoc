@@ -26,6 +26,60 @@ Los siguientes requisitos de red deben satisfacerse en Azure.
 
 === Acceso a Internet de salida
 
+Los nodos Cloud Volumes ONTAP requieren acceso a Internet saliente para acceder a puntos finales externos para diversas funciones. Cloud Volumes ONTAP no puede funcionar correctamente si estos puntos finales están bloqueados en entornos con estrictos requisitos de seguridad.
+
+
+
+==== Puntos finales de Cloud Volumes ONTAP
+
+Cloud Volumes ONTAP requiere acceso a Internet saliente para contactar con varios terminales para las operaciones diarias.
+
+Los siguientes extremos son específicos de Cloud Volumes ONTAP. El conector también contacta con varios puntos finales para las operaciones diarias, así como con la consola basada en web de BlueXP . Consulte https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-3-set-up-networking["Ver puntos finales contactados desde el conector"^] y. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-networking-saas-console.html["Prepare las redes para usar la consola de BlueXP"^]
+
+[cols="5*"]
+|===
+| Puntos finales | Aplicable para | Específico | Modos de implementación de BlueXP | Impacto si no está disponible 
+
+
+| \https://netapp-cloud-account.auth0.com | Autenticación  a| 
+Se utiliza para la autenticación BlueXP .
+| Modos estándar y restringidos.  a| 
+La autenticación de usuario falla y los siguientes servicios no están disponibles:
+
+* Servicios Cloud Volumes ONTAP
+* Servicios ONTAP
+* Protocolos y servicios de proxy
+
+
+
+
+| \https://keyvault-production-aks.vault.azure.net | Almacén de claves | Se utiliza para recuperar la clave secreta del cliente del almacén de claves de Azure para comunicarse con los bloques de S3 para gestionar metadatos. El servicio Cloud Volumes ONTAP utiliza este componente internamente. | Modos estándar, restringido y privado. | Los servicios Cloud Volumes ONTAP no están disponibles. 
+
+
+| \https://cloudmanager.cloud.netapp.com/tenancy | Cliente | Se utiliza para recuperar los recursos de Cloud Volumes ONTAP de la tenencia de BlueXP  para autorizar recursos y usuarios. | Modos estándar y restringidos. | Los recursos de Cloud Volumes ONTAP y los usuarios no están autorizados. 
+
+
+| \https://support.NetApp.com/aods/asupmessage \https://support.NetApp.com/asupprod/post/1,0/postAsup | AutoSupport | Se utiliza para enviar datos de telemetría de AutoSupport a soporte técnico de NetApp. | Modos estándar y restringidos. | La información de AutoSupport sigue sin entregarse. 
+
+
+| \https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | Regiones públicas | Comunicación con servicios de Azure. | Modos estándar, restringido y privado. | Cloud Volumes ONTAP no se puede comunicar con el servicio de Azure para realizar operaciones específicas de BlueXP  en Azure. 
+
+
+| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | Región de China | Comunicación con servicios de Azure. | Modos estándar, restringido y privado. | Cloud Volumes ONTAP no se puede comunicar con el servicio de Azure para realizar operaciones específicas de BlueXP  en Azure. 
+
+
+| \https://management.microsoftazure.de \https://login.microsoftonline.de \https://blob.core.cloudapi.de \https://core.cloudapi.de | Región de Alemania | Comunicación con servicios de Azure. | Modos estándar, restringido y privado. | Cloud Volumes ONTAP no se puede comunicar con el servicio de Azure para realizar operaciones específicas de BlueXP  en Azure. 
+
+
+| \https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net | Regiones gubernamentales | Comunicación con servicios de Azure. | Modos estándar, restringido y privado. | Cloud Volumes ONTAP no se puede comunicar con el servicio de Azure para realizar operaciones específicas de BlueXP  en Azure. 
+
+
+| \https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud | Regiones gubernamentales del Departamento de Defensa | Comunicación con servicios de Azure. | Modos estándar, restringido y privado. | Cloud Volumes ONTAP no se puede comunicar con el servicio de Azure para realizar operaciones específicas de BlueXP  en Azure. 
+|===
+
+
+==== Acceso a Internet saliente para NetApp AutoSupport
+
 Los nodos Cloud Volumes ONTAP requieren acceso a Internet de salida para AutoSupport de NetApp, que supervisa de forma proactiva el estado del sistema y envía mensajes al soporte técnico de NetApp.
 
 Las políticas de enrutamiento y firewall deben permitir el tráfico HTTP/HTTPS a los siguientes extremos para que Cloud Volumes ONTAP pueda enviar mensajes de AutoSupport:

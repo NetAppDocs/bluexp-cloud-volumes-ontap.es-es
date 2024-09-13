@@ -313,7 +313,7 @@ La relación entre el espacio libre y la organización en niveles de los datos d
 Por ejemplo, es posible que elija menos del 10 % de espacio libre para garantizar que utiliza la capacidad adquirida. BlueXP puede entonces comprar discos adicionales para usted cuando se requiera capacidad adicional (hasta que alcance el límite de disco para el agregado).
 
 
-CAUTION: Si no hay espacio suficiente, Cloud Volumes ONTAP no puede mover los datos y podría experimentar una degradación del rendimiento. Cualquier cambio debe hacerse con precaución. Si no está seguro, póngase en contacto con el servicio de soporte de NetApp para obtener instrucciones.
+CAUTION: Si no hay espacio suficiente, Cloud Volumes ONTAP no puede mover los datos y se podría degradar el rendimiento. Cualquier cambio debe hacerse con precaución. En caso de duda, póngase en contacto con el servicio de soporte de NetApp para obtener ayuda.
 
 La relación es importante en escenarios de recuperación ante desastres, ya que a medida que se leen los datos del almacén de objetos, Cloud Volumes ONTAP traslada los datos a SSD/HDD para proporcionar un mejor rendimiento. Si no hay espacio suficiente, Cloud Volumes ONTAP no puede mover los datos. Tenga esto en cuenta a la hora de cambiar la proporción para que pueda satisfacer sus requisitos empresariales.
 

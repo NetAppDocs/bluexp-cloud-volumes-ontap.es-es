@@ -17,7 +17,7 @@ summary: Puede descargar el archivo de resumen de imágenes de Azure en el sitio
 El archivo Azure Image Digest File se puede descargar de la https://mysupport.netapp.com/site/["Sitio de soporte de NetApp"^]. La descarga está en formato tar.gz y contiene archivos para la verificación de firma de imagen.
 
 .Pasos
-. Vaya a la https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["Página del producto de Cloud Volumes ONTAP en el sitio de soporte de NetApp"^] Y descargue la versión de software deseada en la sección Descargas.
+. Vaya a https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["Página del producto de Cloud Volumes ONTAP en el sitio de soporte de NetApp"^] y descargue la versión de software necesaria en la sección Descargas.
 . En la página de descarga de Cloud Volumes ONTAP, haga clic en el botón *download* para el archivo de resumen de imágenes de Azure para descargar el TAR. Archivo GZ.
 +
 image::screenshot_cloud_volumes_ontap_tar.gz.png[captura de pantalla Cloud Volumes ONTAP tar.gz]

@@ -402,6 +402,9 @@ endif::gcp[]
 
 La licencia basada en nodos es el modelo de licencia de la generación anterior que le permitió obtener licencias de Cloud Volumes ONTAP por nodo. Este modelo de licencia no está disponible para nuevos clientes. La carga por nodos se ha sustituido por los métodos de carga por capacidad descritos anteriormente.
 
+
+IMPORTANT: NetApp dejará de usar las licencias basadas en nodos en breve, que serán reemplazadas por licencias basadas en capacidad. Para obtener más información, consulte https://mysupport.netapp.com/info/communications/CPC-00589.html["Comunicado del cliente: CPC-00589"^].
+
 La licencia basada en nodos sigue estando disponible para los clientes existentes:
 
 * Si tiene una licencia activa, BYOL solo está disponible para renovaciones de licencias.
