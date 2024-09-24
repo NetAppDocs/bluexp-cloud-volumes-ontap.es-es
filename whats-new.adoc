@@ -77,9 +77,9 @@ Los paquetes de licencia basados en la capacidad de Edge Cache ya no estarán di
 
 
 
-=== Versión mínima de ONTAP compatible para Flash Cache en Azure
+=== Compatibilidad con versiones mínimas para Flash Cache en Azure
 
-La versión mínima de ONTAP requerida para configurar Flash Cache en Azure es 9.13.1 GA. Solo puede usar ONTAP 9.13,1 GA y versiones posteriores para implementar Flash Cache en sistemas Cloud Volumes ONTAP para Azure.
+La versión mínima de Cloud Volumes ONTAP requerida para configurar Flash Cache en Azure es 9.13.1 GA. Solo puede usar ONTAP 9.13,1 GA y versiones posteriores para implementar Flash Cache en sistemas Cloud Volumes ONTAP para Azure.
 
 Para obtener información sobre las configuraciones compatibles, consulte https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Configuraciones compatibles en Azure"^].
 
