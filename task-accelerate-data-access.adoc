@@ -26,8 +26,6 @@ También puede usar la interfaz de línea de comandos de ONTAP o ONTAP System Ma
 * http://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-07F4C213-076D-4FE8-A8E3-410F49498D49.html["Creación de volúmenes de FlexCache en System Manager"^]
 
 
-BlueXP genera una licencia de FlexCache para todos los nuevos sistemas Cloud Volumes ONTAP. La licencia incluye un límite de uso de 500 GIB.
-
 video::PBNPVRUeT1o[youtube,width=848,height=480]
 
 
@@ -58,7 +56,7 @@ Para Google Cloud, es el servicio de gestión de claves de Google Cloud. Para ob
 endif::gcp[]
 
 . *Servicios de gestión de claves*: Antes de crear un volumen FlexCache, verifique que los servicios de gestión de claves estén configurados correctamente en el sistema Cloud Volumes ONTAP. Esta configuración es esencial para que el volumen FlexCache descifre los datos del volumen de origen.
-. *Licencia*: Confirma que hay una licencia válida de FlexCache disponible y activada en el sistema Cloud Volumes ONTAP. BlueXP genera una licencia de FlexCache para todos los sistemas nuevos de Cloud Volumes ONTAP con un límite de uso de 500 GiB.
+. *Licencia*: Confirma que hay una licencia válida de FlexCache disponible y activada en el sistema Cloud Volumes ONTAP.
 . *Versión ONTAP*: Asegúrate de que la versión ONTAP de tu sistema Cloud Volumes ONTAP sea compatible con FlexCache con volúmenes cifrados. Consulte la última versión https://docs.netapp.com/us-en/ontap/release-notes/index.html["Notas de la versión de ONTAP"^] o la matriz de compatibilidad si desea obtener más información.
 . *Configuración de red*: Asegúrese de que la configuración de red permite una comunicación perfecta entre el volumen de origen y el volumen FlexCache. Esto incluye el enrutamiento y la resolución DNS adecuados en un entorno de nube.
 

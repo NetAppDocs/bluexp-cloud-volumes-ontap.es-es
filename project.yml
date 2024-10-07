@@ -81,7 +81,7 @@ sidebar:
         url: "/task-set-up-azure-encryption.html"
       - title: Configurar la licencia
         url: "/task-set-up-licensing-azure.html"
-      - title: Activar el modo de alta disponibilidad
+      - title: Habilite el modo de alta disponibilidad
         url: "/task-azure-high-availability-mode.html"
       - title: Activar VMOrchestratorZonalMultiFD para zonas de disponibilidad únicas
         url: "/task-saz-feature.html"

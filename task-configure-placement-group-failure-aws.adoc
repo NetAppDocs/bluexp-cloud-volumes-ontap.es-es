@@ -14,7 +14,7 @@ summary: Cloud Volumes ONTAP utiliza un enlace privado de Azure para las conexio
 
 
 [role="lead"]
-Cloud Volumes ONTAP falla y revierte las nuevas implementaciones de configuraciones de alta disponibilidad (ha) de AWS en una única zona de disponibilidad (AZ) siempre que se produce un error en la creación del grupo de colocación. Si es necesario, puede forzar la finalización correcta de las implementaciones configurando grupos de colocación para omitir el proceso de reversión cada vez que se produzca un error en la creación.
+Cloud Volumes ONTAP produce errores y reinvierte las nuevas implementaciones de las configuraciones de alta disponibilidad (HA) de AWS en una sola zona de disponibilidad (AZ) siempre que se produce un error en la creación del grupo de colocación. Si es necesario, puede forzar la finalización correcta de las implementaciones configurando grupos de colocación para omitir el proceso de reversión cada vez que se produzca un error en la creación.
 
 
 

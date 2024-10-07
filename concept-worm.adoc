@@ -34,7 +34,7 @@ La forma de activar el almacenamiento WORM depende de la versión de Cloud Volum
 
 === Versión 9.10.1 y posterior
 
-A partir de Cloud Volumes ONTAP 9.10.1, tiene la opción de habilitar o deshabilitar WORM en el nivel del volumen.
+A partir de Cloud Volumes ONTAP 9.10.1, tiene la opción de habilitar o deshabilitar WORM en el nivel de volumen.
 
 Cuando crea un nuevo entorno de trabajo Cloud Volumes ONTAP, se le pedirá que habilite o deshabilite el almacenamiento WORM:
 
