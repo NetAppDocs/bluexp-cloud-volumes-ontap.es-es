@@ -117,7 +117,7 @@ En la siguiente tabla se enumeran los atributos de volumen que BlueXP establece 
 1,000 por ciento
 
 
-NOTE: El administrador de cuentas puede modificar este valor en la página Configuración.
+NOTE: La organización de BlueXP  o el administrador de la cuenta pueden modificar este valor en la página Configuración.
 
 
 

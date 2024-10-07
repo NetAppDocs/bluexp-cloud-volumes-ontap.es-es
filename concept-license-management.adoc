@@ -55,7 +55,7 @@ image:screenshot_warning.gif["Captura de pantalla: Muestra un entorno de trabajo
 
 Puede seleccionar el entorno de trabajo para revisar el mensaje.
 
-BlueXP incluye una advertencia de caducidad de la licencia en el informe de Cloud Volumes ONTAP que se le envía por correo electrónico, si es administrador de la cuenta y ha habilitado la opción:
+BlueXP  incluye una advertencia de caducidad de la licencia en el informe de Cloud Volumes ONTAP que se le envía por correo electrónico, si es una organización de BlueXP  o un administrador de cuenta y habilitó la opción:
 
 image:screenshot_cvo_report.gif["Captura de pantalla del panel de perfil de usuario que muestra la casilla de verificación para habilitar el informe Cloud Volumes ONTAP por correo electrónico."]
 

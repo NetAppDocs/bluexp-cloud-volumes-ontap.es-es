@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-overriding-cifs-locks.html 
 keywords: CIFS locks, azure maintenance, maintenance events, cifs sessions, storage failover, storage giveback, giveback 
-summary: El administrador de la cuenta puede habilitar una configuración en BlueXP que evite problemas con la devolución del almacenamiento de Cloud Volumes ONTAP durante eventos de mantenimiento de Azure. Cuando se habilita este ajuste, Cloud Volumes ONTAP veta CIFS locks y restablece las sesiones CIFS activas. 
+summary: La organización de BlueXP  o el administrador de cuenta pueden habilitar una configuración en BlueXP  que evita problemas relacionados con el retorno al almacenamiento de Cloud Volumes ONTAP durante los eventos de mantenimiento de Azure. Cuando se habilita este ajuste, Cloud Volumes ONTAP veta CIFS locks y restablece las sesiones CIFS activas. 
 ---
 = Anulación de los bloqueos de CIFS para los pares de alta disponibilidad de Cloud Volumes ONTAP en Azure
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: El administrador de la cuenta puede habilitar una configuración en Blu
 
 
 [role="lead"]
-El administrador de la cuenta puede habilitar una configuración en BlueXP que evite problemas con la devolución del almacenamiento de Cloud Volumes ONTAP durante eventos de mantenimiento de Azure. Cuando se habilita este ajuste, Cloud Volumes ONTAP veta CIFS locks y restablece las sesiones CIFS activas.
+La organización de BlueXP  o el administrador de cuenta pueden habilitar una configuración en BlueXP  que evita problemas relacionados con el retorno al almacenamiento de Cloud Volumes ONTAP durante los eventos de mantenimiento de Azure. Cuando se habilita este ajuste, Cloud Volumes ONTAP veta CIFS locks y restablece las sesiones CIFS activas.
 
 .Acerca de esta tarea
 Microsoft Azure programa eventos de mantenimiento periódicos en sus máquinas virtuales. Cuando se produce un evento de mantenimiento en un par de alta disponibilidad de Cloud Volumes ONTAP, el par de alta disponibilidad inicia la toma de control del almacenamiento. Si hay sesiones CIFS activas durante este evento de mantenimiento, los bloqueos de archivos CIFS pueden evitar la devolución del almacenamiento.

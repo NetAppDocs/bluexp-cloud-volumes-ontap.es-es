@@ -52,7 +52,7 @@ En BlueXP, haz clic en el servicio *Digital Advisor*.
 +
 image:screenshot_aiq_digital_advisor.png["Una captura de pantalla de la interfaz de usuario del Asesor digital en BlueXP."]
 
-* Si no has registrado una cuenta de NSS en BlueXP , registra ahora una cuenta de NSS y, a continuación, aparecerá la interfaz de usuario del asesor digital. Consulte https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["Administrar las credenciales de NSS asociadas con una cuenta de BlueXP"] para obtener las instrucciones.
+* Si no has registrado una cuenta de NSS en BlueXP , registra ahora una cuenta de NSS y, a continuación, aparecerá la interfaz de usuario del asesor digital. Consulte https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["Gestione las credenciales de NSS asociadas a una organización o cuenta de BlueXP"] para obtener las instrucciones.
 
 
 

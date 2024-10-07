@@ -48,9 +48,6 @@ endif::aws[]
 
 BlueXP determina dónde colocar un nuevo volumen examinando varios factores: El tamaño máximo de un agregado, si está activado el thin provisioning y los umbrales de espacio libre para los agregados.
 
-
-TIP: El administrador de cuentas puede modificar los umbrales de espacio libre desde la página *Configuración*.
-
 ifdef::aws[]
 
 
@@ -91,7 +88,7 @@ En lugar de dejar que BlueXP gestione los agregados, podrá hacerlo usted mismo.
 
 == Gestión de la capacidad
 
-El administrador de cuentas puede elegir si BlueXP notifica las decisiones sobre la capacidad de almacenamiento o si BlueXP gestiona automáticamente los requisitos de capacidad.
+La organización de BlueXP  o el administrador de cuentas pueden elegir si BlueXP  le notifica acerca de decisiones sobre capacidad de almacenamiento o si BlueXP  gestiona automáticamente los requisitos de capacidad que usted necesita.
 
 Este comportamiento está determinado por el _Capacity Management Mode_ de un conector. El modo de administración de la capacidad afecta a todos los sistemas Cloud Volumes ONTAP gestionados por ese conector. Si tiene otro conector, se puede configurar de forma diferente.
 
@@ -135,7 +132,7 @@ La gestión automática de capacidad de BlueXP no se aplica a las LUN. Cuando Bl
 
 === Gestión manual de la capacidad
 
-Si el administrador de cuentas establece el modo de administración de capacidad en manual, BlueXP muestra los mensajes Acción necesaria cuando se deben tomar decisiones de capacidad. Los mismos ejemplos descritos en el modo automático se aplican al modo manual, pero depende de usted aceptar las acciones.
+Si la organización de BlueXP  o el administrador de cuentas establecen el modo de gestión de la capacidad en manual, BlueXP  muestra los mensajes Acción necesaria cuando se deben tomar decisiones sobre capacidad. Los mismos ejemplos descritos en el modo automático se aplican al modo manual, pero depende de usted aceptar las acciones.
 
 
 

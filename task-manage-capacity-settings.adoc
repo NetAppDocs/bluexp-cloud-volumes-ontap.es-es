@@ -19,7 +19,7 @@ Cada conector tiene una configuración que determina la forma en la que gestiona
 Esta configuración afecta a todos los sistemas Cloud Volumes ONTAP gestionados por un conector. Si tiene otro conector, se puede configurar de forma diferente.
 
 .Permisos necesarios
-Se requieren privilegios de administrador de cuenta para modificar la configuración de Cloud Volumes ONTAP.
+La organización BlueXP  o el Privileges de administrador de cuenta son necesarios para modificar la configuración de Cloud Volumes ONTAP.
 
 .Pasos
 . En la parte superior derecha de la consola de BlueXP, haz clic en el icono Configuración y selecciona *Configuración de Cloud Volumes ONTAP*.
