@@ -153,18 +153,18 @@ En el caso de configuraciones NAS, las direcciones IP de datos pueden migrar ent
 
 === Zonas locales de AWS
 
-Las zonas locales de AWS son una implementación de infraestructura en la que el almacenamiento, la computación, la base de datos y otros servicios selectos de AWS se encuentran cerca de grandes ciudades y áreas industriales. Con las zonas locales de AWS, puede acercar los servicios de AWS, lo que mejora la latencia de sus cargas de trabajo y mantiene las bases de datos localmente.
+Las zonas locales de AWS son una implementación de infraestructura en la que el almacenamiento, la computación, la base de datos y otros servicios selectos de AWS se encuentran cerca de grandes ciudades y áreas industriales. Con las zonas locales de AWS, puede acercar los servicios de AWS, lo que mejora la latencia de sus cargas de trabajo y mantiene las bases de datos localmente. En Cloud Volumes ONTAP,
 
 Puede implementar una sola configuración de AZ o varias en las zonas locales de AWS.
 
 
-NOTE: Las zonas locales de AWS son compatibles cuando se utiliza BlueXP en el modo estándar. Por el momento, las zonas locales de AWS no son compatibles si se utiliza BlueXP en el modo restringido o en el modo privado.
+NOTE: Las zonas locales de AWS se admiten cuando se utiliza BlueXP  en los modos estándar y privado. En este momento, las zonas locales de AWS no son compatibles cuando se utiliza BlueXP  en modo restringido.
 
 
 
 ==== Ejemplo de configuraciones de zona local de AWS
 
-A continuación se muestran configuraciones de ejemplo:
+Cloud Volumes ONTAP solo admite implementaciones de alta disponibilidad en zonas locales de AWS. A continuación se muestran configuraciones de ejemplo:
 
 * Zona de disponibilidad única: Tanto los nodos del cluster como el mediador se encuentran en la misma zona local.
 * Varias zonas de disponibilidad
@@ -184,9 +184,7 @@ A continuación se muestran tres configuraciones de ejemplo:
 
 ==== Tipos de disco e instancia admitidos
 
-El único tipo de disco admitido es GP2.
-
-Actualmente se admiten las siguientes familias de tipos de instancia de EC2 con tamaños xlarge a 4xlarge:
+El único tipo de disco admitido es GP2. Actualmente se admiten las siguientes familias de tipos de instancia de EC2 con tamaños xlarge a 4xlarge:
 
 * M5
 * C5
@@ -195,7 +193,7 @@ Actualmente se admiten las siguientes familias de tipos de instancia de EC2 con 
 * R5d
 
 
-Debe consultar la documentación de AWS para obtener los detalles más recientes y completos sobre el link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["EC2 Tipos de instancias en Zonas locales"^].
+Cloud Volumes ONTAP solo admite estas configuraciones. La selección de cualquier otro tipo de disco o instancia EC2 en la configuración de la zona local de AWS para Cloud Volumes ONTAP puede provocar un fallo en la implementación. Consulte la documentación de AWS para obtener los detalles más recientes y completos de la link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["EC2 Tipos de instancias en Zonas locales"^].
 
 
 

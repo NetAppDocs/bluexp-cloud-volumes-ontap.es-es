@@ -23,7 +23,7 @@ Hay varias opciones de licencia disponibles para Cloud Volumes ONTAP. Cada opci�
 Los nuevos clientes disponen de las siguientes opciones de licencia.
 
 Licencias basadas en capacidad:: Pague por los múltiples sistemas de Cloud Volumes ONTAP de su cuenta de NetApp mediante la capacidad aprovisionada. Incluye la capacidad de adquirir servicios de datos en cloud adicionales.
-Suscripción a Keystone:: Un servicio basado en suscripción de pago por crecimiento que proporciona una experiencia fluida de cloud híbrido para pares de alta disponibilidad.
+Suscripción a Keystone:: Un servicio basado en suscripciones de pago por crecimiento que ofrece una experiencia de nube híbrida fluida para pares de alta disponibilidad.
 
 
 El modelo de licencias por nodos anterior sigue disponible para clientes existentes que ya han adquirido una licencia o que tienen una suscripción activa a Marketplace.
@@ -121,7 +121,7 @@ endif::gcp[]
 
 ==== Aspectos básicos
 
-Pague por capacidad por Cloud Volumes ONTAP en diferentes configuraciones.
+Puede pagar por capacidad en una serie de configuraciones diferentes:
 
 * Elija la configuración de Cloud Volumes ONTAP:
 +
@@ -130,6 +130,26 @@ Pague por capacidad por Cloud Volumes ONTAP en diferentes configuraciones.
 
 
 * Añada cualquiera de los servicios de datos en el cloud de NetApp por un coste adicional
+
+
+La licencia se basa enteramente en el tipo de volumen creado dentro de los sistemas Cloud Volumes ONTAP:
+
+* Essentials Single Node: Volúmenes de lectura/escritura creados en un sistema Cloud Volumes ONTAP usando solo un nodo ONTAP.
+* Aspectos básicos de alta disponibilidad: Volúmenes de lectura/escritura que usan dos nodos ONTAP que pueden recuperarse entre sí para un acceso a los datos sin interrupciones.
+* Aspectos básicos de un solo nodo secundario: Volúmenes de tipo de protección de datos (DP) (normalmente volúmenes de destino de SnapMirror o SnapVault de solo lectura) creados en un sistema Cloud Volumes ONTAP usando solo un nodo ONTAP.
++
+
+NOTE: Si un volumen de solo lectura/DP se convierte en un volumen principal, BlueXP  lo considera como datos primarios y los costes de carga se calculan en función del tiempo que el volumen estuvo en modo de lectura/escritura. Cuando el volumen vuelve a realizarse de solo lectura/DP, BlueXP  los considera nuevamente como datos secundarios y los cobra utilizando la mejor licencia correspondiente de la cartera digital.
+
+* Alta disponibilidad secundaria básica: Volúmenes de tipo de protección de datos (DP) (normalmente volúmenes de destino de SnapMirror o SnapVault de solo lectura) creados en un sistema Cloud Volumes ONTAP con dos nodos ONTAP que pueden recuperarse entre sí para proporcionar un acceso a los datos sin interrupciones.
+
+
+Tenga en cuenta estos puntos:
+
+* Carga mínima: Hay un cargo mínimo de 4 TiB por cada máquina virtual de almacenamiento que sirve datos y que tiene al menos un volumen primario (de lectura y escritura). Para el paquete Essentials, este coste mínimo no se aplica a los equipos virtuales de almacenamiento con solo volúmenes secundarios (protección de datos).
+* Excedentes: Si se supera la capacidad con licencia, los excedentes se cobran según las tarifas del mercado, con una preferencia por utilizar primero la capacidad disponible de otras licencias.
+* FlexClone y FlexCache Volumes: Los volúmenes FlexClone no cobran. Los volúmenes FlexCache de origen y de destino se consideran datos principales y se cargan de acuerdo con el espacio aprovisionado.
+* Pares de ALTA disponibilidad cargando: Para pares de alta disponibilidad, solo se carga la capacidad aprovisionada de un nodo. Los datos reflejados de forma sincrónica en el nodo partner no se cargan.
 
 
 
@@ -403,7 +423,7 @@ endif::gcp[]
 La licencia basada en nodos es el modelo de licencia de la generación anterior que le permitió obtener licencias de Cloud Volumes ONTAP por nodo. Este modelo de licencia no está disponible para nuevos clientes. La carga por nodos se ha sustituido por los métodos de carga por capacidad descritos anteriormente.
 
 
-IMPORTANT: NetApp dejará de usar las licencias basadas en nodos en breve, que serán reemplazadas por licencias basadas en capacidad. Para obtener más información, consulte https://mysupport.netapp.com/info/communications/CPC-00589.html["Comunicado del cliente: CPC-00589"^].
+IMPORTANT: NetApp acabará en breve con la disponibilidad de licencias basadas en nodos. Tras el fin de la disponibilidad, las licencias basadas en nodos deberán convertirse en licencias basadas en capacidad. Para obtener más información, consulte https://mysupport.netapp.com/info/communications/CPC-00589.html["Comunicado del cliente: CPC-00589"^].
 
 La licencia basada en nodos sigue estando disponible para los clientes existentes:
 
