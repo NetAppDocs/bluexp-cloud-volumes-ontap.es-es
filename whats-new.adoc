@@ -51,7 +51,7 @@ Para obtener más información sobre las zonas locales de AWS con puestas en mar
 
 A partir de esta versión, cuando intente actualizar Cloud Volumes ONTAP mediante la notificación de BlueXP , recibirá orientación sobre las versiones predeterminadas, más recientes y compatibles que debe utilizar. Además, ahora puede seleccionar el parche más reciente o la versión principal compatible con su instancia de Cloud Volumes ONTAP, o introducir manualmente una versión para la actualización.
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-from-bluexp-notifications["Actualice el software Cloud Volumes ONTAP"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-from-bluexp-notifications["Actualice el software Cloud Volumes ONTAP"]
 
 
 
@@ -72,8 +72,8 @@ La simplificación de los precios le ofrece estos beneficios:
 
 Obtenga más información sobre estas funciones:
 
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["Mejorar la protección contra el ransomware"^]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["Almacenamiento WORM"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["Mejorar la protección contra el ransomware"]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["Almacenamiento WORM"]
 
 
 
@@ -292,20 +292,14 @@ Se introdujeron los siguientes cambios.
 
 === Nuevo soporte regional en Azure
 
-
-
-==== Soporte de región de zona de disponibilidad única
-
+.Soporte de región de zona de disponibilidad única
 Las siguientes regiones ahora admiten implementaciones de zonas de disponibilidad única de alta disponibilidad en Azure para Cloud Volumes ONTAP 9.12.1 GA y versiones posteriores:
 
 * Tel Aviv
 * Milán
 
 
-
-
-==== Soporte de región de varias zonas de disponibilidad
-
+.Soporte de región de varias zonas de disponibilidad
 Las siguientes regiones admiten ahora implementaciones de zonas de disponibilidad múltiple de alta disponibilidad en Azure para Cloud Volumes ONTAP 9.12.1 GA y versiones posteriores:
 
 * India Central
