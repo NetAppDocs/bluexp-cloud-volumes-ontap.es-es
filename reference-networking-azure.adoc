@@ -225,8 +225,9 @@ TIP: ¿Busca información sobre el conector? https://docs.netapp.com/us-en/bluex
 
 Al crear un entorno de trabajo y elegir un grupo de seguridad predefinido, puede optar por permitir el tráfico de una de las siguientes opciones:
 
-* *Sólo vnet seleccionado*: El origen del tráfico entrante es el rango de subred del vnet para el sistema Cloud Volumes ONTAP y el rango de subred del vnet donde reside el conector. Esta es la opción recomendada.
-* *All VNets*: La fuente de tráfico entrante es el rango IP 0.0.0.0/0.
+* *Solo vnet seleccionado*: La fuente del tráfico entrante es el rango de subred del vnet para el sistema Cloud Volumes ONTAP y el rango de subred del vnet donde reside el conector. Esta es la opción recomendada.
+* *Todos los VNets*: La fuente del tráfico entrante es el rango IP 0,0.0.0/0.
+* *Desactivado*: Esta opción restringe el acceso de la red pública a su cuenta de almacenamiento y deshabilita la organización de datos en niveles para los sistemas Cloud Volumes ONTAP. Esta es una opción recomendada si sus direcciones IP privadas no deben estar expuestas incluso dentro de la misma vnet debido a las regulaciones y políticas de seguridad.
 
 
 [cols="4*"]
@@ -311,12 +312,15 @@ Al crear un entorno de trabajo y elegir un grupo de seguridad predefinido, puede
 
 Al crear un entorno de trabajo y elegir un grupo de seguridad predefinido, puede optar por permitir el tráfico de una de las siguientes opciones:
 
-* *Sólo vnet seleccionado*: El origen del tráfico entrante es el rango de subred del vnet para el sistema Cloud Volumes ONTAP y el rango de subred del vnet donde reside el conector. Esta es la opción recomendada.
-* *All VNets*: La fuente de tráfico entrante es el rango IP 0.0.0.0/0.
+* *Solo vnet seleccionado*: La fuente del tráfico entrante es el rango de subred del vnet para el sistema Cloud Volumes ONTAP y el rango de subred del vnet donde reside el conector. Esta es la opción recomendada.
+* *Todos los VNets*: La fuente del tráfico entrante es el rango IP 0,0.0.0/0.
 
 
 
 NOTE: Los sistemas de ALTA DISPONIBILIDAD tienen menos reglas entrantes que los sistemas de un solo nodo, porque el tráfico de datos entrantes pasa por el balanceador de carga estándar de Azure. Debido a esto, el tráfico del equilibrador de carga debe estar abierto, como se muestra en la regla "AllowAzureLoadBalance InBound".
+
+* *Desactivado*: Esta opción restringe el acceso de la red pública a su cuenta de almacenamiento y deshabilita la organización de datos en niveles para los sistemas Cloud Volumes ONTAP. Esta es una opción recomendada si sus direcciones IP privadas no deben estar expuestas incluso dentro de la misma vnet debido a las regulaciones y políticas de seguridad.
+
 
 [cols="4*"]
 |===

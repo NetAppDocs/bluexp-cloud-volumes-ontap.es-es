@@ -146,6 +146,7 @@ NOTE: Si hay disponible una versión más reciente de Release Candidate, General
 Tenga en cuenta lo siguiente:
 
 +
+** Si el acceso público a su cuenta de almacenamiento está deshabilitado en vnet, no se podrá habilitar la organización en niveles de los datos en el sistema Cloud Volumes ONTAP. Para obtener más información, consulte link:reference-networking-azure.html#security-group-rules["Reglas de grupo de seguridad"].
 ** El tipo de disco es para el volumen inicial. Es posible seleccionar un tipo de disco diferente para volúmenes posteriores.
 ** El tamaño del disco es para todos los discos de la agrupación inicial y para cualquier agregado adicional que BlueXP cree cuando se utiliza la opción de aprovisionamiento simple. Puede crear agregados que utilicen un tamaño de disco diferente mediante la opción de asignación avanzada.
 +
@@ -386,6 +387,7 @@ Tenga en cuenta lo siguiente:
 +
 Para obtener ayuda para elegir un tamaño de disco, consulte link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["Configure el tamaño de su sistema en Azure"^].
 
+** Si el acceso público a su cuenta de almacenamiento está deshabilitado en vnet, no se podrá habilitar la organización en niveles de los datos en el sistema Cloud Volumes ONTAP. Para obtener más información, consulte link:reference-networking-azure.html#security-group-rules["Reglas de grupo de seguridad"].
 ** Se puede elegir una política de organización en niveles de volumen específica cuando se crea o se edita un volumen.
 ** Si deshabilita la organización en niveles de datos, puede habilitarla en agregados posteriores.
 +

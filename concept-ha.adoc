@@ -164,7 +164,11 @@ NOTE: Las zonas locales de AWS se admiten cuando se utiliza BlueXP  en los modo
 
 ==== Ejemplo de configuraciones de zona local de AWS
 
-Cloud Volumes ONTAP solo admite implementaciones de alta disponibilidad en zonas locales de AWS. A continuación se muestran configuraciones de ejemplo:
+Cloud Volumes ONTAP en AWS solo admite el modo de alta disponibilidad en una sola zona de disponibilidad. No se admiten las implementaciones de nodos individuales.
+
+Cloud Volumes ONTAP no admite la organización en niveles de datos, la organización en niveles del cloud e instancias no cualificadas en zonas locales de AWS.
+
+A continuación se muestran configuraciones de ejemplo:
 
 * Zona de disponibilidad única: Tanto los nodos del cluster como el mediador se encuentran en la misma zona local.
 * Varias zonas de disponibilidad
@@ -193,7 +197,10 @@ El único tipo de disco admitido es GP2. Actualmente se admiten las siguientes f
 * R5d
 
 
-Cloud Volumes ONTAP solo admite estas configuraciones. La selección de cualquier otro tipo de disco o instancia EC2 en la configuración de la zona local de AWS para Cloud Volumes ONTAP puede provocar un fallo en la implementación. Consulte la documentación de AWS para obtener los detalles más recientes y completos de la link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["EC2 Tipos de instancias en Zonas locales"^].
+
+NOTE: Cloud Volumes ONTAP solo admite estas configuraciones. La selección de tipos de disco no compatibles o instancias no cualificadas en la configuración de la zona local de AWS puede provocar un fallo en la implementación. La organización de los datos en niveles para AWS S3 no está disponible en las zonas locales de AWS debido a la falta de conectividad.
+
+Consulte la documentación de AWS para obtener los detalles más recientes y completos de la link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["EC2 Tipos de instancias en Zonas locales"^].
 
 
 

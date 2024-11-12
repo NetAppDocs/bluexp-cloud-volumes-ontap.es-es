@@ -41,9 +41,9 @@ TIP: BlueXP  cambia de nodo en nodo al iniciar la toma de control y a la espera
 +
 image:screenshot_features_machine_type.png["Captura de pantalla que muestra la configuración Tipo de máquina bajo el panel Características disponible en la parte superior derecha de la página Descripción general al visualizar un entorno de trabajo."]
 
-+
-.. Si está utilizando una licencia de PAYGO basada en nodos, puede elegir opcionalmente una licencia y un tipo de máquina diferente haciendo clic en el icono de lápiz situado junto a *Tipo de licencia*.
 
+
+Si utiliza una licencia de pago por uso (PAYGO) basada en nodos, puede elegir otra licencia y tipo de máquina haciendo clic en el icono de lápiz situado junto a *Tipo de licencia*.
 
 . Elija un tipo de máquina, active la casilla de verificación para confirmar que comprende las implicaciones del cambio y, a continuación, haga clic en *Cambiar*.
 

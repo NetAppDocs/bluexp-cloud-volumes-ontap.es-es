@@ -38,15 +38,15 @@ Para poder crear y gestionar recursos en esas regiones, deben habilitarse las nu
 
 === Seleccione una zona local compatible
 
-Cloud Volumes ONTAP es compatible con algunas zonas locales de AWS, incluida Singapur. La selección de una zona local es opcional.
+La selección de una zona local es opcional. Cloud Volumes ONTAP es compatible con algunas zonas locales de AWS, incluida Singapur. Cloud Volumes ONTAP en AWS solo admite el modo de alta disponibilidad en una sola zona de disponibilidad. No se admiten las implementaciones de nodos individuales.
+
+
+NOTE: Cloud Volumes ONTAP no tiene soporte para la organización de datos en niveles ni la organización del cloud en zonas locales de AWS. Además, no se admiten las zonas locales con instancias que no hayan sido cualificadas para Cloud Volumes ONTAP. Un ejemplo de esto es Miami, que no está disponible como Zona Local, porque solo tiene Gen6 instancias que no están soportadas y no están calificadas.
 
 link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["Ver la lista completa de zonas locales"^].
 Las zonas locales deben estar activadas antes de poder crear y gestionar recursos en esas zonas.
 
 link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["Aprenda a habilitar una zona local"^].
-
-
-NOTE: Phoenix no es una zona local compatible.
 
 
 
@@ -102,7 +102,7 @@ Tenga en cuenta que Cloud Volumes ONTAP es compatible con la función de volúme
 * Los discos _HDD optimizados para rendimiento (st1)_ se utilizan para cargas de trabajo de acceso frecuente que requieren un rendimiento rápido y constante a un precio más reducido.
 +
 
-NOTE: No se recomienda la organización en niveles de los datos para el almacenamiento de objetos cuando se utilizan unidades HDD optimizadas para el rendimiento (st1).
+NOTE: La organización de los datos en niveles para AWS S3 no está disponible en las zonas locales de AWS debido a la falta de conectividad.
 
 
 

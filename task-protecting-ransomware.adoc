@@ -63,14 +63,7 @@ Cloud Volumes ONTAP admite la función autónoma de protección frente a ransomw
 
 Separe de las protecciones de extensión de archivo proporcionadas a través del https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#protection-from-common-ransomware-file-extensions["configuración de protección contra ransomware"], La función ARP utiliza el análisis de la carga de trabajo para alertar al usuario sobre posibles ataques basados en la “actividad anormal” detectada. Tanto la configuración de protección contra ransomware como la función ARP se pueden usar conjuntamente para una protección integral contra ransomware.
 
-La característica ARP está disponible para su uso con suscripciones BYOL y Marketplace para licencias basadas en nodos y en capacidad sin coste adicional. Póngase en contacto con su representante de ventas de NetApp para agregar ARP a su licencia actual.
-
-La licencia ARP se considera una licencia «flotante», lo que significa que no está vinculada a una única instancia de Cloud Volumes ONTAP y se puede aplicar a varios entornos de Cloud Volumes ONTAP.
-
-
-NOTE: El uso de la función ARP con licencias Cloud Volumes ONTAP basadas en nodos no se refleja actualmente en la cartera digital. La capacidad de ver el uso de ARP basado en nodos estará disponible en Digital Wallet en una versión futura.
-
-Tras la compra de una licencia complementaria y añadirla a la cartera digital, puedes habilitar ARP por volumen con Cloud Volumes ONTAP.
+La función ARP está disponible para su uso con las suscripciones BYOL (bring your own license) y Marketplace para sus licencias sin coste adicional.
 
 Los volúmenes habilitados para ARP tienen un estado designado de “Modo de aprendizaje” o “Activo”.
 
@@ -79,6 +72,3 @@ La configuración de ARP para volúmenes se realiza mediante System Manager de O
 Para obtener más información sobre cómo habilitar ARP con el administrador del sistema de ONTAP y la CLI de ONTAP, consulte https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["Habilite la protección de ransomware autónoma"^] .
 
 image::screenshot_arp.png[La captura de pantalla muestra la licencia complementaria para Autonomous Ransomware Protection.]
-
-
-NOTE: No hay soporte disponible para el uso de funciones con licencia sin una licencia.

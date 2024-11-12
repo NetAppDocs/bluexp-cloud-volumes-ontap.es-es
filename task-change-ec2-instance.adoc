@@ -46,9 +46,9 @@ Si no puede cambiar el tipo de instancia de las instancias C4, M4 o R4, consulte
 +
 image::screenshot_features_instance_type.png[400]
 
-+
-.. Si está utilizando una licencia PAYGO basada en nodos, puede elegir opcionalmente un tipo de licencia e instancia diferente haciendo clic en el icono de lápiz situado junto a *Tipo de licencia*.
 
+
+Si está utilizando una licencia de pago por uso basada en nodos (PAYGO), puede elegir otra licencia e instancia haciendo clic en el icono de lápiz situado junto a *Tipo de licencia*.
 
 . Elija un tipo de instancia, active la casilla de verificación para confirmar que comprende las implicaciones del cambio y, a continuación, haga clic en *Cambiar*.
 

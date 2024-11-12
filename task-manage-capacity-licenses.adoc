@@ -44,10 +44,10 @@ La cartera digital de BlueXP te muestra la capacidad total consumida en tu cuent
 .Pasos
 . En el menú de navegación de BlueXP, seleccione *Gobierno > cartera digital*.
 . En la pestaña *Cloud Volumes ONTAP*, mantenga seleccionada la opción *Licencias basadas en capacidad*.
-. Consulte el resumen de los paquetes, donde se muestra la capacidad consumida, la capacidad asignada previamente total y la capacidad total de PAYGO.
+. Consulte el resumen de los paquetes, donde se muestra la capacidad consumida, la capacidad total comprometida con anterioridad y la capacidad total de pago por uso (PAYGO).
 +
 ** _Total consumido Capacity_ es la capacidad total aprovisionada de todos los sistemas de Cloud Volumes ONTAP de su cuenta de NetApp. La carga se basa en el tamaño aprovisionado de cada volumen, independientemente del espacio local, utilizado, almacenado o efectivo dentro del volumen.
-** _Total_capacidad precomprometida_ es la capacidad total con licencia (contrato BYOL o Marketplace) que ha adquirido a NetApp.
+** _Capacidad precomprometida total_ es la capacidad con licencia total (con su propia licencia (BYOL) o contrato de mercado) que ha adquirido a NetApp.
 ** _Total PAYGO_ es la capacidad total aprovisionada mediante suscripciones a Cloud Marketplace. La carga mediante PAYGO se utiliza solo si la capacidad consumida es superior a la capacidad con licencia o si no hay una licencia BYOL disponible en la cartera digital de BlueXP.
 +
 A continuación tienes un ejemplo de un resumen de los paquetes de Cloud Volumes ONTAP en la cartera digital de BlueXP:

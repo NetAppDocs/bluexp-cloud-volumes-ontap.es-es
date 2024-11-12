@@ -18,7 +18,7 @@ Gestiona las licencias basadas en nodos en la cartera digital de BlueXP para gar
 
 _Licencias basadas en nodos_ son el modelo de licencias de la generación anterior (y no están disponibles para nuevos clientes):
 
-* Las licencias BYOL que se compraron a NetApp
+* Con sus propias licencias adquiridas de NetApp
 * Suscripciones de pago por horas de uso (PAYGO) desde el mercado de su proveedor de cloud
 
 
@@ -231,3 +231,6 @@ https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Apr
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deleting-working-env.html["Aprenda a eliminar un entorno de trabajo de Cloud Volumes ONTAP"].
 
 
+
+.Tema relacionado
+enlace: link:concept-licensing.html#end-of-availability-of-node-based-licenses["Fin de la disponibilidad de las licencias basadas en nodos"] link:task-convert-node-capacity.html["Convierta licencias basadas en nodos a basadas en capacidad"]

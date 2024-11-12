@@ -14,7 +14,7 @@ summary: Cada sistema Cloud Volumes ONTAP con una licencia BYOL basada en nodos 
 
 
 [role="lead"]
-Cada sistema Cloud Volumes ONTAP con una licencia BYOL basada en nodos debe tener una licencia del sistema instalada con una suscripción activa. BlueXP simplifica el proceso administrando las licencias para usted y mostrando una advertencia antes de que caduquen.
+Cada sistema de Cloud Volumes ONTAP que tenga una licencia BYOL (Bring Your Own License) basada en nodos debe tener una licencia del sistema instalada con una suscripción activa. BlueXP simplifica el proceso administrando las licencias para usted y mostrando una advertencia antes de que caduquen.
 
 
 TIP: Una licencia basada en nodos es la generación anterior de BYOL para Cloud Volumes ONTAP. Una licencia basada en nodos está disponible únicamente para renovaciones de licencias.

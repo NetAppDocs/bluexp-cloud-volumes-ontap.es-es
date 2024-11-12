@@ -120,4 +120,4 @@ La toma de control, resincronización y devolución del almacenamiento son autom
 
 == Configuraciones de almacenamiento
 
-Puede utilizar un par de alta disponibilidad como configuración activo-activo, en el cual ambos nodos sirven datos a los clientes o como una configuración activo-pasivo, en la cual el nodo pasivo responde a las solicitudes de datos únicamente si ha tomado almacenamiento para el nodo activo.
+Puede usar un par de alta disponibilidad como una configuración activo-activo en la que ambos nodos sirven datos a los clientes o como una configuración activo-pasivo, en la que el nodo pasivo responde a las solicitudes de datos solo si ha tomado el control del almacenamiento del nodo activo.
