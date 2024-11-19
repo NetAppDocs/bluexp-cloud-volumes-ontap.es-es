@@ -40,7 +40,7 @@ La opción para implementar sistemas Cloud Volumes ONTAP mediante licencias basa
 
 NetApp reconoce los siguientes requisitos de licencia exclusivos en cumplimiento de obligaciones contractuales y necesidades operativas, y seguirá ofreciendo soporte a las licencias basadas en nodos en estas situaciones:
 
-* Clientes de USPS
+* Clientes del sector público de EE. UU
 * Se implementa en modo privado
 * Implementaciones en la región de China de Cloud Volumes ONTAP en AWS
 * Si tiene un nodo válido y no caducado, con su propia licencia (licencia BYOL)

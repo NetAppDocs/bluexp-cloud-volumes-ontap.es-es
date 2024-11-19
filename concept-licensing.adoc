@@ -276,7 +276,7 @@ Dejará de recibir soporte de NetApp después de la fecha de EOS, hasta que real
 .Exclusiones
 NetApp reconoce que determinadas situaciones requieren un consideración especial y que la disponibilidad de licencias basadas en nodos no se aplicará a los siguientes casos:
 
-* Clientes de USPS
+* Clientes del sector público de EE. UU
 * Se implementa en modo privado
 * Implementaciones en la región de China de Cloud Volumes ONTAP en AWS
 
