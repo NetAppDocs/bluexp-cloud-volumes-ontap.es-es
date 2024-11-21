@@ -199,7 +199,7 @@ La licencia basada en la capacidad está disponible en forma de un _package_. Al
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["Obtenga más información sobre los paquetes de licencias basados en la capacidad"^].
 
 .Acerca de esta tarea
-* Cambiar el método de pago no afectará a si se le cobra a través de una licencia adquirida en NetApp (BYOL) o desde el mercado del proveedor de cloud (pago por uso).
+* Cambiar el método de pago no afectará a si se te cobra a través de una licencia adquirida de NetApp (BYOL) o de la suscripción de pago por uso (PAYGO) del mercado del proveedor de cloud.
 +
 BlueXP siempre intenta cobrar primero una licencia. Si una licencia no está disponible, se cobra contra una suscripción de Marketplace. No se requiere ninguna «conversión» para la suscripción de BYOL al mercado ni viceversa.
 
