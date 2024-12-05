@@ -100,7 +100,7 @@ Puede pagar por capacidad en una serie de configuraciones diferentes:
 * Añada cualquiera de los servicios de datos en el cloud de NetApp por un coste adicional
 
 
-Para obtener más información, consulte link:licensing-charging.html["Cargo por licencias basadas en capacidad"].
+Para obtener más información, consulte link:concept-licensing-charging.html["Más información acerca de las licencias basadas en capacidad"].
 
 
 
