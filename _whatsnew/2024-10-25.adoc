@@ -1,10 +1,10 @@
-= Máquinas de la serie N1 no disponibles para la selección en BlueXP 
+= Lista de máquinas virtuales compatibles actualizadas para Google Cloud para alinearlas con las prácticas recomendadas
 :allow-uri-read: 
 
 
 
 
-=== Máquinas de la serie N1 no disponibles para la selección en BlueXP 
+=== Lista de máquinas virtuales compatibles actualizadas para Google Cloud para alinearlas con las prácticas recomendadas
 
 Las máquinas de la serie n1 ya no están disponibles para su selección en BlueXP  al implementar nuevas instancias de Cloud Volumes ONTAP en Google Cloud. Las máquinas de la serie n1 sólo se conservarán y admitirán en sistemas antiguos existentes. Las nuevas implementaciones de Cloud Volumes ONTAP solo son compatibles con Google Cloud a partir de la versión 9,8. Le recomendamos que cambie a los tipos de máquinas de la serie n2 que sean compatibles con Cloud Volumes ONTAP 9,8 y posteriores. Sin embargo, las máquinas de la serie n1 estarán disponibles para nuevas implementaciones realizadas a través de la API.
 

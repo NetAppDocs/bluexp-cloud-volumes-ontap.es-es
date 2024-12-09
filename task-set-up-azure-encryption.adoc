@@ -14,13 +14,13 @@ summary: Los datos se cifran automáticamente en Cloud Volumes ONTAP de Azure me
 
 
 [role="lead"]
-Los datos se cifran automáticamente en Cloud Volumes ONTAP, en Azure mediante https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Cifrado del servicio de almacenamiento de Azure"] Con una clave gestionada por Microsoft. Pero puede utilizar su propia clave de cifrado siguiendo los pasos de esta página.
+Los datos se cifran automáticamente en Cloud Volumes ONTAP de Azure mediante el cifrado del servicio de almacenamiento de Azure con una clave gestionada por Microsoft. Pero puede utilizar su propia clave de cifrado siguiendo los pasos de esta página.
 
 
 
 == Información general de cifrado de datos
 
-Los datos de Cloud Volumes ONTAP se cifran automáticamente en Azure mediante https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Cifrado del servicio de almacenamiento de Azure"^]. La implementación predeterminada utiliza una clave administrada por Microsoft. No se requiere configuración.
+Los datos de Cloud Volumes ONTAP se cifran automáticamente en Azure mediante https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview["Cifrado del servicio de almacenamiento de Azure"^]. La implementación predeterminada utiliza una clave administrada por Microsoft. No se requiere configuración.
 
 Si desea utilizar una clave gestionada por el cliente con Cloud Volumes ONTAP, debe realizar los siguientes pasos:
 

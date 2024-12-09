@@ -20,6 +20,18 @@ Las mejoras descritas en esta página son específicas de las funciones de BlueX
 
 
 
+== 9 de diciembre de 2024
+
+
+
+=== Lista de máquinas virtuales compatibles actualizadas para Azure para alinearse con las prácticas recomendadas
+
+Las familias de máquinas DS_v2 y Es_v3 ya no están disponibles para su selección en BlueXP  al implementar nuevas instancias de Cloud Volumes ONTAP en Azure. Estas familias solo serán retenidas y apoyadas en sistemas antiguos y existentes. Las nuevas implementaciones de Cloud Volumes ONTAP solo son compatibles en Azure a partir de la versión 9.12.1. Le recomendamos que cambie a Es_v4 o a cualquier otra serie compatible con Cloud Volumes ONTAP 9.12.1 y posterior. Sin embargo, las máquinas de las series DS_v2 y Es_v3 estarán disponibles para nuevas implementaciones realizadas a través de la API.
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configuraciones compatibles en Azure"^]
+
+
+
 == 11 de noviembre de 2024
 
 
@@ -78,7 +90,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html#enabl
 
 
 
-=== Máquinas de la serie N1 no disponibles para la selección en BlueXP 
+=== Lista de máquinas virtuales compatibles actualizadas para Google Cloud para alinearlas con las prácticas recomendadas
 
 Las máquinas de la serie n1 ya no están disponibles para su selección en BlueXP  al implementar nuevas instancias de Cloud Volumes ONTAP en Google Cloud. Las máquinas de la serie n1 sólo se conservarán y admitirán en sistemas antiguos existentes. Las nuevas implementaciones de Cloud Volumes ONTAP solo son compatibles con Google Cloud a partir de la versión 9,8. Le recomendamos que cambie a los tipos de máquinas de la serie n2 que sean compatibles con Cloud Volumes ONTAP 9,8 y posteriores. Sin embargo, las máquinas de la serie n1 estarán disponibles para nuevas implementaciones realizadas a través de la API.
 
@@ -1410,7 +1422,7 @@ Los siguientes cambios se introdujeron con la versión 3.9.10 del conector.
 
 === Clave de cifrado gestionada por el cliente en Azure
 
-Los datos se cifran automáticamente en Cloud Volumes ONTAP, en Azure mediante https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Cifrado del servicio de almacenamiento de Azure"^] Con una clave gestionada por Microsoft. Pero ahora puede utilizar su propia clave de cifrado gestionada por el cliente realizando los siguientes pasos:
+Los datos se cifran automáticamente en Cloud Volumes ONTAP en Azure mediante https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview["Cifrado del servicio de almacenamiento de Azure"^] una clave gestionada por Microsoft. Pero ahora puede utilizar su propia clave de cifrado gestionada por el cliente realizando los siguientes pasos:
 
 . Desde Azure, cree un almacén de claves y, a continuación, genere una clave en ese almacén.
 . Desde BlueXP, utilice la API para crear un entorno de trabajo de Cloud Volumes ONTAP que utilice la clave.
