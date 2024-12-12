@@ -60,13 +60,7 @@ Cloud Volumes ONTAP admite https://www.netapp.com/pdf.html?item=/media/17070-ds-
 
 Tanto NVE como NAE son compatibles con un gestor de claves externo.
 
-ifdef::azure[]
-
-endif::azure[]
-
-ifdef::gcp[]
-
-endif::gcp[]
+ifdef::azure[] endif::azure[] ifdef::gcp[] endif::gcp[]
 
 Los nuevos agregados tienen habilitado el cifrado de agregados de NetApp (NAE) de forma predeterminada tras la configuración de un gestor de claves externo. Los volúmenes nuevos que no forman parte de un agregado de NAE tendrán habilitado el cifrado de volúmenes de NetApp (NVE) de forma predeterminada (por ejemplo, si tiene agregados existentes que se crearon antes de configurar un gestor de claves externo).
 
