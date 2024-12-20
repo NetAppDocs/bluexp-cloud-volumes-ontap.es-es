@@ -266,7 +266,7 @@ sidebar:
       entries:
       - title: Licenciamiento en Cloud Volumes ONTAP
         url: "/concept-licensing.html"
-      - title: Más información acerca de las licencias basadas en capacidad
+      - title: Obtenga más información sobre las licencias basadas en capacidad
         url: "/concept-licensing-charging.html"
     - title: Reducida
       entries:

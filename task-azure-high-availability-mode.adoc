@@ -14,9 +14,9 @@ summary: El modo de alta disponibilidad de Microsoft Azure debe estar habilitado
 
 
 [role="lead"]
-El modo de alta disponibilidad de Microsoft Azure debe estar habilitado para reducir los tiempos de conmutación al nodo de respaldo no planificados y para permitir la compatibilidad NFSv4/7 con Cloud Volumes ONTAP.
+Se debe habilitar el modo de alta disponibilidad (HA) de Microsoft Azure para reducir los tiempos de conmutación al nodo de respaldo no planificados y para permitir el soporte NFSv4/7 para Cloud Volumes ONTAP. En este modo, sus nodos de alta disponibilidad de Cloud Volumes ONTAP pueden alcanzar un objetivo de tiempo de recuperación (RTO) bajo (60 segundos) durante las conmutaciones al respaldo no planificadas en clientes CIFS y NFSv4.
 
-A partir de la versión 9.10.1 de Cloud Volumes ONTAP, hemos reducido el tiempo de conmutación por error no planificado para los pares de alta disponibilidad de Cloud Volumes ONTAP que se ejecutan en Microsoft Azure y hemos añadido compatibilidad con NFSv4. Para que estas mejoras estén disponibles para Cloud Volumes ONTAP, debes habilitar la función de alta disponibilidad en tu suscripción a Azure.
+A partir de Cloud Volumes ONTAP 9.10.1, redujimos el tiempo de conmutación al nodo de respaldo no planificado de las parejas de alta disponibilidad de Cloud Volumes ONTAP que se ejecutan en Microsoft Azure y añadimos compatibilidad con NFSv4. Para que estas mejoras estén disponibles para Cloud Volumes ONTAP, debes habilitar la función de alta disponibilidad en tu suscripción a Azure.
 
 BlueXP le preguntará estos detalles en un mensaje Action Required cuando tenga que activar esta función en una suscripción a Azure.
 
@@ -24,7 +24,9 @@ Tenga en cuenta lo siguiente:
 
 * No hay problemas con la alta disponibilidad de su par de alta disponibilidad de Cloud Volumes ONTAP. Esta función de Azure trabaja conjuntamente con ONTAP para reducir el tiempo de interrupción de la aplicación observado por el cliente en los protocolos NFS que resultan de eventos de conmutación por error no planificados.
 * Habilitar esta función no es disruptiva para los pares de alta disponibilidad Cloud Volumes ONTAP.
-* Si habilita esta función en su suscripción a Azure, no se producirán problemas en otras máquinas virtuales.
+* La activación de esta función en su suscripción a Azure no causa problemas en otras máquinas virtuales.
+* Cloud Volumes ONTAP utiliza un balanceador de carga de Azure interno durante conmutaciones al respaldo de LIF de gestión de SVM y clústeres en clientes CIFS y NFS.
+* Cuando el modo HA está habilitado, BlueXP  analiza el sistema cada 12 horas para actualizar las reglas internas del equilibrador de carga de Azure.
 
 
 Un usuario de Azure con privilegios de "propietario" puede habilitar la función desde la CLI de Azure.

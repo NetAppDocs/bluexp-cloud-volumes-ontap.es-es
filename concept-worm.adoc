@@ -111,7 +111,7 @@ Debe comprender lo siguiente sobre la habilitación de la organización en nivel
 == Limitaciones
 
 * El almacenamiento WORM en Cloud Volumes ONTAP funciona bajo un modelo de "administrador de almacenamiento de confianza". Mientras que los archivos WORM se protegen de la modificación o la modificación, un administrador de clúster puede eliminar los volúmenes incluso si contienen datos WORM no vencidos.
-* Además del modelo de administrador de almacenamiento de confianza, el almacenamiento WORM en Cloud Volumes ONTAP también funciona de forma implícita con un modelo de "administrador de cloud de confianza". Un administrador de cloud podría eliminar datos WORM antes de su fecha de caducidad al eliminar o editar el almacenamiento en cloud directamente del proveedor de cloud.
+* Además del modelo de administrador de almacenamiento de confianza, el almacenamiento WORM en Cloud Volumes ONTAP también funciona de forma implícita con un modelo de "administrador de cloud de confianza". Un administrador de cloud podría eliminar DATOS WORM antes de su fecha de caducidad si lo quita o edita directamente del proveedor de cloud.
 
 
 .Información relacionada

@@ -228,7 +228,9 @@ También es posible que observe que la cartera digital de BlueXP actualiza la ca
 
 == Quitar una licencia basada en capacidad
 
-Si una licencia basada en capacidad ha caducado y ya no está en uso, puede eliminarla en cualquier momento.
+Si una licencia basada en capacidad expiró y ya no está en uso, puede eliminarla en cualquier momento.
+
+Para obtener más información sobre lo que sucede con sus datos de Cloud Volumes ONTAP al vencimiento o eliminación de su licencia, consulte https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/FAQs_on_Cloud_Volumes_ONTAP_license_expiry["Este artículo de base de conocimientos (KB)"^] .
 
 .Pasos
 . En el menú de navegación de BlueXP, seleccione *Gobierno > cartera digital*.
