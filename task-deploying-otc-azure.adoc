@@ -393,6 +393,10 @@ Para obtener ayuda para elegir un tamaño de disco, consulte link:https://docs.n
 +
 link:concept-data-tiering.html["Más información acerca de la organización en niveles de los datos"^].
 
+** A partir de Cloud Volumes ONTAP 9.15.0P1, los blobs de página de Azure ya no son compatibles para nuevas puestas en marcha de pares de alta disponibilidad. Si actualmente utiliza blobs de página de Azure en implementaciones de pares de alta disponibilidad existentes, puede migrar a tipos de instancia de máquinas virtuales más recientes en las máquinas virtuales de la serie Edsv4 y las máquinas virtuales de la serie Edsv5.
++
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["Obtenga más información sobre las configuraciones compatibles en Azure"^].
+
 
 
 . *Escribir velocidad y GUSANO*:
