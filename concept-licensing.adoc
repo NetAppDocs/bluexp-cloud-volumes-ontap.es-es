@@ -290,7 +290,7 @@ NOTE: Incluso en estos escenarios, las nuevas licencias basadas en nodos y las r
 
 == Conversión de licencias
 
-BlueXP  permite una conversión fluida de licencias basadas en nodos a capacidad basada en la herramienta de conversión de licencias. Para obtener más información sobre el fin de disponibilidad de las licencias basadas en nodos, consulte link:/concept-licensing.html#end-of-availability-of-node-based-licenses["Fin de la disponibilidad de las licencias basadas en nodos"].
+BlueXP  permite una conversión fluida de licencias basadas en nodos a capacidad basada en la herramienta de conversión de licencias. Para obtener más información sobre el fin de disponibilidad de las licencias basadas en nodos, consulte link:concept-licensing.html#end-of-availability-of-node-based-licenses["Fin de la disponibilidad de las licencias basadas en nodos"].
 
 Antes de realizar la transición, es bueno familiarizarse con la diferencia que existe entre los dos modelos de licencia. Las licencias basadas en nodos incluyen capacidad fija para cada instancia de ONTAP, lo que puede restringir la flexibilidad. Por otro lado, las licencias basadas en la capacidad permiten un conjunto compartido de almacenamiento en varias instancias, lo que ofrece una mayor flexibilidad, optimiza el uso de recursos y reduce la posibilidad de sanciones financieras al redistribuir las cargas de trabajo. La carga basada en la capacidad se ajusta sin problemas a los cambios en los requisitos de almacenamiento.
 

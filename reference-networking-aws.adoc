@@ -53,9 +53,6 @@ La autenticación de usuario falla y los siguientes servicios no están disponib
 
 
 
-| \https://keyvault-production-aks.vault.azure.net | Almacén de claves | Se utiliza para recuperar la clave secreta del cliente del almacén de claves de Azure para comunicarse con los bloques de S3 para gestionar metadatos. El servicio Cloud Volumes ONTAP utiliza este componente internamente. | Modos estándar, restringido y privado. | Los servicios Cloud Volumes ONTAP no están disponibles. 
-
-
 | \https://cloudmanager.cloud.netapp.com/tenancy | Cliente | Se utiliza para recuperar los recursos de Cloud Volumes ONTAP de la tenencia de BlueXP  para autorizar recursos y usuarios. | Modos estándar y restringidos. | Los recursos de Cloud Volumes ONTAP y los usuarios no están autorizados. 
 
 

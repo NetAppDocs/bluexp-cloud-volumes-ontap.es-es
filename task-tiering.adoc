@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-tiering.html 
-keywords: tier, tiering, cold data, hot data, storage tiering, data tiering, fabricpool, fabric pool, s3 endpoint, endpoint, connection, performance tier, capacity tier, object store, blob tiering, container, inactive, tiering requirements 
+keywords: tier, tiering, cold data, hot data, storage tiering, data tiering, fabricpool, fabric pool, s3 endpoint, endpoint, connection, performance tier, capacity tier, object store, blob tiering, container, inactive, tiering requirements, remove S3 bucket, delete S3 CVO bucket 
 summary: Puede reducir los costes de almacenamiento de Cloud Volumes ONTAP combinando un nivel de rendimiento de SSD o HDD para datos activos con un nivel de capacidad de almacenamiento de objetos para los datos inactivos. La organización en niveles de datos utiliza la tecnología FabricPool. 
 ---
-= Organización en niveles de los datos inactivos en almacenamiento de objetos de bajo coste
+= Coloca los datos inactivos en un almacenamiento de objetos de bajo coste
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -47,7 +47,7 @@ endif::gcp[]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Compruebe que tiene un agregado con la organización en niveles habilitada
 [role="quick-margin-para"]
-La organización en niveles de los datos debe estar habilitada en un agregado para poder habilitar la organización en niveles de los datos en un volumen. Debe conocer los requisitos de los volúmenes nuevos y existentes. <<Garantía de que la organización en niveles está activada en agregados,Leer más>>.
+La organización en niveles de los datos debe estar habilitada en un agregado para poder habilitar la organización en niveles de los datos en un volumen. Debe conocer los requisitos de los volúmenes nuevos y existentes. <<Ensuring that tiering is enabled on aggregates,Leer más>>.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"] Elija una política de organización en niveles cuando cree, modifique o replique un volumen
 [role="quick-margin-para"]
@@ -65,7 +65,7 @@ BlueXP le solicita que elija una política de organización en niveles al crear,
 * No es necesario crear un almacén de objetos para el nivel de capacidad. BlueXP lo hace por ti.
 * No es necesario habilitar la organización en niveles de datos en el nivel del sistema.
 +
-BlueXP crea un almacén de objetos para datos inactivos cuando se crea el sistema, <<Activación de la organización en niveles de datos tras la implementación de los requisitos,siempre que no haya problemas de conectividad ni de permisos>>. A continuación, simplemente tiene que habilitar la organización en niveles de los datos en volúmenes (y, en algunos casos, <<Garantía de que la organización en niveles está activada en agregados,en agregados>>).
+BlueXP crea un almacén de objetos para datos inactivos cuando se crea el sistema, <<Enabling data tiering after implementing the requirements,siempre que no haya problemas de conectividad ni de permisos>>. A continuación, simplemente tiene que habilitar la organización en niveles de los datos en volúmenes (y, en algunos casos, <<Ensuring that tiering is enabled on aggregates,en agregados>>).
 
 
 
@@ -193,7 +193,7 @@ endif::gcp[]
 
 
 
-=== Activación de la organización en niveles de datos tras la implementación de los requisitos
+=== Permita la organización de los datos en niveles tras implementar los requisitos
 
 BlueXP crea un almacén de objetos para datos inactivos cuando se crea el sistema, siempre que no haya problemas de conectividad o permisos. Si no implementó los requisitos enumerados anteriormente hasta después de crear el sistema, deberá habilitar manualmente la organización en niveles mediante la API o el Administrador del sistema de ONTAP, que crea el almacén de objetos.
 
@@ -202,7 +202,7 @@ NOTE: La capacidad de habilitar la organización en niveles a través de la inte
 
 
 
-== Garantía de que la organización en niveles está activada en agregados
+== Compruebe que la organización en niveles está habilitada en los agregados
 
 La organización en niveles de los datos debe estar habilitada en un agregado para poder habilitar la organización en niveles de los datos en un volumen. Debe conocer los requisitos de los volúmenes nuevos y existentes.
 
@@ -236,7 +236,7 @@ Ahora puede habilitar la organización en niveles de los datos en volúmenes nue
 
 
 
-== Organización en niveles de los datos de volúmenes de lectura y escritura
+== Colocar datos en niveles en volúmenes de lectura y escritura
 
 Cloud Volumes ONTAP puede organizar los datos inactivos en niveles en volúmenes de lectura y escritura para un almacenamiento de objetos rentable, liberando al nivel de rendimiento de los datos activos.
 
@@ -270,7 +270,7 @@ BlueXP crea un nuevo agregado para el volumen si aún no existe un agregado habi
 
 
 
-== Organización en niveles de los datos de los volúmenes de protección de datos
+== Organización en niveles de datos de volúmenes de protección de datos
 
 Cloud Volumes ONTAP puede organizar los datos en niveles desde un volumen de protección de datos a un nivel de capacidad. Si activa el volumen de destino, los datos se mueven gradualmente al nivel de rendimiento a medida que se leen.
 
@@ -291,7 +291,7 @@ Para obtener ayuda con la replicación de datos, consulte https://docs.netapp.co
 
 
 
-== Cambio del tipo de almacenamiento para datos organizados por niveles
+== Cambie la clase de almacenamiento para los datos organizados en niveles
 
 Después de poner en marcha Cloud Volumes ONTAP, puede reducir sus costes de almacenamiento cambiando la clase de almacenamiento para los datos inactivos a los que no se ha accedido durante 30 días. Los costes de acceso son más elevados si se accede a los datos, por lo que debe tener en cuenta antes de cambiar la clase de almacenamiento.
 
@@ -306,7 +306,7 @@ Para obtener información sobre las clases de almacenamiento compatibles, consul
 
 
 
-== Cambiar la relación entre el espacio libre y la organización en niveles de los datos
+== Cambie la proporción de espacio libre para la organización de datos en niveles
 
 La relación entre el espacio libre y la organización en niveles de los datos define cuánto espacio libre se requiere en SSD/HDD de Cloud Volumes ONTAP al organizar los datos en niveles en el almacenamiento de objetos. La configuración predeterminada es 10% de espacio libre, pero puede ajustar la configuración en función de sus necesidades.
 
@@ -328,7 +328,7 @@ image:screenshot_settings_icon.png["Captura de pantalla que muestra el icono Con
 
 
 
-== Cambiar el período de refrigeración de la política de organización automática en niveles
+== Cambie el período de enfriamiento de la política de organización automática en niveles
 
 Si habilitó la organización en niveles de datos en un volumen Cloud Volumes ONTAP mediante la política _auto_ Tiering, puede ajustar el período de refrigeración predeterminado en función de las necesidades del negocio. Esta acción solo se admite con la CLI y la API de ONTAP.
 
@@ -343,3 +343,17 @@ El período de refrigeración predeterminado para la política de organización 
 .Paso
 . Utilice el parámetro _minimiumCoolingDays_ con su solicitud de API al crear un volumen o modificar un volumen existente.
 
+
+
+
+== Retire un cucharón S3 al retirar un entorno de trabajo
+
+Puede eliminar un bucket de S3 con los datos organizados en niveles de un entorno de trabajo de Cloud Volumes ONTAP cuando se retira el entorno.
+
+Sólo puede eliminar el depósito de S3 si:
+
+* El entorno de trabajo de Cloud Volumes ONTAP se elimina de BlueXP .
+* Todos los objetos se eliminan del bucket y el bucket de S3 está vacío.
+
+
+Al retirar un entorno de trabajo de Cloud Volumes ONTAP, el bloque de S3 que se creó para el entorno no se elimina automáticamente. En su lugar, permanecen en estado huérfano, para evitar que se pierdan datos accidentalmente. Puede eliminar los objetos del depósito y, posteriormente, eliminar el cubo de S3 o conservarlo para su uso posterior. Consulte https://docs.netapp.com/us-en/ontap-cli/vserver-object-store-server-bucket-delete.html#description["CLI de ONTAP: Eliminación de buckets de objeto-almacén-servidor de Vserver"^].
