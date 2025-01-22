@@ -47,7 +47,7 @@ Para obtener más información, consulte link:reference-networking-aws.html["Req
 
 == Lanzar un sistema Cloud Volumes ONTAP de un único nodo en AWS
 
-Si desea iniciar Cloud Volumes ONTAP en AWS, debe crear un nuevo entorno de trabajo en BlueXP
+Si desea iniciar Cloud Volumes ONTAP en AWS, debe crear un nuevo entorno de trabajo en BlueXP .
 
 .Acerca de esta tarea
 Inmediatamente después de crear el entorno de trabajo, BlueXP inicia una instancia de prueba en el VPC especificado para verificar la conectividad. Si se realiza correctamente, BlueXP finaliza inmediatamente la instancia y, a continuación, inicia la implementación del sistema Cloud Volumes ONTAP. Si BlueXP no puede verificar la conectividad, la creación del entorno de trabajo falla. La instancia de prueba es t2.nano (para el tenancy por defecto de VPC) o m3.medium (para el uso dedicado de VPC).
@@ -274,7 +274,7 @@ Para obtener más información, consulte link:https://docs.netapp.com/us-en/blue
 .Resultado
 BlueXP inicia la instancia de Cloud Volumes ONTAP. Puede realizar un seguimiento del progreso en la línea de tiempo.
 
-Si tiene algún problema con el inicio de la instancia de Cloud Volumes ONTAP, revise el mensaje de error. También puede seleccionar el entorno de trabajo y hacer clic en Volver a crear entorno.
+Si tiene algún problema al iniciar la instancia de Cloud Volumes ONTAP, revise el mensaje de fallo. También puede seleccionar el entorno de trabajo y hacer clic en Volver a crear entorno.
 
 Para obtener más ayuda, vaya a. https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["Soporte Cloud Volumes ONTAP de NetApp"^].
 
@@ -330,7 +330,7 @@ Algunos de los campos en esta página son claros y explicativos. En la siguiente
 | Nombre de usuario y contraseña | Estas son las credenciales de la cuenta de administrador del clúster de Cloud Volumes ONTAP. Puede usar estas credenciales para conectarse a Cloud Volumes ONTAP a través de ONTAP System Manager o la interfaz de línea de comandos de ONTAP. Mantenga el nombre de usuario predeterminado _admin_ o cámbielo por un nombre de usuario personalizado. 
 
 
-| Editar credenciales | Elija las credenciales de AWS y la suscripción al mercado para utilizar con este sistema Cloud Volumes ONTAP. Haga clic en *Agregar suscripción* para asociar las credenciales seleccionadas con una nueva suscripción a AWS Marketplace. La suscripción puede ser por un contrato anual o para pagar por Cloud Volumes ONTAP a una tarifa por hora. Si se ha comprado una licencia directamente a NetApp (Con su propia licencia (BYOL)), no es necesaria una suscripción a AWS. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Aprenda a añadir credenciales de AWS adicionales a BlueXP"^]. 
+| Editar credenciales | Elija las credenciales de AWS y la suscripción al mercado para utilizar con este sistema Cloud Volumes ONTAP. Haga clic en *Agregar suscripción* para asociar las credenciales seleccionadas con una nueva suscripción a AWS Marketplace. La suscripción puede ser por un contrato anual o para pagar por Cloud Volumes ONTAP a una tarifa por hora. Si adquirió una licencia directamente de NetApp (BYOL), no es necesaria una suscripción a AWS. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Aprenda a añadir credenciales de AWS adicionales a BlueXP"^]. 
 |===
 +
 En el siguiente vídeo se muestra cómo asociar una suscripción de pago por uso a Marketplace en sus credenciales de AWS:

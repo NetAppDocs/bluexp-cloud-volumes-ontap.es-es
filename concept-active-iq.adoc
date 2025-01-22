@@ -39,7 +39,7 @@ El asesor digital muestra información completa sobre la configuración de softw
 
 
 
-.Información relacionada
+.Enlaces relacionados
 * https://docs.netapp.com/us-en/active-iq/["Documentación de NetApp: Asesor digital"^]
 * https://aiq.netapp.com/custom-dashboard/search["Inicie el asesor digital"^]
 * https://www.netapp.com/us/services/support-edge.aspx["Servicios de SupportEdge"^]

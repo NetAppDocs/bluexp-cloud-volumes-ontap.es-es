@@ -114,6 +114,6 @@ Debe comprender lo siguiente sobre la habilitación de la organización en nivel
 * Además del modelo de administrador de almacenamiento de confianza, el almacenamiento WORM en Cloud Volumes ONTAP también funciona de forma implícita con un modelo de "administrador de cloud de confianza". Un administrador de cloud podría eliminar DATOS WORM antes de su fecha de caducidad si lo quita o edita directamente del proveedor de cloud.
 
 
-.Información relacionada
+.Enlace relacionado
 * link:reference-worm-snaplock.html["Crear copias Snapshot a prueba de manipulación para el ALMACENAMIENTO WORM"]
 

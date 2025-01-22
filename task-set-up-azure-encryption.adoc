@@ -30,12 +30,6 @@ Si desea utilizar una clave gestionada por el cliente con Cloud Volumes ONTAP, d
 
 
 
-=== Rotación de la clave
-
-Si crea una nueva versión de la clave, Cloud Volumes ONTAP utiliza automáticamente la última versión de la clave.
-
-
-
 === Cómo se cifran los datos
 
 BlueXP utiliza un conjunto de cifrado de disco, que permite la gestión de claves de cifrado con discos gestionados no con blobs de página. Todos los discos de datos nuevos también utilizan el mismo conjunto de cifrado de disco. Las versiones inferiores utilizarán la clave gestionada por Microsoft en lugar de la clave gestionada por el cliente.
@@ -101,6 +95,20 @@ Azure HA Varias zonas de disponibilidad con discos gestionados compartidos
 
 |===
 Todas las cuentas de almacenamiento de Azure para Cloud Volumes ONTAP se cifran con una clave gestionada por los clientes. Si desea cifrar las cuentas de almacenamiento durante su creación, debe crear e proporcionar el ID del recurso en la solicitud de creación de Cloud Volumes ONTAP. Esto se aplica a todo tipo de puesta en marcha. Si no lo proporciona, las cuentas de almacenamiento seguirán estando cifradas, pero BlueXP creará primero las cuentas de almacenamiento con el cifrado de claves gestionado por Microsoft y, a continuación, actualizará las cuentas de almacenamiento para que utilicen la clave gestionada por el cliente.
+
+
+
+== Rotación de claves en Cloud Volumes ONTAP
+
+Si crea una nueva versión de su clave, Cloud Volumes ONTAP utiliza automáticamente la última versión de clave, lo que garantiza que sus datos permanezcan seguros sin necesidad de actualizaciones manuales.
+
+.Pasos
+. Desplácese hasta el almacén de claves en el portal de Azure.
+. Seleccione la tecla que desea girar.
+. Haga clic en *Nueva versión* para generar una nueva versión de la clave.
+
+
+Una vez que se crea una nueva versión, Cloud Volumes ONTAP detecta y utiliza automáticamente la última versión de la clave para el cifrado.
 
 
 

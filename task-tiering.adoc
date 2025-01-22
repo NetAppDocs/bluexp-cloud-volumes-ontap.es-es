@@ -20,7 +20,7 @@ Para configurar la organización en niveles de los datos, debe hacer lo siguient
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Elija una configuración compatible
 [role="quick-margin-para"]
-La mayoría de configuraciones son compatibles. Si tiene un sistema Cloud Volumes ONTAP con la versión más reciente, debería ser bueno. link:task-tiering.html#configurations-that-support-data-tiering["Leer más"].
+La mayoría de configuraciones son compatibles. Si tiene un sistema Cloud Volumes ONTAP que ejecuta la versión más reciente, entonces es bueno hacerlo. link:task-tiering.html#configurations-that-support-data-tiering["Leer más"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Garantice la conectividad entre Cloud Volumes ONTAP y el almacenamiento de objetos
 [role="quick-margin-list"]
@@ -47,7 +47,7 @@ endif::gcp[]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Compruebe que tiene un agregado con la organización en niveles habilitada
 [role="quick-margin-para"]
-La organización en niveles de los datos debe estar habilitada en un agregado para poder habilitar la organización en niveles de los datos en un volumen. Debe conocer los requisitos de los volúmenes nuevos y existentes. <<Ensuring that tiering is enabled on aggregates,Leer más>>.
+Debe habilitarse la organización de datos en niveles en un agregado para habilitarla en un volumen. Debe conocer los requisitos de los volúmenes nuevos y existentes. <<Ensuring that tiering is enabled on aggregates,Leer más>>.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"] Elija una política de organización en niveles cuando cree, modifique o replique un volumen
 [role="quick-margin-para"]
@@ -65,7 +65,7 @@ BlueXP le solicita que elija una política de organización en niveles al crear,
 * No es necesario crear un almacén de objetos para el nivel de capacidad. BlueXP lo hace por ti.
 * No es necesario habilitar la organización en niveles de datos en el nivel del sistema.
 +
-BlueXP crea un almacén de objetos para datos inactivos cuando se crea el sistema, <<Enabling data tiering after implementing the requirements,siempre que no haya problemas de conectividad ni de permisos>>. A continuación, simplemente tiene que habilitar la organización en niveles de los datos en volúmenes (y, en algunos casos, <<Ensuring that tiering is enabled on aggregates,en agregados>>).
+BlueXP  crea un almacén de objetos para los datos inactivos cuando crea el sistema, <<Enabling data tiering after implementing the requirements,siempre que no haya problemas de conectividad ni de permisos>>. Después de eso, solo tiene que habilitar la organización de los datos en niveles en los volúmenes (y, en algunos casos, <<Ensuring that tiering is enabled on aggregates,en agregados>>).
 
 
 
@@ -162,7 +162,7 @@ No es necesario configurar una conexión entre el nivel de rendimiento y el nive
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-Los permisos se incluyen de forma predeterminada en la función personalizada. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Ver permiso de Azure para el conector"^]
+El rol personalizado incluye los permisos de forma predeterminada. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Ver permiso de Azure para el conector"^]
 
 endif::azure[]
 
@@ -212,7 +212,7 @@ Si va a habilitar la organización en niveles de datos en un nuevo volumen, no t
 
 * *volúmenes existentes*
 +
-Si desea habilitar la organización en niveles de datos en un volumen existente, debe asegurarse de que la organización en niveles de datos esté habilitada en el agregado subyacente. Si la organización de datos en niveles no está habilitada en el agregado existente, deberá usar System Manager de ONTAP para adjuntar un agregado existente al almacén de objetos.
+Para habilitar la organización de datos en niveles en un volumen existente, asegúrese de que está habilitado en el agregado subyacente. Si la organización de datos en niveles no está habilitada en el agregado existente, deberá usar System Manager de ONTAP para adjuntar un agregado existente al almacén de objetos.
 
 
 
@@ -356,4 +356,4 @@ Sólo puede eliminar el depósito de S3 si:
 * Todos los objetos se eliminan del bucket y el bucket de S3 está vacío.
 
 
-Al retirar un entorno de trabajo de Cloud Volumes ONTAP, el bloque de S3 que se creó para el entorno no se elimina automáticamente. En su lugar, permanecen en estado huérfano, para evitar que se pierdan datos accidentalmente. Puede eliminar los objetos del depósito y, posteriormente, eliminar el cubo de S3 o conservarlo para su uso posterior. Consulte https://docs.netapp.com/us-en/ontap-cli/vserver-object-store-server-bucket-delete.html#description["CLI de ONTAP: Eliminación de buckets de objeto-almacén-servidor de Vserver"^].
+Al retirar un entorno de trabajo de Cloud Volumes ONTAP, el bloque de S3 que se creó para el entorno no se elimina automáticamente. En su lugar, permanecen en estado huérfano, para evitar que se pierdan datos accidentalmente. Puede eliminar los objetos del depósito y, a continuación, eliminar el cubo de S3 o conservarlo para su uso posterior. Consulte https://docs.netapp.com/us-en/ontap-cli/vserver-object-store-server-bucket-delete.html#description["CLI de ONTAP: Eliminación de buckets de objeto-almacén-servidor de Vserver"^].
