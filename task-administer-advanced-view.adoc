@@ -4,7 +4,7 @@ permalink: task-administer-advanced-view.html
 keywords: system manager, advanced view, access system manager, load system manager, use system manager, cloud tiering 
 summary: Si necesita realizar una gestión avanzada de Cloud Volumes ONTAP, puede hacerlo mediante System Manager de ONTAP, que es una interfaz de gestión proporcionada con un sistema ONTAP. Hemos incluido la interfaz de System Manager directamente dentro de BlueXP para que no tenga que salir de BlueXP para una administración avanzada. 
 ---
-= Administrar Cloud Volumes ONTAP mediante la vista avanzada
+= Administrar Cloud Volumes ONTAP mediante System Manager
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -20,7 +20,7 @@ Si necesita realizar una gestión avanzada de Cloud Volumes ONTAP, puede hacerlo
 
 == Funciones
 
-La vista avanzada de BlueXP le ofrece acceso a funciones de gestión adicionales:
+Puede ejecutar estas funciones de gestión:
 
 * Gestión del almacenamiento avanzada
 +
@@ -48,7 +48,7 @@ Configure los iGroups SAN y los clientes NFS.
 
 == Configuraciones admitidas
 
-La gestión avanzada a través del administrador del sistema de ONTAP es compatible con Cloud Volumes ONTAP 9.10.0 y versiones posteriores en regiones del cloud estándar.
+Cloud Volumes ONTAP 9.10.0 y versiones posteriores admiten la gestión avanzada a través de System Manager de ONTAP en regiones estándar del cloud.
 
 La integración de System Manager no es compatible en regiones GovCloud o regiones que no tienen acceso saliente a Internet.
 
@@ -60,7 +60,7 @@ Cloud Volumes ONTAP no admite algunas funciones que aparecen en la interfaz de S
 
 * Organización en niveles de BlueXP
 +
-El servicio de organización en niveles de BlueXP no es compatible con Cloud Volumes ONTAP. La organización en niveles de los datos para el almacenamiento de objetos debe configurarse directamente desde la vista estándar de BlueXP al crear volúmenes.
+Cloud Volumes ONTAP no admite el servicio de organización en niveles de BlueXP . Debe configurar la organización en niveles de los datos en el almacenamiento de objetos directamente desde la vista estándar de BlueXP  al crear volúmenes.
 
 * Niveles
 +
@@ -68,7 +68,7 @@ System Manager no admite la gestión de agregados (incluidos niveles locales y n
 
 * Actualizaciones de firmware
 +
-Las actualizaciones automáticas del firmware desde la página *clúster > Configuración* no son compatibles con Cloud Volumes ONTAP.
+Cloud Volumes ONTAP no admite actualizaciones automáticas de firmware desde la página *Clúster > Configuración*.
 
 
 
@@ -76,14 +76,39 @@ Además, no se admite el control de acceso basado en roles de System Manager.
 
 
 
-== Cómo comenzar
+== Configure la autenticación para acceder a System Manager
 
-Abra un entorno de trabajo de Cloud Volumes ONTAP y haga clic en la opción Vista avanzada.
+Como administrador, puede activar la autenticación para los usuarios que acceden a ONTAP System Manager desde BlueXP . Es posible determinar el nivel correcto de permisos de acceso según los roles de usuario de ONTAP y habilitar o deshabilitar la autenticación según sea necesario. Si habilita la autenticación, los usuarios deben introducir sus credenciales de usuario ONTAP cada vez que acceden a System Manager desde BlueXP  o cuando se vuelve a cargar la página, ya que BlueXP  no almacena las credenciales internamente. Si deshabilita la autenticación, los usuarios pueden acceder a System Manager con las credenciales de administrador de BlueXP .
+
+
+NOTE: Esta configuración se aplica por conector BlueXP  a los usuarios de ONTAP de su organización o cuenta, independientemente de los entornos de trabajo de Cloud Volumes ONTAP o los proyectos de BlueXP .
+
+.Permisos necesarios
+Debe tener asignada la organización BlueXP  o la Privileges de administración de cuentas para modificar la configuración del conector BlueXP  para la autenticación de usuarios Cloud Volumes ONTAP.
+
+.Pasos
+. Seleccione la lista desplegable *conector* del encabezado BlueXP.
+. Seleccione *gestionar conectores*.
+. Haga clic en el menú de acción image:icon-action.png["icono de puntos suspensivos"]del conector requerido y seleccione *Editar conector*.
+. En *Forzar credenciales de usuario*, selecciona la casilla de verificación *Habilitar/Deshabilitar*. De forma predeterminada, la autenticación está desactivada.
++
+
+NOTE: Si establece este valor en *Habilitar*, la autenticación se restablece y tiene que modificar cualquier flujo de trabajo existente para adaptarse a este cambio.
+
+. Haga clic en *Guardar*.
+
+
+
+
+== Comience a usar System Manager
+
+Es posible acceder a ONTAP System Manager desde un entorno de trabajo de Cloud Volumes ONTAP.
 
 .Pasos
 . En el menú de navegación de la izquierda, selecciona *almacenamiento > Canvas*.
 . En la página Lienzo, seleccione un sistema Cloud Volumes ONTAP.
-. En el panel de la derecha, en *Servicios*, busque *Administrador del sistema* y seleccione *Abrir*.
+. En el panel derecho, selecciona *Servicios > System Manager > Abrir*.
+. Si se le solicita, ingrese sus credenciales de usuario de ONTAP y haga clic en *Login*.
 . Si aparece el mensaje de confirmación, léalo y haga clic en *Cerrar*.
 . Utilice System Manager para gestionar Cloud Volumes ONTAP.
 . Si es necesario, haga clic en *Cambiar a vista estándar* para volver a la administración estándar a través de BlueXP.
@@ -95,6 +120,8 @@ Abra un entorno de trabajo de Cloud Volumes ONTAP y haga clic en la opción Vist
 
 Si necesita ayuda para el uso de System Manager con Cloud Volumes ONTAP, puede consultar https://docs.netapp.com/us-en/ontap/index.html["Documentación de ONTAP"^] para obtener instrucciones paso a paso. A continuación encontrará algunos enlaces que pueden ayudarle:
 
+* https://docs.netapp.com/us-en/ontap/ontap-security-hardening/roles-applications-authentication.html["Roles, aplicaciones y autenticación de ONTAP"^]
+* https://docs.netapp.com/us-en/ontap/system-admin/access-cluster-system-manager-browser-task.html["Utilice System Manager para acceder a un clúster"^].
 * https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html["Gestión de volúmenes y LUN"^]
 * https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html["Gestión de redes"^]
 * https://docs.netapp.com/us-en/ontap/concept_dp_overview.html["Protección de datos"^]

@@ -1,0 +1,32 @@
+= Autenticación de usuario habilitada para acceder a System Manager desde BlueXP 
+:allow-uri-read: 
+
+
+
+
+=== Autenticación de usuario habilitada para acceder a System Manager desde BlueXP 
+
+Como administrador de BlueXP , ahora puede activar la autenticación para los usuarios de ONTAP que acceden a ONTAP System Manager desde BlueXP . Puede activar esta opción editando la configuración del conector BlueXP . Esta opción está disponible para los modos estándar y privado.
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-advanced-view.html["Administrar Cloud Volumes ONTAP mediante System Manager"^].
+
+
+
+=== Se ha cambiado el nombre de la vista avanzada de BlueXP  a System Manager
+
+La opción de gestión avanzada de Cloud Volumes ONTAP desde BlueXP  a través del Administrador del sistema de ONTAP ha cambiado de nombre de *Vista avanzada* a *Administrador del sistema*.
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-advanced-view.html["Administrar Cloud Volumes ONTAP mediante System Manager"^].
+
+
+
+=== Presentamos una forma más sencilla de gestionar las licencias con la cartera digital de BlueXP 
+
+Ahora, puede experimentar la gestión simplificada de las licencias de Cloud Volumes ONTAP mediante puntos de navegación mejorados en la cartera digital de BlueXP :
+
+* Acceda fácilmente a la información de su licencia de Cloud Volumes ONTAP a través de las pestañas *Gobernanza > Cartera digital > Descripción general/Licencias de servicio de datos*.
+* Haga clic en *Ver* en el panel Cloud Volume ONTAP en la pestaña *Descripción general* para obtener una comprensión completa de sus licencias basadas en capacidad. Esta vista avanzada ofrece información detallada sobre sus licencias y suscripciones.
+* Si prefiere la interfaz anterior, puede hacer clic en el botón *Cambiar a la vista heredada* para ver los detalles de la licencia por tipo y modificar los métodos de carga para sus licencias.
+
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["Gestione licencias basadas en capacidad"^].

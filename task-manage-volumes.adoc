@@ -16,7 +16,7 @@ summary: BlueXP le permite gestionar volúmenes y servidores CIFS. También indi
 [role="lead"]
 BlueXP le permite gestionar volúmenes y servidores CIFS. También indica que se deben mover los volúmenes para evitar problemas de capacidad.
 
-Puedes gestionar volúmenes en BlueXP Standard View o Advanced View. La vista estándar proporciona un conjunto limitado de opciones para modificar los volúmenes. La vista avanzada proporciona niveles avanzados de gestión, como clonado, cambio de tamaño, cambio de configuración para antiransomware, análisis, protección y seguimiento de actividades, y traslado de volúmenes entre niveles. Para obtener más información, consulte link:task-administer-advanced-view.html["Administrar Cloud Volumes ONTAP mediante la vista avanzada"].
+Es posible gestionar volúmenes en la vista estándar de BlueXP  o mediante ONTAP System Manager que se incluye en BlueXP  para una gestión de volúmenes avanzada. La vista estándar proporciona un conjunto limitado de opciones para modificar los volúmenes. System Manager proporciona un nivel avanzado de gestión, como clonado, cambio de tamaño, cambio de configuración para antiransomware, análisis, protección y seguimiento de actividades, y traslado de volúmenes entre niveles. Para obtener más información, consulte link:task-administer-advanced-view.html["Administrar Cloud Volumes ONTAP mediante System Manager"].
 
 
 
@@ -126,10 +126,10 @@ NOTE: BlueXP mueve el volumen a un agregado existente que usa el tipo de disco s
 
 De forma predeterminada, un volumen crece automáticamente a un tamaño máximo cuando no hay espacio. El valor predeterminado es 1.000, lo que significa que el volumen puede crecer hasta 11 veces su tamaño. Este valor se puede configurar en los ajustes del conector.
 
-Si necesita cambiar el tamaño de su volumen, puede hacerlo desde la vista avanzada de BlueXP.
+Si necesita cambiar el tamaño de su volumen, puede hacerlo desde System Manager de ONTAP en BlueXP .
 
 .Pasos
-. Abra la vista avanzada para cambiar el tamaño de un volumen a través de ONTAP System Manager. Consulte link:task-administer-advanced-view.html#how-to-get-started["Cómo comenzar"].
+. Haga clic en la vista de System Manager para cambiar el tamaño de un volumen mediante ONTAP System Manager. Consulte link:task-administer-advanced-view.html#how-to-get-started["Cómo comenzar"].
 . En el menú de navegación de la izquierda, selecciona *Almacenamiento > Volúmenes*.
 . En la lista de volúmenes, identifique cuál debe cambiar su tamaño.
 . Haga clic en el icono de opciones image:screenshot_gallery_options.gif["icono de kabob"].
