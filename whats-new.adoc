@@ -1049,7 +1049,7 @@ https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["Aprend
 
 A partir del lanzamiento de la versión 9.10.1, Cloud Volumes ONTAP ahora es compatible con la región Azure West US 3.
 
-https://cloud.netapp.com/cloud-volumes-global-regions["Vea la lista completa de las regiones compatibles de Cloud Volumes ONTAP"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["Vea la lista completa de las regiones compatibles de Cloud Volumes ONTAP"^]
 
 
 
@@ -1208,7 +1208,7 @@ Cloud Volumes ONTAP ahora es compatible en las siguientes regiones de Google Clo
 * Santiago (sur-oeste-1) - solo un nodo
 
 
-https://cloud.netapp.com/cloud-volumes-global-regions["Vea la lista completa de las regiones compatibles de Cloud Volumes ONTAP"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["Vea la lista completa de las regiones compatibles de Cloud Volumes ONTAP"^]
 
 
 
