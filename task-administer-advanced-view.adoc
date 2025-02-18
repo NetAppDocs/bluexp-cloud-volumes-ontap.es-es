@@ -118,7 +118,7 @@ Es posible acceder a ONTAP System Manager desde un entorno de trabajo de Cloud V
 
 == Ayuda con el uso de System Manager
 
-Si necesita ayuda para el uso de System Manager con Cloud Volumes ONTAP, puede consultar https://docs.netapp.com/us-en/ontap/index.html["Documentación de ONTAP"^] para obtener instrucciones paso a paso. A continuación encontrará algunos enlaces que pueden ayudarle:
+Si necesita ayuda con System Manager con Cloud Volumes ONTAP, puede consultar https://docs.netapp.com/us-en/ontap/index.html["Documentación de ONTAP"^] instrucciones paso a paso. Aquí están algunos enlaces a la documentación de ONTAP que podrían ser de ayuda:
 
 * https://docs.netapp.com/us-en/ontap/ontap-security-hardening/roles-applications-authentication.html["Roles, aplicaciones y autenticación de ONTAP"^]
 * https://docs.netapp.com/us-en/ontap/system-admin/access-cluster-system-manager-browser-task.html["Utilice System Manager para acceder a un clúster"^].

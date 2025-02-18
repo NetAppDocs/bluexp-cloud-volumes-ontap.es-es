@@ -42,7 +42,7 @@ SMB es el protocolo tradicional de acceso a archivos para sistemas Windows. Los 
 
 Cloud Volumes ONTAP es compatible con S3 como opción del almacenamiento de escalado horizontal. La compatibilidad con el protocolo S3 le permite configurar el acceso de clientes S3 a los objetos contenidos en un bloque de una máquina virtual de almacenamiento (SVM).
 
-link:https://docs.netapp.com/us-en/ontap/s3-multiprotocol/index.html#how-s3-multiprotocol-works["Descubra cómo funciona el protocolo de S3"^].link:https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["Aprenda a configurar y gestionar los servicios de almacenamiento de objetos S3 en ONTAP"^].
+link:https://docs.netapp.com/us-en/ontap/s3-multiprotocol/index.html#how-s3-multiprotocol-works["Documentación de ONTAP: Descubra cómo funciona el multiprotocolo de S3"^]. link:https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["Documentación de ONTAP: Aprenda a configurar y gestionar servicios de almacenamiento de objetos S3 en ONTAP"^].
 
 
 
@@ -50,4 +50,4 @@ link:https://docs.netapp.com/us-en/ontap/s3-multiprotocol/index.html#how-s3-mult
 
 A partir de la versión 9.12.1 de ONTAP, NVMe-TCP es compatible con proveedores de cloud. BlueXP no ofrece funcionalidades de gestión para NVMe-TCP.
 
-Para obtener más información sobre la configuración de NVMe mediante ONTAP, consulte https://docs.netapp.com/us-en/ontap/san-admin/configure-svm-nvme-task.html["Configure una máquina virtual de almacenamiento para NVMe"^] .
+Para obtener más información sobre la configuración de NVMe mediante ONTAP, consulte la https://docs.netapp.com/us-en/ontap/san-admin/configure-svm-nvme-task.html["Documentación de ONTAP: Configure una máquina virtual de almacenamiento para NVMe"^].

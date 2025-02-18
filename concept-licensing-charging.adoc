@@ -64,7 +64,7 @@ Para obtener más información sobre cómo convertir licencias basadas en nodos 
 
 == Precios y configuraciones admitidas
 
-Para obtener más información sobre los precios, visite https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["Sitio web de NetApp BlueXP"^].
+Para obtener más información sobre los precios, visite https://bluexp.netapp.com/pricing/["Sitio web de NetApp BlueXP"^] .
 
 Los paquetes de licencia basados en capacidad están disponibles con Cloud Volumes ONTAP 9.7 y versiones posteriores.
 

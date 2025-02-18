@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: concept-azure-mktplace-direct.html 
+keywords: azure marketplace direct, cvo in azure marketplace 
+summary:  
+---
+= Obtenga información acerca de las opciones de puesta en marcha de Cloud Volumes ONTAP en Azure
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp proporciona dos opciones para la puesta en marcha de Cloud Volumes ONTAP en Azure: A través de NetApp BlueXP  o a través de Azure Marketplace. Tradicionalmente, Cloud Volumes ONTAP confía en BlueXP  para la puesta en marcha y la orquestación. A partir de Cloud Volumes ONTAP 9.16.1, puede aprovechar la puesta en marcha directa de Azure Marketplace, un proceso optimizado que proporciona acceso a un conjunto limitado, pero aún potente, de funciones y opciones de Cloud Volumes ONTAP.
+
+Cuando implementa Cloud Volumes ONTAP directamente desde Azure Marketplace, no es necesario configurar el conector BlueXP  ni cumplir con otros criterios de seguridad e incorporación necesarios para poner en marcha Cloud Volumes ONTAP a través de BlueXP . Desde Azure Marketplace, puedes poner en marcha Cloud Volumes ONTAP rápidamente con unos pocos clics y explorar las funciones y funcionalidades principales de tu entorno.
+
+Aquí está la comparación de características entre las dos opciones:
+
+[cols="3*"]
+|===
+|  | Mercado de Azure | BlueXP 
+
+
+| *Onboarding* | Es más corto y fácil y se requiere una preparación mínima para una puesta en marcha directa | Proceso de incorporación más prolongado, incluida la instalación del conector BlueXP  
+
+
+| *Instancias de almacenamiento de máquinas virtuales (SVM) soportadas* | Edsv5 y LsV3 | Toda la gama de opciones de máquina virtual de almacenamiento. https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configuraciones compatibles en Azure"^] 
+
+
+| *Licencia* | Licencia GRATUITA | Cualquier licencia basada en la capacidad. link:concept-licensing.html["Licencias de Cloud Volumes ONTAP"] 
+
+
+| *Soporte NetApp* | No incluido | Disponible, según el tipo de licencia 
+
+
+| *Capacidad* | Hasta 500 GiB | Ampliable por configuración 
+
+
+| *Modelo de implementación* | Puesta en marcha del modo de alta disponibilidad (HA) en una única zona de disponibilidad (AZ) | Todas las configuraciones compatibles, incluidos los modos de nodo único y alta disponibilidad, implementaciones de una o varias zonas de disponibilidad 
+
+
+| *Tipo de disco soportado* | Discos gestionados Premium SSD v2 | Mayor sujeción. link:concept-storage.html#azure-storage["Configuración predeterminada de Cloud Volumes ONTAP"] 
+
+
+| *Velocidad de escritura (modo de escritura rápida)* | No admitido | Compatible, según su configuración. link:concept-write-speed.html["Obtenga información sobre las velocidades de escritura en Cloud Volumes ONTAP"]. 
+
+
+| * Capacidades de orquestación* | No disponible | Disponible a través de BlueXP , en función del tipo de licencia 
+
+
+| *Número de SVM soportadas* | Un SVM por puesta en marcha | Varias SVM, en función de su configuración. link:task-managing-svms-azure.html#supported-number-of-storage-vms["Número admitido de SVM"] 
+
+
+| *Cambiando el tipo de instancia* | No admitido | Compatible 
+
+
+| *FabricPool tiering* | No admitido | Compatible 
+|===
+En el futuro, el conector BlueXP  podrá descubrir las implementaciones realizadas a través de la puesta en marcha directa de Azure Marketplace, cuando pueda experimentar todas las funcionalidades de gestión y orquestación de Cloud Volumes ONTAP.
+
+.Enlaces relacionados
+* Implementación directa de Azure Marketplace: link:task-deploy-cvo-azure-mktplc.html["Ponga en marcha Cloud Volumes ONTAP desde Azure Marketplace"]
+* Instalación de BlueXP : link:task-getting-started-azure.html["Inicio rápido para Cloud Volumes ONTAP en Azure"]
+* https://docs.netapp.com/us-en/bluexp-family/index.html["Documentación de BlueXP"^]
+

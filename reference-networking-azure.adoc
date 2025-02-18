@@ -92,7 +92,7 @@ Si una conexión a Internet saliente no está disponible para enviar mensajes Au
 
 Si ha definido reglas de salida estrictas para Cloud Volumes ONTAP, también tendrá que asegurarse de que el grupo de seguridad Cloud Volumes ONTAP permita conexiones _saliente_ a través del puerto 3128.
 
-Una vez que haya comprobado que el acceso saliente a Internet está disponible, puede probar AutoSupport para asegurarse de que puede enviar mensajes. Para obtener instrucciones, consulte https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["Documentos de ONTAP: Configure AutoSupport"^].
+Una vez que haya comprobado que el acceso saliente a Internet está disponible, puede probar AutoSupport para asegurarse de que puede enviar mensajes. Para obtener instrucciones, consulte la https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["Documentación de ONTAP: Configurar AutoSupport"^].
 
 Si BlueXP notifica que los mensajes de AutoSupport no se pueden enviar, link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["Solucione problemas de configuración de AutoSupport"].
 
@@ -449,7 +449,7 @@ NOTE: El origen es la interfaz (dirección IP) en el sistema Cloud Volumes ONTAP
 | TCP | 3128 | LIF de gestión de nodos | Conector | Envío de mensajes AutoSupport a través de un servidor proxy en el conector, si no hay disponible una conexión a Internet saliente 
 
 
-| Backups de configuración | HTTP | 80 | LIF de gestión de nodos | \Http://<connector-IP-address>/occm/offboxconfig | Enviar copias de seguridad de configuración al conector. link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["Obtener información acerca de los archivos de copia de seguridad de configuración"^]. 
+| Backups de configuración | HTTP | 80 | LIF de gestión de nodos | \Http://<connector-IP-address>/occm/offboxconfig | Enviar copias de seguridad de configuración al conector. link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["Documentación de ONTAP"^]. 
 
 
 | DHCP | 68 | UDP | LIF de gestión de nodos | DHCP | Cliente DHCP para la configuración inicial 

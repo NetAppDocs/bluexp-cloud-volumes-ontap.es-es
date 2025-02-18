@@ -20,6 +20,20 @@ Las mejoras descritas en esta página son específicas de las funciones de BlueX
 
 
 
+== 18 de febrero de 2025
+
+
+
+=== Presentamos la implementación directa de Azure Marketplace
+
+Ahora puede aprovechar la puesta en marcha directa de Azure Marketplace para implementar Cloud Volumes ONTAP de forma rápida y sencilla directamente desde Azure Marketplace. Mediante este método optimizado, puede explorar las funciones y funcionalidades principales de Cloud Volumes ONTAP en su entorno sin necesidad de configurar el conector BlueXP  o cumplir con otros criterios de incorporación necesarios para poner en marcha Cloud Volumes ONTAP a través de BlueXP .
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-azure-mktplace-direct.html["Obtenga información acerca de las opciones de puesta en marcha de Cloud Volumes ONTAP en Azure"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["Ponga en marcha Cloud Volumes ONTAP desde Azure Marketplace"^]
+
+
+
+
 == 10 de febrero de 2025
 
 
@@ -213,7 +227,7 @@ Los paquetes de licencia basados en la capacidad de Edge Cache ya no estarán di
 
 === Compatibilidad con versiones mínimas para Flash Cache en Azure
 
-La versión mínima de Cloud Volumes ONTAP requerida para configurar Flash Cache en Azure es 9.13.1 GA. Solo puede usar ONTAP 9.13,1 GA y versiones posteriores para implementar Flash Cache en sistemas Cloud Volumes ONTAP para Azure.
+La versión mínima de Cloud Volumes ONTAP requerida para configurar Flash Cache en Azure es 9.13.1 GA. Solo puede usar ONTAP 9.13.1 GA y versiones posteriores para implementar Flash Cache en sistemas Cloud Volumes ONTAP de Azure.
 
 Para obtener información sobre las configuraciones compatibles, consulte https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Configuraciones compatibles en Azure"^].
 
@@ -655,6 +669,10 @@ Ahora se mostrará una notificación cada vez que accedas a Cloud Volumes ONTAP 
 
 == 4 de abril de 2023
 
+
+
+=== Soporte para las regiones de China para AWS
+
 A partir de Cloud Volumes ONTAP 9.12.1 GA, las regiones de China ahora son compatibles con AWS de la siguiente manera.
 
 * Los sistemas de un solo nodo son compatibles.
@@ -716,14 +734,12 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-volume
 
 
 
-=== Apoyo regional a China
+=== Soporte para las regiones de China en Azure
 
-A partir de la versión comercial de Cloud Volumes ONTAP 9.12.1, ahora el soporte de la región de China es compatible con Azure de la siguiente manera.
+La región norte de China 3 ahora es compatible con las puestas en marcha de un nodo de Cloud Volumes ONTAP 9.12.1 GA y 9.13.0 GA en Azure. Solo se admiten las licencias adquiridas directamente a través de NetApp (licencias BYOL) en estas regiones.
 
-* Cloud Volumes ONTAP es compatible con China Norte 3.
-* Los sistemas de un solo nodo son compatibles.
-* Se admiten las licencias adquiridas directamente en NetApp.
 
+NOTE: Las nuevas puestas en marcha de Cloud Volumes ONTAP en regiones de China solo se admiten en 9.12.1 GA y 9.13.0 GA. Puede actualizar estas versiones a parches y versiones posteriores de Cloud Volumes ONTAP. Si desea implementar versiones posteriores de Cloud Volumes ONTAP en las regiones de China, póngase en contacto con el soporte de NetApp.
 
 Para conocer la disponibilidad regional, consulte la link:https://bluexp.netapp.com/cloud-volumes-global-regions["Mapas de regiones globales para Cloud Volumes ONTAP"^].
 
@@ -884,7 +900,7 @@ Los siguientes cambios se introdujeron con la versión 3.9.23 del conector.
 
 Ahora se incluye una licencia de ONTAP S3 en los sistemas Cloud Volumes ONTAP nuevos y existentes que ejecutan la versión 9.12.1 o posterior en Google Cloud Platform.
 
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["Aprenda a configurar y gestionar los servicios de almacenamiento de objetos S3 en ONTAP"^]
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["Documentación de ONTAP: Aprenda a configurar y gestionar los servicios de almacenamiento de objetos S3"^]
 
 
 
@@ -906,7 +922,7 @@ Para obtener más información, consulte link:https://docs.netapp.com/us-en/blue
 
 NDMP-Copy está ahora certificado para su uso con Cloud Volume ONTAP.
 
-Para obtener información acerca de cómo configurar y utilizar NDMP, consulte https://docs.netapp.com/us-en/ontap/ndmp/index.html["Información general de la configuración de NDMP"] .
+Para obtener información sobre cómo configurar y utilizar NDMP, consulte la https://docs.netapp.com/us-en/ontap/ndmp/index.html["Documentación de ONTAP: Información general de la configuración de NDMP"].
 
 
 
@@ -1008,7 +1024,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/ma
 Hay dos nuevos paquetes de licencia basados en la capacidad disponibles para Cloud Volumes ONTAP en Azure al pagar mediante una suscripción a Azure Marketplace:
 
 * *Optimizado*: Pague por la capacidad suministrada y las operaciones de E/S por separado
-* *Edge Cache*: Licencia para https://cloud.netapp.com/cloud-volumes-edge-cache["Caché de Cloud Volumes Edge"^]
+* *Edge Cache*: Licencia para https://bluexp.netapp.com/cloud-volumes-edge-cache["Caché de Cloud Volumes Edge"^]
 
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["Obtenga más información sobre estos paquetes de licencias"].
@@ -1041,7 +1057,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-aws-elastic-vol
 
 Ahora se incluye una licencia de ONTAP S3 en los sistemas Cloud Volumes ONTAP nuevos y existentes que ejecuten la versión 9.11.0 o posterior en AWS.
 
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["Aprenda a configurar y gestionar los servicios de almacenamiento de objetos S3 en ONTAP"^]
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["Documentación de ONTAP: Aprenda a configurar y gestionar los servicios de almacenamiento de objetos S3"^]
 
 
 
@@ -1057,7 +1073,7 @@ https://bluexp.netapp.com/cloud-volumes-global-regions["Vea la lista completa de
 
 Ahora se incluye una licencia de ONTAP S3 en los sistemas Cloud Volumes ONTAP nuevos y existentes que ejecuten la versión 9.9.1 o posterior en Azure.
 
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["Aprenda a configurar y gestionar los servicios de almacenamiento de objetos S3 en ONTAP"^]
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["Documentación de ONTAP: Aprenda a configurar y gestionar los servicios de almacenamiento de objetos S3"^]
 
 
 
@@ -1255,7 +1271,7 @@ Aún puede conectarse a System Manager introduciendo la dirección IP de adminis
 
 Ahora que la tarifa especial introductoria ha caducado, ahora se le cobrará por el uso del almacenamiento WORM. La carga se realiza por hora, de acuerdo con la capacidad total aprovisionada de los volúmenes WORM. Esto se aplica a sistemas Cloud Volumes ONTAP nuevos y existentes.
 
-https://cloud.netapp.com/pricing["Más información sobre los precios del almacenamiento WORM"^].
+https://bluexp.netapp.com/pricing["Más información sobre los precios del almacenamiento WORM"^].
 
 
 

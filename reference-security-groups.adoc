@@ -222,7 +222,7 @@ NOTE: El origen es la interfaz (dirección IP) en el sistema Cloud Volumes ONTAP
 | ICMP | 1 | LIF de gestión de nodos | Mediador DE ALTA DISPONIBILIDAD | Mantener activos (solo alta disponibilidad de Cloud Volumes ONTAP) 
 
 
-| Backups de configuración | HTTP | 80 | LIF de gestión de nodos | \Http://<connector-IP-address>/occm/offboxconfig | Enviar copias de seguridad de configuración al conector. link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["Obtener información acerca de los archivos de copia de seguridad de configuración"^]. 
+| Backups de configuración | HTTP | 80 | LIF de gestión de nodos | \Http://<connector-IP-address>/occm/offboxconfig | Enviar copias de seguridad de configuración al conector. link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["Documentación de ONTAP"^] 
 
 
 | DHCP | UDP | 68 | LIF de gestión de nodos | DHCP | Cliente DHCP para la configuración inicial 

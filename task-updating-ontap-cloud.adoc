@@ -150,7 +150,9 @@ Por ejemplo, si está ejecutando la versión 9.8 y desea actualizar a la versió
 
 === Versiones de parches
 
-A partir de enero de 2024, las actualizaciones de revisiones solo están disponibles en BlueXP si se trata de una versión de parches para las tres versiones más recientes de Cloud Volumes ONTAP. Utilizamos la versión de GA más reciente para determinar las tres versiones más recientes que se deben mostrar en BlueXP. Por ejemplo, si la versión actual de GA es 9.13.1, aparecen parches para 9.11.1-9.13.1 en BlueXP. Si desea actualizar a una versión de revisión para las versiones 9.11.1 o anteriores, deberá utilizar el procedimiento de actualización manual de <<Mejora desde una imagen disponible en una URL,Descargar la imagen de ONTAP>>.
+A partir de enero de 2024, las actualizaciones de parches solo están disponibles en BlueXP  si hay una versión de parches para las tres versiones más recientes de Cloud Volumes ONTAP. Las versiones de parches están disponibles ocasionalmente para la implementación, cuando la versión RC o GA no está disponible para la implementación.
+
+Utilizamos la versión de GA más reciente para determinar las tres versiones más recientes que se deben mostrar en BlueXP. Por ejemplo, si la versión actual de GA es 9.13.1, aparecen parches para 9.11.1-9.13.1 en BlueXP. Si desea actualizar a una versión de revisión para las versiones 9.11.1 o anteriores, deberá utilizar el procedimiento de actualización manual de <<Mejora desde una imagen disponible en una URL,Descargar la imagen de ONTAP>>.
 
 Como regla general para las versiones de parche (P), puede actualizar de una versión a cualquier versión P de la versión actual que esté ejecutando o la siguiente versión.
 
@@ -227,7 +229,7 @@ Al actualizar un sistema de un solo nodo, el proceso de actualización desconect
 
 En muchos casos, actualizar una pareja de alta disponibilidad resulta no disruptivo y las I/O se interrumpen. Durante este proceso de actualización no disruptiva, cada nodo se actualiza conjuntamente para seguir proporcionando I/o a los clientes.
 
-Los protocolos orientados a la sesión pueden causar efectos adversos en los clientes y las aplicaciones en ciertas áreas durante las actualizaciones. Para obtener más información, https://docs.netapp.com/us-en/ontap/upgrade/concept_considerations_for_session_oriented_protocols.html["Consulte la documentación de ONTAP"^]
+Los protocolos orientados a la sesión pueden causar efectos adversos en los clientes y las aplicaciones en ciertas áreas durante las actualizaciones. Para obtener más información, consulte la https://docs.netapp.com/us-en/ontap/upgrade/concept_considerations_for_session_oriented_protocols.html["Documentación de ONTAP"^]
 
 
 
@@ -235,7 +237,7 @@ Los protocolos orientados a la sesión pueden causar efectos adversos en los cli
 
 La devolución automática debe estar habilitada en una pareja de ha de Cloud Volumes ONTAP (esta es la configuración predeterminada). Si no lo es, la operación fallará.
 
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D01-49A5-BEFD-D529713EC1FA.html["Documentación de ONTAP 9: Comandos para configurar el retorno automático"^]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D01-49A5-BEFD-D529713EC1FA.html["Documentación de ONTAP: Comandos para configurar una devolución automática"^]
 
 
 
@@ -289,9 +291,9 @@ image:screenshots_aggregate_details_state.png["Captura de pantalla: Muestra el c
 
 === Compruebe que todas las LIF se encuentran en los puertos domésticos
 
-Antes de actualizar, todos los LIF deben estar en los puertos domésticos. Consulte la documentación de ONTAP para link:https://docs.netapp.com/us-en/ontap/upgrade/task_enabling_and_reverting_lifs_to_home_ports_preparing_the_ontap_software_for_the_update.html["Compruebe que todas las LIF se encuentran en los puertos domésticos"].
+Antes de actualizar, todos los LIF deben estar en los puertos domésticos. Consulte la documentación de ONTAP en link:https://docs.netapp.com/us-en/ontap/upgrade/task_enabling_and_reverting_lifs_to_home_ports_preparing_the_ontap_software_for_the_update.html["Compruebe que todas las LIF se encuentran en los puertos domésticos"^].
 
-Si se produce un error de actualización, consulte link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/CVO_upgrade_fails["Artículo de la base de conocimientos «Fallo de actualización de Cloud Volumes ONTAP»"].
+Si se produce un error de actualización, consulte el artículo de la base de conocimientos (KB) link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/CVO_upgrade_fails["Error en la actualización de Cloud Volumes ONTAP"^].
 
 
 

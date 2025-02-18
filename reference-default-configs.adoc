@@ -88,7 +88,7 @@ NOTE: La conmutación por error de LIF está deshabilitada de forma predetermina
 Se puede acceder a las copias de seguridad desde \http://ipaddress/occm/offboxconfig/, donde _ipaddress_ es la dirección IP del host del conector.
 
 +
-Puede utilizar los backups para reconfigurar el sistema Cloud Volumes ONTAP. Para obtener más información sobre las copias de seguridad de configuración, consulte https://docs.netapp.com/us-en/ontap/system-admin/config-backup-file-concept.html["Documentación de ONTAP"] .
+Puede utilizar los backups para reconfigurar el sistema Cloud Volumes ONTAP. Para obtener más información sobre las copias de seguridad de configuración, consulte la https://docs.netapp.com/us-en/ontap/system-admin/config-backup-file-concept.html["Documentación de ONTAP"^].
 
 ** BlueXP  establece varios atributos de volumen de forma diferente a otras herramientas de gestión (Administrador del sistema de ONTAP o la interfaz de línea de comandos de ONTAP, por ejemplo).
 +
