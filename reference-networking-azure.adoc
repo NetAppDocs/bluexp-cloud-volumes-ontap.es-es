@@ -53,7 +53,7 @@ La autenticación de usuario falla y los siguientes servicios no están disponib
 
 
 
-| \https://keyvault-production-aks.vault.azure.net | Almacén de claves | Se utiliza para recuperar la clave secreta del cliente del almacén de claves de Azure para comunicarse con los bloques de S3 para gestionar metadatos. El servicio Cloud Volumes ONTAP utiliza este componente internamente. | Modos estándar, restringido y privado. | Los servicios Cloud Volumes ONTAP no están disponibles. 
+| https://vault.azure.net[] | Almacén de claves | Se utiliza para recuperar claves secretas del cliente del almacén de claves de Azure cuando se utilizan claves gestionadas por el cliente (CMK). | Modos estándar, restringido y privado. | Los servicios Cloud Volumes ONTAP no están disponibles. 
 
 
 | \https://cloudmanager.cloud.netapp.com/tenancy | Cliente | Se utiliza para recuperar los recursos de Cloud Volumes ONTAP de la tenencia de BlueXP  para autorizar recursos y usuarios. | Modos estándar y restringidos. | Los recursos de Cloud Volumes ONTAP y los usuarios no están autorizados. 
@@ -82,7 +82,7 @@ La autenticación de usuario falla y los siguientes servicios no están disponib
 
 Los nodos Cloud Volumes ONTAP requieren acceso a Internet de salida para AutoSupport de NetApp, que supervisa de forma proactiva el estado del sistema y envía mensajes al soporte técnico de NetApp.
 
-Las políticas de enrutamiento y firewall deben permitir el tráfico HTTP/HTTPS a los siguientes extremos para que Cloud Volumes ONTAP pueda enviar mensajes de AutoSupport:
+Las políticas de enrutamiento y firewall deben permitir el tráfico HTTPS a los siguientes extremos para que Cloud Volumes ONTAP pueda enviar mensajes AutoSupport:
 
 * \https://support.netapp.com/aods/asupmessage
 * \https://support.netapp.com/asupprod/post/1.0/postAsup

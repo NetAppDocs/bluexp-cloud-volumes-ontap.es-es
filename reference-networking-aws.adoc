@@ -88,7 +88,7 @@ Los nodos Cloud Volumes ONTAP requieren acceso a Internet saliente para acceder 
 
 Los nodos Cloud Volumes ONTAP requieren acceso a Internet de salida para AutoSupport de NetApp, que supervisa de forma proactiva el estado del sistema y envía mensajes al soporte técnico de NetApp.
 
-Las políticas de enrutamiento y firewall deben permitir el tráfico HTTP/HTTPS a los siguientes extremos para que Cloud Volumes ONTAP pueda enviar mensajes de AutoSupport:
+Las políticas de enrutamiento y firewall deben permitir el tráfico HTTPS a los siguientes extremos para que Cloud Volumes ONTAP pueda enviar mensajes AutoSupport:
 
 * \https://support.netapp.com/aods/asupmessage
 * \https://support.netapp.com/asupprod/post/1.0/postAsup

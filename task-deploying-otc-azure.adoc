@@ -16,7 +16,7 @@ summary: Puede iniciar un único sistema Cloud Volumes ONTAP en Azure creando un
 [role="lead"]
 Puede iniciar un sistema de un solo nodo o un par de alta disponibilidad en Azure mediante la creación de un entorno de trabajo de Cloud Volumes ONTAP en BlueXP.
 
-.Lo que necesitará
+.Antes de empezar
 Necesita lo siguiente para crear un entorno de trabajo.
 
 [[licensing]]
@@ -98,7 +98,7 @@ TIP: Si quieres utilizar WORM y organización de datos en niveles, debes deshabi
 . *Ubicación*: Seleccione una región, zona de disponibilidad, vnet y subred y, a continuación, active la casilla de verificación para confirmar la conectividad de red entre el conector y la ubicación de destino.
 +
 
-NOTE: En las regiones de China, las puestas en marcha de un solo nodo solo se admiten en Cloud Volumes ONTAP 9.12.1 GA y 9.13.0 GA. Puede actualizar estas versiones a parches y versiones posteriores de Cloud Volumes ONTAP. Si desea implementar versiones posteriores de Cloud Volumes ONTAP en las regiones de China, póngase en contacto con el soporte de NetApp. En estas regiones solo se admiten las licencias adquiridas directamente desde NetApp.
+NOTE: En las regiones de China, las puestas en marcha de un solo nodo solo se admiten en Cloud Volumes ONTAP 9.12.1 GA y 9.13.0 GA. Puede actualizar estas versiones a parches y versiones posteriores de Cloud Volumes ONTAP. Si desea implementar versiones posteriores de Cloud Volumes ONTAP en las regiones de China, póngase en contacto con el soporte de NetApp. Solo las licencias compradas directamente de NetApp son compatibles en las regiones de China, las suscripciones de Marketplace no están disponibles.
 
 . *Conectividad*: Elija un grupo de recursos nuevo o existente y, a continuación, elija si desea utilizar el grupo de seguridad predefinido o si desea utilizar el suyo.
 +

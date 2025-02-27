@@ -146,7 +146,7 @@ Para el paquete Essentials, el cargo por capacidad mínima de 4 TiB no se aplica
 
 === Sobrerajes
 
-Si sobrepasa su capacidad de BYOL o si la licencia caduca, se le cobrará por exceso a la tarifa por horas en función de su suscripción al mercado.
+Si supera la capacidad de su licencia propia o si su licencia caduca, se le cobrará por excedentes a tarifas por hora según la suscripción al mercado. Los excedentes se cobran según las tarifas del mercado, con una preferencia por utilizar primero la capacidad disponible de otras licencias.
 
 
 
@@ -164,14 +164,6 @@ La licencia se basa enteramente en el tipo de volumen creado dentro de los siste
 NOTE: Si un volumen de solo lectura/DP se convierte en un volumen principal, BlueXP  lo considera como datos primarios y los costes de carga se calculan en función del tiempo que el volumen estuvo en modo de lectura/escritura. Cuando el volumen vuelve a realizarse de solo lectura/DP, BlueXP  los considera nuevamente como datos secundarios y los cobra utilizando la mejor licencia correspondiente de la cartera digital.
 
 * Alta disponibilidad secundaria básica: Volúmenes de tipo de protección de datos (DP) (normalmente volúmenes de destino de SnapMirror o SnapVault de solo lectura) creados en un sistema Cloud Volumes ONTAP con dos nodos ONTAP que pueden recuperarse entre sí para proporcionar un acceso a los datos sin interrupciones.
-
-
-Tenga en cuenta estos puntos:
-
-* Carga mínima: Hay un cargo mínimo de 4 TiB por cada máquina virtual de almacenamiento que sirve datos y que tiene al menos un volumen primario (de lectura y escritura). Para el paquete Essentials, este coste mínimo no se aplica a los equipos virtuales de almacenamiento con solo volúmenes secundarios (protección de datos).
-* Excedentes: Si se supera la capacidad con licencia, los excedentes se cobran según las tarifas del mercado, con una preferencia por utilizar primero la capacidad disponible de otras licencias.
-* FlexClone y FlexCache Volumes: Los volúmenes FlexClone no cobran. Los volúmenes FlexCache de origen y de destino se consideran datos principales y se cargan de acuerdo con el espacio aprovisionado.
-* Pares de ALTA disponibilidad cargando: Para pares de alta disponibilidad, solo se carga la capacidad aprovisionada de un nodo. Los datos reflejados de forma sincrónica en el nodo partner no se cargan.
 
 
 .BYOL
