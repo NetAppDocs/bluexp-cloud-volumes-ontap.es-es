@@ -114,12 +114,12 @@ BlueXP  también modifica `default-data-files` las políticas en los equipos vi
 La modificación de los servicios es necesaria porque garantiza que Cloud Volumes ONTAP pueda utilizar la LIF iSCSI para conexiones de gestión externas.
 
 .Se requieren permisos de Google Cloud
-El conector requiere permisos específicos para crear y gestionar máquinas virtuales de almacenamiento para parejas de alta disponibilidad de Cloud Volumes ONTAP. Los permisos necesarios se incluyen en https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["Las políticas proporcionadas por NetApp"].
+El conector requiere permisos específicos para crear y gestionar máquinas virtuales de almacenamiento para parejas de alta disponibilidad de Cloud Volumes ONTAP. Los permisos necesarios se incluyen en https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["Las políticas proporcionadas por NetApp"^].
 
 .Pasos
 . Use la siguiente llamada de API para crear una máquina virtual de almacenamiento:
 +
-`POST /occm/api/gcp/ha/working-environments/{WE_ID}/svm/`
+`POST /gcp/ha/working-environments/{workingEnvironmentId}/svm/`
 
 +
 El organismo de solicitud debe incluir lo siguiente:
@@ -146,7 +146,7 @@ Si es necesario, puede cambiar el nombre de un equipo virtual de almacenamiento 
 .Pasos
 . Use la siguiente llamada de API para cambiar el nombre de una máquina virtual de almacenamiento:
 +
-`PUT /occm/api/gcp/ha/working-environments/{WE_ID}/svm`
+`PUT /gcp/ha/working-environments/{workingEnvironmentId}/svm`
 
 +
 El organismo de solicitud debe incluir lo siguiente:
@@ -170,6 +170,6 @@ Si ya no necesita una máquina virtual de almacenamiento, es posible eliminarla 
 .Pasos
 . Use la siguiente llamada API para eliminar una máquina virtual de almacenamiento:
 +
-`DELETE /occm/api/gcp/ha/working-environments/{WE_ID}/svm/{SVM_NAME}`
+`DELETE /gcp/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`
 
 
