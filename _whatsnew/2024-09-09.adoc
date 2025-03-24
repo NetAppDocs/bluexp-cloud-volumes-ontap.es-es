@@ -17,6 +17,6 @@ La simplificación de los precios le ofrece estos beneficios:
 
 Obtenga más información sobre estas funciones:
 
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["Mejorar la protección contra el ransomware"]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["Habilita las soluciones de protección frente a ransomware de NetApp para Cloud Volumes ONTAP"]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["Almacenamiento WORM"]
 

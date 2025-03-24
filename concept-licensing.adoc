@@ -4,7 +4,7 @@ permalink: concept-licensing.html
 keywords: 'freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go, keystone flex, keystone, cloud backup, digital wallet, bluexp license conversion for node based, license end of support (EOS) node-based, end of availability (EOA) of node-based' 
 summary: Hay varias opciones de licencia disponibles para Cloud Volumes ONTAP. Cada opción le permite elegir una configuración que cumpla sus necesidades. 
 ---
-= Licencias de Cloud Volumes ONTAP
+= Licencias para Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -22,7 +22,7 @@ Hay varias opciones de licencia disponibles para Cloud Volumes ONTAP. Cada opci�
 
 Los nuevos clientes disponen de las siguientes opciones de licencia.
 
-Licencias basadas en capacidad:: Pague por los múltiples sistemas de Cloud Volumes ONTAP de su cuenta de NetApp mediante la capacidad aprovisionada. Incluye la capacidad de adquirir servicios de datos en cloud adicionales.
+Licencias basadas en capacidad:: Pague por los múltiples sistemas de Cloud Volumes ONTAP de su cuenta de NetApp mediante la capacidad aprovisionada. Incluye la capacidad de adquirir servicios de datos en cloud adicionales. Para obtener más información sobre los modelos de consumo en licencias basadas en capacidad, consulte link:concept-licensing-charging.html["Obtenga más información sobre las licencias basadas en capacidad"].
 Suscripción a Keystone:: Un servicio basado en suscripciones de pago por crecimiento que ofrece una experiencia de nube híbrida fluida para pares de alta disponibilidad.
 
 
@@ -48,7 +48,7 @@ NOTE: Mientras que el uso y la medición reales de los productos y servicios ges
 
 === Paquetes
 
-Los siguientes paquetes basados en capacidad están disponibles para Cloud Volumes ONTAP.
+Los siguientes paquetes basados en capacidad están disponibles para Cloud Volumes ONTAP. Para obtener más información sobre los paquetes de licencias basadas en capacidad, consulte link:concept-licensing-charging.html["Obtenga más información sobre las licencias basadas en capacidad"].
 
 Para obtener una lista de los tipos de máquinas virtuales admitidos con los siguientes paquetes basados en capacidad, consulte:
 
@@ -78,7 +78,7 @@ Ofrece todas las características de Cloud Volumes ONTAP de forma gratuita desde
 * Puede usar hasta 10 sistemas Cloud Volumes ONTAP con la oferta de Freemium por cuenta de NetApp en cualquier proveedor de cloud.
 * Si la capacidad aprovisionada para un sistema de Cloud Volumes ONTAP supera los 500 GIB, BlueXP convierte el sistema al paquete Essentials.
 +
-En cuanto un sistema se convierte al paquete Essentials, el <<Notas sobre la carga,carga mínima>> aplicable.
+Tan pronto como un sistema se convierte en el paquete Essentials, se aplica ellink:concept-licensing-charging.html#minimum-charge["carga mínima"].
 
 +
 Cualquier otro sistema que tenga menos de 500 GIB de capacidad aprovisionada permanece en Freemium (siempre que se hayan desplegado utilizando la oferta Freemium).
@@ -99,8 +99,6 @@ Puede pagar por capacidad en una serie de configuraciones diferentes:
 
 * Añada cualquiera de los servicios de datos en el cloud de NetApp por un coste adicional
 
-
-Para obtener más información, consulte link:concept-licensing-charging.html["Más información acerca de las licencias basadas en capacidad"].
 
 
 
@@ -300,7 +298,7 @@ BlueXP  permite una conversión fluida de licencias basadas en nodos a capacida
 
 Antes de realizar la transición, es bueno familiarizarse con la diferencia que existe entre los dos modelos de licencia. Las licencias basadas en nodos incluyen capacidad fija para cada instancia de ONTAP, lo que puede restringir la flexibilidad. Por otro lado, las licencias basadas en la capacidad permiten un conjunto compartido de almacenamiento en varias instancias, lo que ofrece una mayor flexibilidad, optimiza el uso de recursos y reduce la posibilidad de sanciones financieras al redistribuir las cargas de trabajo. La carga basada en la capacidad se ajusta sin problemas a los cambios en los requisitos de almacenamiento.
 
-Para saber cómo puede realizar esta conversión, consulte link:task-convert-node-capacity.html["Convierta licencias basadas en nodos a basadas en capacidad"].
+Para saber cómo puede realizar esta conversión, consulte link:task-convert-node-capacity.html["Convierta una licencia basada en nodos de Cloud Volumes ONTAP en una licencia basada en capacidad"].
 
 
 NOTE: No se admite la conversión de un sistema de la licencia basada en capacidad a la basada en nodos.

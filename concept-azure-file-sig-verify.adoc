@@ -4,7 +4,7 @@ permalink: concept-azure-file-sig-verify.html
 keywords: Azure, image, VHD, file signature verification, encryption, sha256, ONTAP, Cloud Volumes, CLI, 
 summary: Descripción de cómo verificar una firma de archivo VHD exportada a través de la herramienta Archivo de resumen de imágenes de Cloud Volumes ONTAP. 
 ---
-= Verificación de firma de archivo
+= Verificación de firma de imagen de Azure Marketplace para Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

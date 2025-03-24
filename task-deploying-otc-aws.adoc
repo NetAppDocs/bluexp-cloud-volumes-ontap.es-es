@@ -4,7 +4,7 @@ permalink: task-deploying-otc-aws.html
 keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create, aws, serial number, license key, byol, test instance, aws tags, tags, location, vpc, encryption, security group, aws-managed encryption, disk size, disk type, write speed, licensing, IAM role, preconfigured package, access control, volume protection, usage profile, register, CIFS share, quota, qtree, WorkingEnvironmentId, HA, high-availability, subscription, cloud data sense, cloud backup 
 summary: Puede iniciar instancias de Cloud Volumes ONTAP en una configuración de un único sistema o como par de alta disponibilidad en AWS. 
 ---
-= Inicio de Cloud Volumes ONTAP en AWS
+= Inicie Cloud Volumes ONTAP en AWS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -45,7 +45,7 @@ Para obtener más información, consulte link:reference-networking-aws.html["Req
 
 
 
-== Lanzar un sistema Cloud Volumes ONTAP de un único nodo en AWS
+== Inicie un sistema Cloud Volumes ONTAP de un solo nodo en AWS
 
 Si desea iniciar Cloud Volumes ONTAP en AWS, debe crear un nuevo entorno de trabajo en BlueXP .
 
@@ -288,7 +288,7 @@ Las cuotas le permiten restringir o realizar un seguimiento del espacio en disco
 
 
 
-== Iniciar una pareja de alta disponibilidad de Cloud Volumes ONTAP en AWS
+== Inicie un par de alta disponibilidad de Cloud Volumes ONTAP en AWS
 
 Si desea iniciar un par de ha de Cloud Volumes ONTAP en AWS, debe crear un entorno de trabajo de alta disponibilidad en BlueXP.
 

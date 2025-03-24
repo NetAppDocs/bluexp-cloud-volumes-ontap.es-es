@@ -50,7 +50,7 @@ sidebar:
         url: "/task-planning-your-config.html"
       - title: Configure su red
         entries:
-        - title: Requisitos de red
+        - title: Configure las redes de AWS
           url: "/reference-networking-aws.html"
         - title: Configure una puerta de enlace de tránsito de AWS
           url: "/task-setting-up-transit-gateway.html"
@@ -111,8 +111,6 @@ sidebar:
               url: "/task-file-verification-linux.html"
             - title: Verificación de firma de archivo de Mac OS
               url: "/task-file-verification-mac.html"
-          - title: Información adicional
-            url: "/reference-image-verification-links.html"
       - title: Comience en el mercado
         url: "/task-deploy-cvo-azure-mktplc.html"
     - title: Comience a usar Google Cloud
@@ -180,13 +178,13 @@ sidebar:
       entries:
       - title: Trabaje con equipos virtuales de almacenamiento en BlueXP
         url: "/task-managing-svms.html"
-      - title: Crear máquinas virtuales de almacenamiento en AWS
+      - title: Gestione máquinas virtuales de almacenamiento en AWS
         flavor: aws
         url: "/task-managing-svms-aws.html"
-      - title: Creación de máquinas virtuales de almacenamiento en Azure
+      - title: Gestione máquinas virtuales de almacenamiento en Azure
         flavor: azure
         url: "/task-managing-svms-azure.html"
-      - title: Creación de máquinas virtuales de almacenamiento en Google Cloud
+      - title: Gestione máquinas virtuales de almacenamiento en Google Cloud
         flavor: gcp
         url: "/task-managing-svms-gcp.html"
       - title: Configure la recuperación ante desastres de SVM

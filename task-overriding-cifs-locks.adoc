@@ -4,7 +4,7 @@ permalink: task-overriding-cifs-locks.html
 keywords: CIFS locks, azure maintenance, maintenance events, cifs sessions, storage failover, storage giveback, giveback 
 summary: La organización de BlueXP  o el administrador de cuenta pueden habilitar una configuración en BlueXP  que evita problemas relacionados con el retorno al almacenamiento de Cloud Volumes ONTAP durante los eventos de mantenimiento de Azure. Cuando se habilita este ajuste, Cloud Volumes ONTAP veta CIFS locks y restablece las sesiones CIFS activas. 
 ---
-= Anulación de los bloqueos de CIFS para los pares de alta disponibilidad de Cloud Volumes ONTAP en Azure
+= Anule los bloqueos CIFS para pares de alta disponibilidad de Cloud Volumes ONTAP en Azure
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

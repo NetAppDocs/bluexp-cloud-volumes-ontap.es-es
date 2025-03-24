@@ -4,7 +4,7 @@ permalink: task-saz-feature.html
 keywords: Microsoft Azure feature, HA in SAZ, single availability zone, Azure feature, Virtual Machine Scale Sets in Flexible mode, VMOrchestratorZonalMultiFD, VM Orchestrator, Zonal, MultiFD, Microsoft.Compute/VMOrchestratorZonalMultiFD feature 
 summary: Active esta función de Microsoft Azure para implementar HA en SAZ. 
 ---
-= Activar VMOrchestratorZonalMultiFD para zonas de disponibilidad únicas
+= Habilite VMOrchestratorZonalMultiFD para Cloud Volumes ONTAP en Azure
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: task-deploying-gcp.html
 keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create,  BYOL, license key, serial number, location, license, preconfigured packages, programmatic deployments, disk size, write speed, access control, volume protection, usage profile, register, CIFS share, quota, qtree, HA, high-availability, google cloud ha, ha in google cloud, ha pair, cloud backup, cloud tiering 
 summary: Puede iniciar Cloud Volumes ONTAP en una configuración de un único sistema o como par de alta disponibilidad en Google Cloud Platform. 
 ---
-= Lanzamiento de Cloud Volumes ONTAP en Google Cloud
+= Inicie Cloud Volumes ONTAP en Google Cloud
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -51,7 +51,7 @@ link:task-set-up-licensing-google.html["Aprenda a configurar las licencias"].
 
 
 
-== Iniciar un sistema de un único nodo en Google Cloud
+== Inicie un sistema de un solo nodo en Google Cloud
 
 Cree un entorno de trabajo en BlueXP para ejecutar Cloud Volumes ONTAP en Google Cloud.
 
@@ -288,7 +288,7 @@ Las cuotas le permiten restringir o realizar un seguimiento del espacio en disco
 
 
 
-== Lanzamiento de una pareja de alta disponibilidad en Google Cloud
+== Inicie una pareja de alta disponibilidad en Google Cloud
 
 Cree un entorno de trabajo en BlueXP para ejecutar Cloud Volumes ONTAP en Google Cloud.
 

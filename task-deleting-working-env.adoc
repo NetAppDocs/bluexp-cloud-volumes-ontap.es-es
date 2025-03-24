@@ -4,7 +4,7 @@ permalink: task-deleting-working-env.html
 keywords: terminate, delete, working environment, remove, terminate working environment, terminate instance, delete cloud volumes ontap, delete instance, delete working environment, delete backups, cloud backup, cloud data sense 
 summary: Siempre debe eliminar sistemas Cloud Volumes ONTAP de BlueXP, en lugar de hacerlo de la consola de su proveedor de cloud. Por ejemplo, si termina una instancia de Cloud Volumes ONTAP con licencia de su proveedor de cloud, no puede utilizar la clave de licencia para otra instancia. Debe eliminar el entorno de trabajo de BlueXP para liberar la licencia. 
 ---
-= Eliminar un sistema Cloud Volumes ONTAP
+= Eliminar un sistema Cloud Volumes ONTAP de BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

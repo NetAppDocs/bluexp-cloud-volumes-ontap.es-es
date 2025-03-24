@@ -4,7 +4,7 @@ permalink: task-set-up-iam-roles.html
 keywords: iam role, mediator role, cloud volumes ontap role, policy, iam policy, permissions, cloud backup 
 summary: Se deben conectar los roles IAM con los permisos necesarios a cada nodo Cloud Volumes ONTAP. Lo mismo sucede con el mediador de alta disponibilidad. Es más fácil dejar que BlueXP cree las funciones de IAM para usted, pero puede utilizar sus propias funciones. 
 ---
-= Configure los roles IAM para Cloud Volumes ONTAP
+= Configure roles de AWS IAM para los nodos de Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

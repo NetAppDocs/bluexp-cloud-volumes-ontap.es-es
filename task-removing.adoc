@@ -4,7 +4,7 @@ permalink: task-removing.html
 keywords: working environments, removing, remove, rediscover 
 summary: Es posible quitar un entorno de trabajo de Cloud Volumes ONTAP para moverlo a otro sistema o para resolver problemas de detección. 
 ---
-= Eliminación de entornos de trabajo de Cloud Volumes ONTAP
+= Eliminar un entorno de trabajo Cloud Volumes ONTAP de BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

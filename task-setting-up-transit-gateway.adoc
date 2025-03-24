@@ -4,7 +4,7 @@ permalink: task-setting-up-transit-gateway.html
 keywords: transit gateway, aws, amazon web services, transit gateway, floating ip, client access, nas, outside, vpc, virtual private cloud, route table 
 summary: Configure una puerta de enlace de tránsito de AWS para permitir el acceso del cliente NAS a direcciones IP flotantes desde fuera del VPC donde reside Cloud Volumes ONTAP. Esto es positivo porque las IP flotantes migran automáticamente entre nodos cuando se producen fallos. 
 ---
-= Configuración de una puerta de enlace de tránsito de AWS para parejas de alta disponibilidad en AZs múltiples
+= Configure una puerta de enlace de AWS transit para los pares de alta disponibilidad de Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

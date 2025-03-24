@@ -4,7 +4,7 @@ permalink: task-deploy-aws-shared-vpc.html
 keywords: shared vpc, aws shared vpc, vpc sharing, shared subnet, deploy shared vpc, assume role 
 summary: A partir del lanzamiento de la versión 9.11.1, se admiten los pares de alta disponibilidad de Cloud Volumes ONTAP en AWS con el uso compartido de VPC. El uso compartido de VPC permite a la organización compartir subredes con otras cuentas de AWS. Para utilizar esta configuración, debe configurar su entorno AWS y después implementar el par de alta disponibilidad mediante la API. 
 ---
-= Ponga en marcha un par de alta disponibilidad en una subred compartida
+= Implemente pares de alta disponibilidad de Cloud Volumes ONTAP en una subred compartida de AWS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

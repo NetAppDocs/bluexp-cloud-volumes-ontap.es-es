@@ -4,7 +4,7 @@ permalink: task-setting-up-kms.html
 keywords: encryption, kms, key management service, cmk, customer master key, master key, key, permissions 
 summary: Si desea usar el cifrado de Amazon con Cloud Volumes ONTAP, debe configurar el servicio de gestión de claves de AWS. 
 ---
-= Configuración de AWS KMS
+= Configure Cloud Volumes ONTAP para que use una clave gestionada por el cliente en AWS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

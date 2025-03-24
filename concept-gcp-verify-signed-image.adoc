@@ -4,7 +4,7 @@ permalink: concept-gcp-verify-signed-image.html
 keywords: Google Cloud, image, disk.raw, file signature verification, encryption,ONTAP, Cloud Volumes, OpenSSL, sha256, 
 summary: Verifique una firma de archivo de imagen de Google Cloud exportada a través de la herramienta Archivo de resumen de imágenes de Cloud Volumes ONTAP. 
 ---
-= Compruebe las imágenes firmadas de Google Cloud
+= Verificación de firma de imagen de Google Cloud para Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
