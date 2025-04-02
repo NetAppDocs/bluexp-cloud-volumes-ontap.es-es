@@ -100,15 +100,16 @@ Todas las cuentas de almacenamiento de Azure para Cloud Volumes ONTAP se cifran 
 
 == Rotación de claves en Cloud Volumes ONTAP
 
-Si crea una nueva versión de su clave, Cloud Volumes ONTAP utiliza automáticamente la última versión de clave, lo que garantiza que sus datos permanezcan seguros sin necesidad de actualizaciones manuales.
+Debe configurar las claves de cifrado en el portal de Azure. Para obtener información sobre la configuración de las claves y la configuración de la rotación de claves, consulte los siguientes temas de documentación de Microsoft Azure:
 
-.Pasos
-. Desplácese hasta el almacén de claves en el portal de Azure.
-. Seleccione la tecla que desea girar.
-. Haga clic en *Nueva versión* para generar una nueva versión de la clave.
+* https://learn.microsoft.com/en-us/azure/key-vault/keys/how-to-configure-key-rotation["Configure la rotación automática de claves criptográficas en Azure Key Vault"^]
+* https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-customer-managed-keys-powershell#set-up-an-azure-key-vault-and-diskencryptionset-with-automatic-key-rotation-preview["Azure PowerShell: Habilita claves gestionadas por el cliente"^]
 
 
-Una vez que se crea una nueva versión, Cloud Volumes ONTAP detecta y utiliza automáticamente la última versión de la clave para el cifrado.
+
+NOTE: Después de configurar las claves, asegúrese de que tiene https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption#customer-managed-keys["Rotación de claves activada en el portal de Azure"^], para que Cloud Volumes ONTAP pueda utilizar las nuevas claves.
+
+Al crear y habilitar una nueva versión de las claves, Cloud Volumes ONTAP detecta y utiliza automáticamente la última versión de cifrado, lo que garantiza que sus datos permanecen seguros sin necesidad de actualizaciones manuales.
 
 
 
