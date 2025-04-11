@@ -62,19 +62,19 @@ La autenticación de usuario falla y los siguientes servicios no están disponib
 | \https://support.NetApp.com/aods/asupmessage \https://support.NetApp.com/asupprod/post/1,0/postAsup | AutoSupport | Se utiliza para enviar datos de telemetría de AutoSupport a soporte técnico de NetApp. | Modos estándar y restringidos. | La información de AutoSupport sigue sin entregarse. 
 
 
-| \https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | Regiones públicas | Comunicación con servicios de Azure. | Modos estándar, restringido y privado. | Cloud Volumes ONTAP no se puede comunicar con el servicio de Azure para realizar operaciones específicas de BlueXP  en Azure. 
+| \https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | Regiones públicas | Comunicación con servicios de Azure. | Modos estándar, restringido y privado. | Cloud Volumes ONTAP no se puede comunicar con el servicio de Azure para realizar operaciones de BlueXP  específicas en Azure. 
 
 
-| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | Región de China | Comunicación con servicios de Azure. | Modos estándar, restringido y privado. | Cloud Volumes ONTAP no se puede comunicar con el servicio de Azure para realizar operaciones específicas de BlueXP  en Azure. 
+| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | Región de China | Comunicación con servicios de Azure. | Modos estándar, restringido y privado. | Cloud Volumes ONTAP no se puede comunicar con el servicio de Azure para realizar operaciones de BlueXP  específicas en Azure. 
 
 
-| \https://management.microsoftazure.de \https://login.microsoftonline.de \https://blob.core.cloudapi.de \https://core.cloudapi.de | Región de Alemania | Comunicación con servicios de Azure. | Modos estándar, restringido y privado. | Cloud Volumes ONTAP no se puede comunicar con el servicio de Azure para realizar operaciones específicas de BlueXP  en Azure. 
+| \https://management.microsoftazure.de \https://login.microsoftonline.de \https://blob.core.cloudapi.de \https://core.cloudapi.de | Región de Alemania | Comunicación con servicios de Azure. | Modos estándar, restringido y privado. | Cloud Volumes ONTAP no se puede comunicar con el servicio de Azure para realizar operaciones de BlueXP  específicas en Azure. 
 
 
-| \https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net | Regiones gubernamentales | Comunicación con servicios de Azure. | Modos estándar, restringido y privado. | Cloud Volumes ONTAP no se puede comunicar con el servicio de Azure para realizar operaciones específicas de BlueXP  en Azure. 
+| \https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net | Regiones gubernamentales | Comunicación con servicios de Azure. | Modos estándar, restringido y privado. | Cloud Volumes ONTAP no se puede comunicar con el servicio de Azure para realizar operaciones de BlueXP  específicas en Azure. 
 
 
-| \https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud | Regiones gubernamentales del Departamento de Defensa | Comunicación con servicios de Azure. | Modos estándar, restringido y privado. | Cloud Volumes ONTAP no se puede comunicar con el servicio de Azure para realizar operaciones específicas de BlueXP  en Azure. 
+| \https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud | Regiones gubernamentales del Departamento de Defensa | Comunicación con servicios de Azure. | Modos estándar, restringido y privado. | Cloud Volumes ONTAP no se puede comunicar con el servicio de Azure para realizar operaciones de BlueXP  específicas en Azure. 
 |===
 
 

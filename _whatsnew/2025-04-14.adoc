@@ -1,0 +1,11 @@
+= Creación de máquinas virtuales de almacenamiento automatizada a través de las API de Google Cloud
+:allow-uri-read: 
+
+
+
+
+=== Creación de máquinas virtuales de almacenamiento automatizada a través de las API de Google Cloud
+
+Ahora puede usar las API de BlueXP  para automatizar la creación de máquinas virtuales de almacenamiento en Google Cloud. Utiliza esta función en configuraciones de alta disponibilidad (HA) de Cloud Volumes ONTAP y ahora también puede utilizarla en puestas en marcha de un solo nodo. Al utilizar las API de BlueXP , puede crear, cambiar y eliminar fácilmente máquinas virtuales de almacenamiento que sirven datos en su entorno de Google Cloud, sin tener que configurar manualmente las interfaces de red, las LIF y las LIF de gestión requeridas. Esta automatización simplifica el proceso de gestión de máquinas virtuales de almacenamiento.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html["Gestione máquinas virtuales de almacenamiento que sirven datos para Cloud Volumes ONTAP en Google Cloud"^]

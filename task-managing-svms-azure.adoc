@@ -16,7 +16,7 @@ summary: Una máquina virtual de almacenamiento es un equipo virtual que se ejec
 [role="lead"]
 Una máquina virtual de almacenamiento es un equipo virtual que se ejecuta en ONTAP y proporciona servicios de datos y almacenamiento a sus clientes. Puede que lo sepa como un _SVM_ o un _vserver_. Cloud Volumes ONTAP está configurado con una máquina virtual de almacenamiento de forma predeterminada, pero usted puede crear máquinas virtuales de almacenamiento adicional al ejecutar Cloud Volumes ONTAP en Azure.
 
-Para crear y gestionar máquinas virtuales de almacenamiento que sirven datos adicionales en Azure, use las API de BlueXP . Esto se debe a que las API automatizan el proceso de crear máquinas virtuales de almacenamiento y configurar las interfaces de red necesarias. Al crear los equipos virtuales de almacenamiento, BlueXP  configura los servicios LIF necesarios, así como la LIF iSCSI necesaria para las comunicaciones SMB/CIFS de salida desde el equipo virtual de almacenamiento.
+Para crear y gestionar máquinas virtuales de almacenamiento que proporcionan servicios de datos adicionales en Azure, debería usar las API de BlueXP . Esto se debe a que las API automatizan el proceso de crear máquinas virtuales de almacenamiento y configurar las interfaces de red necesarias. Al crear los equipos virtuales de almacenamiento, BlueXP  configura los servicios LIF necesarios, así como la LIF iSCSI necesaria para las comunicaciones SMB/CIFS de salida desde el equipo virtual de almacenamiento.
 
 
 
@@ -25,9 +25,6 @@ Para crear y gestionar máquinas virtuales de almacenamiento que sirven datos ad
 A partir de Cloud Volumes ONTAP 9,9.0, según su licencia, varios equipos virtuales de almacenamiento son compatibles con configuraciones específicas. Consulte el https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Notas de la versión de Cloud Volumes ONTAP"^] para comprobar cuál es el número de máquinas virtuales de almacenamiento admitido para su versión de Cloud Volumes ONTAP.
 
 Todas las versiones de Cloud Volumes ONTAP anteriores a la 9.9.0 admiten una máquina virtual de almacenamiento que sirve datos y una VM de almacenamiento de destino utilizada para la recuperación ante desastres. Puede activar la máquina virtual de almacenamiento de destino para acceder a los datos si se produce una interrupción en la máquina virtual de almacenamiento de origen.
-
-.Antes de empezar
-El conector requiere permisos específicos para crear y gestionar máquinas virtuales de almacenamiento para Cloud Volumes ONTAP. Los permisos necesarios se incluyen en https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Las políticas proporcionadas por NetApp"^].
 
 
 
@@ -45,6 +42,9 @@ Cuando crea máquinas virtuales de almacenamiento mediante las API y configura l
 * `management-nis-client`
 
 
+.Antes de empezar
+El conector requiere permisos específicos para crear máquinas virtuales de almacenamiento para Cloud Volumes ONTAP. Los permisos necesarios se incluyen en https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Las políticas proporcionadas por NetApp"^].
+
 
 
 === Sistema de un solo nodo
@@ -53,7 +53,7 @@ Utilice la siguiente llamada API para crear una máquina virtual de almacenamien
 
 `POST /azure/vsa/working-environments/{workingEnvironmentId}/svm`
 
-El organismo de solicitud debe incluir lo siguiente:
+Incluya los siguientes parámetros en el cuerpo de la solicitud:
 
 [source, json]
 ----
@@ -65,11 +65,11 @@ El organismo de solicitud debe incluir lo siguiente:
 
 === Pareja de HA
 
-Utilice la siguiente llamada API para crear una máquina virtual de almacenamiento en una configuración de alta disponibilidad de Azure:
+Use la siguiente llamada API para crear una máquina virtual de almacenamiento en un par de alta disponibilidad:
 
 `POST /azure/ha/working-environments/{workingEnvironmentId}/svm`
 
-El organismo de solicitud debe incluir lo siguiente:
+Incluya los siguientes parámetros en el cuerpo de la solicitud:
 
 [source, json]
 ----
@@ -83,11 +83,14 @@ El organismo de solicitud debe incluir lo siguiente:
 
 Mediante las API de BlueXP  puede cambiar el nombre y eliminar máquinas virtuales de almacenamiento tanto en configuraciones de nodo único como de alta disponibilidad.
 
+.Antes de empezar
+El conector requiere permisos específicos para gestionar las máquinas virtuales de almacenamiento de Cloud Volumes ONTAP. Los permisos necesarios se incluyen en https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Las políticas proporcionadas por NetApp"^].
+
 
 
 === Cambiar el nombre a una máquina virtual de almacenamiento
 
-Para cambiar el nombre de una máquina virtual de almacenamiento, debe proporcionar los nombres de la máquina virtual de almacenamiento existente y de la nueva máquina virtual de almacenamiento como parámetros.
+Para cambiar el nombre de una máquina virtual de almacenamiento, debe proporcionar los nombres de la máquina virtual de almacenamiento existente y la nueva máquina virtual de almacenamiento como parámetros.
 
 .Pasos
 * Utilice la siguiente llamada API para cambiar el nombre de una máquina virtual de almacenamiento en un sistema de nodo:
@@ -95,7 +98,7 @@ Para cambiar el nombre de una máquina virtual de almacenamiento, debe proporcio
 `PUT /azure/vsa/working-environments/{workingEnvironmentId}/svm`
 
 +
-El organismo de solicitud debe incluir lo siguiente:
+Incluya los siguientes parámetros en el cuerpo de la solicitud:
 
 +
 [source, json]
@@ -105,12 +108,12 @@ El organismo de solicitud debe incluir lo siguiente:
   "svmName": "OldSvmName"
 }
 ----
-* Use la siguiente llamada API para cambiar el nombre de una máquina virtual de almacenamiento en una configuración de alta disponibilidad:
+* Use la siguiente llamada API para cambiar el nombre de una máquina virtual de almacenamiento en una pareja de alta disponibilidad:
 +
 `PUT /azure/ha/working-environments/{workingEnvironmentId}/svm`
 
 +
-El organismo de solicitud debe incluir lo siguiente:
+Incluya los siguientes parámetros en el cuerpo de la solicitud:
 
 +
 [source, json]
@@ -133,7 +136,7 @@ En un único nodo o en una configuración de alta disponibilidad, puede quitar u
 +
 `DELETE /azure/vsa/working-environments/{workingEnvironmentId}/svm/{svmName}`
 
-* Use la siguiente llamada API para eliminar una máquina virtual de almacenamiento en una configuración de alta disponibilidad:
+* Use la siguiente llamada API para eliminar una máquina virtual de almacenamiento en un par de alta disponibilidad:
 +
 `DELETE /azure/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`
 

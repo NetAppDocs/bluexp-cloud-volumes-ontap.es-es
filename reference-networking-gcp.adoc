@@ -40,7 +40,14 @@ Se requiere una nube privada virtual (VPC) para un único sistema de nodo.
 
 ==== Direcciones IP privadas
 
-BlueXP asigna direcciones IP privadas 3 o 4 a un sistema de un solo nodo en Google Cloud.
+Para un sistema de nodo único en Google Cloud, BlueXP  asigna direcciones IP privadas a las siguientes:
+
+* Nodo
+* Clúster
+* Máquina virtual de almacenamiento
+* LIF de NAS de datos
+* LIF de iSCSI de datos
+
 
 Puede omitir la creación de la LIF de gestión de máquinas virtuales de almacenamiento (SVM) si implementa Cloud Volumes ONTAP mediante la API y especifica el siguiente indicador:
 

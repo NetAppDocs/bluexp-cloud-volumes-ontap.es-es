@@ -20,7 +20,7 @@ La imagen que se utilizará para implementar nuevas instancias, actualizaciones 
 
 == ¿Por qué es necesario este paso?
 
-Las imágenes de Google Cloud no se pueden descargar directamente. Para verificar la imagen frente al resumen firmado y los certificados, es necesario contar con un mecanismo para comparar los dos archivos y descargar la imagen. Para ello, debe exportar o convertir la imagen en un formato disk.raw y guardar los resultados en un bloque de almacenamiento en Google Cloud. El archivo disk.raw es tarred y gzip en el proceso.
+Las imágenes de Google Cloud no se pueden descargar directamente. Para verificar la imagen frente al resumen firmado y los certificados, es necesario contar con un mecanismo para comparar los dos archivos y descargar la imagen. Para ello, debes exportar/convertir la imagen en un formato disk.raw y guardar los resultados en un depósito de almacenamiento en Google Cloud. El archivo disk.raw es tarred y gzip en el proceso.
 
 El usuario/cuenta de servicio necesitará privilegios para realizar lo siguiente:
 
