@@ -20,6 +20,22 @@ Las mejoras descritas en esta página son específicas de las funciones de BlueX
 
 
 
+== 16 de abril de 2025
+
+
+
+=== Nuevas regiones compatibles con Azure
+
+Ahora puede implementar Cloud Volumes ONTAP 9.12.1 GA y versiones posteriores en una o varias zonas de disponibilidad únicas en Azure en las siguientes regiones. Esto incluye compatibilidad con puestas en marcha de un solo nodo y de alta disponibilidad.
+
+* España Central
+* México Central
+
+
+Para obtener una lista de todas las regiones, consulte la https://bluexp.netapp.com/cloud-volumes-global-regions["Mapa de regiones globales en Azure"^].
+
+
+
 == 14 de abril de 2025
 
 
@@ -29,6 +45,18 @@ Las mejoras descritas en esta página son específicas de las funciones de BlueX
 Ahora puede usar las API de BlueXP  para automatizar la creación de máquinas virtuales de almacenamiento en Google Cloud. Utiliza esta función en configuraciones de alta disponibilidad (HA) de Cloud Volumes ONTAP y ahora también puede utilizarla en puestas en marcha de un solo nodo. Al utilizar las API de BlueXP , puede crear, cambiar y eliminar fácilmente máquinas virtuales de almacenamiento que sirven datos en su entorno de Google Cloud, sin tener que configurar manualmente las interfaces de red, las LIF y las LIF de gestión requeridas. Esta automatización simplifica el proceso de gestión de máquinas virtuales de almacenamiento.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html["Gestione máquinas virtuales de almacenamiento que sirven datos para Cloud Volumes ONTAP en Google Cloud"^]
+
+
+
+== 3 de abril de 2025
+
+
+
+=== Soporte para las regiones de China para Cloud Volumes ONTAP 9.13.1 en AWS
+
+Ahora puede implementar Cloud Volumes ONTAP 9.13.1 en AWS en las regiones de China. Esto incluye compatibilidad con puestas en marcha de un solo nodo y de alta disponibilidad. Después de implementar Cloud Volumes ONTAP 9.13.1, puede actualizarla a versiones posteriores. Solo se admiten las licencias que se han adquirido directamente a través de NetApp.
+
+Para conocer la disponibilidad regional, consulte la https://bluexp.netapp.com/cloud-volumes-global-regions["Mapas de regiones globales para Cloud Volumes ONTAP"^].
 
 
 
@@ -311,7 +339,7 @@ Para obtener información sobre las configuraciones compatibles, consulte https:
 
 === Las pruebas gratuitas para las suscripciones de Marketplace están anticuadas
 
-La prueba gratuita automática de 30 días para suscripciones de pago por uso en el mercado del proveedor de cloud ya no estará disponible en Cloud Volumes ONTAP. El cobro por cualquier tipo de suscripción al marketplace (PAYGO o contrato anual) se activará desde el primer uso, sin ningún período de prueba gratuito.
+La licencia de prueba o evaluación automática gratuita de 30 días para suscripciones de pago por uso en el mercado del proveedor de cloud ya no estará disponible en Cloud Volumes ONTAP. El cobro por cualquier tipo de suscripción al marketplace (PAYGO o contrato anual) se activará desde el primer uso, sin ningún período de prueba gratuito.
 
 
 
