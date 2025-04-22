@@ -2085,13 +2085,9 @@
   <block id="68935a38790e91889cd56742a47079f3" category="paragraph">Por ejemplo, podría comprar una única licencia de 20 TIB, poner en marcha cuatro sistemas de Cloud Volumes ONTAP y luego asignar un volumen de 5 TIB a cada sistema, para un total de 20 TIB. La capacidad está disponible para los volúmenes en cada sistema Cloud Volumes ONTAP implementado en esa cuenta.</block>
   <block id="37439fa615a442ec183c1c602f9755f1" category="paragraph">La licencia basada en la capacidad está disponible en forma de un _package_. Al implementar un sistema Cloud Volumes ONTAP, puede elegir entre varios paquetes de licencias en función de las necesidades de su empresa.</block>
   <block id="27fe4eb3edbaff8f250e2d51f7462681" category="section-title">Paquetes</block>
-  <block id="d7c357dcc3b8476a2eeba19c87ec383d" category="paragraph">Ofrece todas las características de Cloud Volumes ONTAP de forma gratuita desde NetApp (todavía se aplican cargos de proveedores de cloud).</block>
   <block id="24996c045717f17c4e40ebb44791b2af" category="list-text">No se necesita licencia ni contrato.</block>
   <block id="cc3b16b51bb72e66b8f103fef83035d9" category="list-text">No se incluye el soporte de NetApp.</block>
   <block id="895dacd81cbc05951744c0bce981546c" category="list-text">Está limitado a 500 GIB de capacidad aprovisionada por sistema Cloud Volumes ONTAP.</block>
-  <block id="46cb473c7acee70e9be90113f3acce9d" category="list-text">Puede usar hasta 10 sistemas Cloud Volumes ONTAP con la oferta de Freemium por cuenta de NetApp en cualquier proveedor de cloud.</block>
-  <block id="16c274138bfaf739b851a1b611d4cdb0" category="list-text">Si la capacidad aprovisionada para un sistema de Cloud Volumes ONTAP supera los 500 GIB, BlueXP convierte el sistema al paquete Essentials.</block>
-  <block id="2b5b1f6feb7719bc282a3518f33b1784" category="paragraph">Cualquier otro sistema que tenga menos de 500 GIB de capacidad aprovisionada permanece en Freemium (siempre que se hayan desplegado utilizando la oferta Freemium).</block>
   <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="section-title">Optimizado</block>
   <block id="a131e5df30c445534883b2b08d3f9e4e" category="paragraph">Pague por separado la capacidad aprovisionada y las operaciones de I/o.</block>
   <block id="258f58bf86a685fa4951f45a75224c86" category="list-text">Nodo único de Cloud Volumes ONTAP o alta disponibilidad</block>
@@ -5646,7 +5642,6 @@ Optimice la eficiencia. Consulte los criterios de medición de la eficiencia del
   <block id="95b5ae6b0af18840a3741634cd325668" category="list-text">Pague por los múltiples sistemas de Cloud Volumes ONTAP de su cuenta de NetApp mediante la capacidad aprovisionada. Incluye la capacidad de adquirir servicios de datos en cloud adicionales. Para obtener más información sobre los modelos de consumo en licencias basadas en capacidad, consulte <block ref="800c64ac20219346d421e96b28656701" category="inline-link-macro-rx"></block>.</block>
   <block id="c3f0a05442b6c8a72739ff963cfeed7f" category="paragraph">Los siguientes paquetes basados en capacidad están disponibles para Cloud Volumes ONTAP. Para obtener más información sobre los paquetes de licencias basadas en capacidad, consulte <block ref="800c64ac20219346d421e96b28656701" category="inline-link-macro-rx"></block>.</block>
   <block id="19a5330bf6f5eac370d1103981c5a834" category="inline-link-macro">carga mínima</block>
-  <block id="b0890bcc109876c5e12a5adec396926f" category="paragraph">Tan pronto como un sistema se convierte en el paquete Essentials, se aplica el<block ref="7af77c30f2eff63b0d18155ad569ed75" category="inline-link-macro-rx"></block>.</block>
   <block id="f6d538cae99e0f8fa45e7e8780358583" category="paragraph">Para saber cómo puede realizar esta conversión, consulte <block ref="3fdaa70059ad7f9b695791d3dfebbc25" category="inline-link-macro-rx"></block>.</block>
   <block id="1a7468dd02c2c074fc65d2ee7db41483" category="doc">Obtenga información sobre la supervisión del rendimiento de las cargas de trabajo de Cloud Volumes ONTAP</block>
   <block id="554a0d7666ec33e45169ab1eed7eb037" category="doc">Obtén más información sobre el cifrado de datos y la protección frente al ransomware de Cloud Volumes ONTAP</block>
@@ -5801,4 +5796,9 @@ Optimice la eficiencia. Consulte los criterios de medición de la eficiencia del
   <block id="801c0fa0d304ca22d8afec06189bcf93" category="section-title">16 de abril de 2025</block>
   <block id="f0d468a1074534e3b37c7322f2e97bb1" category="section-title">3 de abril de 2025</block>
   <block id="bbe4e5e3881ef8307eb1dd518412cb45" category="paragraph">La licencia de prueba o evaluación automática gratuita de 30 días para suscripciones de pago por uso en el mercado del proveedor de cloud ya no estará disponible en Cloud Volumes ONTAP. El cobro por cualquier tipo de suscripción al marketplace (PAYGO o contrato anual) se activará desde el primer uso, sin ningún período de prueba gratuito.</block>
+  <block id="f10f9d69e12a045fa89f83322880ee7c" category="paragraph">Ofrece todas las características de Cloud Volumes ONTAP de forma gratuita desde NetApp (todavía se aplican cargos de proveedores de cloud). Un paquete Freemium tiene las siguientes características:</block>
+  <block id="4e2db8f84e83acbb3ce91109a9eef20e" category="list-text">Puede utilizar hasta 10 sistemas Cloud Volumes ONTAP con la oferta de Freemium por cuenta de NetApp, para cualquier proveedor de cloud.</block>
+  <block id="84befd86706fa21112c130084b373991" category="list-text">Si la capacidad aprovisionada para un sistema Cloud Volumes ONTAP supera los 500 GiB, BlueXP  convierte el sistema en un paquete Essentials.</block>
+  <block id="a0f8f1341588aae4d56d3b5fb0fde3de" category="paragraph">Tan pronto como un sistema se convierte en el paquete Essentials, <block ref="7af77c30f2eff63b0d18155ad569ed75" category="inline-link-macro-rx"></block> se aplica a él.</block>
+  <block id="0551862e260539a3a516b4868d9bcead" category="paragraph">No es posible volver a cambiar un sistema Cloud Volumes ONTAP que se haya convertido en un paquete Essentials a Freemium aunque la capacidad aprovisionada se reduzca a menos de 500 GiB. Los demás sistemas con menos de 500 GiB de capacidad aprovisionada permanecen en Freemium (siempre y cuando se implementen utilizando la oferta de Freemium).</block>
 </blocks>
