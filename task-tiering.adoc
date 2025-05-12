@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-tiering.html 
-keywords: tier, tiering, cold data, hot data, storage tiering, data tiering, fabricpool, fabric pool, s3 endpoint, endpoint, connection, performance tier, capacity tier, object store, blob tiering, container, inactive, tiering requirements, remove S3 bucket, delete S3 CVO bucket 
+keywords: tier, tiering, cold data, hot data, storage tiering, data tiering, fabricpool, fabric pool, s3 endpoint, endpoint, connection, performance tier, capacity tier, object store, blob tiering, container, inactive, tiering requirements, remove S3 bucket, delete S3 CVO bucket, tenant, multi-tenant tiering 
 summary: Puede reducir los costes de almacenamiento de Cloud Volumes ONTAP combinando un nivel de rendimiento de SSD o HDD para datos activos con un nivel de capacidad de almacenamiento de objetos para los datos inactivos. La organización en niveles de datos utiliza la tecnología FabricPool. 
 ---
 = Coloca los datos inactivos de Cloud Volumes ONTAP en un almacenamiento de objetos de bajo coste
@@ -47,15 +47,15 @@ endif::gcp[]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Compruebe que tiene un agregado con la organización en niveles habilitada
 [role="quick-margin-para"]
-Debe habilitarse la organización de datos en niveles en un agregado para habilitarla en un volumen. Debe conocer los requisitos de los volúmenes nuevos y existentes. <<Ensuring that tiering is enabled on aggregates,Leer más>>.
+Debe habilitarse la organización de datos en niveles en un agregado para habilitarla en un volumen. Debe conocer los requisitos de los volúmenes nuevos y existentes. <<Compruebe que la organización en niveles está habilitada en los agregados,Leer más>>.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"] Elija una política de organización en niveles cuando cree, modifique o replique un volumen
 [role="quick-margin-para"]
 BlueXP le solicita que elija una política de organización en niveles al crear, modificar o replicar un volumen.
 
 [role="quick-margin-list"]
-* link:task-tiering.html#tiering-data-from-read-write-volumes["Organización en niveles de los datos en volúmenes de lectura y escritura"]
-* link:task-tiering.html#tiering-data-from-data-protection-volumes["Organización en niveles de los datos en los volúmenes de protección de datos"]
+* link:task-tiering.html#tier-data-from-read-write-volumes["Colocar datos en niveles en volúmenes de lectura y escritura"]
+* link:task-tiering.html#tier-data-from-data-protection-volumes["Organización en niveles de datos de volúmenes de protección de datos"]
 
 
 [NOTE]
@@ -65,7 +65,7 @@ BlueXP le solicita que elija una política de organización en niveles al crear,
 * No es necesario crear un almacén de objetos para el nivel de capacidad. BlueXP lo hace por ti.
 * No es necesario habilitar la organización en niveles de datos en el nivel del sistema.
 +
-BlueXP  crea un almacén de objetos para los datos inactivos cuando crea el sistema, <<Enabling data tiering after implementing the requirements,siempre que no haya problemas de conectividad ni de permisos>>. Después de eso, solo tiene que habilitar la organización de los datos en niveles en los volúmenes (y, en algunos casos, <<Ensuring that tiering is enabled on aggregates,en agregados>>).
+BlueXP  crea un almacén de objetos para los datos inactivos cuando crea el sistema, <<Permita la organización de los datos en niveles tras implementar los requisitos,siempre que no haya problemas de conectividad ni de permisos>>. Después de eso, solo tiene que habilitar la organización de los datos en niveles en los volúmenes (y, en algunos casos, <<Compruebe que la organización en niveles está habilitada en los agregados,en agregados>>).
 
 
 
@@ -163,6 +163,17 @@ No es necesario configurar una conexión entre el nivel de rendimiento y el nive
 "Microsoft.Network/routeTables/join/action",
 ----
 El rol personalizado incluye los permisos de forma predeterminada. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Ver permiso de Azure para el conector"^]
+
+
+
+=== Requisitos para organizar los datos en niveles para un inquilino de Azure
+
+Puede usar el mismo Connector para organizar datos en niveles para múltiples inquilinos de Azure. Para habilitar la organización en niveles de un inquilino de Azure en un escenario en el que un inquilino crea el entorno de trabajo Cloud Volumes ONTAP y otro crea el conector, asegúrese de lo siguiente:
+
+* Ha introducido las credenciales para los dos inquilinos en BlueXP  para la validación cruzada. Consulte https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["Gestiona las credenciales de Azure y las suscripciones al mercado para BlueXP"^].
+* Ha habilitado la interconexión de redes virtuales (vnet) entre los dos inquilinos https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview["En el portal de Azure"^]. Esto es necesario para que el conector pueda acceder a la cuenta de almacenamiento del otro inquilino.
+* link:task-enabling-private-link.html#disable-azure-private-links-and-use-service-endpoints-instead["Enlaces privados de Azure desactivados"]Debe utilizar el extremo del servicio de subred.
+
 
 endif::azure[]
 

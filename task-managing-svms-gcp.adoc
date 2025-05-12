@@ -18,6 +18,8 @@ Una máquina virtual de almacenamiento es un equipo virtual que se ejecuta en ON
 
 Para crear y gestionar máquinas virtuales de almacenamiento que sirven datos adicionales en Google Cloud, use las API de BlueXP . Esto se debe a que las API automatizan el proceso de crear máquinas virtuales de almacenamiento y configurar las interfaces de red necesarias. Al crear los equipos virtuales de almacenamiento, BlueXP  configura los servicios LIF necesarios, así como la LIF iSCSI necesaria para las comunicaciones SMB/CIFS de salida desde el equipo virtual de almacenamiento.
 
+Para obtener información sobre la ejecución de llamadas a la API de Cloud Volumes ONTAP, consulte https://docs.netapp.com/us-en/bluexp-automation/cm/your_api_call.html#step-1-select-the-identifie["Su primera llamada API"^] .
+
 
 
 == Número admitido de máquinas virtuales de almacenamiento
@@ -140,4 +142,9 @@ En un único nodo o en una configuración de alta disponibilidad, puede quitar u
 +
 `DELETE /gcp/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`
 
+
+
+.Información relacionada
+* https://docs.netapp.com/us-en/bluexp-automation/cm/prepare.html["Prepare el uso de la API"^]
+* https://docs.netapp.com/us-en/bluexp-automation/cm/workflow_processes.html#organization-of-cloud-volumes-ontap-workflows["Flujos de trabajo de Cloud Volumes ONTAP"^]
 

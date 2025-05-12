@@ -23,7 +23,7 @@ Debe conocer la contraseña de la cuenta de usuario administrador de Cloud Volum
 . En el menú de navegación de la izquierda, selecciona *almacenamiento > Canvas*.
 . En la página Canvas, haga clic en *Agregar entorno de trabajo*.
 . Seleccione el proveedor de cloud en el que reside el sistema.
-. Elija el tipo de sistema Cloud Volumes ONTAP.
+. Elija el tipo de sistema Cloud Volumes ONTAP que desea agregar.
 . Haga clic en el enlace para detectar un sistema existente.
 
 
@@ -33,8 +33,12 @@ ifdef::aws[]
 
 endif::aws[]
 
-. En la página Región, seleccione la región donde se ejecutan las instancias y, a continuación, seleccione las instancias.
-. En la página credenciales, introduzca la contraseña para el usuario administrador de Cloud Volumes ONTAP y, a continuación, haga clic en *Ir*.
+. En la página Region, seleccione una región. Puede ver los sistemas que se están ejecutando en la región seleccionada.
++
+
+NOTE: Los sistemas Cloud Volumes ONTAP están representados como instancias en esta página. En la lista, sólo puede seleccionar las instancias registradas con la cuenta actual.
+
+. En la página Credenciales, introduzca la contraseña del usuario administrador de Cloud Volumes ONTAP y, a continuación, seleccione *Ir*.
 
 
 .Resultado
