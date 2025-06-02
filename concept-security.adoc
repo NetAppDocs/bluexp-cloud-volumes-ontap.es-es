@@ -52,17 +52,40 @@ Puede usar las soluciones de cifrado de NetApp con el cifrado nativo del proveed
 
 === Soluciones de cifrado de NetApp (NVE y NAE)
 
-Cloud Volumes ONTAP admite https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["Cifrado de volúmenes de NetApp (NVE) y cifrado de agregados de NetApp (NAE)"^]. NVE y NAE son soluciones basadas en software que permiten (FIPS) cifrado de volúmenes para datos en reposo conforme a la normativa 140-2. Tanto NVE como NAE utilizan el cifrado AES de 256 bits.
+Cloud Volumes ONTAP admite https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["Cifrado de volúmenes de NetApp (NVE) y cifrado de agregados de NetApp (NAE)"^]. NVE y NAE son soluciones basadas en software que permiten el cifrado de datos en reposo de volúmenes conforme a FIPS 140-2. Tanto NVE como NAE utilizan el cifrado AES de 256 bits.
 
 * NVE cifra los datos en reposo un volumen por vez. Cada volumen de datos tiene su propia clave de cifrado única.
 * NAE es una extensión de NVE: Cifra los datos para cada volumen y los volúmenes comparten una clave en todo el agregado. NAE también permite deduplicar bloques comunes en todos los volúmenes del agregado.
 
 
-Tanto NVE como NAE son compatibles con un gestor de claves externo.
+Cloud Volumes ONTAP es compatible con NVE y NAE con servicios externos de administración de claves (EKM) proporcionados por AWS, Azure y Google Cloud, incluyendo soluciones de terceros como Fortanix. A diferencia de ONTAP, en Cloud Volumes ONTAP las claves de cifrado se generan en el proveedor de la nube, no en ONTAP.
 
-ifdef::azure[] endif::azure[] ifdef::gcp[] endif::gcp[]
+Cloud Volumes ONTAP utiliza los servicios estándar del Protocolo de Interoperabilidad de Administración de Claves (KMIP) que ONTAP utiliza. Para obtener más información sobre los servicios compatibles, consulte  https://imt.netapp.com/imt/#welcome["Herramienta de matriz de interoperabilidad"^] .
 
-Los nuevos agregados tienen habilitado el cifrado de agregados de NetApp (NAE) de forma predeterminada tras la configuración de un gestor de claves externo. Los volúmenes nuevos que no forman parte de un agregado de NAE tendrán habilitado el cifrado de volúmenes de NetApp (NVE) de forma predeterminada (por ejemplo, si tiene agregados existentes que se crearon antes de configurar un gestor de claves externo).
+Si usa NVE, tiene la opción de usar el almacén de claves de su proveedor de nube para proteger las claves de cifrado de ONTAP:
+
+ifdef::aws[]
+
+* Servicio de gestión de claves AWS (KMS)
+
+
+endif::aws[]
+
+ifdef::azure[]
+
+* Azure Key Vault (AKV)
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* Servicio de gestión de claves de Google Cloud
+
+
+endif::gcp[]
+
+Los nuevos agregados tienen habilitado el cifrado de agregados de NetApp (NAE) de forma predeterminada tras la configuración de un gestor de claves externo. Los volúmenes nuevos que no forman parte de un agregado NAE tienen NVE habilitado de manera predeterminada (por ejemplo, si tiene agregados existentes que se crearon antes de configurar un administrador de claves externo).
 
 La configuración de un gestor de claves compatible es el único paso necesario. Para obtener instrucciones de configuración, consulte link:task-encrypting-volumes.html["Cifre volúmenes con las soluciones de cifrado de NetApp"].
 

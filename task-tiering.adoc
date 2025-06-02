@@ -82,12 +82,13 @@ ifdef::aws[]
 
 === Compatibilidad con AWS
 
-* La organización en niveles de datos es compatible en AWS a partir de Cloud Volumes ONTAP 9.2.
+* La organización de datos en niveles es compatible con AWS a partir de Cloud Volumes ONTAP 9.2.
 * El nivel de rendimiento puede ser SSD de uso general (gp3 o gp2) o SSD de IOPS aprovisionados (io1).
 +
 
-NOTE: No se recomienda la organización en niveles de los datos para el almacenamiento de objetos cuando se utilizan unidades HDD optimizadas para el rendimiento (st1).
+NOTE: No recomendamos organizar los datos en niveles de almacenamiento de objetos cuando se utilizan discos duros optimizados para rendimiento (st1).
 
+* Los datos inactivos se agrupan en niveles en buckets de Amazon S3. No se admite la agrupación en niveles con otros proveedores.
 
 
 endif::aws[]
@@ -105,6 +106,7 @@ ifdef::azure[]
 
 
 * El nivel de rendimiento puede ser discos gestionados Premium SSD, discos gestionados Standard SSD o discos gestionados Standard HDD.
+* Los datos inactivos se agrupan en niveles con Microsoft Azure Blob. No se admite la agrupación en niveles con otros proveedores.
 
 
 endif::azure[]
@@ -115,8 +117,9 @@ ifdef::gcp[]
 
 === Compatibilidad con Google Cloud
 
-* La organización en niveles de datos es compatible con Google Cloud a partir de Cloud Volumes ONTAP 9.6.
+* La clasificación de datos es compatible con Google Cloud a partir de Cloud Volumes ONTAP 9.6.
 * El nivel de rendimiento puede ser discos persistentes SSD, discos persistentes equilibrados o discos persistentes estándar.
+* Los datos inactivos se almacenan en Google Cloud Storage. No se admite la almacenamiento en niveles con otros proveedores.
 
 
 endif::gcp[]
