@@ -84,7 +84,12 @@ BlueXP crea la cuenta de almacenamiento con los siguientes ajustes:
 
 * Nivel de acceso: Activo
 * Rendimiento: Estándar
-* Redundancia: Almacenamiento redundante local (LRS)
+* Redundancia: según la implementación de Cloud Volume ONTAP
++
+** Zona de disponibilidad única: almacenamiento con redundancia local (LRS)
+** Zona de disponibilidad múltiple: almacenamiento con redundancia de zona (ZRS)
+
+
 * Cuenta: StorageV2 (uso general v2)
 * Requerir una transferencia segura para las operaciones de API de REST: Habilitadas
 * Acceso a clave de cuenta de almacenamiento: Habilitado

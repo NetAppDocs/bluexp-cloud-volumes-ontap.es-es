@@ -14,7 +14,7 @@ summary: BlueXP no ofrece ninguna compatibilidad de configuración o orquestaci�
 
 
 [role="lead"]
-BlueXP no ofrece compatibilidad con ninguna configuración u orquestación para la recuperación ante desastres de máquinas virtuales de almacenamiento (SVM). Es necesario usar ONTAP System Manager o la interfaz de línea de comandos de ONTAP.
+BlueXP no ofrece soporte de configuración ni orquestación para la recuperación ante desastres de máquinas virtuales de almacenamiento (SVM). Para realizar estas tareas, utilice el Administrador del sistema de ONTAP o la CLI de ONTAP.
 
 Si se configura la replicación de SVM de SnapMirror entre dos sistemas Cloud Volumes ONTAP, la replicación debe estar entre dos sistemas de parejas de alta disponibilidad o dos sistemas de nodo único. No se puede configurar la replicación de SVM de SnapMirror entre una pareja de alta disponibilidad y un sistema de un solo nodo.
 
