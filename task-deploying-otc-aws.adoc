@@ -76,21 +76,17 @@ Algunos de los campos en esta página son claros y explicativos. En la siguiente
 | Nombre de usuario y contraseña | Estas son las credenciales de la cuenta de administrador del clúster de Cloud Volumes ONTAP. Puede usar estas credenciales para conectarse a Cloud Volumes ONTAP a través de ONTAP System Manager o la interfaz de línea de comandos de ONTAP. Mantenga el nombre de usuario predeterminado _admin_ o cámbielo por un nombre de usuario personalizado. 
 
 
-| Editar credenciales | Seleccione las credenciales de AWS asociadas con la cuenta en la que desea implementar este sistema. También puede asociar la suscripción a AWS Marketplace para utilizarla con este sistema Cloud Volumes ONTAP.
-
-Haga clic en *Agregar suscripción* para asociar las credenciales seleccionadas con una nueva suscripción a AWS Marketplace. La suscripción puede ser por un contrato anual o para pagar por Cloud Volumes ONTAP a una tarifa por hora.
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Aprenda a añadir credenciales de AWS adicionales a BlueXP"^]. 
+| Editar credenciales | Seleccione las credenciales de AWS asociadas con la cuenta en la que desea implementar este sistema. También puede asociar la suscripción a AWS Marketplace para usarla con este sistema Cloud Volumes ONTAP. Haga clic en *Añadir suscripción* para asociar las credenciales seleccionadas con una nueva suscripción a AWS Marketplace. La suscripción puede ser por un contrato anual o para pagar por Cloud Volumes ONTAP a una tarifa por hora. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Aprenda a añadir credenciales de AWS adicionales a BlueXP"^]. 
 |===
 +
-En el siguiente vídeo se muestra cómo asociar una suscripción de pago por uso a Marketplace en sus credenciales de AWS:
+El siguiente video muestra cómo asociar una suscripción de mercado de pago por uso a sus credenciales de AWS:
 
 +
-.Suscríbete a BlueXP desde AWS Marketplace
+.Suscríbete a BlueXP desde el marketplace de AWS
 video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 +
 
-TIP: Si varios usuarios de IAM trabajan en la misma cuenta de AWS, cada usuario debe suscribirse. Una vez que el primer usuario se haya suscrito, AWS Marketplace informa a los usuarios posteriores de que ya están suscritos, tal como se muestra en la siguiente imagen. Mientras se ha establecido una suscripción para la cuenta _de AWS_, cada usuario de IAM debe asociarse a dicha suscripción. Si ve el mensaje que aparece a continuación, haga clic en el enlace *haga clic aquí* para ir al sitio Web de BlueXP y completar el proceso.image:screenshot_aws_marketplace.gif["Una captura de pantalla que muestra la página de suscripción de BlueXP para Cloud Volumes ONTAP cuando la cuenta de AWS ya tiene una suscripción, pero es posible que un usuario de IAM en particular no lo tenga."]
+TIP: Si varios usuarios de IAM trabajan en la misma cuenta de AWS, cada usuario debe suscribirse. Tras la suscripción del primer usuario, AWS Marketplace informa a los usuarios posteriores que ya están suscritos, como se muestra en la imagen a continuación. Mientras se ha establecido una suscripción para la cuenta _de AWS_, cada usuario de IAM debe asociarse a dicha suscripción. Si ve el mensaje a continuación, haga clic en el enlace *haga clic aquí* para ir al sitio web de BlueXP y completar el proceso. image:screenshot_aws_marketplace.gif["Una captura de pantalla que muestra la página de suscripción de BlueXP para Cloud Volumes ONTAP cuando la cuenta de AWS ya tiene una suscripción, pero es posible que un usuario de IAM en particular no lo tenga."]
 
 . *Servicios*: Mantenga activados los servicios o desactive los servicios individuales que no desea utilizar con Cloud Volumes ONTAP.
 +
@@ -146,7 +142,7 @@ link:concept-security.html#encryption-of-data-at-rest["Obtenga más información
 ** link:task-set-up-licensing-aws.html["Aprenda a configurar las licencias"^].
 
 
-. *Configuración de Cloud Volumes ONTAP* (sólo contrato anual de AWS Marketplace): Revise la configuración predeterminada y haga clic en *continuar* o haga clic en *Cambiar configuración* para seleccionar su propia configuración.
+. *Configuración de Cloud Volumes ONTAP* (solo contrato anual del mercado de AWS): revise la configuración predeterminada y haga clic en *Continuar* o haga clic en *Cambiar configuración* para seleccionar su propia configuración.
 +
 Si mantiene la configuración predeterminada, solo necesita especificar un volumen y, a continuación, revisar y aprobar la configuración.
 
@@ -330,17 +326,17 @@ Algunos de los campos en esta página son claros y explicativos. En la siguiente
 | Nombre de usuario y contraseña | Estas son las credenciales de la cuenta de administrador del clúster de Cloud Volumes ONTAP. Puede usar estas credenciales para conectarse a Cloud Volumes ONTAP a través de ONTAP System Manager o la interfaz de línea de comandos de ONTAP. Mantenga el nombre de usuario predeterminado _admin_ o cámbielo por un nombre de usuario personalizado. 
 
 
-| Editar credenciales | Elija las credenciales de AWS y la suscripción al mercado para utilizar con este sistema Cloud Volumes ONTAP. Haga clic en *Agregar suscripción* para asociar las credenciales seleccionadas con una nueva suscripción a AWS Marketplace. La suscripción puede ser por un contrato anual o para pagar por Cloud Volumes ONTAP a una tarifa por hora. Si adquirió una licencia directamente de NetApp (BYOL), no es necesaria una suscripción a AWS. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Aprenda a añadir credenciales de AWS adicionales a BlueXP"^]. 
+| Editar credenciales | Elija las credenciales de AWS y la suscripción al mercado para utilizar con este sistema Cloud Volumes ONTAP. Haga clic en *Agregar suscripción* para asociar las credenciales seleccionadas con una nueva suscripción al mercado de AWS. La suscripción puede ser por un contrato anual o para pagar por Cloud Volumes ONTAP a una tarifa por hora. Si adquirió una licencia directamente de NetApp (BYOL), no es necesaria una suscripción a AWS. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Aprenda a añadir credenciales de AWS adicionales a BlueXP"^]. 
 |===
 +
-En el siguiente vídeo se muestra cómo asociar una suscripción de pago por uso a Marketplace en sus credenciales de AWS:
+El siguiente video muestra cómo asociar una suscripción de mercado de pago por uso a sus credenciales de AWS:
 
 +
-.Suscríbete a BlueXP desde AWS Marketplace
+.Suscríbete a BlueXP desde el marketplace de AWS
 video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 +
 
-TIP: Si varios usuarios de IAM trabajan en la misma cuenta de AWS, cada usuario debe suscribirse. Una vez que el primer usuario se haya suscrito, AWS Marketplace informa a los usuarios posteriores de que ya están suscritos, tal como se muestra en la siguiente imagen. Mientras se ha establecido una suscripción para la cuenta _de AWS_, cada usuario de IAM debe asociarse a dicha suscripción. Si ve el mensaje que aparece a continuación, haga clic en el enlace *haga clic aquí* para ir a la página web de BlueXP y completar el proceso.image:screenshot_aws_marketplace.gif["Una captura de pantalla que muestra la página de suscripción de BlueXP para Cloud Volumes ONTAP cuando la cuenta de AWS ya tiene una suscripción, pero es posible que un usuario de IAM en particular no lo tenga."]
+TIP: Si varios usuarios de IAM trabajan en la misma cuenta de AWS, cada usuario debe suscribirse. Tras la suscripción del primer usuario, AWS Marketplace informa a los usuarios posteriores que ya están suscritos, como se muestra en la imagen a continuación. Mientras se ha establecido una suscripción para la cuenta _de AWS_, cada usuario de IAM debe asociarse a dicha suscripción. Si ve el mensaje a continuación, haga clic en el enlace *haga clic aquí* para ir al sitio web de BlueXP y completar el proceso. image:screenshot_aws_marketplace.gif["Una captura de pantalla que muestra la página de suscripción de BlueXP para Cloud Volumes ONTAP cuando la cuenta de AWS ya tiene una suscripción, pero es posible que un usuario de IAM en particular no lo tenga."]
 
 . *Servicios*: Mantenga activados o desactive los servicios individuales que no desea utilizar con este sistema Cloud Volumes ONTAP.
 +

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-file-verification-linux.html 
 keywords: Azure, image, VHD, file signature verification, encryption, sha256, ONTAP, Cloud Volumes, CLI, Linux 
-summary: Verifique una firma de archivo VHD exportada a través de la herramienta Archivo de resumen de imágenes de Cloud Volumes ONTAP en Linux 
+summary: Verifique la firma de un archivo VHD exportado a través de la herramienta de archivo de resumen de imagen de Cloud Volumes ONTAP en Linux 
 ---
 = Verifique la firma de la imagen de Azure Marketplace para Cloud Volumes ONTAP en Linux
 :hardbreaks:
@@ -14,38 +14,34 @@ summary: Verifique una firma de archivo VHD exportada a través de la herramient
 
 
 [role="lead"]
-Puede verificar una firma de archivo VHD exportada para Linux siguiendo los pasos que se indican a continuación.
+La verificación de la firma de un archivo VHD exportado en Linux incluye validar la cadena de confianza, editar el archivo y verificar la firma.
 
 .Pasos
-. Descargue el archivo Azure Image Digest de la https://mysupport.netapp.com/site/["Sitio de soporte de NetApp"^] y extraiga el archivo digest(.sig), el archivo de certificado de clave pública(.pem) y el archivo de certificado de cadena(.pem).
+. Descargue el archivo de imagen de Azure desde  https://mysupport.netapp.com/site/["Sitio de soporte de NetApp"^] y extraiga el archivo de resumen (.sig), el archivo de certificado de clave pública (.pem) y el archivo de certificado de cadena (.pem).
 +
-Consulte la https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-azure-download-digest-file.html["Descargue Azure Image Digest File"^] si quiere más información.
+Consulte https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-azure-download-digest-file.html["Descargar el archivo de resumen de la imagen de Azure"^] si desea obtener más información.
 
 . Verifique la cadena de confianza.
 +
-[listing]
+[source, cli]
 ----
 % openssl verify -CAfile Certificate-Chain-9.15.0P1_azure.pem Certificate-9.15.0P1_azure.pem
 Certificate-9.15.0P1_azure.pem: OK
 ----
-. Elimine los 1MB primeros (1048576 bytes) y los 512 bytes finales del archivo VHD.
+. Elimine 1 MB (1 048 576 bytes) al principio y 512 bytes al final del archivo VHD. Al usar  `tail` , el  `-c +K` La opción genera bytes a partir del byte k del archivo. Por lo tanto, pasa 1048577 a  `tail -c` .
 +
-Si se utiliza 'tail', la opción '-c +K' genera bytes que comienzan con los bytes KTH del archivo especificado. Por lo tanto, 1048577 se pasa a 'tail -c'.
-
-+
-[listing]
+[source, cli]
 ----
 % tail -c +1048577 ./9150.01000024.05090105.vhd > ./sign.tmp.tail
 % head -c -512 ./sign.tmp.tail > sign.tmp
 % rm ./sign.tmp.tail
 ----
-. Utilice openssl para extraer la clave pública del certificado y verificar el archivo segmentado (sign.tmp) con el archivo de firma y la clave pública.
+. Utilice OpenSSL para extraer la clave pública del certificado y verificar el archivo eliminado (sign.tmp) con el archivo de firma y la clave pública.
 +
-Si el archivo de entrada pasa la verificación, se mostrará el comando
-Verificación correcta. De lo contrario, aparecerá el mensaje Fallo de verificación.
+El símbolo del sistema muestra mensajes que indican el éxito o el fracaso según la verificación.
 
 +
-[listing]
+[source, cli]
 ----
 % openssl x509 -pubkey -noout -in ./Certificate-9.15.0P1_azure.pem > ./Code-Sign-Cert-Public-key.pub
 
@@ -57,7 +53,7 @@ Verification Failure
 ----
 . Limpie el espacio de trabajo.
 +
-[listing]
+[source, cli]
 ----
 % rm ./9150.01000024.05090105.vhd ./sign.tmp
 % rm *.sig *.pub *.pem

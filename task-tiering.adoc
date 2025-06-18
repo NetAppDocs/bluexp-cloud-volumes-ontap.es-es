@@ -167,17 +167,6 @@ No es necesario configurar una conexión entre el nivel de rendimiento y el nive
 ----
 El rol personalizado incluye los permisos de forma predeterminada. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Ver permiso de Azure para el conector"^]
 
-
-
-=== Requisitos para organizar los datos en niveles para un inquilino de Azure
-
-Puede usar el mismo Connector para organizar datos en niveles para múltiples inquilinos de Azure. Para habilitar la organización en niveles de un inquilino de Azure en un escenario en el que un inquilino crea el entorno de trabajo Cloud Volumes ONTAP y otro crea el conector, asegúrese de lo siguiente:
-
-* Ha introducido las credenciales para los dos inquilinos en BlueXP  para la validación cruzada. Consulte https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["Gestiona las credenciales de Azure y las suscripciones al mercado para BlueXP"^].
-* Ha habilitado la interconexión de redes virtuales (vnet) entre los dos inquilinos https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview["En el portal de Azure"^]. Esto es necesario para que el conector pueda acceder a la cuenta de almacenamiento del otro inquilino.
-* link:task-enabling-private-link.html#disable-azure-private-links-and-use-service-endpoints-instead["Enlaces privados de Azure desactivados"]Debe utilizar el extremo del servicio de subred.
-
-
 endif::azure[]
 
 ifdef::gcp[]
