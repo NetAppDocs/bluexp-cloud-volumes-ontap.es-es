@@ -1,0 +1,15 @@
+= Configuraciones de red para soportar el proxy del conector
+:allow-uri-read: 
+
+
+
+
+=== Configuraciones de red para soportar el proxy del conector
+
+Puede usar los servidores proxy configurados para el Conector BlueXP para habilitar el acceso a Internet saliente desde Cloud Volumes ONTAP. BlueXP admite dos tipos de proxies:
+
+* *Proxy explícito*: El tráfico saliente de Cloud Volumes ONTAP utiliza la dirección HTTP del servidor proxy especificado durante la configuración del proxy del Conector. Es posible que el administrador del Conector también haya configurado credenciales de usuario y certificados de CA raíz para una autenticación adicional. Si hay un certificado de CA raíz disponible para el proxy explícito, asegúrese de obtenerlo y cargarlo en su entorno de trabajo de Cloud Volumes ONTAP mediante  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["CLI de ONTAP : instalación del certificado de seguridad"^] dominio.
+* *Proxy transparente*: La red está configurada para enrutar automáticamente el tráfico saliente desde Cloud Volumes ONTAP a través del proxy del Conector. Al configurar un proxy transparente, el administrador del Conector solo necesita proporcionar un certificado de CA raíz para la conectividad desde Cloud Volumes ONTAP, no la dirección HTTP del servidor proxy. Asegúrese de obtener y cargar el mismo certificado de CA raíz en su entorno de trabajo de Cloud Volumes ONTAP mediante  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["CLI de ONTAP : instalación del certificado de seguridad"^] dominio.
+
+
+Para obtener información sobre cómo configurar servidores proxy para el conector BlueXP , consulte la  https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["Configure un conector para que utilice un servidor proxy"^] .

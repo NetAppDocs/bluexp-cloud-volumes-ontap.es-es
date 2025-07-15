@@ -82,35 +82,23 @@ La autenticación de usuario falla y los siguientes servicios no están disponib
 |===
 
 
-==== Acceso a Internet saliente para NetApp AutoSupport
-
-Los nodos Cloud Volumes ONTAP requieren acceso a Internet saliente para acceder a puntos finales externos para diversas funciones. Cloud Volumes ONTAP no puede funcionar correctamente si estos puntos finales están bloqueados en entornos con estrictos requisitos de seguridad.
-
-Los nodos Cloud Volumes ONTAP requieren acceso a Internet de salida para AutoSupport de NetApp, que supervisa de forma proactiva el estado del sistema y envía mensajes al soporte técnico de NetApp.
-
-Las políticas de enrutamiento y firewall deben permitir el tráfico HTTPS a los siguientes extremos para que Cloud Volumes ONTAP pueda enviar mensajes AutoSupport:
-
-* \https://support.netapp.com/aods/asupmessage
-* \https://support.netapp.com/asupprod/post/1.0/postAsup
-
-
-Si tiene una instancia NAT, debe definir una regla de grupo de seguridad entrante que permita el tráfico HTTPS desde la subred privada hasta Internet.
-
-Si una conexión a Internet saliente no está disponible para enviar mensajes AutoSupport, BlueXP configura automáticamente sus sistemas Cloud Volumes ONTAP para utilizar el conector como servidor proxy. El único requisito es asegurarse de que el grupo de seguridad del conector permita conexiones _entrante_ a través del puerto 3128. Tendrá que abrir este puerto después de desplegar el conector.
-
-Si ha definido reglas de salida estrictas para Cloud Volumes ONTAP, también tendrá que asegurarse de que el grupo de seguridad Cloud Volumes ONTAP permita conexiones _saliente_ a través del puerto 3128.
-
-Una vez que haya comprobado que el acceso saliente a Internet está disponible, puede probar AutoSupport para asegurarse de que puede enviar mensajes. Para obtener instrucciones, consulte la https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["Documentación de ONTAP: Configurar AutoSupport"^].
-
-Si BlueXP notifica que los mensajes de AutoSupport no se pueden enviar, link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["Solucione problemas de configuración de AutoSupport"].
-
-
-
 === Acceso saliente a Internet para el mediador de alta disponibilidad
 
 La instancia del mediador de alta disponibilidad debe tener una conexión saliente al servicio EC2 de AWS para que pueda ayudar a recuperarse de la recuperación tras fallos del almacenamiento. Para proporcionar la conexión, puede agregar una dirección IP pública, especificar un servidor proxy o utilizar una opción manual.
 
 La opción manual puede ser una puerta de enlace NAT o un extremo de la interfaz VPC desde la subred de destino al servicio AWS EC2. Para obtener más información sobre los puntos finales de VPC, consulte la http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-interface.html["Documentación de AWS: Extremos de VPC de la interfaz (AWS PrivateLink)"^].
+
+
+
+=== Configuraciones de red para soportar el proxy del conector
+
+Puede usar los servidores proxy configurados para el Conector BlueXP para habilitar el acceso a Internet saliente desde Cloud Volumes ONTAP. BlueXP admite dos tipos de proxies:
+
+* *Proxy explícito*: El tráfico saliente de Cloud Volumes ONTAP utiliza la dirección HTTP del servidor proxy especificado durante la configuración del proxy del Conector. Es posible que el administrador del Conector también haya configurado credenciales de usuario y certificados de CA raíz para una autenticación adicional. Si hay un certificado de CA raíz disponible para el proxy explícito, asegúrese de obtenerlo y cargarlo en su entorno de trabajo de Cloud Volumes ONTAP mediante  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["CLI de ONTAP : instalación del certificado de seguridad"^] dominio.
+* *Proxy transparente*: La red está configurada para enrutar automáticamente el tráfico saliente desde Cloud Volumes ONTAP a través del proxy del Conector. Al configurar un proxy transparente, el administrador del Conector solo necesita proporcionar un certificado de CA raíz para la conectividad desde Cloud Volumes ONTAP, no la dirección HTTP del servidor proxy. Asegúrese de obtener y cargar el mismo certificado de CA raíz en su entorno de trabajo de Cloud Volumes ONTAP mediante  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["CLI de ONTAP : instalación del certificado de seguridad"^] dominio.
+
+
+Para obtener información sobre cómo configurar servidores proxy para el conector BlueXP , consulte la  https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["Configure un conector para que utilice un servidor proxy"^] .
 
 
 
@@ -162,10 +150,6 @@ El número de direcciones IP privadas necesarias para un par de alta disponibili
 
 En las tablas siguientes se ofrecen detalles acerca de las LIF asociadas con cada dirección IP privada.
 
-
-
-===== LIF para pares de alta disponibilidad en un único AZ
-
 [cols="20,20,20,40"]
 |===
 | LUN | Interfaz | Nodo | Específico 
@@ -197,10 +181,6 @@ En las tablas siguientes se ofrecen detalles acerca de las LIF asociadas con cad
 
 | Mediador | eth0 | Mediador | Un canal de comunicación entre los nodos y el mediador para ayudarle a tomar la toma de control y los procesos de devolución del almacenamiento. 
 |===
-
-
-===== LIF para pares de alta disponibilidad en múltiples AZs
-
 [cols="20,20,20,40"]
 |===
 | LUN | Interfaz | Nodo | Específico 
@@ -343,4 +323,9 @@ Si aún no ha creado un conector, debe revisar los requisitos de red para el con
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["Ver los requisitos de red del conector"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["Reglas del grupo de seguridad en AWS"^]
+
+
+.Temas relacionados
+* link:task-verify-autosupport.html["Comprobar la configuración de AutoSupport para Cloud Volumes ONTAP"]
+* https://docs.netapp.com/us-en/ontap/networking/ontap_internal_ports.html["Obtenga más información sobre los puertos internos de ONTAP"^].
 

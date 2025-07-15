@@ -32,9 +32,6 @@ Aquí está la comparación de características entre las dos opciones. Tenga en
 
 | *Tipos de máquinas virtuales (VM) compatibles*  a| 
 Tipos de instancia EDS_v5 y LS_v3
-
-
-NOTE: El tipo de instancia L8S_v3 es compatible con Azure Marketplace para configuraciones de alta disponibilidad, pero no con BlueXP . BlueXP  no podrá detectarlo correctamente durante la detección.
 | Gama completa de tipos de máquinas virtuales. https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configuraciones compatibles en Azure"^] 
 
 

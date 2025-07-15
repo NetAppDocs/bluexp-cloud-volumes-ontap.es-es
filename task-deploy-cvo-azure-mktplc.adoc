@@ -135,9 +135,6 @@ Al detectar los sistemas de Cloud Volumes ONTAP implementados mediante la implem
 .Antes de empezar
 Asegúrese de que la implementación se ha completado en Azure Marketplace. El conector BlueXP  solo puede detectar los sistemas cuando la implementación se haya completado y estén disponibles para su detección.
 
-
-NOTE: La implementación directa de Azure Marketplace admite tipos de instancia L8S_v3. Sin embargo, BlueXP  no admite este tipo de instancia para las configuraciones de alta disponibilidad y no podrá detectarlo correctamente durante la detección.
-
 .Pasos
 En BlueXP , siga el procedimiento estándar para detectar sistemas existentes. Consulte link:task-adding-systems.html["Agregue un sistema Cloud Volumes ONTAP existente a BlueXP "].
 

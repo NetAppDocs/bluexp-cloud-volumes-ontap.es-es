@@ -147,4 +147,6 @@ En un único nodo o en una configuración de alta disponibilidad, puede quitar u
 .Información relacionada
 * https://docs.netapp.com/us-en/bluexp-automation/cm/prepare.html["Prepare el uso de la API"^]
 * https://docs.netapp.com/us-en/bluexp-automation/cm/workflow_processes.html#organization-of-cloud-volumes-ontap-workflows["Flujos de trabajo de Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html#get-the-connector-identifier["Obtener los identificadores requeridos"^]
+* https://docs.netapp.com/us-en/bluexp-automation/platform/use_rest_apis.html["Utilice las API REST de BlueXP"^]
 
