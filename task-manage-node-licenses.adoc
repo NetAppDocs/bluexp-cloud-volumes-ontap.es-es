@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-manage-node-licenses.html 
-keywords: license, licensing, install, updating license, system license, add system license, adding a system license, byol license, add byol license, update byol license, nlf, license generator, extra, by-node, digital wallet, cloud backup, cloud data sense, cloud tiering 
+keywords: license, licensing, install, updating license, system license, add system license, adding a system license,  update byol license, nlf, license generator, extra, by-node, digital wallet, cloud backup, cloud data sense, cloud tiering 
 summary: Gestiona tus licencias basadas en nodos en la cartera digital de BlueXP para garantizar que cada sistema Cloud Volumes ONTAP tenga una licencia válida con la capacidad necesaria. 
 ---
 = Gestione licencias basadas en nodos para Cloud Volumes ONTAP
@@ -51,6 +51,9 @@ image:screenshot_paygo_licenses.png["Una captura de pantalla que muestra una tab
 == Gestione las licencias BYOL
 
 Gestione las licencias que ha adquirido directamente de NetApp añadiendo y quitando licencias de sistema y licencias de capacidad adicional.
+
+
+NOTE: NetApp ha restringido la compra, extensión y renovación de licencias BYOL. Para más información, consulte  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Disponibilidad restringida de licencias BYOL para Cloud Volumes ONTAP"^] .
 
 
 
@@ -131,9 +134,7 @@ image:screenshot-license-generator.png["Captura de pantalla: Muestra un ejemplo 
 
 === Actualizar una licencia del sistema
 
-Cuando renueve una suscripción de BYOL con un representante de NetApp, BlueXP obtiene automáticamente la nueva licencia de NetApp y la instala en el sistema Cloud Volumes ONTAP.
-
-Si BlueXP no puede acceder al archivo de licencia a través de la conexión segura a Internet, usted mismo puede obtener el archivo y luego cargarlo manualmente a BlueXP.
+Al renovar una suscripción BYOL contactando a un representante de NetApp , BlueXP obtiene automáticamente la nueva licencia de NetApp y la instala en el sistema Cloud Volumes ONTAP . Si BlueXP no puede acceder al archivo de licencia a través de la conexión segura a internet, puede obtenerlo usted mismo y cargarlo manualmente a BlueXP.
 
 .Pasos
 . En el menú de navegación de BlueXP, seleccione *Gobierno > cartera digital*.

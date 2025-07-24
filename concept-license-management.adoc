@@ -17,7 +17,7 @@ summary: Cada sistema Cloud Volumes ONTAP con una licencia BYOL basada en nodos 
 Cada sistema de Cloud Volumes ONTAP que tenga una licencia BYOL (Bring Your Own License) basada en nodos debe tener una licencia del sistema instalada con una suscripción activa. BlueXP simplifica el proceso administrando las licencias para usted y mostrando una advertencia antes de que caduquen.
 
 
-TIP: Una licencia basada en nodos es la generación anterior de BYOL para Cloud Volumes ONTAP. Una licencia basada en nodos está disponible únicamente para renovaciones de licencias.
+NOTE: Una licencia basada en nodos es la licencia de la generación anterior para Cloud Volumes ONTAP. Esta licencia se puede adquirir a través de NetApp (BYOL) y está disponible para renovaciones de licencias, solo en casos específicos.
 
 link:concept-licensing.html["Obtenga más información sobre las opciones de licencias de Cloud Volumes ONTAP"].
 
@@ -27,11 +27,12 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-l
 
 == Licencias de sistema BYOL
 
-Una licencia basada en nodo proporciona hasta 368 TIB de capacidad para un solo nodo o un par de alta disponibilidad.
+Las licencias basadas en nodos se pueden adquirir a través de NetApp. El número de licencias que se pueden adquirir para un sistema de un solo nodo o un par de alta disponibilidad es ilimitado.
 
-Puede comprar varias licencias para un sistema BYOL de Cloud Volumes ONTAP con el fin de asignar más de 368 TIB de capacidad. Por ejemplo, podría comprar dos licencias para asignar hasta 736 TIB de capacidad a Cloud Volumes ONTAP. O usted podría comprar cuatro licencias para obtener hasta 1.4 PIB.
 
-El número de licencias que se pueden comprar para un único sistema de nodo o par de alta disponibilidad es ilimitado.
+NOTE: NetApp ha restringido la compra, extensión y renovación de licencias BYOL. Para más información, consulte  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Disponibilidad restringida de licencias BYOL para Cloud Volumes ONTAPP"^] .
+
+Una licencia basada en nodos proporciona hasta 368 TiB de capacidad para un solo nodo o par de alta disponibilidad (HA). Es posible que haya adquirido varias licencias para un sistema BYOL de Cloud Volumes ONTAP para asignar más de 368 TiB de capacidad. Por ejemplo, podría tener dos licencias para asignar hasta 736 TiB de capacidad a Cloud Volumes ONTAP. O podría tener cuatro licencias para obtener hasta 1,4 TiB.
 
 Tenga en cuenta que los límites de disco pueden impedir que llegue al límite de capacidad utilizando solo discos. Puede superar el límite de discos mediante link:concept-data-tiering.html["organización en niveles de los datos inactivos en el almacenamiento de objetos"]. Para obtener más información acerca de los límites de disco, consulte https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Límites de almacenamiento en las notas de la versión de Cloud Volumes ONTAP"^].
 
@@ -67,7 +68,7 @@ Si no renueva la licencia a tiempo, el sistema Cloud Volumes ONTAP se apaga auto
 
 == Renovación de la licencia
 
-Cuando renueve una suscripción de BYOL basada en nodos poniéndose en contacto con un representante de NetApp, BlueXP obtiene automáticamente la nueva licencia de NetApp y la instala en el sistema Cloud Volumes ONTAP.
+Si renueva una suscripción BYOL basada en nodos contactándose con un representante de NetApp , BlueXP obtiene automáticamente la nueva licencia de NetApp y la instala en el sistema Cloud Volumes ONTAP .
 
 Si BlueXP no puede acceder al archivo de licencia a través de la conexión segura a Internet, puede hacerlo link:task-manage-node-licenses.html["Obtenga el archivo usted mismo y luego cargue manualmente el archivo a BlueXP"].
 

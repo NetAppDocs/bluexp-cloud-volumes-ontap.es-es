@@ -155,6 +155,9 @@ NOTE: Se necesita una suscripción de pago por uso (PAYGO) para las funciones de
 La disponibilidad de las licencias PAYGO y BYOL para sistemas Cloud Volumes ONTAP requiere que el conector BlueXP  esté en funcionamiento. Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#impact-on-cloud-volumes-ontap["Más información sobre conectores"^].
 
 
+NOTE: NetApp ha restringido la compra, extensión y renovación de licencias BYOL. Para más información, consulte  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Disponibilidad restringida de licencias BYOL para Cloud Volumes ONTAPP"^] .
+
+
 
 === Cómo comenzar
 

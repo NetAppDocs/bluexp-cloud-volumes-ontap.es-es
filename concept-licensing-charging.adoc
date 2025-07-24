@@ -23,6 +23,10 @@ Debe estar familiarizado con el cobro y el uso de la capacidad de las licencias 
 Hay disponibles paquetes de licencias basadas en capacidad con los siguientes modelos de consumo:
 
 * *BYOL*: Traiga su propia licencia (BYOL). Una licencia comprada a NetApp que se puede usar para poner en marcha Cloud Volumes ONTAP en cualquier proveedor de cloud.
++
+
+NOTE: NetApp ha restringido la compra, extensión y renovación de licencias BYOL. Para más información, consulte  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Disponibilidad restringida de licencias BYOL para Cloud Volumes ONTAP"^] .
+
 
 
 ifdef::azure[]
@@ -37,7 +41,7 @@ endif::azure[]
 
 Tenga en cuenta lo siguiente:
 
-* Si adquiere una licencia de NetApp (BYOL), también tendrá que suscribirse a la oferta PAYGO del mercado de su proveedor de cloud.
+* Si adquiere una licencia de NetApp (BYOL), también deberá suscribirse a la oferta de pago por uso (PAYGO) del marketplace de su proveedor de nube. NetApp tiene licencias BYOL restringidas. Cuando sus licencias BYOL caduquen, deberá reemplazarlas por suscripciones al marketplace de nube.
 +
 La licencia siempre se cargará primero, pero se cargará a partir de la tarifa por horas en el mercado en estos casos:
 
@@ -47,7 +51,7 @@ La licencia siempre se cargará primero, pero se cargará a partir de la tarifa 
 
 
 * Si tiene un contrato anual de un mercado, _All_ los sistemas Cloud Volumes ONTAP que implemente se cobrarán en función de ese contrato. No se puede mezclar y combinar un contrato anual de mercado con su licencia BYOL.
-* En las regiones de China solo se admiten sistemas de un solo nodo con BYOL.
+* En las regiones de China, solo se admiten sistemas de un solo nodo con BYOL. Las implementaciones en China están exentas de las restricciones de licencias BYOL.
 
 
 
@@ -148,7 +152,7 @@ Para el paquete Essentials, el cargo por capacidad mínima de 4 TiB no se aplica
 
 === Sobrerajes
 
-Si supera la capacidad de su licencia propia o si su licencia caduca, se le cobrará por excedentes a tarifas por hora según la suscripción al mercado. Los excedentes se cobran según las tarifas del mercado, con una preferencia por utilizar primero la capacidad disponible de otras licencias.
+Si excede su capacidad BYOL, se le cobrarán los excedentes a tarifas por hora según su suscripción al marketplace. Los excedentes se cobran a tarifas del marketplace, y se da preferencia al uso de la capacidad disponible de otras licencias. Si su licencia BYOL vence, deberá cambiar a un modelo de licencias basado en capacidad a través de marketplaces en la nube.
 
 
 
