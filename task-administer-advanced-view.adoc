@@ -50,6 +50,7 @@ Cloud Volumes ONTAP no admite algunas funciones que aparecen en la interfaz de S
 * Niveles: La gestión de agregados (incluidos los niveles locales y de nube) no es compatible con el Administrador del sistema. Debe gestionar los agregados directamente desde la Vista estándar de BlueXP.
 * Actualizaciones de firmware: Cloud Volumes ONTAP no admite actualizaciones de firmware automáticas desde la página *Clúster > Configuración*.
 * Control de acceso basado en roles: no se admite el control de acceso basado en roles desde el Administrador del sistema.
+* Disponibilidad continua de SMB (CA): Cloud Volumes ONTAP no es compatible  https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/What_are_SMB_Continuous_Availability_CA_Shares["Acciones SMB disponibles continuamente"^] para operaciones no disruptivas.
 
 
 
@@ -103,4 +104,5 @@ Si necesita ayuda con System Manager con Cloud Volumes ONTAP, puede consultar ht
 * https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html["Gestión de volúmenes y LUN"^]
 * https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html["Gestión de redes"^]
 * https://docs.netapp.com/us-en/ontap/concept_dp_overview.html["Protección de datos"^]
+* https://docs.netapp.com/us-en/ontap/smb-hyper-v-sql/create-continuously-available-shares-task.html["Crear recursos compartidos SMB disponibles continuamente"^]
 
