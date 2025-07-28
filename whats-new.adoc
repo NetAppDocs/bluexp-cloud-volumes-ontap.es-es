@@ -83,14 +83,6 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-m
 
 
 
-=== Capacidad de organizar datos en niveles para inquilinos de Azure
-
-Ahora puede habilitar la organización en niveles para un inquilino de Azure en una situación en la que el entorno de trabajo de Cloud Volumes ONTAP se crea mediante un inquilino y el conector BlueXP  se crea mediante otro. Mediante esta funcionalidad, puede utilizar el mismo conector para organizar datos en niveles para múltiples inquilinos de Azure.
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html#requirements-to-tier-data-for-an-azure-tenant["Requisitos para organizar los datos en niveles para un inquilino de Azure"^]
-
-
-
 == 16 de abril de 2025
 
 
