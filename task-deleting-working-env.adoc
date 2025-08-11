@@ -39,10 +39,7 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 +
 image:screenshot_settings_delete.png["Captura de pantalla que muestra el menú disponible en el entorno de trabajo que contiene la acción Eliminar."]
 
-.. En la ventana Eliminar entorno de trabajo, escriba el nombre del entorno de trabajo y, a continuación, haga clic en *Eliminar*.
-+
-La eliminación del entorno de trabajo puede tardar hasta 5 minutos.
-
+.. En la ventana Eliminar entorno de trabajo, escriba el nombre del entorno de trabajo y luego haga clic en *Eliminar*.  Puede tomar hasta cinco minutos eliminar el entorno de trabajo.
 
 
 

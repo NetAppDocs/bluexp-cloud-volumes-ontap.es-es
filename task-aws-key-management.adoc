@@ -8,7 +8,7 @@ summary: Utilice el servicio de gestión de claves de AWS para su servicio de ge
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
