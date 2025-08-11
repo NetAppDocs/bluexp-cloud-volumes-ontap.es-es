@@ -44,7 +44,6 @@ Para obtener más información acerca de EOA y EOS, consulte link:concept-licens
 +
 *** Cuando `Professional` se selecciona como paquete de destino, la cuenta debe tener una licencia BYOL con un paquete Professional:
 *** Cuando `Essentials` se selecciona como el paquete de destino, la cuenta debe tener una licencia BYOL con el paquete Essentials.
-*** Cuando `Optimized` se selecciona como paquete de destino, la cuenta debe tener una licencia BYOL con el paquete optimizado.
 
 
 ** Si el paquete de destino no se alinea con la disponibilidad de licencia BYOL de la cuenta, significa que la licencia basada en capacidad podría no incluir el paquete seleccionado. En este caso, se le cobrará a través de su suscripción a Marketplace.
@@ -74,25 +73,22 @@ TIP: El icono se desactiva si el sistema Cloud Volumes ONTAP ya está cargado po
 ** Profesional
 
 
-
-
-ifdef::azure[]
-
-* Optimizado (para Azure)
-
-
-endif::azure[]
-
-ifdef::gcp[]
-
-* Optimizado (para Google Cloud)
-
-
-endif::gcp[]
-
 . Si tiene una licencia BYOL, puede marcar la casilla de verificación para eliminar la licencia basada en nodo de la cartera digital de BlueXP  después de la conversión. Si la conversión no se completa, incluso al seleccionar esta casilla de verificación, la licencia no se eliminará de la cartera digital. Si tiene una suscripción a Marketplace, esta opción no está disponible.
 . Seleccione la casilla de verificación para confirmar que comprende las implicaciones del cambio y, a continuación, haga clic en * Continuar *.
 
 
 .Después de terminar
 Vea el número de serie de la nueva licencia y verifique los cambios en la cartera digital de BlueXP .
+
+
+
+== Precios en diferentes hiperescalares
+
+Para obtener más detalles sobre los precios, visite https://bluexp.netapp.com/pricing/["Sitio web de NetApp BlueXP"^] .
+
+Para obtener información sobre ofertas privadas en hiperescalares específicos, escriba a:
+
+* AWS - awspo@netapp.com
+* Azure - azurepo@netapp.com
+* Google Cloud - gcppo@netapp.com
+

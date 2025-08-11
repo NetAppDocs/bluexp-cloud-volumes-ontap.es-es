@@ -102,36 +102,6 @@ Puede pagar por capacidad en una serie de configuraciones diferentes:
 
 
 
-==== Optimizado
-
-Pague por separado la capacidad aprovisionada y las operaciones de I/o.
-
-* Nodo único de Cloud Volumes ONTAP o alta disponibilidad
-* La carga se basa en dos componentes de coste: Almacenamiento y uso (I/O).
-+
-No le cobrarán por el I/O relacionado con la replicación de datos (SnapMirror), los backups (SnapVault) o NDMP.
-
-
-
-ifdef::azure[]
-
-* Disponible en el mercado de Azure como una oferta de pago por uso o como un contrato anual
-
-
-endif::azure[]
-
-ifdef::gcp[]
-
-* Disponible en el mercado de Google Cloud como una oferta de pago por uso o como un contrato anual
-
-
-endif::gcp[]
-
-* Añada cualquiera de los servicios de datos en el cloud de NetApp por un coste adicional
-
-
-
-
 ==== Profesional
 
 Pague por capacidad por cualquier tipo de configuración de Cloud Volumes ONTAP con backups ilimitados.
@@ -249,7 +219,7 @@ Para obtener más información, consulte https://mysupport.netapp.com/info/commu
 
 === Fin de la disponibilidad de las licencias basadas en nodos
 
-A partir del 11 de noviembre de 2024, se finalizó la disponibilidad limitada de las licencias basadas en nodos. La compatibilidad con licencias basadas en nodos finaliza el 31 de diciembre de 2024.
+A partir del 11 de noviembre de 2024, se finalizará la disponibilidad limitada de licencias basadas en nodos.  El soporte para licencias basadas en nodos finaliza el 31 de diciembre de 2024.
 
 Si tiene un contrato válido basado en nodos que se extiende más allá de la fecha EOA, puede continuar utilizando la licencia hasta que el contrato caduque. Una vez que el contrato caduque, será necesario realizar la transición al modelo de licencias basado en capacidad. Si no tiene un contrato a largo plazo para un nodo Cloud Volumes ONTAP, es importante planificar la conversión antes de la fecha de EOS.
 
