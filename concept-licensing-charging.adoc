@@ -96,9 +96,14 @@ Para parejas de alta disponibilidad, solo paga por la capacidad aprovisionada en
 
 == Límite de capacidad
 
-Con este modelo de licencia, cada sistema Cloud Volumes ONTAP individual admite hasta 2 PIB de capacidad mediante discos y segmentación en almacenamiento de objetos.
+En el modelo de licencias basado en capacidad, cada sistema Cloud Volumes ONTAP admite la organización en niveles del almacenamiento de objetos, y la capacidad total en niveles puede escalar hasta el límite de contenedores del proveedor de la nube.  Aunque la licencia no impone restricciones de capacidad, siga las https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["Mejores prácticas de FabricPool"^] para garantizar un rendimiento óptimo, confiabilidad y rentabilidad al configurar y administrar la organización en niveles.
 
-No hay limitación máxima de capacidad cuando se trata de la propia licencia.
+Para obtener información sobre los límites de capacidad de cada proveedor de nube, consulte su documentación:
+
+* https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketRestrictions.html["Documentación de AWS"^]
+* https://learn.microsoft.com/en-us/azure/storage/common/scalability-targets-standard-account["Documentación de Azure para discos administrados"^]y https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets["Documentación de Azure para el almacenamiento de blobs"^]
+* https://cloud.google.com/storage/docs/buckets["Documentación de Google Cloud"^]
+
 
 
 

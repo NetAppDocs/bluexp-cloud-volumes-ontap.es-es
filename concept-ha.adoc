@@ -126,7 +126,7 @@ Puede identificar fácilmente la dirección IP correcta desde BlueXP seleccionan
 La implementación de una configuración de alta disponibilidad en una única zona de disponibilidad (AZ) puede garantizar la alta disponibilidad de los datos en caso de que se produzca un error en una instancia que ejecute un nodo Cloud Volumes ONTAP. Fuera del VPC, se puede acceder a todos los datos de forma nativa.
 
 
-NOTE: BlueXP crea una https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["Grupo de colocación extendido de AWS"^] E inicia los dos nodos de alta disponibilidad en ese grupo de colocación. El grupo de colocación reduce el riesgo de fallos simultáneos al distribuir las instancias entre el hardware subyacente distinto. Esta función mejora la redundancia desde el punto de vista de la informática, no desde la perspectiva del fallo de disco.
+NOTE: BlueXP crea un https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["Documentación de AWS: Grupo de ubicación de propagación de AWS"^] y lanza los dos nodos HA en ese grupo de ubicación.  El grupo de ubicación reduce el riesgo de fallas simultáneas al distribuir las instancias en distintos hardware subyacentes.  Esta característica mejora la redundancia desde una perspectiva computacional y no desde una perspectiva de falla de disco.
 
 
 
@@ -200,7 +200,7 @@ El único tipo de disco admitido es GP2. Actualmente se admiten las siguientes f
 
 NOTE: Cloud Volumes ONTAP solo admite estas configuraciones. La selección de tipos de disco no compatibles o instancias no cualificadas en la configuración de la zona local de AWS puede provocar un fallo en la implementación. La organización de los datos en niveles para AWS S3 no está disponible en las zonas locales de AWS debido a la falta de conectividad.
 
-Consulte la documentación de AWS para obtener los detalles más recientes y completos de la link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["EC2 Tipos de instancias en Zonas locales"^].
+Consulte la documentación de AWS para obtener los detalles más recientes y completos delink:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["Documentación de AWS: Tipos de instancias EC2 en zonas locales"^] .
 
 
 

@@ -26,7 +26,7 @@ Las mejoras descritas en esta página son específicas de las funciones de BlueX
 
 === Fin de la disponibilidad de las licencias optimizadas
 
-A partir del 11 de agosto de 2025, la licencia optimizada de Cloud Volumes ONTAP quedará obsoleta y ya no estará disponible para compra ni renovación en los mercados de Azure y Google Cloud para suscripciones de pago por uso (PAYGO).  Si tiene un contrato anual existente con una licencia optimizada, puede continuar utilizando la licencia hasta el final de su contrato.  Cuando caduque su licencia optimizada, podrá optar por las licencias Cloud Volumes ONTAP Essentials o Professional.
+A partir del 11 de agosto de 2025, la licencia optimizada de Cloud Volumes ONTAP quedará obsoleta y ya no estará disponible para compra ni renovación en los mercados de Azure y Google Cloud para suscripciones de pago por uso (PAYGO). Si tiene un contrato anual existente con una licencia optimizada, puede continuar utilizando la licencia hasta el final de su contrato. Cuando caduque su licencia optimizada, podrá optar por licencias Cloud Volumes ONTAP Essentials o Professional en BlueXP.
 
 Sin embargo, la capacidad de agregar o renovar licencias optimizadas estará disponible a través de las API.
 
@@ -1762,7 +1762,7 @@ Los siguientes cambios se introdujeron con la versión 3.9.7 del conector.
 
 === Nuevo paquete profesional en AWS
 
-Un nuevo paquete profesional le permite agrupar Cloud Volumes ONTAP y Cloud Backup Service mediante un contrato anual del mercado de AWS. El pago se realiza por TIB. Esta suscripción no le permite realizar una copia de seguridad de los datos en las instalaciones.
+Un nuevo paquete profesional le permite combinar Cloud Volumes ONTAP y Cloud Backup Service mediante un contrato anual de AWS Marketplace.  El pago se realiza por TiB.  Esta suscripción no le permite realizar copias de seguridad de datos locales.
 
 Si elige esta opción de pago, puede aprovisionar hasta 2 PIB por sistema Cloud Volumes ONTAP a través de discos EBS y clasificación por niveles para almacenamiento de objetos S3 (un solo nodo o alta disponibilidad).
 

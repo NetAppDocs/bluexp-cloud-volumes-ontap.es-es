@@ -70,7 +70,7 @@ La autenticación de usuario falla y los siguientes servicios no están disponib
 | Comunicación con los servicios de AWS. | Modos estándar y privado. | Cloud Volumes ONTAP no se puede comunicar con el servicio AWS para realizar operaciones de BlueXP  específicas en AWS. 
 
 
-| El punto final del gobierno exacto para el servicio de AWS depende de la región de AWS que esté utilizando. Los puntos finales están sufijos con `amazonaws.com` y. `c2s.ic.gov` Consulte 	https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/model/Region.html["SDK DE AWS"]y https://docs.aws.amazon.com/general/latest/gr/rande.html["Documentación de Amazon"] si desea obtener más información.  a| 
+| El punto final gubernamental exacto para el servicio de AWS depende de la región de AWS que esté utilizando.  Los puntos finales tienen el sufijo `amazonaws.com` y `c2s.ic.gov` .  Referirse a	https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/model/Region.html["SDK DE AWS"^] y https://docs.aws.amazon.com/general/latest/gr/rande.html["Documentación de AWS"^] Para más información.  a| 
 * Formación CloudFormation
 * Cloud computing elástico (EC2)
 * Gestión de acceso e identidad (IAM)

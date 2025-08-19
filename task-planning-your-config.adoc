@@ -43,10 +43,9 @@ La selección de una zona local es opcional. Cloud Volumes ONTAP es compatible c
 
 NOTE: Cloud Volumes ONTAP no tiene soporte para la organización de datos en niveles ni la organización del cloud en zonas locales de AWS. Además, no se admiten las zonas locales con instancias que no hayan sido cualificadas para Cloud Volumes ONTAP. Un ejemplo de esto es Miami, que no está disponible como Zona Local, porque solo tiene Gen6 instancias que no están soportadas y no están calificadas.
 
-link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["Ver la lista completa de zonas locales"^].
-Las zonas locales deben estar activadas antes de poder crear y gestionar recursos en esas zonas.
+link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["Documentación de AWS: Ver la lista completa de zonas locales"^] . Las zonas locales deben estar habilitadas antes de poder crear y administrar recursos en esas zonas.
 
-link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["Aprenda a habilitar una zona local"^].
+link:https://docs.aws.amazon.com/local-zones/latest/ug/getting-started.html["Documentación de AWS: Introducción a las zonas locales de AWS"^] .
 
 
 
@@ -89,7 +88,7 @@ Tipo de disco de EBS:: En líneas generales, las diferencias entre los tipos de 
 --
 * _Los discos SSD de uso general (gp3)_ son los SSD de menor coste que equilibran los costes y el rendimiento con una amplia variedad de cargas de trabajo. El rendimiento se define en términos de IOPS y rendimiento. Los discos gp3 son compatibles con Cloud Volumes ONTAP 9.7 y versiones posteriores.
 +
-Al seleccionar un disco gp3, BlueXP rellena los valores predeterminados de IOPS y rendimiento que proporcionan un rendimiento equivalente a un disco gp2 basado en el tamaño de disco seleccionado. Puede aumentar los valores para obtener un mejor rendimiento a un coste más alto, pero no apoyamos valores más bajos porque puede resultar en un rendimiento inferior. En resumen, cíñase a los valores predeterminados o aumentarlos. No los baje. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["Más información sobre los discos gp3 y su rendimiento"^].
+Cuando selecciona un disco gp3, BlueXP completa los valores de IOPS y rendimiento predeterminados que brindan un rendimiento equivalente a un disco gp2 según el tamaño de disco seleccionado.  Puede aumentar los valores para obtener un mejor rendimiento a un costo mayor, pero no admitimos valores más bajos porque pueden resultar en un rendimiento inferior.  En resumen, mantenga los valores predeterminados o auméntelos.  No los bajes. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["Documentación de AWS: Obtenga más información sobre los discos gp3 y su rendimiento"^] .
 
 +
 Tenga en cuenta que Cloud Volumes ONTAP admite la función Amazon EBS Elastic Volumes con discos gp3. link:concept-aws-elastic-volumes.html["Obtenga más información sobre la compatibilidad con Elastic Volumes"].
