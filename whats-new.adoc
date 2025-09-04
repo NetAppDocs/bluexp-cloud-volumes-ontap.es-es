@@ -20,6 +20,18 @@ Las mejoras descritas en esta página son específicas de las funciones de BlueX
 
 
 
+== 4 de septiembre de 2025
+
+
+
+=== Cloud Volumes ONTAP 9.17.1 RC
+
+Ahora puede usar BlueXP para implementar y administrar la versión candidata 1 de Cloud Volumes ONTAP 9.17.1 en Azure y Google Cloud.  Sin embargo, esta versión no está disponible para implementación y actualización en AWS.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Obtenga más información sobre esta versión de Cloud Volumes ONTAP"^] .
+
+
+
 == 11 de agosto de 2025
 
 
@@ -187,7 +199,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azur
 
 Ahora puede utilizar BlueXP  para poner en marcha y gestionar la versión de disponibilidad general de Cloud Volumes ONTAP 9.16.1 en Azure y Google Cloud. Sin embargo, esta versión no está disponible para la implementación y actualización en AWS.
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Conozca cuáles son las nuevas funciones que se incluyen en esta versión de Cloud Volumes ONTAP"^].
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9161-relnotes/["Conozca cuáles son las nuevas funciones que se incluyen en esta versión de Cloud Volumes ONTAP"^] .
 
 
 
